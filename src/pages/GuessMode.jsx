@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../components/Card';
-import Button from '../components/Button';
+import { useGamification } from '../hooks/useGamification';
 import vocabularyData from '../data/vocabulary.json';
 
 const GuessMode = () => {
+  const { addExp } = useGamification();
   const [words, setWords] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [options, setOptions] = useState([]);
@@ -55,6 +56,7 @@ const GuessMode = () => {
 
     if (guess === currentWord.word) {
       setStatus('correct');
+      addExp(10);
       setTimeout(() => {
         setCurrentIndex(prev => prev + 1);
       }, 1500);
@@ -110,21 +112,22 @@ const GuessMode = () => {
               {currentWord.type}
             </div>
 
-            <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 max-w-lg mx-auto ${status === 'incorrect' ? 'shake' : ''}`}>
-              {options.map((opt, i) => (
-                <Button 
-                  key={i} 
-                  variant="secondary"
-                  className={`w-full text-lg py-4 ${
-                    status === 'correct' && opt === currentWord.word ? '!bg-[var(--color-surface)] !border-[var(--color-surface)] !text-white !shadow-[var(--glow-primary)]' : 
-                    status === 'incorrect' && opt === currentWord.word ? '!bg-[var(--color-surface)] !border-[var(--color-surface)] !text-white' :
-                    ''
-                  }`}
-                  onClick={() => handleGuess(opt)}
-                >
-                  {opt}
-                </Button>
-              ))}
+            <div className={`options-grid ${status === 'incorrect' ? 'shake' : ''}`}>
+              {options.map((opt, i) => {
+                let statusClass = '';
+                if (status === 'correct' && opt === currentWord.word) statusClass = 'correct-ans';
+                if (status === 'incorrect' && opt === currentWord.word) statusClass = 'incorrect-ans';
+                
+                return (
+                  <button 
+                    key={i} 
+                    className={`option-btn ${statusClass}`}
+                    onClick={() => handleGuess(opt)}
+                  >
+                    {opt}
+                  </button>
+                );
+              })}
             </div>
             
             <div className="h-8 mt-6 flex items-center justify-center">

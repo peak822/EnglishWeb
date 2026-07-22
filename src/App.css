@@ -564,3 +564,138 @@
   cursor: not-allowed;
 }
 
+/* Guess Mode Styles */
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .options-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.option-btn {
+  width: 100%;
+  font-size: 1.125rem;
+  padding: 1rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.option-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.option-btn.correct-ans {
+  background: var(--color-surface) !important;
+  border-color: var(--color-surface) !important;
+  color: #ffffff !important;
+  box-shadow: var(--glow-primary) !important;
+}
+
+.option-btn.incorrect-ans {
+  background: var(--color-surface) !important;
+  border-color: var(--color-surface) !important;
+  color: #ffffff !important;
+}
+
+/* 3D Flip Card Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* UI Button Component Styles */
+.ui-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  border: 1px solid transparent;
+}
+
+.ui-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ui-btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.ui-btn-primary {
+  background: var(--grad-primary);
+  color: white;
+}
+
+.ui-btn-primary:hover:not(:disabled) {
+  box-shadow: var(--glow-primary);
+  transform: scale(1.02);
+}
+
+.ui-btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.ui-btn-secondary:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.ui-btn-accent {
+  background: var(--grad-accent);
+  color: white;
+}
+
+.ui-btn-accent:hover:not(:disabled) {
+  box-shadow: var(--glow-accent);
+  transform: scale(1.02);
+}
+
+/* For links disguised as text buttons */
+.text-btn {
+  background: transparent;
+  border: none;
+  color: var(--color-neutral);
+  font-size: 0.875rem;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.text-btn:hover {
+  color: #fff;
+}
+

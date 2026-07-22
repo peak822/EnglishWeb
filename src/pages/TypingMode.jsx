@@ -2,8 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import vocabularyData from '../data/vocabulary.json';
+import { useGamification } from '../hooks/useGamification';
 
 const TypingMode = () => {
+  const { addExp } = useGamification();
   const [words, setWords] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [input, setInput] = useState('');
@@ -58,6 +60,9 @@ const TypingMode = () => {
     // Auto-advance if the typed word is exactly correct
     if (currentWord && val.trim() === currentWord.word.toLowerCase()) {
       setStatus('correct');
+      if (status !== 'revealed') {
+        addExp(10);
+      }
       setTimeout(() => {
         setCurrentIndex(prev => prev + 1);
         setInput('');
@@ -186,7 +191,7 @@ const TypingMode = () => {
               <button 
                 type="button"
                 onClick={() => setShowHint(true)}
-                className="mt-8 text-xs text-[var(--color-neutral)] opacity-40 hover:opacity-100 transition-opacity underline decoration-dotted"
+                className="mt-8 text-btn"
               >
                 Need a hint?
               </button>

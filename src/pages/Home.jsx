@@ -37,7 +37,23 @@ const Home = () => {
       description: 'Guess the word based on hints like part of speech and length.',
       icon: <HelpCircle size={32} />,
       path: '/guess',
-      color: '#F59E0B' // Changed color to distinct orange since surface is used for read mode
+      color: '#F59E0B'
+    },
+    {
+      id: 'srs',
+      title: 'ทบทวน (SRS)',
+      description: 'Smart flashcards that remember when you need to review a word.',
+      icon: <BookOpen size={32} />,
+      path: '/srs',
+      color: '#10B981' // emerald
+    },
+    {
+      id: 'context',
+      title: 'โหมดเติมคำ (Context)',
+      description: 'Fill in the blanks in real-world sentences to understand context.',
+      icon: <Type size={32} />,
+      path: '/context',
+      color: '#8B5CF6' // violet
     }
   ];
 
