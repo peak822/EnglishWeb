@@ -106,15 +106,15 @@ const GuessMode = () => {
             <div className="absolute inset-0 bg-[rgba(34,197,94,0.1)] success-pulse z-0 rounded-[var(--radius-lg)]" />
           )}
 
-          <div className="relative z-10 flex flex-col items-center">
+          <div className="relative z-10" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
             {status === 'correct' ? (
-              <div className="py-8 animate-fade-up flex flex-col items-center">
-                <h3 className="text-4xl font-bold text-white mb-2">{currentWord.word}</h3>
-                <p className="text-[var(--color-neutral)] font-mono text-lg mb-6">/{currentWord.ipa || 'no ipa'}/</p>
-                <div className="bg-[rgba(255,255,255,0.05)] w-full py-4 px-8 rounded-xl border border-[var(--color-accent)]">
-                  <p className="text-2xl font-semibold text-[var(--color-accent)]">{currentWord.meaning || 'No translation available'}</p>
+              <div style={{ padding: '2rem 0', display: 'flex', flexDirection: 'column', alignItems: 'center', animation: 'fadeUp 0.5s ease-out forwards', width: '100%' }}>
+                <h3 className="srs-title" style={{ color: '#fff' }}>{currentWord.word}</h3>
+                <p className="srs-ipa">/{currentWord.ipa || 'no ipa'}/</p>
+                <div className="srs-meaning-box" style={{ border: '1px solid var(--color-accent)' }}>
+                  <p className="srs-meaning">{currentWord.meaning || 'No translation available'}</p>
                 </div>
-                <p className="mt-8 text-green-400 font-bold animate-pulse">Correct! +{hintLevel === 0 ? 10 : hintLevel === 1 ? 5 : 2} EXP</p>
+                <p style={{ marginTop: '2rem', color: '#4ade80', fontWeight: 'bold', animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite' }}>Correct! +{hintLevel === 0 ? 10 : hintLevel === 1 ? 5 : 2} EXP</p>
               </div>
             ) : (
               <>
@@ -149,31 +149,31 @@ const GuessMode = () => {
                   )}
                 </div>
 
-                {/* Hint System */}
-                <div className="mt-8">
-                  {hintLevel > 0 && (
-                    <div className="mb-4 text-[var(--color-neutral)] text-sm animate-fade-up bg-[rgba(255,255,255,0.05)] py-3 px-6 rounded-lg inline-block border border-[rgba(255,255,255,0.1)]">
-                      {hintLevel >= 1 && (
-                        <p className="mb-1">
-                          First letter: <span className="font-mono text-[var(--color-secondary)] tracking-widest ml-1">{currentWord.word.charAt(0).toUpperCase()} _ _ _</span>
-                        </p>
-                      )}
-                      {hintLevel >= 2 && (
-                        <p>
-                          Meaning: <span className="text-[var(--color-accent)] font-semibold ml-1">{currentWord.meaning}</span>
-                        </p>
-                      )}
-                    </div>
-                  )}
-                  
+                <div style={{ marginTop: '2rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                   {hintLevel < 2 && status !== 'correct' && (
                     <button 
                       type="button"
                       onClick={() => setHintLevel(prev => prev + 1)}
-                      className="block mx-auto text-btn"
+                      className="text-btn"
+                      style={{ marginBottom: '1rem' }}
                     >
                       Need a hint? (-EXP)
                     </button>
+                  )}
+                  
+                  {hintLevel > 0 && (
+                    <div style={{ marginTop: '1rem', padding: '1rem 1.5rem', background: 'rgba(255,255,255,0.05)', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(255,255,255,0.1)', display: 'inline-block', animation: 'fadeUp 0.3s ease-out forwards', color: 'var(--color-neutral)', fontSize: '0.875rem', textAlign: 'center' }}>
+                      {hintLevel >= 1 && (
+                        <p style={{ marginBottom: '0.25rem' }}>
+                          First letter: <span style={{ fontFamily: 'var(--font-family-mono)', color: 'var(--color-secondary)', letterSpacing: '0.1em', marginLeft: '0.25rem' }}>{currentWord.word.charAt(0).toUpperCase()} _ _ _</span>
+                        </p>
+                      )}
+                      {hintLevel >= 2 && (
+                        <p style={{ marginTop: '0.5rem', paddingTop: '0.5rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+                          Meaning: <span style={{ color: 'var(--color-accent)', fontWeight: '600', marginLeft: '0.25rem' }}>{currentWord.meaning || "No translation"}</span>
+                        </p>
+                      )}
+                    </div>
                   )}
                 </div>
               </>

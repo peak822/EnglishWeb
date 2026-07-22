@@ -71,54 +71,54 @@ const SRSMode = () => {
   const currentWord = sessionWords[currentIndex];
 
   return (
-    <div className="container animate-fade-up">
-      <div className="text-center mb-10">
-        <h2 className="text-gradient mb-4">SRS Flashcards</h2>
-        <p className="text-[var(--color-neutral)]">
+    <div className="container" style={{ animation: 'fadeUp 0.5s ease-out forwards' }}>
+      <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+        <h2 className="text-gradient" style={{ marginBottom: '1rem' }}>SRS Flashcards</h2>
+        <p style={{ color: 'var(--color-neutral)' }}>
           Review {currentIndex + 1} of {sessionWords.length}
         </p>
       </div>
 
-      <div className="max-w-xl mx-auto perspective-1000">
+      <div style={{ maxWidth: '600px', margin: '0 auto' }} className="perspective-1000">
         <div 
           className={`relative w-full transition-transform duration-500 transform-style-preserve-3d cursor-pointer ${isFlipped ? 'rotate-y-180' : ''}`}
           style={{ minHeight: '350px' }}
           onClick={() => !isFlipped && setIsFlipped(true)}
         >
           {/* Front of card */}
-          <Card className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center p-10 shadow-2xl border-2 border-[rgba(255,255,255,0.05)] hover:border-[rgba(255,255,255,0.1)] transition-colors">
-            <p className="text-[var(--color-primary)] font-mono text-sm mb-4 bg-[rgba(0,225,255,0.1)] px-3 py-1 rounded-full">{currentWord.type}</p>
-            <h3 className="text-5xl font-bold text-white mb-8">{currentWord.word}</h3>
-            <p className="text-[var(--color-neutral)] animate-pulse">Click to reveal meaning</p>
+          <Card className="absolute srs-card-front backface-hidden shadow-2xl">
+            <p className="word-type">{currentWord.type}</p>
+            <h3 className="srs-title">{currentWord.word}</h3>
+            <p style={{ color: 'var(--color-neutral)', animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite' }}>Click to reveal meaning</p>
           </Card>
 
           {/* Back of card */}
-          <Card className="absolute w-full h-full backface-hidden rotate-y-180 flex flex-col items-center justify-center p-10 shadow-2xl border-2 border-[var(--color-primary)] bg-[rgba(15,23,42,0.95)]">
-            <h3 className="text-4xl font-bold text-white mb-2">{currentWord.word}</h3>
-            <p className="text-[var(--color-neutral)] font-mono text-lg mb-6">/{currentWord.ipa || 'no ipa'}/</p>
+          <Card className="absolute srs-card-back backface-hidden rotate-y-180 shadow-2xl">
+            <h3 className="srs-title" style={{ color: '#fff' }}>{currentWord.word}</h3>
+            <p className="srs-ipa">/{currentWord.ipa || 'no ipa'}/</p>
             
-            <div className="bg-[rgba(255,255,255,0.05)] w-full py-4 rounded-xl mb-8">
-              <p className="text-2xl font-semibold text-[var(--color-accent)]">{currentWord.meaning || 'No translation available'}</p>
+            <div className="srs-meaning-box">
+              <p className="srs-meaning">{currentWord.meaning || 'No translation available'}</p>
             </div>
 
-            <div className="w-full">
-              <p className="text-[var(--color-neutral)] text-sm mb-3">How well did you know this?</p>
-              <div className="grid grid-cols-3 gap-3">
+            <div style={{ width: '100%' }}>
+              <p style={{ color: 'var(--color-neutral)', fontSize: '0.875rem', marginBottom: '0.75rem' }}>How well did you know this?</p>
+              <div className="srs-buttons">
                 <button 
                   onClick={(e) => { e.stopPropagation(); handleReview(1); }}
-                  className="py-3 rounded-lg bg-[rgba(239,68,68,0.1)] text-[rgb(248,113,113)] border border-[rgba(239,68,68,0.2)] hover:bg-[rgba(239,68,68,0.2)] font-semibold transition-colors"
+                  className="srs-btn srs-btn-hard"
                 >
                   Hard
                 </button>
                 <button 
                   onClick={(e) => { e.stopPropagation(); handleReview(3); }}
-                  className="py-3 rounded-lg bg-[rgba(234,179,8,0.1)] text-[rgb(250,204,21)] border border-[rgba(234,179,8,0.2)] hover:bg-[rgba(234,179,8,0.2)] font-semibold transition-colors"
+                  className="srs-btn srs-btn-good"
                 >
                   Good
                 </button>
                 <button 
                   onClick={(e) => { e.stopPropagation(); handleReview(5); }}
-                  className="py-3 rounded-lg bg-[rgba(34,197,94,0.1)] text-[rgb(74,222,128)] border border-[rgba(34,197,94,0.2)] hover:bg-[rgba(34,197,94,0.2)] font-semibold transition-colors"
+                  className="srs-btn srs-btn-easy"
                 >
                   Easy
                 </button>

@@ -85,19 +85,16 @@ const ContextMode = () => {
           <div className="absolute inset-0 bg-[rgba(34,197,94,0.1)] success-pulse z-0 rounded-[var(--radius-lg)]" />
         )}
         
-        <div className="relative z-10">
-          <div className="text-2xl md:text-3xl font-medium text-white mb-12 leading-relaxed flex flex-wrap items-center justify-center gap-2">
+        <div className="relative z-10" style={{ width: '100%' }}>
+          <div className="context-sentence">
             <span>{parts[0]}</span>
-            <span className={`inline-flex items-center justify-center min-w-[120px] h-[40px] px-4 transition-all duration-300 border-b-4 ${
-              status === 'correct' ? 'border-[var(--color-accent)] text-[var(--color-accent)] font-bold' : 
-              'border-[var(--color-neutral)] text-[var(--color-neutral)] opacity-50'
-            }`}>
+            <span className={`context-blank ${status === 'correct' ? 'filled' : ''}`}>
               {status === 'correct' ? currentItem.word : '________'}
             </span>
             <span>{parts[1]}</span>
           </div>
 
-          <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 max-w-lg mx-auto ${status === 'incorrect' ? 'shake' : ''}`}>
+          <div className={`context-grid ${status === 'incorrect' ? 'shake' : ''}`}>
             {options.map((opt, i) => {
               let statusClass = '';
               if (status === 'correct' && opt === currentItem.word) statusClass = 'correct-ans';
@@ -108,6 +105,7 @@ const ContextMode = () => {
                   key={i} 
                   className={`option-btn ${statusClass}`}
                   onClick={() => handleGuess(opt)}
+                  style={{ width: '100%' }}
                 >
                   {opt}
                 </button>
