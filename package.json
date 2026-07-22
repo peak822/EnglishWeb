@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vitalets/google-translate-api": "^9.2.1",
     "lucide-react": "^1.25.0",
     "pdf-parse": "^2.4.5",
     "pdf2json": "^4.0.3",
