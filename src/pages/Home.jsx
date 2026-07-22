@@ -1,12 +1,20 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Type, Puzzle, HelpCircle, ArrowRight } from 'lucide-react';
+import { Type, Puzzle, HelpCircle, ArrowRight, BookOpen } from 'lucide-react';
 import Card from '../components/Card';
 
 const Home = () => {
   const navigate = useNavigate();
 
   const modes = [
+    {
+      id: 'read',
+      title: 'อ่านคำศัพท์',
+      description: 'Browse, search, and study the entire Oxford 3000 vocabulary list.',
+      icon: <BookOpen size={32} />,
+      path: '/read',
+      color: 'var(--color-surface)'
+    },
     {
       id: 'typing',
       title: 'พิมพ์คำศัพท์',
@@ -29,7 +37,7 @@ const Home = () => {
       description: 'Guess the word based on hints like part of speech and length.',
       icon: <HelpCircle size={32} />,
       path: '/guess',
-      color: 'var(--color-surface)'
+      color: '#F59E0B' // Changed color to distinct orange since surface is used for read mode
     }
   ];
 

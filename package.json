@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "lucide-react": "^1.25.0",
+    "pdf-parse": "^2.4.5",
+    "pdf2json": "^4.0.3",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-router-dom": "^7.18.1"

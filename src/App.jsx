@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import TypingMode from './pages/TypingMode';
 import AssembleMode from './pages/AssembleMode';
 import GuessMode from './pages/GuessMode';
+import ReadMode from './pages/ReadMode';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               <span>English Study</span>
             </Link>
             <div className="nav-links">
+              <Link to="/read" className="nav-link">อ่านคำศัพท์</Link>
               <Link to="/typing" className="nav-link">พิมคำศัพท์</Link>
               <Link to="/assemble" className="nav-link">ประกอบคำศัพท์</Link>
               <Link to="/guess" className="nav-link">ทายคำศัพท์</Link>
@@ -32,6 +34,7 @@ function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/read" element={<ReadMode />} />
             <Route path="/typing" element={<TypingMode />} />
             <Route path="/assemble" element={<AssembleMode />} />
             <Route path="/guess" element={<GuessMode />} />

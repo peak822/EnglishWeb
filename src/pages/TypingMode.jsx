@@ -52,8 +52,22 @@ const TypingMode = () => {
   const currentWord = words[currentIndex];
 
   const handleInputChange = (e) => {
-    setInput(e.target.value.toLowerCase());
-    setStatus('idle');
+    const val = e.target.value.toLowerCase();
+    setInput(val);
+    
+    // Auto-advance if the typed word is exactly correct
+    if (currentWord && val.trim() === currentWord.word.toLowerCase()) {
+      setStatus('correct');
+      setTimeout(() => {
+        setCurrentIndex(prev => prev + 1);
+        setInput('');
+        setStatus('idle');
+        setWrongCount(0);
+        setShowHint(false);
+      }, 1000);
+    } else if (status !== 'incorrect' && status !== 'revealed') {
+      setStatus('idle');
+    }
   };
 
   const handleSubmit = (e) => {
