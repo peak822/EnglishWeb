@@ -86,15 +86,15 @@ const ContextMode = () => {
         )}
         
         <div className="relative z-10">
-          <div className="text-2xl md:text-3xl font-medium text-white mb-12 leading-relaxed">
-            {parts[0]}
-            <span className={`inline-block border-b-4 mx-2 px-4 transition-colors ${
+          <div className="text-2xl md:text-3xl font-medium text-white mb-12 leading-relaxed flex flex-wrap items-center justify-center gap-2">
+            <span>{parts[0]}</span>
+            <span className={`inline-flex items-center justify-center min-w-[120px] h-[40px] px-4 transition-all duration-300 border-b-4 ${
               status === 'correct' ? 'border-[var(--color-accent)] text-[var(--color-accent)] font-bold' : 
-              'border-[var(--color-neutral)] text-transparent'
+              'border-[var(--color-neutral)] text-[var(--color-neutral)] opacity-50'
             }`}>
-              {status === 'correct' ? currentItem.word : 'word'}
+              {status === 'correct' ? currentItem.word : '________'}
             </span>
-            {parts[1]}
+            <span>{parts[1]}</span>
           </div>
 
           <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 max-w-lg mx-auto ${status === 'incorrect' ? 'shake' : ''}`}>
