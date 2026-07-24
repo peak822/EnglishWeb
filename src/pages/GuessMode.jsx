@@ -9,6 +9,7 @@ const GuessMode = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [options, setOptions] = useState([]);
   const [status, setStatus] = useState('idle'); 
+  const [selectedOption, setSelectedOption] = useState(null);
   const [hintLevel, setHintLevel] = useState(0);
   const [level, setLevel] = useState('all');
 
@@ -33,6 +34,7 @@ const GuessMode = () => {
     if (words.length > 0 && words[currentIndex]) {
       generateOptions();
       setStatus('idle');
+      setSelectedOption(null);
       setHintLevel(0);
     }
   }, [currentIndex, words]);
@@ -40,21 +42,37 @@ const GuessMode = () => {
   const currentWord = words[currentIndex];
 
   const generateOptions = () => {
-    const correctWord = words[currentIndex].word;
+    const correctWord = words[currentIndex];
     
-    let pool = words.filter(w => w.word !== correctWord && w.level === currentWord.level);
+    // Try to get words of the SAME type to make it harder to guess just by grammar
+    let pool = words.filter(w => w.word !== correctWord.word && w.type === correctWord.type && w.level === correctWord.level);
+    
+    // If not enough words of the same type in the same level, expand to all levels but same type
     if (pool.length < 3) {
-      pool = vocabularyData.filter(w => w.word !== correctWord);
+      pool = vocabularyData.filter(w => w.word !== correctWord.word && w.type === correctWord.type);
+    }
+
+    // If STILL not enough words, just get any word
+    if (pool.length < 3) {
+      pool = vocabularyData.filter(w => w.word !== correctWord.word);
     }
     
-    pool = pool.sort(() => 0.5 - Math.random()).slice(0, 3);
+    // To make choices more diverse, we ensure they are unique words
+    // Remove duplicates from pool just in case
+    const uniquePoolMap = new Map();
+    pool.forEach(w => uniquePoolMap.set(w.word, w));
+    const uniquePool = Array.from(uniquePoolMap.values());
     
-    const newOptions = [...pool.map(w => w.word), correctWord].sort(() => 0.5 - Math.random());
+    pool = uniquePool.sort(() => 0.5 - Math.random()).slice(0, 3);
+    
+    const newOptions = [...pool.map(w => w.word), correctWord.word].sort(() => 0.5 - Math.random());
     setOptions(newOptions);
   };
 
   const handleGuess = (guess) => {
     if (status !== 'idle') return;
+
+    setSelectedOption(guess);
 
     if (guess === currentWord.word) {
       setStatus('correct');
@@ -68,6 +86,7 @@ const GuessMode = () => {
       setStatus('incorrect');
       setTimeout(() => {
         setStatus('idle');
+        setSelectedOption(null);
       }, 1000);
     }
   };
@@ -118,16 +137,16 @@ const GuessMode = () => {
               </div>
             ) : (
               <>
-                <h3 className="text-xl mb-6 text-[var(--color-neutral)] font-medium">Guess the word for this part of speech:</h3>
-                <div className="word-type text-2xl mb-12">
-                  {currentWord.type}
+                <h3 className="text-xl mb-6 text-[var(--color-neutral)] font-medium">Guess the word for this meaning:</h3>
+                <div className="word-type text-2xl mb-12 text-[var(--color-accent)]">
+                  {currentWord.meaning}
                 </div>
 
                 <div className={`options-grid w-full ${status === 'incorrect' ? 'shake' : ''}`}>
                   {options.map((opt, i) => {
                     let statusClass = '';
                     if (status === 'correct' && opt === currentWord.word) statusClass = 'correct-ans';
-                    if (status === 'incorrect' && opt === currentWord.word) statusClass = 'incorrect-ans';
+                    if (status === 'incorrect' && opt === selectedOption) statusClass = 'incorrect-ans';
                     
                     return (
                       <button 
@@ -170,7 +189,7 @@ const GuessMode = () => {
                       )}
                       {hintLevel >= 2 && (
                         <p style={{ marginTop: '0.5rem', paddingTop: '0.5rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-                          Meaning: <span style={{ color: 'var(--color-accent)', fontWeight: '600', marginLeft: '0.25rem' }}>{currentWord.meaning || "No translation"}</span>
+                          Part of speech: <span style={{ color: 'var(--color-accent)', fontWeight: '600', marginLeft: '0.25rem' }}>{currentWord.type || "Unknown"}</span>
                         </p>
                       )}
                     </div>

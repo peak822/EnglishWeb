@@ -13,7 +13,7 @@
     "level": "A1",
     "id": 2,
     "meaning": "เกี่ยวกับ",
-    "thai_pronunciation": "เออะ บ๊าว ถึ ʌ b ˈaʊ",
+    "thai_pronunciation": "เออะ บ๊าว ถึ",
     "ipa": "t"
   },
   {
@@ -22,7 +22,7 @@
     "level": "A1",
     "id": 3,
     "meaning": "ข้างบน",
-    "thai_pronunciation": "เออะ บ๊ะ ฝึ ʌ b ˈʌ",
+    "thai_pronunciation": "เออะ บ๊ะ ฝึ",
     "ipa": "v"
   },
   {
@@ -31,7 +31,7 @@
     "level": "A1",
     "id": 4,
     "meaning": "ข้าม",
-    "thai_pronunciation": "เออะ คร้อ สึ ʌ k r ˈɔː",
+    "thai_pronunciation": "เออะ คร้อ สึ",
     "ipa": "s"
   },
   {
@@ -40,7 +40,7 @@
     "level": "A1",
     "id": 5,
     "meaning": "การกระทำ",
-    "thai_pronunciation": "แอ๊ ขึ เฉอะ น ˈæ k ʃ ʌ",
+    "thai_pronunciation": "แอ๊ ขึ เฉอะ น",
     "ipa": "n"
   },
   {
@@ -49,7 +49,7 @@
     "level": "A1",
     "id": 6,
     "meaning": "กิจกรรม",
-    "thai_pronunciation": "แอ่ ขึ ทิ เฝอะ ถี่ æ k t ˈɪ v ʌ t",
+    "thai_pronunciation": "แอ่ ขึ ทิ เฝอะ ถี่",
     "ipa": "iː"
   },
   {
@@ -58,7 +58,7 @@
     "level": "A1",
     "id": 7,
     "meaning": "นักแสดงชาย",
-    "thai_pronunciation": "แอ๊ ขึ เถ่อ ร ˈæ k t ɜːʴ",
+    "thai_pronunciation": "แอ๊ ขึ เถ่อ ร",
     "ipa": "ˈæktər"
   },
   {
@@ -67,7 +67,7 @@
     "level": "A1",
     "id": 8,
     "meaning": "นักแสดงหญิง",
-    "thai_pronunciation": "แอ๊ ขึ เถรอะ สึ ˈæ k t r ʌ",
+    "thai_pronunciation": "แอ๊ ขึ เถรอะ สึ",
     "ipa": "s"
   },
   {
@@ -76,7 +76,7 @@
     "level": "A1",
     "id": 9,
     "meaning": "เพิ่ม",
-    "thai_pronunciation": "แอ๊ ดึ ˈæ",
+    "thai_pronunciation": "แอ๊ ดึ",
     "ipa": "d"
   },
   {
@@ -85,7 +85,7 @@
     "level": "A1",
     "id": 10,
     "meaning": "คำแนะนำ",
-    "thai_pronunciation": "แอ่ ดึ ฟ้าย สึ æ d v ˈaɪ",
+    "thai_pronunciation": "แอ่ ดึ ฟ้าย สึ",
     "ipa": "s"
   },
   {
@@ -94,7 +94,7 @@
     "level": "A1",
     "id": 11,
     "meaning": "เกรงกลัว",
-    "thai_pronunciation": "เออะ เฟร้ ดึ ʌ f r ˈeɪ",
+    "thai_pronunciation": "เออะ เฟร้ ดึ",
     "ipa": "d"
   },
   {
@@ -103,7 +103,7 @@
     "level": "A1",
     "id": 12,
     "meaning": "ตอนบ่าย",
-    "thai_pronunciation": "แอ ฝึ เถ่อ ร นู้ น ˌæ f t ɜːʴ n ˈuː",
+    "thai_pronunciation": "แอ ฝึ เถ่อ ร นู้ น",
     "ipa": "n"
   },
   {
@@ -112,7 +112,7 @@
     "level": "A1",
     "id": 13,
     "meaning": "อีกครั้ง",
-    "thai_pronunciation": "เออะ เก๊ะ น ʌ g ˈe",
+    "thai_pronunciation": "เออะ เก๊ะ น",
     "ipa": "n"
   },
   {
@@ -121,7 +121,7 @@
     "level": "A1",
     "id": 14,
     "meaning": "ที่ผ่านมา",
-    "thai_pronunciation": "เออะ โก๊ว ʌ g ˈəʊ",
+    "thai_pronunciation": "เออะ โก๊ว",
     "ipa": "əˈgoʊ"
   },
   {
@@ -130,7 +130,7 @@
     "level": "A1",
     "id": 15,
     "meaning": "เห็นด้วย",
-    "thai_pronunciation": "เออะ กรี๊ ʌ g r",
+    "thai_pronunciation": "เออะ กรี๊",
     "ipa": "ˈiː"
   },
   {
@@ -139,7 +139,7 @@
     "level": "A1",
     "id": 16,
     "meaning": "อากาศ",
-    "thai_pronunciation": "แอ๊ ร ˈe",
+    "thai_pronunciation": "แอ๊ ร",
     "ipa": "r"
   },
   {
@@ -148,7 +148,7 @@
     "level": "A1",
     "id": 17,
     "meaning": "สนามบิน",
-    "thai_pronunciation": "แอ๊ ร พอ ร ถึ ˈe r p ˌɔː r",
+    "thai_pronunciation": "แอ๊ ร พอ ร ถึ",
     "ipa": "t"
   },
   {
@@ -157,7 +157,7 @@
     "level": "A1",
     "id": 18,
     "meaning": "อีกด้วย",
-    "thai_pronunciation": "อ๊อ ล โส่ว ˈɔː l s əʊ",
+    "thai_pronunciation": "อ๊อ ล โส่ว",
     "ipa": "ˈɔlsoʊ"
   },
   {
@@ -166,7 +166,7 @@
     "level": "A1",
     "id": 19,
     "meaning": "เสมอ",
-    "thai_pronunciation": "อ๊อ ล เว สึ ˈɔː l w ˌeɪ",
+    "thai_pronunciation": "อ๊อ ล เว สึ",
     "ipa": "z"
   },
   {
@@ -175,7 +175,7 @@
     "level": "A1",
     "id": 20,
     "meaning": "อัศจรรย์",
-    "thai_pronunciation": "เออะ เม้ สิ่ ง ʌ m ˈeɪ z ɪ",
+    "thai_pronunciation": "เออะ เม้ สิ่ ง",
     "ipa": "ŋ"
   },
   {
@@ -184,7 +184,7 @@
     "level": "A1",
     "id": 21,
     "meaning": "และ",
-    "thai_pronunciation": "เออะ น ดึ ʌ n",
+    "thai_pronunciation": "เออะ น ดึ",
     "ipa": "d"
   },
   {
@@ -193,7 +193,7 @@
     "level": "A1",
     "id": 22,
     "meaning": "โกรธ",
-    "thai_pronunciation": "แอ๊ ง กรี่ ˈæ ŋ g r",
+    "thai_pronunciation": "แอ๊ ง กรี่",
     "ipa": "iː"
   },
   {
@@ -202,7 +202,7 @@
     "level": "A1",
     "id": 23,
     "meaning": "สัตว์",
-    "thai_pronunciation": "แอ๊ เหนอะ เหมอะ ล ˈæ n ʌ m ʌ",
+    "thai_pronunciation": "แอ๊ เหนอะ เหมอะ ล",
     "ipa": "l"
   },
   {
@@ -211,7 +211,7 @@
     "level": "A1",
     "id": 24,
     "meaning": "อื่น",
-    "thai_pronunciation": "เออะ นะ เด่อ ร ʌ n ˈʌ ð ɜːʴ",
+    "thai_pronunciation": "เออะ นะ เด่อ ร",
     "ipa": "əˈnəðər"
   },
   {
@@ -220,7 +220,7 @@
     "level": "A1",
     "id": 25,
     "meaning": "คำตอบ",
-    "thai_pronunciation": "แอ๊ น เส่อ ร ˈæ n s ɜːʴ",
+    "thai_pronunciation": "แอ๊ น เส่อ ร",
     "ipa": "ˈænsər"
   },
   {
@@ -229,7 +229,7 @@
     "level": "A1",
     "id": 26,
     "meaning": "ใครก็ได้",
-    "thai_pronunciation": "เอ๊ะ หนี่ วะ น ˈe n iː w ˌʌ",
+    "thai_pronunciation": "เอ๊ะ หนี่ วะ น",
     "ipa": "n"
   },
   {
@@ -238,7 +238,7 @@
     "level": "A1",
     "id": 27,
     "meaning": "อะไรก็ตาม",
-    "thai_pronunciation": "เอ๊ะ หนี่ ติ ง ˈe n iː θ ˌɪ",
+    "thai_pronunciation": "เอ๊ะ หนี่ ติ ง",
     "ipa": "ŋ"
   },
   {
@@ -247,7 +247,7 @@
     "level": "A1",
     "id": 28,
     "meaning": "อพาร์ทเม้น",
-    "thai_pronunciation": "เออะ พ้าร ถึ เหมอะ น ถึ ʌ p ˈɑː r t m ʌ n",
+    "thai_pronunciation": "เออะ พ้าร ถึ เหมอะ น ถึ",
     "ipa": "t"
   },
   {
@@ -256,7 +256,7 @@
     "level": "A1",
     "id": 29,
     "meaning": "แอปเปิล",
-    "thai_pronunciation": "แอ๊ เผอะ ล ˈæ p ʌ",
+    "thai_pronunciation": "แอ๊ เผอะ ล",
     "ipa": "l"
   },
   {
@@ -265,7 +265,7 @@
     "level": "A1",
     "id": 30,
     "meaning": "เมษายน",
-    "thai_pronunciation": "เอ๊ เผรอะ ล ˈeɪ p r ʌ",
+    "thai_pronunciation": "เอ๊ เผรอะ ล",
     "ipa": "l"
   },
   {
@@ -274,7 +274,7 @@
     "level": "A1",
     "id": 31,
     "meaning": "พื้นที่",
-    "thai_pronunciation": "แอ๊ ร อี่ เออะ ˈe r iː",
+    "thai_pronunciation": "แอ๊ ร อี่ เออะ",
     "ipa": "ʌ"
   },
   {
@@ -283,7 +283,7 @@
     "level": "A1",
     "id": 32,
     "meaning": "แขน",
-    "thai_pronunciation": "อ๊าร ม ˈɑː r",
+    "thai_pronunciation": "อ๊าร ม",
     "ipa": "m"
   },
   {
@@ -292,7 +292,7 @@
     "level": "A1",
     "id": 33,
     "meaning": "รอบๆ",
-    "thai_pronunciation": "เอ่อ ร ร้าว น ดึ ɜːʴ ˈaʊ n",
+    "thai_pronunciation": "เอ่อ ร ร้าว น ดึ",
     "ipa": "d"
   },
   {
@@ -301,7 +301,7 @@
     "level": "A1",
     "id": 34,
     "meaning": "มาถึง",
-    "thai_pronunciation": "เอ่อ ร ร้าย ฝึ ɜːʴ ˈaɪ",
+    "thai_pronunciation": "เอ่อ ร ร้าย ฝึ",
     "ipa": "v"
   },
   {
@@ -310,7 +310,7 @@
     "level": "A1",
     "id": 35,
     "meaning": "ศิลปะ",
-    "thai_pronunciation": "อ๊าร ถึ ˈɑː r",
+    "thai_pronunciation": "อ๊าร ถึ",
     "ipa": "t"
   },
   {
@@ -319,7 +319,7 @@
     "level": "A1",
     "id": 36,
     "meaning": "ศิลปิน",
-    "thai_pronunciation": "อ๊าร เถอะ สึ ถึ ˈɑː r t ʌ s",
+    "thai_pronunciation": "อ๊าร เถอะ สึ ถึ",
     "ipa": "t"
   },
   {
@@ -328,7 +328,7 @@
     "level": "A1",
     "id": 37,
     "meaning": "ถาม",
-    "thai_pronunciation": "แอ๊ สึ ขึ ˈæ s",
+    "thai_pronunciation": "แอ๊ สึ ขึ",
     "ipa": "k"
   },
   {
@@ -337,7 +337,7 @@
     "level": "A1",
     "id": 38,
     "meaning": "ที่",
-    "thai_pronunciation": "แอ๊ ถึ ˈæ",
+    "thai_pronunciation": "แอ๊ ถึ",
     "ipa": "t"
   },
   {
@@ -346,7 +346,7 @@
     "level": "A1",
     "id": 39,
     "meaning": "สิงหาคม",
-    "thai_pronunciation": "อ๊า เกอะ สึ ถึ ˈɑː g ʌ s",
+    "thai_pronunciation": "อ๊า เกอะ สึ ถึ",
     "ipa": "t"
   },
   {
@@ -355,7 +355,7 @@
     "level": "A1",
     "id": 40,
     "meaning": "ป้า",
-    "thai_pronunciation": "แอ๊ น ถึ ˈæ n",
+    "thai_pronunciation": "แอ๊ น ถึ",
     "ipa": "t"
   },
   {
@@ -364,7 +364,7 @@
     "level": "A1",
     "id": 41,
     "meaning": "ฤดูใบไม้ร่วง",
-    "thai_pronunciation": "อ๊อ เถอะ ม ˈɔː t ʌ",
+    "thai_pronunciation": "อ๊อ เถอะ ม",
     "ipa": "m"
   },
   {
@@ -373,7 +373,7 @@
     "level": "A1",
     "id": 42,
     "meaning": "ห่างออกไป",
-    "thai_pronunciation": "เออะ เว้ ʌ w ˈeɪ",
+    "thai_pronunciation": "เออะ เว้",
     "ipa": "əˈweɪ"
   },
   {
@@ -382,7 +382,7 @@
     "level": "A1",
     "id": 43,
     "meaning": "ที่รัก",
-    "thai_pronunciation": "เบ๊ บี่ b ˈeɪ b",
+    "thai_pronunciation": "เบ๊ บี่",
     "ipa": "iː"
   },
   {
@@ -391,7 +391,7 @@
     "level": "A1",
     "id": 44,
     "meaning": "แย่",
-    "thai_pronunciation": "แบ ดึ b ˈæ",
+    "thai_pronunciation": "แบ ดึ",
     "ipa": "d"
   },
   {
@@ -400,7 +400,7 @@
     "level": "A1",
     "id": 45,
     "meaning": "ถุง",
-    "thai_pronunciation": "แบ กึ b ˈæ",
+    "thai_pronunciation": "แบ กึ",
     "ipa": "g"
   },
   {
@@ -409,7 +409,7 @@
     "level": "A1",
     "id": 46,
     "meaning": "ลูกบอล",
-    "thai_pronunciation": "บอ ล b ˈɔː",
+    "thai_pronunciation": "บอ ล",
     "ipa": "l"
   },
   {
@@ -418,7 +418,7 @@
     "level": "A1",
     "id": 47,
     "meaning": "กล้วย",
-    "thai_pronunciation": "เบอะ แน้ เหนอะ b ʌ n ˈæ n",
+    "thai_pronunciation": "เบอะ แน้ เหนอะ",
     "ipa": "ʌ"
   },
   {
@@ -427,7 +427,7 @@
     "level": "A1",
     "id": 48,
     "meaning": "วงดนตรี",
-    "thai_pronunciation": "แบ น ดึ b ˈæ n",
+    "thai_pronunciation": "แบ น ดึ",
     "ipa": "d"
   },
   {
@@ -436,7 +436,7 @@
     "level": "A1",
     "id": 49,
     "meaning": "ธนาคาร",
-    "thai_pronunciation": "แบ ง ขึ b ˈæ ŋ",
+    "thai_pronunciation": "แบ ง ขึ",
     "ipa": "k"
   },
   {
@@ -445,7 +445,7 @@
     "level": "A1",
     "id": 50,
     "meaning": "อาบน้ำ",
-    "thai_pronunciation": "แบ ตึ b ˈæ",
+    "thai_pronunciation": "แบ ตึ",
     "ipa": "θ"
   },
   {
@@ -454,7 +454,7 @@
     "level": "A1",
     "id": 51,
     "meaning": "ห้องน้ำ",
-    "thai_pronunciation": "แบ๊ ตรู ม b ˈæ θ r ˌuː",
+    "thai_pronunciation": "แบ๊ ตรู ม",
     "ipa": "m"
   },
   {
@@ -463,7 +463,7 @@
     "level": "A1",
     "id": 52,
     "meaning": "เป็น",
-    "thai_pronunciation": "บี b",
+    "thai_pronunciation": "บี",
     "ipa": "ˈiː"
   },
   {
@@ -472,7 +472,7 @@
     "level": "A1",
     "id": 53,
     "meaning": "ชายหาด",
-    "thai_pronunciation": "บี ฉึ b ˈiː",
+    "thai_pronunciation": "บี ฉึ",
     "ipa": "tʃ"
   },
   {
@@ -481,7 +481,7 @@
     "level": "A1",
     "id": 54,
     "meaning": "สวย",
-    "thai_pronunciation": "บึ ยู้ เถอะ เฝอะ ล b j ˈuː t ʌ f ʌ",
+    "thai_pronunciation": "บึ ยู้ เถอะ เฝอะ ล",
     "ipa": "l"
   },
   {
@@ -490,7 +490,7 @@
     "level": "A1",
     "id": 55,
     "meaning": "เพราะ",
-    "thai_pronunciation": "บิ ค้อ สึ b ɪ k ˈɔː",
+    "thai_pronunciation": "บิ ค้อ สึ",
     "ipa": "z"
   },
   {
@@ -499,7 +499,7 @@
     "level": "A1",
     "id": 56,
     "meaning": "กลายเป็น",
-    "thai_pronunciation": "บิ คะ ม b ɪ k ˈʌ",
+    "thai_pronunciation": "บิ คะ ม",
     "ipa": "m"
   },
   {
@@ -508,7 +508,7 @@
     "level": "A1",
     "id": 57,
     "meaning": "เตียง",
-    "thai_pronunciation": "เบะ ดึ b ˈe",
+    "thai_pronunciation": "เบะ ดึ",
     "ipa": "d"
   },
   {
@@ -517,7 +517,7 @@
     "level": "A1",
     "id": 58,
     "meaning": "ห้องนอน",
-    "thai_pronunciation": "เบ๊ะ ดรู ม b ˈe d r ˌuː",
+    "thai_pronunciation": "เบ๊ะ ดรู ม",
     "ipa": "m"
   },
   {
@@ -526,7 +526,7 @@
     "level": "A1",
     "id": 59,
     "meaning": "เบียร์",
-    "thai_pronunciation": "เบีย ร b ˈɪ",
+    "thai_pronunciation": "เบีย ร",
     "ipa": "r"
   },
   {
@@ -535,7 +535,7 @@
     "level": "A1",
     "id": 60,
     "meaning": "เริ่ม",
-    "thai_pronunciation": "บิ กิ้ น b ɪ g ˈɪ",
+    "thai_pronunciation": "บิ กิ้ น",
     "ipa": "n"
   },
   {
@@ -544,7 +544,7 @@
     "level": "A1",
     "id": 61,
     "meaning": "จุดเริ่มต้น",
-    "thai_pronunciation": "บิ กิ้ หนิ่ ง b ɪ g ˈɪ n ɪ",
+    "thai_pronunciation": "บิ กิ้ หนิ่ ง",
     "ipa": "ŋ"
   },
   {
@@ -553,7 +553,7 @@
     "level": "A1",
     "id": 62,
     "meaning": "ด้านหลัง",
-    "thai_pronunciation": "บิ ฮ้าย น ดึ b ɪ h ˈaɪ n",
+    "thai_pronunciation": "บิ ฮ้าย น ดึ",
     "ipa": "d"
   },
   {
@@ -562,7 +562,7 @@
     "level": "A1",
     "id": 63,
     "meaning": "เชื่อ",
-    "thai_pronunciation": "บิ ลี้ ฝึ b ɪ l ˈiː",
+    "thai_pronunciation": "บิ ลี้ ฝึ",
     "ipa": "v"
   },
   {
@@ -571,7 +571,7 @@
     "level": "A1",
     "id": 64,
     "meaning": "ด้านล่าง",
-    "thai_pronunciation": "บิ โล้ว b ɪ l ˈəʊ",
+    "thai_pronunciation": "บิ โล้ว",
     "ipa": "bɪˈloʊ"
   },
   {
@@ -580,7 +580,7 @@
     "level": "A1",
     "id": 65,
     "meaning": "จักรยาน",
-    "thai_pronunciation": "บ๊าย สิ่ เขอะ ล b ˈaɪ s ɪ k ʌ",
+    "thai_pronunciation": "บ๊าย สิ่ เขอะ ล",
     "ipa": "l"
   },
   {
@@ -589,7 +589,7 @@
     "level": "A1",
     "id": 66,
     "meaning": "ใหญ่",
-    "thai_pronunciation": "บิ กึ b ˈɪ",
+    "thai_pronunciation": "บิ กึ",
     "ipa": "g"
   },
   {
@@ -598,7 +598,7 @@
     "level": "A1",
     "id": 67,
     "meaning": "จักรยาน",
-    "thai_pronunciation": "บาย ขึ b ˈaɪ",
+    "thai_pronunciation": "บาย ขึ",
     "ipa": "k"
   },
   {
@@ -607,7 +607,7 @@
     "level": "A1",
     "id": 68,
     "meaning": "นก",
-    "thai_pronunciation": "เบอ ร ดึ b ˈɜːʴ",
+    "thai_pronunciation": "เบอ ร ดึ",
     "ipa": "d"
   },
   {
@@ -616,7 +616,7 @@
     "level": "A1",
     "id": 69,
     "meaning": "วันเกิด",
-    "thai_pronunciation": "เบ๊อ ร ตึ เด b ˈɜːʴ θ d ˌeɪ",
+    "thai_pronunciation": "เบ๊อ ร ตึ เด",
     "ipa": "ˈbərθˌdeɪ"
   },
   {
@@ -625,7 +625,7 @@
     "level": "A1",
     "id": 70,
     "meaning": "สีดำ",
-    "thai_pronunciation": "แบล ขึ b l ˈæ",
+    "thai_pronunciation": "แบล ขึ",
     "ipa": "k"
   },
   {
@@ -634,7 +634,7 @@
     "level": "A1",
     "id": 71,
     "meaning": "บล็อก",
-    "thai_pronunciation": "บลอ กึ b l ˈɔː",
+    "thai_pronunciation": "บลอ กึ",
     "ipa": "g"
   },
   {
@@ -643,7 +643,7 @@
     "level": "A1",
     "id": 72,
     "meaning": "สีบลอนด์",
-    "thai_pronunciation": "บลา น ดึ b l ˈɑː n",
+    "thai_pronunciation": "บลา น ดึ",
     "ipa": "d"
   },
   {
@@ -652,7 +652,7 @@
     "level": "A1",
     "id": 73,
     "meaning": "สีฟ้า",
-    "thai_pronunciation": "บลู b l",
+    "thai_pronunciation": "บลู",
     "ipa": "ˈuː"
   },
   {
@@ -661,7 +661,7 @@
     "level": "A1",
     "id": 74,
     "meaning": "เรือ",
-    "thai_pronunciation": "โบว ถึ b ˈəʊ",
+    "thai_pronunciation": "โบว ถึ",
     "ipa": "t"
   },
   {
@@ -670,7 +670,7 @@
     "level": "A1",
     "id": 75,
     "meaning": "ร่างกาย",
-    "thai_pronunciation": "บ๊า ดี่ b ˈɑː d",
+    "thai_pronunciation": "บ๊า ดี่",
     "ipa": "iː"
   },
   {
@@ -679,7 +679,7 @@
     "level": "A1",
     "id": 76,
     "meaning": "บูต",
-    "thai_pronunciation": "บู ถึ b ˈuː",
+    "thai_pronunciation": "บู ถึ",
     "ipa": "t"
   },
   {
@@ -688,7 +688,7 @@
     "level": "A1",
     "id": 77,
     "meaning": "เบื่อ",
-    "thai_pronunciation": "บอ ร ดึ b ˈɔː r",
+    "thai_pronunciation": "บอ ร ดึ",
     "ipa": "d"
   },
   {
@@ -697,7 +697,7 @@
     "level": "A1",
     "id": 78,
     "meaning": "น่าเบื่อ",
-    "thai_pronunciation": "บ๊อ หริ่ ง b ˈɔː r ɪ",
+    "thai_pronunciation": "บ๊อ หริ่ ง",
     "ipa": "ŋ"
   },
   {
@@ -706,7 +706,7 @@
     "level": "A1",
     "id": 79,
     "meaning": "เกิด",
-    "thai_pronunciation": "บอ ร น b ˈɔː r",
+    "thai_pronunciation": "บอ ร น",
     "ipa": "n"
   },
   {
@@ -715,7 +715,7 @@
     "level": "A1",
     "id": 80,
     "meaning": "ทั้งคู่",
-    "thai_pronunciation": "โบว ตึ b ˈəʊ",
+    "thai_pronunciation": "โบว ตึ",
     "ipa": "θ"
   },
   {
@@ -724,7 +724,7 @@
     "level": "A1",
     "id": 81,
     "meaning": "ขวด",
-    "thai_pronunciation": "บ๊า เถอะ ล b ˈɑː t ʌ",
+    "thai_pronunciation": "บ๊า เถอะ ล",
     "ipa": "l"
   },
   {
@@ -733,7 +733,7 @@
     "level": "A1",
     "id": 82,
     "meaning": "กล่อง",
-    "thai_pronunciation": "บา ขึ สึ b ˈɑː k",
+    "thai_pronunciation": "บา ขึ สึ",
     "ipa": "s"
   },
   {
@@ -742,7 +742,7 @@
     "level": "A1",
     "id": 83,
     "meaning": "เด็กผู้ชาย",
-    "thai_pronunciation": "บอย b ˈɔɪ",
+    "thai_pronunciation": "บอย",
     "ipa": "bɔɪ"
   },
   {
@@ -751,7 +751,7 @@
     "level": "A1",
     "id": 84,
     "meaning": "แฟน",
-    "thai_pronunciation": "บ๊อย เฟระ น ดึ b ˈɔɪ f r ˌe n",
+    "thai_pronunciation": "บ๊อย เฟระ น ดึ",
     "ipa": "d"
   },
   {
@@ -760,7 +760,7 @@
     "level": "A1",
     "id": 85,
     "meaning": "ขนมปัง",
-    "thai_pronunciation": "เบระ ดึ b r ˈe",
+    "thai_pronunciation": "เบระ ดึ",
     "ipa": "d"
   },
   {
@@ -769,7 +769,7 @@
     "level": "A1",
     "id": 86,
     "meaning": "หยุดพัก",
-    "thai_pronunciation": "เบร ขึ b r ˈeɪ",
+    "thai_pronunciation": "เบร ขึ",
     "ipa": "k"
   },
   {
@@ -778,7 +778,7 @@
     "level": "A1",
     "id": 87,
     "meaning": "อาหารเช้า",
-    "thai_pronunciation": "เบร๊ะ ขึ เฝอะ สึ ถึ b r ˈe k f ʌ s",
+    "thai_pronunciation": "เบร๊ะ ขึ เฝอะ สึ ถึ",
     "ipa": "t"
   },
   {
@@ -787,7 +787,7 @@
     "level": "A1",
     "id": 88,
     "meaning": "นำมา",
-    "thai_pronunciation": "บริ ง b r ˈɪ",
+    "thai_pronunciation": "บริ ง",
     "ipa": "ŋ"
   },
   {
@@ -796,7 +796,7 @@
     "level": "A1",
     "id": 89,
     "meaning": "พี่ชาย",
-    "thai_pronunciation": "บร๊ะ เด่อ ร b r ˈʌ ð ɜːʴ",
+    "thai_pronunciation": "บร๊ะ เด่อ ร",
     "ipa": "ˈbrəðər"
   },
   {
@@ -805,7 +805,7 @@
     "level": "A1",
     "id": 90,
     "meaning": "สีน้ำตาล",
-    "thai_pronunciation": "บราว น b r ˈaʊ",
+    "thai_pronunciation": "บราว น",
     "ipa": "n"
   },
   {
@@ -814,7 +814,7 @@
     "level": "A1",
     "id": 91,
     "meaning": "สร้าง",
-    "thai_pronunciation": "บิ ล ดึ b ˈɪ l",
+    "thai_pronunciation": "บิ ล ดึ",
     "ipa": "d"
   },
   {
@@ -823,7 +823,7 @@
     "level": "A1",
     "id": 92,
     "meaning": "อาคาร",
-    "thai_pronunciation": "บิ้ ล ดิ ง b ˈɪ l d ɪ",
+    "thai_pronunciation": "บิ้ ล ดิ ง",
     "ipa": "ŋ"
   },
   {
@@ -832,7 +832,7 @@
     "level": "A1",
     "id": 93,
     "meaning": "รสบัส",
-    "thai_pronunciation": "บะ สึ b ˈʌ",
+    "thai_pronunciation": "บะ สึ",
     "ipa": "s"
   },
   {
@@ -841,7 +841,7 @@
     "level": "A1",
     "id": 94,
     "meaning": "ธุรกิจ",
-    "thai_pronunciation": "บิ้ สึ เหนอะ สึ b ˈɪ z n ʌ",
+    "thai_pronunciation": "บิ้ สึ เหนอะ สึ",
     "ipa": "s"
   },
   {
@@ -850,7 +850,7 @@
     "level": "A1",
     "id": 95,
     "meaning": "ยุ่ง",
-    "thai_pronunciation": "บิ้ สี่ b ˈɪ z",
+    "thai_pronunciation": "บิ้ สี่",
     "ipa": "iː"
   },
   {
@@ -859,7 +859,7 @@
     "level": "A1",
     "id": 96,
     "meaning": "เนย",
-    "thai_pronunciation": "บ๊ะ เถ่อ ร b ˈʌ t ɜːʴ",
+    "thai_pronunciation": "บ๊ะ เถ่อ ร",
     "ipa": "ˈbətər"
   },
   {
@@ -868,7 +868,7 @@
     "level": "A1",
     "id": 97,
     "meaning": "ซื้อ",
-    "thai_pronunciation": "บาย b ˈaɪ",
+    "thai_pronunciation": "บาย",
     "ipa": "baɪ"
   },
   {
@@ -877,7 +877,7 @@
     "level": "A1",
     "id": 98,
     "meaning": "ลาก่อน",
-    "thai_pronunciation": "บาย b ˈaɪ",
+    "thai_pronunciation": "บาย",
     "ipa": "baɪ"
   },
   {
@@ -886,7 +886,7 @@
     "level": "A1",
     "id": 99,
     "meaning": "คาเฟ่",
-    "thai_pronunciation": "เขอะ เฟ้ k ʌ f ˈeɪ",
+    "thai_pronunciation": "เขอะ เฟ้",
     "ipa": "kəˈfeɪ"
   },
   {
@@ -895,7 +895,7 @@
     "level": "A1",
     "id": 100,
     "meaning": "เค้ก",
-    "thai_pronunciation": "เค ขึ k ˈeɪ",
+    "thai_pronunciation": "เค ขึ",
     "ipa": "k"
   },
   {
@@ -904,7 +904,7 @@
     "level": "A1",
     "id": 101,
     "meaning": "เรียก",
-    "thai_pronunciation": "คอ ล k ˈɔː",
+    "thai_pronunciation": "คอ ล",
     "ipa": "l"
   },
   {
@@ -913,7 +913,7 @@
     "level": "A1",
     "id": 102,
     "meaning": "กล้อง",
-    "thai_pronunciation": "แค้ เหม่อ ร เหรอะ k ˈæ m ɜːʴ",
+    "thai_pronunciation": "แค้ เหม่อ ร เหรอะ",
     "ipa": "ʌ"
   },
   {
@@ -938,7 +938,7 @@
     "level": "A1",
     "id": 105,
     "meaning": "เมืองหลวง",
-    "thai_pronunciation": "แค้ เผอะ เถอะ ล k ˈæ p ʌ t ʌ",
+    "thai_pronunciation": "แค้ เผอะ เถอะ ล",
     "ipa": "l"
   },
   {
@@ -947,7 +947,7 @@
     "level": "A1",
     "id": 106,
     "meaning": "รถ",
-    "thai_pronunciation": "คาร k ˈɑː",
+    "thai_pronunciation": "คาร",
     "ipa": "r"
   },
   {
@@ -956,7 +956,7 @@
     "level": "A1",
     "id": 107,
     "meaning": "การ์ด",
-    "thai_pronunciation": "คาร ดึ k ˈɑː r",
+    "thai_pronunciation": "คาร ดึ",
     "ipa": "d"
   },
   {
@@ -965,7 +965,7 @@
     "level": "A1",
     "id": 108,
     "meaning": "อาชีพ",
-    "thai_pronunciation": "เข่อ ร เรี้ย ร k ɜːʴ ˈɪ",
+    "thai_pronunciation": "เข่อ ร เรี้ย ร",
     "ipa": "r"
   },
   {
@@ -974,7 +974,7 @@
     "level": "A1",
     "id": 109,
     "meaning": "แครอท",
-    "thai_pronunciation": "แค้ เหรอะ ถึ k ˈæ r ʌ",
+    "thai_pronunciation": "แค้ เหรอะ ถึ",
     "ipa": "t"
   },
   {
@@ -983,7 +983,7 @@
     "level": "A1",
     "id": 110,
     "meaning": "พก",
-    "thai_pronunciation": "แค้ หรี่ k ˈæ r",
+    "thai_pronunciation": "แค้ หรี่",
     "ipa": "iː"
   },
   {
@@ -992,7 +992,7 @@
     "level": "A1",
     "id": 111,
     "meaning": "แมว",
-    "thai_pronunciation": "แค ถึ k ˈæ",
+    "thai_pronunciation": "แค ถึ",
     "ipa": "t"
   },
   {
@@ -1001,7 +1001,7 @@
     "level": "A1",
     "id": 112,
     "meaning": "ซีดี",
-    "thai_pronunciation": "ซี ดี๊ s ˌiː d",
+    "thai_pronunciation": "ซี ดี๊",
     "ipa": "ˈiː"
   },
   {
@@ -1010,7 +1010,7 @@
     "level": "A1",
     "id": 113,
     "meaning": "ร้อยละ",
-    "thai_pronunciation": "เซะ น ถึ s ˈe n",
+    "thai_pronunciation": "เซะ น ถึ",
     "ipa": "t"
   },
   {
@@ -1019,7 +1019,7 @@
     "level": "A1",
     "id": 114,
     "meaning": "ศตวรรษ",
-    "thai_pronunciation": "เซ้ะ น เฉ่อ ร หรี่ s ˈe n tʃ ɜːʴ",
+    "thai_pronunciation": "เซ้ะ น เฉ่อ ร หรี่",
     "ipa": "iː"
   },
   {
@@ -1028,7 +1028,7 @@
     "level": "A1",
     "id": 115,
     "meaning": "เปลี่ยน",
-    "thai_pronunciation": "เช น จึ tʃ ˈeɪ n",
+    "thai_pronunciation": "เช น จึ",
     "ipa": "dʒ"
   },
   {
@@ -1037,7 +1037,7 @@
     "level": "A1",
     "id": 116,
     "meaning": "ชีส",
-    "thai_pronunciation": "ชี สึ tʃ ˈiː",
+    "thai_pronunciation": "ชี สึ",
     "ipa": "z"
   },
   {
@@ -1046,7 +1046,7 @@
     "level": "A1",
     "id": 117,
     "meaning": "ไก่",
-    "thai_pronunciation": "ชิ เขอะ น tʃ ˈɪ k ʌ",
+    "thai_pronunciation": "ชิ เขอะ น",
     "ipa": "n"
   },
   {
@@ -1055,7 +1055,7 @@
     "level": "A1",
     "id": 118,
     "meaning": "เด็ก",
-    "thai_pronunciation": "ชาย ล ดึ tʃ ˈaɪ l",
+    "thai_pronunciation": "ชาย ล ดึ",
     "ipa": "d"
   },
   {
@@ -1064,7 +1064,7 @@
     "level": "A1",
     "id": 119,
     "meaning": "ช็อคโกแลต",
-    "thai_pronunciation": "ช้อ เขลอะ ถึ tʃ ˈɔː k l ʌ",
+    "thai_pronunciation": "ช้อ เขลอะ ถึ",
     "ipa": "t"
   },
   {
@@ -1073,7 +1073,7 @@
     "level": "A1",
     "id": 120,
     "meaning": "เลือก",
-    "thai_pronunciation": "ชู สึ tʃ ˈuː",
+    "thai_pronunciation": "ชู สึ",
     "ipa": "z"
   },
   {
@@ -1082,7 +1082,7 @@
     "level": "A1",
     "id": 121,
     "meaning": "โรงหนัง",
-    "thai_pronunciation": "ซิ เหนอะ เหมอะ s ˈɪ n ʌ m",
+    "thai_pronunciation": "ซิ เหนอะ เหมอะ",
     "ipa": "ʌ"
   },
   {
@@ -1091,7 +1091,7 @@
     "level": "A1",
     "id": 122,
     "meaning": "เมือง",
-    "thai_pronunciation": "ซิ ถี่ s ˈɪ t",
+    "thai_pronunciation": "ซิ ถี่",
     "ipa": "iː"
   },
   {
@@ -1100,7 +1100,7 @@
     "level": "A1",
     "id": 123,
     "meaning": "ระดับ",
-    "thai_pronunciation": "แคล สึ k l ˈæ",
+    "thai_pronunciation": "แคล สึ",
     "ipa": "s"
   },
   {
@@ -1109,7 +1109,7 @@
     "level": "A1",
     "id": 124,
     "meaning": "ห้องเรียน",
-    "thai_pronunciation": "แคล้ สึ รู ม k l ˈæ s r ˌuː",
+    "thai_pronunciation": "แคล้ สึ รู ม",
     "ipa": "m"
   },
   {
@@ -1118,7 +1118,7 @@
     "level": "A1",
     "id": 125,
     "meaning": "ทำความสะอาด",
-    "thai_pronunciation": "คลี น k l ˈiː",
+    "thai_pronunciation": "คลี น",
     "ipa": "n"
   },
   {
@@ -1127,7 +1127,7 @@
     "level": "A1",
     "id": 126,
     "meaning": "โมง",
-    "thai_pronunciation": "null",
+    "thai_pronunciation": "",
     "ipa": "null"
   },
   {
@@ -1136,7 +1136,7 @@
     "level": "A1",
     "id": 127,
     "meaning": "เสื้อผ้า",
-    "thai_pronunciation": "โคลว ดึ สึ k l ˈəʊ ð",
+    "thai_pronunciation": "โคลว ดึ สึ",
     "ipa": "z"
   },
   {
@@ -1145,7 +1145,7 @@
     "level": "A1",
     "id": 128,
     "meaning": "สโมสร",
-    "thai_pronunciation": "คละ บึ k l ˈʌ",
+    "thai_pronunciation": "คละ บึ",
     "ipa": "b"
   },
   {
@@ -1154,7 +1154,7 @@
     "level": "A1",
     "id": 129,
     "meaning": "เสื้อโค้ท",
-    "thai_pronunciation": "โคว ถึ k ˈəʊ",
+    "thai_pronunciation": "โคว ถึ",
     "ipa": "t"
   },
   {
@@ -1163,7 +1163,7 @@
     "level": "A1",
     "id": 130,
     "meaning": "กาแฟ",
-    "thai_pronunciation": "ค้า ฝี่ k ˈɑː f",
+    "thai_pronunciation": "ค้า ฝี่",
     "ipa": "iː"
   },
   {
@@ -1172,7 +1172,7 @@
     "level": "A1",
     "id": 131,
     "meaning": "เย็น",
-    "thai_pronunciation": "โคว ล ดึ k ˈəʊ l",
+    "thai_pronunciation": "โคว ล ดึ",
     "ipa": "d"
   },
   {
@@ -1181,7 +1181,7 @@
     "level": "A1",
     "id": 132,
     "meaning": "วิทยาลัย",
-    "thai_pronunciation": "ค้า หลิ่ จึ k ˈɑː l ɪ",
+    "thai_pronunciation": "ค้า หลิ่ จึ",
     "ipa": "dʒ"
   },
   {
@@ -1190,7 +1190,7 @@
     "level": "A1",
     "id": 133,
     "meaning": "สี",
-    "thai_pronunciation": "คะ เหล่อ ร k ˈʌ l ɜːʴ",
+    "thai_pronunciation": "คะ เหล่อ ร",
     "ipa": "ˈkələr"
   },
   {
@@ -1199,7 +1199,7 @@
     "level": "A1",
     "id": 134,
     "meaning": "มา",
-    "thai_pronunciation": "คะ ม k ˈʌ",
+    "thai_pronunciation": "คะ ม",
     "ipa": "m"
   },
   {
@@ -1208,7 +1208,7 @@
     "level": "A1",
     "id": 135,
     "meaning": "ทั่วไป",
-    "thai_pronunciation": "ค้า เหมอะ น k ˈɑː m ʌ",
+    "thai_pronunciation": "ค้า เหมอะ น",
     "ipa": "n"
   },
   {
@@ -1217,7 +1217,7 @@
     "level": "A1",
     "id": 136,
     "meaning": "บริษัท",
-    "thai_pronunciation": "คะ ม เผอะ นี k ˈʌ m p ʌ n",
+    "thai_pronunciation": "คะ ม เผอะ นี",
     "ipa": "ˌiː"
   },
   {
@@ -1226,7 +1226,7 @@
     "level": "A1",
     "id": 137,
     "meaning": "เปรียบเทียบ",
-    "thai_pronunciation": "เขอะ ม แพ้ ร k ʌ m p ˈe",
+    "thai_pronunciation": "เขอะ ม แพ้ ร",
     "ipa": "r"
   },
   {
@@ -1235,7 +1235,7 @@
     "level": "A1",
     "id": 138,
     "meaning": "สมบูรณ์",
-    "thai_pronunciation": "เขอะ ม พลี้ ถึ k ʌ m p l ˈiː",
+    "thai_pronunciation": "เขอะ ม พลี้ ถึ",
     "ipa": "t"
   },
   {
@@ -1244,7 +1244,7 @@
     "level": "A1",
     "id": 139,
     "meaning": "คอมพิวเตอร์",
-    "thai_pronunciation": "เขอะ ม ผึ ยู้ เถ่อ ร k ʌ m p j ˈuː t ɜːʴ",
+    "thai_pronunciation": "เขอะ ม ผึ ยู้ เถ่อ ร",
     "ipa": "kəmˈpjutər"
   },
   {
@@ -1253,7 +1253,7 @@
     "level": "A1",
     "id": 140,
     "meaning": "คอนเสิร์ต",
-    "thai_pronunciation": "ค้า น เส่อ ร ถึ k ˈɑː n s ɜːʴ",
+    "thai_pronunciation": "ค้า น เส่อ ร ถึ",
     "ipa": "t"
   },
   {
@@ -1262,7 +1262,7 @@
     "level": "A1",
     "id": 141,
     "meaning": "การสนทนา",
-    "thai_pronunciation": "คา น เฝ่อ ร เซ้ เฉอะ น k ˌɑː n v ɜːʴ s ˈeɪ ʃ ʌ",
+    "thai_pronunciation": "คา น เฝ่อ ร เซ้ เฉอะ น",
     "ipa": "n"
   },
   {
@@ -1271,7 +1271,7 @@
     "level": "A1",
     "id": 142,
     "meaning": "การทำอาหาร",
-    "thai_pronunciation": "คุ ขิ่ ง k ˈʊ k ɪ",
+    "thai_pronunciation": "คุ ขิ่ ง",
     "ipa": "ŋ"
   },
   {
@@ -1280,7 +1280,7 @@
     "level": "A1",
     "id": 143,
     "meaning": "ถูกต้อง",
-    "thai_pronunciation": "เข่อ ร เร้ะ ขึ ถึ k ɜːʴ ˈe k",
+    "thai_pronunciation": "เข่อ ร เร้ะ ขึ ถึ",
     "ipa": "t"
   },
   {
@@ -1289,7 +1289,7 @@
     "level": "A1",
     "id": 144,
     "meaning": "ค่าใช้จ่าย",
-    "thai_pronunciation": "คา สึ ถึ k ˈɑː s",
+    "thai_pronunciation": "คา สึ ถึ",
     "ipa": "t"
   },
   {
@@ -1306,7 +1306,7 @@
     "level": "A1",
     "id": 146,
     "meaning": "ประเทศ",
-    "thai_pronunciation": "คะ น ถรี่ k ˈʌ n t r",
+    "thai_pronunciation": "คะ น ถรี่",
     "ipa": "iː"
   },
   {
@@ -1315,7 +1315,7 @@
     "level": "A1",
     "id": 147,
     "meaning": "คอร์ส",
-    "thai_pronunciation": "คอ ร สึ k ˈɔː r",
+    "thai_pronunciation": "คอ ร สึ",
     "ipa": "s"
   },
   {
@@ -1324,7 +1324,7 @@
     "level": "A1",
     "id": 148,
     "meaning": "ลูกพี่ลูกน้อง",
-    "thai_pronunciation": "คะ เสอะ น k ˈʌ z ʌ",
+    "thai_pronunciation": "คะ เสอะ น",
     "ipa": "n"
   },
   {
@@ -1333,7 +1333,7 @@
     "level": "A1",
     "id": 149,
     "meaning": "วัว",
-    "thai_pronunciation": "คาว k ˈaʊ",
+    "thai_pronunciation": "คาว",
     "ipa": "kaʊ"
   },
   {
@@ -1342,7 +1342,7 @@
     "level": "A1",
     "id": 150,
     "meaning": "สร้าง",
-    "thai_pronunciation": "ขรี่ เอ๊ ถึ k r iː ˈeɪ",
+    "thai_pronunciation": "ขรี่ เอ๊ ถึ",
     "ipa": "t"
   },
   {
@@ -1351,7 +1351,7 @@
     "level": "A1",
     "id": 151,
     "meaning": "วัฒนธรรม",
-    "thai_pronunciation": "คะ ล เฉ่อ ร k ˈʌ l tʃ ɜːʴ",
+    "thai_pronunciation": "คะ ล เฉ่อ ร",
     "ipa": "ˈkəlʧər"
   },
   {
@@ -1360,7 +1360,7 @@
     "level": "A1",
     "id": 152,
     "meaning": "ถ้วย",
-    "thai_pronunciation": "คะ ผึ k ˈʌ",
+    "thai_pronunciation": "คะ ผึ",
     "ipa": "p"
   },
   {
@@ -1369,7 +1369,7 @@
     "level": "A1",
     "id": 153,
     "meaning": "ลูกค้า",
-    "thai_pronunciation": "คะ สึ เถอะ เหม่อ ร k ˈʌ s t ʌ m ɜːʴ",
+    "thai_pronunciation": "คะ สึ เถอะ เหม่อ ร",
     "ipa": "ˈkəstəmər"
   },
   {
@@ -1378,7 +1378,7 @@
     "level": "A1",
     "id": 154,
     "meaning": "พ่อ",
-    "thai_pronunciation": "แด ดึ d ˈæ",
+    "thai_pronunciation": "แด ดึ",
     "ipa": "d"
   },
   {
@@ -1387,7 +1387,7 @@
     "level": "A1",
     "id": 155,
     "meaning": "เต้นรำ",
-    "thai_pronunciation": "แด น สึ d ˈæ n",
+    "thai_pronunciation": "แด น สึ",
     "ipa": "s"
   },
   {
@@ -1396,7 +1396,7 @@
     "level": "A1",
     "id": 156,
     "meaning": "นักเต้น",
-    "thai_pronunciation": "แด๊ น เส่อ ร d ˈæ n s ɜːʴ",
+    "thai_pronunciation": "แด๊ น เส่อ ร",
     "ipa": "ˈdænsər"
   },
   {
@@ -1405,7 +1405,7 @@
     "level": "A1",
     "id": 157,
     "meaning": "การเต้นรำ",
-    "thai_pronunciation": "แด๊ น สิ่ ง d ˈæ n s ɪ",
+    "thai_pronunciation": "แด๊ น สิ่ ง",
     "ipa": "ŋ"
   },
   {
@@ -1414,7 +1414,7 @@
     "level": "A1",
     "id": 158,
     "meaning": "อันตราย",
-    "thai_pronunciation": "เด๊ น เจ่อ ร เหรอะ สึ d ˈeɪ n dʒ ɜːʴ ʌ",
+    "thai_pronunciation": "เด๊ น เจ่อ ร เหรอะ สึ",
     "ipa": "s"
   },
   {
@@ -1423,7 +1423,7 @@
     "level": "A1",
     "id": 159,
     "meaning": "ลูกสาว",
-    "thai_pronunciation": "ด๊อ เถ่อ ร d ˈɔː t ɜːʴ",
+    "thai_pronunciation": "ด๊อ เถ่อ ร",
     "ipa": "ˈdɔtər"
   },
   {
@@ -1432,7 +1432,7 @@
     "level": "A1",
     "id": 160,
     "meaning": "วัน",
-    "thai_pronunciation": "เด d ˈeɪ",
+    "thai_pronunciation": "เด",
     "ipa": "deɪ"
   },
   {
@@ -1441,7 +1441,7 @@
     "level": "A1",
     "id": 161,
     "meaning": "ธันวาคม",
-    "thai_pronunciation": "ดิ เซ้ะ ม เบ่อ ร d ɪ s ˈe m b ɜːʴ",
+    "thai_pronunciation": "ดิ เซ้ะ ม เบ่อ ร",
     "ipa": "dɪˈsɛmbər"
   },
   {
@@ -1450,7 +1450,7 @@
     "level": "A1",
     "id": 162,
     "meaning": "ตัดสินใจ",
-    "thai_pronunciation": "ดิ ซ้าย ดึ d ˌɪ s ˈaɪ",
+    "thai_pronunciation": "ดิ ซ้าย ดึ",
     "ipa": "d"
   },
   {
@@ -1459,7 +1459,7 @@
     "level": "A1",
     "id": 163,
     "meaning": "อร่อย",
-    "thai_pronunciation": "ดิ ลิ เฉอะ สึ d ɪ l ˈɪ ʃ ʌ",
+    "thai_pronunciation": "ดิ ลิ เฉอะ สึ",
     "ipa": "s"
   },
   {
@@ -1468,7 +1468,7 @@
     "level": "A1",
     "id": 164,
     "meaning": "อธิบาย",
-    "thai_pronunciation": "ดิ สึ คร้าย บึ d ɪ s k r ˈaɪ",
+    "thai_pronunciation": "ดิ สึ คร้าย บึ",
     "ipa": "b"
   },
   {
@@ -1477,7 +1477,7 @@
     "level": "A1",
     "id": 165,
     "meaning": "คำอธิบาย",
-    "thai_pronunciation": "ดิ สึ คริ ผึ เฉอะ น d ɪ s k r ˈɪ p ʃ ʌ",
+    "thai_pronunciation": "ดิ สึ คริ ผึ เฉอะ น",
     "ipa": "n"
   },
   {
@@ -1486,7 +1486,7 @@
     "level": "A1",
     "id": 166,
     "meaning": "ออกแบบ",
-    "thai_pronunciation": "ดิ ซ้าย น d ɪ z ˈaɪ",
+    "thai_pronunciation": "ดิ ซ้าย น",
     "ipa": "n"
   },
   {
@@ -1495,7 +1495,7 @@
     "level": "A1",
     "id": 167,
     "meaning": "โต๊ะ",
-    "thai_pronunciation": "เดะ สึ ขึ d ˈe s",
+    "thai_pronunciation": "เดะ สึ ขึ",
     "ipa": "k"
   },
   {
@@ -1504,7 +1504,7 @@
     "level": "A1",
     "id": 168,
     "meaning": "บทสนทนา",
-    "thai_pronunciation": "ด๊าย เออะ ลอ กึ d ˈaɪ ʌ l ˌɔː",
+    "thai_pronunciation": "ด๊าย เออะ ลอ กึ",
     "ipa": "g"
   },
   {
@@ -1513,7 +1513,7 @@
     "level": "A1",
     "id": 169,
     "meaning": "พจนานุกรม",
-    "thai_pronunciation": "ดิ้ ขึ เฉอะ แน ร อี่ d ˈɪ k ʃ ʌ n ˌe r",
+    "thai_pronunciation": "ดิ้ ขึ เฉอะ แน ร อี่",
     "ipa": "iː"
   },
   {
@@ -1522,7 +1522,7 @@
     "level": "A1",
     "id": 170,
     "meaning": "ตาย",
-    "thai_pronunciation": "ดาย d ˈaɪ",
+    "thai_pronunciation": "ดาย",
     "ipa": "daɪ"
   },
   {
@@ -1531,7 +1531,7 @@
     "level": "A1",
     "id": 171,
     "meaning": "อาหาร",
-    "thai_pronunciation": "ด๊าย เออะ ถึ d ˈaɪ ʌ",
+    "thai_pronunciation": "ด๊าย เออะ ถึ",
     "ipa": "t"
   },
   {
@@ -1540,7 +1540,7 @@
     "level": "A1",
     "id": 172,
     "meaning": "ความแตกต่าง",
-    "thai_pronunciation": "ดิ้ เฝ่อ ร เหรอะ น สึ d ˈɪ f ɜːʴ ʌ n",
+    "thai_pronunciation": "ดิ้ เฝ่อ ร เหรอะ น สึ",
     "ipa": "s"
   },
   {
@@ -1549,7 +1549,7 @@
     "level": "A1",
     "id": 173,
     "meaning": "แตกต่าง",
-    "thai_pronunciation": "ดิ้ เฝ่อ ร เหรอะ น ถึ d ˈɪ f ɜːʴ ʌ n",
+    "thai_pronunciation": "ดิ้ เฝ่อ ร เหรอะ น ถึ",
     "ipa": "t"
   },
   {
@@ -1558,7 +1558,7 @@
     "level": "A1",
     "id": 174,
     "meaning": "ยาก",
-    "thai_pronunciation": "ดิ้ เฝอะ เขอะ ล ถึ d ˈɪ f ʌ k ʌ l",
+    "thai_pronunciation": "ดิ้ เฝอะ เขอะ ล ถึ",
     "ipa": "t"
   },
   {
@@ -1567,7 +1567,7 @@
     "level": "A1",
     "id": 175,
     "meaning": "อาหารเย็น",
-    "thai_pronunciation": "ดิ้ เหน่อ ร d ˈɪ n ɜːʴ",
+    "thai_pronunciation": "ดิ้ เหน่อ ร",
     "ipa": "ˈdɪnər"
   },
   {
@@ -1576,7 +1576,7 @@
     "level": "A1",
     "id": 176,
     "meaning": "สกปรก",
-    "thai_pronunciation": "เด๊อ ร ถี่ d ˈɜːʴ t",
+    "thai_pronunciation": "เด๊อ ร ถี่",
     "ipa": "iː"
   },
   {
@@ -1585,7 +1585,7 @@
     "level": "A1",
     "id": 177,
     "meaning": "หารือ",
-    "thai_pronunciation": "ดิ สึ คะ สึ d ɪ s k ˈʌ",
+    "thai_pronunciation": "ดิ สึ คะ สึ",
     "ipa": "s"
   },
   {
@@ -1594,7 +1594,7 @@
     "level": "A1",
     "id": 178,
     "meaning": "จาน",
-    "thai_pronunciation": "ดิ ฉึ d ˈɪ",
+    "thai_pronunciation": "ดิ ฉึ",
     "ipa": "ʃ"
   },
   {
@@ -1603,7 +1603,7 @@
     "level": "A1",
     "id": 179,
     "meaning": "ทำ",
-    "thai_pronunciation": "ดู d",
+    "thai_pronunciation": "ดู",
     "ipa": "ˈuː"
   },
   {
@@ -1612,7 +1612,7 @@
     "level": "A1",
     "id": 180,
     "meaning": "หมอ",
-    "thai_pronunciation": "ด๊า ขึ เถ่อ ร d ˈɑː k t ɜːʴ",
+    "thai_pronunciation": "ด๊า ขึ เถ่อ ร",
     "ipa": "ˈdɔktər"
   },
   {
@@ -1621,7 +1621,7 @@
     "level": "A1",
     "id": 181,
     "meaning": "สุนัข",
-    "thai_pronunciation": "ดอ กึ d ˈɔː",
+    "thai_pronunciation": "ดอ กึ",
     "ipa": "g"
   },
   {
@@ -1630,7 +1630,7 @@
     "level": "A1",
     "id": 182,
     "meaning": "ดอลลาร์",
-    "thai_pronunciation": "ด๊า เหล่อ ร d ˈɑː l ɜːʴ",
+    "thai_pronunciation": "ด๊า เหล่อ ร",
     "ipa": "ˈdɔlər"
   },
   {
@@ -1639,7 +1639,7 @@
     "level": "A1",
     "id": 183,
     "meaning": "ประตู",
-    "thai_pronunciation": "ดอ ร d ˈɔː",
+    "thai_pronunciation": "ดอ ร",
     "ipa": "r"
   },
   {
@@ -1648,7 +1648,7 @@
     "level": "A1",
     "id": 184,
     "meaning": "ลง",
-    "thai_pronunciation": "ดาว น d ˈaʊ",
+    "thai_pronunciation": "ดาว น",
     "ipa": "n"
   },
   {
@@ -1657,7 +1657,7 @@
     "level": "A1",
     "id": 185,
     "meaning": "วาด",
-    "thai_pronunciation": "ดรอ d r",
+    "thai_pronunciation": "ดรอ",
     "ipa": "ˈɔː"
   },
   {
@@ -1666,7 +1666,7 @@
     "level": "A1",
     "id": 186,
     "meaning": "ชุด",
-    "thai_pronunciation": "เดระ สึ d r ˈe",
+    "thai_pronunciation": "เดระ สึ",
     "ipa": "s"
   },
   {
@@ -1675,7 +1675,7 @@
     "level": "A1",
     "id": 187,
     "meaning": "ดื่ม",
-    "thai_pronunciation": "ดริ ง ขึ d r ˈɪ ŋ",
+    "thai_pronunciation": "ดริ ง ขึ",
     "ipa": "k"
   },
   {
@@ -1684,7 +1684,7 @@
     "level": "A1",
     "id": 188,
     "meaning": "คนขับ",
-    "thai_pronunciation": "ดร๊าย เฝ่อ ร d r ˈaɪ v ɜːʴ",
+    "thai_pronunciation": "ดร๊าย เฝ่อ ร",
     "ipa": "ˈdraɪvər"
   },
   {
@@ -1693,7 +1693,7 @@
     "level": "A1",
     "id": 189,
     "meaning": "ในระหว่าง",
-    "thai_pronunciation": "ดั๊ว ร อิ่ ง d ˈʊ r ɪ",
+    "thai_pronunciation": "ดั๊ว ร อิ่ ง",
     "ipa": "ŋ"
   },
   {
@@ -1702,7 +1702,7 @@
     "level": "A1",
     "id": 190,
     "meaning": "ดีวีดี",
-    "thai_pronunciation": "ดี ฟี ดี๊ d ˌiː v ˌiː d",
+    "thai_pronunciation": "ดี ฟี ดี๊",
     "ipa": "ˈiː"
   },
   {
@@ -1711,7 +1711,7 @@
     "level": "A1",
     "id": 191,
     "meaning": "แต่ละ",
-    "thai_pronunciation": "อี๊ ฉึ ˈiː",
+    "thai_pronunciation": "อี๊ ฉึ",
     "ipa": "tʃ"
   },
   {
@@ -1720,7 +1720,7 @@
     "level": "A1",
     "id": 192,
     "meaning": "หู",
-    "thai_pronunciation": "อี๊ ร ˈiː",
+    "thai_pronunciation": "อี๊ ร",
     "ipa": "r"
   },
   {
@@ -1729,7 +1729,7 @@
     "level": "A1",
     "id": 193,
     "meaning": "แต่แรก",
-    "thai_pronunciation": "เอ๊อ ร หลี่ ˈɜːʴ l",
+    "thai_pronunciation": "เอ๊อ ร หลี่",
     "ipa": "iː"
   },
   {
@@ -1738,7 +1738,7 @@
     "level": "A1",
     "id": 194,
     "meaning": "ทิศตะวันออก",
-    "thai_pronunciation": "อี๊ สึ ถึ ˈiː s",
+    "thai_pronunciation": "อี๊ สึ ถึ",
     "ipa": "t"
   },
   {
@@ -1747,7 +1747,7 @@
     "level": "A1",
     "id": 195,
     "meaning": "ง่าย",
-    "thai_pronunciation": "อี๊ สี่ ˈiː z",
+    "thai_pronunciation": "อี๊ สี่",
     "ipa": "iː"
   },
   {
@@ -1756,7 +1756,7 @@
     "level": "A1",
     "id": 196,
     "meaning": "กิน",
-    "thai_pronunciation": "อี๊ ถึ ˈiː",
+    "thai_pronunciation": "อี๊ ถึ",
     "ipa": "t"
   },
   {
@@ -1765,7 +1765,7 @@
     "level": "A1",
     "id": 197,
     "meaning": "ไข่",
-    "thai_pronunciation": "เอ๊ะ กึ ˈe",
+    "thai_pronunciation": "เอ๊ะ กึ",
     "ipa": "g"
   },
   {
@@ -1774,7 +1774,7 @@
     "level": "A1",
     "id": 198,
     "meaning": "แปด",
-    "thai_pronunciation": "เอ๊ ถึ ˈeɪ",
+    "thai_pronunciation": "เอ๊ ถึ",
     "ipa": "t"
   },
   {
@@ -1783,7 +1783,7 @@
     "level": "A1",
     "id": 199,
     "meaning": "สิบแปด",
-    "thai_pronunciation": "เอ่ ที้ น eɪ t ˈiː",
+    "thai_pronunciation": "เอ่ ที้ น",
     "ipa": "n"
   },
   {
@@ -1792,7 +1792,7 @@
     "level": "A1",
     "id": 200,
     "meaning": "แปดสิบ",
-    "thai_pronunciation": "เอ๊ ถี่ ˈeɪ t",
+    "thai_pronunciation": "เอ๊ ถี่",
     "ipa": "iː"
   },
   {
@@ -1801,7 +1801,7 @@
     "level": "A1",
     "id": 201,
     "meaning": "ช้าง",
-    "thai_pronunciation": "เอ๊ะ เหลอะ เฝอะ น ถึ ˈe l ʌ f ʌ n",
+    "thai_pronunciation": "เอ๊ะ เหลอะ เฝอะ น ถึ",
     "ipa": "t"
   },
   {
@@ -1810,7 +1810,7 @@
     "level": "A1",
     "id": 202,
     "meaning": "สิบเอ็ด",
-    "thai_pronunciation": "อิ เล้ะ เฝอะ น ɪ l ˈe v ʌ",
+    "thai_pronunciation": "อิ เล้ะ เฝอะ น",
     "ipa": "n"
   },
   {
@@ -1819,7 +1819,7 @@
     "level": "A1",
     "id": 203,
     "meaning": "อื่น",
-    "thai_pronunciation": "เอ๊ะ ล สึ ˈe l",
+    "thai_pronunciation": "เอ๊ะ ล สึ",
     "ipa": "s"
   },
   {
@@ -1828,7 +1828,7 @@
     "level": "A1",
     "id": 204,
     "meaning": "อีเมล",
-    "thai_pronunciation": "อี่ เม้ ล iː m ˈeɪ",
+    "thai_pronunciation": "อี่ เม้ ล",
     "ipa": "l"
   },
   {
@@ -1837,7 +1837,7 @@
     "level": "A1",
     "id": 205,
     "meaning": "จบ",
-    "thai_pronunciation": "เอ๊ะ น ดึ ˈe n",
+    "thai_pronunciation": "เอ๊ะ น ดึ",
     "ipa": "d"
   },
   {
@@ -1846,7 +1846,7 @@
     "level": "A1",
     "id": 206,
     "meaning": "สนุก",
-    "thai_pronunciation": "เอะ น จ๊อย ˌe n dʒ ˈɔɪ",
+    "thai_pronunciation": "เอะ น จ๊อย",
     "ipa": "ˌɛnˈʤɔɪ"
   },
   {
@@ -1855,7 +1855,7 @@
     "level": "A1",
     "id": 207,
     "meaning": "เพียงพอ",
-    "thai_pronunciation": "อิ นะ ฝึ ɪ n ˈʌ",
+    "thai_pronunciation": "อิ นะ ฝึ",
     "ipa": "f"
   },
   {
@@ -1864,7 +1864,7 @@
     "level": "A1",
     "id": 208,
     "meaning": "ยูโร",
-    "thai_pronunciation": "ยู้ โหร่ว j ˈuː r əʊ",
+    "thai_pronunciation": "ยู้ โหร่ว",
     "ipa": "ˈjʊrə"
   },
   {
@@ -2297,7 +2297,7 @@
     "level": "A1",
     "id": 262,
     "meaning": "ด้านหน้า",
-    "thai_pronunciation": "ฟระ น ถึ f r ˈʌ n",
+    "thai_pronunciation": "ฟระ น ถึ",
     "ipa": "t"
   },
   {
@@ -2306,7 +2306,7 @@
     "level": "A1",
     "id": 263,
     "meaning": "ผลไม้",
-    "thai_pronunciation": "ฟรู ถึ f r ˈuː",
+    "thai_pronunciation": "ฟรู ถึ",
     "ipa": "t"
   },
   {
@@ -2315,7 +2315,7 @@
     "level": "A1",
     "id": 264,
     "meaning": "เต็ม",
-    "thai_pronunciation": "ฟุ ล f ˈʊ",
+    "thai_pronunciation": "ฟุ ล",
     "ipa": "l"
   },
   {
@@ -2324,7 +2324,7 @@
     "level": "A1",
     "id": 265,
     "meaning": "ตลก",
-    "thai_pronunciation": "ฟะ หนี่ f ˈʌ n",
+    "thai_pronunciation": "ฟะ หนี่",
     "ipa": "iː"
   },
   {
@@ -2333,7 +2333,7 @@
     "level": "A1",
     "id": 266,
     "meaning": "เกม",
-    "thai_pronunciation": "เก ม g ˈeɪ",
+    "thai_pronunciation": "เก ม",
     "ipa": "m"
   },
   {
@@ -2342,7 +2342,7 @@
     "level": "A1",
     "id": 267,
     "meaning": "สวน",
-    "thai_pronunciation": "ก๊าร เดอะ น g ˈɑː r d ʌ",
+    "thai_pronunciation": "ก๊าร เดอะ น",
     "ipa": "n"
   },
   {
@@ -2351,7 +2351,7 @@
     "level": "A1",
     "id": 268,
     "meaning": "ภูมิศาสตร์",
-    "thai_pronunciation": "จี่ อ๊า เกรอะ ฝี่ dʒ iː ˈɑː g r ʌ f",
+    "thai_pronunciation": "จี่ อ๊า เกรอะ ฝี่",
     "ipa": "iː"
   },
   {
@@ -2360,7 +2360,7 @@
     "level": "A1",
     "id": 269,
     "meaning": "รับ",
-    "thai_pronunciation": "เกะ ถึ g ˈe",
+    "thai_pronunciation": "เกะ ถึ",
     "ipa": "t"
   },
   {
@@ -2369,7 +2369,7 @@
     "level": "A1",
     "id": 270,
     "meaning": "สาว",
-    "thai_pronunciation": "เกอ ร ล g ˈɜːʴ",
+    "thai_pronunciation": "เกอ ร ล",
     "ipa": "l"
   },
   {
@@ -2378,7 +2378,7 @@
     "level": "A1",
     "id": 271,
     "meaning": "แฟน",
-    "thai_pronunciation": "เก๊อ ร ล เฟระ น ดึ g ˈɜːʴ l f r ˌe n",
+    "thai_pronunciation": "เก๊อ ร ล เฟระ น ดึ",
     "ipa": "d"
   },
   {
@@ -2387,7 +2387,7 @@
     "level": "A1",
     "id": 272,
     "meaning": "ให้",
-    "thai_pronunciation": "กิ ฝึ g ˈɪ",
+    "thai_pronunciation": "กิ ฝึ",
     "ipa": "v"
   },
   {
@@ -2396,7 +2396,7 @@
     "level": "A1",
     "id": 273,
     "meaning": "กระจก",
-    "thai_pronunciation": "แกล สึ g l ˈæ",
+    "thai_pronunciation": "แกล สึ",
     "ipa": "s"
   },
   {
@@ -2405,7 +2405,7 @@
     "level": "A1",
     "id": 274,
     "meaning": "ลาก่อน",
-    "thai_pronunciation": "กุ ดึ บ๊าย g ˌʊ d b ˈaɪ",
+    "thai_pronunciation": "กุ ดึ บ๊าย",
     "ipa": "ˌgʊdˈbaɪ"
   },
   {
@@ -2414,7 +2414,7 @@
     "level": "A1",
     "id": 275,
     "meaning": "คุณปู่",
-    "thai_pronunciation": "แกร๊ น ดึ ฟา เด่อ ร g r ˈæ n d f ˌɑː ð ɜːʴ",
+    "thai_pronunciation": "แกร๊ น ดึ ฟา เด่อ ร",
     "ipa": "ˈgrænˌfɑðər"
   },
   {
@@ -2423,7 +2423,7 @@
     "level": "A1",
     "id": 276,
     "meaning": "ยาย",
-    "thai_pronunciation": "แกร๊ น ดึ มะ เด่อ ร g r ˈæ n d m ˌʌ ð ɜːʴ",
+    "thai_pronunciation": "แกร๊ น ดึ มะ เด่อ ร",
     "ipa": "ˈgrændˌməðər"
   },
   {
@@ -2432,7 +2432,7 @@
     "level": "A1",
     "id": 277,
     "meaning": "ปู่ย่าตายาย",
-    "thai_pronunciation": "แกร๊ น ดึ แพ ร เออะ น ถึ g r ˈæ n d p ˌe r ʌ n",
+    "thai_pronunciation": "แกร๊ น ดึ แพ ร เออะ น ถึ",
     "ipa": "t"
   },
   {
@@ -2441,7 +2441,7 @@
     "level": "A1",
     "id": 278,
     "meaning": "ยอดเยี่ยม",
-    "thai_pronunciation": "เกร ถึ g r ˈeɪ",
+    "thai_pronunciation": "เกร ถึ",
     "ipa": "t"
   },
   {
@@ -2450,7 +2450,7 @@
     "level": "A1",
     "id": 279,
     "meaning": "สีเขียว",
-    "thai_pronunciation": "กรี น g r ˈiː",
+    "thai_pronunciation": "กรี น",
     "ipa": "n"
   },
   {
@@ -2459,7 +2459,7 @@
     "level": "A1",
     "id": 280,
     "meaning": "สีเทา",
-    "thai_pronunciation": "เกร g r ˈeɪ",
+    "thai_pronunciation": "เกร",
     "ipa": "greɪ"
   },
   {
@@ -2468,7 +2468,7 @@
     "level": "A1",
     "id": 281,
     "meaning": "กลุ่ม",
-    "thai_pronunciation": "กรู ผึ g r ˈuː",
+    "thai_pronunciation": "กรู ผึ",
     "ipa": "p"
   },
   {
@@ -2477,7 +2477,7 @@
     "level": "A1",
     "id": 282,
     "meaning": "เติบโต",
-    "thai_pronunciation": "โกรว g r ˈəʊ",
+    "thai_pronunciation": "โกรว",
     "ipa": "groʊ"
   },
   {
@@ -2486,7 +2486,7 @@
     "level": "A1",
     "id": 283,
     "meaning": "เดา",
-    "thai_pronunciation": "เกะ สึ g ˈe",
+    "thai_pronunciation": "เกะ สึ",
     "ipa": "s"
   },
   {
@@ -2495,7 +2495,7 @@
     "level": "A1",
     "id": 284,
     "meaning": "กีตาร์",
-    "thai_pronunciation": "กิ ท้าร g ɪ t ˈɑː",
+    "thai_pronunciation": "กิ ท้าร",
     "ipa": "r"
   },
   {
@@ -2504,7 +2504,7 @@
     "level": "A1",
     "id": 285,
     "meaning": "โรงยิม",
-    "thai_pronunciation": "จิ ม dʒ ˈɪ",
+    "thai_pronunciation": "จิ ม",
     "ipa": "m"
   },
   {
@@ -2513,7 +2513,7 @@
     "level": "A1",
     "id": 286,
     "meaning": "ผม",
-    "thai_pronunciation": "แฮ ร h ˈe",
+    "thai_pronunciation": "แฮ ร",
     "ipa": "r"
   },
   {
@@ -2522,7 +2522,7 @@
     "level": "A1",
     "id": 287,
     "meaning": "เกิดขึ้น",
-    "thai_pronunciation": "แฮ้ เผอะ น h ˈæ p ʌ",
+    "thai_pronunciation": "แฮ้ เผอะ น",
     "ipa": "n"
   },
   {
@@ -2531,7 +2531,7 @@
     "level": "A1",
     "id": 288,
     "meaning": "มีความสุข",
-    "thai_pronunciation": "แฮ้ ผี่ h ˈæ p",
+    "thai_pronunciation": "แฮ้ ผี่",
     "ipa": "iː"
   },
   {
@@ -2540,7 +2540,7 @@
     "level": "A1",
     "id": 289,
     "meaning": "แข็ง",
-    "thai_pronunciation": "ฮาร ดึ h ˈɑː r",
+    "thai_pronunciation": "ฮาร ดึ",
     "ipa": "d"
   },
   {
@@ -2549,7 +2549,7 @@
     "level": "A1",
     "id": 290,
     "meaning": "หมวก",
-    "thai_pronunciation": "แฮ ถึ h ˈæ",
+    "thai_pronunciation": "แฮ ถึ",
     "ipa": "t"
   },
   {
@@ -2558,7 +2558,7 @@
     "level": "A1",
     "id": 291,
     "meaning": "มี",
-    "thai_pronunciation": "แฮ ฝึ h ˈæ",
+    "thai_pronunciation": "แฮ ฝึ",
     "ipa": "v"
   },
   {
@@ -2567,7 +2567,7 @@
     "level": "A1",
     "id": 292,
     "meaning": "เขา",
-    "thai_pronunciation": "ฮี h",
+    "thai_pronunciation": "ฮี",
     "ipa": "ˈiː"
   },
   {
@@ -2576,7 +2576,7 @@
     "level": "A1",
     "id": 293,
     "meaning": "สุขภาพ",
-    "thai_pronunciation": "เฮะ ล ตึ h ˈe l",
+    "thai_pronunciation": "เฮะ ล ตึ",
     "ipa": "θ"
   },
   {
@@ -2585,7 +2585,7 @@
     "level": "A1",
     "id": 294,
     "meaning": "สุขภาพดี",
-    "thai_pronunciation": "เฮ้ะ ล ตี่ h ˈe l θ",
+    "thai_pronunciation": "เฮ้ะ ล ตี่",
     "ipa": "iː"
   },
   {
@@ -2594,7 +2594,7 @@
     "level": "A1",
     "id": 295,
     "meaning": "ได้ยิน",
-    "thai_pronunciation": "ฮี ร h ˈiː",
+    "thai_pronunciation": "ฮี ร",
     "ipa": "r"
   },
   {
@@ -2603,7 +2603,7 @@
     "level": "A1",
     "id": 296,
     "meaning": "สวัสดี",
-    "thai_pronunciation": "เหอะ โล้ว h ʌ l ˈəʊ",
+    "thai_pronunciation": "เหอะ โล้ว",
     "ipa": "hɛˈloʊ"
   },
   {
@@ -2612,7 +2612,7 @@
     "level": "A1",
     "id": 297,
     "meaning": "ช่วย",
-    "thai_pronunciation": "เฮะ ล ผึ h ˈe l",
+    "thai_pronunciation": "เฮะ ล ผึ",
     "ipa": "p"
   },
   {
@@ -2621,7 +2621,7 @@
     "level": "A1",
     "id": 298,
     "meaning": "ของเธอ",
-    "thai_pronunciation": "เฮอ ร h ˈɜːʴ",
+    "thai_pronunciation": "เฮอ ร",
     "ipa": "hər"
   },
   {
@@ -2630,7 +2630,7 @@
     "level": "A1",
     "id": 299,
     "meaning": "ที่นี่",
-    "thai_pronunciation": "ฮี ร h ˈiː",
+    "thai_pronunciation": "ฮี ร",
     "ipa": "r"
   },
   {
@@ -2639,7 +2639,7 @@
     "level": "A1",
     "id": 300,
     "meaning": "เฮ้",
-    "thai_pronunciation": "เฮ h ˈeɪ",
+    "thai_pronunciation": "เฮ",
     "ipa": "heɪ"
   },
   {
@@ -2648,7 +2648,7 @@
     "level": "A1",
     "id": 301,
     "meaning": "สวัสดี",
-    "thai_pronunciation": "ฮาย h ˈaɪ",
+    "thai_pronunciation": "ฮาย",
     "ipa": "haɪ"
   },
   {
@@ -2657,7 +2657,7 @@
     "level": "A1",
     "id": 302,
     "meaning": "เขา",
-    "thai_pronunciation": "ฮิ ม h ˈɪ",
+    "thai_pronunciation": "ฮิ ม",
     "ipa": "m"
   },
   {
@@ -2666,7 +2666,7 @@
     "level": "A1",
     "id": 303,
     "meaning": "ประวัติศาสตร์",
-    "thai_pronunciation": "ฮิ สึ เถ่อ ร หรี่ h ˈɪ s t ɜːʴ",
+    "thai_pronunciation": "ฮิ สึ เถ่อ ร หรี่",
     "ipa": "iː"
   },
   {
@@ -2675,7 +2675,7 @@
     "level": "A1",
     "id": 304,
     "meaning": "งานอดิเรก",
-    "thai_pronunciation": "ฮ้า บี่ h ˈɑː b",
+    "thai_pronunciation": "ฮ้า บี่",
     "ipa": "iː"
   },
   {
@@ -2684,7 +2684,7 @@
     "level": "A1",
     "id": 305,
     "meaning": "วันหยุด",
-    "thai_pronunciation": "ฮ้า เหลอะ เด h ˈɑː l ʌ d ˌeɪ",
+    "thai_pronunciation": "ฮ้า เหลอะ เด",
     "ipa": "ˈhɑlɪˌdeɪ"
   },
   {
@@ -2693,7 +2693,7 @@
     "level": "A1",
     "id": 306,
     "meaning": "การบ้าน",
-    "thai_pronunciation": "โฮ้ว ม เวอ ร ขึ h ˈəʊ m w ˌɜːʴ",
+    "thai_pronunciation": "โฮ้ว ม เวอ ร ขึ",
     "ipa": "k"
   },
   {
@@ -2702,7 +2702,7 @@
     "level": "A1",
     "id": 307,
     "meaning": "ม้า",
-    "thai_pronunciation": "ฮอ ร สึ h ˈɔː r",
+    "thai_pronunciation": "ฮอ ร สึ",
     "ipa": "s"
   },
   {
@@ -2711,7 +2711,7 @@
     "level": "A1",
     "id": 308,
     "meaning": "โรงพยาบาล",
-    "thai_pronunciation": "ฮ้า สึ พิ เถอะ ล h ˈɑː s p ˌɪ t ʌ",
+    "thai_pronunciation": "ฮ้า สึ พิ เถอะ ล",
     "ipa": "l"
   },
   {
@@ -2720,7 +2720,7 @@
     "level": "A1",
     "id": 309,
     "meaning": "ร้อน",
-    "thai_pronunciation": "ฮา ถึ h ˈɑː",
+    "thai_pronunciation": "ฮา ถึ",
     "ipa": "t"
   },
   {
@@ -2729,7 +2729,7 @@
     "level": "A1",
     "id": 310,
     "meaning": "โรงแรม",
-    "thai_pronunciation": "โห่ว เท้ะ ล h əʊ t ˈe",
+    "thai_pronunciation": "โห่ว เท้ะ ล",
     "ipa": "l"
   },
   {
@@ -2738,7 +2738,7 @@
     "level": "A1",
     "id": 311,
     "meaning": "ชั่วโมง",
-    "thai_pronunciation": "อ๊าว เอ่อ ร ˈaʊ ɜːʴ",
+    "thai_pronunciation": "อ๊าว เอ่อ ร",
     "ipa": "aʊər"
   },
   {
@@ -2747,7 +2747,7 @@
     "level": "A1",
     "id": 312,
     "meaning": "ยังไง",
-    "thai_pronunciation": "ฮาว h ˈaʊ",
+    "thai_pronunciation": "ฮาว",
     "ipa": "haʊ"
   },
   {
@@ -2756,7 +2756,7 @@
     "level": "A1",
     "id": 313,
     "meaning": "อย่างไรก็ตาม",
-    "thai_pronunciation": "ฮาว เอ๊ะ เฝ่อ ร h ˌaʊ ˈe v ɜːʴ",
+    "thai_pronunciation": "ฮาว เอ๊ะ เฝ่อ ร",
     "ipa": "ˌhaʊˈɛvər"
   },
   {
@@ -2765,7 +2765,7 @@
     "level": "A1",
     "id": 314,
     "meaning": "ร้อย",
-    "thai_pronunciation": "ฮะ น เดรอะ ดึ h ˈʌ n d r ʌ",
+    "thai_pronunciation": "ฮะ น เดรอะ ดึ",
     "ipa": "d"
   },
   {
@@ -2774,7 +2774,7 @@
     "level": "A1",
     "id": 315,
     "meaning": "หิว",
-    "thai_pronunciation": "ฮะ ง กรี่ h ˈʌ ŋ g r",
+    "thai_pronunciation": "ฮะ ง กรี่",
     "ipa": "iː"
   },
   {
@@ -2783,7 +2783,7 @@
     "level": "A1",
     "id": 316,
     "meaning": "สามี",
-    "thai_pronunciation": "ฮะ สึ เบอะ น ดึ h ˈʌ z b ʌ n",
+    "thai_pronunciation": "ฮะ สึ เบอะ น ดึ",
     "ipa": "d"
   },
   {
@@ -2792,7 +2792,7 @@
     "level": "A1",
     "id": 317,
     "meaning": "ฉัน",
-    "thai_pronunciation": "อ๊าย ˈaɪ",
+    "thai_pronunciation": "อ๊าย",
     "ipa": "aɪ"
   },
   {
@@ -2801,7 +2801,7 @@
     "level": "A1",
     "id": 318,
     "meaning": "น้ำแข็ง",
-    "thai_pronunciation": "อ๊าย สึ ˈaɪ",
+    "thai_pronunciation": "อ๊าย สึ",
     "ipa": "s"
   },
   {
@@ -2810,7 +2810,7 @@
     "level": "A1",
     "id": 319,
     "meaning": "น้ำแข็ง",
-    "thai_pronunciation": "อ๊าย สึ ˈaɪ",
+    "thai_pronunciation": "อ๊าย สึ",
     "ipa": "s"
   },
   {
@@ -2819,7 +2819,7 @@
     "level": "A1",
     "id": 320,
     "meaning": "ความคิด",
-    "thai_pronunciation": "อ่าย ดี๊ เออะ aɪ d ˈiː",
+    "thai_pronunciation": "อ่าย ดี๊ เออะ",
     "ipa": "ʌ"
   },
   {
@@ -2828,7 +2828,7 @@
     "level": "A1",
     "id": 321,
     "meaning": "ถ้า",
-    "thai_pronunciation": "อิ้ ฝึ ˈɪ",
+    "thai_pronunciation": "อิ้ ฝึ",
     "ipa": "f"
   },
   {
@@ -2837,7 +2837,7 @@
     "level": "A1",
     "id": 322,
     "meaning": "จินตนาการ",
-    "thai_pronunciation": "อิ แม้ เจอะ น ˌɪ m ˈæ dʒ ʌ",
+    "thai_pronunciation": "อิ แม้ เจอะ น",
     "ipa": "n"
   },
   {
@@ -2846,7 +2846,7 @@
     "level": "A1",
     "id": 323,
     "meaning": "สำคัญ",
-    "thai_pronunciation": "อิ ม พ้อ ร เถอะ น ถึ ˌɪ m p ˈɔː r t ʌ n",
+    "thai_pronunciation": "อิ ม พ้อ ร เถอะ น ถึ",
     "ipa": "t"
   },
   {
@@ -2855,7 +2855,7 @@
     "level": "A1",
     "id": 324,
     "meaning": "ทำให้ดีขึ้น",
-    "thai_pronunciation": "อิ ม พรู้ ฝึ ˌɪ m p r ˈuː",
+    "thai_pronunciation": "อิ ม พรู้ ฝึ",
     "ipa": "v"
   },
   {
@@ -2864,7 +2864,7 @@
     "level": "A1",
     "id": 325,
     "meaning": "ใน",
-    "thai_pronunciation": "อิ น ɪ",
+    "thai_pronunciation": "อิ น",
     "ipa": "n"
   },
   {
@@ -2873,7 +2873,7 @@
     "level": "A1",
     "id": 326,
     "meaning": "รวม",
-    "thai_pronunciation": "อิ น คลู้ ดึ ˌɪ n k l ˈuː",
+    "thai_pronunciation": "อิ น คลู้ ดึ",
     "ipa": "d"
   },
   {
@@ -2882,7 +2882,7 @@
     "level": "A1",
     "id": 327,
     "meaning": "ข้อมูล",
-    "thai_pronunciation": "อิ น เฝ่อ ร เม้ เฉอะ น ˌɪ n f ɜːʴ m ˈeɪ ʃ ʌ",
+    "thai_pronunciation": "อิ น เฝ่อ ร เม้ เฉอะ น",
     "ipa": "n"
   },
   {
@@ -2891,7 +2891,7 @@
     "level": "A1",
     "id": 328,
     "meaning": "ความสนใจ",
-    "thai_pronunciation": "อิ้ น เถรอะ สึ ถึ ˈɪ n t r ʌ s",
+    "thai_pronunciation": "อิ้ น เถรอะ สึ ถึ",
     "ipa": "t"
   },
   {
@@ -2900,7 +2900,7 @@
     "level": "A1",
     "id": 329,
     "meaning": "สนใจ",
-    "thai_pronunciation": "อิ้ น เถรอะ สึ ถิ่ ดึ ˈɪ n t r ʌ s t ɪ",
+    "thai_pronunciation": "อิ้ น เถรอะ สึ ถิ่ ดึ",
     "ipa": "d"
   },
   {
@@ -2909,7 +2909,7 @@
     "level": "A1",
     "id": 330,
     "meaning": "น่าสนใจ",
-    "thai_pronunciation": "อิ้ น เถรอะ สึ ถิ่ ง ˈɪ n t r ʌ s t ɪ",
+    "thai_pronunciation": "อิ้ น เถรอะ สึ ถิ่ ง",
     "ipa": "ŋ"
   },
   {
@@ -2918,7 +2918,7 @@
     "level": "A1",
     "id": 331,
     "meaning": "อินเทอร์เน็ต",
-    "thai_pronunciation": "อิ้ น เถ่อ ร เนะ ถึ ˈɪ n t ɜːʴ n ˌe",
+    "thai_pronunciation": "อิ้ น เถ่อ ร เนะ ถึ",
     "ipa": "t"
   },
   {
@@ -2927,7 +2927,7 @@
     "level": "A1",
     "id": 332,
     "meaning": "สัมภาษณ์",
-    "thai_pronunciation": "อิ้ น เถ่อ ร ฝึ ยู ˈɪ n t ɜːʴ v j",
+    "thai_pronunciation": "อิ้ น เถ่อ ร ฝึ ยู",
     "ipa": "ˌuː"
   },
   {
@@ -2936,7 +2936,7 @@
     "level": "A1",
     "id": 333,
     "meaning": "เข้าไปข้างใน",
-    "thai_pronunciation": "อิ้ น ถู่ ˈɪ n t",
+    "thai_pronunciation": "อิ้ น ถู่",
     "ipa": "uː"
   },
   {
@@ -2945,7 +2945,7 @@
     "level": "A1",
     "id": 334,
     "meaning": "แนะนำ",
-    "thai_pronunciation": "อิ น เถรอะ ดู๊ สึ ˌɪ n t r ʌ d ˈuː",
+    "thai_pronunciation": "อิ น เถรอะ ดู๊ สึ",
     "ipa": "s"
   },
   {
@@ -2954,7 +2954,7 @@
     "level": "A1",
     "id": 335,
     "meaning": "เกาะ",
-    "thai_pronunciation": "อ๊าย เหลอะ น ดึ ˈaɪ l ʌ n",
+    "thai_pronunciation": "อ๊าย เหลอะ น ดึ",
     "ipa": "d"
   },
   {
@@ -2963,7 +2963,7 @@
     "level": "A1",
     "id": 336,
     "meaning": "มัน",
-    "thai_pronunciation": "อิ้ ถึ ˈɪ",
+    "thai_pronunciation": "อิ้ ถึ",
     "ipa": "t"
   },
   {
@@ -2972,7 +2972,7 @@
     "level": "A1",
     "id": 337,
     "meaning": "ของมัน",
-    "thai_pronunciation": "อิ้ ถึ สึ ˈɪ t",
+    "thai_pronunciation": "อิ้ ถึ สึ",
     "ipa": "s"
   },
   {
@@ -2981,7 +2981,7 @@
     "level": "A1",
     "id": 338,
     "meaning": "เสื้อแจ็กเกต",
-    "thai_pronunciation": "แจ๊ เขอะ ถึ dʒ ˈæ k ʌ",
+    "thai_pronunciation": "แจ๊ เขอะ ถึ",
     "ipa": "t"
   },
   {
@@ -2990,7 +2990,7 @@
     "level": "A1",
     "id": 339,
     "meaning": "มกราคม",
-    "thai_pronunciation": "แจ๊ น หยู่ แอ ร อี่ dʒ ˈæ n j uː ˌe r",
+    "thai_pronunciation": "แจ๊ น หยู่ แอ ร อี่",
     "ipa": "iː"
   },
   {
@@ -2999,7 +2999,7 @@
     "level": "A1",
     "id": 340,
     "meaning": "ยีนส์",
-    "thai_pronunciation": "จี น สึ dʒ ˈiː n",
+    "thai_pronunciation": "จี น สึ",
     "ipa": "z"
   },
   {
@@ -3008,7 +3008,7 @@
     "level": "A1",
     "id": 341,
     "meaning": "งาน",
-    "thai_pronunciation": "จา บึ dʒ ˈɑː",
+    "thai_pronunciation": "จา บึ",
     "ipa": "b"
   },
   {
@@ -3017,7 +3017,7 @@
     "level": "A1",
     "id": 342,
     "meaning": "เข้าร่วม",
-    "thai_pronunciation": "จอย น dʒ ˈɔɪ",
+    "thai_pronunciation": "จอย น",
     "ipa": "n"
   },
   {
@@ -3026,7 +3026,7 @@
     "level": "A1",
     "id": 343,
     "meaning": "การเดินทาง",
-    "thai_pronunciation": "เจ๊อ ร หนี่ dʒ ˈɜːʴ n",
+    "thai_pronunciation": "เจ๊อ ร หนี่",
     "ipa": "iː"
   },
   {
@@ -3035,7 +3035,7 @@
     "level": "A1",
     "id": 344,
     "meaning": "น้ำผลไม้",
-    "thai_pronunciation": "จู สึ dʒ ˈuː",
+    "thai_pronunciation": "จู สึ",
     "ipa": "s"
   },
   {
@@ -3044,7 +3044,7 @@
     "level": "A1",
     "id": 345,
     "meaning": "กรกฎาคม",
-    "thai_pronunciation": "จู ล้าย dʒ ˌuː l ˈaɪ",
+    "thai_pronunciation": "จู ล้าย",
     "ipa": "ˌʤuˈlaɪ"
   },
   {
@@ -3053,7 +3053,7 @@
     "level": "A1",
     "id": 346,
     "meaning": "มิถุนายน",
-    "thai_pronunciation": "จู น dʒ ˈuː",
+    "thai_pronunciation": "จู น",
     "ipa": "n"
   },
   {
@@ -3062,7 +3062,7 @@
     "level": "A1",
     "id": 347,
     "meaning": "แค่",
-    "thai_pronunciation": "จะ สึ ถึ dʒ ˈʌ s",
+    "thai_pronunciation": "จะ สึ ถึ",
     "ipa": "t"
   },
   {
@@ -3071,7 +3071,7 @@
     "level": "A1",
     "id": 348,
     "meaning": "เก็บ",
-    "thai_pronunciation": "คี ผึ k ˈiː",
+    "thai_pronunciation": "คี ผึ",
     "ipa": "p"
   },
   {
@@ -3080,7 +3080,7 @@
     "level": "A1",
     "id": 349,
     "meaning": "กิโลเมตร",
-    "thai_pronunciation": "คิ ล้อ มะ เถ่อ ร k ˌɪ l ˈɔː m ˌʌ t ɜːʴ",
+    "thai_pronunciation": "คิ ล้อ มะ เถ่อ ร",
     "ipa": "ˌkɪˈlɔˌmətər"
   },
   {
@@ -3089,7 +3089,7 @@
     "level": "A1",
     "id": 350,
     "meaning": "ใจดี",
-    "thai_pronunciation": "คาย น ดึ k ˈaɪ n",
+    "thai_pronunciation": "คาย น ดึ",
     "ipa": "d"
   },
   {
@@ -3098,7 +3098,7 @@
     "level": "A1",
     "id": 351,
     "meaning": "ครัว",
-    "thai_pronunciation": "คิ เฉอะ น k ˈɪ tʃ ʌ",
+    "thai_pronunciation": "คิ เฉอะ น",
     "ipa": "n"
   },
   {
@@ -3107,7 +3107,7 @@
     "level": "A1",
     "id": 352,
     "meaning": "ทราบ",
-    "thai_pronunciation": "โนว n ˈəʊ",
+    "thai_pronunciation": "โนว",
     "ipa": "noʊ"
   },
   {
@@ -3116,7 +3116,7 @@
     "level": "A1",
     "id": 353,
     "meaning": "ภาษา",
-    "thai_pronunciation": "แล้ ง เกวอะ จึ l ˈæ ŋ g w ʌ",
+    "thai_pronunciation": "แล้ ง เกวอะ จึ",
     "ipa": "dʒ"
   },
   {
@@ -3125,7 +3125,7 @@
     "level": "A1",
     "id": 354,
     "meaning": "ใหญ่",
-    "thai_pronunciation": "ลาร จึ l ˈɑː r",
+    "thai_pronunciation": "ลาร จึ",
     "ipa": "dʒ"
   },
   {
@@ -3134,7 +3134,7 @@
     "level": "A1",
     "id": 355,
     "meaning": "ช้า",
-    "thai_pronunciation": "เล ถึ l ˈeɪ",
+    "thai_pronunciation": "เล ถึ",
     "ipa": "t"
   },
   {
@@ -3143,7 +3143,7 @@
     "level": "A1",
     "id": 356,
     "meaning": "หัวเราะ",
-    "thai_pronunciation": "แล ฝึ l ˈæ",
+    "thai_pronunciation": "แล ฝึ",
     "ipa": "f"
   },
   {
@@ -3152,7 +3152,7 @@
     "level": "A1",
     "id": 357,
     "meaning": "เรียนรู้",
-    "thai_pronunciation": "เลอ ร น l ˈɜːʴ",
+    "thai_pronunciation": "เลอ ร น",
     "ipa": "n"
   },
   {
@@ -3161,7 +3161,7 @@
     "level": "A1",
     "id": 358,
     "meaning": "ซ้าย",
-    "thai_pronunciation": "เละ ฝึ ถึ l ˈe f",
+    "thai_pronunciation": "เละ ฝึ ถึ",
     "ipa": "t"
   },
   {
@@ -3170,7 +3170,7 @@
     "level": "A1",
     "id": 359,
     "meaning": "ขา",
-    "thai_pronunciation": "เละ กึ l ˈe",
+    "thai_pronunciation": "เละ กึ",
     "ipa": "g"
   },
   {
@@ -3179,7 +3179,7 @@
     "level": "A1",
     "id": 360,
     "meaning": "บทเรียน",
-    "thai_pronunciation": "เล้ะ เสอะ น l ˈe s ʌ",
+    "thai_pronunciation": "เล้ะ เสอะ น",
     "ipa": "n"
   },
   {
@@ -3188,7 +3188,7 @@
     "level": "A1",
     "id": 361,
     "meaning": "อนุญาต",
-    "thai_pronunciation": "เละ ถึ l ˈe",
+    "thai_pronunciation": "เละ ถึ",
     "ipa": "t"
   },
   {
@@ -3197,7 +3197,7 @@
     "level": "A1",
     "id": 362,
     "meaning": "จดหมาย",
-    "thai_pronunciation": "เล้ะ เถ่อ ร l ˈe t ɜːʴ",
+    "thai_pronunciation": "เล้ะ เถ่อ ร",
     "ipa": "ˈlɛtər"
   },
   {
@@ -3206,7 +3206,7 @@
     "level": "A1",
     "id": 363,
     "meaning": "ห้องสมุด",
-    "thai_pronunciation": "ล้าย แบร่ ร อี l ˈaɪ b r e r",
+    "thai_pronunciation": "ล้าย แบร่ ร อี",
     "ipa": "ˌiː"
   },
   {
@@ -3215,7 +3215,7 @@
     "level": "A1",
     "id": 364,
     "meaning": "โกหก",
-    "thai_pronunciation": "ลาย l ˈaɪ",
+    "thai_pronunciation": "ลาย",
     "ipa": "laɪ"
   },
   {
@@ -3224,7 +3224,7 @@
     "level": "A1",
     "id": 365,
     "meaning": "ชีวิต",
-    "thai_pronunciation": "ลาย ฝึ l ˈaɪ",
+    "thai_pronunciation": "ลาย ฝึ",
     "ipa": "f"
   },
   {
@@ -3233,7 +3233,7 @@
     "level": "A1",
     "id": 366,
     "meaning": "ชอบ",
-    "thai_pronunciation": "ลาย ขึ l ˈaɪ",
+    "thai_pronunciation": "ลาย ขึ",
     "ipa": "k"
   },
   {
@@ -3242,7 +3242,7 @@
     "level": "A1",
     "id": 367,
     "meaning": "สิงโต",
-    "thai_pronunciation": "ล้าย เออะ น l ˈaɪ ʌ",
+    "thai_pronunciation": "ล้าย เออะ น",
     "ipa": "n"
   },
   {
@@ -3251,7 +3251,7 @@
     "level": "A1",
     "id": 368,
     "meaning": "รายการ",
-    "thai_pronunciation": "ลิ สึ ถึ l ˈɪ s",
+    "thai_pronunciation": "ลิ สึ ถึ",
     "ipa": "t"
   },
   {
@@ -3260,7 +3260,7 @@
     "level": "A1",
     "id": 369,
     "meaning": "ฟัง",
-    "thai_pronunciation": "ลิ เสอะ น l ˈɪ s ʌ",
+    "thai_pronunciation": "ลิ เสอะ น",
     "ipa": "n"
   },
   {
@@ -3269,7 +3269,7 @@
     "level": "A1",
     "id": 370,
     "meaning": "สด",
-    "thai_pronunciation": "ลาย ฝึ l ˈaɪ",
+    "thai_pronunciation": "ลาย ฝึ",
     "ipa": "v"
   },
   {
@@ -3278,7 +3278,7 @@
     "level": "A1",
     "id": 371,
     "meaning": "ยาว",
-    "thai_pronunciation": "ลอ ง l ˈɔː",
+    "thai_pronunciation": "ลอ ง",
     "ipa": "ŋ"
   },
   {
@@ -3287,7 +3287,7 @@
     "level": "A1",
     "id": 372,
     "meaning": "สูญเสีย",
-    "thai_pronunciation": "ลู สึ l ˈuː",
+    "thai_pronunciation": "ลู สึ",
     "ipa": "z"
   },
   {
@@ -3296,7 +3296,7 @@
     "level": "A1",
     "id": 373,
     "meaning": "มาก",
-    "thai_pronunciation": "ลา ถึ l ˈɑː",
+    "thai_pronunciation": "ลา ถึ",
     "ipa": "t"
   },
   {
@@ -3305,7 +3305,7 @@
     "level": "A1",
     "id": 374,
     "meaning": "รัก",
-    "thai_pronunciation": "ละ ฝึ l ˈʌ",
+    "thai_pronunciation": "ละ ฝึ",
     "ipa": "v"
   },
   {
@@ -3314,7 +3314,7 @@
     "level": "A1",
     "id": 375,
     "meaning": "อาหารกลางวัน",
-    "thai_pronunciation": "ละ น ฉึ l ˈʌ n",
+    "thai_pronunciation": "ละ น ฉึ",
     "ipa": "tʃ"
   },
   {
@@ -3323,7 +3323,7 @@
     "level": "A1",
     "id": 376,
     "meaning": "เครื่องจักร",
-    "thai_pronunciation": "เหมอะ ชี้ น m ʌ ʃ ˈiː",
+    "thai_pronunciation": "เหมอะ ชี้ น",
     "ipa": "n"
   },
   {
@@ -3332,7 +3332,7 @@
     "level": "A1",
     "id": 377,
     "meaning": "นิตยสาร",
-    "thai_pronunciation": "แม้ เกอะ ซี น m ˈæ g ʌ z ˌiː",
+    "thai_pronunciation": "แม้ เกอะ ซี น",
     "ipa": "n"
   },
   {
@@ -3341,7 +3341,7 @@
     "level": "A1",
     "id": 378,
     "meaning": "หลัก",
-    "thai_pronunciation": "เม น m ˈeɪ",
+    "thai_pronunciation": "เม น",
     "ipa": "n"
   },
   {
@@ -3350,7 +3350,7 @@
     "level": "A1",
     "id": 379,
     "meaning": "ผู้ชาย",
-    "thai_pronunciation": "แม น m ˈæ",
+    "thai_pronunciation": "แม น",
     "ipa": "n"
   },
   {
@@ -3359,7 +3359,7 @@
     "level": "A1",
     "id": 380,
     "meaning": "มากมาย",
-    "thai_pronunciation": "เม้ะ หนี่ m ˈe n",
+    "thai_pronunciation": "เม้ะ หนี่",
     "ipa": "iː"
   },
   {
@@ -3368,7 +3368,7 @@
     "level": "A1",
     "id": 381,
     "meaning": "มีนาคม",
-    "thai_pronunciation": "มาร ฉึ m ˈɑː r",
+    "thai_pronunciation": "มาร ฉึ",
     "ipa": "tʃ"
   },
   {
@@ -3377,7 +3377,7 @@
     "level": "A1",
     "id": 382,
     "meaning": "แต่งงานแล้ว",
-    "thai_pronunciation": "แม้ ร อี่ ดึ m ˈe r iː",
+    "thai_pronunciation": "แม้ ร อี่ ดึ",
     "ipa": "d"
   },
   {
@@ -3386,7 +3386,7 @@
     "level": "A1",
     "id": 383,
     "meaning": "จับคู่",
-    "thai_pronunciation": "แม ฉึ m ˈæ",
+    "thai_pronunciation": "แม ฉึ",
     "ipa": "tʃ"
   },
   {
@@ -3395,7 +3395,7 @@
     "level": "A1",
     "id": 384,
     "meaning": "อาจ",
-    "thai_pronunciation": "เม m ˈeɪ",
+    "thai_pronunciation": "เม",
     "ipa": "meɪ"
   },
   {
@@ -3404,7 +3404,7 @@
     "level": "A1",
     "id": 385,
     "meaning": "อาจจะ",
-    "thai_pronunciation": "เม้ บี่ m ˈeɪ b",
+    "thai_pronunciation": "เม้ บี่",
     "ipa": "iː"
   },
   {
@@ -3413,7 +3413,7 @@
     "level": "A1",
     "id": 386,
     "meaning": "ฉัน",
-    "thai_pronunciation": "มี m",
+    "thai_pronunciation": "มี",
     "ipa": "ˈiː"
   },
   {
@@ -3422,7 +3422,7 @@
     "level": "A1",
     "id": 387,
     "meaning": "มื้อ",
-    "thai_pronunciation": "มี ล m ˈiː",
+    "thai_pronunciation": "มี ล",
     "ipa": "l"
   },
   {
@@ -3431,7 +3431,7 @@
     "level": "A1",
     "id": 388,
     "meaning": "หมายถึง",
-    "thai_pronunciation": "มี น m ˈiː",
+    "thai_pronunciation": "มี น",
     "ipa": "n"
   },
   {
@@ -3440,7 +3440,7 @@
     "level": "A1",
     "id": 389,
     "meaning": "ความหมาย",
-    "thai_pronunciation": "มี้ หนิ่ ง m ˈiː n ɪ",
+    "thai_pronunciation": "มี้ หนิ่ ง",
     "ipa": "ŋ"
   },
   {
@@ -3449,7 +3449,7 @@
     "level": "A1",
     "id": 390,
     "meaning": "เนื้อ",
-    "thai_pronunciation": "มี ถึ m ˈiː",
+    "thai_pronunciation": "มี ถึ",
     "ipa": "t"
   },
   {
@@ -3458,7 +3458,7 @@
     "level": "A1",
     "id": 391,
     "meaning": "พบปะ",
-    "thai_pronunciation": "มี ถึ m ˈiː",
+    "thai_pronunciation": "มี ถึ",
     "ipa": "t"
   },
   {
@@ -3467,7 +3467,7 @@
     "level": "A1",
     "id": 392,
     "meaning": "การประชุม",
-    "thai_pronunciation": "มี้ ถิ่ ง m ˈiː t ɪ",
+    "thai_pronunciation": "มี้ ถิ่ ง",
     "ipa": "ŋ"
   },
   {
@@ -3476,7 +3476,7 @@
     "level": "A1",
     "id": 393,
     "meaning": "สมาชิก",
-    "thai_pronunciation": "เม้ะ ม เบ่อ ร m ˈe m b ɜːʴ",
+    "thai_pronunciation": "เม้ะ ม เบ่อ ร",
     "ipa": "ˈmɛmbər"
   },
   {
@@ -3485,7 +3485,7 @@
     "level": "A1",
     "id": 394,
     "meaning": "เมนู",
-    "thai_pronunciation": "เม้ะ น หยู่ m ˈe n j",
+    "thai_pronunciation": "เม้ะ น หยู่",
     "ipa": "uː"
   },
   {
@@ -3494,7 +3494,7 @@
     "level": "A1",
     "id": 395,
     "meaning": "ข้อความ",
-    "thai_pronunciation": "เม้ะ เสอะ จึ m ˈe s ʌ",
+    "thai_pronunciation": "เม้ะ เสอะ จึ",
     "ipa": "dʒ"
   },
   {
@@ -3503,7 +3503,7 @@
     "level": "A1",
     "id": 396,
     "meaning": "เมตร",
-    "thai_pronunciation": "มี้ เถ่อ ร m ˈiː t ɜːʴ",
+    "thai_pronunciation": "มี้ เถ่อ ร",
     "ipa": "ˈmitər"
   },
   {
@@ -3512,7 +3512,7 @@
     "level": "A1",
     "id": 397,
     "meaning": "เที่ยงคืน",
-    "thai_pronunciation": "มิ ดึ นาย ถึ m ˈɪ d n ˌaɪ",
+    "thai_pronunciation": "มิ ดึ นาย ถึ",
     "ipa": "t"
   },
   {
@@ -3521,7 +3521,7 @@
     "level": "A1",
     "id": 398,
     "meaning": "ไมล์",
-    "thai_pronunciation": "มาย ล m ˈaɪ",
+    "thai_pronunciation": "มาย ล",
     "ipa": "l"
   },
   {
@@ -3530,7 +3530,7 @@
     "level": "A1",
     "id": 399,
     "meaning": "น้ำนม",
-    "thai_pronunciation": "มิ ล ขึ m ˈɪ l",
+    "thai_pronunciation": "มิ ล ขึ",
     "ipa": "k"
   },
   {
@@ -3539,7 +3539,7 @@
     "level": "A1",
     "id": 400,
     "meaning": "ล้าน",
-    "thai_pronunciation": "มิ ล เหยอะ น m ˈɪ l j ʌ",
+    "thai_pronunciation": "มิ ล เหยอะ น",
     "ipa": "n"
   },
   {
@@ -3548,7 +3548,7 @@
     "level": "A1",
     "id": 401,
     "meaning": "นาที",
-    "thai_pronunciation": "มิ เหนอะ ถึ m ˈɪ n ʌ",
+    "thai_pronunciation": "มิ เหนอะ ถึ",
     "ipa": "t"
   },
   {
@@ -3557,7 +3557,7 @@
     "level": "A1",
     "id": 402,
     "meaning": "นางสาว",
-    "thai_pronunciation": "มิ สึ m ˈɪ",
+    "thai_pronunciation": "มิ สึ",
     "ipa": "s"
   },
   {
@@ -3566,7 +3566,7 @@
     "level": "A1",
     "id": 403,
     "meaning": "ทันสมัย",
-    "thai_pronunciation": "ม้า เด่อ ร น m ˈɑː d ɜːʴ",
+    "thai_pronunciation": "ม้า เด่อ ร น",
     "ipa": "n"
   },
   {
@@ -3575,7 +3575,7 @@
     "level": "A1",
     "id": 404,
     "meaning": "ช่วงเวลา",
-    "thai_pronunciation": "โม้ว เหมอะ น ถึ m ˈəʊ m ʌ n",
+    "thai_pronunciation": "โม้ว เหมอะ น ถึ",
     "ipa": "t"
   },
   {
@@ -3584,7 +3584,7 @@
     "level": "A1",
     "id": 405,
     "meaning": "วันจันทร์",
-    "thai_pronunciation": "มะ น ดี่ m ˈʌ n d",
+    "thai_pronunciation": "มะ น ดี่",
     "ipa": "iː"
   },
   {
@@ -3593,7 +3593,7 @@
     "level": "A1",
     "id": 406,
     "meaning": "เงิน",
-    "thai_pronunciation": "มะ หนี่ m ˈʌ n",
+    "thai_pronunciation": "มะ หนี่",
     "ipa": "iː"
   },
   {
@@ -3602,7 +3602,7 @@
     "level": "A1",
     "id": 407,
     "meaning": "เดือน",
-    "thai_pronunciation": "มะ น ตึ m ˈʌ n",
+    "thai_pronunciation": "มะ น ตึ",
     "ipa": "θ"
   },
   {
@@ -3611,7 +3611,7 @@
     "level": "A1",
     "id": 408,
     "meaning": "มากกว่า",
-    "thai_pronunciation": "มอ ร m ˈɔː",
+    "thai_pronunciation": "มอ ร",
     "ipa": "r"
   },
   {
@@ -3620,7 +3620,7 @@
     "level": "A1",
     "id": 409,
     "meaning": "เช้า",
-    "thai_pronunciation": "ม้อ ร หนิ่ ง m ˈɔː r n ɪ",
+    "thai_pronunciation": "ม้อ ร หนิ่ ง",
     "ipa": "ŋ"
   },
   {
@@ -3629,7 +3629,7 @@
     "level": "A1",
     "id": 410,
     "meaning": "ที่สุด",
-    "thai_pronunciation": "โมว สึ ถึ m ˈəʊ s",
+    "thai_pronunciation": "โมว สึ ถึ",
     "ipa": "t"
   },
   {
@@ -3638,7 +3638,7 @@
     "level": "A1",
     "id": 411,
     "meaning": "แม่",
-    "thai_pronunciation": "มะ เด่อ ร m ˈʌ ð ɜːʴ",
+    "thai_pronunciation": "มะ เด่อ ร",
     "ipa": "ˈməðər"
   },
   {
@@ -3647,7 +3647,7 @@
     "level": "A1",
     "id": 412,
     "meaning": "ภูเขา",
-    "thai_pronunciation": "ม้าว น เถอะ น m ˈaʊ n t ʌ",
+    "thai_pronunciation": "ม้าว น เถอะ น",
     "ipa": "n"
   },
   {
@@ -3656,7 +3656,7 @@
     "level": "A1",
     "id": 413,
     "meaning": "หนู",
-    "thai_pronunciation": "มาว สึ m ˈaʊ",
+    "thai_pronunciation": "มาว สึ",
     "ipa": "s"
   },
   {
@@ -3665,7 +3665,7 @@
     "level": "A1",
     "id": 414,
     "meaning": "ปาก",
-    "thai_pronunciation": "มาว ดึ m ˈaʊ",
+    "thai_pronunciation": "มาว ดึ",
     "ipa": "ð"
   },
   {
@@ -3674,7 +3674,7 @@
     "level": "A1",
     "id": 415,
     "meaning": "ภาพยนตร์",
-    "thai_pronunciation": "มู้ ฝี่ m ˈuː v",
+    "thai_pronunciation": "มู้ ฝี่",
     "ipa": "iː"
   },
   {
@@ -3683,7 +3683,7 @@
     "level": "A1",
     "id": 416,
     "meaning": "มาก",
-    "thai_pronunciation": "มะ ฉึ m ˈʌ",
+    "thai_pronunciation": "มะ ฉึ",
     "ipa": "tʃ"
   },
   {
@@ -3692,7 +3692,7 @@
     "level": "A1",
     "id": 417,
     "meaning": "แม่",
-    "thai_pronunciation": "มะ ม m ˈʌ",
+    "thai_pronunciation": "มะ ม",
     "ipa": "m"
   },
   {
@@ -3701,7 +3701,7 @@
     "level": "A1",
     "id": 418,
     "meaning": "พิพิธภัณฑ์",
-    "thai_pronunciation": "ม หยู่ ซี้ เออะ ม m j uː z ˈiː ʌ",
+    "thai_pronunciation": "ม หยู่ ซี้ เออะ ม",
     "ipa": "m"
   },
   {
@@ -3710,7 +3710,7 @@
     "level": "A1",
     "id": 419,
     "meaning": "ดนตรี",
-    "thai_pronunciation": "ม ยู้ สิ่ ขึ m j ˈuː z ɪ",
+    "thai_pronunciation": "ม ยู้ สิ่ ขึ",
     "ipa": "k"
   },
   {
@@ -3727,7 +3727,7 @@
     "level": "A1",
     "id": 421,
     "meaning": "ของฉัน",
-    "thai_pronunciation": "มาย m ˈaɪ",
+    "thai_pronunciation": "มาย",
     "ipa": "maɪ"
   },
   {
@@ -3736,7 +3736,7 @@
     "level": "A1",
     "id": 422,
     "meaning": "ชื่อ",
-    "thai_pronunciation": "เน ม n ˈeɪ",
+    "thai_pronunciation": "เน ม",
     "ipa": "m"
   },
   {
@@ -3745,7 +3745,7 @@
     "level": "A1",
     "id": 423,
     "meaning": "เป็นธรรมชาติ",
-    "thai_pronunciation": "แน้ เฉ่อ ร เหรอะ ล n ˈæ tʃ ɜːʴ ʌ",
+    "thai_pronunciation": "แน้ เฉ่อ ร เหรอะ ล",
     "ipa": "l"
   },
   {
@@ -3754,7 +3754,7 @@
     "level": "A1",
     "id": 424,
     "meaning": "ใกล้",
-    "thai_pronunciation": "เนีย ร n ˈɪ",
+    "thai_pronunciation": "เนีย ร",
     "ipa": "r"
   },
   {
@@ -3763,7 +3763,7 @@
     "level": "A1",
     "id": 425,
     "meaning": "เพื่อนบ้าน",
-    "thai_pronunciation": "เน้ เบ่อ ร n ˈeɪ b ɜːʴ",
+    "thai_pronunciation": "เน้ เบ่อ ร",
     "ipa": "ˈneɪbər"
   },
   {
@@ -3772,7 +3772,7 @@
     "level": "A1",
     "id": 426,
     "meaning": "ไม่เคย",
-    "thai_pronunciation": "เน้ะ เฝ่อ ร n ˈe v ɜːʴ",
+    "thai_pronunciation": "เน้ะ เฝ่อ ร",
     "ipa": "ˈnɛvər"
   },
   {
@@ -3781,7 +3781,7 @@
     "level": "A1",
     "id": 427,
     "meaning": "ใหม่",
-    "thai_pronunciation": "นู n",
+    "thai_pronunciation": "นู",
     "ipa": "ˈuː"
   },
   {
@@ -3790,7 +3790,7 @@
     "level": "A1",
     "id": 428,
     "meaning": "ข่าว",
-    "thai_pronunciation": "นู สึ n ˈuː",
+    "thai_pronunciation": "นู สึ",
     "ipa": "z"
   },
   {
@@ -3799,7 +3799,7 @@
     "level": "A1",
     "id": 429,
     "meaning": "หนังสือพิมพ์",
-    "thai_pronunciation": "นู้ สึ เพ เผ่อ ร n ˈuː z p ˌeɪ p ɜːʴ",
+    "thai_pronunciation": "นู้ สึ เพ เผ่อ ร",
     "ipa": "ˈnuzˌpeɪpər"
   },
   {
@@ -3808,7 +3808,7 @@
     "level": "A1",
     "id": 430,
     "meaning": "ต่อไป",
-    "thai_pronunciation": "เนะ ขึ สึ ถึ n ˈe k s",
+    "thai_pronunciation": "เนะ ขึ สึ ถึ",
     "ipa": "t"
   },
   {
@@ -3817,7 +3817,7 @@
     "level": "A1",
     "id": 431,
     "meaning": "ดี",
-    "thai_pronunciation": "นาย สึ n ˈaɪ",
+    "thai_pronunciation": "นาย สึ",
     "ipa": "s"
   },
   {
@@ -3826,7 +3826,7 @@
     "level": "A1",
     "id": 432,
     "meaning": "กลางคืน",
-    "thai_pronunciation": "นาย ถึ n ˈaɪ",
+    "thai_pronunciation": "นาย ถึ",
     "ipa": "t"
   },
   {
@@ -3835,7 +3835,7 @@
     "level": "A1",
     "id": 433,
     "meaning": "เก้า",
-    "thai_pronunciation": "นาย น n ˈaɪ",
+    "thai_pronunciation": "นาย น",
     "ipa": "n"
   },
   {
@@ -3844,7 +3844,7 @@
     "level": "A1",
     "id": 434,
     "meaning": "สิบเก้า",
-    "thai_pronunciation": "น้าย น ที้ น n ˈaɪ n t ˈiː",
+    "thai_pronunciation": "น้าย น ที้ น",
     "ipa": "n"
   },
   {
@@ -3853,7 +3853,7 @@
     "level": "A1",
     "id": 435,
     "meaning": "เก้าสิบ",
-    "thai_pronunciation": "น้าย น ถี่ n ˈaɪ n t",
+    "thai_pronunciation": "น้าย น ถี่",
     "ipa": "iː"
   },
   {
@@ -3862,7 +3862,7 @@
     "level": "A1",
     "id": 436,
     "meaning": "เลขที่",
-    "thai_pronunciation": "โนว n ˈəʊ",
+    "thai_pronunciation": "โนว",
     "ipa": "noʊ"
   },
   {
@@ -3871,7 +3871,7 @@
     "level": "A1",
     "id": 437,
     "meaning": "เลขที่",
-    "thai_pronunciation": "โนว n ˈəʊ",
+    "thai_pronunciation": "โนว",
     "ipa": "noʊ wən"
   },
   {
@@ -3880,7 +3880,7 @@
     "level": "A1",
     "id": 438,
     "meaning": "ไม่มีใคร",
-    "thai_pronunciation": "โน้ว บา ดี n ˈəʊ b ˌɑː d",
+    "thai_pronunciation": "โน้ว บา ดี",
     "ipa": "ˌiː"
   },
   {
@@ -3889,7 +3889,7 @@
     "level": "A1",
     "id": 439,
     "meaning": "ทิศเหนือ",
-    "thai_pronunciation": "นอ ร ตึ n ˈɔː r",
+    "thai_pronunciation": "นอ ร ตึ",
     "ipa": "θ"
   },
   {
@@ -3898,7 +3898,7 @@
     "level": "A1",
     "id": 440,
     "meaning": "จมูก",
-    "thai_pronunciation": "โนว สึ n ˈəʊ",
+    "thai_pronunciation": "โนว สึ",
     "ipa": "z"
   },
   {
@@ -3907,7 +3907,7 @@
     "level": "A1",
     "id": 441,
     "meaning": "ไม่",
-    "thai_pronunciation": "นา ถึ n ˈɑː",
+    "thai_pronunciation": "นา ถึ",
     "ipa": "t"
   },
   {
@@ -3916,7 +3916,7 @@
     "level": "A1",
     "id": 442,
     "meaning": "ไม่มีอะไร",
-    "thai_pronunciation": "นะ ติ ง n ˈʌ θ ɪ",
+    "thai_pronunciation": "นะ ติ ง",
     "ipa": "ŋ"
   },
   {
@@ -3925,7 +3925,7 @@
     "level": "A1",
     "id": 443,
     "meaning": "พฤศจิกายน",
-    "thai_pronunciation": "โหน่ว เฟ้ะ ม เบ่อ ร n əʊ v ˈe m b ɜːʴ",
+    "thai_pronunciation": "โหน่ว เฟ้ะ ม เบ่อ ร",
     "ipa": "noʊˈvɛmbər"
   },
   {
@@ -3934,7 +3934,7 @@
     "level": "A1",
     "id": 444,
     "meaning": "พยาบาล",
-    "thai_pronunciation": "เนอ ร สึ n ˈɜːʴ",
+    "thai_pronunciation": "เนอ ร สึ",
     "ipa": "s"
   },
   {
@@ -3951,7 +3951,7 @@
     "level": "A1",
     "id": 446,
     "meaning": "ตุลาคม",
-    "thai_pronunciation": "อ่า ขึ โท้ว เบ่อ ร ɑː k t ˈəʊ b ɜːʴ",
+    "thai_pronunciation": "อ่า ขึ โท้ว เบ่อ ร",
     "ipa": "ɑkˈtoʊbər"
   },
   {
@@ -3960,7 +3960,7 @@
     "level": "A1",
     "id": 447,
     "meaning": "ของ",
-    "thai_pronunciation": "อ๊ะ ฝึ ˈʌ",
+    "thai_pronunciation": "อ๊ะ ฝึ",
     "ipa": "v"
   },
   {
@@ -3969,7 +3969,7 @@
     "level": "A1",
     "id": 448,
     "meaning": "ปิด",
-    "thai_pronunciation": "อ๊อ ฝึ ˈɔː",
+    "thai_pronunciation": "อ๊อ ฝึ",
     "ipa": "f"
   },
   {
@@ -3978,7 +3978,7 @@
     "level": "A1",
     "id": 449,
     "meaning": "สำนักงาน",
-    "thai_pronunciation": "อ๊อ ฝิ่ สึ ˈɔː f ɪ",
+    "thai_pronunciation": "อ๊อ ฝิ่ สึ",
     "ipa": "s"
   },
   {
@@ -3987,7 +3987,7 @@
     "level": "A1",
     "id": 450,
     "meaning": "บ่อยครั้ง",
-    "thai_pronunciation": "อ๊อ เฝอะ น ˈɔː f ʌ",
+    "thai_pronunciation": "อ๊อ เฝอะ น",
     "ipa": "n"
   },
   {
@@ -3996,7 +3996,7 @@
     "level": "A1",
     "id": 451,
     "meaning": "โอ้",
-    "thai_pronunciation": "โอ๊ว ˈəʊ",
+    "thai_pronunciation": "โอ๊ว",
     "ipa": "oʊ"
   },
   {
@@ -4005,7 +4005,7 @@
     "level": "A1",
     "id": 452,
     "meaning": "ตกลง",
-    "thai_pronunciation": "โอ๊ว เค้ ˈəʊ k ˈeɪ",
+    "thai_pronunciation": "โอ๊ว เค้",
     "ipa": "ˈoʊˈkeɪ"
   },
   {
@@ -4014,7 +4014,7 @@
     "level": "A1",
     "id": 453,
     "meaning": "เก่า",
-    "thai_pronunciation": "โอ๊ว ล ดึ ˈəʊ l",
+    "thai_pronunciation": "โอ๊ว ล ดึ",
     "ipa": "d"
   },
   {
@@ -4023,7 +4023,7 @@
     "level": "A1",
     "id": 454,
     "meaning": "บน",
-    "thai_pronunciation": "อ๊า น ˈɑː",
+    "thai_pronunciation": "อ๊า น",
     "ipa": "n"
   },
   {
@@ -4032,7 +4032,7 @@
     "level": "A1",
     "id": 455,
     "meaning": "หนึ่ง",
-    "thai_pronunciation": "วะ น w ˈʌ",
+    "thai_pronunciation": "วะ น",
     "ipa": "n"
   },
   {
@@ -4041,7 +4041,7 @@
     "level": "A1",
     "id": 456,
     "meaning": "หัวหอม",
-    "thai_pronunciation": "อ๊ะ น เหยอะ น ˈʌ n j ʌ",
+    "thai_pronunciation": "อ๊ะ น เหยอะ น",
     "ipa": "n"
   },
   {
@@ -4050,7 +4050,7 @@
     "level": "A1",
     "id": 457,
     "meaning": "ออนไลน์",
-    "thai_pronunciation": "อ๊อ น ลาย น ˈɔː n l ˌaɪ",
+    "thai_pronunciation": "อ๊อ น ลาย น",
     "ipa": "n"
   },
   {
@@ -4059,7 +4059,7 @@
     "level": "A1",
     "id": 458,
     "meaning": "เท่านั้น",
-    "thai_pronunciation": "โอ๊ว น หลี่ ˈəʊ n l",
+    "thai_pronunciation": "โอ๊ว น หลี่",
     "ipa": "iː"
   },
   {
@@ -4068,7 +4068,7 @@
     "level": "A1",
     "id": 459,
     "meaning": "เปิด",
-    "thai_pronunciation": "โอ๊ว เผอะ น ˈəʊ p ʌ",
+    "thai_pronunciation": "โอ๊ว เผอะ น",
     "ipa": "n"
   },
   {
@@ -4077,7 +4077,7 @@
     "level": "A1",
     "id": 460,
     "meaning": "ความคิดเห็น",
-    "thai_pronunciation": "เออะ พิ น เหยอะ น ʌ p ˈɪ n j ʌ",
+    "thai_pronunciation": "เออะ พิ น เหยอะ น",
     "ipa": "n"
   },
   {
@@ -4086,7 +4086,7 @@
     "level": "A1",
     "id": 461,
     "meaning": "ตรงข้าม",
-    "thai_pronunciation": "อ๊า เผอะ เสอะ ถึ ˈɑː p ʌ z ʌ",
+    "thai_pronunciation": "อ๊า เผอะ เสอะ ถึ",
     "ipa": "t"
   },
   {
@@ -4095,7 +4095,7 @@
     "level": "A1",
     "id": 462,
     "meaning": "หรือ",
-    "thai_pronunciation": "อ๊อ ร ˈɔː",
+    "thai_pronunciation": "อ๊อ ร",
     "ipa": "r"
   },
   {
@@ -4104,7 +4104,7 @@
     "level": "A1",
     "id": 463,
     "meaning": "ส้ม",
-    "thai_pronunciation": "อ๊อ เหรอะ น จึ ˈɔː r ʌ n",
+    "thai_pronunciation": "อ๊อ เหรอะ น จึ",
     "ipa": "dʒ"
   },
   {
@@ -4113,7 +4113,7 @@
     "level": "A1",
     "id": 464,
     "meaning": "คำสั่ง",
-    "thai_pronunciation": "อ๊อ ร เด่อ ร ˈɔː r d ɜːʴ",
+    "thai_pronunciation": "อ๊อ ร เด่อ ร",
     "ipa": "ˈɔrdər"
   },
   {
@@ -4122,7 +4122,7 @@
     "level": "A1",
     "id": 465,
     "meaning": "อื่น",
-    "thai_pronunciation": "อ๊ะ เด่อ ร ˈʌ ð ɜːʴ",
+    "thai_pronunciation": "อ๊ะ เด่อ ร",
     "ipa": "ˈəðər"
   },
   {
@@ -4131,7 +4131,7 @@
     "level": "A1",
     "id": 466,
     "meaning": "ของเรา",
-    "thai_pronunciation": "อ๊าว เอ่อ ร ˈaʊ ɜːʴ",
+    "thai_pronunciation": "อ๊าว เอ่อ ร",
     "ipa": "ɑr"
   },
   {
@@ -4140,7 +4140,7 @@
     "level": "A1",
     "id": 467,
     "meaning": "ออก",
-    "thai_pronunciation": "อ๊าว ถึ ˈaʊ",
+    "thai_pronunciation": "อ๊าว ถึ",
     "ipa": "t"
   },
   {
@@ -4149,7 +4149,7 @@
     "level": "A1",
     "id": 468,
     "meaning": "เกิน",
-    "thai_pronunciation": "โอ๊ว เฝ่อ ร ˈəʊ v ɜːʴ",
+    "thai_pronunciation": "โอ๊ว เฝ่อ ร",
     "ipa": "ˈoʊvər"
   },
   {
@@ -4158,7 +4158,7 @@
     "level": "A1",
     "id": 469,
     "meaning": "หน้าหนังสือ",
-    "thai_pronunciation": "เพ จึ p ˈeɪ",
+    "thai_pronunciation": "เพ จึ",
     "ipa": "dʒ"
   },
   {
@@ -4167,7 +4167,7 @@
     "level": "A1",
     "id": 470,
     "meaning": "สี",
-    "thai_pronunciation": "เพ น ถึ p ˈeɪ n",
+    "thai_pronunciation": "เพ น ถึ",
     "ipa": "t"
   },
   {
@@ -4176,7 +4176,7 @@
     "level": "A1",
     "id": 471,
     "meaning": "จิตรกรรม",
-    "thai_pronunciation": "เพ้ น ถิ่ ง p ˈeɪ n t ɪ",
+    "thai_pronunciation": "เพ้ น ถิ่ ง",
     "ipa": "ŋ"
   },
   {
@@ -4185,7 +4185,7 @@
     "level": "A1",
     "id": 472,
     "meaning": "คู่",
-    "thai_pronunciation": "แพ ร p ˈe",
+    "thai_pronunciation": "แพ ร",
     "ipa": "r"
   },
   {
@@ -4194,7 +4194,7 @@
     "level": "A1",
     "id": 473,
     "meaning": "กระดาษ",
-    "thai_pronunciation": "เพ้ เผ่อ ร p ˈeɪ p ɜːʴ",
+    "thai_pronunciation": "เพ้ เผ่อ ร",
     "ipa": "ˈpeɪpər"
   },
   {
@@ -4203,7 +4203,7 @@
     "level": "A1",
     "id": 474,
     "meaning": "ย่อหน้า",
-    "thai_pronunciation": "แพ้ เหรอะ แกร ฝึ p ˈæ r ʌ g r ˌæ",
+    "thai_pronunciation": "แพ้ เหรอะ แกร ฝึ",
     "ipa": "f"
   },
   {
@@ -4212,7 +4212,7 @@
     "level": "A1",
     "id": 475,
     "meaning": "พ่อแม่",
-    "thai_pronunciation": "แพ้ ร เออะ น ถึ p ˈe r ʌ n",
+    "thai_pronunciation": "แพ้ ร เออะ น ถึ",
     "ipa": "t"
   },
   {
@@ -4221,7 +4221,7 @@
     "level": "A1",
     "id": 476,
     "meaning": "สวน",
-    "thai_pronunciation": "พาร ขึ p ˈɑː r",
+    "thai_pronunciation": "พาร ขึ",
     "ipa": "k"
   },
   {
@@ -4230,7 +4230,7 @@
     "level": "A1",
     "id": 477,
     "meaning": "ส่วนหนึ่ง",
-    "thai_pronunciation": "พาร ถึ p ˈɑː r",
+    "thai_pronunciation": "พาร ถึ",
     "ipa": "t"
   },
   {
@@ -4239,7 +4239,7 @@
     "level": "A1",
     "id": 478,
     "meaning": "พันธมิตร",
-    "thai_pronunciation": "พ้าร ถึ เหน่อ ร p ˈɑː r t n ɜːʴ",
+    "thai_pronunciation": "พ้าร ถึ เหน่อ ร",
     "ipa": "ˈpɑrtnər"
   },
   {
@@ -4248,7 +4248,7 @@
     "level": "A1",
     "id": 479,
     "meaning": "งานสังสรรค์",
-    "thai_pronunciation": "พ้าร ถี่ p ˈɑː r t",
+    "thai_pronunciation": "พ้าร ถี่",
     "ipa": "iː"
   },
   {
@@ -4257,7 +4257,7 @@
     "level": "A1",
     "id": 480,
     "meaning": "หนังสือเดินทาง",
-    "thai_pronunciation": "แพ้ สึ พอ ร ถึ p ˈæ s p ˌɔː r",
+    "thai_pronunciation": "แพ้ สึ พอ ร ถึ",
     "ipa": "t"
   },
   {
@@ -4266,7 +4266,7 @@
     "level": "A1",
     "id": 481,
     "meaning": "ปากกา",
-    "thai_pronunciation": "เพะ น p ˈe",
+    "thai_pronunciation": "เพะ น",
     "ipa": "n"
   },
   {
@@ -4275,7 +4275,7 @@
     "level": "A1",
     "id": 482,
     "meaning": "ดินสอ",
-    "thai_pronunciation": "เพ้ะ น เสอะ ล p ˈe n s ʌ",
+    "thai_pronunciation": "เพ้ะ น เสอะ ล",
     "ipa": "l"
   },
   {
@@ -4284,7 +4284,7 @@
     "level": "A1",
     "id": 483,
     "meaning": "ประชากร",
-    "thai_pronunciation": "พี้ เผอะ ล p ˈiː p ʌ",
+    "thai_pronunciation": "พี้ เผอะ ล",
     "ipa": "l"
   },
   {
@@ -4293,7 +4293,7 @@
     "level": "A1",
     "id": 484,
     "meaning": "พริกไทย",
-    "thai_pronunciation": "เพ้ะ เผ่อ ร p ˈe p ɜːʴ",
+    "thai_pronunciation": "เพ้ะ เผ่อ ร",
     "ipa": "ˈpɛpər"
   },
   {
@@ -4302,7 +4302,7 @@
     "level": "A1",
     "id": 485,
     "meaning": "สมบูรณ์แบบ",
-    "thai_pronunciation": "เพ้อ ร ฟิ ขึ ถึ p ˈɜːʴ f ˌɪ k",
+    "thai_pronunciation": "เพ้อ ร ฟิ ขึ ถึ",
     "ipa": "t"
   },
   {
@@ -4311,7 +4311,7 @@
     "level": "A1",
     "id": 486,
     "meaning": "ระยะเวลา",
-    "thai_pronunciation": "เพี้ย ร อี่ เออะ ดึ p ˈɪ r iː ʌ",
+    "thai_pronunciation": "เพี้ย ร อี่ เออะ ดึ",
     "ipa": "d"
   },
   {
@@ -4320,7 +4320,7 @@
     "level": "A1",
     "id": 487,
     "meaning": "บุคคล",
-    "thai_pronunciation": "เพ้อ ร เสอะ น p ˈɜːʴ s ʌ",
+    "thai_pronunciation": "เพ้อ ร เสอะ น",
     "ipa": "n"
   },
   {
@@ -4329,7 +4329,7 @@
     "level": "A1",
     "id": 488,
     "meaning": "ส่วนตัว",
-    "thai_pronunciation": "เพ้อ ร สิ่ เหนอะ ล p ˈɜːʴ s ɪ n ʌ",
+    "thai_pronunciation": "เพ้อ ร สิ่ เหนอะ ล",
     "ipa": "l"
   },
   {
@@ -4338,7 +4338,7 @@
     "level": "A1",
     "id": 489,
     "meaning": "โทรศัพท์",
-    "thai_pronunciation": "โฟว น f ˈəʊ",
+    "thai_pronunciation": "โฟว น",
     "ipa": "n"
   },
   {
@@ -4347,7 +4347,7 @@
     "level": "A1",
     "id": 490,
     "meaning": "รูปถ่าย",
-    "thai_pronunciation": "โฟ้ว โทว f ˈəʊ t ˌəʊ",
+    "thai_pronunciation": "โฟ้ว โทว",
     "ipa": "ˈfoʊˌtoʊ"
   },
   {
@@ -4356,7 +4356,7 @@
     "level": "A1",
     "id": 491,
     "meaning": "วลี",
-    "thai_pronunciation": "เฟร สึ f r ˈeɪ",
+    "thai_pronunciation": "เฟร สึ",
     "ipa": "z"
   },
   {
@@ -4365,7 +4365,7 @@
     "level": "A1",
     "id": 492,
     "meaning": "เปียโน",
-    "thai_pronunciation": "ผี่ แอ๊ โหน่ว p iː ˈæ n əʊ",
+    "thai_pronunciation": "ผี่ แอ๊ โหน่ว",
     "ipa": "piˈænə"
   },
   {
@@ -4374,7 +4374,7 @@
     "level": "A1",
     "id": 493,
     "meaning": "ชิ้นส่วน",
-    "thai_pronunciation": "พี สึ p ˈiː",
+    "thai_pronunciation": "พี สึ",
     "ipa": "s"
   },
   {
@@ -4383,7 +4383,7 @@
     "level": "A1",
     "id": 494,
     "meaning": "หมู",
-    "thai_pronunciation": "พิ กึ p ˈɪ",
+    "thai_pronunciation": "พิ กึ",
     "ipa": "g"
   },
   {
@@ -4392,7 +4392,7 @@
     "level": "A1",
     "id": 495,
     "meaning": "สีชมพู",
-    "thai_pronunciation": "พิ ง ขึ p ˈɪ ŋ",
+    "thai_pronunciation": "พิ ง ขึ",
     "ipa": "k"
   },
   {
@@ -4833,7 +4833,7 @@
     "level": "A1",
     "id": 550,
     "meaning": "วันเสาร์",
-    "thai_pronunciation": "แซ้ เถ่อ ร ดี่ s ˈæ t ɜːʴ d",
+    "thai_pronunciation": "แซ้ เถ่อ ร ดี่",
     "ipa": "iː"
   },
   {
@@ -4842,7 +4842,7 @@
     "level": "A1",
     "id": 551,
     "meaning": "พูด",
-    "thai_pronunciation": "เซ s ˈeɪ",
+    "thai_pronunciation": "เซ",
     "ipa": "seɪ"
   },
   {
@@ -4851,7 +4851,7 @@
     "level": "A1",
     "id": 552,
     "meaning": "โรงเรียน",
-    "thai_pronunciation": "สึ คู ล s k ˈuː",
+    "thai_pronunciation": "สึ คู ล",
     "ipa": "l"
   },
   {
@@ -4860,7 +4860,7 @@
     "level": "A1",
     "id": 553,
     "meaning": "ศาสตร์",
-    "thai_pronunciation": "ซ้าย เออะ น สึ s ˈaɪ ʌ n",
+    "thai_pronunciation": "ซ้าย เออะ น สึ",
     "ipa": "s"
   },
   {
@@ -4869,7 +4869,7 @@
     "level": "A1",
     "id": 554,
     "meaning": "นักวิทยาศาสตร์",
-    "thai_pronunciation": "ซ้าย เออะ น ถิ่ สึ ถึ s ˈaɪ ʌ n t ɪ s",
+    "thai_pronunciation": "ซ้าย เออะ น ถิ่ สึ ถึ",
     "ipa": "t"
   },
   {
@@ -4878,7 +4878,7 @@
     "level": "A1",
     "id": 555,
     "meaning": "ทะเล",
-    "thai_pronunciation": "ซี s",
+    "thai_pronunciation": "ซี",
     "ipa": "ˈiː"
   },
   {
@@ -4887,7 +4887,7 @@
     "level": "A1",
     "id": 556,
     "meaning": "ที่สอง",
-    "thai_pronunciation": "เซ้ะ เขอะ น ดึ s ˈe k ʌ n",
+    "thai_pronunciation": "เซ้ะ เขอะ น ดึ",
     "ipa": "d"
   },
   {
@@ -4896,7 +4896,7 @@
     "level": "A1",
     "id": 557,
     "meaning": "ส่วน",
-    "thai_pronunciation": "เซ้ะ ขึ เฉอะ น s ˈe k ʃ ʌ",
+    "thai_pronunciation": "เซ้ะ ขึ เฉอะ น",
     "ipa": "n"
   },
   {
@@ -4905,7 +4905,7 @@
     "level": "A1",
     "id": 558,
     "meaning": "ดู",
-    "thai_pronunciation": "ซี s",
+    "thai_pronunciation": "ซี",
     "ipa": "ˈiː"
   },
   {
@@ -4914,7 +4914,7 @@
     "level": "A1",
     "id": 559,
     "meaning": "ขาย",
-    "thai_pronunciation": "เซะ ล s ˈe",
+    "thai_pronunciation": "เซะ ล",
     "ipa": "l"
   },
   {
@@ -4923,7 +4923,7 @@
     "level": "A1",
     "id": 560,
     "meaning": "ส่ง",
-    "thai_pronunciation": "เซะ น ดึ s ˈe n",
+    "thai_pronunciation": "เซะ น ดึ",
     "ipa": "d"
   },
   {
@@ -4932,7 +4932,7 @@
     "level": "A1",
     "id": 561,
     "meaning": "กันยายน",
-    "thai_pronunciation": "เสะ ผึ เท้ะ ม เบ่อ ร s e p t ˈe m b ɜːʴ",
+    "thai_pronunciation": "เสะ ผึ เท้ะ ม เบ่อ ร",
     "ipa": "sɛpˈtɛmbər"
   },
   {
@@ -4941,7 +4941,7 @@
     "level": "A1",
     "id": 562,
     "meaning": "เจ็ด",
-    "thai_pronunciation": "เซ้ะ เฝอะ น s ˈe v ʌ",
+    "thai_pronunciation": "เซ้ะ เฝอะ น",
     "ipa": "n"
   },
   {
@@ -4950,7 +4950,7 @@
     "level": "A1",
     "id": 563,
     "meaning": "สิบเจ็ด",
-    "thai_pronunciation": "เซ้ะ เฝอะ น ที้ น s ˈe v ʌ n t ˈiː",
+    "thai_pronunciation": "เซ้ะ เฝอะ น ที้ น",
     "ipa": "n"
   },
   {
@@ -4959,7 +4959,7 @@
     "level": "A1",
     "id": 564,
     "meaning": "เจ็ดสิบ",
-    "thai_pronunciation": "เซ้ะ เฝอะ น ถี่ s ˈe v ʌ n t",
+    "thai_pronunciation": "เซ้ะ เฝอะ น ถี่",
     "ipa": "iː"
   },
   {
@@ -4968,7 +4968,7 @@
     "level": "A1",
     "id": 565,
     "meaning": "เธอ",
-    "thai_pronunciation": "ชี ʃ",
+    "thai_pronunciation": "ชี",
     "ipa": "ˈiː"
   },
   {
@@ -4977,7 +4977,7 @@
     "level": "A1",
     "id": 566,
     "meaning": "แกะ",
-    "thai_pronunciation": "ชี ผึ ʃ ˈiː",
+    "thai_pronunciation": "ชี ผึ",
     "ipa": "p"
   },
   {
@@ -4986,7 +4986,7 @@
     "level": "A1",
     "id": 567,
     "meaning": "เสื้อ",
-    "thai_pronunciation": "เชอ ร ถึ ʃ ˈɜːʴ",
+    "thai_pronunciation": "เชอ ร ถึ",
     "ipa": "t"
   },
   {
@@ -4995,7 +4995,7 @@
     "level": "A1",
     "id": 568,
     "meaning": "รองเท้า",
-    "thai_pronunciation": "ชู ʃ",
+    "thai_pronunciation": "ชู",
     "ipa": "ˈuː"
   },
   {
@@ -5004,7 +5004,7 @@
     "level": "A1",
     "id": 569,
     "meaning": "ร้านค้า",
-    "thai_pronunciation": "ชา ผึ ʃ ˈɑː",
+    "thai_pronunciation": "ชา ผึ",
     "ipa": "p"
   },
   {
@@ -5013,7 +5013,7 @@
     "level": "A1",
     "id": 570,
     "meaning": "ช้อปปิ้ง",
-    "thai_pronunciation": "ช้า ผิ่ ง ʃ ˈɑː p ɪ",
+    "thai_pronunciation": "ช้า ผิ่ ง",
     "ipa": "ŋ"
   },
   {
@@ -5022,7 +5022,7 @@
     "level": "A1",
     "id": 571,
     "meaning": "สั้น",
-    "thai_pronunciation": "ชอ ร ถึ ʃ ˈɔː r",
+    "thai_pronunciation": "ชอ ร ถึ",
     "ipa": "t"
   },
   {
@@ -5039,7 +5039,7 @@
     "level": "A1",
     "id": 573,
     "meaning": "แสดง",
-    "thai_pronunciation": "โชว ʃ ˈəʊ",
+    "thai_pronunciation": "โชว",
     "ipa": "ʃoʊ"
   },
   {
@@ -5048,7 +5048,7 @@
     "level": "A1",
     "id": 574,
     "meaning": "อาบน้ำ",
-    "thai_pronunciation": "ช้าว เอ่อ ร ʃ ˈaʊ ɜːʴ",
+    "thai_pronunciation": "ช้าว เอ่อ ร",
     "ipa": "ʃaʊər"
   },
   {
@@ -5057,7 +5057,7 @@
     "level": "A1",
     "id": 575,
     "meaning": "ป่วย",
-    "thai_pronunciation": "ซิ ขึ s ˈɪ",
+    "thai_pronunciation": "ซิ ขึ",
     "ipa": "k"
   },
   {
@@ -5066,7 +5066,7 @@
     "level": "A1",
     "id": 576,
     "meaning": "คล้ายกัน",
-    "thai_pronunciation": "ซิ เหมอะ เหล่อ ร s ˈɪ m ʌ l ɜːʴ",
+    "thai_pronunciation": "ซิ เหมอะ เหล่อ ร",
     "ipa": "ˈsɪmələr"
   },
   {
@@ -5075,7 +5075,7 @@
     "level": "A1",
     "id": 577,
     "meaning": "ร้องเพลง",
-    "thai_pronunciation": "ซิ ง s ˈɪ",
+    "thai_pronunciation": "ซิ ง",
     "ipa": "ŋ"
   },
   {
@@ -5084,7 +5084,7 @@
     "level": "A1",
     "id": 578,
     "meaning": "นักร้อง",
-    "thai_pronunciation": "ซิ เหง่อ ร s ˈɪ ŋ ɜːʴ",
+    "thai_pronunciation": "ซิ เหง่อ ร",
     "ipa": "ˈsɪŋər"
   },
   {
@@ -5093,7 +5093,7 @@
     "level": "A1",
     "id": 579,
     "meaning": "น้องสาว",
-    "thai_pronunciation": "ซิ สึ เถ่อ ร s ˈɪ s t ɜːʴ",
+    "thai_pronunciation": "ซิ สึ เถ่อ ร",
     "ipa": "ˈsɪstər"
   },
   {
@@ -5102,7 +5102,7 @@
     "level": "A1",
     "id": 580,
     "meaning": "นั่ง",
-    "thai_pronunciation": "ซิ ถึ s ˈɪ",
+    "thai_pronunciation": "ซิ ถึ",
     "ipa": "t"
   },
   {
@@ -5111,7 +5111,7 @@
     "level": "A1",
     "id": 581,
     "meaning": "สถานการณ์",
-    "thai_pronunciation": "ซิ ฉู่ เอ๊ เฉอะ น s ˌɪ tʃ uː ˈeɪ ʃ ʌ",
+    "thai_pronunciation": "ซิ ฉู่ เอ๊ เฉอะ น",
     "ipa": "n"
   },
   {
@@ -5120,7 +5120,7 @@
     "level": "A1",
     "id": 582,
     "meaning": "หก",
-    "thai_pronunciation": "ซิ ขึ สึ s ˈɪ k",
+    "thai_pronunciation": "ซิ ขึ สึ",
     "ipa": "s"
   },
   {
@@ -5129,7 +5129,7 @@
     "level": "A1",
     "id": 583,
     "meaning": "สิบหก",
-    "thai_pronunciation": "สิ่ ขึ สึ ที้ น s ɪ k s t ˈiː",
+    "thai_pronunciation": "สิ่ ขึ สึ ที้ น",
     "ipa": "n"
   },
   {
@@ -5138,7 +5138,7 @@
     "level": "A1",
     "id": 584,
     "meaning": "หกสิบ",
-    "thai_pronunciation": "ซิ ขึ สึ ถี่ s ˈɪ k s t",
+    "thai_pronunciation": "ซิ ขึ สึ ถี่",
     "ipa": "iː"
   },
   {
@@ -5147,7 +5147,7 @@
     "level": "A1",
     "id": 585,
     "meaning": "ทักษะ",
-    "thai_pronunciation": "สึ คิ ล s k ˈɪ",
+    "thai_pronunciation": "สึ คิ ล",
     "ipa": "l"
   },
   {
@@ -5156,7 +5156,7 @@
     "level": "A1",
     "id": 586,
     "meaning": "กระโปรง",
-    "thai_pronunciation": "สึ เคอ ร ถึ s k ˈɜːʴ",
+    "thai_pronunciation": "สึ เคอ ร ถึ",
     "ipa": "t"
   },
   {
@@ -5165,7 +5165,7 @@
     "level": "A1",
     "id": 587,
     "meaning": "เล็ก",
-    "thai_pronunciation": "สึ มอ ล s m ˈɔː",
+    "thai_pronunciation": "สึ มอ ล",
     "ipa": "l"
   },
   {
@@ -5174,7 +5174,7 @@
     "level": "A1",
     "id": 588,
     "meaning": "งู",
-    "thai_pronunciation": "สึ เน ขึ s n ˈeɪ",
+    "thai_pronunciation": "สึ เน ขึ",
     "ipa": "k"
   },
   {
@@ -5183,7 +5183,7 @@
     "level": "A1",
     "id": 589,
     "meaning": "หิมะ",
-    "thai_pronunciation": "สึ โนว s n ˈəʊ",
+    "thai_pronunciation": "สึ โนว",
     "ipa": "snoʊ"
   },
   {
@@ -5192,7 +5192,7 @@
     "level": "A1",
     "id": 590,
     "meaning": "ดังนั้น",
-    "thai_pronunciation": "โซว s ˈəʊ",
+    "thai_pronunciation": "โซว",
     "ipa": "soʊ"
   },
   {
@@ -5201,7 +5201,7 @@
     "level": "A1",
     "id": 591,
     "meaning": "บาง",
-    "thai_pronunciation": "ซะ ม s ˈʌ",
+    "thai_pronunciation": "ซะ ม",
     "ipa": "m"
   },
   {
@@ -5210,7 +5210,7 @@
     "level": "A1",
     "id": 592,
     "meaning": "ใครบางคน",
-    "thai_pronunciation": "ซะ ม บา ดี่ s ˈʌ m b ˌɑː d",
+    "thai_pronunciation": "ซะ ม บา ดี่",
     "ipa": "iː"
   },
   {
@@ -5219,7 +5219,7 @@
     "level": "A1",
     "id": 593,
     "meaning": "บางคน",
-    "thai_pronunciation": "ซะ ม วะ น s ˈʌ m w ˌʌ",
+    "thai_pronunciation": "ซะ ม วะ น",
     "ipa": "n"
   },
   {
@@ -5228,7 +5228,7 @@
     "level": "A1",
     "id": 594,
     "meaning": "บางสิ่งบางอย่าง",
-    "thai_pronunciation": "ซะ ม ติ ง s ˈʌ m θ ɪ",
+    "thai_pronunciation": "ซะ ม ติ ง",
     "ipa": "ŋ"
   },
   {
@@ -5237,7 +5237,7 @@
     "level": "A1",
     "id": 595,
     "meaning": "บางครั้ง",
-    "thai_pronunciation": "เสอะ ม ท้าย ม สึ s ʌ m t ˈaɪ m",
+    "thai_pronunciation": "เสอะ ม ท้าย ม สึ",
     "ipa": "z"
   },
   {
@@ -5246,7 +5246,7 @@
     "level": "A1",
     "id": 596,
     "meaning": "ลูกชาย",
-    "thai_pronunciation": "ซะ น s ˈʌ",
+    "thai_pronunciation": "ซะ น",
     "ipa": "n"
   },
   {
@@ -5255,7 +5255,7 @@
     "level": "A1",
     "id": 597,
     "meaning": "เพลง",
-    "thai_pronunciation": "ซอ ง s ˈɔː",
+    "thai_pronunciation": "ซอ ง",
     "ipa": "ŋ"
   },
   {
@@ -5264,7 +5264,7 @@
     "level": "A1",
     "id": 598,
     "meaning": "เร็วๆ",
-    "thai_pronunciation": "นี้ ซู น s ˈuː",
+    "thai_pronunciation": "นี้ ซู น",
     "ipa": "n"
   },
   {
@@ -5273,7 +5273,7 @@
     "level": "A1",
     "id": 599,
     "meaning": "ขอโทษ",
-    "thai_pronunciation": "ซ้าร อี่ s ˈɑː r",
+    "thai_pronunciation": "ซ้าร อี่",
     "ipa": "iː"
   },
   {
@@ -5282,7 +5282,7 @@
     "level": "A1",
     "id": 600,
     "meaning": "เสียง",
-    "thai_pronunciation": "ซาว น ดึ s ˈaʊ n",
+    "thai_pronunciation": "ซาว น ดึ",
     "ipa": "d"
   },
   {
@@ -5291,7 +5291,7 @@
     "level": "A1",
     "id": 601,
     "meaning": "ซุป",
-    "thai_pronunciation": "ซู ผึ s ˈuː",
+    "thai_pronunciation": "ซู ผึ",
     "ipa": "p"
   },
   {
@@ -5300,7 +5300,7 @@
     "level": "A1",
     "id": 602,
     "meaning": "ใต้",
-    "thai_pronunciation": "ซาว ตึ s ˈaʊ",
+    "thai_pronunciation": "ซาว ตึ",
     "ipa": "θ"
   },
   {
@@ -5309,7 +5309,7 @@
     "level": "A1",
     "id": 603,
     "meaning": "ช่องว่าง",
-    "thai_pronunciation": "สึ เพ สึ s p ˈeɪ",
+    "thai_pronunciation": "สึ เพ สึ",
     "ipa": "s"
   },
   {
@@ -5318,7 +5318,7 @@
     "level": "A1",
     "id": 604,
     "meaning": "พูด",
-    "thai_pronunciation": "สึ พี ขึ s p ˈiː",
+    "thai_pronunciation": "สึ พี ขึ",
     "ipa": "k"
   },
   {
@@ -5327,7 +5327,7 @@
     "level": "A1",
     "id": 605,
     "meaning": "พิเศษ",
-    "thai_pronunciation": "สึ เพ้ะ เฉอะ ล s p ˈe ʃ ʌ",
+    "thai_pronunciation": "สึ เพ้ะ เฉอะ ล",
     "ipa": "l"
   },
   {
@@ -5336,7 +5336,7 @@
     "level": "A1",
     "id": 606,
     "meaning": "สะกด",
-    "thai_pronunciation": "สึ เพะ ล s p ˈe",
+    "thai_pronunciation": "สึ เพะ ล",
     "ipa": "l"
   },
   {
@@ -5345,7 +5345,7 @@
     "level": "A1",
     "id": 607,
     "meaning": "การสะกดคำ",
-    "thai_pronunciation": "สึ เพ้ะ หลิ่ ง s p ˈe l ɪ",
+    "thai_pronunciation": "สึ เพ้ะ หลิ่ ง",
     "ipa": "ŋ"
   },
   {
@@ -5354,7 +5354,7 @@
     "level": "A1",
     "id": 608,
     "meaning": "ใช้จ่าย",
-    "thai_pronunciation": "สึ เพะ น ดึ s p ˈe n",
+    "thai_pronunciation": "สึ เพะ น ดึ",
     "ipa": "d"
   },
   {
@@ -5363,7 +5363,7 @@
     "level": "A1",
     "id": 609,
     "meaning": "กีฬา",
-    "thai_pronunciation": "สึ พอ ร ถึ s p ˈɔː r",
+    "thai_pronunciation": "สึ พอ ร ถึ",
     "ipa": "t"
   },
   {
@@ -5372,7 +5372,7 @@
     "level": "A1",
     "id": 610,
     "meaning": "คำแถลง",
-    "thai_pronunciation": "สึ เท้ ถึ เหมอะ น ถึ s t ˈeɪ t m ʌ n",
+    "thai_pronunciation": "สึ เท้ ถึ เหมอะ น ถึ",
     "ipa": "t"
   },
   {
@@ -5381,7 +5381,7 @@
     "level": "A1",
     "id": 611,
     "meaning": "สถานี",
-    "thai_pronunciation": "สึ เท้ เฉอะ น s t ˈeɪ ʃ ʌ",
+    "thai_pronunciation": "สึ เท้ เฉอะ น",
     "ipa": "n"
   },
   {
@@ -5390,7 +5390,7 @@
     "level": "A1",
     "id": 612,
     "meaning": "หยุด",
-    "thai_pronunciation": "สึ ทา ผึ s t ˈɑː",
+    "thai_pronunciation": "สึ ทา ผึ",
     "ipa": "p"
   },
   {
@@ -5399,7 +5399,7 @@
     "level": "A1",
     "id": 613,
     "meaning": "เรื่องราว",
-    "thai_pronunciation": "สึ ท้อ หรี่ s t ˈɔː r",
+    "thai_pronunciation": "สึ ท้อ หรี่",
     "ipa": "iː"
   },
   {
@@ -5408,7 +5408,7 @@
     "level": "A1",
     "id": 614,
     "meaning": "ถนน",
-    "thai_pronunciation": "สึ ทรี ถึ s t r ˈiː",
+    "thai_pronunciation": "สึ ทรี ถึ",
     "ipa": "t"
   },
   {
@@ -5417,7 +5417,7 @@
     "level": "A1",
     "id": 615,
     "meaning": "แข็งแกร่ง",
-    "thai_pronunciation": "สึ ทรอ ง s t r ˈɔː",
+    "thai_pronunciation": "สึ ทรอ ง",
     "ipa": "ŋ"
   },
   {
@@ -5426,7 +5426,7 @@
     "level": "A1",
     "id": 616,
     "meaning": "นักเรียน",
-    "thai_pronunciation": "สึ ทู้ เดอะ น ถึ s t ˈuː d ʌ n",
+    "thai_pronunciation": "สึ ทู้ เดอะ น ถึ",
     "ipa": "t"
   },
   {
@@ -5435,7 +5435,7 @@
     "level": "A1",
     "id": 617,
     "meaning": "ศึกษา",
-    "thai_pronunciation": "สึ ทะ ดี่ s t ˈʌ d",
+    "thai_pronunciation": "สึ ทะ ดี่",
     "ipa": "iː"
   },
   {
@@ -5444,7 +5444,7 @@
     "level": "A1",
     "id": 618,
     "meaning": "สไตล์",
-    "thai_pronunciation": "สึ ทาย ล s t ˈaɪ",
+    "thai_pronunciation": "สึ ทาย ล",
     "ipa": "l"
   },
   {
@@ -5453,7 +5453,7 @@
     "level": "A1",
     "id": 619,
     "meaning": "ความสำเร็จ",
-    "thai_pronunciation": "เสอะ ขึ เซ้ะ สึ s ʌ k s ˈe",
+    "thai_pronunciation": "เสอะ ขึ เซ้ะ สึ",
     "ipa": "s"
   },
   {
@@ -5462,7 +5462,7 @@
     "level": "A1",
     "id": 620,
     "meaning": "น้ำตาล",
-    "thai_pronunciation": "ชุ เก่อ ร ʃ ˈʊ g ɜːʴ",
+    "thai_pronunciation": "ชุ เก่อ ร",
     "ipa": "ˈʃʊgər"
   },
   {
@@ -5471,7 +5471,7 @@
     "level": "A1",
     "id": 621,
     "meaning": "ฤดูร้อน",
-    "thai_pronunciation": "ซะ เหม่อ ร s ˈʌ m ɜːʴ",
+    "thai_pronunciation": "ซะ เหม่อ ร",
     "ipa": "ˈsəmər"
   },
   {
@@ -5480,7 +5480,7 @@
     "level": "A1",
     "id": 622,
     "meaning": "ดวงอาทิตย์",
-    "thai_pronunciation": "ซะ น s ˈʌ",
+    "thai_pronunciation": "ซะ น",
     "ipa": "n"
   },
   {
@@ -5489,7 +5489,7 @@
     "level": "A1",
     "id": 623,
     "meaning": "วันอาทิตย์",
-    "thai_pronunciation": "ซะ น เด s ˈʌ n d ˌeɪ",
+    "thai_pronunciation": "ซะ น เด",
     "ipa": "ˈsənˌdi"
   },
   {
@@ -5498,7 +5498,7 @@
     "level": "A1",
     "id": 624,
     "meaning": "ซูเปอร์มาร์เก็ต",
-    "thai_pronunciation": "ซู้ เผ่อ ร มาร ขิ่ ถึ s ˈuː p ɜːʴ m ˌɑː r k ɪ",
+    "thai_pronunciation": "ซู้ เผ่อ ร มาร ขิ่ ถึ",
     "ipa": "t"
   },
   {
@@ -5507,7 +5507,7 @@
     "level": "A1",
     "id": 625,
     "meaning": "เสื้อกันหนาว",
-    "thai_pronunciation": "สึ เว้ะ เถ่อ ร s w ˈe t ɜːʴ",
+    "thai_pronunciation": "สึ เว้ะ เถ่อ ร",
     "ipa": "sˈwɛtər"
   },
   {
@@ -5516,7 +5516,7 @@
     "level": "A1",
     "id": 626,
     "meaning": "การว่ายน้ำ",
-    "thai_pronunciation": "สึ วิ หมิ่ ง s w ˈɪ m ɪ",
+    "thai_pronunciation": "สึ วิ หมิ่ ง",
     "ipa": "ŋ"
   },
   {
@@ -5525,7 +5525,7 @@
     "level": "A1",
     "id": 627,
     "meaning": "โต๊ะ",
-    "thai_pronunciation": "เท้ เบอะ ล t ˈeɪ b ʌ",
+    "thai_pronunciation": "เท้ เบอะ ล",
     "ipa": "l"
   },
   {
@@ -5534,7 +5534,7 @@
     "level": "A1",
     "id": 628,
     "meaning": "เอา",
-    "thai_pronunciation": "เท ขึ t ˈeɪ",
+    "thai_pronunciation": "เท ขึ",
     "ipa": "k"
   },
   {
@@ -5543,7 +5543,7 @@
     "level": "A1",
     "id": 629,
     "meaning": "สูง",
-    "thai_pronunciation": "ทอ ล t ˈɔː",
+    "thai_pronunciation": "ทอ ล",
     "ipa": "l"
   },
   {
@@ -5552,7 +5552,7 @@
     "level": "A1",
     "id": 630,
     "meaning": "แท็กซี่",
-    "thai_pronunciation": "แท้ ขึ สี่ t ˈæ k s",
+    "thai_pronunciation": "แท้ ขึ สี่",
     "ipa": "iː"
   },
   {
@@ -5561,7 +5561,7 @@
     "level": "A1",
     "id": 631,
     "meaning": "ชา",
-    "thai_pronunciation": "ที t",
+    "thai_pronunciation": "ที",
     "ipa": "ˈiː"
   },
   {
@@ -5570,7 +5570,7 @@
     "level": "A1",
     "id": 632,
     "meaning": "สอน",
-    "thai_pronunciation": "ที ฉึ t ˈiː",
+    "thai_pronunciation": "ที ฉึ",
     "ipa": "tʃ"
   },
   {
@@ -5579,7 +5579,7 @@
     "level": "A1",
     "id": 633,
     "meaning": "ครู",
-    "thai_pronunciation": "ที้ เฉ่อ ร t ˈiː tʃ ɜːʴ",
+    "thai_pronunciation": "ที้ เฉ่อ ร",
     "ipa": "ˈtiʧər"
   },
   {
@@ -5588,7 +5588,7 @@
     "level": "A1",
     "id": 634,
     "meaning": "ทีม",
-    "thai_pronunciation": "ที ม t ˈiː",
+    "thai_pronunciation": "ที ม",
     "ipa": "m"
   },
   {
@@ -5597,7 +5597,7 @@
     "level": "A1",
     "id": 635,
     "meaning": "วัยรุ่น",
-    "thai_pronunciation": "ที้ เน เจ่อ ร t ˈiː n ˌeɪ dʒ ɜːʴ",
+    "thai_pronunciation": "ที้ เน เจ่อ ร",
     "ipa": "ˈtiˌneɪʤər"
   },
   {
@@ -5606,7 +5606,7 @@
     "level": "A1",
     "id": 636,
     "meaning": "โทรศัพท์",
-    "thai_pronunciation": "เท้ะ เหลอะ โฟว น t ˈe l ʌ f ˌəʊ",
+    "thai_pronunciation": "เท้ะ เหลอะ โฟว น",
     "ipa": "n"
   },
   {
@@ -5615,7 +5615,7 @@
     "level": "A1",
     "id": 637,
     "meaning": "โทรทัศน์",
-    "thai_pronunciation": "เท้ะ เหลอะ ฟิ เฉอะ น t ˈe l ʌ v ˌɪ ʒ ʌ",
+    "thai_pronunciation": "เท้ะ เหลอะ ฟิ เฉอะ น",
     "ipa": "n"
   },
   {
@@ -5624,7 +5624,7 @@
     "level": "A1",
     "id": 638,
     "meaning": "บอก",
-    "thai_pronunciation": "เทะ ล t ˈe",
+    "thai_pronunciation": "เทะ ล",
     "ipa": "l"
   },
   {
@@ -5633,7 +5633,7 @@
     "level": "A1",
     "id": 639,
     "meaning": "สิบ",
-    "thai_pronunciation": "เทะ น t ˈe",
+    "thai_pronunciation": "เทะ น",
     "ipa": "n"
   },
   {
@@ -5642,7 +5642,7 @@
     "level": "A1",
     "id": 640,
     "meaning": "เทนนิส",
-    "thai_pronunciation": "เท้ะ เหนอะ สึ t ˈe n ʌ",
+    "thai_pronunciation": "เท้ะ เหนอะ สึ",
     "ipa": "s"
   },
   {
@@ -5651,7 +5651,7 @@
     "level": "A1",
     "id": 641,
     "meaning": "ย่ำแย่",
-    "thai_pronunciation": "แท้ ร เออะ เบอะ ล t ˈe r ʌ b ʌ",
+    "thai_pronunciation": "แท้ ร เออะ เบอะ ล",
     "ipa": "l"
   },
   {
@@ -5660,7 +5660,7 @@
     "level": "A1",
     "id": 642,
     "meaning": "ทดสอบ",
-    "thai_pronunciation": "เทะ สึ ถึ t ˈe s",
+    "thai_pronunciation": "เทะ สึ ถึ",
     "ipa": "t"
   },
   {
@@ -5669,7 +5669,7 @@
     "level": "A1",
     "id": 643,
     "meaning": "กว่า",
-    "thai_pronunciation": "แด น ð ˈæ",
+    "thai_pronunciation": "แด น",
     "ipa": "n"
   },
   {
@@ -5678,7 +5678,7 @@
     "level": "A1",
     "id": 644,
     "meaning": "ขอบคุณ",
-    "thai_pronunciation": "แต ง ขึ θ ˈæ ŋ",
+    "thai_pronunciation": "แต ง ขึ",
     "ipa": "k"
   },
   {
@@ -5687,7 +5687,7 @@
     "level": "A1",
     "id": 645,
     "meaning": "ขอบคุณ",
-    "thai_pronunciation": "แต ง ขึ สึ θ ˈæ ŋ k",
+    "thai_pronunciation": "แต ง ขึ สึ",
     "ipa": "s"
   },
   {
@@ -5696,7 +5696,7 @@
     "level": "A1",
     "id": 646,
     "meaning": "ที่",
-    "thai_pronunciation": "เดอะ ð",
+    "thai_pronunciation": "เดอะ",
     "ipa": "ʌ"
   },
   {
@@ -5705,7 +5705,7 @@
     "level": "A1",
     "id": 647,
     "meaning": "โรงภาพยนตร์",
-    "thai_pronunciation": "ตี๊ เออะ เถ่อ ร θ ˈiː ʌ t ɜːʴ",
+    "thai_pronunciation": "ตี๊ เออะ เถ่อ ร",
     "ipa": "ˈθiətər"
   },
   {
@@ -5714,7 +5714,7 @@
     "level": "A1",
     "id": 648,
     "meaning": "ของพวกเขา",
-    "thai_pronunciation": "แด ร ð ˈe",
+    "thai_pronunciation": "แด ร",
     "ipa": "r"
   },
   {
@@ -5723,7 +5723,7 @@
     "level": "A1",
     "id": 649,
     "meaning": "พวกเขา",
-    "thai_pronunciation": "เดะ ม ð ˈe",
+    "thai_pronunciation": "เดะ ม",
     "ipa": "m"
   },
   {
@@ -5732,7 +5732,7 @@
     "level": "A1",
     "id": 650,
     "meaning": "แล้ว",
-    "thai_pronunciation": "เดะ น ð ˈe",
+    "thai_pronunciation": "เดะ น",
     "ipa": "n"
   },
   {
@@ -5741,7 +5741,7 @@
     "level": "A1",
     "id": 651,
     "meaning": "ที่นั่น",
-    "thai_pronunciation": "แด ร ð ˈe",
+    "thai_pronunciation": "แด ร",
     "ipa": "r"
   },
   {
@@ -5750,7 +5750,7 @@
     "level": "A1",
     "id": 652,
     "meaning": "พวกเขา",
-    "thai_pronunciation": "เด ð ˈeɪ",
+    "thai_pronunciation": "เด",
     "ipa": "ðeɪ"
   },
   {
@@ -5759,7 +5759,7 @@
     "level": "A1",
     "id": 653,
     "meaning": "สิ่ง",
-    "thai_pronunciation": "ติ ง θ ˈɪ",
+    "thai_pronunciation": "ติ ง",
     "ipa": "ŋ"
   },
   {
@@ -5768,7 +5768,7 @@
     "level": "A1",
     "id": 654,
     "meaning": "คิด",
-    "thai_pronunciation": "ติ ง ขึ θ ˈɪ ŋ",
+    "thai_pronunciation": "ติ ง ขึ",
     "ipa": "k"
   },
   {
@@ -5777,7 +5777,7 @@
     "level": "A1",
     "id": 655,
     "meaning": "กระหายน้ำ",
-    "thai_pronunciation": "เต๊อ ร สึ ถี่ θ ˈɜːʴ s t",
+    "thai_pronunciation": "เต๊อ ร สึ ถี่",
     "ipa": "iː"
   },
   {
@@ -5786,7 +5786,7 @@
     "level": "A1",
     "id": 656,
     "meaning": "สิบสาม",
-    "thai_pronunciation": "เต๊อ ร ที้ น θ ˈɜːʴ t ˈiː",
+    "thai_pronunciation": "เต๊อ ร ที้ น",
     "ipa": "n"
   },
   {
@@ -5795,7 +5795,7 @@
     "level": "A1",
     "id": 657,
     "meaning": "สามสิบ",
-    "thai_pronunciation": "เต๊อ ร ดี θ ˈɜːʴ d",
+    "thai_pronunciation": "เต๊อ ร ดี",
     "ipa": "ˌiː"
   },
   {
@@ -5804,7 +5804,7 @@
     "level": "A1",
     "id": 658,
     "meaning": "พัน",
-    "thai_pronunciation": "ต๊าว เสอะ น ดึ θ ˈaʊ z ʌ n",
+    "thai_pronunciation": "ต๊าว เสอะ น ดึ",
     "ipa": "d"
   },
   {
@@ -5813,7 +5813,7 @@
     "level": "A1",
     "id": 659,
     "meaning": "สาม",
-    "thai_pronunciation": "ตรี θ r",
+    "thai_pronunciation": "ตรี",
     "ipa": "ˈiː"
   },
   {
@@ -5822,7 +5822,7 @@
     "level": "A1",
     "id": 660,
     "meaning": "ผ่าน",
-    "thai_pronunciation": "ตรู θ r",
+    "thai_pronunciation": "ตรู",
     "ipa": "ˈuː"
   },
   {
@@ -5831,7 +5831,7 @@
     "level": "A1",
     "id": 661,
     "meaning": "วันพฤหัสบดี",
-    "thai_pronunciation": "เต๊อ ร สึ เด θ ˈɜːʴ z d ˌeɪ",
+    "thai_pronunciation": "เต๊อ ร สึ เด",
     "ipa": "ˈθərzˌdeɪ"
   },
   {
@@ -5840,7 +5840,7 @@
     "level": "A1",
     "id": 662,
     "meaning": "ตั๋ว",
-    "thai_pronunciation": "ทิ เขอะ ถึ t ˈɪ k ʌ",
+    "thai_pronunciation": "ทิ เขอะ ถึ",
     "ipa": "t"
   },
   {
@@ -5849,7 +5849,7 @@
     "level": "A1",
     "id": 663,
     "meaning": "เหนื่อย",
-    "thai_pronunciation": "ท้าย เอ่อ ร ดึ t ˈaɪ ɜːʴ",
+    "thai_pronunciation": "ท้าย เอ่อ ร ดึ",
     "ipa": "d"
   },
   {
@@ -5858,7 +5858,7 @@
     "level": "A1",
     "id": 664,
     "meaning": "ถึง",
-    "thai_pronunciation": "ทู t",
+    "thai_pronunciation": "ทู",
     "ipa": "ˈuː"
   },
   {
@@ -5867,7 +5867,7 @@
     "level": "A1",
     "id": 665,
     "meaning": "วันนี้",
-    "thai_pronunciation": "เถอะ เด๊ t ʌ d ˈeɪ",
+    "thai_pronunciation": "เถอะ เด๊",
     "ipa": "təˈdeɪ"
   },
   {
@@ -5876,7 +5876,7 @@
     "level": "A1",
     "id": 666,
     "meaning": "ด้วยกัน",
-    "thai_pronunciation": "เถอะ เก๊ะ เด่อ ร t ʌ g ˈe ð ɜːʴ",
+    "thai_pronunciation": "เถอะ เก๊ะ เด่อ ร",
     "ipa": "təˈgɛðər"
   },
   {
@@ -5885,7 +5885,7 @@
     "level": "A1",
     "id": 667,
     "meaning": "ห้องน้ำ",
-    "thai_pronunciation": "ท้อย เหลอะ ถึ t ˈɔɪ l ʌ",
+    "thai_pronunciation": "ท้อย เหลอะ ถึ",
     "ipa": "t"
   },
   {
@@ -5894,7 +5894,7 @@
     "level": "A1",
     "id": 668,
     "meaning": "มะเขือเทศ",
-    "thai_pronunciation": "เถอะ เม้ โทว t ʌ m ˈeɪ t ˌəʊ",
+    "thai_pronunciation": "เถอะ เม้ โทว",
     "ipa": "təˈmɑˌtoʊ"
   },
   {
@@ -5903,7 +5903,7 @@
     "level": "A1",
     "id": 669,
     "meaning": "พรุ่งนี้",
-    "thai_pronunciation": "เถอะ ม้าร โอว t ʌ m ˈɑː r ˌəʊ",
+    "thai_pronunciation": "เถอะ ม้าร โอว",
     "ipa": "təˈmɑˌroʊ"
   },
   {
@@ -5912,7 +5912,7 @@
     "level": "A1",
     "id": 670,
     "meaning": "คืนนี้",
-    "thai_pronunciation": "เถอะ น้าย ถึ t ʌ n ˈaɪ",
+    "thai_pronunciation": "เถอะ น้าย ถึ",
     "ipa": "t"
   },
   {
@@ -5921,7 +5921,7 @@
     "level": "A1",
     "id": 671,
     "meaning": "ด้วย",
-    "thai_pronunciation": "ทู t",
+    "thai_pronunciation": "ทู",
     "ipa": "ˈuː"
   },
   {
@@ -5930,7 +5930,7 @@
     "level": "A1",
     "id": 672,
     "meaning": "ฟัน",
-    "thai_pronunciation": "ทู ตึ t ˈuː",
+    "thai_pronunciation": "ทู ตึ",
     "ipa": "θ"
   },
   {
@@ -5939,7 +5939,7 @@
     "level": "A1",
     "id": 673,
     "meaning": "หัวข้อ",
-    "thai_pronunciation": "ท้า ผิ่ ขึ t ˈɑː p ɪ",
+    "thai_pronunciation": "ท้า ผิ่ ขึ",
     "ipa": "k"
   },
   {
@@ -5948,7 +5948,7 @@
     "level": "A1",
     "id": 674,
     "meaning": "นักท่องเที่ยว",
-    "thai_pronunciation": "ทั้ว ร เออะ สึ ถึ t ˈʊ r ʌ s",
+    "thai_pronunciation": "ทั้ว ร เออะ สึ ถึ",
     "ipa": "t"
   },
   {
@@ -5957,7 +5957,7 @@
     "level": "A1",
     "id": 675,
     "meaning": "เมือง",
-    "thai_pronunciation": "ทาว น t ˈaʊ",
+    "thai_pronunciation": "ทาว น",
     "ipa": "n"
   },
   {
@@ -5966,7 +5966,7 @@
     "level": "A1",
     "id": 676,
     "meaning": "การจราจร",
-    "thai_pronunciation": "แทร้ ฝิ่ ขึ t r ˈæ f ɪ",
+    "thai_pronunciation": "แทร้ ฝิ่ ขึ",
     "ipa": "k"
   },
   {
@@ -5975,7 +5975,7 @@
     "level": "A1",
     "id": 677,
     "meaning": "การท่องเที่ยว",
-    "thai_pronunciation": "แทร้ เฝอะ ล t r ˈæ v ʌ",
+    "thai_pronunciation": "แทร้ เฝอะ ล",
     "ipa": "l"
   },
   {
@@ -5984,7 +5984,7 @@
     "level": "A1",
     "id": 678,
     "meaning": "ต้นไม้",
-    "thai_pronunciation": "ทรี t r",
+    "thai_pronunciation": "ทรี",
     "ipa": "ˈiː"
   },
   {
@@ -5993,7 +5993,7 @@
     "level": "A1",
     "id": 679,
     "meaning": "กางเกงขายาว",
-    "thai_pronunciation": "ทร้าว เส่อ ร สึ t r ˈaʊ z ɜːʴ",
+    "thai_pronunciation": "ทร้าว เส่อ ร สึ",
     "ipa": "z"
   },
   {
@@ -6002,7 +6002,7 @@
     "level": "A1",
     "id": 680,
     "meaning": "จริง",
-    "thai_pronunciation": "ทรู t r",
+    "thai_pronunciation": "ทรู",
     "ipa": "ˈuː"
   },
   {
@@ -6011,7 +6011,7 @@
     "level": "A1",
     "id": 681,
     "meaning": "เสื้อยืด",
-    "thai_pronunciation": "ที้ เซอ ร ถึ t ˈiː s ˌɜːʴ",
+    "thai_pronunciation": "ที้ เซอ ร ถึ",
     "ipa": "t"
   },
   {
@@ -6020,7 +6020,7 @@
     "level": "A1",
     "id": 682,
     "meaning": "วันอังคาร",
-    "thai_pronunciation": "ทู้ สึ ดี่ t ˈuː z d",
+    "thai_pronunciation": "ทู้ สึ ดี่",
     "ipa": "iː"
   },
   {
@@ -6029,7 +6029,7 @@
     "level": "A1",
     "id": 683,
     "meaning": "เปลี่ยน",
-    "thai_pronunciation": "เทอ ร น t ˈɜːʴ",
+    "thai_pronunciation": "เทอ ร น",
     "ipa": "n"
   },
   {
@@ -6038,7 +6038,7 @@
     "level": "A1",
     "id": 684,
     "meaning": "โทรทัศน์",
-    "thai_pronunciation": "ที้ ฟี้ t ˈiː v",
+    "thai_pronunciation": "ที้ ฟี้",
     "ipa": "ˈiː"
   },
   {
@@ -6047,7 +6047,7 @@
     "level": "A1",
     "id": 685,
     "meaning": "สิบสอง",
-    "thai_pronunciation": "เทวะ ล ฝึ t w ˈe l",
+    "thai_pronunciation": "เทวะ ล ฝึ",
     "ipa": "v"
   },
   {
@@ -6056,7 +6056,7 @@
     "level": "A1",
     "id": 686,
     "meaning": "ยี่สิบ",
-    "thai_pronunciation": "เทว้ะ น ถี่ t w ˈe n t",
+    "thai_pronunciation": "เทว้ะ น ถี่",
     "ipa": "iː"
   },
   {
@@ -6065,7 +6065,7 @@
     "level": "A1",
     "id": 687,
     "meaning": "สองครั้ง",
-    "thai_pronunciation": "ทวาย สึ t w ˈaɪ",
+    "thai_pronunciation": "ทวาย สึ",
     "ipa": "s"
   },
   {
@@ -6074,7 +6074,7 @@
     "level": "A1",
     "id": 688,
     "meaning": "สอง",
-    "thai_pronunciation": "ทู t",
+    "thai_pronunciation": "ทู",
     "ipa": "ˈuː"
   },
   {
@@ -6083,7 +6083,7 @@
     "level": "A1",
     "id": 689,
     "meaning": "ร่ม",
-    "thai_pronunciation": "เออะ ม เบร๊ะ เหลอะ ʌ m b r ˈe l",
+    "thai_pronunciation": "เออะ ม เบร๊ะ เหลอะ",
     "ipa": "ʌ"
   },
   {
@@ -6092,7 +6092,7 @@
     "level": "A1",
     "id": 690,
     "meaning": "ลุง",
-    "thai_pronunciation": "อ๊ะ ง เขอะ ล ˈʌ ŋ k ʌ",
+    "thai_pronunciation": "อ๊ะ ง เขอะ ล",
     "ipa": "l"
   },
   {
@@ -6101,7 +6101,7 @@
     "level": "A1",
     "id": 691,
     "meaning": "ภายใต้",
-    "thai_pronunciation": "อ๊ะ น เด่อ ร ˈʌ n d ɜːʴ",
+    "thai_pronunciation": "อ๊ะ น เด่อ ร",
     "ipa": "ˈəndər"
   },
   {
@@ -6110,7 +6110,7 @@
     "level": "A1",
     "id": 692,
     "meaning": "เข้าใจ",
-    "thai_pronunciation": "อะ น เด่อ ร สึ แท้ น ดึ ˌʌ n d ɜːʴ s t ˈæ n",
+    "thai_pronunciation": "อะ น เด่อ ร สึ แท้ น ดึ",
     "ipa": "d"
   },
   {
@@ -6119,7 +6119,7 @@
     "level": "A1",
     "id": 693,
     "meaning": "มหาวิทยาลัย",
-    "thai_pronunciation": "ยู เหนอะ เฟ้อ ร เสอะ ถี่ j ˌuː n ʌ v ˈɜːʴ s ʌ t",
+    "thai_pronunciation": "ยู เหนอะ เฟ้อ ร เสอะ ถี่",
     "ipa": "iː"
   },
   {
@@ -6128,7 +6128,7 @@
     "level": "A1",
     "id": 694,
     "meaning": "จนกระทั่ง",
-    "thai_pronunciation": "เออะ น ทิ ล ʌ n t ˈɪ",
+    "thai_pronunciation": "เออะ น ทิ ล",
     "ipa": "l"
   },
   {
@@ -6137,7 +6137,7 @@
     "level": "A1",
     "id": 695,
     "meaning": "ขึ้น",
-    "thai_pronunciation": "อ๊ะ ผึ ˈʌ",
+    "thai_pronunciation": "อ๊ะ ผึ",
     "ipa": "p"
   },
   {
@@ -6146,7 +6146,7 @@
     "level": "A1",
     "id": 696,
     "meaning": "เรา",
-    "thai_pronunciation": "อ๊ะ สึ ˈʌ",
+    "thai_pronunciation": "อ๊ะ สึ",
     "ipa": "s"
   },
   {
@@ -6155,7 +6155,7 @@
     "level": "A1",
     "id": 697,
     "meaning": "มีประโยชน์",
-    "thai_pronunciation": "ยู้ สึ เฝอะ ล j ˈuː s f ʌ",
+    "thai_pronunciation": "ยู้ สึ เฝอะ ล",
     "ipa": "l"
   },
   {
@@ -6164,7 +6164,7 @@
     "level": "A1",
     "id": 698,
     "meaning": "โดยปกติ",
-    "thai_pronunciation": "ยู้ เฉอะ เหวอะ หลี่ j ˈuː ʒ ʌ w ʌ l",
+    "thai_pronunciation": "ยู้ เฉอะ เหวอะ หลี่",
     "ipa": "iː"
   },
   {
@@ -6173,7 +6173,7 @@
     "level": "A1",
     "id": 699,
     "meaning": "วันหยุด",
-    "thai_pronunciation": "เฝ่ เค้ เฉอะ น v eɪ k ˈeɪ ʃ ʌ",
+    "thai_pronunciation": "เฝ่ เค้ เฉอะ น",
     "ipa": "n"
   },
   {
@@ -6182,7 +6182,7 @@
     "level": "A1",
     "id": 700,
     "meaning": "ผัก",
-    "thai_pronunciation": "เฟ้ะ จึ เถอะ เบอะ ล v ˈe dʒ t ʌ b ʌ",
+    "thai_pronunciation": "เฟ้ะ จึ เถอะ เบอะ ล",
     "ipa": "l"
   },
   {
@@ -6191,7 +6191,7 @@
     "level": "A1",
     "id": 701,
     "meaning": "วิดีโอ",
-    "thai_pronunciation": "ฟิ ดี่ โอ่ว v ˈɪ d iː əʊ",
+    "thai_pronunciation": "ฟิ ดี่ โอ่ว",
     "ipa": "ˈvɪdioʊ"
   },
   {
@@ -6200,7 +6200,7 @@
     "level": "A1",
     "id": 702,
     "meaning": "หมู่บ้าน",
-    "thai_pronunciation": "ฟิ เหลอะ จึ v ˈɪ l ʌ",
+    "thai_pronunciation": "ฟิ เหลอะ จึ",
     "ipa": "dʒ"
   },
   {
@@ -6209,7 +6209,7 @@
     "level": "A1",
     "id": 703,
     "meaning": "เยี่ยม",
-    "thai_pronunciation": "ฟิ สิ่ ถึ v ˈɪ z ɪ",
+    "thai_pronunciation": "ฟิ สิ่ ถึ",
     "ipa": "t"
   },
   {
@@ -6218,7 +6218,7 @@
     "level": "A1",
     "id": 704,
     "meaning": "ผู้เยี่ยมชม",
-    "thai_pronunciation": "ฟิ สิ่ เถ่อ ร v ˈɪ z ɪ t ɜːʴ",
+    "thai_pronunciation": "ฟิ สิ่ เถ่อ ร",
     "ipa": "ˈvɪzɪtər"
   },
   {
@@ -6227,7 +6227,7 @@
     "level": "A1",
     "id": 705,
     "meaning": "บริกร",
-    "thai_pronunciation": "เว้ เถ่อ ร w ˈeɪ t ɜːʴ",
+    "thai_pronunciation": "เว้ เถ่อ ร",
     "ipa": "ˈweɪtər"
   },
   {
@@ -6236,7 +6236,7 @@
     "level": "A1",
     "id": 706,
     "meaning": "ตื่น",
-    "thai_pronunciation": "เว ขึ w ˈeɪ",
+    "thai_pronunciation": "เว ขึ",
     "ipa": "k"
   },
   {
@@ -6245,7 +6245,7 @@
     "level": "A1",
     "id": 707,
     "meaning": "เดิน",
-    "thai_pronunciation": "วอ ขึ w ˈɔː",
+    "thai_pronunciation": "วอ ขึ",
     "ipa": "k"
   },
   {
@@ -6254,7 +6254,7 @@
     "level": "A1",
     "id": 708,
     "meaning": "กำแพง",
-    "thai_pronunciation": "วอ ล w ˈɔː",
+    "thai_pronunciation": "วอ ล",
     "ipa": "l"
   },
   {
@@ -6263,7 +6263,7 @@
     "level": "A1",
     "id": 709,
     "meaning": "ต้องการ",
-    "thai_pronunciation": "วา น ถึ w ˈɑː n",
+    "thai_pronunciation": "วา น ถึ",
     "ipa": "t"
   },
   {
@@ -6272,7 +6272,7 @@
     "level": "A1",
     "id": 710,
     "meaning": "ดู",
-    "thai_pronunciation": "วา ฉึ w ˈɑː",
+    "thai_pronunciation": "วา ฉึ",
     "ipa": "tʃ"
   },
   {
@@ -6281,7 +6281,7 @@
     "level": "A1",
     "id": 711,
     "meaning": "เรา",
-    "thai_pronunciation": "วี w",
+    "thai_pronunciation": "วี",
     "ipa": "ˈiː"
   },
   {
@@ -6290,7 +6290,7 @@
     "level": "A1",
     "id": 712,
     "meaning": "สวมใส่",
-    "thai_pronunciation": "แว ร w ˈe",
+    "thai_pronunciation": "แว ร",
     "ipa": "r"
   },
   {
@@ -6299,7 +6299,7 @@
     "level": "A1",
     "id": 713,
     "meaning": "สภาพอากาศ",
-    "thai_pronunciation": "เว้ะ เด่อ ร w ˈe ð ɜːʴ",
+    "thai_pronunciation": "เว้ะ เด่อ ร",
     "ipa": "ˈwɛðər"
   },
   {
@@ -6308,7 +6308,7 @@
     "level": "A1",
     "id": 714,
     "meaning": "เว็บไซต์",
-    "thai_pronunciation": "เว้ะ บึ ซาย ถึ w ˈe b s ˌaɪ",
+    "thai_pronunciation": "เว้ะ บึ ซาย ถึ",
     "ipa": "t"
   },
   {
@@ -6317,7 +6317,7 @@
     "level": "A1",
     "id": 715,
     "meaning": "วันพุธ",
-    "thai_pronunciation": "เว้ะ น สึ ดี่ w ˈe n z d",
+    "thai_pronunciation": "เว้ะ น สึ ดี่",
     "ipa": "iː"
   },
   {
@@ -6326,7 +6326,7 @@
     "level": "A1",
     "id": 716,
     "meaning": "สัปดาห์",
-    "thai_pronunciation": "วี ขึ w ˈiː",
+    "thai_pronunciation": "วี ขึ",
     "ipa": "k"
   },
   {
@@ -6335,7 +6335,7 @@
     "level": "A1",
     "id": 717,
     "meaning": "สุดสัปดาห์",
-    "thai_pronunciation": "วี้ เคะ น ดึ w ˈiː k ˌe n",
+    "thai_pronunciation": "วี้ เคะ น ดึ",
     "ipa": "d"
   },
   {
@@ -6344,7 +6344,7 @@
     "level": "A1",
     "id": 718,
     "meaning": "ดี",
-    "thai_pronunciation": "เวะ ล w ˈe",
+    "thai_pronunciation": "เวะ ล",
     "ipa": "l"
   },
   {
@@ -6353,7 +6353,7 @@
     "level": "A1",
     "id": 719,
     "meaning": "ตะวันตก",
-    "thai_pronunciation": "เวะ สึ ถึ w ˈe s",
+    "thai_pronunciation": "เวะ สึ ถึ",
     "ipa": "t"
   },
   {
@@ -6362,7 +6362,7 @@
     "level": "A1",
     "id": 720,
     "meaning": "อะไร",
-    "thai_pronunciation": "วะ ถึ w ˈʌ",
+    "thai_pronunciation": "วะ ถึ",
     "ipa": "t"
   },
   {
@@ -6371,7 +6371,7 @@
     "level": "A1",
     "id": 721,
     "meaning": "เมื่อไร",
-    "thai_pronunciation": "เวะ น w ˈe",
+    "thai_pronunciation": "เวะ น",
     "ipa": "n"
   },
   {
@@ -6380,7 +6380,7 @@
     "level": "A1",
     "id": 722,
     "meaning": "ที่ไหน",
-    "thai_pronunciation": "แว ร w ˈe",
+    "thai_pronunciation": "แว ร",
     "ipa": "r"
   },
   {
@@ -6389,7 +6389,7 @@
     "level": "A1",
     "id": 723,
     "meaning": "ที่",
-    "thai_pronunciation": "วิ ฉึ w ˈɪ",
+    "thai_pronunciation": "วิ ฉึ",
     "ipa": "tʃ"
   },
   {
@@ -6398,7 +6398,7 @@
     "level": "A1",
     "id": 724,
     "meaning": "สีขาว",
-    "thai_pronunciation": "วาย ถึ w ˈaɪ",
+    "thai_pronunciation": "วาย ถึ",
     "ipa": "t"
   },
   {
@@ -6407,7 +6407,7 @@
     "level": "A1",
     "id": 725,
     "meaning": "ใคร",
-    "thai_pronunciation": "ฮู h",
+    "thai_pronunciation": "ฮู",
     "ipa": "ˈuː"
   },
   {
@@ -6416,7 +6416,7 @@
     "level": "A1",
     "id": 726,
     "meaning": "ทำไม",
-    "thai_pronunciation": "วาย w ˈaɪ",
+    "thai_pronunciation": "วาย",
     "ipa": "waɪ"
   },
   {
@@ -6425,7 +6425,7 @@
     "level": "A1",
     "id": 727,
     "meaning": "ภรรยา",
-    "thai_pronunciation": "วาย ฝึ w ˈaɪ",
+    "thai_pronunciation": "วาย ฝึ",
     "ipa": "f"
   },
   {
@@ -6434,7 +6434,7 @@
     "level": "A1",
     "id": 728,
     "meaning": "หน้าต่าง",
-    "thai_pronunciation": "วิ น โด่ว w ˈɪ n d əʊ",
+    "thai_pronunciation": "วิ น โด่ว",
     "ipa": "ˈwɪndoʊ"
   },
   {
@@ -6443,7 +6443,7 @@
     "level": "A1",
     "id": 729,
     "meaning": "ไวน์",
-    "thai_pronunciation": "วาย น w ˈaɪ",
+    "thai_pronunciation": "วาย น",
     "ipa": "n"
   },
   {
@@ -6452,7 +6452,7 @@
     "level": "A1",
     "id": 730,
     "meaning": "ฤดูหนาว",
-    "thai_pronunciation": "วิ น เถ่อ ร w ˈɪ n t ɜːʴ",
+    "thai_pronunciation": "วิ น เถ่อ ร",
     "ipa": "ˈwɪntər"
   },
   {
@@ -6461,7 +6461,7 @@
     "level": "A1",
     "id": 731,
     "meaning": "กับ",
-    "thai_pronunciation": "วิ ดึ w ˈɪ",
+    "thai_pronunciation": "วิ ดึ",
     "ipa": "ð"
   },
   {
@@ -6470,7 +6470,7 @@
     "level": "A1",
     "id": 732,
     "meaning": "ปราศจาก",
-    "thai_pronunciation": "หวิ่ ต๊าว ถึ w ɪ θ ˈaʊ",
+    "thai_pronunciation": "หวิ่ ต๊าว ถึ",
     "ipa": "t"
   },
   {
@@ -6479,7 +6479,7 @@
     "level": "A1",
     "id": 733,
     "meaning": "ผู้หญิง",
-    "thai_pronunciation": "วุ เหมอะ น w ˈʊ m ʌ",
+    "thai_pronunciation": "วุ เหมอะ น",
     "ipa": "n"
   },
   {
@@ -6488,7 +6488,7 @@
     "level": "A1",
     "id": 734,
     "meaning": "มหัศจรรย์",
-    "thai_pronunciation": "วะ น เด่อ ร เฝอะ ล w ˈʌ n d ɜːʴ f ʌ",
+    "thai_pronunciation": "วะ น เด่อ ร เฝอะ ล",
     "ipa": "l"
   },
   {
@@ -6497,7 +6497,7 @@
     "level": "A1",
     "id": 735,
     "meaning": "คำ",
-    "thai_pronunciation": "เวอ ร ดึ w ˈɜːʴ",
+    "thai_pronunciation": "เวอ ร ดึ",
     "ipa": "d"
   },
   {
@@ -6506,7 +6506,7 @@
     "level": "A1",
     "id": 736,
     "meaning": "งาน",
-    "thai_pronunciation": "เวอ ร ขึ w ˈɜːʴ",
+    "thai_pronunciation": "เวอ ร ขึ",
     "ipa": "k"
   },
   {
@@ -6703,7 +6703,7 @@
     "level": "A2",
     "id": 760,
     "meaning": "ผู้ใหญ่",
-    "thai_pronunciation": "เออะ ด๊ะ ล ถึ ʌ d ˈʌ l",
+    "thai_pronunciation": "เออะ ด๊ะ ล ถึ",
     "ipa": "t"
   },
   {
@@ -6760,7 +6760,7 @@
     "level": "A2",
     "id": 767,
     "meaning": "หลังจาก",
-    "thai_pronunciation": "แอ๊ ฝึ เถ่อ ร ˈæ f t ɜːʴ",
+    "thai_pronunciation": "แอ๊ ฝึ เถ่อ ร",
     "ipa": "ˈæftər"
   },
   {
@@ -6801,7 +6801,7 @@
     "level": "A2",
     "id": 772,
     "meaning": "ทั้งหมด",
-    "thai_pronunciation": "อ๊อ ล ˈɔː",
+    "thai_pronunciation": "อ๊อ ล",
     "ipa": "l"
   },
   {
@@ -6810,7 +6810,7 @@
     "level": "A2",
     "id": 773,
     "meaning": "ทั้งหมด",
-    "thai_pronunciation": "อ๊อ ล ˈɔː",
+    "thai_pronunciation": "อ๊อ ล",
     "ipa": "l"
   },
   {
@@ -6891,7 +6891,7 @@
     "level": "A2",
     "id": 783,
     "meaning": "ใดๆ",
-    "thai_pronunciation": "เอ๊ะ หนี่ ˈe n",
+    "thai_pronunciation": "เอ๊ะ หนี่",
     "ipa": "iː"
   },
   {
@@ -6908,7 +6908,7 @@
     "level": "A2",
     "id": 785,
     "meaning": "ใดๆ",
-    "thai_pronunciation": "เอ๊ะ หนี่ ˈe n",
+    "thai_pronunciation": "เอ๊ะ หนี่",
     "ipa": "iː"
   },
   {
@@ -7021,7 +7021,7 @@
     "level": "A2",
     "id": 799,
     "meaning": "เช่น",
-    "thai_pronunciation": "แอ๊ สึ ˈæ",
+    "thai_pronunciation": "แอ๊ สึ",
     "ipa": "z"
   },
   {
@@ -7190,7 +7190,7 @@
     "level": "A2",
     "id": 820,
     "meaning": "ก่อน",
-    "thai_pronunciation": "บิ ฟ้อ ร b ɪ f ˈɔː",
+    "thai_pronunciation": "บิ ฟ้อ ร",
     "ipa": "r"
   },
   {
@@ -7231,7 +7231,7 @@
     "level": "A2",
     "id": 825,
     "meaning": "ดีที่สุด",
-    "thai_pronunciation": "เบะ สึ ถึ b ˈe s",
+    "thai_pronunciation": "เบะ สึ ถึ",
     "ipa": "t"
   },
   {
@@ -7240,7 +7240,7 @@
     "level": "A2",
     "id": 826,
     "meaning": "ระหว่าง",
-    "thai_pronunciation": "บิ ทวี้ น b ɪ t w ˈiː",
+    "thai_pronunciation": "บิ ทวี้ น",
     "ipa": "n"
   },
   {
@@ -7337,7 +7337,7 @@
     "level": "A2",
     "id": 838,
     "meaning": "หนังสือ",
-    "thai_pronunciation": "บุ ขึ b ˈʊ",
+    "thai_pronunciation": "บุ ขึ",
     "ipa": "k"
   },
   {
@@ -7602,7 +7602,7 @@
     "level": "A2",
     "id": 871,
     "meaning": "ตรวจสอบ",
-    "thai_pronunciation": "เชะ ขึ tʃ ˈe",
+    "thai_pronunciation": "เชะ ขึ",
     "ipa": "k"
   },
   {
@@ -7907,7 +7907,7 @@
     "level": "A2",
     "id": 909,
     "meaning": "ทำอาหาร",
-    "thai_pronunciation": "คุ ขึ k ˈʊ",
+    "thai_pronunciation": "คุ ขึ",
     "ipa": "k"
   },
   {
@@ -8036,7 +8036,7 @@
     "level": "A2",
     "id": 925,
     "meaning": "มืด",
-    "thai_pronunciation": "ดาร ขึ d ˈɑː r",
+    "thai_pronunciation": "ดาร ขึ",
     "ipa": "k"
   },
   {
@@ -8061,7 +8061,7 @@
     "level": "A2",
     "id": 928,
     "meaning": "ที่รัก",
-    "thai_pronunciation": "เดีย ร d ˈɪ",
+    "thai_pronunciation": "เดีย ร",
     "ipa": "r"
   },
   {
@@ -8286,7 +8286,7 @@
     "level": "A2",
     "id": 956,
     "meaning": "ชั้นล่าง",
-    "thai_pronunciation": "ด๊าว น สึ แท้ ร สึ d ˈaʊ n s t ˈe r",
+    "thai_pronunciation": "ด๊าว น สึ แท้ ร สึ",
     "ipa": "z"
   },
   {
@@ -8319,7 +8319,7 @@
     "level": "A2",
     "id": 960,
     "meaning": "ขับ",
-    "thai_pronunciation": "ดราย ฝึ d r ˈaɪ",
+    "thai_pronunciation": "ดราย ฝึ",
     "ipa": "v"
   },
   {
@@ -8928,7 +8928,7 @@
     "level": "A2",
     "id": 1036,
     "meaning": "สนุก",
-    "thai_pronunciation": "ฟะ น f ˈʌ",
+    "thai_pronunciation": "ฟะ น",
     "ipa": "n"
   },
   {
@@ -8945,7 +8945,7 @@
     "level": "A2",
     "id": 1038,
     "meaning": "อนาคต",
-    "thai_pronunciation": "ฝึ ยู้ เฉ่อ ร f j ˈuː tʃ ɜːʴ",
+    "thai_pronunciation": "ฝึ ยู้ เฉ่อ ร",
     "ipa": "fˈjuʧər"
   },
   {
@@ -9034,7 +9034,7 @@
     "level": "A2",
     "id": 1049,
     "meaning": "ดี",
-    "thai_pronunciation": "กุ ดึ g ˈʊ",
+    "thai_pronunciation": "กุ ดึ",
     "ipa": "d"
   },
   {
@@ -9115,7 +9115,7 @@
     "level": "A2",
     "id": 1059,
     "meaning": "ครึ่ง",
-    "thai_pronunciation": "แฮ ฝึ h ˈæ",
+    "thai_pronunciation": "แฮ ฝึ",
     "ipa": "f"
   },
   {
@@ -9140,7 +9140,7 @@
     "level": "A2",
     "id": 1062,
     "meaning": "มี",
-    "thai_pronunciation": "แฮ ฝึ h ˈæ",
+    "thai_pronunciation": "แฮ ฝึ",
     "ipa": "v"
   },
   {
@@ -9245,7 +9245,7 @@
     "level": "A2",
     "id": 1075,
     "meaning": "ของเขา",
-    "thai_pronunciation": "ฮิ สึ h ˈɪ",
+    "thai_pronunciation": "ฮิ สึ",
     "ipa": "z"
   },
   {
@@ -9278,7 +9278,7 @@
     "level": "A2",
     "id": 1079,
     "meaning": "บ้าน",
-    "thai_pronunciation": "โฮว ม h ˈəʊ",
+    "thai_pronunciation": "โฮว ม",
     "ipa": "m"
   },
   {
@@ -9287,7 +9287,7 @@
     "level": "A2",
     "id": 1080,
     "meaning": "หวัง",
-    "thai_pronunciation": "โฮว ผึ h ˈəʊ",
+    "thai_pronunciation": "โฮว ผึ",
     "ipa": "p"
   },
   {
@@ -9688,7 +9688,7 @@
     "level": "A2",
     "id": 1130,
     "meaning": "ที่ดิน",
-    "thai_pronunciation": "แล น ดึ l ˈæ n",
+    "thai_pronunciation": "แล น ดึ",
     "ipa": "d"
   },
   {
@@ -9705,7 +9705,7 @@
     "level": "A2",
     "id": 1132,
     "meaning": "ล่าสุด",
-    "thai_pronunciation": "แล สึ ถึ l ˈæ s",
+    "thai_pronunciation": "แล สึ ถึ",
     "ipa": "t"
   },
   {
@@ -9714,7 +9714,7 @@
     "level": "A2",
     "id": 1133,
     "meaning": "ล่าสุด",
-    "thai_pronunciation": "แล สึ ถึ l ˈæ s",
+    "thai_pronunciation": "แล สึ ถึ",
     "ipa": "t"
   },
   {
@@ -9723,7 +9723,7 @@
     "level": "A2",
     "id": 1134,
     "meaning": "ภายหลัง",
-    "thai_pronunciation": "เล้ เถ่อ ร l ˈeɪ t ɜːʴ",
+    "thai_pronunciation": "เล้ เถ่อ ร",
     "ipa": "ˈleɪtər"
   },
   {
@@ -9836,7 +9836,7 @@
     "level": "A2",
     "id": 1148,
     "meaning": "แสงสว่าง",
-    "thai_pronunciation": "ลาย ถึ l ˈaɪ",
+    "thai_pronunciation": "ลาย ถึ",
     "ipa": "t"
   },
   {
@@ -9845,7 +9845,7 @@
     "level": "A2",
     "id": 1149,
     "meaning": "แสงสว่าง",
-    "thai_pronunciation": "ลาย ถึ l ˈaɪ",
+    "thai_pronunciation": "ลาย ถึ",
     "ipa": "t"
   },
   {
@@ -9878,7 +9878,7 @@
     "level": "A2",
     "id": 1153,
     "meaning": "เล็กน้อย",
-    "thai_pronunciation": "ลิ เถอะ ล l ˈɪ t ʌ",
+    "thai_pronunciation": "ลิ เถอะ ล",
     "ipa": "l"
   },
   {
@@ -9895,7 +9895,7 @@
     "level": "A2",
     "id": 1155,
     "meaning": "ดู",
-    "thai_pronunciation": "ลุ ขึ l ˈʊ",
+    "thai_pronunciation": "ลุ ขึ",
     "ipa": "k"
   },
   {
@@ -10048,7 +10048,7 @@
     "level": "A2",
     "id": 1174,
     "meaning": "อาจ",
-    "thai_pronunciation": "เม m ˈeɪ",
+    "thai_pronunciation": "เม",
     "ipa": "meɪ"
   },
   {
@@ -10113,7 +10113,7 @@
     "level": "A2",
     "id": 1182,
     "meaning": "อาจ",
-    "thai_pronunciation": "มาย ถึ m ˈaɪ",
+    "thai_pronunciation": "มาย ถึ",
     "ipa": "t"
   },
   {
@@ -10322,7 +10322,7 @@
     "level": "A2",
     "id": 1208,
     "meaning": "ตัวเลข",
-    "thai_pronunciation": "นะ ม เบ่อ ร n ˈʌ m b ɜːʴ",
+    "thai_pronunciation": "นะ ม เบ่อ ร",
     "ipa": "ˈnəmbər"
   },
   {
@@ -10427,7 +10427,7 @@
     "level": "A2",
     "id": 1221,
     "meaning": "ข้างนอก",
-    "thai_pronunciation": "อ๊าว ถึ ซ้าย ดึ ˈaʊ t s ˈaɪ",
+    "thai_pronunciation": "อ๊าว ถึ ซ้าย ดึ",
     "ipa": "d"
   },
   {
@@ -10444,7 +10444,7 @@
     "level": "A2",
     "id": 1223,
     "meaning": "เป็นเจ้าของ",
-    "thai_pronunciation": "โอ๊ว น ˈəʊ",
+    "thai_pronunciation": "โอ๊ว น",
     "ipa": "n"
   },
   {
@@ -10517,7 +10517,7 @@
     "level": "A2",
     "id": 1232,
     "meaning": "อดีต",
-    "thai_pronunciation": "แพ สึ ถึ p ˈæ s",
+    "thai_pronunciation": "แพ สึ ถึ",
     "ipa": "t"
   },
   {
@@ -10534,7 +10534,7 @@
     "level": "A2",
     "id": 1234,
     "meaning": "จ่าย",
-    "thai_pronunciation": "เพ p ˈeɪ",
+    "thai_pronunciation": "เพ",
     "ipa": "peɪ"
   },
   {
@@ -10623,7 +10623,7 @@
     "level": "A2",
     "id": 1245,
     "meaning": "รูปถ่าย",
-    "thai_pronunciation": "โฟ้ว เถอะ แกร ฝึ f ˈəʊ t ʌ g r ˌæ",
+    "thai_pronunciation": "โฟ้ว เถอะ แกร ฝึ",
     "ipa": "f"
   },
   {
@@ -11416,7 +11416,7 @@
     "level": "A2",
     "id": 1345,
     "meaning": "ที่สอง",
-    "thai_pronunciation": "เซ้ะ เขอะ น ดึ s ˈe k ʌ n",
+    "thai_pronunciation": "เซ้ะ เขอะ น ดึ",
     "ipa": "d"
   },
   {
@@ -11641,7 +11641,7 @@
     "level": "A2",
     "id": 1373,
     "meaning": "นอน",
-    "thai_pronunciation": "สึ ลี ผึ s l ˈiː",
+    "thai_pronunciation": "สึ ลี ผึ",
     "ipa": "p"
   },
   {
@@ -11850,7 +11850,7 @@
     "level": "A2",
     "id": 1399,
     "meaning": "ดาว",
-    "thai_pronunciation": "สึ ทาร s t ˈɑː",
+    "thai_pronunciation": "สึ ทาร",
     "ipa": "r"
   },
   {
@@ -11859,7 +11859,7 @@
     "level": "A2",
     "id": 1400,
     "meaning": "เริ่ม",
-    "thai_pronunciation": "สึ ทาร ถึ s t ˈɑː r",
+    "thai_pronunciation": "สึ ทาร ถึ",
     "ipa": "t"
   },
   {
@@ -11868,7 +11868,7 @@
     "level": "A2",
     "id": 1401,
     "meaning": "อยู่",
-    "thai_pronunciation": "สึ เท s t ˈeɪ",
+    "thai_pronunciation": "สึ เท",
     "ipa": "steɪ"
   },
   {
@@ -12013,7 +12013,7 @@
     "level": "A2",
     "id": 1419,
     "meaning": "แน่นอน",
-    "thai_pronunciation": "ชัว ร ʃ ˈʊ",
+    "thai_pronunciation": "ชัว ร",
     "ipa": "r"
   },
   {
@@ -12078,7 +12078,7 @@
     "level": "A2",
     "id": 1427,
     "meaning": "พูดคุย",
-    "thai_pronunciation": "ทอ ขึ t ˈɔː",
+    "thai_pronunciation": "ทอ ขึ",
     "ipa": "k"
   },
   {
@@ -12135,7 +12135,7 @@
     "level": "A2",
     "id": 1434,
     "meaning": "ข้อความ",
-    "thai_pronunciation": "เทะ ขึ สึ ถึ t ˈe k s",
+    "thai_pronunciation": "เทะ ขึ สึ ถึ",
     "ipa": "t"
   },
   {
@@ -12184,7 +12184,7 @@
     "level": "A2",
     "id": 1440,
     "meaning": "ที่สาม",
-    "thai_pronunciation": "เตอ ร ดึ θ ˈɜːʴ",
+    "thai_pronunciation": "เตอ ร ดึ",
     "ipa": "d"
   },
   {
@@ -12297,7 +12297,7 @@
     "level": "A2",
     "id": 1454,
     "meaning": "รถไฟ",
-    "thai_pronunciation": "เทร น t r ˈeɪ",
+    "thai_pronunciation": "เทร น",
     "ipa": "n"
   },
   {
@@ -12418,7 +12418,7 @@
     "level": "A2",
     "id": 1469,
     "meaning": "ชั้นบน",
-    "thai_pronunciation": "เออะ ผึ สึ แท้ ร สึ ʌ p s t ˈe r",
+    "thai_pronunciation": "เออะ ผึ สึ แท้ ร สึ",
     "ipa": "z"
   },
   {
@@ -12427,7 +12427,7 @@
     "level": "A2",
     "id": 1470,
     "meaning": "ใช้",
-    "thai_pronunciation": "ยู สึ j ˈuː",
+    "thai_pronunciation": "ยู สึ",
     "ipa": "s"
   },
   {
@@ -12508,7 +12508,7 @@
     "level": "A2",
     "id": 1480,
     "meaning": "รอ",
-    "thai_pronunciation": "เว ถึ w ˈeɪ",
+    "thai_pronunciation": "เว ถึ",
     "ipa": "t"
   },
   {
@@ -12525,7 +12525,7 @@
     "level": "A2",
     "id": 1482,
     "meaning": "ล้าง",
-    "thai_pronunciation": "วา ฉึ w ˈɑː",
+    "thai_pronunciation": "วา ฉึ",
     "ipa": "ʃ"
   },
   {
@@ -12574,7 +12574,7 @@
     "level": "A2",
     "id": 1488,
     "meaning": "ยินดีต้อนรับ",
-    "thai_pronunciation": "เว้ะ ล เขอะ ม w ˈe l k ʌ",
+    "thai_pronunciation": "เว้ะ ล เขอะ ม",
     "ipa": "m"
   },
   {
@@ -12799,7 +12799,7 @@
     "level": "B1",
     "id": 1516,
     "meaning": "อายุ",
-    "thai_pronunciation": "เอ๊ จึ ˈeɪ",
+    "thai_pronunciation": "เอ๊ จึ",
     "ipa": "dʒ"
   },
   {
@@ -13144,7 +13144,7 @@
     "level": "B1",
     "id": 1559,
     "meaning": "ธนาคาร",
-    "thai_pronunciation": "แบ ง ขึ b ˈæ ŋ",
+    "thai_pronunciation": "แบ ง ขึ",
     "ipa": "k"
   },
   {
@@ -13233,7 +13233,7 @@
     "level": "B1",
     "id": 1570,
     "meaning": "ดีกว่า",
-    "thai_pronunciation": "เบ๊ะ เถ่อ ร b ˈe t ɜːʴ",
+    "thai_pronunciation": "เบ๊ะ เถ่อ ร",
     "ipa": "ˈbɛtər"
   },
   {
@@ -13354,7 +13354,7 @@
     "level": "B1",
     "id": 1585,
     "meaning": "โดย",
-    "thai_pronunciation": "บาย b ˈaɪ",
+    "thai_pronunciation": "บาย",
     "ipa": "baɪ"
   },
   {
@@ -13451,7 +13451,7 @@
     "level": "B1",
     "id": 1597,
     "meaning": "ศูนย์",
-    "thai_pronunciation": "เซ้ะ น เถ่อ ร s ˈe n t ɜːʴ",
+    "thai_pronunciation": "เซ้ะ น เถ่อ ร",
     "ipa": "ˈsɛntər"
   },
   {
@@ -13500,7 +13500,7 @@
     "level": "B1",
     "id": 1603,
     "meaning": "ราคาถูก",
-    "thai_pronunciation": "ชี ผึ tʃ ˈiː",
+    "thai_pronunciation": "ชี ผึ",
     "ipa": "p"
   },
   {
@@ -13589,7 +13589,7 @@
     "level": "B1",
     "id": 1614,
     "meaning": "ปีน",
-    "thai_pronunciation": "คลาย ม k l ˈaɪ",
+    "thai_pronunciation": "คลาย ม",
     "ipa": "m"
   },
   {
@@ -13878,7 +13878,7 @@
     "level": "B1",
     "id": 1650,
     "meaning": "เย็น",
-    "thai_pronunciation": "คู ล k ˈuː",
+    "thai_pronunciation": "คู ล",
     "ipa": "l"
   },
   {
@@ -13951,7 +13951,7 @@
     "level": "B1",
     "id": 1659,
     "meaning": "ครีม",
-    "thai_pronunciation": "ครี ม k r ˈiː",
+    "thai_pronunciation": "ครี ม",
     "ipa": "m"
   },
   {
@@ -14016,7 +14016,7 @@
     "level": "B1",
     "id": 1667,
     "meaning": "ตัด",
-    "thai_pronunciation": "คะ ถึ k ˈʌ",
+    "thai_pronunciation": "คะ ถึ",
     "ipa": "t"
   },
   {
@@ -15089,7 +15089,7 @@
     "level": "B1",
     "id": 1801,
     "meaning": "ไป",
-    "thai_pronunciation": "โกว g ˈəʊ",
+    "thai_pronunciation": "โกว",
     "ipa": "goʊ"
   },
   {
@@ -15154,7 +15154,7 @@
     "level": "B1",
     "id": 1809,
     "meaning": "มือ",
-    "thai_pronunciation": "แฮ น ดึ h ˈæ n",
+    "thai_pronunciation": "แฮ น ดึ",
     "ipa": "d"
   },
   {
@@ -15187,7 +15187,7 @@
     "level": "B1",
     "id": 1813,
     "meaning": "เกลียด",
-    "thai_pronunciation": "เฮ ถึ h ˈeɪ",
+    "thai_pronunciation": "เฮ ถึ",
     "ipa": "t"
   },
   {
@@ -15196,7 +15196,7 @@
     "level": "B1",
     "id": 1814,
     "meaning": "ศีรษะ",
-    "thai_pronunciation": "เฮะ ดึ h ˈe",
+    "thai_pronunciation": "เฮะ ดึ",
     "ipa": "d"
   },
   {
@@ -15549,7 +15549,7 @@
     "level": "B1",
     "id": 1858,
     "meaning": "มัน",
-    "thai_pronunciation": "อิ้ ถึ ˈɪ",
+    "thai_pronunciation": "อิ้ ถึ",
     "ipa": "t"
   },
   {
@@ -15582,7 +15582,7 @@
     "level": "B1",
     "id": 1862,
     "meaning": "สำคัญ",
-    "thai_pronunciation": "คี k",
+    "thai_pronunciation": "คี",
     "ipa": "ˈiː"
   },
   {
@@ -15615,7 +15615,7 @@
     "level": "B1",
     "id": 1866,
     "meaning": "ใจดี",
-    "thai_pronunciation": "คาย น ดึ k ˈaɪ n",
+    "thai_pronunciation": "คาย น ดึ",
     "ipa": "d"
   },
   {
@@ -15736,7 +15736,7 @@
     "level": "B1",
     "id": 1881,
     "meaning": "โกหก",
-    "thai_pronunciation": "ลาย l ˈaɪ",
+    "thai_pronunciation": "ลาย",
     "ipa": "laɪ"
   },
   {
@@ -15745,7 +15745,7 @@
     "level": "B1",
     "id": 1882,
     "meaning": "ชอบ",
-    "thai_pronunciation": "ลาย ขึ l ˈaɪ",
+    "thai_pronunciation": "ลาย ขึ",
     "ipa": "k"
   },
   {
@@ -15786,7 +15786,7 @@
     "level": "B1",
     "id": 1887,
     "meaning": "สด",
-    "thai_pronunciation": "ลาย ฝึ l ˈaɪ",
+    "thai_pronunciation": "ลาย ฝึ",
     "ipa": "v"
   },
   {
@@ -15803,7 +15803,7 @@
     "level": "B1",
     "id": 1889,
     "meaning": "ท้องถิ่น",
-    "thai_pronunciation": "โล้ว เขอะ ล l ˈəʊ k ʌ",
+    "thai_pronunciation": "โล้ว เขอะ ล",
     "ipa": "l"
   },
   {
@@ -15900,7 +15900,7 @@
     "level": "B1",
     "id": 1901,
     "meaning": "ตลาด",
-    "thai_pronunciation": "ม้าร เขอะ ถึ m ˈɑː r k ʌ",
+    "thai_pronunciation": "ม้าร เขอะ ถึ",
     "ipa": "t"
   },
   {
@@ -16005,7 +16005,7 @@
     "level": "B1",
     "id": 1914,
     "meaning": "เคลื่อนไหว",
-    "thai_pronunciation": "มู ฝึ m ˈuː",
+    "thai_pronunciation": "มู ฝึ",
     "ipa": "v"
   },
   {
@@ -16102,7 +16102,7 @@
     "level": "B1",
     "id": 1926,
     "meaning": "ความต้องการ",
-    "thai_pronunciation": "นี ดึ n ˈiː",
+    "thai_pronunciation": "นี ดึ",
     "ipa": "d"
   },
   {
@@ -16143,7 +16143,7 @@
     "level": "B1",
     "id": 1931,
     "meaning": "ต่อไป",
-    "thai_pronunciation": "เนะ ขึ สึ ถึ n ˈe k s",
+    "thai_pronunciation": "เนะ ขึ สึ ถึ",
     "ipa": "t"
   },
   {
@@ -16176,7 +16176,7 @@
     "level": "B1",
     "id": 1935,
     "meaning": "บันทึก",
-    "thai_pronunciation": "โนว ถึ n ˈəʊ",
+    "thai_pronunciation": "โนว ถึ",
     "ipa": "t"
   },
   {
@@ -16185,7 +16185,7 @@
     "level": "B1",
     "id": 1936,
     "meaning": "ตอนนี้",
-    "thai_pronunciation": "นาว n ˈaʊ",
+    "thai_pronunciation": "นาว",
     "ipa": "naʊ"
   },
   {
@@ -16250,7 +16250,7 @@
     "level": "B1",
     "id": 1944,
     "meaning": "ครั้งหนึ่ง",
-    "thai_pronunciation": "วะ น สึ w ˈʌ n",
+    "thai_pronunciation": "วะ น สึ",
     "ipa": "s"
   },
   {
@@ -17587,7 +17587,7 @@
     "level": "B1",
     "id": 2111,
     "meaning": "แบ่งปัน",
-    "thai_pronunciation": "แช ร ʃ ˈe",
+    "thai_pronunciation": "แช ร",
     "ipa": "r"
   },
   {
@@ -17740,7 +17740,7 @@
     "level": "B1",
     "id": 2130,
     "meaning": "ช้า",
-    "thai_pronunciation": "สึ โลว s l ˈəʊ",
+    "thai_pronunciation": "สึ โลว",
     "ipa": "sloʊ"
   },
   {
@@ -17845,7 +17845,7 @@
     "level": "B1",
     "id": 2143,
     "meaning": "ฤดูใบไม้ผลิ",
-    "thai_pronunciation": "สึ พริ ง s p r ˈɪ",
+    "thai_pronunciation": "สึ พริ ง",
     "ipa": "ŋ"
   },
   {
@@ -17918,7 +17918,7 @@
     "level": "B1",
     "id": 2152,
     "meaning": "นิ่ง",
-    "thai_pronunciation": "สึ ทิ ล s t ˈɪ",
+    "thai_pronunciation": "สึ ทิ ล",
     "ipa": "l"
   },
   {
@@ -18079,7 +18079,7 @@
     "level": "B1",
     "id": 2172,
     "meaning": "ว่ายน้ำ",
-    "thai_pronunciation": "สึ วิ ม s w ˈɪ",
+    "thai_pronunciation": "สึ วิ ม",
     "ipa": "m"
   },
   {
@@ -18168,7 +18168,7 @@
     "level": "B1",
     "id": 2183,
     "meaning": "ที่",
-    "thai_pronunciation": "แด ถึ ð ˈæ",
+    "thai_pronunciation": "แด ถึ",
     "ipa": "t"
   },
   {
@@ -18209,7 +18209,7 @@
     "level": "B1",
     "id": 2188,
     "meaning": "นี้",
-    "thai_pronunciation": "ดิ สึ ð ˈɪ",
+    "thai_pronunciation": "ดิ สึ",
     "ipa": "s"
   },
   {
@@ -18410,7 +18410,7 @@
     "level": "B1",
     "id": 2213,
     "meaning": "พิมพ์",
-    "thai_pronunciation": "ทาย ผึ t ˈaɪ",
+    "thai_pronunciation": "ทาย ผึ",
     "ipa": "p"
   },
   {
@@ -18643,7 +18643,7 @@
     "level": "B1",
     "id": 2243,
     "meaning": "อบอุ่น",
-    "thai_pronunciation": "วอ ร ม w ˈɔː r",
+    "thai_pronunciation": "วอ ร ม",
     "ipa": "m"
   },
   {
@@ -18676,7 +18676,7 @@
     "level": "B1",
     "id": 2247,
     "meaning": "น้ำ",
-    "thai_pronunciation": "ว้อ เถ่อ ร w ˈɔː t ɜːʴ",
+    "thai_pronunciation": "ว้อ เถ่อ ร",
     "ipa": "ˈwɔtər"
   },
   {
@@ -18765,7 +18765,7 @@
     "level": "B1",
     "id": 2258,
     "meaning": "ชนะ",
-    "thai_pronunciation": "วิ น w ˈɪ",
+    "thai_pronunciation": "วิ น",
     "ipa": "n"
   },
   {
@@ -18958,7 +18958,7 @@
     "level": "B2",
     "id": 2282,
     "meaning": "ที่อยู่",
-    "thai_pronunciation": "แอ๊ เดระ สึ ˈæ d r ˌe",
+    "thai_pronunciation": "แอ๊ เดระ สึ",
     "ipa": "s"
   },
   {
@@ -19279,7 +19279,7 @@
     "level": "B2",
     "id": 2322,
     "meaning": "กลับ",
-    "thai_pronunciation": "แบ ขึ b ˈæ",
+    "thai_pronunciation": "แบ ขึ",
     "ipa": "k"
   },
   {
@@ -19384,7 +19384,7 @@
     "level": "B2",
     "id": 2335,
     "meaning": "ใบแจ้งหนี้",
-    "thai_pronunciation": "บิ ล b ˈɪ",
+    "thai_pronunciation": "บิ ล",
     "ipa": "l"
   },
   {
@@ -19505,7 +19505,7 @@
     "level": "B2",
     "id": 2350,
     "meaning": "แต่",
-    "thai_pronunciation": "บะ ถึ b ˈʌ",
+    "thai_pronunciation": "บะ ถึ",
     "ipa": "t"
   },
   {
@@ -19602,7 +19602,7 @@
     "level": "B2",
     "id": 2362,
     "meaning": "เก้าอี้",
-    "thai_pronunciation": "แช ร tʃ ˈe",
+    "thai_pronunciation": "แช ร",
     "ipa": "r"
   },
   {
@@ -19635,7 +19635,7 @@
     "level": "B2",
     "id": 2366,
     "meaning": "แผนภูมิ",
-    "thai_pronunciation": "ชาร ถึ tʃ ˈɑː r",
+    "thai_pronunciation": "ชาร ถึ",
     "ipa": "t"
   },
   {
@@ -19692,7 +19692,7 @@
     "level": "B2",
     "id": 2373,
     "meaning": "ปิด",
-    "thai_pronunciation": "โคลว สึ k l ˈəʊ",
+    "thai_pronunciation": "โคลว สึ",
     "ipa": "s"
   },
   {
@@ -20165,7 +20165,7 @@
     "level": "B2",
     "id": 2432,
     "meaning": "วันที่",
-    "thai_pronunciation": "เด ถึ d ˈeɪ",
+    "thai_pronunciation": "เด ถึ",
     "ipa": "t"
   },
   {
@@ -20390,7 +20390,7 @@
     "level": "B2",
     "id": 2460,
     "meaning": "รายละเอียด",
-    "thai_pronunciation": "ดิ เท้ ล d ɪ t ˈeɪ",
+    "thai_pronunciation": "ดิ เท้ ล",
     "ipa": "l"
   },
   {
@@ -21367,7 +21367,7 @@
     "level": "B2",
     "id": 2582,
     "meaning": "สูง",
-    "thai_pronunciation": "ฮาย h ˈaɪ",
+    "thai_pronunciation": "ฮาย",
     "ipa": "haɪ"
   },
   {
@@ -21424,7 +21424,7 @@
     "level": "B2",
     "id": 2589,
     "meaning": "บ้าน",
-    "thai_pronunciation": "ฮาว สึ h ˈaʊ",
+    "thai_pronunciation": "ฮาว สึ",
     "ipa": "s"
   },
   {
@@ -21881,7 +21881,7 @@
     "level": "B2",
     "id": 2646,
     "meaning": "ออกจาก",
-    "thai_pronunciation": "ลี ฝึ l ˈiː",
+    "thai_pronunciation": "ลี ฝึ",
     "ipa": "v"
   },
   {
@@ -21914,7 +21914,7 @@
     "level": "B2",
     "id": 2650,
     "meaning": "เส้น",
-    "thai_pronunciation": "ลาย น l ˈaɪ",
+    "thai_pronunciation": "ลาย น",
     "ipa": "n"
   },
   {
@@ -22019,7 +22019,7 @@
     "level": "B2",
     "id": 2663,
     "meaning": "ทำ",
-    "thai_pronunciation": "เม ขึ m ˈeɪ",
+    "thai_pronunciation": "เม ขึ",
     "ipa": "k"
   },
   {
@@ -22028,7 +22028,7 @@
     "level": "B2",
     "id": 2664,
     "meaning": "แผนที่",
-    "thai_pronunciation": "แม ผึ m ˈæ",
+    "thai_pronunciation": "แม ผึ",
     "ipa": "p"
   },
   {
@@ -22173,7 +22173,7 @@
     "level": "B2",
     "id": 2682,
     "meaning": "ความผิดพลาด",
-    "thai_pronunciation": "หมิ่ สึ เท้ ขึ m ɪ s t ˈeɪ",
+    "thai_pronunciation": "หมิ่ สึ เท้ ขึ",
     "ipa": "k"
   },
   {
@@ -22190,7 +22190,7 @@
     "level": "B2",
     "id": 2684,
     "meaning": "แบบอย่าง",
-    "thai_pronunciation": "ม้า เดอะ ล m ˈɑː d ʌ",
+    "thai_pronunciation": "ม้า เดอะ ล",
     "ipa": "l"
   },
   {
@@ -22287,7 +22287,7 @@
     "level": "B2",
     "id": 2696,
     "meaning": "เชิงลบ",
-    "thai_pronunciation": "เน้ะ เกอะ ถิ่ ฝึ n ˈe g ʌ t ɪ",
+    "thai_pronunciation": "เน้ะ เกอะ ถิ่ ฝึ",
     "ipa": "v"
   },
   {
@@ -22344,7 +22344,7 @@
     "level": "B2",
     "id": 2703,
     "meaning": "วัตถุ",
-    "thai_pronunciation": "อ๊า บึ เจะ ขึ ถึ ˈɑː b dʒ e k",
+    "thai_pronunciation": "อ๊า บึ เจะ ขึ ถึ",
     "ipa": "t"
   },
   {
@@ -22673,7 +22673,7 @@
     "level": "B2",
     "id": 2744,
     "meaning": "รูปภาพ",
-    "thai_pronunciation": "พิ ขึ เฉ่อ ร p ˈɪ k tʃ ɜːʴ",
+    "thai_pronunciation": "พิ ขึ เฉ่อ ร",
     "ipa": "ˈpɪkʧər"
   },
   {
@@ -23530,7 +23530,7 @@
     "level": "B2",
     "id": 2851,
     "meaning": "ประโยค",
-    "thai_pronunciation": "เซ้ะ น เถอะ น สึ s ˈe n t ʌ n",
+    "thai_pronunciation": "เซ้ะ น เถอะ น สึ",
     "ipa": "s"
   },
   {
@@ -23851,7 +23851,7 @@
     "level": "B2",
     "id": 2891,
     "meaning": "ยืน",
-    "thai_pronunciation": "สึ แท น ดึ s t ˈæ n",
+    "thai_pronunciation": "สึ แท น ดึ",
     "ipa": "d"
   },
   {
@@ -23988,7 +23988,7 @@
     "level": "B2",
     "id": 2908,
     "meaning": "เรื่อง",
-    "thai_pronunciation": "ซะ บึ จิ ขึ ถึ s ˈʌ b dʒ ɪ k",
+    "thai_pronunciation": "ซะ บึ จิ ขึ ถึ",
     "ipa": "t"
   },
   {
@@ -24173,7 +24173,7 @@
     "level": "B2",
     "id": 2931,
     "meaning": "เวลา",
-    "thai_pronunciation": "ทาย ม t ˈaɪ",
+    "thai_pronunciation": "ทาย ม",
     "ipa": "m"
   },
   {
@@ -24182,7 +24182,7 @@
     "level": "B2",
     "id": 2932,
     "meaning": "ชื่อ",
-    "thai_pronunciation": "ท้าย เถอะ ล t ˈaɪ t ʌ",
+    "thai_pronunciation": "ท้าย เถอะ ล",
     "ipa": "l"
   },
   {
@@ -24247,7 +24247,7 @@
     "level": "B2",
     "id": 2940,
     "meaning": "การเดินทาง",
-    "thai_pronunciation": "ทริ ผึ t r ˈɪ",
+    "thai_pronunciation": "ทริ ผึ",
     "ipa": "p"
   },
   {
@@ -24288,7 +24288,7 @@
     "level": "B2",
     "id": 2945,
     "meaning": "พยายาม",
-    "thai_pronunciation": "ทราย t r ˈaɪ",
+    "thai_pronunciation": "ทราย",
     "ipa": "traɪ"
   },
   {
@@ -24425,7 +24425,7 @@
     "level": "B2",
     "id": 2962,
     "meaning": "มาก",
-    "thai_pronunciation": "แฟ้ ร อี่ v ˈe r",
+    "thai_pronunciation": "แฟ้ ร อี่",
     "ipa": "iː"
   },
   {
@@ -24514,7 +24514,7 @@
     "level": "B2",
     "id": 2973,
     "meaning": "ทาง",
-    "thai_pronunciation": "เว w ˈeɪ",
+    "thai_pronunciation": "เว",
     "ipa": "weɪ"
   },
   {

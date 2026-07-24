@@ -86,8 +86,9 @@ const ReadMode = () => {
                 <tr>
                   <th>Vocab</th>
                   <th>Part of Speech</th>
-                  <th>Meaning (คำแปล)</th>
-                  <th>IPA (คำอ่าน)</th>
+                  <th>Meaning</th>
+                  <th>คำอ่าน</th>
+                  <th>IPA</th>
                   <th>Level</th>
                 </tr>
               </thead>
@@ -100,6 +101,7 @@ const ReadMode = () => {
                       <td className="td-word">{word.word}</td>
                       <td className="td-type">{word.type}</td>
                       <td className="td-meaning">{word.meaning || <span className="empty-dash">-</span>}</td>
+                      <td className="td-thai-pron" style={{ color: 'var(--color-primary)' }}>{word.thai_pronunciation || <span className="empty-dash">-</span>}</td>
                       <td className="td-ipa">{word.ipa ? `/${word.ipa}/` : <span className="empty-dash">-</span>}</td>
                       <td><span className={`td-level level-${levelClass}`}>{word.level}</span></td>
                     </tr>
