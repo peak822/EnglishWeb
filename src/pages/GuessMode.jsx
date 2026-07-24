@@ -65,9 +65,18 @@ const GuessMode = () => {
     pool.forEach(w => uniquePoolMap.set(w.word, w));
     const uniquePool = Array.from(uniquePoolMap.values());
     
-    pool = uniquePool.sort(() => 0.5 - Math.random()).slice(0, 3);
+    const shuffleArray = (array) => {
+      const newArray = [...array];
+      for (let i = newArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+      }
+      return newArray;
+    };
+
+    pool = shuffleArray(uniquePool).slice(0, 3);
     
-    const newOptions = [...pool.map(w => w.word), correctWord.word].sort(() => 0.5 - Math.random());
+    const newOptions = shuffleArray([...pool.map(w => w.word), correctWord.word]);
     setOptions(newOptions);
   };
 
@@ -144,9 +153,18 @@ const GuessMode = () => {
                 </div>
               ) : (
                 <>
-                  <h3 className="text-xl mb-6 text-[var(--color-neutral)] font-medium">Guess the word for this meaning:</h3>
-                  <div className="word-type text-2xl mb-12 text-[var(--color-accent)]">
-                    {currentWord.meaning}
+                  <h3 className="text-xl mb-8 text-[var(--color-neutral)] font-medium">Guess the word for this meaning:</h3>
+                  <div className="flex justify-center w-full px-4" style={{ marginBottom: '3.5rem' }}>
+                    <div className="font-bold px-8 py-4 md:px-16 md:py-6 rounded-full w-full max-w-2xl flex items-center justify-center" 
+                         style={{ 
+                           fontSize: 'clamp(1.5rem, 5vw, 2.5rem)', 
+                           color: 'var(--color-primary)', 
+                           background: 'rgba(255, 255, 255, 0.03)',
+                           border: '1px solid rgba(255, 255, 255, 0.1)',
+                           boxShadow: 'inset 0 0 20px rgba(0,0,0,0.2), 0 8px 32px rgba(0, 0, 0, 0.1)'
+                         }}>
+                      {currentWord.meaning}
+                    </div>
                   </div>
 
                   <div className={`options-grid w-full ${status === 'incorrect' ? 'shake' : ''}`}>
@@ -181,7 +199,7 @@ const GuessMode = () => {
                         type="button"
                         onClick={() => setHintLevel(prev => prev + 1)}
                         className="text-btn"
-                        style={{ marginBottom: '1rem' }}
+                        style={{ marginBottom: '1rem', color: 'var(--color-neutral)', textDecoration: 'underline' }}
                       >
                         Need a hint? (Gain less EXP)
                       </button>
@@ -191,7 +209,7 @@ const GuessMode = () => {
                       <div style={{ marginTop: '1rem', padding: '1rem 1.5rem', background: 'rgba(255,255,255,0.05)', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(255,255,255,0.1)', display: 'inline-block', animation: 'fadeUp 0.3s ease-out forwards', color: 'var(--color-neutral)', fontSize: '0.875rem', textAlign: 'center' }}>
                         {hintLevel >= 1 && (
                           <p style={{ marginBottom: '0.25rem' }}>
-                            First letter: <span style={{ fontFamily: 'var(--font-family-mono)', color: 'var(--color-secondary)', letterSpacing: '0.1em', marginLeft: '0.25rem' }}>{currentWord.word.charAt(0).toUpperCase()} _ _ _</span>
+                            First letter: <span style={{ fontFamily: 'var(--font-family-mono)', color: 'var(--color-secondary)', letterSpacing: '0.1em', marginLeft: '0.25rem' }}>{currentWord.word.charAt(0).toUpperCase()} {'_ '.repeat(Math.max(1, currentWord.word.length - 1))}</span>
                           </p>
                         )}
                         {hintLevel >= 2 && (

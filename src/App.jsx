@@ -65,15 +65,7 @@ function App() {
                 </div>
               )}
             </div>
-
-            <div className="nav-links">
-              <Link to="/read" className="nav-link">อ่านคำศัพท์</Link>
-              <Link to="/typing" className="nav-link">พิมพ์คำศัพท์</Link>
-              <Link to="/guess" className="nav-link">ทายคำศัพท์</Link>
-              <Link to="/srs" className="nav-link">ทบทวน (SRS)</Link>
-              <Link to="/context" className="nav-link">เติมคำ</Link>
-              <Link to="/syntax" className="nav-link">เรียงประโยค</Link>
-            </div>
+            {/* Removed nav-links as they are accessible from Home */}
           </div>
         </nav>
 
@@ -91,7 +83,7 @@ function App() {
         </main>
 
         <footer className="footer">
-          <p>Master the Oxford 3000 Vocabulary • Interactive Learning Platform</p>
+          <p>Discover the Joy of English • Interactive Learning Platform</p>
         </footer>
       </div>
     </Router>
