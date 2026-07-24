@@ -3,12 +3,14 @@ import React from 'react';
 const Card = ({ children, className = '', ...props }) => {
   return (
     <div 
-      className={`bg-[rgba(15,23,42,0.6)] backdrop-blur-xl rounded-[var(--radius-lg)] border border-[rgba(255,255,255,0.1)] shadow-[var(--shadow-subtle)] p-8 ${className}`}
+      className={`bg-[var(--color-surface)] rounded-[var(--radius-sm)] border border-[rgba(0,255,255,0.3)] p-8 relative overflow-hidden ${className}`}
       style={{
-        boxShadow: 'inset 0 1px 1px rgba(255, 255, 255, 0.1), var(--shadow-subtle)'
+        boxShadow: 'inset 0 0 20px rgba(0, 255, 255, 0.05), var(--shadow-subtle)',
       }}
       {...props}
     >
+      <div className="absolute top-0 left-0 w-2 h-2 border-t-2 border-l-2 border-[var(--color-primary)] opacity-50"></div>
+      <div className="absolute bottom-0 right-0 w-2 h-2 border-b-2 border-r-2 border-[var(--color-primary)] opacity-50"></div>
       {children}
     </div>
   );

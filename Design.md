@@ -1,69 +1,62 @@
 ---
 version: "alpha"
-name: "Estilo de IA para Negócios"
-description: "Professional and data-driven landing page for a sales AI platform. Ideal for landing pages, modern websites. AI-ready template."
+name: "Cyberpunk Neon Noir"
+description: "Cyberpunk landing page, neon noir style, dark background, glowing neon colors, glitch effects, futuristic ui, high contrast. Ideal for landing pages, modern websites. AI-ready template."
 colors:
-  primary: "#00A1E0"
+  primary: "#050512"
   secondary: "#FFFFFF"
-  tertiary: "#333333"
-  neutral: "#F2F2F2"
-  surface: "#008000"
-  accent: "#FFA500"
+  tertiary: "#00FFFF"
+  neutral: "#FF00FF"
+  surface: "#BC13FE"
+  accent: "#020205"
 typography:
   h1:
-    fontFamily: Helvetica
+    fontFamily: Orbitron
     fontSize: 2.5rem
     fontWeight: 700
   body-md:
-    fontFamily: Helvetica
+    fontFamily: Orbitron
     fontSize: 1rem
     fontWeight: 400
-rounded:
-  sm: 4px
-  md: 8px
-  lg: 12px
 components:
   button-primary:
     backgroundColor: "{colors.primary}"
     textColor: "{colors.neutral}"
-    rounded: "{rounded.sm}"
     padding: 12px
 ---
 
 ## Overview
 
-Professional and data-driven landing page for a sales AI platform. Ideal for landing pages, modern websites. AI-ready template. Salesforce didn't just build a CRM — they invented what business software looks like. That blue-and-white dashboard language, the card-based layouts, the endless sidebar navigation. HubSpot came along and softened it. Rounded corners, friendlier type, orange accents that said 'hey, enterprise doesn't have to feel like a tax form.' Together they established the visual grammar of B2B SaaS: data-dense but approachable, functional but not brutalist.
+Cyberpunk landing page, neon noir style, dark background, glowing neon colors, glitch effects, futuristic ui, high contrast. Ideal for landing pages, modern websites. AI-ready template. Cyberpunk Neon Noir isn't just cyberpunk with the saturation cranked up. It's a deliberate collision — the moral ambiguity of 1940s film noir dragged through rain-slicked streets lit by kanji-covered holograms. Ridley Scott's Blade Runner didn't invent this fusion, but it crystallized it. That perpetual rain. Those neon reflections pooling on wet asphalt. Darkness as the default state, punctuated by artificial light that never quite reaches the corners.
 
-Now AI is reshaping that entire surface. The CRM interface is no longer just a place to log calls — it's predictive, conversational, ambient. Gong, Clari, People.ai — they're layering intelligence on top of pipeline views, turning static tables into living dashboards that surface insights before you ask. The design challenge shifted: how do you make a machine's confidence score feel trustworthy? How do you visualize automation without making salespeople feel replaced?
+Where generic cyberpunk leans into chrome and information overload, Neon Noir strips back. It's reductive. The palette is constrained — deep blacks, electric magentas, cold cyans — and the mood is heavy. Think detective stories told in light pollution. There's loneliness baked into the aesthetic; single figures dwarfed by towering advertisements, faces half-lit by screens nobody's watching.
 
-The best work in this space makes complexity disappear. Not by hiding it — by choreographing it. Progressive disclosure, contextual AI suggestions that fade in at the right moment, automation flows that read like sentences rather than flowcharts. The aesthetic is clean but charged. Futuristic without being sci-fi. It says: this tool is smarter than you, and that's okay.
+The genre owes as much to Raymond Chandler as it does to William Gibson. That's the distinction most designers miss. It's not about technology worship — it's about alienation rendered beautiful through contrast. Light against void. Signal against noise.
 
 - Density: 5/10 — Balanced
-- Variance: 4/10 — Moderate
-- Motion: 4/10 — Subtle
+- Variance: 8/10 — Expressive
+- Motion: 8/10 — Cinematic
 
-- **Style:** Professional, Data-Driven, User-Centric
-- **Keywords:** CRM, AI, sales, business, intelligence, data-driven, professional, intuitive, connected, efficient
-- **Era:** 2026+ Business Intelligence
-- **Light/Dark:** ✓ Full / ✗ No
+- **Style:** Technological, Urgent, High-Contrast
+- **Keywords:** cyberpunk, neon, noir, dark, futuristic, glitch, high-tech, glowing
+- **Era:** Future Synth
+- **Light/Dark:** ✗ No / ✓ Full
 
 ## Colors
 
-- **Azul Negócios** (#00A1E0) — Accent highlight, links and focus states
-- **Branco** (#FFFFFF) — Light surface, card backgrounds
-- **Cinza Escuro** (#333333) — Dark surface, primary background
-- **Cinza Claro** (#F2F2F2) — Secondary text, borders, muted elements
-- **Verde** (#008000) — Success states, positive indicators
-- **Laranja** (#FFA500) — Warm accent, call-to-action secondary
-- **Roxo** (#800080) — Accent color, emphasis elements
-- **Preto** (#000000) — Deep contrast surface
+- **Background** (#050512) — Primary background surface
+- **Text** (#FFFFFF) — Primary text color
+- **Accent** (#00FFFF) — Primary accent, CTAs and interactive elements
+- **Neon Pink** (#FF00FF) — Primary text color
+- **Neon Purple** (#BC13FE) — Accent color, emphasis elements
+- **Dark City** (#020205) — Deep contrast surface
 
 
 ## Typography
 
-- **Display / Hero:** Helvetica — Weight 700, tight tracking, used for headline impact
-- **Body:** Helvetica — Weight 400, 16px/1.6 line-height, max 72ch per line
-- **UI Labels / Captions:** Helvetica — 0.875rem, weight 500, slight letter-spacing
+- **Display / Hero:** Orbitron — Weight 700, tight tracking, used for headline impact
+- **Body:** Orbitron — Weight 400, 16px/1.6 line-height, max 72ch per line
+- **UI Labels / Captions:** Orbitron — 0.875rem, weight 500, slight letter-spacing
 - **Monospace:** JetBrains Mono — Used for code, metadata, and technical values
 
 Scale:
@@ -79,33 +72,33 @@ Scale:
 - **Grid:** CSS Grid primary. Max-width containment: 1280px centered with 1.5rem side padding.
 - **Spacing rhythm:** Balanced. Base unit: 0.5rem (8px).
 - **Section vertical gaps:** clamp(4rem, 8vw, 8rem).
-- **Hero layout:** Split-screen (text left, visual right).
-- **Feature sections:** Zig-zag alternating text+image rows. No 3-equal-columns.
+- **Hero layout:** Asymmetric composition.
+- **Feature sections:** Asymmetric grid with varied card sizes. No 3-equal-columns.
 - **Mobile collapse:** All multi-column layouts collapse below 768px. No horizontal overflow.
 - **z-index contract:** base (0) / sticky-nav (100) / overlay (200) / modal (300) / toast (500).
 
 
 ## Elevation & Depth
 
-Visualizações de dados interativas, diagramas de fluxo de trabalho, brilhos sutis em elementos de IA, tipografia limpa (sans-serif), micro-interações de feedback, elementos modulares, animações de progresso de vendas.
+Holographic wireframes, brain and gear iconography, hexagonal grid overlays, digital noise, CRT scanlines, luminescent neon emission.
 
-- **Physics:** Ease-out curves, 200-300ms duration. Smooth and predictable.
-- **Entry animations:** Fade + translate-Y (16px → 0) over 420ms ease-out. Staggered cascades for lists: 80ms between items.
-- **Hover states:** Subtle color shift + shadow adjustment over 200ms.
-- **Page transitions:** Fade only (200ms).
+- **Physics:** Spring — stiffness 120, damping 20. Confident, weighted transitions.
+- **Entry animations:** Fade + translate-Y (16px → 0) over 540ms ease-out. Staggered cascades for lists: 120ms between items.
+- **Hover states:** Scale(1.03) + shadow lift over 200ms.
+- **Page transitions:** Fade + slide (300ms).
 - **Performance:** Only transform and opacity animated. No layout-triggering properties.
 
 
 ## Shapes
 
-Base corner radius: 4px. See rounded tokens in front matter for the full scale.
+Base corner radius: 8px. See rounded tokens in front matter for the full scale.
 
 
 ## Components
 
-- **Primary Button:** Rounded (4px) shape. Accent color fill. Hover: 8% darken + subtle lift shadow. Active: -1px translate tactile press. Font weight 600. No outer glows.
+- **Primary Button:** Subtly rounded (0.5rem) shape. Accent color fill. Hover: 8% darken + subtle lift shadow. Active: -1px translate tactile press. Font weight 600. No outer glows.
 - **Secondary / Ghost Button:** Outline variant. 1.5px border in muted color. Text in primary color. Hover: subtle background fill.
-- **Cards:** Rounded (4px) corners. Surface background. Subtle shadow (0 2px 12px rgba(0,0,0,0.06)). 1px border stroke.
+- **Cards:** Subtly rounded (0.5rem) corners. Surface background. Subtle shadow (0 2px 12px rgba(0,0,0,0.06)). 1px border stroke.
 - **Inputs:** Label above input. 1px border stroke. Focus ring: 2px accent color offset 2px. Error text below in semantic red. No floating labels.
 - **Navigation:** Primary surface background. Active item: accent color indicator. Font weight 500 when active.
 - **Skeletons:** Shimmer animation matching component dimensions. No circular spinners.
@@ -115,7 +108,7 @@ Base corner radius: 4px. See rounded tokens in front matter for the full scale.
 ## Do's and Don'ts
 
 - No emojis in UI — use icon system only (Lucide, Heroicons)
-- No pure black (#000000) — use off-black or charcoal variants
+- No pure white (#FFFFFF) backgrounds — use off-white or dark surfaces
 - No oversaturated accent colors (saturation cap: 80%)
 - No 3-column equal-width feature layouts — use zig-zag or asymmetric grid
 - No `h-screen` — use `min-h-[100dvh]`
@@ -123,12 +116,11 @@ Base corner radius: 4px. See rounded tokens in front matter for the full scale.
 - No broken external image links — use picsum.photos or inline SVG
 - No generic lorem ipsum in demos
 
-- Do Visualizações de dados interativas
-- Do Diagramas de fluxo de trabalho
-- Do Brilhos de IA
-- Do Tipografia limpa
-- Do Micro-interações de feedback
-- Do Animações de progresso de vendas.
+- Do Dark background (black/blue)
+- Do Neon colors (Cyan/Magenta)
+- Do Glitch/Scanline effects
+- Do Angular/Tech shapes
+- Do Glowing text and borders
 
 
 ## Use Case
