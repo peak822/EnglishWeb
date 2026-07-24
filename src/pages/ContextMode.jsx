@@ -10,6 +10,7 @@ const ContextMode = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [options, setOptions] = useState([]);
   const [status, setStatus] = useState('idle');
+  const [lastGuess, setLastGuess] = useState(null);
 
   useEffect(() => {
     // Shuffle sentences
@@ -22,6 +23,7 @@ const ContextMode = () => {
     if (sentences.length > 0 && sentences[currentIndex]) {
       generateOptions();
       setStatus('idle');
+      setLastGuess(null);
     }
   }, [currentIndex, sentences]);
 
@@ -30,16 +32,21 @@ const ContextMode = () => {
   const generateOptions = () => {
     const correctWord = sentences[currentIndex].word;
     
-    // Pick 3 random words from other sentences to act as distractors
-    let pool = sentencesData.filter(s => s.word !== correctWord);
+    // Get unique words from all sentences to use as distractors
+    const allWords = [...new Set(sentencesData.map(s => s.word))];
+    let pool = allWords.filter(w => w !== correctWord);
+    
+    // Pick 3 random distractors
     pool = pool.sort(() => 0.5 - Math.random()).slice(0, 3);
     
-    const newOptions = [...pool.map(s => s.word), correctWord].sort(() => 0.5 - Math.random());
+    const newOptions = [...pool, correctWord].sort(() => 0.5 - Math.random());
     setOptions(newOptions);
   };
 
   const handleGuess = (guess) => {
     if (status !== 'idle') return;
+    
+    setLastGuess(guess);
 
     if (guess === currentItem.word) {
       setStatus('correct');
@@ -51,6 +58,7 @@ const ContextMode = () => {
       setStatus('incorrect');
       setTimeout(() => {
         setStatus('idle');
+        setLastGuess(null);
       }, 1000);
     }
   };
@@ -98,7 +106,7 @@ const ContextMode = () => {
             {options.map((opt, i) => {
               let statusClass = '';
               if (status === 'correct' && opt === currentItem.word) statusClass = 'correct-ans';
-              if (status === 'incorrect' && opt === currentItem.word) statusClass = 'incorrect-ans';
+              if (status === 'incorrect' && opt === lastGuess) statusClass = 'incorrect-ans';
               
               return (
                 <button 

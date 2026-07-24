@@ -24,7 +24,7 @@ export const useSRS = () => {
         } else if (repetitions === 1) {
           interval = 6;
         } else {
-          interval = Math.round(interval * ease);
+          interval = Math.min(Math.round(interval * ease), 365);
         }
         repetitions += 1;
       } else {

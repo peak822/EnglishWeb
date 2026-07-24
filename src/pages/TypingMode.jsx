@@ -14,6 +14,7 @@ const TypingMode = () => {
   const [showHint, setShowHint] = useState(false);
   const [hintText, setHintText] = useState('');
   const [level, setLevel] = useState('all');
+  const [isLoaded, setIsLoaded] = useState(false);
   
   const inputRef = useRef(null);
 
@@ -36,6 +37,7 @@ const TypingMode = () => {
     setStatus('idle');
     setWrongCount(0);
     setShowHint(false);
+    setIsLoaded(true);
   }, [level]);
 
   useEffect(() => {
@@ -54,6 +56,8 @@ const TypingMode = () => {
   const currentWord = words[currentIndex];
 
   const handleInputChange = (e) => {
+    if (status === 'revealed') return;
+
     const val = e.target.value.toLowerCase();
     setInput(val);
     
@@ -109,7 +113,7 @@ const TypingMode = () => {
     }
   };
 
-  if (!currentWord) {
+  if (!isLoaded) {
     return <div className="container animate-fade-up text-center"><h2 className="text-gradient">Loading...</h2></div>;
   }
 
@@ -134,70 +138,77 @@ const TypingMode = () => {
         <div className="game-stats">
           <div className="stat-item">
             <span>Word</span>
-            <span className="stat-value">{currentIndex + 1} / {words.length}</span>
+            <span className="stat-value">{words.length > 0 ? currentIndex + 1 : 0} / {words.length}</span>
           </div>
           <div className="stat-item">
             <span>Level</span>
-            <span className="stat-value">{currentWord.level}</span>
+            <span className="stat-value">{currentWord ? currentWord.level : '-'}</span>
           </div>
         </div>
 
-        <Card className="text-center py-16 relative overflow-hidden">
-          {status === 'correct' && (
-            <div className="absolute inset-0 bg-[rgba(34,197,94,0.1)] success-pulse z-0 rounded-[var(--radius-lg)]" />
-          )}
-          
-          <div className="relative z-10">
-            <div className="word-type">{currentWord.type}</div>
+        {words.length === 0 ? (
+          <Card className="text-center py-16">
+            <h3 className="text-xl text-[var(--color-neutral)]">No words available for this level.</h3>
+          </Card>
+        ) : (
+          <Card className="text-center py-16 relative overflow-hidden">
+            {status === 'correct' && (
+              <div className="absolute inset-0 bg-[rgba(34,197,94,0.1)] success-pulse z-0 rounded-[var(--radius-lg)]" />
+            )}
             
-            <div className="font-mono text-2xl mb-10 text-[var(--color-primary)] opacity-80" style={{ letterSpacing: '0.2em' }}>
-              {status === 'correct' || status === 'revealed' ? 
-                currentWord.word : 
-                currentWord.word.charAt(0) + '_'.repeat(currentWord.word.length - 2) + (currentWord.word.length > 1 ? currentWord.word.charAt(currentWord.word.length - 1) : '')
-              }
+            <div className="relative z-10">
+              <div className="word-type">{currentWord.type}</div>
+              
+              <div className="font-mono text-2xl mb-10 text-[var(--color-primary)] opacity-80" style={{ letterSpacing: '0.2em' }}>
+                {status === 'correct' || status === 'revealed' ? 
+                  currentWord.word : 
+                  currentWord.word.charAt(0) + '_'.repeat(currentWord.word.length - 2) + (currentWord.word.length > 1 ? currentWord.word.charAt(currentWord.word.length - 1) : '')
+                }
+              </div>
+
+              <form onSubmit={handleSubmit} className="flex flex-col items-center gap-6">
+                <input
+                  ref={inputRef}
+                  type="text"
+                  value={input}
+                  onChange={handleInputChange}
+                  className={`typing-input ${
+                    status === 'incorrect' ? 'error shake' : 
+                    status === 'correct' ? 'success' : ''
+                  }`}
+                  placeholder="Type word..."
+                  autoComplete="off"
+                  disabled={status === 'revealed' || status === 'correct'}
+                />
+                <Button type="submit" variant="primary" className="w-64 mt-2" disabled={status === 'revealed' || status === 'correct'}>
+                  Submit Answer
+                </Button>
+              </form>
+
+              {status === 'revealed' && (
+                <div className="mt-4 text-red-400 font-semibold animate-fade-up">
+                  Skipping to next word...
+                </div>
+              )}
+
+              {showHint && status !== 'revealed' && status !== 'correct' && (
+                <div className="mt-6 text-[var(--color-neutral)] text-sm animate-fade-up bg-[rgba(255,255,255,0.05)] py-2 px-4 rounded-lg inline-block">
+                  Hint (Scrambled): <span className="font-mono text-[var(--color-secondary)] tracking-widest ml-2">{hintText}</span>
+                </div>
+              )}
+              
+              {!showHint && status !== 'revealed' && status !== 'correct' && (
+                <button 
+                  type="button"
+                  onClick={() => setShowHint(true)}
+                  className="mt-8 text-btn"
+                >
+                  Need a hint?
+                </button>
+              )}
             </div>
-
-            <form onSubmit={handleSubmit} className="flex flex-col items-center gap-6">
-              <input
-                ref={inputRef}
-                type="text"
-                value={input}
-                onChange={handleInputChange}
-                className={`typing-input ${
-                  status === 'incorrect' ? 'error shake' : 
-                  status === 'correct' ? 'success' : ''
-                }`}
-                placeholder="Type word..."
-                autoComplete="off"
-              />
-              <Button type="submit" variant="primary" className="w-64 mt-2">
-                Submit Answer
-              </Button>
-            </form>
-
-            {status === 'revealed' && (
-              <div className="mt-4 text-red-400 font-semibold animate-fade-up">
-                Skipping to next word...
-              </div>
-            )}
-
-            {showHint && status !== 'revealed' && status !== 'correct' && (
-              <div className="mt-6 text-[var(--color-neutral)] text-sm animate-fade-up bg-[rgba(255,255,255,0.05)] py-2 px-4 rounded-lg inline-block">
-                Hint (Scrambled): <span className="font-mono text-[var(--color-secondary)] tracking-widest ml-2">{hintText}</span>
-              </div>
-            )}
-            
-            {!showHint && status !== 'revealed' && status !== 'correct' && (
-              <button 
-                type="button"
-                onClick={() => setShowHint(true)}
-                className="mt-8 text-btn"
-              >
-                Need a hint?
-              </button>
-            )}
-          </div>
-        </Card>
+          </Card>
+        )}
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ function parseVocabulary(text) {
       let foundPos = false;
       
       for (const token of tokens) {
-        if (!foundPos && (token.includes('.') || token === 'v' || token === 'n' || token === 'adj' || token === 'adv' || token === 'prep' || token === 'conj' || token === 'exclam' || token === 'det' || token === 'pron' || token === 'modal' || token === 'auxiliary' || token === 'article')) {
+        if (!foundPos && (token.includes('.') || token === 'v' || token === 'n' || token === 'adj' || token === 'adv' || token === 'prep' || token === 'conj' || token === 'exclam' || token === 'det' || token === 'pron' || token === 'modal' || token === 'auxiliary' || token === 'article' || token === 'indefinite' || token === 'definite')) {
           foundPos = true;
         }
         

@@ -99,7 +99,7 @@ export const useGamification = () => {
       return LEVEL_THRESHOLDS[profile.level - 1];
     }
     const maxDefined = LEVEL_THRESHOLDS[LEVEL_THRESHOLDS.length - 1];
-    const extraLevels = profile.level - LEVEL_THRESHOLDS.length - 1;
+    const extraLevels = profile.level - LEVEL_THRESHOLDS.length;
     return maxDefined + extraLevels * 1000;
   };
 

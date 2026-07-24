@@ -10,6 +10,7 @@ const AssembleMode = () => {
   const [assembledWord, setAssembledWord] = useState([]);
   const [status, setStatus] = useState('idle');
   const [level, setLevel] = useState('all');
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     let result = [];
@@ -27,6 +28,7 @@ const AssembleMode = () => {
     setWords(result);
     setCurrentIndex(0);
     setStatus('idle');
+    setIsLoaded(true);
   }, [level]);
 
   useEffect(() => {
@@ -87,7 +89,7 @@ const AssembleMode = () => {
     setScrambledLetters(newScrambled);
   };
 
-  if (!currentWord) {
+  if (!isLoaded) {
     return <div className="container animate-fade-up text-center"><h2 className="text-gradient">Loading...</h2></div>;
   }
 
@@ -112,60 +114,66 @@ const AssembleMode = () => {
         <div className="game-stats">
           <div className="stat-item">
             <span>Word</span>
-            <span className="stat-value" style={{ color: 'var(--color-accent)' }}>{currentIndex + 1} / {words.length}</span>
+            <span className="stat-value" style={{ color: 'var(--color-accent)' }}>{words.length > 0 ? currentIndex + 1 : 0} / {words.length}</span>
           </div>
           <div className="stat-item">
             <span>Type</span>
-            <span className="stat-value" style={{ color: 'var(--color-accent)' }}>{currentWord.type}</span>
+            <span className="stat-value" style={{ color: 'var(--color-accent)' }}>{currentWord ? currentWord.type : '-'}</span>
           </div>
         </div>
 
-        <Card className="text-center py-16 relative overflow-hidden">
-          {status === 'correct' && (
-            <div className="absolute inset-0 bg-[rgba(34,197,94,0.1)] success-pulse z-0 rounded-[var(--radius-lg)]" />
-          )}
+        {words.length === 0 ? (
+          <Card className="text-center py-16">
+            <h3 className="text-xl text-[var(--color-neutral)]">No words available for this level.</h3>
+          </Card>
+        ) : (
+          <Card className="text-center py-16 relative overflow-hidden">
+            {status === 'correct' && (
+              <div className="absolute inset-0 bg-[rgba(34,197,94,0.1)] success-pulse z-0 rounded-[var(--radius-lg)]" />
+            )}
 
-          <div className="relative z-10">
-            <h3 className="mb-10 text-[var(--color-secondary)] font-medium">Click letters to build the word</h3>
-            
-            <div className={`letters-container mb-12 ${status === 'incorrect' ? 'shake' : ''}`}>
-              {assembledWord.map((slot, i) => (
-                <div 
-                  key={i} 
-                  className={`letter-slot ${slot ? 'filled' : ''} ${status === 'incorrect' ? 'error' : ''}`}
-                  onClick={() => handleSlotClick(slot, i)}
-                >
-                  {slot ? slot.char.toUpperCase() : ''}
-                </div>
-              ))}
-            </div>
+            <div className="relative z-10">
+              <h3 className="mb-10 text-[var(--color-secondary)] font-medium">Click letters to build the word</h3>
+              
+              <div className={`letters-container mb-12 ${status === 'incorrect' ? 'shake' : ''}`}>
+                {assembledWord.map((slot, i) => (
+                  <div 
+                    key={i} 
+                    className={`letter-slot ${slot ? 'filled' : ''} ${status === 'incorrect' ? 'error' : ''}`}
+                    onClick={() => handleSlotClick(slot, i)}
+                  >
+                    {slot ? slot.char.toUpperCase() : ''}
+                  </div>
+                ))}
+              </div>
 
-            <div className="letters-container border-t border-[rgba(255,255,255,0.05)] pt-12">
-              {scrambledLetters.map(letter => (
-                <div 
-                  key={letter.id} 
-                  className={`letter-block ${letter.used ? 'used' : ''}`}
-                  onClick={() => handleLetterClick(letter)}
+              <div className="letters-container border-t border-[rgba(255,255,255,0.05)] pt-12">
+                {scrambledLetters.map(letter => (
+                  <div 
+                    key={letter.id} 
+                    className={`letter-block ${letter.used ? 'used' : ''}`}
+                    onClick={() => handleLetterClick(letter)}
+                  >
+                    {letter.char.toUpperCase()}
+                  </div>
+                ))}
+              </div>
+              
+              <div className="mt-12 flex justify-center">
+                 <Button 
+                  variant="secondary" 
+                  onClick={() => {
+                    setAssembledWord(new Array(currentWord.word.length).fill(null));
+                    setScrambledLetters(scrambledLetters.map(l => ({ ...l, used: false })));
+                    setStatus('idle');
+                  }}
                 >
-                  {letter.char.toUpperCase()}
-                </div>
-              ))}
+                  Reset Word
+                </Button>
+              </div>
             </div>
-            
-            <div className="mt-12 flex justify-center">
-               <Button 
-                variant="secondary" 
-                onClick={() => {
-                  setAssembledWord(new Array(currentWord.word.length).fill(null));
-                  setScrambledLetters(scrambledLetters.map(l => ({ ...l, used: false })));
-                  setStatus('idle');
-                }}
-              >
-                Reset Word
-              </Button>
-            </div>
-          </div>
-        </Card>
+          </Card>
+        )}
       </div>
     </div>
   );
