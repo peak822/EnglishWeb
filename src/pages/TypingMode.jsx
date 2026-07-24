@@ -3,6 +3,7 @@ import Card from '../components/Card';
 import Button from '../components/Button';
 import vocabularyData from '../data/vocabulary.json';
 import { useGamification } from '../hooks/useGamification';
+import { filterWords, THEMES } from '../hooks/useCategories';
 
 const TypingMode = () => {
   const { addExp } = useGamification();
@@ -19,18 +20,8 @@ const TypingMode = () => {
   const inputRef = useRef(null);
 
   useEffect(() => {
-    let result = [];
-    if (level !== 'all') {
-      const filtered = vocabularyData.filter(w => w.level === level);
-      result = [...filtered].sort(() => 0.5 - Math.random());
-    } else {
-      const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
-      levels.forEach(l => {
-        const group = vocabularyData.filter(w => w.level === l);
-        const shuffledGroup = [...group].sort(() => 0.5 - Math.random());
-        result = [...result, ...shuffledGroup];
-      });
-    }
+    let result = filterWords(vocabularyData, level);
+    result = [...result].sort(() => 0.5 - Math.random());
     setWords(result);
     setCurrentIndex(0);
     setInput('');
@@ -127,11 +118,18 @@ const TypingMode = () => {
             onChange={(e) => setLevel(e.target.value)}
             className="level-select"
           >
-            <option value="all">All Levels</option>
-            <option value="A1">A1 (Beginner)</option>
-            <option value="A2">A2 (Elementary)</option>
-            <option value="B1">B1 (Intermediate)</option>
-            <option value="B2">B2 (Upper Intermediate)</option>
+            <option value="all">All Words</option>
+            <optgroup label="Difficulty Levels">
+              <option value="A1">A1 (Beginner)</option>
+              <option value="A2">A2 (Elementary)</option>
+              <option value="B1">B1 (Intermediate)</option>
+              <option value="B2">B2 (Upper Intermediate)</option>
+            </optgroup>
+            <optgroup label="Learning Themes">
+              {THEMES.map(theme => (
+                <option key={theme.id} value={theme.id}>{theme.name}</option>
+              ))}
+            </optgroup>
           </select>
         </div>
 

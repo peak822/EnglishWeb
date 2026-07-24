@@ -15,6 +15,7 @@ import ReadMode from './pages/ReadMode';
 import SRSMode from './pages/SRSMode';
 import ContextMode from './pages/ContextMode';
 import SyntaxMode from './pages/SyntaxMode';
+import MatchMode from './pages/MatchMode';
 
 function App() {
   const { exp, level, badges, nextLevelExp, currentLevelBaseExp, newBadge, recentLevelUp } = useGamification();
@@ -79,6 +80,7 @@ function App() {
             <Route path="/srs" element={<SRSMode />} />
             <Route path="/context" element={<ContextMode />} />
             <Route path="/syntax" element={<SyntaxMode />} />
+            <Route path="/match" element={<MatchMode />} />
           </Routes>
         </main>
 

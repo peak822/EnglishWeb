@@ -147,3 +147,111 @@ a:hover {
 .font-semibold { font-weight: 600; }
 .font-mono { font-family: var(--font-family-mono); }
 .mx-auto { margin-left: auto; margin-right: auto; }
+
+/* 3D Transform Utilities for MatchMode */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Match Mode Specific Styles */
+.match-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .match-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.match-card {
+  position: relative;
+  height: 8rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-slow);
+}
+@media (min-width: 768px) {
+  .match-card {
+    height: 10rem;
+  }
+}
+.match-card:hover:not(.matched) {
+  transform: translateY(-4px);
+  box-shadow: var(--glow-primary);
+}
+.match-card.matched {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.match-card-front, .match-card-back {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.match-card-front {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+}
+.match-card-front:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.match-card-back {
+  flex-direction: column;
+}
+.match-card-back.type-word {
+  background: rgba(0, 225, 255, 0.1);
+  border: 2px solid var(--color-primary);
+  box-shadow: var(--glow-primary);
+}
+.match-card-back.type-meaning {
+  background: rgba(139, 92, 246, 0.1);
+  border: 2px solid var(--color-accent);
+  box-shadow: var(--glow-accent);
+}
+
+.card-badge {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: 0.875rem;
+  opacity: 0.6;
+}
+
+.card-text {
+  font-weight: 700;
+  word-break: break-word;
+}
+.type-word .card-text {
+  color: var(--color-primary);
+  font-size: 1.125rem;
+}
+.type-meaning .card-text {
+  color: var(--color-accent);
+  font-size: 0.875rem;
+}
+@media (min-width: 768px) {
+  .type-word .card-text { font-size: 1.25rem; }
+  .type-meaning .card-text { font-size: 1rem; }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Type, Puzzle, HelpCircle, ArrowRight, BookOpen } from 'lucide-react';
+import { Type, Puzzle, HelpCircle, ArrowRight, BookOpen, Grid } from 'lucide-react';
 import Card from '../components/Card';
 
 const Home = () => {
@@ -22,6 +22,14 @@ const Home = () => {
       icon: <HelpCircle size={32} />,
       path: '/guess',
       color: '#F59E0B'
+    },
+    {
+      id: 'match',
+      title: 'เกมจับคู่ (Match)',
+      description: 'Test your memory! Match English words with their Thai meanings.',
+      icon: <Grid size={32} />,
+      path: '/match',
+      color: '#00E1FF' // Bright Cyan
     }
   ];
 

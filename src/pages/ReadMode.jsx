@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import vocabularyData from '../data/vocabulary.json';
+import { filterWords, THEMES } from '../hooks/useCategories';
 import { Search, ChevronLeft, ChevronRight, FileText } from 'lucide-react';
 
 const ReadMode = () => {
@@ -11,11 +12,10 @@ const ReadMode = () => {
   const itemsPerPage = 50;
 
   const filteredWords = useMemo(() => {
-    return vocabularyData.filter(word => {
-      const matchSearch = word.word.toLowerCase().includes(searchTerm.toLowerCase());
-      const matchLevel = level === 'all' || word.level === level;
-      return matchSearch && matchLevel;
-    });
+    const themeFiltered = filterWords(vocabularyData, level);
+    return themeFiltered.filter(word => 
+      word.word.toLowerCase().includes(searchTerm.toLowerCase())
+    );
   }, [searchTerm, level]);
 
   const totalPages = Math.ceil(filteredWords.length / itemsPerPage);
@@ -57,13 +57,20 @@ const ReadMode = () => {
               onChange={(e) => setLevel(e.target.value)}
               className="level-select"
             >
-              <option value="all">All Levels</option>
-              <option value="A1">A1 (Beginner)</option>
-              <option value="A2">A2 (Elementary)</option>
-              <option value="B1">B1 (Intermediate)</option>
-              <option value="B2">B2 (Upper Intermediate)</option>
-              <option value="C1">C1 (Advanced)</option>
-              <option value="C2">C2 (Proficient)</option>
+              <option value="all">All Words</option>
+              <optgroup label="Difficulty Levels">
+                <option value="A1">A1 (Beginner)</option>
+                <option value="A2">A2 (Elementary)</option>
+                <option value="B1">B1 (Intermediate)</option>
+                <option value="B2">B2 (Upper Intermediate)</option>
+                <option value="C1">C1 (Advanced)</option>
+                <option value="C2">C2 (Proficient)</option>
+              </optgroup>
+              <optgroup label="Learning Themes">
+                {THEMES.map(theme => (
+                  <option key={theme.id} value={theme.id}>{theme.name}</option>
+                ))}
+              </optgroup>
             </select>
           </div>
         </Card>
