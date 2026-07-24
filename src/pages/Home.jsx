@@ -54,6 +54,14 @@ const Home = () => {
       icon: <Type size={32} />,
       path: '/context',
       color: '#8B5CF6' // violet
+    },
+    {
+      id: 'syntax',
+      title: 'เรียงประโยค (Syntax)',
+      description: 'Assemble scrambled words to form a correct English sentence.',
+      icon: <Puzzle size={32} />,
+      path: '/syntax',
+      color: '#EC4899' // pink
     }
   ];
 

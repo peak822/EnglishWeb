@@ -14,6 +14,7 @@ import GuessMode from './pages/GuessMode';
 import ReadMode from './pages/ReadMode';
 import SRSMode from './pages/SRSMode';
 import ContextMode from './pages/ContextMode';
+import SyntaxMode from './pages/SyntaxMode';
 
 function App() {
   const { exp, level, badges, nextLevelExp, currentLevelBaseExp, newBadge, recentLevelUp } = useGamification();
@@ -71,6 +72,7 @@ function App() {
               <Link to="/guess" className="nav-link">ทายคำศัพท์</Link>
               <Link to="/srs" className="nav-link">ทบทวน (SRS)</Link>
               <Link to="/context" className="nav-link">เติมคำ</Link>
+              <Link to="/syntax" className="nav-link">เรียงประโยค</Link>
             </div>
           </div>
         </nav>
@@ -84,6 +86,7 @@ function App() {
             <Route path="/guess" element={<GuessMode />} />
             <Route path="/srs" element={<SRSMode />} />
             <Route path="/context" element={<ContextMode />} />
+            <Route path="/syntax" element={<SyntaxMode />} />
           </Routes>
         </main>
 
