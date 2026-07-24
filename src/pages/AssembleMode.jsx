@@ -84,6 +84,16 @@ const AssembleMode = () => {
     return <div className="container animate-fade-up text-center"><h2 className="text-gradient">Loading...</h2></div>;
   }
 
+  if (!currentWord && words.length > 0 && currentIndex >= words.length) {
+    return (
+      <div className="container animate-fade-up text-center py-20">
+        <h2 className="text-gradient text-4xl mb-4">Amazing Job! 🎉</h2>
+        <p className="text-[var(--color-neutral)] text-lg mb-8">You have completed all available words in this level!</p>
+        <button onClick={() => window.location.href = '/'} className="ui-btn ui-btn-primary">Back to Home</button>
+      </div>
+    );
+  }
+
   return (
     <div className="container animate-fade-up">
       <div className="game-container">
