@@ -114,10 +114,12 @@ const Home = () => {
       </section>
 
       <section className="mt-16">
-        <h2 className="text-center mb-2">Select a Learning Mode</h2>
-        <p className="text-center mb-8 mx-auto" style={{ maxWidth: '500px' }}>
-          Explore our carefully designed modes. From gentle starter exercises to more challenging memory games, there's a perfect place for you to begin today.
-        </p>
+        <div className="mx-auto text-center mb-8" style={{ background: 'rgba(2,2,5,0.65)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)', padding: '2rem', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(255,255,255,0.1)', maxWidth: '600px', boxShadow: '0 0 20px rgba(0,0,0,0.5)' }}>
+          <h2 className="mb-2">Select a Learning Mode</h2>
+          <p className="mx-auto" style={{ maxWidth: '500px', marginBottom: 0 }}>
+            Explore our carefully designed modes. From gentle starter exercises to more challenging memory games, there's a perfect place for you to begin today.
+          </p>
+        </div>
         
         <div className="difficulty-section">
           <div className="section-header flex items-center justify-between flex-wrap gap-2">

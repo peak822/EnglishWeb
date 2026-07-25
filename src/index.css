@@ -48,16 +48,79 @@ body {
   font-family: var(--font-family-sans);
   background-color: var(--color-background);
   color: var(--color-secondary);
+  overflow-x: hidden;
   line-height: 1.6;
   min-height: 100dvh;
-  /* Cyberpunk Grid / Scanline Background */
+  /* Cyberpunk Grid / Scanline Background with Holographic Earth */
   background-image: 
     linear-gradient(rgba(0, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(rgba(0,0,0,0.5) 50%, transparent 50%);
-  background-size: 30px 30px, 30px 30px, 100% 4px;
+    linear-gradient(rgba(0,0,0,0.5) 50%, transparent 50%),
+    url('/holographic_earth.png');
+  background-size: 30px 30px, 30px 30px, 100% 4px, cover;
+  background-position: center, center, center, center center;
+  background-repeat: repeat, repeat, repeat, no-repeat;
   background-attachment: fixed;
   text-shadow: 0 0 2px rgba(255,255,255,0.3);
+}
+
+/* Background Breathing Effect */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 255, 255, 0.15) 50%, transparent 100%);
+  animation: breathe 6s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes breathe {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+/* Sparkling Cyber Particles - Layer 1 */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: 
+    radial-gradient(3px 3px at 15% 25%, rgba(0, 255, 255, 1), transparent),
+    radial-gradient(4px 4px at 35% 65%, rgba(255, 0, 255, 0.9), transparent),
+    radial-gradient(2px 2px at 75% 35%, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(4px 4px at 85% 85%, rgba(0, 255, 255, 0.9), transparent),
+    radial-gradient(3px 3px at 45% 95%, rgba(255, 0, 255, 0.8), transparent);
+  background-size: 200px 200px;
+  animation: sparkle-1 3s ease-in-out infinite alternate;
+}
+
+/* Sparkling Cyber Particles - Layer 2 */
+.app-layout::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background-image: 
+    radial-gradient(2px 2px at 25% 15%, rgba(255, 255, 255, 0.9), transparent),
+    radial-gradient(4px 4px at 65% 85%, rgba(0, 255, 255, 1), transparent),
+    radial-gradient(3px 3px at 85% 45%, rgba(255, 0, 255, 0.8), transparent),
+    radial-gradient(2px 2px at 50% 50%, rgba(255, 255, 255, 0.7), transparent);
+  background-size: 150px 150px;
+  animation: sparkle-2 4s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes sparkle-1 {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+@keyframes sparkle-2 {
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.9; }
 }
 
 h1, h2, h3, h4, h5, h6 {

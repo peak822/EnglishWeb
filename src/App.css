@@ -2,6 +2,8 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100dvh;
+  position: relative;
+  z-index: 1;
 }
 
 .nav-bar {
@@ -74,15 +76,25 @@
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 6rem;
+  background: rgba(2, 2, 5, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 3rem 1.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(0, 255, 255, 0.05);
 }
 
 .difficulty-section {
-  background: rgba(15, 23, 42, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-lg);
   padding: 2.5rem;
   margin-bottom: 3rem;
   transition: all var(--transition-normal);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .difficulty-section:hover {
@@ -108,7 +120,9 @@
   height: 100%;
   position: relative;
   overflow: hidden;
-  background: rgba(2, 2, 5, 0.8);
+  background: rgba(2, 2, 5, 0.85);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-sm);
   padding: 1.5rem;
