@@ -81,55 +81,57 @@ const ContextMode = () => {
 
   return (
     <div className="container animate-fade-up">
-      <div className="text-center mb-10">
-        <h2 className="text-gradient mb-4">Context Mode</h2>
-        <p className="text-[var(--color-neutral)]">
-          Fill in the blank to complete the sentence. ({currentIndex + 1} / {sentences.length})
-        </p>
-      </div>
-
-      <Card className="max-w-2xl mx-auto p-10 text-center relative overflow-hidden">
-        {status === 'correct' && (
-          <div className="absolute inset-0 bg-[rgba(34,197,94,0.1)] success-pulse z-0 rounded-[var(--radius-lg)]" />
-        )}
-        
-        <div className="relative z-10" style={{ width: '100%' }}>
-          <div className="context-sentence">
-            <span>{parts[0]}</span>
-            <span className={`context-blank ${status === 'correct' ? 'filled' : ''}`}>
-              {status === 'correct' ? currentItem.word : '________'}
-            </span>
-            <span>{parts[1]}</span>
-          </div>
-
-          <div className={`context-grid ${status === 'incorrect' ? 'shake' : ''}`}>
-            {options.map((opt, i) => {
-              let statusClass = '';
-              if (status === 'correct' && opt === currentItem.word) statusClass = 'correct-ans';
-              if (status === 'incorrect' && opt === lastGuess) statusClass = 'incorrect-ans';
-              
-              return (
-                <button 
-                  key={i} 
-                  className={`option-btn ${statusClass}`}
-                  onClick={() => handleGuess(opt)}
-                  style={{ width: '100%' }}
-                >
-                  {opt}
-                </button>
-              );
-            })}
-          </div>
-
-          <div className="h-8 mt-6 flex items-center justify-center">
-            {status === 'incorrect' && (
-              <p className="text-red-400 font-semibold animate-fade-up">
-                Incorrect! Try again...
-              </p>
-            )}
-          </div>
+      <div className="game-container">
+        <div className="text-center mb-10">
+          <h2 className="text-gradient mb-4">Context Mode</h2>
+          <p className="text-[var(--color-neutral)]">
+            Fill in the blank to complete the sentence. ({currentIndex + 1} / {sentences.length})
+          </p>
         </div>
-      </Card>
+
+        <Card className="max-w-2xl mx-auto p-10 text-center relative overflow-hidden">
+          {status === 'correct' && (
+            <div className="absolute inset-0 bg-[rgba(34,197,94,0.1)] success-pulse z-0 rounded-[var(--radius-lg)]" />
+          )}
+          
+          <div className="relative z-10" style={{ width: '100%' }}>
+            <div className="context-sentence">
+              <span>{parts[0]}</span>
+              <span className={`context-blank ${status === 'correct' ? 'filled' : ''}`}>
+                {status === 'correct' ? currentItem.word : '________'}
+              </span>
+              <span>{parts[1]}</span>
+            </div>
+
+            <div className={`context-grid ${status === 'incorrect' ? 'shake' : ''}`}>
+              {options.map((opt, i) => {
+                let statusClass = '';
+                if (status === 'correct' && opt === currentItem.word) statusClass = 'correct-ans';
+                if (status === 'incorrect' && opt === lastGuess) statusClass = 'incorrect-ans';
+                
+                return (
+                  <button 
+                    key={i} 
+                    className={`option-btn ${statusClass}`}
+                    onClick={() => handleGuess(opt)}
+                    style={{ width: '100%' }}
+                  >
+                    {opt}
+                  </button>
+                );
+              })}
+            </div>
+
+            <div className="h-8 mt-6 flex items-center justify-center">
+              {status === 'incorrect' && (
+                <p className="text-red-400 font-semibold animate-fade-up">
+                  Incorrect! Try again...
+                </p>
+              )}
+            </div>
+          </div>
+        </Card>
+      </div>
     </div>
   );
 };
