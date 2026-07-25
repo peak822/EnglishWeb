@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Type, Puzzle, HelpCircle, ArrowRight, BookOpen, Grid } from 'lucide-react';
 import Card from '../components/Card';
+import Tilt from 'react-parallax-tilt';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -82,22 +83,33 @@ const Home = () => {
   const renderModeGrid = (modeList) => (
     <div className="mode-grid">
       {modeList.map((mode) => (
-        <Card 
+        <Tilt 
           key={mode.id} 
-          className="mode-card flex flex-col"
-          onClick={() => navigate(mode.path)}
+          glareEnable={true} 
+          glareMaxOpacity={0.15} 
+          glareColor={mode.color} 
+          glarePosition="all" 
+          tiltMaxAngleX={10} 
+          tiltMaxAngleY={10}
+          scale={1.02}
+          transitionSpeed={2500}
         >
-          <div className="mode-icon" style={{ color: mode.color, borderColor: mode.color }}>
-            {mode.icon}
-          </div>
-          <h3 className="text-2xl mb-3">{mode.title}</h3>
-          <p className="mb-6 flex-grow">{mode.description}</p>
-          
-          <div className="flex items-center gap-2 mt-auto pt-4 border-t border-[rgba(255,255,255,0.05)]" style={{ color: mode.color, fontWeight: 600 }}>
-            <span>Start Practice</span>
-            <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
-          </div>
-        </Card>
+          <Card 
+            className="mode-card flex flex-col h-full"
+            onClick={() => navigate(mode.path)}
+          >
+            <div className="mode-icon" style={{ color: mode.color, borderColor: mode.color }}>
+              {mode.icon}
+            </div>
+            <h3 className="text-2xl mb-3">{mode.title}</h3>
+            <p className="mb-6 flex-grow">{mode.description}</p>
+            
+            <div className="flex items-center gap-2 mt-auto pt-4 border-t border-[rgba(255,255,255,0.05)]" style={{ color: mode.color, fontWeight: 600 }}>
+              <span>Start Practice</span>
+              <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
+            </div>
+          </Card>
+        </Tilt>
       ))}
     </div>
   );
@@ -106,7 +118,7 @@ const Home = () => {
     <div className="container animate-fade-up">
       <section className="hero-section text-center">
         <div className="mx-auto" style={{ maxWidth: '800px' }}>
-          <h1 className="text-gradient" style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)' }}>Discover the Joy of English</h1>
+          <h1 className="text-gradient glitch-hover" data-text="Discover the Joy of English" style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)' }}>Discover the Joy of English</h1>
           <p className="mt-6 text-xl mx-auto" style={{ color: 'var(--color-neutral)' }}>
             Elevate your vocabulary step by step in a relaxed environment. Choose a learning mode that fits your pace, and start growing your English skills today.
           </p>
@@ -114,10 +126,10 @@ const Home = () => {
       </section>
 
       <section className="mt-16">
-        <div className="mx-auto text-center mb-8" style={{ background: 'rgba(2,2,5,0.65)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)', padding: '2rem', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(255,255,255,0.1)', maxWidth: '600px', boxShadow: '0 0 20px rgba(0,0,0,0.5)' }}>
-          <h2 className="mb-2">Select a Learning Mode</h2>
-          <p className="mx-auto" style={{ maxWidth: '500px', marginBottom: 0 }}>
-            Explore our carefully designed modes. From gentle starter exercises to more challenging memory games, there's a perfect place for you to begin today.
+        <div className="mx-auto text-center mb-8" style={{ background: 'rgba(2,2,5,0.65)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)', padding: '2rem', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(255,255,255,0.1)', boxShadow: '0 8px 32px 0 rgba(0,255,255,0.05)' }}>
+          <h2 className="text-center mb-2 glitch-hover" data-text="Select a Learning Mode">Select a Learning Mode</h2>
+          <p className="text-center" style={{ color: 'var(--color-neutral)' }}>
+            Choose a mode to start practicing and earning EXP
           </p>
         </div>
         

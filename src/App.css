@@ -163,6 +163,19 @@
 .game-container {
   max-width: 800px;
   margin: 0 auto;
+  background: rgba(2, 2, 5, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 768px) {
+  .game-container {
+    padding: 2.5rem;
+  }
 }
 
 .game-header {
@@ -257,8 +270,18 @@
 .typing-input:focus {
   border-color: var(--color-primary);
   box-shadow: var(--glow-primary), inset 0 0 15px rgba(0,255,255,0.2);
-  background: rgba(0, 255, 255, 0.05);
+  background: 
+    linear-gradient(to bottom, transparent 0%, rgba(0, 255, 255, 0.3) 50%, transparent 100%),
+    rgba(0, 255, 255, 0.05);
+  background-size: 100% 200%, 100% 100%;
+  background-repeat: no-repeat;
+  animation: input-scan 2s linear infinite;
   text-shadow: 0 0 10px var(--color-primary);
+}
+
+@keyframes input-scan {
+  0% { background-position: 0 -200%, 0 0; }
+  100% { background-position: 0 200%, 0 0; }
 }
 
 .typing-input.error {
@@ -375,6 +398,19 @@
 .read-mode-wrapper {
   max-width: 1024px;
   margin: 0 auto;
+  background: rgba(2, 2, 5, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 768px) {
+  .read-mode-wrapper {
+    padding: 2.5rem;
+  }
 }
 
 .read-mode-subtitle {
@@ -818,6 +854,26 @@
 .ui-btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.ui-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 150%; padding-top: 150%;
+  background: radial-gradient(circle, rgba(0,255,255,0.4) 0%, transparent 60%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.ui-btn:active:not(:disabled)::after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  transition: 0s;
 }
 
 .ui-btn:active:not(:disabled) {

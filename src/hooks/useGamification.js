@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import confetti from 'canvas-confetti';
 
 const LEVEL_THRESHOLDS = [
   0,      // Level 1
@@ -53,6 +54,13 @@ export const useGamification = () => {
       if (leveledUp) {
         setRecentLevelUp(true);
         setTimeout(() => setRecentLevelUp(false), 3000);
+        confetti({
+          particleCount: 150,
+          spread: 90,
+          origin: { y: 0.6 },
+          colors: ['#00FFFF', '#FF00FF', '#FFFFFF'],
+          zIndex: 9999
+        });
       }
 
       // Check for new badges
@@ -73,6 +81,13 @@ export const useGamification = () => {
       if (newlyEarned) {
         setNewBadge(newlyEarned);
         setTimeout(() => setNewBadge(null), 4000);
+        confetti({
+          particleCount: 80,
+          spread: 60,
+          origin: { y: 0.4 },
+          colors: ['#FF00FF', '#00FFFF'],
+          zIndex: 9999
+        });
       }
 
       return {

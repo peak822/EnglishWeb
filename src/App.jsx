@@ -7,6 +7,7 @@ import './App.css';
 import { useGamification } from './hooks/useGamification';
 
 // Components
+import InteractiveBackground from './components/InteractiveBackground';
 import Home from './pages/Home';
 import TypingMode from './pages/TypingMode';
 import AssembleMode from './pages/AssembleMode';
@@ -24,10 +25,11 @@ function App() {
 
   return (
     <Router>
+      <InteractiveBackground />
       <div className="app-layout">
         <nav className="nav-bar">
           <div className="container nav-content flex-wrap gap-4">
-            <Link to="/" className="nav-logo">
+            <Link to="/" className="nav-logo glitch-hover" data-text="English Study">
               <BookOpen size={24} />
               <span>English Study</span>
             </Link>
