@@ -3,7 +3,7 @@ import Card from '../components/Card';
 import Button from '../components/Button';
 import vocabularyData from '../data/vocabulary.json';
 import { filterWords, THEMES } from '../hooks/useCategories';
-import { Search, ChevronLeft, ChevronRight, FileText } from 'lucide-react';
+import { Search, ChevronLeft, ChevronRight, FileText, Volume2 } from 'lucide-react';
 
 const ReadMode = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -29,6 +29,15 @@ const ReadMode = () => {
   React.useEffect(() => {
     setCurrentPage(1);
   }, [searchTerm, level]);
+
+  const playAudio = (word) => {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(word);
+      utterance.lang = 'en-US';
+      window.speechSynthesis.speak(utterance);
+    }
+  };
 
   return (
     <div className="container animate-fade-up">
@@ -97,6 +106,7 @@ const ReadMode = () => {
                   <th>คำอ่าน</th>
                   <th>IPA</th>
                   <th>Level</th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
@@ -111,6 +121,15 @@ const ReadMode = () => {
                       <td className="td-thai-pron" style={{ color: 'var(--color-primary)' }}>{word.thai_pronunciation || <span className="empty-dash">-</span>}</td>
                       <td className="td-ipa">{word.ipa ? `/${word.ipa}/` : <span className="empty-dash">-</span>}</td>
                       <td><span className={`td-level level-${levelClass}`}>{word.level}</span></td>
+                      <td className="text-center">
+                        <button 
+                          onClick={() => playAudio(word.word)}
+                          className="p-2 text-[var(--color-neutral)] hover:text-[var(--color-primary)] transition-colors"
+                          title="Listen to pronunciation"
+                        >
+                          <Volume2 size={20} />
+                        </button>
+                      </td>
                     </tr>
                   );
                 })}
