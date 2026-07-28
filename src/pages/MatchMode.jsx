@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import vocabularyData from '../data/vocabulary.json';
@@ -14,8 +14,10 @@ const MatchMode = () => {
   const [moves, setMoves] = useState(0);
   const [isWon, setIsWon] = useState(false);
   const [isLocked, setIsLocked] = useState(false);
+  const timeoutRef = useRef(null);
 
   const startNewGame = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
     let pool = filterWords(vocabularyData, level);
     if (pool.length < 6) {
       pool = vocabularyData; // Fallback if theme has too few words
@@ -47,45 +49,55 @@ const MatchMode = () => {
     startNewGame();
   }, [level]);
 
+  // Cleanup timeouts on unmount
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
+
   const handleCardClick = (index) => {
     if (isLocked) return;
     if (flippedIndices.includes(index)) return;
     if (matchedIds.includes(cards[index].matchId)) return;
+    if (flippedIndices.length >= 2) return;
 
     const newFlipped = [...flippedIndices, index];
     setFlippedIndices(newFlipped);
 
     if (newFlipped.length === 2) {
-      setMoves(m => m + 1);
       setIsLocked(true);
+      setMoves(m => m + 1);
       
       const firstCard = cards[newFlipped[0]];
       const secondCard = cards[newFlipped[1]];
       
       if (firstCard.matchId === secondCard.matchId) {
-        // Match!
-        setMatchedIds([...matchedIds, firstCard.matchId]);
-        setFlippedIndices([]);
-        setIsLocked(false);
-        
-        // Check win condition
-        if (matchedIds.length + 1 === 6) {
-          setIsWon(true);
-          // Reward EXP based on moves (fewer moves = more EXP)
-          const baseExp = 30;
-          const penalty = Math.max(0, (moves - 6) * 2);
-          const finalExp = Math.max(10, baseExp - penalty);
-          addExp(finalExp);
-        }
+        // Match! Add a delay so the user can see the cards before they fade out
+        timeoutRef.current = setTimeout(() => {
+          setMatchedIds(prev => [...prev, firstCard.matchId]);
+          setFlippedIndices([]);
+          setIsLocked(false);
+        }, 800);
       } else {
         // No match
-        setTimeout(() => {
+        timeoutRef.current = setTimeout(() => {
           setFlippedIndices([]);
           setIsLocked(false);
         }, 1000);
       }
     }
   };
+
+  useEffect(() => {
+    if (matchedIds.length > 0 && matchedIds.length === 6 && !isWon) {
+      setIsWon(true);
+      const baseExp = 30;
+      const penalty = Math.max(0, (moves - 6) * 2);
+      const finalExp = Math.max(10, baseExp - penalty);
+      addExp(finalExp);
+    }
+  }, [matchedIds.length, isWon, moves, addExp]);
 
   return (
     <div className="container animate-fade-up">

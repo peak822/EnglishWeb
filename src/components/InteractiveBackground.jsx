@@ -51,7 +51,7 @@ const InteractiveBackground = () => {
         zIndex: 0,
         opacity: isHovering ? 1 : 0,
         transition: 'opacity 0.5s ease',
-        background: `radial-gradient(800px circle at ${position.x}px ${position.y}px, rgba(0, 255, 255, 0.15), transparent 40%)`
+        background: `radial-gradient(800px circle at ${position.x}px ${position.y}px, var(--color-primary), transparent 40%)`
       }}
     />
   );

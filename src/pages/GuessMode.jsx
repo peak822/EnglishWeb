@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Card from '../components/Card';
 import { useGamification } from '../hooks/useGamification';
 import { filterWords, THEMES } from '../hooks/useCategories';
@@ -14,8 +14,16 @@ const GuessMode = () => {
   const [hintLevel, setHintLevel] = useState(0);
   const [level, setLevel] = useState('all');
   const [isLoaded, setIsLoaded] = useState(false);
+  const timeoutRef = useRef(null);
 
   useEffect(() => {
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
     let result = filterWords(vocabularyData, level);
     result = [...result].sort(() => 0.5 - Math.random());
     setWords(result);
@@ -81,12 +89,12 @@ const GuessMode = () => {
       // Calculate EXP based on hints used (10 -> 5 -> 2)
       const expGained = hintLevel === 0 ? 10 : hintLevel === 1 ? 5 : 2;
       addExp(expGained);
-      setTimeout(() => {
+      timeoutRef.current = setTimeout(() => {
         setCurrentIndex(prev => prev + 1);
       }, 2500); // Increased delay for post-answer review
     } else {
       setStatus('incorrect');
-      setTimeout(() => {
+      timeoutRef.current = setTimeout(() => {
         setStatus('idle');
         setSelectedOption(null);
       }, 1000);

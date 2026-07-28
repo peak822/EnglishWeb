@@ -7,7 +7,8 @@
   --color-tertiary: #BC13FE;    /* Neon Purple */
   --color-background: #050512;  /* Deep Void Background */
   --color-neutral: #FF00FF;     /* Neon Magenta / Accent */
-  --color-surface: #020205;     /* Dark City Surface */
+  --color-surface: rgba(2, 2, 5, 0.85);     /* Dark City Surface */
+  --color-nav: rgba(5, 5, 18, 0.9); /* Nav Background */
   --color-accent: #FF00FF;      /* Neon Magenta */
   --color-danger: #FF0055;      /* Neon Red/Danger */
   
@@ -418,4 +419,80 @@ a:hover {
   20%, 80% { transform: translate3d(4px, 0, 0) scale(0.99); filter: drop-shadow(5px 0 0 rgba(0,255,255,0.8)); }
   30%, 50%, 70% { transform: translate3d(-6px, 0, 0) scale(1.02); filter: drop-shadow(-8px 0 0 rgba(255,0,255,0.8)); }
   40%, 60% { transform: translate3d(6px, 0, 0) scale(0.98); filter: drop-shadow(8px 0 0 rgba(255,0,0,0.8)); }
+}
+
+/* =========================================
+   THEMES
+   ========================================= */
+
+/* Theme: Meadow Day */
+[data-theme="meadow-day"] {
+  --color-primary: #10B981;     
+  --color-secondary: #064E3B;   
+  --color-tertiary: #3B82F6;    
+  --color-background: #F0FDF4;  
+  --color-neutral: #059669;
+  --color-surface: rgba(255, 255, 255, 0.7); 
+  --color-nav: rgba(255, 255, 255, 0.85);
+  --color-accent: #F59E0B;      
+  --color-danger: #EF4444;
+}
+[data-theme="meadow-day"] body {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+    url('/meadow_day.png');
+  background-size: cover, cover;
+  background-attachment: fixed;
+  color: var(--color-secondary);
+  text-shadow: none; 
+}
+[data-theme="meadow-day"] body::before,
+[data-theme="meadow-day"] body::after,
+[data-theme="meadow-day"] .app-layout::before {
+  display: none; 
+}
+
+/* Theme: Milky Way */
+[data-theme="milky-way"] {
+  --color-primary: #8B5CF6;     
+  --color-secondary: #F8FAFC;   
+  --color-tertiary: #3B82F6;    
+  --color-background: #0F172A;  
+  --color-neutral: #C084FC;     
+  --color-surface: rgba(15, 23, 42, 0.7); 
+  --color-nav: rgba(15, 23, 42, 0.85);
+  --color-accent: #F472B6;      
+}
+[data-theme="milky-way"] body {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/milky_way.png');
+  background-size: cover, cover;
+  background-attachment: fixed;
+}
+[data-theme="milky-way"] body::before {
+  background: radial-gradient(circle at center, transparent 0%, rgba(139, 92, 246, 0.15) 50%, transparent 100%);
+}
+
+/* Theme: Sunset Vaporwave */
+[data-theme="sunset-vaporwave"] {
+  --color-primary: #F97316;     
+  --color-secondary: #FFF7ED;   
+  --color-tertiary: #EC4899;    
+  --color-background: #2E1065;  
+  --color-neutral: #F43F5E;     
+  --color-surface: rgba(46, 16, 101, 0.7); 
+  --color-nav: rgba(46, 16, 101, 0.85);
+  --color-accent: #14B8A6;      
+}
+[data-theme="sunset-vaporwave"] body {
+  background-image: 
+    linear-gradient(rgba(236, 72, 153, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(236, 72, 153, 0.1) 1px, transparent 1px),
+    linear-gradient(rgba(0,0,0,0.5) 50%, transparent 50%),
+    url('/sunset_vaporwave.png');
+  background-size: 30px 30px, 30px 30px, 100% 4px, cover;
+  background-position: center, center, center, center center;
+  background-repeat: repeat, repeat, repeat, no-repeat;
+  background-attachment: fixed;
 }

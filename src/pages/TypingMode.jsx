@@ -18,8 +18,16 @@ const TypingMode = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   
   const inputRef = useRef(null);
+  const timeoutRef = useRef(null);
 
   useEffect(() => {
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
     let result = filterWords(vocabularyData, level);
     result = [...result].sort(() => 0.5 - Math.random());
     setWords(result);
@@ -58,13 +66,13 @@ const TypingMode = () => {
       if (status !== 'revealed') {
         addExp(10);
       }
-      setTimeout(() => {
+      timeoutRef.current = setTimeout(() => {
         setCurrentIndex(prev => prev + 1);
         setInput('');
         setStatus('idle');
         setWrongCount(0);
         setShowHint(false);
-      }, 1000);
+      }, 3500);
     } else if (status !== 'incorrect' && status !== 'revealed') {
       setStatus('idle');
     }
@@ -76,28 +84,28 @@ const TypingMode = () => {
 
     if (input.trim().toLowerCase() === currentWord.word.toLowerCase()) {
       setStatus('correct');
-      setTimeout(() => {
+      timeoutRef.current = setTimeout(() => {
         setCurrentIndex(prev => prev + 1);
         setInput('');
         setStatus('idle');
         setWrongCount(0);
         setShowHint(false);
-      }, 1500);
+      }, 3500);
     } else {
       const newWrongCount = wrongCount + 1;
       setWrongCount(newWrongCount);
       if (newWrongCount >= 3) {
         setStatus('revealed');
-        setTimeout(() => {
+        timeoutRef.current = setTimeout(() => {
           setCurrentIndex(prev => prev + 1);
           setInput('');
           setStatus('idle');
           setWrongCount(0);
           setShowHint(false);
-        }, 2500);
+        }, 3500);
       } else {
         setStatus('incorrect');
-        setTimeout(() => {
+        timeoutRef.current = setTimeout(() => {
           setStatus(prev => prev === 'incorrect' ? 'idle' : prev);
         }, 800);
       }
@@ -193,9 +201,13 @@ const TypingMode = () => {
                 </Button>
               </form>
 
-              {status === 'revealed' && (
-                <div className="mt-4 text-red-400 font-semibold animate-fade-up">
-                  Skipping to next word...
+              {(status === 'correct' || status === 'revealed') && (
+                <div className="mt-8 animate-fade-up text-center p-6 bg-[rgba(255,255,255,0.05)] rounded-[var(--radius-md)] border border-[rgba(0,255,255,0.2)]" style={{ width: '100%', maxWidth: '400px' }}>
+                  <h3 className="text-2xl font-bold text-[var(--color-accent)] mb-2">{currentWord.meaning}</h3>
+                  <p className="font-mono text-[var(--color-neutral)] opacity-80">/{currentWord.ipa || 'no ipa'}/</p>
+                  <p className={`mt-4 font-semibold text-sm ${status === 'correct' ? 'text-[var(--color-primary)]' : 'text-red-400'}`}>
+                    {status === 'correct' ? 'Correct! Moving to next word...' : 'Skipping to next word...'}
+                  </p>
                 </div>
               )}
 

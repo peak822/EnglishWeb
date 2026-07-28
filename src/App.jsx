@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { BookOpen, Star, Award } from 'lucide-react';
 import './App.css';
@@ -20,6 +20,11 @@ import MatchMode from './pages/MatchMode';
 
 function App() {
   const { exp, level, badges, nextLevelExp, currentLevelBaseExp, newBadge, recentLevelUp } = useGamification();
+  const [theme, setTheme] = useState('cyberpunk');
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
 
   const expProgress = Math.max(0, Math.min(100, ((exp - currentLevelBaseExp) / (nextLevelExp - currentLevelBaseExp)) * 100));
 
@@ -34,9 +39,23 @@ function App() {
               <span>English Study</span>
             </Link>
             
-            {/* Gamification Bar */}
-            <div className="flex items-center gap-4 bg-[rgba(15,23,42,0.8)] border border-[rgba(255,255,255,0.1)] px-4 py-2 rounded-full relative">
-              <div className="flex items-center gap-2 text-[var(--color-primary)] font-bold">
+            {/* Right Side: Theme & Gamification */}
+            <div className="flex items-center gap-4">
+              {/* Theme Selector */}
+              <select 
+                value={theme}
+                onChange={(e) => setTheme(e.target.value)}
+                className="bg-[var(--color-surface)] text-[var(--color-secondary)] border border-[rgba(255,255,255,0.2)] rounded-full px-4 py-1.5 text-sm font-medium outline-none cursor-pointer hover:border-[var(--color-primary)] transition-colors shadow-sm"
+              >
+                <option value="cyberpunk">👾 Cyberpunk</option>
+                <option value="meadow-day">🌿 Meadow Day</option>
+                <option value="milky-way">🌌 Milky Way</option>
+                <option value="sunset-vaporwave">🌅 Sunset Vaporwave</option>
+              </select>
+
+              {/* Gamification Bar */}
+              <div className="flex items-center gap-4 bg-[var(--color-surface)] border border-[rgba(255,255,255,0.1)] px-4 py-2 rounded-full relative">
+                <div className="flex items-center gap-2 text-[var(--color-primary)] font-bold">
                 <Star size={18} fill="currentColor" />
                 <span>Lv. {level}</span>
               </div>
@@ -67,6 +86,7 @@ function App() {
                   New Badge: {newBadge.name} {newBadge.icon}
                 </div>
               )}
+            </div>
             </div>
             {/* Removed nav-links as they are accessible from Home */}
           </div>

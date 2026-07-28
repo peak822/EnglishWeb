@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import vocabularyData from '../data/vocabulary.json';
@@ -12,14 +12,24 @@ const AssembleMode = () => {
   const [status, setStatus] = useState('idle');
   const [level, setLevel] = useState('all');
   const [isLoaded, setIsLoaded] = useState(false);
+  const [showHint, setShowHint] = useState(false);
+  const timeoutRef = useRef(null);
 
   useEffect(() => {
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
     let result = filterWords(vocabularyData, level);
     result = [...result].sort(() => 0.5 - Math.random());
     setWords(result);
     setCurrentIndex(0);
     setStatus('idle');
     setIsLoaded(true);
+    setShowHint(false);
   }, [level]);
 
   useEffect(() => {
@@ -29,6 +39,7 @@ const AssembleMode = () => {
       setScrambledLetters(letters.sort(() => 0.5 - Math.random()));
       setAssembledWord(new Array(word.length).fill(null));
       setStatus('idle');
+      setShowHint(false);
     }
   }, [currentIndex, words]);
 
@@ -53,12 +64,12 @@ const AssembleMode = () => {
       const finalWord = newAssembled.map(l => l.char).join('');
       if (finalWord === currentWord.word.toLowerCase()) {
         setStatus('correct');
-        setTimeout(() => {
+        timeoutRef.current = setTimeout(() => {
           setCurrentIndex(prev => prev + 1);
         }, 1500);
       } else {
         setStatus('incorrect');
-        setTimeout(() => {
+        timeoutRef.current = setTimeout(() => {
           setAssembledWord(new Array(currentWord.word.length).fill(null));
           setScrambledLetters(scrambledLetters.map(l => ({ ...l, used: false })));
           setStatus('idle');
@@ -167,17 +178,35 @@ const AssembleMode = () => {
                 ))}
               </div>
               
-              <div className="mt-12 flex justify-center">
-                 <Button 
-                  variant="secondary" 
-                  onClick={() => {
-                    setAssembledWord(new Array(currentWord.word.length).fill(null));
-                    setScrambledLetters(scrambledLetters.map(l => ({ ...l, used: false })));
-                    setStatus('idle');
-                  }}
-                >
-                  Reset Word
-                </Button>
+              <div className="mt-8 flex flex-col items-center">
+                {showHint && status !== 'correct' && (
+                  <div className="mb-6 text-[var(--color-neutral)] text-base animate-fade-up bg-[rgba(255,255,255,0.05)] py-3 px-6 rounded-lg border border-[rgba(0,255,255,0.2)]">
+                    💡 คำศัพท์ภาษาอังกฤษที่แปลว่า <span className="font-bold text-[var(--color-secondary)] text-lg">"{currentWord.meaning}"</span> คือคำว่าอะไรนะ?
+                  </div>
+                )}
+                
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+                  <Button 
+                    variant="secondary" 
+                    onClick={() => {
+                      setAssembledWord(new Array(currentWord.word.length).fill(null));
+                      setScrambledLetters(scrambledLetters.map(l => ({ ...l, used: false })));
+                      setStatus('idle');
+                    }}
+                  >
+                    Reset Word
+                  </Button>
+                </div>
+
+                {!showHint && status !== 'correct' && (
+                  <button 
+                    type="button"
+                    onClick={() => setShowHint(true)}
+                    className="mt-6 text-btn"
+                  >
+                    ขอคำใบ้หน่อย
+                  </button>
+                )}
               </div>
             </div>
           </Card>
