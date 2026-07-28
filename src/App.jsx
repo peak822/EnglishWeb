@@ -18,6 +18,7 @@ import ContextMode from './pages/ContextMode';
 import SyntaxMode from './pages/SyntaxMode';
 import MatchMode from './pages/MatchMode';
 import SwipeMode from './pages/SwipeMode';
+import POSMode from './pages/POSMode';
 
 function App() {
   const { exp, level, badges, nextLevelExp, currentLevelBaseExp, newBadge, recentLevelUp } = useGamification();
@@ -105,6 +106,7 @@ function App() {
             <Route path="/syntax" element={<SyntaxMode />} />
             <Route path="/match" element={<MatchMode />} />
             <Route path="/swipe" element={<SwipeMode />} />
+            <Route path="/pos" element={<POSMode />} />
           </Routes>
         </main>
 

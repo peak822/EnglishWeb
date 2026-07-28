@@ -1773,7 +1773,7 @@
     "ipa": "g"
   },
   {
-    "word": "eight number",
+    "word": "eight",
     "type": "unknown",
     "level": "A1",
     "id": 198,
@@ -1782,7 +1782,7 @@
     "ipa": "t"
   },
   {
-    "word": "eighteen number",
+    "word": "eighteen",
     "type": "unknown",
     "level": "A1",
     "id": 199,
@@ -1791,7 +1791,7 @@
     "ipa": "n"
   },
   {
-    "word": "eighty number",
+    "word": "eighty",
     "type": "unknown",
     "level": "A1",
     "id": 200,
@@ -1809,7 +1809,7 @@
     "ipa": "t"
   },
   {
-    "word": "eleven number",
+    "word": "eleven",
     "type": "unknown",
     "level": "A1",
     "id": 202,
@@ -2124,7 +2124,7 @@
     "thai_pronunciation": "ฟยอู"
   },
   {
-    "word": "fifteen number",
+    "word": "fifteen",
     "type": "unknown",
     "level": "A1",
     "id": 237,
@@ -2133,7 +2133,7 @@
     "thai_pronunciation": "ฟอิฟทอีน-นเออะมบเออะร"
   },
   {
-    "word": "fifth number",
+    "word": "fifth",
     "type": "unknown",
     "level": "A1",
     "id": 238,
@@ -2142,7 +2142,7 @@
     "thai_pronunciation": "ฟอิธ-นเออะมบเออะร"
   },
   {
-    "word": "fifty number",
+    "word": "fifty",
     "type": "unknown",
     "level": "A1",
     "id": 239,
@@ -2178,7 +2178,7 @@
     "thai_pronunciation": "ฟอายน"
   },
   {
-    "word": "five number",
+    "word": "five",
     "type": "unknown",
     "level": "A1",
     "id": 243,
@@ -2277,7 +2277,7 @@
     "thai_pronunciation": "ฟออรม"
   },
   {
-    "word": "forty number",
+    "word": "forty",
     "type": "unknown",
     "level": "A1",
     "id": 254,
@@ -2286,7 +2286,7 @@
     "thai_pronunciation": "ฟออรทอี-นเออะมบเออะร"
   },
   {
-    "word": "four number",
+    "word": "four",
     "type": "unknown",
     "level": "A1",
     "id": 255,
@@ -2295,7 +2295,7 @@
     "thai_pronunciation": "ฟออร-นเออะมบเออะร"
   },
   {
-    "word": "fourteen number",
+    "word": "fourteen",
     "type": "unknown",
     "level": "A1",
     "id": 256,
@@ -2304,7 +2304,7 @@
     "thai_pronunciation": "ฟออรทอีน-นเออะมบเออะร"
   },
   {
-    "word": "fourth number",
+    "word": "fourth",
     "type": "unknown",
     "level": "A1",
     "id": 257,
@@ -2817,7 +2817,7 @@
     "ipa": "ˌhaʊˈɛvər"
   },
   {
-    "word": "hundred number",
+    "word": "hundred",
     "type": "unknown",
     "level": "A1",
     "id": 314,
@@ -3591,7 +3591,7 @@
     "ipa": "k"
   },
   {
-    "word": "million number",
+    "word": "million",
     "type": "unknown",
     "level": "A1",
     "id": 400,
@@ -3888,7 +3888,7 @@
     "ipa": "t"
   },
   {
-    "word": "nine number",
+    "word": "nine",
     "type": "unknown",
     "level": "A1",
     "id": 433,
@@ -3897,7 +3897,7 @@
     "ipa": "n"
   },
   {
-    "word": "nineteen number",
+    "word": "nineteen",
     "type": "unknown",
     "level": "A1",
     "id": 434,
@@ -3906,7 +3906,7 @@
     "ipa": "n"
   },
   {
-    "word": "ninety number",
+    "word": "ninety",
     "type": "unknown",
     "level": "A1",
     "id": 435,
@@ -5049,7 +5049,7 @@
     "ipa": "sɛpˈtɛmbər"
   },
   {
-    "word": "seven number",
+    "word": "seven",
     "type": "unknown",
     "level": "A1",
     "id": 562,
@@ -5058,7 +5058,7 @@
     "ipa": "n"
   },
   {
-    "word": "seventeen number",
+    "word": "seventeen",
     "type": "unknown",
     "level": "A1",
     "id": 563,
@@ -5067,7 +5067,7 @@
     "ipa": "n"
   },
   {
-    "word": "seventy number",
+    "word": "seventy",
     "type": "unknown",
     "level": "A1",
     "id": 564,
@@ -5229,7 +5229,7 @@
     "ipa": "n"
   },
   {
-    "word": "six number",
+    "word": "six",
     "type": "unknown",
     "level": "A1",
     "id": 582,
@@ -5238,7 +5238,7 @@
     "ipa": "s"
   },
   {
-    "word": "sixteen number",
+    "word": "sixteen",
     "type": "unknown",
     "level": "A1",
     "id": 583,
@@ -5247,7 +5247,7 @@
     "ipa": "n"
   },
   {
-    "word": "sixty number",
+    "word": "sixty",
     "type": "unknown",
     "level": "A1",
     "id": 584,
@@ -5742,7 +5742,7 @@
     "ipa": "l"
   },
   {
-    "word": "ten number",
+    "word": "ten",
     "type": "unknown",
     "level": "A1",
     "id": 639,
@@ -5895,7 +5895,7 @@
     "ipa": "iː"
   },
   {
-    "word": "thirteen number",
+    "word": "thirteen",
     "type": "unknown",
     "level": "A1",
     "id": 656,
@@ -5904,7 +5904,7 @@
     "ipa": "n"
   },
   {
-    "word": "thirty number",
+    "word": "thirty",
     "type": "unknown",
     "level": "A1",
     "id": 657,
@@ -5913,7 +5913,7 @@
     "ipa": "ˌiː"
   },
   {
-    "word": "thousand number",
+    "word": "thousand",
     "type": "unknown",
     "level": "A1",
     "id": 658,
@@ -5922,7 +5922,7 @@
     "ipa": "d"
   },
   {
-    "word": "three number",
+    "word": "three",
     "type": "unknown",
     "level": "A1",
     "id": 659,
@@ -6156,7 +6156,7 @@
     "ipa": "ˈiː"
   },
   {
-    "word": "twelve number",
+    "word": "twelve",
     "type": "unknown",
     "level": "A1",
     "id": 685,
@@ -6165,7 +6165,7 @@
     "ipa": "v"
   },
   {
-    "word": "twenty number",
+    "word": "twenty",
     "type": "unknown",
     "level": "A1",
     "id": 686,
@@ -6183,7 +6183,7 @@
     "ipa": "s"
   },
   {
-    "word": "two number",
+    "word": "two",
     "type": "unknown",
     "level": "A1",
     "id": 688,
@@ -7434,7 +7434,7 @@
     "ipa": "n"
   },
   {
-    "word": "billion number",
+    "word": "billion",
     "type": "unknown",
     "level": "A2",
     "id": 827,
@@ -13509,7 +13509,7 @@
     "thai_pronunciation": "ยอุรซ"
   },
   {
-    "word": "zero number",
+    "word": "zero",
     "type": "unknown",
     "level": "A2",
     "id": 1503,

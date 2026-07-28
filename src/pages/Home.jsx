@@ -25,6 +25,14 @@ const Home = () => {
       color: '#F59E0B'
     },
     {
+      id: 'pos',
+      title: 'หมวดหมู่คำ (POS)',
+      description: 'ฝึกแยกแยะชนิดของคำ (Noun, Verb, Adj, etc.) อย่างรวดเร็วเพื่อสร้างความจำอัตโนมัติ',
+      icon: <Zap size={32} />,
+      path: '/pos',
+      color: '#8B5CF6' // violet
+    },
+    {
       id: 'match',
       title: 'เกมจับคู่ (Match)',
       description: 'Test your memory! Match English words with their Thai meanings.',
