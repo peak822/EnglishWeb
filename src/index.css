@@ -245,22 +245,37 @@ a:hover {
 /* Match Mode Specific Styles */
 .match-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem; /* slightly smaller gap for mobile to fit 4 columns */
   width: 100%;
 }
 @media (min-width: 768px) {
   .match-grid {
-    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
   }
 }
 
 .match-card {
   position: relative;
   height: 8rem;
+  width: 100%;
   border-radius: var(--radius-sm);
   cursor: pointer;
-  transition: all var(--transition-slow);
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Speed Swipe Animations */
+.swipe-card-container {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s;
+  touch-action: pan-y; /* Prevent browser swipe-to-go-back gesture */
+}
+.swipe-left-anim {
+  transform: translateX(-150px) rotate(-15deg);
+  opacity: 0;
+}
+.swipe-right-anim {
+  transform: translateX(150px) rotate(15deg);
+  opacity: 0;
 }
 @media (min-width: 768px) {
   .match-card {

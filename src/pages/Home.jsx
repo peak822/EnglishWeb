@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Type, Puzzle, HelpCircle, ArrowRight, BookOpen, Grid } from 'lucide-react';
+import { Type, Puzzle, HelpCircle, ArrowRight, BookOpen, Grid, Zap } from 'lucide-react';
 import Card from '../components/Card';
 import Tilt from 'react-parallax-tilt';
 
@@ -58,6 +58,14 @@ const Home = () => {
       icon: <Type size={32} />,
       path: '/context',
       color: '#8B5CF6' // violet
+    },
+    {
+      id: 'swipe',
+      title: 'โหมดปัดซ้ายขวา',
+      description: 'Test your reflexes! Swipe right if the meaning matches, left if it is wrong.',
+      icon: <Zap size={32} />,
+      path: '/swipe',
+      color: '#F59E0B' // amber
     }
   ];
 
