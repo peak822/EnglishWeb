@@ -33,19 +33,19 @@ function App() {
       <InteractiveBackground />
       <div className="app-layout">
         <nav className="nav-bar">
-          <div className="container nav-content flex-wrap gap-4">
+          <div className="container nav-content flex-wrap gap-4 justify-center md:justify-between">
             <Link to="/" className="nav-logo glitch-hover" data-text="English Study">
               <BookOpen size={24} />
               <span>English Study</span>
             </Link>
             
             {/* Right Side: Theme & Gamification */}
-            <div className="flex items-center gap-4">
+            <div className="flex flex-wrap justify-center items-center gap-4">
               {/* Theme Selector */}
               <select 
                 value={theme}
                 onChange={(e) => setTheme(e.target.value)}
-                className="bg-[var(--color-surface)] text-[var(--color-secondary)] border border-[rgba(255,255,255,0.2)] rounded-full px-4 py-1.5 text-sm font-medium outline-none cursor-pointer hover:border-[var(--color-primary)] transition-colors shadow-sm"
+                className="theme-selector-dropdown"
               >
                 <option value="cyberpunk">👾 Cyberpunk</option>
                 <option value="meadow-day">🌿 Meadow Day</option>
@@ -54,18 +54,18 @@ function App() {
               </select>
 
               {/* Gamification Bar */}
-              <div className="flex items-center gap-4 bg-[var(--color-surface)] border border-[rgba(255,255,255,0.1)] px-4 py-2 rounded-full relative">
+              <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 bg-[var(--color-surface)] border border-[rgba(255,255,255,0.1)] px-4 py-2 rounded-full relative">
                 <div className="flex items-center gap-2 text-[var(--color-primary)] font-bold">
                 <Star size={18} fill="currentColor" />
                 <span>Lv. {level}</span>
               </div>
-              <div className="w-32 h-2 bg-[rgba(255,255,255,0.1)] rounded-full overflow-hidden">
+              <div className="w-24 sm:w-32 h-2 bg-[rgba(255,255,255,0.1)] rounded-full overflow-hidden">
                 <div 
                   className="h-full bg-[var(--color-primary)] transition-all duration-500 ease-out"
                   style={{ width: `${expProgress}%` }}
                 />
               </div>
-              <div className="text-xs text-[var(--color-neutral)] font-medium">
+              <div className="text-xs text-[var(--color-neutral)] font-medium hidden sm:block">
                 {exp} / {nextLevelExp} EXP
               </div>
               {badges.length > 0 && (
