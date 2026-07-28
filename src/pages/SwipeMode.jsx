@@ -61,28 +61,7 @@ const SwipeMode = () => {
     setTimeLeft(100);
   }, []);
 
-  // Timer logic
-  useEffect(() => {
-    if (isGameOver || hasWon || swipeState || !currentCard) {
-      if (timerRef.current) clearInterval(timerRef.current);
-      return;
-    }
 
-    timerRef.current = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev <= 0) {
-          clearInterval(timerRef.current);
-          handleSwipe('timeout');
-          return 0;
-        }
-        return prev - (100 / (TIME_PER_CARD / 50));
-      });
-    }, 50);
-
-    return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
-    };
-  }, [currentCard, isGameOver, hasWon, swipeState, handleSwipe]);
 
   const handleMistake = useCallback(() => {
     setLives(prev => {
@@ -141,6 +120,29 @@ const SwipeMode = () => {
       }
     }, 300);
   }, [currentCard, isGameOver, hasWon, swipeState, handleSuccess, handleMistake, words, generateNextCard]);
+
+  // Timer logic
+  useEffect(() => {
+    if (isGameOver || hasWon || swipeState || !currentCard) {
+      if (timerRef.current) clearInterval(timerRef.current);
+      return;
+    }
+
+    timerRef.current = setInterval(() => {
+      setTimeLeft((prev) => {
+        if (prev <= 0) {
+          clearInterval(timerRef.current);
+          handleSwipe('timeout');
+          return 0;
+        }
+        return prev - (100 / (TIME_PER_CARD / 50));
+      });
+    }, 50);
+
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [currentCard, isGameOver, hasWon, swipeState, handleSwipe]);
 
   // Swipe/Pointer handlers
   const pointerStartX = useRef(null);
