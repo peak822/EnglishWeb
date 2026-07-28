@@ -3,6 +3,7 @@ import Card from '../components/Card';
 import Button from '../components/Button';
 import vocabularyData from '../data/vocabulary.json';
 import { filterWords, THEMES } from '../hooks/useCategories';
+import LevelSelector from '../components/LevelSelector';
 
 const AssembleMode = () => {
   const [words, setWords] = useState([]);
@@ -110,24 +111,12 @@ const AssembleMode = () => {
       <div className="game-container">
         <div className="game-header">
           <h2 className="text-gradient-accent">Assemble Mode</h2>
-          <select 
-            value={level} 
-            onChange={(e) => setLevel(e.target.value)}
-            className="level-select"
-          >
-            <option value="all">All Words</option>
-            <optgroup label="Difficulty Levels">
-              <option value="A1">A1 (Beginner)</option>
-              <option value="A2">A2 (Elementary)</option>
-              <option value="B1">B1 (Intermediate)</option>
-              <option value="B2">B2 (Upper Intermediate)</option>
-            </optgroup>
-            <optgroup label="Learning Themes">
-              {THEMES.map(theme => (
-                <option key={theme.id} value={theme.id}>{theme.name}</option>
-              ))}
-            </optgroup>
-          </select>
+          <div className="w-48 sm:w-64 z-50">
+            <LevelSelector 
+              value={level} 
+              onChange={setLevel} 
+            />
+          </div>
         </div>
 
         <div className="game-stats">

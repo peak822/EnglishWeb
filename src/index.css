@@ -517,3 +517,93 @@ a:hover {
   box-shadow: var(--glow-primary);
   transform: scale(1.1);
 }
+
+/* Custom Select Component */
+.custom-select-container {
+  position: relative;
+  width: 100%;
+  min-width: 220px;
+  font-family: 'Inter', sans-serif;
+  z-index: 50;
+}
+
+.custom-select-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-sm);
+  color: var(--color-secondary);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  backdrop-filter: blur(8px);
+}
+
+.custom-select-button:hover, .custom-select-button.open {
+  border-color: var(--color-primary);
+  box-shadow: var(--glow-primary);
+  background: rgba(15, 23, 42, 0.8);
+}
+
+.custom-select-dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  right: 0;
+  background: rgba(10, 15, 30, 0.95);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), var(--glow-primary);
+  max-height: 350px;
+  overflow-y: auto;
+  backdrop-filter: blur(12px);
+  padding: 0.5rem 0;
+  /* Custom scrollbar for dropdown */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) transparent;
+}
+
+.custom-select-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-select-dropdown::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 10px;
+}
+
+.custom-select-group {
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-neutral);
+  font-weight: 700;
+  margin-top: 0.5rem;
+  opacity: 0.8;
+}
+
+.custom-select-option {
+  padding: 0.6rem 1rem 0.6rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: var(--color-secondary);
+  transition: all 0.15s ease;
+  font-size: 0.9rem;
+}
+
+.custom-select-option:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-primary);
+}
+
+.custom-select-option.selected {
+  background: rgba(0, 255, 255, 0.05);
+  color: var(--color-primary);
+  font-weight: 600;
+}
