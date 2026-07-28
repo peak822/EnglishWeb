@@ -124,10 +124,10 @@ const ReadMode = () => {
                       <td className="text-center">
                         <button 
                           onClick={() => playAudio(word.word)}
-                          className="p-2 text-[var(--color-neutral)] hover:text-[var(--color-primary)] transition-colors"
+                          className="audio-btn mx-auto"
                           title="Listen to pronunciation"
                         >
-                          <Volume2 size={20} />
+                          <Volume2 size={18} />
                         </button>
                       </td>
                     </tr>
