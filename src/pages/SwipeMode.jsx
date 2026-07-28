@@ -72,15 +72,17 @@ const SwipeMode = () => {
       setTimeLeft((prev) => {
         if (prev <= 0) {
           clearInterval(timerRef.current);
-          handleMistake();
+          handleSwipe('timeout');
           return 0;
         }
         return prev - (100 / (TIME_PER_CARD / 50));
       });
     }, 50);
 
-    return () => clearInterval(timerRef.current);
-  }, [currentCard, isGameOver, hasWon, swipeState]);
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [currentCard, isGameOver, hasWon, swipeState, handleSwipe]);
 
   const handleMistake = useCallback(() => {
     setLives(prev => {
@@ -112,18 +114,23 @@ const SwipeMode = () => {
   const handleSwipe = useCallback((direction) => {
     if (isGameOver || hasWon || swipeState || !currentCard) return;
 
-    const userThinksCorrect = direction === 'right';
-    const isActuallyCorrect = currentCard.isCorrect;
-
-    if (userThinksCorrect === isActuallyCorrect) {
-      handleSuccess();
-      setSwipeFeedback('success');
-    } else {
+    if (direction === 'timeout') {
       handleMistake();
       setSwipeFeedback('error');
-    }
+      setSwipeState('left');
+    } else {
+      const userThinksCorrect = direction === 'right';
+      const isActuallyCorrect = currentCard.isCorrect;
 
-    setSwipeState(direction);
+      if (userThinksCorrect === isActuallyCorrect) {
+        handleSuccess();
+        setSwipeFeedback('success');
+      } else {
+        handleMistake();
+        setSwipeFeedback('error');
+      }
+      setSwipeState(direction);
+    }
 
     // Wait for animation to finish before generating next
     setTimeout(() => {
@@ -251,7 +258,7 @@ const SwipeMode = () => {
         </div>
 
         {currentCard && (
-          <div className="flex flex-col items-center justify-center min-h-[400px]">
+          <div className="flex flex-col items-center justify-center min-h-[300px] sm:min-h-[400px]">
             <div className="text-sm md:text-base text-[var(--color-neutral)] mb-4 text-center max-w-md leading-relaxed">
               <div className="mb-1">Swipe <strong className="text-green-400">Right ➡️</strong> if correct (ปัดขวาถ้าแปล <strong className="text-green-400">ถูก</strong>)</div>
               <div>Swipe <strong className="text-red-400">⬅️ Left</strong> if wrong (ปัดซ้ายถ้าแปล <strong className="text-red-400">ผิด</strong>)</div>
@@ -263,7 +270,7 @@ const SwipeMode = () => {
               onPointerUp={handlePointerUp}
               onPointerCancel={handlePointerCancel}
             >
-              <Card className={`p-10 text-center relative overflow-hidden h-80 flex flex-col justify-center items-center shadow-2xl border-2 select-none transition-all duration-200 ${
+              <Card className={`p-6 sm:p-10 text-center relative overflow-hidden h-64 sm:h-80 flex flex-col justify-center items-center shadow-2xl border-2 select-none transition-all duration-200 ${
                 swipeFeedback === 'success' ? 'border-green-400 bg-green-500/40 shadow-[0_0_30px_rgba(34,197,94,0.6)]' : 
                 swipeFeedback === 'error' ? 'border-red-400 bg-red-500/40 shadow-[0_0_30px_rgba(239,68,68,0.6)]' : 
                 'border-white/10'

@@ -731,6 +731,16 @@
   width: 100%;
   justify-content: center;
 }
+.main-content {
+  flex: 1;
+  padding: 5rem 0.5rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .main-content {
+    padding: 6rem 1rem 2rem;
+  }
+}
 .srs-btn {
   flex: 1;
   padding: 0.75rem 1rem;

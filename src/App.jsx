@@ -31,7 +31,7 @@ function App() {
 
   return (
     <Router>
-      <InteractiveBackground />
+      <InteractiveBackground theme={theme} />
       <div className="app-layout">
         <nav className="nav-bar">
           <div className="container nav-content flex-wrap gap-4 justify-center md:justify-between">
