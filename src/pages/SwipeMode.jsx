@@ -24,6 +24,7 @@ const SwipeMode = () => {
   
   // Animation State
   const [swipeState, setSwipeState] = useState(null); // 'left' or 'right'
+  const [swipeFeedback, setSwipeFeedback] = useState(null); // 'success' or 'error'
   
   const timerRef = useRef(null);
   const MAX_CARDS = 20;
@@ -116,8 +117,10 @@ const SwipeMode = () => {
 
     if (userThinksCorrect === isActuallyCorrect) {
       handleSuccess();
+      setSwipeFeedback('success');
     } else {
       handleMistake();
+      setSwipeFeedback('error');
     }
 
     setSwipeState(direction);
@@ -125,6 +128,7 @@ const SwipeMode = () => {
     // Wait for animation to finish before generating next
     setTimeout(() => {
       setSwipeState(null);
+      setSwipeFeedback(null);
       if (!isGameOver && !hasWon) {
         generateNextCard(words);
       }
@@ -136,8 +140,8 @@ const SwipeMode = () => {
   const handlePointerDown = (e) => {
     // Prevent default drag behavior for images/text
     if (e.target.tagName !== 'BUTTON') {
-      // It's a pointer event, so clientX is available directly
       pointerStartX.current = e.clientX;
+      e.target.setPointerCapture(e.pointerId);
     }
   };
   
@@ -150,7 +154,16 @@ const SwipeMode = () => {
       if (diff > 0) handleSwipe('right');
       else handleSwipe('left');
     }
+    
+    e.target.releasePointerCapture(e.pointerId);
     pointerStartX.current = null;
+  };
+
+  const handlePointerCancel = (e) => {
+    if (pointerStartX.current !== null) {
+      e.target.releasePointerCapture(e.pointerId);
+      pointerStartX.current = null;
+    }
   };
 
   // Keyboard handlers
@@ -203,7 +216,16 @@ const SwipeMode = () => {
   }
 
   return (
-    <div className="container animate-fade-up">
+    <>
+      {/* Full-screen feedback glow */}
+      <div 
+        className={`fixed inset-0 pointer-events-none z-0 ${
+          swipeFeedback === 'success' ? 'feedback-glow-success' : 
+          swipeFeedback === 'error' ? 'feedback-glow-error' : 
+          'bg-transparent'
+        }`}
+      />
+      <div className="container animate-fade-up relative z-10">
       <div className="game-container">
         <div className="game-header">
           <h2 className="text-gradient">Speed Swipe</h2>
@@ -230,18 +252,22 @@ const SwipeMode = () => {
 
         {currentCard && (
           <div className="flex flex-col items-center justify-center min-h-[400px]">
-            <div className="text-sm text-[var(--color-neutral)] mb-4 text-center max-w-md">
-              Swipe <strong className="text-green-400">Right (Right Arrow)</strong> if meaning is correct.<br/>
-              Swipe <strong className="text-red-400">Left (Left Arrow)</strong> if wrong.
+            <div className="text-sm md:text-base text-[var(--color-neutral)] mb-4 text-center max-w-md leading-relaxed">
+              <div className="mb-1">Swipe <strong className="text-green-400">Right ➡️</strong> if correct (ปัดขวาถ้าแปล <strong className="text-green-400">ถูก</strong>)</div>
+              <div>Swipe <strong className="text-red-400">⬅️ Left</strong> if wrong (ปัดซ้ายถ้าแปล <strong className="text-red-400">ผิด</strong>)</div>
             </div>
 
             <div 
               className={`swipe-card-container relative w-full max-w-sm ${swipeState === 'left' ? 'swipe-left-anim' : swipeState === 'right' ? 'swipe-right-anim' : ''} cursor-grab active:cursor-grabbing`}
               onPointerDown={handlePointerDown}
               onPointerUp={handlePointerUp}
-              onPointerLeave={handlePointerUp}
+              onPointerCancel={handlePointerCancel}
             >
-              <Card className="p-10 text-center relative overflow-hidden h-80 flex flex-col justify-center items-center shadow-2xl border-2 border-white/10 select-none">
+              <Card className={`p-10 text-center relative overflow-hidden h-80 flex flex-col justify-center items-center shadow-2xl border-2 select-none transition-all duration-200 ${
+                swipeFeedback === 'success' ? 'border-green-400 bg-green-500/40 shadow-[0_0_30px_rgba(34,197,94,0.6)]' : 
+                swipeFeedback === 'error' ? 'border-red-400 bg-red-500/40 shadow-[0_0_30px_rgba(239,68,68,0.6)]' : 
+                'border-white/10'
+              }`}>
                 {/* Timer Bar */}
                 <div 
                   className={`absolute top-0 left-0 h-2 bg-gradient-to-r from-blue-400 to-[var(--color-primary)] transition-all duration-75`}
@@ -252,17 +278,6 @@ const SwipeMode = () => {
                 <div className="w-16 h-1 bg-white/20 mx-auto rounded-full mb-6"></div>
                 <p className="text-2xl text-[var(--color-secondary)] font-medium leading-relaxed">{currentCard.meaning}</p>
                 
-                {/* Visual Feedback Overlays */}
-                {swipeState === 'right' && (
-                  <div className="absolute inset-0 bg-green-500/20 flex items-center justify-center backdrop-blur-sm z-10">
-                    <Check size={100} className="text-green-400" />
-                  </div>
-                )}
-                {swipeState === 'left' && (
-                  <div className="absolute inset-0 bg-red-500/20 flex items-center justify-center backdrop-blur-sm z-10">
-                    <X size={100} className="text-red-400" />
-                  </div>
-                )}
               </Card>
             </div>
             
@@ -278,7 +293,8 @@ const SwipeMode = () => {
           </div>
         )}
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 
