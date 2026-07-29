@@ -21,7 +21,8 @@ import MatchMode from './pages/MatchMode';
 import SwipeMode from './pages/SwipeMode';
 import POSMode from './pages/POSMode';
 import POSGuide from './pages/POSGuide';
-
+import StorySelection from './pages/StorySelection';
+import StoryReader from './pages/StoryReader';
 function App() {
   const { exp, level, badges, nextLevelExp, currentLevelBaseExp, newBadge, recentLevelUp } = useGamification();
   const [theme, setTheme] = useState('cyberpunk');
@@ -111,6 +112,8 @@ function App() {
             <Route path="/swipe" element={<SwipeMode />} />
             <Route path="/pos" element={<POSMode />} />
             <Route path="/pos-guide" element={<POSGuide />} />
+            <Route path="/story-mode" element={<StorySelection />} />
+            <Route path="/story-mode/:id" element={<StoryReader />} />
           </Routes>
         </main>
 

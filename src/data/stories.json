@@ -1,0 +1,26 @@
+[
+  {
+    "id": "story-a1-1",
+    "title": "A Day at the Park",
+    "genre": "Daily Life",
+    "level": "A1",
+    "readTime": "1 min",
+    "content": "Today is a beautiful day. The sun is shining in the sky. I go to the park with my dog. We run and play on the green grass. My dog is very happy. He likes to chase the ball. After a long time, we are tired. We sit under a big tree and drink some water. It is a good day."
+  },
+  {
+    "id": "story-a2-1",
+    "title": "The Secret Map",
+    "genre": "Adventure",
+    "level": "A2",
+    "readTime": "2 mins",
+    "content": "Yesterday, Tom found an old map in the library. It was hidden inside a heavy book about history. The map showed a strange island with a huge mountain in the middle. At the top of the mountain, there was a red cross. Tom was very excited. He decided to call his best friend, Sarah, to tell her about the discovery. They agreed to meet at the coffee shop the next morning to plan their adventure."
+  },
+  {
+    "id": "story-b1-1",
+    "title": "The First Colony",
+    "genre": "Sci-Fi",
+    "level": "B1",
+    "readTime": "3 mins",
+    "content": "The journey to Mars took seven long months. When the spacecraft finally landed, the crew felt a mixture of relief and anxiety. They were the first humans to establish a permanent colony on the red planet. Captain Reynolds stepped out of the airlock, wearing his protective suit. The landscape was empty, covered in red dust and sharp rocks. Their main priority was to deploy the solar panels and secure the habitat modules before the temperature dropped rapidly at night. It was a dangerous mission, but it represented a huge leap for humanity."
+  }
+]

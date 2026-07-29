@@ -23,6 +23,14 @@ const Home = () => {
       icon: <BookOpen size={32} />,
       path: '/pos-guide',
       color: '#3B82F6' // blue
+    },
+    {
+      id: 'story-mode',
+      title: 'อ่านบทความสั้น',
+      description: 'ฝึกทักษะการอ่านบทความภาษาอังกฤษ พร้อมคลิกดูความหมายคำศัพท์จาก Oxford 3000 ได้ทันที',
+      icon: <BookOpen size={32} />,
+      path: '/story-mode',
+      color: '#10B981' // emerald
     }
   ];
 
