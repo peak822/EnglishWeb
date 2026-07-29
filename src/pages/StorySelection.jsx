@@ -9,12 +9,12 @@ const StorySelection = () => {
 
   return (
     <div className="container animate-fade-up" style={{ maxWidth: '1000px', margin: '0 auto' }}>
-      <div className="text-center mb-10">
+      <Card style={{ padding: '2rem', marginBottom: '2.5rem', textAlign: 'center' }}>
         <h2 className="text-gradient mb-4">Short Story Reading</h2>
-        <p style={{ color: 'var(--color-neutral)', maxWidth: '600px', margin: '0 auto' }}>
+        <p style={{ color: 'var(--color-neutral)', maxWidth: '600px', margin: '0 auto', fontSize: '1.1rem' }}>
           Choose a story to read. Click on any word in the story to see its meaning from the Oxford 3000 vocabulary list.
         </p>
-      </div>
+      </Card>
 
       <div style={{
         display: 'grid',
@@ -81,16 +81,21 @@ const StorySelection = () => {
       </div>
 
       <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-        <button 
-          className="ui-btn ui-btn-secondary"
-          style={{ padding: '0.75rem 2rem' }}
-          onClick={() => navigate('/')}
-        >
-          <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center' }}>
-            <ArrowLeft size={18} />
-            กลับหน้าแรก
-          </span>
-        </button>
+        <Card style={{ 
+          display: 'inline-block', 
+          padding: '1.5rem 3rem'
+        }}>
+          <button 
+            className="ui-btn ui-btn-secondary"
+            style={{ padding: '0.75rem 2rem' }}
+            onClick={() => navigate('/')}
+          >
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center' }}>
+              <ArrowLeft size={18} />
+              กลับหน้าแรก
+            </span>
+          </button>
+        </Card>
       </div>
     </div>
   );

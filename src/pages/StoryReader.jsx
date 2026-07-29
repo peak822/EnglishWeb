@@ -89,48 +89,58 @@ const StoryReader = () => {
   return (
     <div className="container animate-fade-up" style={{ maxWidth: '800px', margin: '0 auto', paddingBottom: '100px' }}>
       
-      {/* Header */}
-      <div style={{ display: 'flex', alignItems: 'center', marginBottom: '2rem' }}>
-        <button 
-          onClick={() => navigate('/story-mode')}
-          style={{ 
-            background: 'none', 
-            border: 'none', 
-            color: 'var(--color-neutral)',
-            cursor: 'pointer',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            padding: '0.5rem'
-          }}
-        >
-          <ArrowLeft size={20} />
-          <span>Back</span>
-        </button>
-      </div>
-
-      <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-        <span style={{
-          fontSize: '0.85rem',
-          color: 'var(--color-primary)',
-          background: 'rgba(0, 255, 255, 0.1)',
-          padding: '0.3rem 0.8rem',
-          borderRadius: '9999px',
-          fontWeight: 'bold',
-          textTransform: 'uppercase',
-          letterSpacing: '0.05em',
-          marginBottom: '1rem',
-          display: 'inline-block'
-        }}>
-          Level {story.level}
-        </span>
-        <h1 style={{ fontSize: '2.5rem', color: 'var(--color-secondary)', marginBottom: '0.5rem' }}>
-          {story.title}
-        </h1>
-        <div style={{ color: 'var(--color-neutral)', fontSize: '0.9rem' }}>
-          {story.genre} • {story.readTime}
+      {/* Header Container */}
+      <Card style={{
+        padding: '1.5rem',
+        marginBottom: '2rem'
+      }}>
+        {/* Back Button */}
+        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}>
+          <button 
+            onClick={() => navigate('/story-mode')}
+            style={{ 
+              background: 'rgba(255,255,255,0.05)', 
+              border: '1px solid rgba(255,255,255,0.1)', 
+              color: 'var(--color-neutral)',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              padding: '0.5rem 1rem',
+              borderRadius: 'var(--radius-md)',
+              transition: 'all 0.2s'
+            }}
+            className="hover:bg-[rgba(255,255,255,0.1)] hover:text-white"
+          >
+            <ArrowLeft size={18} />
+            <span>Back</span>
+          </button>
         </div>
-      </div>
+
+        {/* Title */}
+        <div style={{ textAlign: 'center', paddingBottom: '1rem' }}>
+          <span style={{
+            fontSize: '0.85rem',
+            color: 'var(--color-primary)',
+            background: 'rgba(0, 255, 255, 0.1)',
+            padding: '0.3rem 0.8rem',
+            borderRadius: '9999px',
+            fontWeight: 'bold',
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em',
+            marginBottom: '1rem',
+            display: 'inline-block'
+          }}>
+            Level {story.level}
+          </span>
+          <h1 style={{ fontSize: '2.5rem', color: 'var(--color-secondary)', margin: '0.5rem 0' }}>
+            {story.title}
+          </h1>
+          <div style={{ color: 'var(--color-neutral)', fontSize: '0.9rem' }}>
+            {story.genre} • {story.readTime}
+          </div>
+        </div>
+      </Card>
 
       {/* Story Content */}
       <Card style={{ padding: '2.5rem', lineHeight: '2', fontSize: '1.25rem', color: 'rgba(255,255,255,0.9)' }}>
