@@ -52,12 +52,12 @@ body {
   overflow-x: hidden;
   line-height: 1.6;
   min-height: 100dvh;
-  /* Cyberpunk Grid / Scanline Background with Holographic Earth */
+  /* Cyberpunk Grid / Scanline Background with Moon */
   background-image: 
     linear-gradient(rgba(0, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(rgba(0,0,0,0.5) 50%, transparent 50%),
-    url('/holographic_earth.png');
+    url('/cyberpunk_moon.png');
   background-size: 30px 30px, 30px 30px, 100% 4px, cover;
   background-position: center, center, center, center center;
   background-repeat: repeat, repeat, repeat, no-repeat;
