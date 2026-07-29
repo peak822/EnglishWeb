@@ -114,8 +114,8 @@ const POSMode = () => {
         </div>
         
         <button 
-          className="ui-btn ui-btn-primary flex items-center justify-center gap-2 mb-4"
-          style={{ padding: '1rem 2rem', fontSize: '1.25rem', width: '100%', maxWidth: '300px' }}
+          className="ui-btn ui-btn-primary flex items-center justify-center gap-2 mb-4 transition-transform hover:scale-105"
+          style={{ padding: '1rem 2rem', fontSize: '1.25rem', width: '100%', maxWidth: '300px', background: 'var(--grad-primary)', color: 'var(--color-background)', border: 'none', borderRadius: 'var(--radius-full)', boxShadow: 'var(--glow-primary)', fontWeight: 'bold' }}
           onClick={startGame}
         >
           <Zap size={24} />
@@ -123,8 +123,8 @@ const POSMode = () => {
         </button>
         
         <button 
-          className="ui-btn ui-btn-secondary flex items-center justify-center gap-2"
-          style={{ padding: '0.75rem 2rem', width: '100%', maxWidth: '300px' }}
+          className="ui-btn ui-btn-secondary flex items-center justify-center gap-2 transition-transform hover:scale-105"
+          style={{ padding: '0.75rem 2rem', width: '100%', maxWidth: '300px', background: 'rgba(2, 2, 5, 0.75)', color: 'white', backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: 'var(--radius-full)' }}
           onClick={() => navigate('/')}
         >
           <ArrowLeft size={18} />
@@ -220,7 +220,16 @@ const POSMode = () => {
       )}
 
       {/* Options Grid */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1rem' }}>
+      <div style={{
+        background: 'rgba(2, 2, 5, 0.75)',
+        backdropFilter: 'blur(12px)',
+        WebkitBackdropFilter: 'blur(12px)',
+        padding: '1.5rem',
+        borderRadius: '1.25rem',
+        border: '1px solid rgba(255, 255, 255, 0.1)',
+        boxShadow: '0 8px 32px rgba(0,0,0,0.5)'
+      }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1rem' }}>
         {currentQuestion?.options.map((option, index) => {
           const isWrong = wrongSelection === option;
           return (
@@ -266,6 +275,7 @@ const POSMode = () => {
             </button>
           );
         })}
+        </div>
       </div>
     </div>
   );

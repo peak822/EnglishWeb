@@ -47,16 +47,17 @@ const GuessMode = () => {
     const correctWord = words[currentIndex];
     
     // Try to get words of the SAME type to make it harder to guess just by grammar
-    let pool = words.filter(w => w.word !== correctWord.word && w.type === correctWord.type && w.level === correctWord.level);
+    // Ensure we don't pick distractors that have the exact same meaning as the correct word
+    let pool = words.filter(w => w.word !== correctWord.word && w.type === correctWord.type && w.level === correctWord.level && w.meaning !== correctWord.meaning);
     
     // If not enough words of the same type in the same level, expand to all levels but same type
     if (pool.length < 3) {
-      pool = vocabularyData.filter(w => w.word !== correctWord.word && w.type === correctWord.type);
+      pool = vocabularyData.filter(w => w.word !== correctWord.word && w.type === correctWord.type && w.meaning !== correctWord.meaning);
     }
 
     // If STILL not enough words, just get any word
     if (pool.length < 3) {
-      pool = vocabularyData.filter(w => w.word !== correctWord.word);
+      pool = vocabularyData.filter(w => w.word !== correctWord.word && w.meaning !== correctWord.meaning);
     }
     
     // To make choices more diverse, we ensure they are unique words
@@ -137,11 +138,11 @@ const GuessMode = () => {
         </div>
 
         {words.length === 0 ? (
-          <Card className="text-center py-16">
+          <Card className="text-center py-8 md:py-16">
             <h3 className="text-xl text-[var(--color-neutral)]">No words available for this level.</h3>
           </Card>
         ) : (
-          <Card className="text-center py-16 relative overflow-hidden">
+          <Card className="text-center py-8 md:py-16 relative overflow-hidden">
             {status === 'correct' && (
               <div className="absolute inset-0 bg-[rgba(34,197,94,0.1)] success-pulse z-0 rounded-[var(--radius-lg)]" />
             )}
@@ -159,7 +160,7 @@ const GuessMode = () => {
               ) : (
                 <>
                   <h3 className="text-xl mb-8 text-[var(--color-neutral)] font-medium">Guess the word for this meaning:</h3>
-                  <div className="flex justify-center w-full px-4" style={{ marginBottom: '3.5rem' }}>
+                  <div className="flex justify-center w-full px-4 mb-8 md:mb-14">
                     <div className="font-bold px-8 py-4 md:px-16 md:py-6 rounded-full w-full max-w-2xl flex items-center justify-center" 
                          style={{ 
                            fontSize: 'clamp(1.5rem, 5vw, 2.5rem)', 
@@ -214,12 +215,12 @@ const GuessMode = () => {
                       <div style={{ marginTop: '1rem', padding: '1rem 1.5rem', background: 'rgba(255,255,255,0.05)', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(255,255,255,0.1)', display: 'inline-block', animation: 'fadeUp 0.3s ease-out forwards', color: 'var(--color-neutral)', fontSize: '0.875rem', textAlign: 'center' }}>
                         {hintLevel >= 1 && (
                           <p style={{ marginBottom: '0.25rem' }}>
-                            First letter: <span style={{ fontFamily: 'var(--font-family-mono)', color: 'var(--color-secondary)', letterSpacing: '0.1em', marginLeft: '0.25rem' }}>{currentWord.word.charAt(0).toUpperCase()} {'_ '.repeat(Math.max(1, currentWord.word.length - 1))}</span>
+                            Part of speech: <span style={{ color: 'var(--color-accent)', fontWeight: '600', marginLeft: '0.25rem' }}>{currentWord.type || "Unknown"}</span>
                           </p>
                         )}
                         {hintLevel >= 2 && (
                           <p style={{ marginTop: '0.5rem', paddingTop: '0.5rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-                            Part of speech: <span style={{ color: 'var(--color-accent)', fontWeight: '600', marginLeft: '0.25rem' }}>{currentWord.type || "Unknown"}</span>
+                            Pronunciation: <span style={{ fontFamily: 'var(--font-family-mono)', color: 'var(--color-secondary)', marginLeft: '0.25rem' }}>/{currentWord.ipa || currentWord.thai_pronunciation || "Unknown"}/</span>
                           </p>
                         )}
                       </div>

@@ -14,7 +14,6 @@ const TypingMode = () => {
   const [status, setStatus] = useState('idle'); // idle, correct, incorrect, revealed
   const [wrongCount, setWrongCount] = useState(0);
   const [showHint, setShowHint] = useState(false);
-  const [hintText, setHintText] = useState('');
   const [level, setLevel] = useState('all');
   const [isLoaded, setIsLoaded] = useState(false);
   
@@ -45,13 +44,6 @@ const TypingMode = () => {
       inputRef.current.focus();
     }
   }, [currentIndex]);
-
-  useEffect(() => {
-    if (words[currentIndex]) {
-      const w = words[currentIndex].word;
-      setHintText(w.split('').sort(() => 0.5 - Math.random()).join(' '));
-    }
-  }, [currentIndex, words]);
 
   const currentWord = words[currentIndex];
 
@@ -152,11 +144,11 @@ const TypingMode = () => {
         </div>
 
         {words.length === 0 ? (
-          <Card className="text-center py-16">
+          <Card className="text-center py-8 md:py-16">
             <h3 className="text-xl text-[var(--color-neutral)]">No words available for this level.</h3>
           </Card>
         ) : (
-          <Card className="text-center py-16 relative overflow-hidden">
+          <Card className="text-center py-8 md:py-16 relative overflow-hidden">
             {status === 'correct' && (
               <div className="absolute inset-0 bg-[rgba(34,197,94,0.1)] success-pulse z-0 rounded-[var(--radius-lg)]" />
             )}
@@ -164,10 +156,10 @@ const TypingMode = () => {
             <div className="relative z-10">
               <div className="word-type">{currentWord.type}</div>
               
-              <div className="font-mono text-2xl mb-10 text-[var(--color-primary)] opacity-80" style={{ letterSpacing: '0.2em' }}>
+              <div className="text-2xl mb-10 text-[var(--color-primary)] font-bold px-4">
                 {status === 'correct' || status === 'revealed' ? 
-                  currentWord.word : 
-                  currentWord.word.charAt(0) + '_'.repeat(currentWord.word.length - 2) + (currentWord.word.length > 1 ? currentWord.word.charAt(currentWord.word.length - 1) : '')
+                  <span className="font-mono" style={{ letterSpacing: '0.2em' }}>{currentWord.word}</span> : 
+                  currentWord.meaning
                 }
               </div>
 
@@ -202,7 +194,7 @@ const TypingMode = () => {
 
               {showHint && status !== 'revealed' && status !== 'correct' && (
                 <div className="mt-6 text-[var(--color-neutral)] text-sm animate-fade-up bg-[rgba(255,255,255,0.05)] py-2 px-4 rounded-lg inline-block">
-                  Hint (Scrambled): <span className="font-mono text-[var(--color-secondary)] tracking-widest ml-2">{hintText}</span>
+                  Pronunciation: <span className="font-mono text-[var(--color-secondary)] ml-2">/{currentWord.ipa || currentWord.thai_pronunciation || 'N/A'}/</span>
                 </div>
               )}
               

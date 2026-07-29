@@ -64,37 +64,50 @@ const POSGuide = () => {
 
       {/* Tab Selector */}
       <div style={{
-        display: 'flex',
-        gap: '0.5rem',
-        overflowX: 'auto',
-        paddingBottom: '0.75rem',
+        background: 'rgba(2, 2, 5, 0.75)',
+        backdropFilter: 'blur(12px)',
+        WebkitBackdropFilter: 'blur(12px)',
+        border: '1px solid rgba(255,255,255,0.1)',
+        padding: '1rem',
+        borderRadius: '1.25rem',
         marginBottom: '2rem',
-        scrollbarWidth: 'thin',
-        scrollbarColor: 'var(--color-primary) transparent',
+        boxShadow: '0 8px 32px rgba(0,0,0,0.5)',
       }}>
-        {POS_LESSONS.map((pos, index) => (
-          <button
-            key={pos.name}
-            onClick={() => setActiveTab(index)}
-            style={{
-              padding: '0.6rem 1.2rem',
-              borderRadius: '9999px',
-              border: activeTab === index ? `2px solid ${pos.color}` : '2px solid rgba(255,255,255,0.1)',
-              background: activeTab === index ? `${pos.color}20` : 'rgba(255,255,255,0.03)',
-              color: activeTab === index ? pos.color : 'rgba(255,255,255,0.6)',
-              fontWeight: activeTab === index ? 'bold' : '500',
-              fontSize: '0.875rem',
-              cursor: 'pointer',
-              whiteSpace: 'nowrap',
-              transition: 'all 0.2s ease',
-              boxShadow: activeTab === index ? `0 0 12px ${pos.color}40` : 'none',
-              fontFamily: 'inherit',
-            }}
-          >
-            <span style={{ marginRight: '0.4rem' }}>{pos.icon}</span>
-            {pos.name}
-          </button>
-        ))}
+        <div style={{
+          display: 'flex',
+          gap: '0.75rem',
+          overflowX: 'auto',
+          paddingBottom: '0.5rem',
+          scrollbarWidth: 'thin',
+          scrollbarColor: 'var(--color-primary) transparent',
+        }}>
+          {POS_LESSONS.map((pos, index) => (
+            <button
+              key={pos.name}
+              onClick={() => setActiveTab(index)}
+              style={{
+                padding: '0.6rem 1.25rem',
+                borderRadius: '9999px',
+                border: activeTab === index ? `2px solid ${pos.color}` : '2px solid rgba(255,255,255,0.15)',
+                background: activeTab === index ? `${pos.color}25` : 'rgba(255,255,255,0.05)',
+                color: activeTab === index ? pos.color : 'rgba(255,255,255,0.85)',
+                fontWeight: activeTab === index ? 'bold' : '600',
+                fontSize: '0.9rem',
+                cursor: 'pointer',
+                whiteSpace: 'nowrap',
+                transition: 'all 0.2s ease',
+                boxShadow: activeTab === index ? `0 0 15px ${pos.color}50` : 'none',
+                fontFamily: 'inherit',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem'
+              }}
+            >
+              <span>{pos.icon}</span>
+              {pos.name}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Lesson Content Card */}

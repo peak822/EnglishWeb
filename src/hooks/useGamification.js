@@ -32,7 +32,19 @@ export const useGamification = () => {
 
   useEffect(() => {
     localStorage.setItem('english_study_profile', JSON.stringify(profile));
+    window.dispatchEvent(new CustomEvent('profile_updated', { detail: profile }));
   }, [profile]);
+
+  useEffect(() => {
+    const handleProfileUpdate = (e) => {
+      // Prevent infinite loop by checking if the state is actually different
+      if (e.detail && e.detail.exp !== profile.exp) {
+        setProfile(e.detail);
+      }
+    };
+    window.addEventListener('profile_updated', handleProfileUpdate);
+    return () => window.removeEventListener('profile_updated', handleProfileUpdate);
+  }, [profile.exp]);
 
   const addExp = useCallback((amount) => {
     setProfile(prev => {

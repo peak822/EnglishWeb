@@ -26935,5 +26935,23 @@
     "ipa": "zoʊn",
     "meaning": "โซน",
     "thai_pronunciation": "ซโอน"
+  },
+  {
+    "word": "obtain",
+    "type": "v.",
+    "level": "B2",
+    "id": 2996,
+    "meaning": "ได้รับ, หาได้",
+    "thai_pronunciation": "เอิบ-เทน",
+    "ipa": "əbˈteɪn"
+  },
+  {
+    "word": "did",
+    "type": "v. auxiliary v.",
+    "level": "A1",
+    "id": 2997,
+    "meaning": "ทำ (อดีตของ do)",
+    "thai_pronunciation": "ดิด",
+    "ipa": "dɪd"
   }
 ]

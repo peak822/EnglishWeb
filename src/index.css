@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;700&family=Nunito:wght@400;600;700&family=Space+Grotesk:wght@400;600;700&family=Outfit:wght@400;600;700&display=swap');
 
 :root {
   /* Cyberpunk Neon Noir Theme */
@@ -467,6 +467,7 @@ a:hover {
   --color-nav: rgba(255, 255, 255, 0.85);
   --color-accent: #F59E0B;      
   --color-danger: #EF4444;
+  --font-family-sans: 'Nunito', sans-serif;
 }
 [data-theme="meadow-day"] body {
   background-image: 
@@ -493,6 +494,7 @@ a:hover {
   --color-surface: rgba(15, 23, 42, 0.7); 
   --color-nav: rgba(15, 23, 42, 0.85);
   --color-accent: #F472B6;      
+  --font-family-sans: 'Space Grotesk', sans-serif;
 }
 [data-theme="milky-way"] body {
   background-image: 
@@ -515,6 +517,7 @@ a:hover {
   --color-surface: rgba(46, 16, 101, 0.7); 
   --color-nav: rgba(46, 16, 101, 0.85);
   --color-accent: #14B8A6;      
+  --font-family-sans: 'Outfit', sans-serif;
 }
 [data-theme="sunset-vaporwave"] body {
   background-image: 

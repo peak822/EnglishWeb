@@ -25,6 +25,8 @@ const SwipeMode = () => {
   // Animation State
   const [swipeState, setSwipeState] = useState(null); // 'left' or 'right'
   const [swipeFeedback, setSwipeFeedback] = useState(null); // 'success' or 'error'
+  const [isTransitioningGameOver, setIsTransitioningGameOver] = useState(false);
+  const [showCross, setShowCross] = useState(false);
   
   const timerRef = useRef(null);
   const MAX_CARDS = 20;
@@ -64,10 +66,17 @@ const SwipeMode = () => {
 
 
   const handleMistake = useCallback(() => {
+    setShowCross(true);
+    setTimeout(() => setShowCross(false), 400);
+
     setLives(prev => {
       const newLives = prev - 1;
       if (newLives <= 0) {
-        setIsGameOver(true);
+        setIsTransitioningGameOver(true);
+        setTimeout(() => {
+          setIsTransitioningGameOver(false);
+          setIsGameOver(true);
+        }, 2500); // Dramatic slow-mo wait
       }
       return newLives;
     });
@@ -91,7 +100,7 @@ const SwipeMode = () => {
   }, []);
 
   const handleSwipe = useCallback((direction) => {
-    if (isGameOver || hasWon || swipeState || !currentCard) return;
+    if (isGameOver || hasWon || isTransitioningGameOver || swipeState || !currentCard) return;
 
     if (direction === 'timeout') {
       handleMistake();
@@ -123,7 +132,7 @@ const SwipeMode = () => {
 
   // Timer logic
   useEffect(() => {
-    if (isGameOver || hasWon || swipeState || !currentCard) {
+    if (isGameOver || hasWon || isTransitioningGameOver || swipeState || !currentCard) {
       if (timerRef.current) clearInterval(timerRef.current);
       return;
     }
@@ -234,7 +243,15 @@ const SwipeMode = () => {
           'bg-transparent'
         }`}
       />
-      <div className="container animate-fade-up relative z-10">
+      <div className={`container animate-fade-up relative z-10 ${showCross || isTransitioningGameOver ? 'camera-shake' : ''}`}>
+      
+      {/* Dramatic Game Over Transition */}
+      {isTransitioningGameOver && (
+        <div className="fixed inset-0 z-50 flex flex-col justify-center items-center dramatic-overlay pointer-events-none">
+          <h1 className="text-5xl md:text-7xl font-black text-white slam-text tracking-widest uppercase">Game Over</h1>
+        </div>
+      )}
+      
       <div className="game-container">
         <div className="game-header">
           <h2 className="text-gradient">Speed Swipe</h2>
@@ -277,6 +294,9 @@ const SwipeMode = () => {
                 swipeFeedback === 'error' ? 'border-red-400 bg-red-500/40 shadow-[0_0_30px_rgba(239,68,68,0.6)]' : 
                 'border-white/10'
               }`}>
+                {/* Cross Stamp on Mistake */}
+                {showCross && <div className="cross-stamp">❌</div>}
+
                 {/* Timer Bar */}
                 <div 
                   className={`absolute top-0 left-0 h-2 bg-gradient-to-r from-blue-400 to-[var(--color-primary)] transition-all duration-75`}

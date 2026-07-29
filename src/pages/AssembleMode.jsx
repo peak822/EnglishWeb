@@ -131,11 +131,11 @@ const AssembleMode = () => {
         </div>
 
         {words.length === 0 ? (
-          <Card className="text-center py-16">
+          <Card className="text-center py-8 md:py-16">
             <h3 className="text-xl text-[var(--color-neutral)]">No words available for this level.</h3>
           </Card>
         ) : (
-          <Card className="text-center py-16 relative overflow-hidden">
+          <Card className="text-center py-8 md:py-16 relative overflow-hidden">
             {status === 'correct' && (
               <div className="absolute inset-0 bg-[rgba(34,197,94,0.1)] success-pulse z-0 rounded-[var(--radius-lg)]" />
             )}

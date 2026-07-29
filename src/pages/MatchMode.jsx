@@ -24,9 +24,23 @@ const MatchMode = () => {
       pool = vocabularyData; // Fallback if theme has too few words
     }
     
-    // Pick 6 random words
+    // Pick 6 random words with distinct meanings to prevent ambiguity
     const shuffledPool = [...pool].sort(() => 0.5 - Math.random());
-    const selectedWords = shuffledPool.slice(0, 6);
+    const selectedWords = [];
+    const usedMeanings = new Set();
+    
+    for (const w of shuffledPool) {
+      if (w.meaning && !usedMeanings.has(w.meaning)) {
+        selectedWords.push(w);
+        usedMeanings.add(w.meaning);
+      }
+      if (selectedWords.length === 6) break;
+    }
+    
+    // Fallback if not enough distinct meanings
+    if (selectedWords.length < 6) {
+      selectedWords.push(...shuffledPool.slice(0, 6 - selectedWords.length));
+    }
     
     // Create 12 cards (6 words, 6 meanings)
     const newCards = [];

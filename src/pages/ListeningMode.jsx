@@ -134,9 +134,9 @@ const ListeningMode = () => {
         </div>
 
         {words.length === 0 ? (
-          <Card className="text-center py-16"><h3 className="text-xl text-[var(--color-neutral)]">No words available.</h3></Card>
+          <Card className="text-center py-8 md:py-16"><h3 className="text-xl text-[var(--color-neutral)]">No words available.</h3></Card>
         ) : (
-          <Card className="text-center py-16 relative overflow-hidden flex flex-col items-center">
+          <Card className="text-center py-8 md:py-16 relative overflow-hidden flex flex-col items-center">
             {status === 'correct' && <div className="absolute inset-0 bg-[rgba(34,197,94,0.1)] success-pulse z-0 rounded-[var(--radius-lg)]" />}
 
             <div className="relative z-10 flex flex-col items-center w-full">
@@ -151,23 +151,26 @@ const ListeningMode = () => {
                 </div>
               ) : (
                 <>
-                  <h3 className="text-xl mb-4 text-[var(--color-neutral)] font-medium">Listen and guess the word:</h3>
+                  <h3 className="text-xl mb-8 text-[var(--color-neutral)] font-medium">Listen and guess the word:</h3>
                   
-                  <button 
-                    onClick={playAudio}
-                    className="flex flex-col items-center justify-center rounded-full mb-10 transition-transform hover:scale-105 active:scale-95"
-                    style={{ 
-                      width: '120px', height: '120px', 
-                      background: 'rgba(255, 255, 255, 0.05)',
-                      border: '2px solid var(--color-primary)',
-                      boxShadow: '0 0 20px rgba(0,255,255,0.2), inset 0 0 20px rgba(0,255,255,0.1)',
-                      color: 'var(--color-primary)',
-                      cursor: 'pointer'
-                    }}
-                  >
-                    <Volume2 size={48} className="animate-pulse" />
-                    <span className="mt-2 text-sm font-bold opacity-80">PLAY</span>
-                  </button>
+                  <div className="flex justify-center w-full px-4 mb-8 md:mb-14">
+                    <button 
+                      onClick={playAudio}
+                      className="flex flex-col items-center justify-center transition-transform hover:scale-105 active:scale-95"
+                      style={{ 
+                        width: '140px', height: '140px', 
+                        background: 'rgba(255, 255, 255, 0.03)',
+                        border: '2px solid var(--color-primary)',
+                        boxShadow: '0 0 20px rgba(0,255,255,0.2), inset 0 0 20px rgba(0,255,255,0.1)',
+                        color: 'var(--color-primary)',
+                        cursor: 'pointer',
+                        borderRadius: '50%'
+                      }}
+                    >
+                      <Volume2 size={56} className="animate-pulse" />
+                      <span className="mt-2 text-sm font-bold opacity-80">PLAY</span>
+                    </button>
+                  </div>
 
                   <div className={`options-grid w-full max-w-2xl mx-auto ${status === 'incorrect' ? 'shake' : ''}`}>
                     {options.map((opt, i) => {

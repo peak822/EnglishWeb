@@ -10,8 +10,8 @@ export const POS_MAP = {
 
 export function extractPrimaryPOS(rawType) {
   if (!rawType) return null;
-  // Match the first distinct POS tag from our supported map
-  const match = rawType.match(/\b(n\.|v\.|adj\.|adv\.|prep\.|pron\.|conj\.)\b/);
+  // Match one of the supported POS tags, ensuring it's not part of another word
+  const match = rawType.match(/(?:^|\s|\b)(n\.|v\.|adj\.|adv\.|prep\.|pron\.|conj\.)/);
   return match ? POS_MAP[match[1]] : null;
 }
 
