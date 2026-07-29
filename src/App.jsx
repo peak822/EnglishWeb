@@ -13,6 +13,7 @@ import TypingMode from './pages/TypingMode';
 import AssembleMode from './pages/AssembleMode';
 import GuessMode from './pages/GuessMode';
 import ReadMode from './pages/ReadMode';
+import ListeningMode from './pages/ListeningMode';
 
 import ContextMode from './pages/ContextMode';
 import SyntaxMode from './pages/SyntaxMode';
@@ -102,6 +103,7 @@ function App() {
             <Route path="/typing" element={<TypingMode />} />
             <Route path="/assemble" element={<AssembleMode />} />
             <Route path="/guess" element={<GuessMode />} />
+            <Route path="/listen" element={<ListeningMode />} />
 
             <Route path="/context" element={<ContextMode />} />
             <Route path="/syntax" element={<SyntaxMode />} />

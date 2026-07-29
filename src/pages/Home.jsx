@@ -1,13 +1,13 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Type, Puzzle, HelpCircle, ArrowRight, BookOpen, Grid, Zap } from 'lucide-react';
+import { Type, Puzzle, HelpCircle, ArrowRight, BookOpen, Grid, Zap, Volume2 } from 'lucide-react';
 import Card from '../components/Card';
 import Tilt from 'react-parallax-tilt';
 
 const Home = () => {
   const navigate = useNavigate();
 
-  const starterModes = [
+  const libraryModes = [
     {
       id: 'read',
       title: 'อ่านคำศัพท์',
@@ -15,22 +15,6 @@ const Home = () => {
       icon: <BookOpen size={32} />,
       path: '/read',
       color: 'var(--color-surface)'
-    },
-    {
-      id: 'guess',
-      title: 'ทายคำศัพท์',
-      description: 'Guess the word based on hints like part of speech and length.',
-      icon: <HelpCircle size={32} />,
-      path: '/guess',
-      color: '#F59E0B'
-    },
-    {
-      id: 'pos',
-      title: 'หมวดหมู่คำ (POS)',
-      description: 'ฝึกแยกแยะชนิดของคำ (Noun, Verb, Adj, etc.) อย่างรวดเร็วเพื่อสร้างความจำอัตโนมัติ',
-      icon: <Zap size={32} />,
-      path: '/pos',
-      color: '#8B5CF6' // violet
     },
     {
       id: 'pos-guide',
@@ -42,7 +26,15 @@ const Home = () => {
     }
   ];
 
-  const intermediateModes = [
+  const starterModes = [
+    {
+      id: 'guess',
+      title: 'ทายคำศัพท์',
+      description: 'Guess the word based on hints like part of speech and length.',
+      icon: <HelpCircle size={32} />,
+      path: '/guess',
+      color: '#F59E0B'
+    },
     {
       id: 'match',
       title: 'เกมจับคู่ (Match)',
@@ -51,6 +43,25 @@ const Home = () => {
       path: '/match',
       color: '#00E1FF' // Bright Cyan
     },
+    {
+      id: 'pos',
+      title: 'หมวดหมู่คำ (POS)',
+      description: 'ฝึกแยกแยะชนิดของคำ (Noun, Verb, Adj, etc.) อย่างรวดเร็วเพื่อสร้างความจำอัตโนมัติ',
+      icon: <Zap size={32} />,
+      path: '/pos',
+      color: '#8B5CF6' // violet
+    },
+    {
+      id: 'listen',
+      title: 'ทายคำจากการฟัง',
+      description: 'Listen to the word and guess its spelling and meaning.',
+      icon: <Volume2 size={32} />,
+      path: '/listen',
+      color: '#4ade80' // Green
+    }
+  ];
+
+  const intermediateModes = [
     {
       id: 'assemble',
       title: 'ประกอบคำศัพท์',
@@ -149,6 +160,16 @@ const Home = () => {
           </p>
         </div>
         
+        <div className="difficulty-section">
+          <div className="section-header flex items-center justify-between flex-wrap gap-2">
+            <h3 className="text-2xl font-bold flex items-center gap-2" style={{ color: 'var(--color-secondary)' }}>
+              📖 The Library
+            </h3>
+            <span className="text-sm font-medium text-[var(--color-neutral)] bg-[rgba(255,255,255,0.05)] px-3 py-1 rounded-full border border-[rgba(255,255,255,0.05)]">คลังความรู้</span>
+          </div>
+          {renderModeGrid(libraryModes)}
+        </div>
+
         <div className="difficulty-section">
           <div className="section-header flex items-center justify-between flex-wrap gap-2">
             <h3 className="text-2xl font-bold flex items-center gap-2" style={{ color: 'var(--color-primary)' }}>
