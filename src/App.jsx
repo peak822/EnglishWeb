@@ -13,12 +13,13 @@ import TypingMode from './pages/TypingMode';
 import AssembleMode from './pages/AssembleMode';
 import GuessMode from './pages/GuessMode';
 import ReadMode from './pages/ReadMode';
-import SRSMode from './pages/SRSMode';
+
 import ContextMode from './pages/ContextMode';
 import SyntaxMode from './pages/SyntaxMode';
 import MatchMode from './pages/MatchMode';
 import SwipeMode from './pages/SwipeMode';
 import POSMode from './pages/POSMode';
+import POSGuide from './pages/POSGuide';
 
 function App() {
   const { exp, level, badges, nextLevelExp, currentLevelBaseExp, newBadge, recentLevelUp } = useGamification();
@@ -101,12 +102,13 @@ function App() {
             <Route path="/typing" element={<TypingMode />} />
             <Route path="/assemble" element={<AssembleMode />} />
             <Route path="/guess" element={<GuessMode />} />
-            <Route path="/srs" element={<SRSMode />} />
+
             <Route path="/context" element={<ContextMode />} />
             <Route path="/syntax" element={<SyntaxMode />} />
             <Route path="/match" element={<MatchMode />} />
             <Route path="/swipe" element={<SwipeMode />} />
             <Route path="/pos" element={<POSMode />} />
+            <Route path="/pos-guide" element={<POSGuide />} />
           </Routes>
         </main>
 

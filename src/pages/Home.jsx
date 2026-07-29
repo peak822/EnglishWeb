@@ -33,23 +33,23 @@ const Home = () => {
       color: '#8B5CF6' // violet
     },
     {
+      id: 'pos-guide',
+      title: 'เรียนรู้ Part of Speech',
+      description: 'บทเรียนอธิบายชนิดของคำทั้ง 7 ประเภท พร้อมตัวอย่างจาก Oxford 3000',
+      icon: <BookOpen size={32} />,
+      path: '/pos-guide',
+      color: '#3B82F6' // blue
+    }
+  ];
+
+  const intermediateModes = [
+    {
       id: 'match',
       title: 'เกมจับคู่ (Match)',
       description: 'Test your memory! Match English words with their Thai meanings.',
       icon: <Grid size={32} />,
       path: '/match',
       color: '#00E1FF' // Bright Cyan
-    }
-  ];
-
-  const intermediateModes = [
-    {
-      id: 'srs',
-      title: 'ทบทวน (SRS)',
-      description: 'Smart flashcards that remember when you need to review a word.',
-      icon: <BookOpen size={32} />,
-      path: '/srs',
-      color: '#10B981' // emerald
     },
     {
       id: 'assemble',

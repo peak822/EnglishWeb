@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Timer, Zap, ArrowLeft, RotateCcw, AlertTriangle } from 'lucide-react';
+import { Timer, Zap, ArrowLeft, RotateCcw } from 'lucide-react';
 import { useGamification } from '../hooks/useGamification';
 import { generateQuestion } from '../utils/posUtils';
 import vocabularyData from '../data/vocabulary.json';
@@ -89,18 +89,33 @@ const POSMode = () => {
 
   if (gameState === 'idle') {
     return (
-      <div className="container animate-fade-up flex flex-col items-center justify-center min-h-[70vh]">
-        <div className="text-center mb-8">
-          <Zap size={64} className="mx-auto mb-4 text-[var(--color-accent)] animate-pulse" />
-          <h1 className="text-4xl font-bold mb-4 glitch-hover" data-text="Rapid Fire POS">Rapid Fire POS</h1>
-          <p className="text-xl text-[var(--color-neutral)] max-w-lg mx-auto">
-            ท้าทายความเร็วในการแยกแยะชนิดของคำศัพท์ (Part of Speech) 
-            ตอบให้ถูกและเร็วที่สุดในเวลา 60 วินาที!
+      <div className="container animate-fade-up flex flex-col items-center justify-center" style={{ minHeight: '70vh' }}>
+        <div 
+          className="text-center mb-8 w-full" 
+          style={{ 
+            background: 'rgba(2,2,5,0.85)', 
+            padding: '3rem 2rem', 
+            borderRadius: '1.5rem', 
+            border: '1px solid rgba(255,255,255,0.15)', 
+            backdropFilter: 'blur(12px)', 
+            maxWidth: '650px', 
+            margin: '0 auto 2.5rem auto',
+            boxShadow: '0 10px 40px rgba(0,0,0,0.5)'
+          }}
+        >
+          <Zap size={64} className="mx-auto mb-4 animate-pulse" style={{ color: 'var(--color-accent)' }} />
+          <h1 className="font-bold mb-4 glitch-hover text-gradient" data-text="Rapid Fire POS" style={{ fontSize: 'clamp(2.5rem, 5vw, 3.5rem)' }}>
+            Rapid Fire POS
+          </h1>
+          <p className="text-xl mx-auto leading-relaxed" style={{ color: 'var(--color-secondary)', maxWidth: '500px' }}>
+            ท้าทายความเร็วในการแยกแยะชนิดของคำศัพท์ (Part of Speech) <br/>
+            ตอบให้ถูกและเร็วที่สุดในเวลา <span style={{ color: 'var(--color-primary)', fontWeight: 'bold' }}>60 วินาที!</span>
           </p>
         </div>
         
         <button 
-          className="btn-primary text-xl px-8 py-4 flex items-center gap-2 mb-4"
+          className="ui-btn ui-btn-primary flex items-center justify-center gap-2 mb-4"
+          style={{ padding: '1rem 2rem', fontSize: '1.25rem', width: '100%', maxWidth: '300px' }}
           onClick={startGame}
         >
           <Zap size={24} />
@@ -108,7 +123,8 @@ const POSMode = () => {
         </button>
         
         <button 
-          className="btn-ghost flex items-center gap-2"
+          className="ui-btn ui-btn-secondary flex items-center justify-center gap-2"
+          style={{ padding: '0.75rem 2rem', width: '100%', maxWidth: '300px' }}
           onClick={() => navigate('/')}
         >
           <ArrowLeft size={18} />
@@ -120,31 +136,31 @@ const POSMode = () => {
 
   if (gameState === 'gameover') {
     return (
-      <div className="container animate-fade-up flex flex-col items-center justify-center min-h-[70vh]">
-        <Card className="w-full max-w-md text-center p-8 border-t-4 border-t-[var(--color-primary)]">
+      <div className="container animate-fade-up flex flex-col items-center justify-center" style={{ minHeight: '70vh' }}>
+        <Card className="w-full text-center p-8" style={{ maxWidth: '450px', borderTop: '4px solid var(--color-primary)' }}>
           <h2 className="text-3xl font-bold mb-6 text-gradient">Time's Up!</h2>
           
-          <div className="space-y-4 mb-8">
-            <div className="flex justify-between items-center bg-[rgba(255,255,255,0.05)] p-4 rounded-lg">
-              <span className="text-[var(--color-neutral)]">คะแนนรวม</span>
-              <span className="text-2xl font-bold text-[var(--color-primary)]">{score}</span>
+          <div className="mb-8" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(255,255,255,0.05)', padding: '1rem', borderRadius: '0.5rem' }}>
+              <span style={{ color: 'var(--color-neutral)' }}>คะแนนรวม</span>
+              <span className="font-bold" style={{ fontSize: '1.5rem', color: 'var(--color-primary)' }}>{score}</span>
             </div>
-            <div className="flex justify-between items-center bg-[rgba(255,255,255,0.05)] p-4 rounded-lg">
-              <span className="text-[var(--color-neutral)]">ตอบถูก</span>
-              <span className="text-xl font-bold text-[var(--color-accent)]">{correctAnswers} คำ</span>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(255,255,255,0.05)', padding: '1rem', borderRadius: '0.5rem' }}>
+              <span style={{ color: 'var(--color-neutral)' }}>ตอบถูก</span>
+              <span className="font-bold" style={{ fontSize: '1.25rem', color: 'var(--color-accent)' }}>{correctAnswers} คำ</span>
             </div>
-            <div className="flex justify-between items-center bg-[rgba(255,255,255,0.05)] p-4 rounded-lg">
-              <span className="text-[var(--color-neutral)]">EXP ที่ได้รับ</span>
-              <span className="text-xl font-bold text-green-400">+{Math.floor(score / 5)} EXP</span>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(255,255,255,0.05)', padding: '1rem', borderRadius: '0.5rem' }}>
+              <span style={{ color: 'var(--color-neutral)' }}>EXP ที่ได้รับ</span>
+              <span className="font-bold" style={{ fontSize: '1.25rem', color: '#4ade80' }}>+{Math.floor(score / 5)} EXP</span>
             </div>
           </div>
           
-          <div className="flex flex-col gap-3">
-            <button className="btn-primary flex items-center justify-center gap-2" onClick={startGame}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            <button className="ui-btn ui-btn-primary flex items-center justify-center gap-2" style={{ padding: '0.75rem' }} onClick={startGame}>
               <RotateCcw size={18} />
               <span>เล่นอีกครั้ง</span>
             </button>
-            <button className="btn-ghost flex items-center justify-center gap-2" onClick={() => navigate('/')}>
+            <button className="ui-btn ui-btn-secondary flex items-center justify-center gap-2" style={{ padding: '0.75rem' }} onClick={() => navigate('/')}>
               <ArrowLeft size={18} />
               <span>กลับหน้าแรก</span>
             </button>
@@ -155,53 +171,56 @@ const POSMode = () => {
   }
 
   return (
-    <div className="container animate-fade-up max-w-3xl mx-auto">
+    <div className="container animate-fade-up mx-auto" style={{ maxWidth: '800px' }}>
       {/* Top HUD */}
-      <div className="flex items-center justify-between mb-6 bg-[rgba(0,0,0,0.3)] p-4 rounded-xl border border-[rgba(255,255,255,0.1)]">
-        <div className="flex items-center gap-3">
-          <button className="text-[var(--color-neutral)] hover:text-white transition-colors" onClick={() => setGameState('idle')}>
+      <div className="flex items-center justify-between mb-8" style={{ background: 'rgba(0,0,0,0.5)', padding: '1rem 1.5rem', borderRadius: '1rem', border: '1px solid rgba(255,255,255,0.1)' }}>
+        <div className="flex items-center gap-4">
+          <button style={{ color: 'var(--color-neutral)', cursor: 'pointer' }} onClick={() => setGameState('idle')}>
             <ArrowLeft size={24} />
           </button>
           <div className="flex flex-col">
-            <span className="text-xs text-[var(--color-neutral)]">SCORE</span>
-            <span className="text-xl font-bold font-mono">{score}</span>
+            <span style={{ fontSize: '0.75rem', color: 'var(--color-neutral)' }}>SCORE</span>
+            <span className="font-bold font-mono" style={{ fontSize: '1.5rem' }}>{score}</span>
           </div>
         </div>
         
-        <div className="flex items-center gap-2 text-[var(--color-accent)]">
+        <div className="flex items-center gap-2" style={{ color: 'var(--color-accent)' }}>
           <Zap size={20} fill={streak >= 5 ? "currentColor" : "none"} className={streak >= 5 ? "animate-pulse" : ""} />
           <span className="font-bold font-mono">x{streak}</span>
         </div>
         
         <div className="flex items-center gap-2 font-mono text-xl">
-          <Timer size={24} className={timeLeft <= 10 ? "text-red-500 animate-pulse" : "text-[var(--color-primary)]"} />
-          <span className={timeLeft <= 10 ? "text-red-500" : ""}>{timeLeft}s</span>
+          <Timer size={24} style={{ color: timeLeft <= 10 ? '#ef4444' : 'var(--color-primary)' }} className={timeLeft <= 10 ? "animate-pulse" : ""} />
+          <span style={{ color: timeLeft <= 10 ? '#ef4444' : 'inherit' }}>{timeLeft}s</span>
         </div>
       </div>
       
       {/* Time Progress Bar */}
-      <div className="w-full h-1 bg-[rgba(255,255,255,0.1)] rounded-full mb-8 overflow-hidden">
+      <div className="w-full mb-8" style={{ height: '6px', background: 'rgba(255,255,255,0.1)', borderRadius: '9999px', overflow: 'hidden' }}>
         <div 
-          className="h-full bg-[var(--color-primary)] transition-all duration-1000 ease-linear"
-          style={{ width: `${(timeLeft / 60) * 100}%`, backgroundColor: timeLeft <= 10 ? '#EF4444' : 'var(--color-primary)' }}
+          style={{ 
+            height: '100%', 
+            width: `${(timeLeft / 60) * 100}%`, 
+            backgroundColor: timeLeft <= 10 ? '#ef4444' : 'var(--color-primary)',
+            transition: 'all 1s linear'
+          }}
         />
       </div>
 
       {/* Word Display */}
       {currentQuestion && (
-        <Card className="text-center py-12 mb-8 relative overflow-hidden group">
-          <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-primary)]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-          <h2 className="text-5xl sm:text-6xl font-bold mb-4 glitch-hover" data-text={currentQuestion.currentWord.word}>
+        <Card className="text-center mb-8" style={{ padding: '4rem 1rem' }}>
+          <h2 className="font-bold mb-4 glitch-hover" data-text={currentQuestion.currentWord.word} style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)' }}>
             {currentQuestion.currentWord.word}
           </h2>
-          <p className="text-2xl text-[var(--color-neutral)]">
+          <p style={{ fontSize: '1.5rem', color: 'var(--color-neutral)' }}>
             {currentQuestion.currentWord.meaning}
           </p>
         </Card>
       )}
 
-      {/* Options */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {/* Options Grid */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1rem' }}>
         {currentQuestion?.options.map((option, index) => {
           const isWrong = wrongSelection === option;
           return (
@@ -209,12 +228,39 @@ const POSMode = () => {
               key={index}
               onClick={() => handleAnswer(option)}
               disabled={wrongSelection !== null && isWrong}
-              className={`
-                p-6 rounded-xl text-xl font-bold border-2 transition-all duration-200 transform hover:scale-[1.02] active:scale-95
-                ${isWrong 
-                  ? 'border-red-500 bg-red-500/20 text-red-300 translate-x-1' 
-                  : 'border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.05)] hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)]/10 hover:shadow-[0_0_15px_var(--color-accent)]'}
-              `}
+              style={{
+                padding: '1.5rem',
+                borderRadius: '1rem',
+                fontSize: '1.25rem',
+                fontWeight: 'bold',
+                cursor: 'pointer',
+                transition: 'all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+                border: isWrong ? '2px solid #ef4444' : '2px solid rgba(255,255,255,0.15)',
+                background: isWrong ? 'rgba(239,68,68,0.2)' : 'rgba(255,255,255,0.05)',
+                color: isWrong ? '#fca5a5' : 'white',
+                transform: isWrong ? 'translateX(5px)' : 'scale(1)',
+                boxShadow: isWrong ? 'none' : '0 4px 15px rgba(0,0,0,0.2)'
+              }}
+              onMouseOver={(e) => {
+                if(!isWrong) {
+                  e.currentTarget.style.borderColor = 'var(--color-accent)';
+                  e.currentTarget.style.background = 'rgba(255,0,255,0.1)';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                }
+              }}
+              onMouseOut={(e) => {
+                if(!isWrong) {
+                  e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)';
+                  e.currentTarget.style.background = 'rgba(255,255,255,0.05)';
+                  e.currentTarget.style.transform = 'scale(1)';
+                }
+              }}
+              onMouseDown={(e) => {
+                if(!isWrong) e.currentTarget.style.transform = 'scale(0.95)';
+              }}
+              onMouseUp={(e) => {
+                if(!isWrong) e.currentTarget.style.transform = 'translateY(-2px)';
+              }}
             >
               {option}
             </button>
