@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { BookOpen, Clock, ArrowLeft } from 'lucide-react';
+import { BookOpen, Clock, ArrowLeft, Star, Award, Zap } from 'lucide-react';
 import Card from '../components/Card';
 import storiesData from '../data/stories.json';
 
 const StorySelection = () => {
   const navigate = useNavigate();
+  const [selectedLevel, setSelectedLevel] = useState(null);
+
+  const categories = [
+    { id: 'A1', title: 'A1 Beginner', icon: Star, color: '#4ade80' },
+    { id: 'A2', title: 'A2 Elementary', icon: BookOpen, color: '#2dd4bf' },
+    { id: 'B1', title: 'B1 Intermediate', icon: Award, color: '#3b82f6' },
+    { id: 'B2', title: 'B2 Upper Intermediate', icon: Zap, color: '#8b5cf6' }
+  ];
+
+  const filteredStories = selectedLevel 
+    ? storiesData.filter(story => story.level.startsWith(selectedLevel))
+    : [];
 
   return (
     <div className="container animate-fade-up" style={{ maxWidth: '1000px', margin: '0 auto' }}>
@@ -16,13 +28,64 @@ const StorySelection = () => {
         </p>
       </Card>
 
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-        gap: '1.5rem',
-        marginBottom: '3rem'
-      }}>
-        {storiesData.map(story => {
+      {!selectedLevel ? (
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+          gap: '1.5rem',
+          marginBottom: '3rem'
+        }}>
+          {categories.map(category => {
+            const Icon = category.icon;
+            return (
+              <Card 
+                key={category.id} 
+                style={{ 
+                  padding: '2rem',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  textAlign: 'center',
+                  gap: '1rem'
+                }}
+                onClick={() => setSelectedLevel(category.id)}
+                className="ui-card hover-glow"
+              >
+                <div style={{ 
+                  padding: '1rem', 
+                  borderRadius: '50%', 
+                  background: `${category.color}20`,
+                  color: category.color
+                }}>
+                  <Icon size={40} />
+                </div>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--color-secondary)' }}>
+                  {category.title}
+                </h3>
+              </Card>
+            );
+          })}
+        </div>
+      ) : (
+        <div>
+          <div style={{ display: 'flex', justifyContent: 'flex-start', marginBottom: '2rem' }}>
+            <button 
+              className="ui-btn ui-btn-secondary"
+              style={{ padding: '0.5rem 1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+              onClick={() => setSelectedLevel(null)}
+            >
+              <ArrowLeft size={16} />
+              กลับไปเลือกระดับ (Back to Levels)
+            </button>
+          </div>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+            gap: '1.5rem',
+            marginBottom: '3rem'
+          }}>
+            {filteredStories.map(story => {
           const levelClass = story.level.charAt(0);
           return (
             <Card 
@@ -78,7 +141,9 @@ const StorySelection = () => {
             </Card>
           );
         })}
-      </div>
+          </div>
+        </div>
+      )}
 
       <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
         <Card style={{ 
