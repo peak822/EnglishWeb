@@ -171,9 +171,9 @@ const POSMode = () => {
   }
 
   return (
-    <div className="container animate-fade-up mx-auto" style={{ maxWidth: '800px' }}>
+    <div className="container animate-fade-up max-w-4xl mx-auto px-4">
       {/* Top HUD */}
-      <div className="flex items-center justify-between mb-8" style={{ background: 'rgba(0,0,0,0.5)', padding: '1rem 1.5rem', borderRadius: '1rem', border: '1px solid rgba(255,255,255,0.1)' }}>
+      <div className="flex items-center justify-between mb-8 bg-black/50 p-4 rounded-2xl border border-white/10">
         <div className="flex items-center gap-4">
           <button style={{ color: 'var(--color-neutral)', cursor: 'pointer' }} onClick={() => setGameState('idle')}>
             <ArrowLeft size={24} />
@@ -209,7 +209,7 @@ const POSMode = () => {
 
       {/* Word Display */}
       {currentQuestion && (
-        <Card className="text-center mb-8" style={{ padding: '4rem 1rem' }}>
+        <Card className="text-center mb-8 py-10 px-4 md:py-16">
           <h2 className="font-bold mb-4 glitch-hover" data-text={currentQuestion.currentWord.word} style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)' }}>
             {currentQuestion.currentWord.word}
           </h2>
@@ -220,16 +220,8 @@ const POSMode = () => {
       )}
 
       {/* Options Grid */}
-      <div style={{
-        background: 'rgba(2, 2, 5, 0.75)',
-        backdropFilter: 'blur(12px)',
-        WebkitBackdropFilter: 'blur(12px)',
-        padding: '1.5rem',
-        borderRadius: '1.25rem',
-        border: '1px solid rgba(255, 255, 255, 0.1)',
-        boxShadow: '0 8px 32px rgba(0,0,0,0.5)'
-      }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1rem' }}>
+      <div className="bg-black/75 backdrop-blur-md p-4 md:p-6 rounded-2xl border border-white/10 shadow-2xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {currentQuestion?.options.map((option, index) => {
           const isWrong = wrongSelection === option;
           return (

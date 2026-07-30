@@ -303,15 +303,15 @@ const SwipeMode = () => {
                   style={{ width: `${timeLeft}%`, backgroundColor: timeLeft < 30 ? 'red' : '' }}
                 />
                 
-                <h3 className="text-4xl font-bold text-white mb-6 tracking-wide">{currentCard.word}</h3>
+                <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6 tracking-wide">{currentCard.word}</h3>
                 <div className="w-16 h-1 bg-white/20 mx-auto rounded-full mb-6"></div>
-                <p className="text-2xl text-[var(--color-secondary)] font-medium leading-relaxed">{currentCard.meaning}</p>
+                <p className="text-xl md:text-2xl text-[var(--color-secondary)] font-medium leading-relaxed px-2">{currentCard.meaning}</p>
                 
               </Card>
             </div>
             
             {/* Helper buttons */}
-            <div className="flex gap-8 mt-8">
+            <div className="flex w-full max-w-sm justify-between px-4 mt-8 md:justify-center md:gap-16">
                <button onClick={() => handleSwipe('left')} className="p-4 rounded-full bg-red-500/20 text-red-400 border border-red-500/50 hover:bg-red-500/40 transition-colors">
                  <X size={32} />
                </button>

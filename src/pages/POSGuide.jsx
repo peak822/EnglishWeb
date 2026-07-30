@@ -53,34 +53,18 @@ const POSGuide = () => {
   };
 
   return (
-    <div className="container animate-fade-up" style={{ maxWidth: '900px', margin: '0 auto' }}>
+    <div className="container animate-fade-up max-w-5xl mx-auto px-4">
       {/* Header */}
       <div className="text-center mb-8">
         <h2 className="text-gradient mb-4">Part of Speech Guide</h2>
-        <p style={{ color: 'var(--color-neutral)', maxWidth: '600px', margin: '0 auto' }}>
+        <p className="text-[var(--color-neutral)] max-w-2xl mx-auto">
           เรียนรู้ชนิดของคำในภาษาอังกฤษ พร้อมตัวอย่างจากคลัง Oxford 3000
         </p>
       </div>
 
       {/* Tab Selector */}
-      <div style={{
-        background: 'rgba(2, 2, 5, 0.75)',
-        backdropFilter: 'blur(12px)',
-        WebkitBackdropFilter: 'blur(12px)',
-        border: '1px solid rgba(255,255,255,0.1)',
-        padding: '1rem',
-        borderRadius: '1.25rem',
-        marginBottom: '2rem',
-        boxShadow: '0 8px 32px rgba(0,0,0,0.5)',
-      }}>
-        <div style={{
-          display: 'flex',
-          gap: '0.75rem',
-          overflowX: 'auto',
-          paddingBottom: '0.5rem',
-          scrollbarWidth: 'thin',
-          scrollbarColor: 'var(--color-primary) transparent',
-        }}>
+      <div className="bg-black/75 backdrop-blur-md border border-white/10 p-4 rounded-2xl mb-8 shadow-2xl">
+        <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-[var(--color-primary)] scrollbar-track-transparent">
           {POS_LESSONS.map((pos, index) => (
             <button
               key={pos.name}

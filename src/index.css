@@ -245,23 +245,29 @@ a:hover {
 /* Match Mode Specific Styles */
 .match-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.75rem; /* slightly smaller gap for mobile to fit 4 columns */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .match-grid {
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
   }
 }
 
 .match-card {
   position: relative;
-  height: 8rem;
+  height: 6rem;
   width: 100%;
   border-radius: var(--radius-sm);
   cursor: pointer;
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 640px) {
+  .match-card {
+    height: 8rem;
+  }
 }
 
 /* Speed Swipe Animations */

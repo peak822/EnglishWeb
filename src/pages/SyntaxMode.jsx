@@ -125,13 +125,13 @@ const SyntaxMode = () => {
             </h3>
             
             {/* Assembly Area */}
-            <div className={`letters-container mb-12 ${status === 'incorrect' ? 'shake' : ''}`} style={{ gap: '1rem', minHeight: '60px' }}>
+            <div className={`letters-container flex-wrap justify-center mb-12 ${status === 'incorrect' ? 'shake' : ''}`} style={{ gap: '0.5rem', minHeight: '60px' }}>
               {assembledWords.map((slot, i) => (
                 <div 
                   key={i} 
-                  className={`letter-slot ${slot ? 'filled' : ''} ${status === 'incorrect' ? 'error' : ''}`}
+                  className={`letter-slot ${slot ? 'filled' : ''} ${status === 'incorrect' ? 'error' : ''} px-2 md:px-4 text-base md:text-xl rounded-[var(--radius-sm)]`}
                   onClick={() => handleSlotClick(slot, i)}
-                  style={{ width: 'auto', minWidth: '60px', padding: '0 1rem', height: '3rem', fontSize: '1.25rem', borderRadius: 'var(--radius-sm)' }}
+                  style={{ width: 'auto', minWidth: '40px', height: '3rem' }}
                 >
                   {slot ? slot.word : ''}
                 </div>
@@ -139,13 +139,13 @@ const SyntaxMode = () => {
             </div>
 
             {/* Word Bank */}
-            <div className="letters-container border-t border-[rgba(255,255,255,0.05)] pt-12" style={{ gap: '1rem' }}>
+            <div className="letters-container flex-wrap justify-center border-t border-[rgba(255,255,255,0.05)] pt-8 md:pt-12" style={{ gap: '0.5rem' }}>
               {scrambledWords.map(wordObj => (
                 <div 
                   key={wordObj.id} 
-                  className={`letter-block ${wordObj.used ? 'used' : ''}`}
+                  className={`letter-block ${wordObj.used ? 'used' : ''} px-2 md:px-4 text-base md:text-xl rounded-[var(--radius-sm)]`}
                   onClick={() => handleWordClick(wordObj)}
-                  style={{ width: 'auto', minWidth: '60px', padding: '0 1rem', height: '3rem', fontSize: '1.25rem', borderRadius: 'var(--radius-sm)' }}
+                  style={{ width: 'auto', minWidth: '40px', height: '3rem' }}
                 >
                   {wordObj.word}
                 </div>

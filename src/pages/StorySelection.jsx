@@ -20,37 +20,23 @@ const StorySelection = () => {
     : [];
 
   return (
-    <div className="container animate-fade-up" style={{ maxWidth: '1000px', margin: '0 auto' }}>
-      <Card style={{ padding: '2rem', marginBottom: '2.5rem', textAlign: 'center' }}>
+    <div className="container animate-fade-up max-w-5xl mx-auto px-4">
+      <Card className="p-6 md:p-8 mb-10 text-center">
         <h2 className="text-gradient mb-4">Short Story Reading</h2>
-        <p style={{ color: 'var(--color-neutral)', maxWidth: '600px', margin: '0 auto', fontSize: '1.1rem' }}>
+        <p className="text-[var(--color-neutral)] max-w-2xl mx-auto text-lg">
           Choose a story to read. Click on any word in the story to see its meaning from the Oxford 3000 vocabulary list.
         </p>
       </Card>
 
       {!selectedLevel ? (
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-          gap: '1.5rem',
-          marginBottom: '3rem'
-        }}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {categories.map(category => {
             const Icon = category.icon;
             return (
               <Card 
                 key={category.id} 
-                style={{ 
-                  padding: '2rem',
-                  cursor: 'pointer',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  textAlign: 'center',
-                  gap: '1rem'
-                }}
+                className="ui-card hover-glow p-8 cursor-pointer flex flex-col items-center text-center gap-4"
                 onClick={() => setSelectedLevel(category.id)}
-                className="ui-card hover-glow"
               >
                 <div style={{ 
                   padding: '1rem', 
@@ -67,38 +53,15 @@ const StorySelection = () => {
             );
           })}
         </div>
-      ) : (
         <div>
-          <div style={{ display: 'flex', justifyContent: 'flex-start', marginBottom: '2rem' }}>
-            <button 
-              className="ui-btn ui-btn-secondary"
-              style={{ padding: '0.5rem 1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
-              onClick={() => setSelectedLevel(null)}
-            >
-              <ArrowLeft size={16} />
-              กลับไปเลือกระดับ (Back to Levels)
-            </button>
-          </div>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-            gap: '1.5rem',
-            marginBottom: '3rem'
-          }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {filteredStories.map(story => {
           const levelClass = story.level.charAt(0);
           return (
             <Card 
               key={story.id} 
-              style={{ 
-                padding: '1.5rem',
-                cursor: 'pointer',
-                display: 'flex',
-                flexDirection: 'column',
-                height: '100%'
-              }}
+              className="ui-card hover-glow p-6 cursor-pointer flex flex-col h-full"
               onClick={() => navigate(`/story-mode/${story.id}`)}
-              className="ui-card hover-glow"
             >
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
                 <span style={{
@@ -145,21 +108,31 @@ const StorySelection = () => {
         </div>
       )}
 
-      <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-        <Card style={{ 
-          display: 'inline-block', 
-          padding: '1.5rem 3rem'
-        }}>
-          <button 
-            className="ui-btn ui-btn-secondary"
-            style={{ padding: '0.75rem 2rem' }}
-            onClick={() => navigate('/')}
-          >
-            <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center' }}>
-              <ArrowLeft size={18} />
-              กลับหน้าแรก
-            </span>
-          </button>
+      <div className="text-center mb-8">
+        <Card className="inline-block p-4 md:p-8">
+          {selectedLevel ? (
+            <button 
+              className="ui-btn ui-btn-secondary"
+              style={{ padding: '0.75rem 2rem' }}
+              onClick={() => setSelectedLevel(null)}
+            >
+              <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center' }}>
+                <ArrowLeft size={18} />
+                กลับไปเลือกระดับ (Back to Levels)
+              </span>
+            </button>
+          ) : (
+            <button 
+              className="ui-btn ui-btn-secondary"
+              style={{ padding: '0.75rem 2rem' }}
+              onClick={() => navigate('/')}
+            >
+              <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center' }}>
+                <ArrowLeft size={18} />
+                กลับหน้าแรก
+              </span>
+            </button>
+          )}
         </Card>
       </div>
     </div>

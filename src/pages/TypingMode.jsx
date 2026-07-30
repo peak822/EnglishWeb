@@ -183,7 +183,7 @@ const TypingMode = () => {
               </form>
 
               {(status === 'correct' || status === 'revealed') && (
-                <div className="mt-8 animate-fade-up text-center p-6 bg-[rgba(255,255,255,0.05)] rounded-[var(--radius-md)] border border-[rgba(0,255,255,0.2)]" style={{ width: '100%', maxWidth: '400px' }}>
+                <div className="mt-8 mx-auto animate-fade-up text-center p-6 bg-[rgba(255,255,255,0.05)] rounded-[var(--radius-md)] border border-[rgba(0,255,255,0.2)] w-full max-w-sm">
                   <h3 className="text-2xl font-bold text-[var(--color-accent)] mb-2">{currentWord.meaning}</h3>
                   <p className="font-mono text-[var(--color-neutral)] opacity-80">/{currentWord.ipa || 'no ipa'}/</p>
                   <p className={`mt-4 font-semibold text-sm ${status === 'correct' ? 'text-[var(--color-primary)]' : 'text-red-400'}`}>

@@ -87,13 +87,10 @@ const StoryReader = () => {
   };
 
   return (
-    <div className="container animate-fade-up" style={{ maxWidth: '800px', margin: '0 auto', paddingBottom: '100px' }}>
+    <div className="container animate-fade-up max-w-4xl mx-auto pb-24 px-4">
       
       {/* Header Container */}
-      <Card style={{
-        padding: '1.5rem',
-        marginBottom: '2rem'
-      }}>
+      <Card className="p-4 md:p-6 mb-8">
         {/* Back Button */}
         <div style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}>
           <button 
@@ -143,23 +140,14 @@ const StoryReader = () => {
       </Card>
 
       {/* Story Content */}
-      <Card style={{ padding: '2.5rem', lineHeight: '2', fontSize: '1.25rem', color: 'rgba(255,255,255,0.9)' }}>
+      <Card className="p-6 md:p-10 leading-loose text-lg md:text-xl text-white/90">
         {renderInteractiveText(story.content)}
       </Card>
 
       {/* Word Details Modal/Drawer */}
       {selectedWord && (
-        <div style={{
-          position: 'fixed',
-          bottom: '2rem',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          width: '90%',
-          maxWidth: '500px',
-          zIndex: 100,
-          animation: 'slideUp 0.3s ease-out'
-        }}>
-          <Card style={{ padding: '1.5rem', border: '1px solid var(--color-primary)', boxShadow: '0 10px 30px rgba(0,0,0,0.5), 0 0 20px rgba(0,255,255,0.1)' }}>
+        <div className="fixed bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 w-11/12 max-w-lg z-[100] animate-[slideUp_0.3s_ease-out]">
+          <Card className="p-6 border border-[var(--color-primary)] shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_20px_rgba(0,255,255,0.1)]">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
               <div>
                 <h3 style={{ fontSize: '1.5rem', color: 'var(--color-primary)', margin: '0 0 0.25rem 0', fontWeight: 'bold' }}>
