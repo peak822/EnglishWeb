@@ -53,18 +53,19 @@ const POSGuide = () => {
   };
 
   return (
-    <div className="container animate-fade-up max-w-5xl mx-auto px-4">
-      {/* Header */}
-      <div className="text-center mb-8">
-        <h2 className="text-gradient mb-4">Part of Speech Guide</h2>
-        <p className="text-[var(--color-neutral)] max-w-2xl mx-auto">
-          เรียนรู้ชนิดของคำในภาษาอังกฤษ พร้อมตัวอย่างจากคลัง Oxford 3000
-        </p>
-      </div>
+    <div className="container animate-fade-up max-w-5xl mx-auto px-4 mt-4 md:mt-8">
+      {/* Header and Tabs Container */}
+      <div className="bg-black/95 backdrop-blur-xl border border-white/20 p-6 md:p-8 rounded-3xl mb-10 shadow-[0_0_40px_rgba(0,0,0,0.8)]">
+        {/* Header */}
+        <div className="text-center mb-8">
+          <h2 className="text-gradient mb-4 text-3xl md:text-5xl font-extrabold tracking-tight">Part of Speech Guide</h2>
+          <p className="text-gray-300 max-w-2xl mx-auto text-base md:text-lg">
+            เรียนรู้ชนิดของคำในภาษาอังกฤษ พร้อมตัวอย่างจากคลัง Oxford 3000
+          </p>
+        </div>
 
-      {/* Tab Selector */}
-      <div className="bg-black/75 backdrop-blur-md border border-white/10 p-4 rounded-2xl mb-8 shadow-2xl">
-        <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-[var(--color-primary)] scrollbar-track-transparent">
+        {/* Tab Selector */}
+        <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-[var(--color-primary)] scrollbar-track-transparent px-2">
           {POS_LESSONS.map((pos, index) => (
             <button
               key={pos.name}
@@ -72,22 +73,22 @@ const POSGuide = () => {
               style={{
                 padding: '0.6rem 1.25rem',
                 borderRadius: '9999px',
-                border: activeTab === index ? `2px solid ${pos.color}` : '2px solid rgba(255,255,255,0.15)',
-                background: activeTab === index ? `${pos.color}25` : 'rgba(255,255,255,0.05)',
-                color: activeTab === index ? pos.color : 'rgba(255,255,255,0.85)',
+                border: activeTab === index ? `2px solid ${pos.color}` : '2px solid rgba(255,255,255,0.3)',
+                background: activeTab === index ? `${pos.color}30` : 'rgba(0,0,0,0.6)',
+                color: activeTab === index ? pos.color : '#ffffff',
                 fontWeight: activeTab === index ? 'bold' : '600',
                 fontSize: '0.9rem',
                 cursor: 'pointer',
                 whiteSpace: 'nowrap',
                 transition: 'all 0.2s ease',
-                boxShadow: activeTab === index ? `0 0 15px ${pos.color}50` : 'none',
+                boxShadow: activeTab === index ? `0 0 20px ${pos.color}60` : 'none',
                 fontFamily: 'inherit',
                 display: 'flex',
                 alignItems: 'center',
                 gap: '0.5rem'
               }}
             >
-              <span>{pos.icon}</span>
+              <span style={{ fontSize: '1.2rem' }}>{pos.icon}</span>
               {pos.name}
             </button>
           ))}
