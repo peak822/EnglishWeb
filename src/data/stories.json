@@ -22,5 +22,37 @@
     "level": "B1",
     "readTime": "3 mins",
     "content": "The journey to Mars took seven long months. When the spacecraft finally landed, the crew felt a mixture of relief and anxiety. They were the first humans to establish a permanent colony on the red planet. Captain Reynolds stepped out of the airlock, wearing his protective suit. The landscape was empty, covered in red dust and sharp rocks. Their main priority was to deploy the solar panels and secure the habitat modules before the temperature dropped rapidly at night. It was a dangerous mission, but it represented a huge leap for humanity."
+  },
+  {
+    "id": "story-a1-2",
+    "title": "Morning Coffee",
+    "genre": "Daily Life",
+    "level": "A1",
+    "readTime": "1 min",
+    "content": "I wake up at seven o'clock. The sun is bright. I walk to the kitchen. I make a cup of hot coffee. The coffee smells good. I look out the window and see birds. I drink my coffee slowly. Then, I take a shower and get dressed. Now, I am ready for work."
+  },
+  {
+    "id": "story-a2-2",
+    "title": "The Supermarket Trip",
+    "genre": "Daily Life",
+    "level": "A2",
+    "readTime": "2 mins",
+    "content": "On Saturday afternoon, I went to the supermarket. I had a long shopping list. First, I found fresh vegetables and apples in the produce section. Next, I walked to the dairy aisle to get milk and cheese. I could not find the bread, so I asked a friendly worker for help. He pointed me to the bakery. Finally, I waited in line at the checkout, paid with my card, and carried my bags home."
+  },
+  {
+    "id": "story-b1-2",
+    "title": "A Busy Day at the Office",
+    "genre": "Daily Life",
+    "level": "B1",
+    "readTime": "3 mins",
+    "content": "Tuesday was a very busy day at the office. I arrived at 8:30 AM and immediately started answering urgent emails. At 10:00 AM, my team had a meeting to discuss the new marketing project. My manager assigned me three new tasks to complete by Friday. I was feeling a bit stressed, but at noon, I went out for lunch with my coworkers. We talked about our weekend plans and laughed a lot. After lunch, I felt much more relaxed and managed to finish most of my work before heading home."
+  },
+  {
+    "id": "story-b2-1",
+    "title": "Weekend Chores and Relaxation",
+    "genre": "Daily Life",
+    "level": "B2",
+    "readTime": "4 mins",
+    "content": "Balancing household responsibilities with personal time is essential for a productive weekend. This morning, I decided to tackle the accumulated chores early. I vacuumed the entire apartment, scrubbed the bathroom tiles, and did two loads of laundry. It was exhausting work, but seeing the sparkling clean environment was incredibly satisfying. By early afternoon, my tasks were complete. I brewed a pot of herbal tea and settled onto the sofa with a novel I had been eager to read. The contrast between the morning's physical exertion and the afternoon's quiet relaxation made the day feel perfectly balanced."
   }
 ]
