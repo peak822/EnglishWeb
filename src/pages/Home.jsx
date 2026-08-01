@@ -1,213 +1,356 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Type, Puzzle, HelpCircle, ArrowRight, BookOpen, Grid, Zap, Volume2 } from 'lucide-react';
-import Card from '../components/Card';
+import { 
+  BookOpen, 
+  Volume2, 
+  Grid, 
+  Zap, 
+  HelpCircle, 
+  Type, 
+  Puzzle, 
+  ArrowRight, 
+  Flame, 
+  Award, 
+  Sparkles, 
+  Compass,
+  Layers,
+  FileText,
+  Bookmark
+} from 'lucide-react';
 import Tilt from 'react-parallax-tilt';
+import { useGamification } from '../hooks/useGamification';
 
 const Home = () => {
   const navigate = useNavigate();
+  const { exp, level, rankTitle, rankColor, rankIcon, streakDays, badges, nextLevelExp, currentLevelBaseExp } = useGamification();
 
-  const libraryModes = [
+  const expProgress = Math.max(0, Math.min(100, ((exp - currentLevelBaseExp) / (nextLevelExp - currentLevelBaseExp)) * 100));
+
+  const domains = [
     {
-      id: 'read',
-      title: 'อ่านคำศัพท์',
-      description: 'Browse, search, and study the entire Oxford 3000 vocabulary list.',
-      icon: <BookOpen size={32} />,
-      path: '/read',
-      color: 'var(--color-surface)'
+      id: 'reading',
+      title: 'ทักษะการอ่านและการทำความเข้าใจ',
+      subtitle: 'Reading & Comprehension',
+      icon: '📖',
+      color: '#10b981',
+      modes: [
+        {
+          id: 'story-mode',
+          title: 'อ่านบทความสั้น',
+          subtitle: 'Interactive Short Stories',
+          description: 'ฝึกอ่านบทความภาษาอังกฤษเพลินๆ พร้อมแตะคำศัพท์เพื่อดูความหมายและฟังเสียงได้ทันที',
+          icon: <BookOpen size={28} />,
+          path: '/story-mode',
+          tag: '📖 Reading',
+          color: '#10b981'
+        },
+        {
+          id: 'read',
+          title: 'คลังคำศัพท์ Oxford 3000',
+          subtitle: 'Vocabulary Browser',
+          description: 'ค้นหาและเปิดดูคลังคำศัพท์ 3,000 คำหลักที่จำเป็นที่สุด พร้อมคำแปลและระดับความยาก A1-B2',
+          icon: <Compass size={28} />,
+          path: '/read',
+          tag: '📚 Vocab Bank',
+          color: '#38bdf8'
+        }
+      ]
     },
     {
-      id: 'pos-guide',
-      title: 'เรียนรู้ Part of Speech',
-      description: 'บทเรียนอธิบายชนิดของคำทั้ง 7 ประเภท พร้อมตัวอย่างจาก Oxford 3000',
-      icon: <BookOpen size={32} />,
-      path: '/pos-guide',
-      color: '#3B82F6' // blue
+      id: 'listening',
+      title: 'ทักษะการฟังและการออกเสียง',
+      subtitle: 'Listening & Pronunciation',
+      icon: '🎧',
+      color: '#4ade80',
+      modes: [
+        {
+          id: 'listen',
+          title: 'ทายคำจากการฟัง',
+          subtitle: 'Audio Recognition Drill',
+          description: 'ฝึกหูให้คุ้นเคยกับสำเนียงเจ้าของภาษา ฟังเสียงอ่านคำศัพท์แล้วทายตัวสะกดและความหมาย',
+          icon: <Volume2 size={28} />,
+          path: '/listen',
+          tag: '🎧 Audio Test',
+          color: '#4ade80'
+        }
+      ]
     },
     {
-      id: 'story-mode',
-      title: 'อ่านบทความสั้น',
-      description: 'ฝึกทักษะการอ่านบทความภาษาอังกฤษ พร้อมคลิกดูความหมายคำศัพท์จาก Oxford 3000 ได้ทันที',
-      icon: <BookOpen size={32} />,
-      path: '/story-mode',
-      color: '#10B981' // emerald
+      id: 'vocabulary',
+      title: 'คลังคำศัพท์และความจำไว',
+      subtitle: 'Vocabulary & Reflexes',
+      icon: '⚡',
+      color: '#00f2fe',
+      modes: [
+        {
+          id: 'match',
+          title: 'เกมจับคู่คำศัพท์ (Match)',
+          subtitle: '3D Memory Matching',
+          description: 'ท้าทายความจำ! แตะเปิดการ์ด 3D เพื่อจับคู่คำศัพท์ภาษาอังกฤษกับความหมายภาษาไทยให้เร็วที่สุด',
+          icon: <Grid size={28} />,
+          path: '/match',
+          tag: '⚡ 3D Flip',
+          color: '#00f2fe'
+        },
+        {
+          id: 'swipe',
+          title: 'โหมดปัดการ์ดด่วน (Swipe)',
+          subtitle: 'Speed Reflex Swipe',
+          description: 'ทดสอบสัญชาตญาณความไว ปัดขวาเมื่อคำแปลถูกต้อง และปัดซ้ายเมื่อผิด ทำคอมโบต่อเนื่อง!',
+          icon: <Zap size={28} />,
+          path: '/swipe',
+          tag: '⚡ Reflex Drill',
+          color: '#f59e0b'
+        },
+        {
+          id: 'guess',
+          title: 'ทายคำศัพท์ (Guess)',
+          subtitle: 'Hint-Based Guessing',
+          description: 'ฝึกนึกคำศัพท์จากคำใบ้ เช่น ความหมาย ชนิดของคำ และความยาวตัวอักษร',
+          icon: <HelpCircle size={28} />,
+          path: '/guess',
+          tag: '🔍 Clues',
+          color: '#fbbf24'
+        },
+        {
+          id: 'typing',
+          title: 'พิมพ์คำศัพท์ (Typing)',
+          subtitle: 'Speed Typing & Recall',
+          description: 'ฝึกพิมพ์คำศัพท์จากความจำตามระดับและคำแปลภาษาไทย เพิ่มความจำของกล้ามเนื้อมือ',
+          icon: <Type size={28} />,
+          path: '/typing',
+          tag: '✍️ Typing Drill',
+          color: '#ec4899'
+        },
+        {
+          id: 'assemble',
+          title: 'ประกอบคำศัพท์ (Assemble)',
+          subtitle: 'Letter Scramble Puzzle',
+          description: 'เรียงตัวอักษรที่สลับตำแหน่งให้กลายเป็นคำศัพท์ที่ถูกต้อง ช่วยจำตัวสะกดได้อย่างแม่นยำ',
+          icon: <Puzzle size={28} />,
+          path: '/assemble',
+          tag: '🧩 Anagram',
+          color: '#a855f7'
+        }
+      ]
+    },
+    {
+      id: 'grammar',
+      title: 'ไวยากรณ์และโครงสร้างประโยค',
+      subtitle: 'Grammar & Structure',
+      icon: '🧩',
+      color: '#8b5cf6',
+      modes: [
+        {
+          id: 'pos',
+          title: 'แยกแยะชนิดของคำ (POS)',
+          subtitle: 'Rapid Fire Part of Speech',
+          description: 'แยกแยะชนิดของคำ (Noun, Verb, Adj, Adv) อย่างรวดเร็วด้วย UI สไตล์ Cyberpunk สุดล้ำ',
+          icon: <Zap size={28} />,
+          path: '/pos',
+          tag: '⚡ Rapid POS',
+          color: '#8b5cf6'
+        },
+        {
+          id: 'pos-guide',
+          title: 'คู่มือ Part of Speech 7 ชนิด',
+          subtitle: 'Comprehensive POS Guide',
+          description: 'บทเรียนสรุปชนิดของคำทั้ง 7 ชนิดอย่างละเอียด พร้อมตัวอย่างคำศัพท์จริงและเทคนิคจำง่าย',
+          icon: <Bookmark size={28} />,
+          path: '/pos-guide',
+          tag: '📘 Grammar Guide',
+          color: '#3b82f6'
+        },
+        {
+          id: 'syntax',
+          title: 'เรียงประโยค (Syntax)',
+          subtitle: 'Sentence Ordering Puzzle',
+          description: 'ประกอบชิ้นส่วนคำศัพท์ให้กลายเป็นประโยคภาษาอังกฤษที่ถูกต้องตามหลักไวยากรณ์',
+          icon: <Layers size={28} />,
+          path: '/syntax',
+          tag: '🧩 Sentence Flow',
+          color: '#f43f5e'
+        },
+        {
+          id: 'context',
+          title: 'เติมคำในช่องว่าง (Context)',
+          subtitle: 'Sentence Fill-in-the-Blank',
+          description: 'เลือกคำศัพท์ที่ถูกต้องมาเติมลงในประโยคจริง เพื่อเข้าใจบริบทการใช้งานอย่างถ่องแท้',
+          icon: <FileText size={28} />,
+          path: '/context',
+          tag: '📝 Context Mastery',
+          color: '#c084fc'
+        }
+      ]
     }
   ];
-
-  const starterModes = [
-    {
-      id: 'guess',
-      title: 'ทายคำศัพท์',
-      description: 'Guess the word based on hints like part of speech and length.',
-      icon: <HelpCircle size={32} />,
-      path: '/guess',
-      color: '#F59E0B'
-    },
-    {
-      id: 'match',
-      title: 'เกมจับคู่ (Match)',
-      description: 'Test your memory! Match English words with their Thai meanings.',
-      icon: <Grid size={32} />,
-      path: '/match',
-      color: '#00E1FF' // Bright Cyan
-    },
-    {
-      id: 'pos',
-      title: 'หมวดหมู่คำ (POS)',
-      description: 'ฝึกแยกแยะชนิดของคำ (Noun, Verb, Adj, etc.) อย่างรวดเร็วเพื่อสร้างความจำอัตโนมัติ',
-      icon: <Zap size={32} />,
-      path: '/pos',
-      color: '#8B5CF6' // violet
-    },
-    {
-      id: 'listen',
-      title: 'ทายคำจากการฟัง',
-      description: 'Listen to the word and guess its spelling and meaning.',
-      icon: <Volume2 size={32} />,
-      path: '/listen',
-      color: '#4ade80' // Green
-    }
-  ];
-
-  const intermediateModes = [
-    {
-      id: 'assemble',
-      title: 'ประกอบคำศัพท์',
-      description: 'Assemble scrambled letters to form the correct word.',
-      icon: <Puzzle size={32} />,
-      path: '/assemble',
-      color: 'var(--color-accent)'
-    },
-    {
-      id: 'context',
-      title: 'โหมดเติมคำ (Context)',
-      description: 'Fill in the blanks in real-world sentences to understand context.',
-      icon: <Type size={32} />,
-      path: '/context',
-      color: '#8B5CF6' // violet
-    },
-    {
-      id: 'swipe',
-      title: 'โหมดปัดซ้ายขวา',
-      description: 'Test your reflexes! Swipe right if the meaning matches, left if it is wrong.',
-      icon: <Zap size={32} />,
-      path: '/swipe',
-      color: '#F59E0B' // amber
-    }
-  ];
-
-  const advancedModes = [
-    {
-      id: 'typing',
-      title: 'พิมพ์คำศัพท์',
-      description: 'Practice typing vocabulary from memory based on its type and level.',
-      icon: <Type size={32} />,
-      path: '/typing',
-      color: 'var(--color-primary)'
-    },
-    {
-      id: 'syntax',
-      title: 'เรียงประโยค (Syntax)',
-      description: 'Assemble scrambled words to form a correct English sentence.',
-      icon: <Puzzle size={32} />,
-      path: '/syntax',
-      color: '#EC4899' // pink
-    }
-  ];
-
-  const renderModeGrid = (modeList) => (
-    <div className="mode-grid">
-      {modeList.map((mode) => (
-        <Tilt 
-          key={mode.id} 
-          glareEnable={true} 
-          glareMaxOpacity={0.15} 
-          glareColor={mode.color} 
-          glarePosition="all" 
-          tiltMaxAngleX={10} 
-          tiltMaxAngleY={10}
-          scale={1.02}
-          transitionSpeed={2500}
-        >
-          <Card 
-            className="mode-card flex flex-col h-full"
-            onClick={() => navigate(mode.path)}
-          >
-            <div className="mode-icon" style={{ color: mode.color, borderColor: mode.color }}>
-              {mode.icon}
-            </div>
-            <h3 className="text-2xl mb-3">{mode.title}</h3>
-            <p className="mb-6 flex-grow">{mode.description}</p>
-            
-            <div className="flex items-center gap-2 mt-auto pt-4 border-t border-[rgba(255,255,255,0.05)]" style={{ color: mode.color, fontWeight: 600 }}>
-              <span>Start Practice</span>
-              <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
-            </div>
-          </Card>
-        </Tilt>
-      ))}
-    </div>
-  );
 
   return (
-    <div className="container animate-fade-up">
-      <section className="hero-section text-center">
-        <div className="mx-auto" style={{ maxWidth: '800px' }}>
-          <h1 className="text-gradient glitch-hover" data-text="Discover the Joy of English" style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)' }}>Discover the Joy of English</h1>
-          <p className="mt-6 text-xl mx-auto" style={{ color: 'var(--color-neutral)' }}>
-            Elevate your vocabulary step by step in a relaxed environment. Choose a learning mode that fits your pace, and start growing your English skills today.
-          </p>
-        </div>
-      </section>
-
-      <section className="mt-16">
-        <div className="mx-auto text-center mb-8" style={{ background: 'rgba(2,2,5,0.65)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)', padding: '2rem', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(255,255,255,0.1)', boxShadow: '0 8px 32px 0 rgba(0,255,255,0.05)' }}>
-          <h2 className="text-center mb-2 glitch-hover" data-text="Select a Learning Mode">Select a Learning Mode</h2>
-          <p className="text-center" style={{ color: 'var(--color-neutral)' }}>
-            Choose a mode to start practicing and earning EXP
-          </p>
-        </div>
+    <div className="container animate-fade-up" style={{ maxWidth: '1180px', padding: '1rem 1.25rem 4rem 1.25rem' }}>
+      
+      {/* 🚀 CYBERPUNK COMMAND DECK */}
+      <section className="home-command-deck">
         
-        <div className="difficulty-section">
-          <div className="section-header flex items-center justify-between flex-wrap gap-2">
-            <h3 className="text-2xl font-bold flex items-center gap-2" style={{ color: 'var(--color-secondary)' }}>
-              📖 The Library
-            </h3>
-            <span className="text-sm font-medium text-[var(--color-neutral)] bg-[rgba(255,255,255,0.05)] px-3 py-1 rounded-full border border-[rgba(255,255,255,0.05)]">คลังความรู้</span>
+        {/* Profile & EXP Hub */}
+        <div className="home-deck-card" style={{ '--card-accent': rankColor }}>
+          <div className="home-profile-header">
+            <div className="home-avatar-wrap">
+              <div className="home-avatar-circle" style={{ color: rankColor, borderColor: rankColor }}>
+                <span style={{ fontSize: '1.75rem' }}>{rankIcon}</span>
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <span className="text-xl font-extrabold text-white">Commander</span>
+                  <span className="home-rank-badge" style={{ color: rankColor, borderColor: rankColor, background: `${rankColor}1a` }}>
+                    Lv.{level} • {rankTitle}
+                  </span>
+                </div>
+                <div className="text-xs text-[#94a3b8] mt-0.5">
+                  ความก้าวหน้าสู่เลเวลถัดไป
+                </div>
+              </div>
+            </div>
+
+            {/* Streak & Badges */}
+            <div className="flex items-center gap-2">
+              <div className="home-streak-badge">
+                <Flame size={18} fill="#f59e0b" />
+                <span>{streakDays} วันต่อเนื่อง</span>
+              </div>
+              {badges.length > 0 && (
+                <div className="flex items-center gap-1 bg-[rgba(168,85,247,0.15)] border border-[rgba(168,85,247,0.4)] px-3 py-1.5 rounded-full text-[#c084fc] font-bold text-xs">
+                  <Award size={16} />
+                  <span>{badges.length}</span>
+                </div>
+              )}
+            </div>
           </div>
-          {renderModeGrid(libraryModes)}
+
+          {/* EXP Bar */}
+          <div className="home-exp-track">
+            <div className="home-exp-fill" style={{ width: `${expProgress}%` }} />
+          </div>
+          <div className="flex justify-between items-center text-xs font-semibold text-[#94a3b8]">
+            <span style={{ color: '#00f2fe' }}>{exp} EXP</span>
+            <span>เป้าหมาย {nextLevelExp} EXP ({Math.round(expProgress)}%)</span>
+          </div>
         </div>
 
-        <div className="difficulty-section">
-          <div className="section-header flex items-center justify-between flex-wrap gap-2">
-            <h3 className="text-2xl font-bold flex items-center gap-2" style={{ color: 'var(--color-primary)' }}>
-              🌱 Starter
-            </h3>
-            <span className="text-sm font-medium text-[var(--color-neutral)] bg-[rgba(255,255,255,0.05)] px-3 py-1 rounded-full border border-[rgba(255,255,255,0.05)]">เรียนรู้และจดจำ</span>
+        {/* Spotlight Card */}
+        <div className="home-deck-card" style={{ '--card-accent': '#f59e0b' }}>
+          <div className="home-spotlight-beacon">
+            <span className="beacon-dot" />
+            <span>⚡ โหมดเด่นแนะนำวันนี้ (Daily Spotlight)</span>
           </div>
-          {renderModeGrid(starterModes)}
+          <h3 className="text-lg font-bold text-white mb-1">Rapid Fire POS: แยกแยะชนิดของคำ</h3>
+          <p className="text-xs text-[#94a3b8] mb-4 leading-relaxed">
+            ฝึกจำแนก Noun, Verb, Adj, Adv ด้วยความเร็วสูง สร้างสัญชาตญาณไวยากรณ์อัตโนมัติ พร้อม UI สุดล้ำ!
+          </p>
+          <button 
+            className="home-spotlight-btn"
+            onClick={() => navigate('/pos')}
+          >
+            <span className="flex items-center gap-2 text-sm">
+              <Sparkles size={18} className="text-[#fbbf24]" />
+              <span>เริ่มฝึกโหมดแนะนำ</span>
+            </span>
+            <ArrowRight size={18} />
+          </button>
         </div>
 
-        <div className="difficulty-section">
-          <div className="section-header flex items-center justify-between flex-wrap gap-2">
-            <h3 className="text-2xl font-bold flex items-center gap-2" style={{ color: 'var(--color-accent)' }}>
-              🚀 Intermediate
-            </h3>
-            <span className="text-sm font-medium text-[var(--color-neutral)] bg-[rgba(255,255,255,0.05)] px-3 py-1 rounded-full border border-[rgba(255,255,255,0.05)]">ทบทวนและทำความเข้าใจ</span>
-          </div>
-          {renderModeGrid(intermediateModes)}
-        </div>
-
-        <div className="difficulty-section">
-          <div className="section-header flex items-center justify-between flex-wrap gap-2">
-            <h3 className="text-2xl font-bold flex items-center gap-2" style={{ color: 'var(--color-secondary)' }}>
-              🔥 Advanced
-            </h3>
-            <span className="text-sm font-medium text-[var(--color-neutral)] bg-[rgba(255,255,255,0.05)] px-3 py-1 rounded-full border border-[rgba(255,255,255,0.05)]">ท้าทายความแม่นยำ</span>
-          </div>
-          {renderModeGrid(advancedModes)}
-        </div>
       </section>
+
+      {/* 🗂️ 4 SKILL-BASED DOMAIN SECTIONS */}
+      {domains.map((domain) => (
+        <section key={domain.id} className="home-domain-section">
+          
+          {/* Domain Section Header */}
+          <div className="home-domain-header">
+            <div className="home-domain-title-wrap">
+              <div 
+                className="home-domain-icon"
+                style={{ 
+                  background: `${domain.color}1a`, 
+                  border: `1.5px solid ${domain.color}66`
+                }}
+              >
+                <span>{domain.icon}</span>
+              </div>
+              <div>
+                <h2 className="text-xl font-bold text-white flex items-center gap-2">
+                  {domain.title}
+                </h2>
+                <div className="text-xs font-medium text-[#94a3b8]">
+                  {domain.subtitle}
+                </div>
+              </div>
+            </div>
+
+            <div className="home-domain-count">
+              {domain.modes.length} โหมดการฝึก
+            </div>
+          </div>
+
+          {/* Mode Cards Grid */}
+          <div className="home-mode-grid">
+            {domain.modes.map((mode) => (
+              <Tilt
+                key={mode.id}
+                glareEnable={true}
+                glareMaxOpacity={0.12}
+                glareColor={mode.color}
+                glarePosition="all"
+                tiltMaxAngleX={8}
+                tiltMaxAngleY={8}
+                scale={1.02}
+                transitionSpeed={2000}
+              >
+                <div 
+                  className="home-mode-card"
+                  style={{ '--card-color': mode.color }}
+                  onClick={() => navigate(mode.path)}
+                >
+                  <div className="home-mode-top">
+                    <div 
+                      className="home-mode-icon-box"
+                      style={{ 
+                        color: mode.color, 
+                        background: `${mode.color}1a`,
+                        border: `1.5px solid ${mode.color}55`
+                      }}
+                    >
+                      {mode.icon}
+                    </div>
+                    <span 
+                      className="home-mode-tag"
+                      style={{ 
+                        color: mode.color, 
+                        background: `${mode.color}15`,
+                        border: `1px solid ${mode.color}40`
+                      }}
+                    >
+                      {mode.tag}
+                    </span>
+                  </div>
+
+                  <h3 className="home-mode-title">{mode.title}</h3>
+                  <div className="text-xs font-semibold mb-2" style={{ color: mode.color }}>
+                    {mode.subtitle}
+                  </div>
+                  <p className="home-mode-desc">{mode.description}</p>
+
+                  <div className="home-mode-action" style={{ color: mode.color }}>
+                    <span>เข้าสู่โหมดฝึก</span>
+                    <ArrowRight size={18} className="home-mode-action-arrow" />
+                  </div>
+                </div>
+              </Tilt>
+            ))}
+          </div>
+
+        </section>
+      ))}
+
     </div>
   );
 };
