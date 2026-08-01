@@ -1382,8 +1382,22 @@ a:hover {
 /* Mode Grid & Mode Cards */
 .home-mode-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
   gap: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .home-deck-card {
+    padding: 1.25rem;
+    border-radius: 18px;
+  }
+  .home-mode-card {
+    padding: 1.25rem;
+    border-radius: 18px;
+  }
+  .home-profile-header {
+    gap: 0.75rem;
+  }
 }
 
 .home-mode-card {
