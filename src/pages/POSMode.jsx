@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Timer, Zap, ArrowLeft, RotateCcw } from 'lucide-react';
+import { Timer, Zap, ArrowLeft, RotateCcw, Volume2, Trophy, Flame, Sparkles, CheckCircle2 } from 'lucide-react';
 import { useGamification } from '../hooks/useGamification';
-import { generateQuestion } from '../utils/posUtils';
+import { generateQuestion, POS_DETAILS } from '../utils/posUtils';
 import vocabularyData from '../data/vocabulary.json';
-import Card from '../components/Card';
 
 const POSMode = () => {
   const navigate = useNavigate();
@@ -14,45 +13,84 @@ const POSMode = () => {
   const [timeLeft, setTimeLeft] = useState(60);
   const [score, setScore] = useState(0);
   const [streak, setStreak] = useState(0);
+  const [maxStreak, setMaxStreak] = useState(0);
   const [correctAnswers, setCorrectAnswers] = useState(0);
+  const [totalAnswered, setTotalAnswered] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(null);
   
-  // To handle button flashing for wrong answer
-  const [wrongSelection, setWrongSelection] = useState(null);
+  // Feedback states
+  const [feedback, setFeedback] = useState(null); // { type: 'correct' | 'wrong', pos: string }
+  const [scorePopup, setScorePopup] = useState(null);
+
+  const playWordAudio = (text) => {
+    if ('speechSynthesis' in window && text) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      window.speechSynthesis.speak(utterance);
+    }
+  };
 
   const startGame = () => {
     setScore(0);
     setStreak(0);
+    setMaxStreak(0);
     setCorrectAnswers(0);
+    setTotalAnswered(0);
     setTimeLeft(60);
+    setFeedback(null);
+    setScorePopup(null);
     setGameState('playing');
-    setCurrentQuestion(generateQuestion(vocabularyData));
-    setWrongSelection(null);
+    
+    const firstQ = generateQuestion(vocabularyData);
+    setCurrentQuestion(firstQ);
+    if (firstQ?.currentWord?.word) {
+      playWordAudio(firstQ.currentWord.word);
+    }
   };
 
   const handleAnswer = (selectedPOS) => {
-    if (gameState !== 'playing' || !currentQuestion) return;
+    if (gameState !== 'playing' || !currentQuestion || feedback) return;
+
+    setTotalAnswered(t => t + 1);
 
     if (selectedPOS === currentQuestion.correctPOS) {
-      // Correct
-      setScore(s => s + 10 + Math.floor(streak / 5) * 5); // Bonus for high streak
-      setStreak(s => s + 1);
+      // Correct answer
+      const streakBonus = Math.floor(streak / 5) * 5;
+      const pointsGained = 10 + streakBonus;
+      
+      setScore(s => s + pointsGained);
+      setStreak(s => {
+        const next = s + 1;
+        setMaxStreak(m => Math.max(m, next));
+        return next;
+      });
       setCorrectAnswers(c => c + 1);
-      setTimeLeft(t => Math.min(60, t + 1)); // Max 60 seconds
-      setWrongSelection(null);
+      setTimeLeft(t => Math.min(60, t + 1));
       
-      // Next question immediately
-      setCurrentQuestion(generateQuestion(vocabularyData));
-    } else {
-      // Wrong
-      setStreak(0);
-      setTimeLeft(t => Math.max(0, t - 2)); // Penalty
-      setWrongSelection(selectedPOS);
-      
-      // Clear red flash after 300ms
+      setFeedback({ type: 'correct', pos: selectedPOS });
+      setScorePopup(`+${pointsGained}`);
+
       setTimeout(() => {
-        setWrongSelection(null);
-      }, 300);
+        setFeedback(null);
+        setScorePopup(null);
+        const nextQ = generateQuestion(vocabularyData);
+        setCurrentQuestion(nextQ);
+        if (nextQ?.currentWord?.word) {
+          playWordAudio(nextQ.currentWord.word);
+        }
+      }, 250);
+    } else {
+      // Wrong answer
+      setStreak(0);
+      setTimeLeft(t => Math.max(0, t - 2));
+      setFeedback({ type: 'wrong', pos: selectedPOS });
+      setScorePopup('-2s');
+
+      setTimeout(() => {
+        setFeedback(null);
+        setScorePopup(null);
+      }, 350);
     }
   };
 
@@ -87,187 +125,264 @@ const POSMode = () => {
     }
   }, [gameState, score, addExp]);
 
+  // IDLE SCREEN
   if (gameState === 'idle') {
     return (
-      <div className="container animate-fade-up flex flex-col items-center justify-center" style={{ minHeight: '70vh' }}>
-        <div 
-          className="text-center mb-8 w-full" 
-          style={{ 
-            background: 'rgba(2,2,5,0.85)', 
-            padding: '3rem 2rem', 
-            borderRadius: '1.5rem', 
-            border: '1px solid rgba(255,255,255,0.15)', 
-            backdropFilter: 'blur(12px)', 
-            maxWidth: '650px', 
-            margin: '0 auto 2.5rem auto',
-            boxShadow: '0 10px 40px rgba(0,0,0,0.5)'
-          }}
-        >
-          <Zap size={64} className="mx-auto mb-4 animate-pulse" style={{ color: 'var(--color-accent)' }} />
-          <h1 className="font-bold mb-4 glitch-hover text-gradient" data-text="Rapid Fire POS" style={{ fontSize: 'clamp(2.5rem, 5vw, 3.5rem)' }}>
+      <div className="pos-game-wrapper animate-fade-up" style={{ minHeight: '80vh', justifyContent: 'center' }}>
+        <div className="pos-modal-card pos-glass-card">
+          <div className="pos-icon-circle" style={{ background: 'rgba(0, 255, 255, 0.1)', border: '1px solid rgba(0, 255, 255, 0.35)' }}>
+            <Zap size={44} className="animate-pulse" style={{ color: 'var(--color-primary)' }} />
+          </div>
+          
+          <h1 className="font-extrabold text-gradient mb-2" style={{ fontSize: 'clamp(2rem, 5vw, 3rem)' }}>
             Rapid Fire POS
           </h1>
-          <p className="text-xl mx-auto leading-relaxed" style={{ color: 'var(--color-secondary)', maxWidth: '500px' }}>
-            ท้าทายความเร็วในการแยกแยะชนิดของคำศัพท์ (Part of Speech) <br/>
-            ตอบให้ถูกและเร็วที่สุดในเวลา <span style={{ color: 'var(--color-primary)', fontWeight: 'bold' }}>60 วินาที!</span>
+          
+          <p style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.6, margin: '0 auto 1.5rem auto', maxWidth: '480px' }}>
+            ทดสอบความไวในการแยกแยะชนิดของคำศัพท์ (Part of Speech)<br/>
+            ตอบให้ถูกและเร็วที่สุดเพื่อเก็บคอมโบในเวลา <span style={{ color: '#00ffff', fontWeight: 'bold' }}>60 วินาที!</span>
           </p>
+
+          {/* Quick Guide Grid */}
+          <div className="pos-guide-grid">
+            {Object.entries(POS_DETAILS).slice(0, 4).map(([key, info]) => (
+              <div key={key} className="pos-guide-item" style={{ border: `1px solid ${info.border}` }}>
+                <div style={{ fontSize: '1.3rem', marginBottom: '0.2rem' }}>{info.icon}</div>
+                <div style={{ color: info.color, fontWeight: 800, fontSize: '0.85rem' }}>{info.nameEn}</div>
+                <div style={{ color: '#94a3b8', fontSize: '0.75rem' }}>{info.nameTh}</div>
+              </div>
+            ))}
+          </div>
+          
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', alignItems: 'center', marginTop: '1.5rem' }}>
+            <button className="pos-primary-btn" onClick={startGame}>
+              <Zap size={22} fill="currentColor" />
+              <span>เริ่มเกมทันที!</span>
+            </button>
+            
+            <button className="pos-secondary-btn" onClick={() => navigate('/')}>
+              <ArrowLeft size={18} />
+              <span>กลับหน้าหลัก</span>
+            </button>
+          </div>
         </div>
-        
-        <button 
-          className="ui-btn ui-btn-primary flex items-center justify-center gap-2 mb-4 transition-transform hover:scale-105"
-          style={{ padding: '1rem 2rem', fontSize: '1.25rem', width: '100%', maxWidth: '300px', background: 'var(--grad-primary)', color: 'var(--color-background)', border: 'none', borderRadius: 'var(--radius-full)', boxShadow: 'var(--glow-primary)', fontWeight: 'bold' }}
-          onClick={startGame}
-        >
-          <Zap size={24} />
-          <span>เริ่มเกมเลย!</span>
-        </button>
-        
-        <button 
-          className="ui-btn ui-btn-secondary flex items-center justify-center gap-2 transition-transform hover:scale-105"
-          style={{ padding: '0.75rem 2rem', width: '100%', maxWidth: '300px', background: 'rgba(2, 2, 5, 0.75)', color: 'white', backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: 'var(--radius-full)' }}
-          onClick={() => navigate('/')}
-        >
-          <ArrowLeft size={18} />
-          <span>กลับหน้าแรก</span>
-        </button>
       </div>
     );
   }
 
+  // GAME OVER SCREEN
   if (gameState === 'gameover') {
+    const accuracy = totalAnswered > 0 ? Math.round((correctAnswers / totalAnswered) * 100) : 0;
+    const expEarned = Math.floor(score / 5);
+
     return (
-      <div className="container animate-fade-up flex flex-col items-center justify-center" style={{ minHeight: '70vh' }}>
-        <Card className="w-full text-center p-8" style={{ maxWidth: '450px', borderTop: '4px solid var(--color-primary)' }}>
-          <h2 className="text-3xl font-bold mb-6 text-gradient">Time's Up!</h2>
+      <div className="pos-game-wrapper animate-fade-up" style={{ minHeight: '80vh', justifyContent: 'center' }}>
+        <div className="pos-modal-card pos-glass-card" style={{ maxWidth: '480px' }}>
+          <div className="pos-icon-circle" style={{ background: 'rgba(250, 204, 21, 0.12)', border: '1px solid rgba(250, 204, 21, 0.4)' }}>
+            <Trophy size={42} style={{ color: '#facc15' }} />
+          </div>
+
+          <h2 className="text-3xl font-extrabold text-gradient mb-1">Time's Up!</h2>
+          <p style={{ color: '#94a3b8', fontSize: '0.9rem', marginBottom: '1.25rem' }}>สรุปผลการแข่งขัน Rapid Fire POS</p>
           
-          <div className="mb-8" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(255,255,255,0.05)', padding: '1rem', borderRadius: '0.5rem' }}>
-              <span style={{ color: 'var(--color-neutral)' }}>คะแนนรวม</span>
-              <span className="font-bold" style={{ fontSize: '1.5rem', color: 'var(--color-primary)' }}>{score}</span>
+          <div className="pos-stats-list">
+            <div className="pos-stat-row">
+              <span style={{ color: '#94a3b8', fontSize: '0.95rem' }}>คะแนนรวม</span>
+              <span style={{ color: '#00ffff', fontWeight: 900, fontFamily: 'var(--font-family-mono)', fontSize: '1.75rem' }}>{score}</span>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(255,255,255,0.05)', padding: '1rem', borderRadius: '0.5rem' }}>
-              <span style={{ color: 'var(--color-neutral)' }}>ตอบถูก</span>
-              <span className="font-bold" style={{ fontSize: '1.25rem', color: 'var(--color-accent)' }}>{correctAnswers} คำ</span>
+            
+            <div className="pos-stat-row">
+              <span style={{ color: '#94a3b8', fontSize: '0.95rem' }}>ความแม่นยำ</span>
+              <span style={{ color: '#4ade80', fontWeight: 800, fontFamily: 'var(--font-family-mono)', fontSize: '1.2rem' }}>
+                {correctAnswers} / {totalAnswered} ({accuracy}%)
+              </span>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(255,255,255,0.05)', padding: '1rem', borderRadius: '0.5rem' }}>
-              <span style={{ color: 'var(--color-neutral)' }}>EXP ที่ได้รับ</span>
-              <span className="font-bold" style={{ fontSize: '1.25rem', color: '#4ade80' }}>+{Math.floor(score / 5)} EXP</span>
+            
+            <div className="pos-stat-row">
+              <span style={{ color: '#94a3b8', fontSize: '0.95rem' }}>คอมโบสูงสุด</span>
+              <span style={{ color: '#facc15', fontWeight: 800, fontFamily: 'var(--font-family-mono)', fontSize: '1.2rem' }}>
+                🔥 x{maxStreak}
+              </span>
+            </div>
+
+            <div className="pos-stat-row" style={{ background: 'rgba(34, 197, 94, 0.1)', border: '1px solid rgba(34, 197, 94, 0.3)' }}>
+              <span style={{ color: '#4ade80', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.95rem' }}>
+                <Sparkles size={18} /> EXP ที่ได้รับ
+              </span>
+              <span style={{ color: '#4ade80', fontWeight: 900, fontFamily: 'var(--font-family-mono)', fontSize: '1.35rem' }}>
+                +{expEarned} EXP
+              </span>
             </div>
           </div>
           
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-            <button className="ui-btn ui-btn-primary flex items-center justify-center gap-2" style={{ padding: '0.75rem' }} onClick={startGame}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', alignItems: 'center', marginTop: '1.25rem' }}>
+            <button className="pos-primary-btn" style={{ width: '100%' }} onClick={startGame}>
               <RotateCcw size={18} />
               <span>เล่นอีกครั้ง</span>
             </button>
-            <button className="ui-btn ui-btn-secondary flex items-center justify-center gap-2" style={{ padding: '0.75rem' }} onClick={() => navigate('/')}>
-              <ArrowLeft size={18} />
-              <span>กลับหน้าแรก</span>
+
+            <button className="pos-secondary-btn" style={{ width: '100%' }} onClick={() => navigate('/')}>
+              <ArrowLeft size={16} />
+              <span>กลับหน้าหลัก</span>
             </button>
           </div>
-        </Card>
+        </div>
       </div>
     );
   }
 
+  // PLAYING SCREEN
+  const isTimeLow = timeLeft <= 10;
+  const currentWord = currentQuestion?.currentWord;
+
   return (
-    <div className="container animate-fade-up max-w-4xl mx-auto px-4">
-      {/* Top HUD */}
-      <div className="flex items-center justify-between mb-8 bg-black/50 p-4 rounded-2xl border border-white/10">
-        <div className="flex items-center gap-4">
-          <button style={{ color: 'var(--color-neutral)', cursor: 'pointer' }} onClick={() => setGameState('idle')}>
-            <ArrowLeft size={24} />
+    <div className="pos-game-wrapper animate-fade-up">
+      {/* Top HUD Bar */}
+      <div className="pos-hud-bar">
+        {/* Back Button & Score */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
+          <button className="pos-hud-btn" onClick={() => setGameState('idle')} title="ออกจากการแข่งขัน">
+            <ArrowLeft size={18} />
           </button>
-          <div className="flex flex-col">
-            <span style={{ fontSize: '0.75rem', color: 'var(--color-neutral)' }}>SCORE</span>
-            <span className="font-bold font-mono" style={{ fontSize: '1.5rem' }}>{score}</span>
+          
+          <div className="pos-hud-stat">
+            <span className="pos-hud-label">Score</span>
+            <span className="pos-hud-value">{score}</span>
           </div>
         </div>
         
-        <div className="flex items-center gap-2" style={{ color: 'var(--color-accent)' }}>
-          <Zap size={20} fill={streak >= 5 ? "currentColor" : "none"} className={streak >= 5 ? "animate-pulse" : ""} />
-          <span className="font-bold font-mono">x{streak}</span>
+        {/* Streak Badge */}
+        <div className={`pos-streak-badge ${streak >= 3 ? 'active' : ''}`}>
+          <Flame 
+            size={18} 
+            className={streak >= 5 ? "animate-bounce" : ""} 
+            style={{ color: streak >= 3 ? '#facc15' : '#94a3b8' }} 
+            fill={streak >= 3 ? "currentColor" : "none"} 
+          />
+          <span>x{streak}</span>
         </div>
         
-        <div className="flex items-center gap-2 font-mono text-xl">
-          <Timer size={24} style={{ color: timeLeft <= 10 ? '#ef4444' : 'var(--color-primary)' }} className={timeLeft <= 10 ? "animate-pulse" : ""} />
-          <span style={{ color: timeLeft <= 10 ? '#ef4444' : 'inherit' }}>{timeLeft}s</span>
+        {/* Timer Badge */}
+        <div className={`pos-timer-badge ${isTimeLow ? 'warning' : ''}`}>
+          <Timer size={19} />
+          <span>{timeLeft}s</span>
         </div>
       </div>
       
-      {/* Time Progress Bar */}
-      <div className="w-full mb-8" style={{ height: '6px', background: 'rgba(255,255,255,0.1)', borderRadius: '9999px', overflow: 'hidden' }}>
+      {/* Progress Track */}
+      <div className="pos-progress-track">
         <div 
-          style={{ 
-            height: '100%', 
-            width: `${(timeLeft / 60) * 100}%`, 
-            backgroundColor: timeLeft <= 10 ? '#ef4444' : 'var(--color-primary)',
-            transition: 'all 1s linear'
-          }}
+          className={`pos-progress-fill ${isTimeLow ? 'warning' : ''}`}
+          style={{ width: `${(timeLeft / 60) * 100}%` }}
         />
       </div>
 
-      {/* Word Display */}
-      {currentQuestion && (
-        <Card className="text-center mb-8 py-10 px-4 md:py-16">
-          <h2 className="font-bold mb-4 glitch-hover" data-text={currentQuestion.currentWord.word} style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)' }}>
-            {currentQuestion.currentWord.word}
+      {/* Main Word Card */}
+      {currentQuestion && currentWord && (
+        <div className="pos-question-card pos-glass-card">
+          {/* Header Row: Level Badge & Audio */}
+          <div className="pos-question-header">
+            <span className="pos-level-tag">
+              {currentWord.level || 'A1'}
+            </span>
+
+            <button 
+              onClick={() => playWordAudio(currentWord.word)}
+              className="pos-audio-trigger"
+              title="ฟังเสียงอ่านคำศัพท์"
+            >
+              <Volume2 size={19} />
+            </button>
+          </div>
+
+          {/* English Word */}
+          <h2 className="pos-word-display">
+            {currentWord.word}
           </h2>
-          <p style={{ fontSize: '1.5rem', color: 'var(--color-neutral)' }}>
-            {currentQuestion.currentWord.meaning}
+
+          {/* IPA Phonetics */}
+          {currentWord.ipa && (
+            <div className="pos-ipa-display">
+              /{currentWord.ipa}/
+            </div>
+          )}
+
+          {/* Thai Meaning */}
+          <p className="pos-meaning-display">
+            {currentWord.meaning}
           </p>
-        </Card>
+
+          {/* Point Popup Animation */}
+          {scorePopup && (
+            <div className={`pos-point-popup ${scorePopup.startsWith('+') ? 'correct' : 'wrong'}`}>
+              {scorePopup}
+            </div>
+          )}
+        </div>
       )}
 
-      {/* Options Grid */}
-      <div className="bg-black/75 backdrop-blur-md p-4 md:p-6 rounded-2xl border border-white/10 shadow-2xl">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {/* 2x2 Choice Buttons Grid */}
+      <div className="pos-options-grid">
         {currentQuestion?.options.map((option, index) => {
-          const isWrong = wrongSelection === option;
+          const info = POS_DETAILS[option] || {
+            nameEn: option,
+            nameTh: 'ชนิดของคำ',
+            descTh: '',
+            icon: '⚡',
+            color: '#38bdf8',
+            bg: 'rgba(56, 189, 248, 0.12)',
+            border: 'rgba(56, 189, 248, 0.35)',
+            glow: '0 0 15px rgba(56, 189, 248, 0.3)'
+          };
+
+          const isSelected = feedback?.pos === option;
+          const isCorrect = isSelected && feedback?.type === 'correct';
+          const isWrong = isSelected && feedback?.type === 'wrong';
+
           return (
             <button
               key={index}
               onClick={() => handleAnswer(option)}
-              disabled={wrongSelection !== null && isWrong}
+              disabled={feedback !== null}
+              className={`pos-btn-option ${isCorrect ? 'correct' : ''} ${isWrong ? 'wrong' : ''}`}
               style={{
-                padding: '1.5rem',
-                borderRadius: '1rem',
-                fontSize: '1.25rem',
-                fontWeight: 'bold',
-                cursor: 'pointer',
-                transition: 'all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
-                border: isWrong ? '2px solid #ef4444' : '2px solid rgba(255,255,255,0.15)',
-                background: isWrong ? 'rgba(239,68,68,0.2)' : 'rgba(255,255,255,0.05)',
-                color: isWrong ? '#fca5a5' : 'white',
-                transform: isWrong ? 'translateX(5px)' : 'scale(1)',
-                boxShadow: isWrong ? 'none' : '0 4px 15px rgba(0,0,0,0.2)'
+                borderColor: isCorrect ? '#22c55e' : isWrong ? '#ef4444' : info.border,
               }}
-              onMouseOver={(e) => {
-                if(!isWrong) {
-                  e.currentTarget.style.borderColor = 'var(--color-accent)';
-                  e.currentTarget.style.background = 'rgba(255,0,255,0.1)';
-                  e.currentTarget.style.transform = 'translateY(-2px)';
+              onMouseEnter={(e) => {
+                if (!feedback) {
+                  e.currentTarget.style.borderColor = info.color;
+                  e.currentTarget.style.background = info.bg;
+                  e.currentTarget.style.boxShadow = info.glow;
                 }
               }}
-              onMouseOut={(e) => {
-                if(!isWrong) {
-                  e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)';
-                  e.currentTarget.style.background = 'rgba(255,255,255,0.05)';
-                  e.currentTarget.style.transform = 'scale(1)';
+              onMouseLeave={(e) => {
+                if (!feedback) {
+                  e.currentTarget.style.borderColor = info.border;
+                  e.currentTarget.style.background = 'rgba(10, 16, 32, 0.85)';
+                  e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.3)';
                 }
-              }}
-              onMouseDown={(e) => {
-                if(!isWrong) e.currentTarget.style.transform = 'scale(0.95)';
-              }}
-              onMouseUp={(e) => {
-                if(!isWrong) e.currentTarget.style.transform = 'translateY(-2px)';
               }}
             >
-              {option}
+              {/* Icon & English Name */}
+              <div className="pos-btn-option-title">
+                <span className="pos-btn-option-icon">{info.icon}</span>
+                <span className="pos-btn-option-en" style={{ color: info.color }}>
+                  {info.nameEn}
+                </span>
+              </div>
+
+              {/* Thai Name */}
+              <div className="pos-btn-option-th">
+                {info.nameTh}
+              </div>
+
+              {/* Thai Description Hint */}
+              <div className="pos-btn-option-desc">
+                {info.descTh}
+              </div>
             </button>
           );
         })}
-        </div>
       </div>
     </div>
   );

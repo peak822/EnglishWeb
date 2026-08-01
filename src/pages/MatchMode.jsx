@@ -3,7 +3,7 @@ import Card from '../components/Card';
 import Button from '../components/Button';
 import vocabularyData from '../data/vocabulary.json';
 import { useGamification } from '../hooks/useGamification';
-import { filterWords, THEMES } from '../hooks/useCategories';
+import { filterWords } from '../hooks/useCategories';
 import LevelSelector from '../components/LevelSelector';
 
 const MatchMode = () => {
@@ -16,6 +16,15 @@ const MatchMode = () => {
   const [isWon, setIsWon] = useState(false);
   const [isLocked, setIsLocked] = useState(false);
   const timeoutRef = useRef(null);
+
+  const playAudio = (text) => {
+    if ('speechSynthesis' in window && text) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      window.speechSynthesis.speak(utterance);
+    }
+  };
 
   const startNewGame = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
@@ -45,8 +54,21 @@ const MatchMode = () => {
     // Create 12 cards (6 words, 6 meanings)
     const newCards = [];
     selectedWords.forEach(wordObj => {
-      newCards.push({ id: wordObj.id, content: wordObj.word, type: 'word', matchId: wordObj.id });
-      newCards.push({ id: `${wordObj.id}_meaning`, content: wordObj.meaning, type: 'meaning', matchId: wordObj.id });
+      newCards.push({ 
+        id: `word_${wordObj.id}`, 
+        content: wordObj.word, 
+        type: 'word', 
+        matchId: wordObj.id,
+        ipa: wordObj.ipa,
+        level: wordObj.level
+      });
+      newCards.push({ 
+        id: `meaning_${wordObj.id}`, 
+        content: wordObj.meaning, 
+        type: 'meaning', 
+        matchId: wordObj.id,
+        level: wordObj.level
+      });
     });
     
     // Shuffle the 12 cards
@@ -77,6 +99,11 @@ const MatchMode = () => {
     if (matchedIds.includes(cards[index].matchId)) return;
     if (flippedIndices.length >= 2) return;
 
+    const clickedCard = cards[index];
+    if (clickedCard.type === 'word') {
+      playAudio(clickedCard.content);
+    }
+
     const newFlipped = [...flippedIndices, index];
     setFlippedIndices(newFlipped);
 
@@ -88,31 +115,36 @@ const MatchMode = () => {
       const secondCard = cards[newFlipped[1]];
       
       if (firstCard.matchId === secondCard.matchId) {
-        // Match! Add a delay so the user can see the cards before they fade out
+        // If the second card is the word, pronounce it
+        if (secondCard.type === 'word') {
+          playAudio(secondCard.content);
+        }
+        // Match! Add a delay so the user can see the cards before they settle
         timeoutRef.current = setTimeout(() => {
           setMatchedIds(prev => [...prev, firstCard.matchId]);
           setFlippedIndices([]);
           setIsLocked(false);
-        }, 800);
+        }, 650);
       } else {
         // No match
         timeoutRef.current = setTimeout(() => {
           setFlippedIndices([]);
           setIsLocked(false);
-        }, 1000);
+        }, 850);
       }
     }
   };
 
   useEffect(() => {
-    if (matchedIds.length > 0 && matchedIds.length === 6 && !isWon) {
+    const totalPairs = cards.length > 0 ? cards.length / 2 : 6;
+    if (matchedIds.length > 0 && matchedIds.length === totalPairs && !isWon) {
       setIsWon(true);
       const baseExp = 30;
-      const penalty = Math.max(0, (moves - 6) * 2);
+      const penalty = Math.max(0, (moves - totalPairs) * 2);
       const finalExp = Math.max(10, baseExp - penalty);
       addExp(finalExp);
     }
-  }, [matchedIds.length, isWon, moves, addExp]);
+  }, [matchedIds.length, isWon, moves, cards.length, addExp]);
 
   return (
     <div className="container animate-fade-up">
@@ -134,18 +166,18 @@ const MatchMode = () => {
           </div>
           <div className="stat-item">
             <span>Pairs:</span>
-            <span className="stat-value">{matchedIds.length} / 6</span>
+            <span className="stat-value">{matchedIds.length} / {cards.length > 0 ? cards.length / 2 : 6}</span>
           </div>
           <Button variant="secondary" onClick={startNewGame}>
             Restart
           </Button>
         </div>
 
-        <Card className="p-8 relative">
+        <Card className="p-4 sm:p-8 relative">
           {isWon && (
-            <div className="absolute inset-0 bg-[rgba(15,23,42,0.8)] backdrop-blur-sm z-20 flex flex-col items-center justify-center rounded-[var(--radius-lg)] animate-fade-up">
-              <h2 className="text-4xl font-bold text-gradient mb-4">You Won! 🎉</h2>
-              <p className="text-[var(--color-neutral)] mb-6">Completed in {moves} moves</p>
+            <div className="absolute inset-0 bg-[rgba(15,23,42,0.85)] backdrop-blur-sm z-20 flex flex-col items-center justify-center rounded-[var(--radius-lg)] animate-fade-up p-6 text-center">
+              <h2 className="text-4xl font-bold text-gradient mb-3">You Won! 🎉</h2>
+              <p className="text-[var(--color-neutral)] mb-6 text-lg">Completed in {moves} moves</p>
               <Button variant="primary" onClick={startNewGame} className="w-48">
                 Play Again
               </Button>
@@ -159,23 +191,28 @@ const MatchMode = () => {
               
               return (
                 <div 
-                  key={index}
+                  key={card.id || index}
                   onClick={() => handleCardClick(index)}
                   className={`match-card transform-style-3d ${isFlipped ? 'rotate-y-180' : ''} ${isMatched ? 'matched' : ''}`}
                 >
                   {/* Front of card (Hidden state) */}
                   <div className="match-card-front backface-hidden">
-                    <span style={{ fontSize: '2.5rem' }}>❓</span>
+                    <span style={{ fontSize: '2.2rem', filter: 'drop-shadow(0 0 8px rgba(0,255,255,0.3))' }}>❓</span>
                   </div>
                   
                   {/* Back of card (Revealed state) */}
-                  <div className={`match-card-back backface-hidden rotate-y-180 ${card.type === 'word' ? 'type-word' : 'type-meaning'}`}>
+                  <div className={`match-card-back backface-hidden ${card.type === 'word' ? 'type-word' : 'type-meaning'}`}>
                     <span className="card-badge">
                       {card.type === 'word' ? '🇬🇧' : '🇹🇭'}
                     </span>
                     <span className="card-text">
                       {card.content}
                     </span>
+                    {card.type === 'word' && card.ipa && (
+                      <span style={{ fontSize: '0.75rem', color: 'var(--color-neutral)', marginTop: '0.2rem', fontStyle: 'italic' }}>
+                        /{card.ipa}/
+                      </span>
+                    )}
                   </div>
                 </div>
               );

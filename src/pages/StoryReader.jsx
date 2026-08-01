@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Volume2, X } from 'lucide-react';
 import Card from '../components/Card';
 import storiesData from '../data/stories.json';
-import vocabularyData from '../data/vocabulary.json';
+import { lookupWord } from '../utils/wordLookup';
 
 const StoryReader = () => {
   const { id } = useParams();
@@ -25,27 +25,18 @@ const StoryReader = () => {
 
   // Handle word click
   const handleWordClick = (rawWord) => {
-    // Remove punctuation
-    const cleanWord = rawWord.replace(/[.,!?;:'"]/g, '').toLowerCase();
-    
-    // Find in vocabulary
-    const dictEntry = vocabularyData.find(w => w.word.toLowerCase() === cleanWord);
-    
-    if (dictEntry) {
-      setSelectedWord(dictEntry);
-    } else {
-      // Fallback if word not in Oxford 3000
-      setSelectedWord({
-        word: cleanWord,
-        notFound: true
-      });
+    const result = lookupWord(rawWord);
+    if (result) {
+      setSelectedWord(result);
     }
   };
 
   const playAudio = (word) => {
-    if ('speechSynthesis' in window) {
+    if ('speechSynthesis' in window && word) {
       window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(word);
+      // Clean word for speech synthesis
+      const cleanSpeak = word.replace(/^[.,!?;:'"“”‘’()\[\]{}—–\s]+|[.,!?;:'"“”‘’()\[\]{}—–\s]+$/g, '');
+      const utterance = new SpeechSynthesisUtterance(cleanSpeak);
       utterance.lang = 'en-US';
       window.speechSynthesis.speak(utterance);
     }
@@ -53,7 +44,7 @@ const StoryReader = () => {
 
   // Render text with clickable words
   const renderInteractiveText = (text) => {
-    // Split text by spaces but keep punctuation attached for rendering
+    // Split text by spaces but keep whitespace attached for rendering
     const words = text.split(/(\s+)/);
     
     return words.map((wordStr, index) => {
@@ -150,18 +141,47 @@ const StoryReader = () => {
           <Card className="p-6 border border-[var(--color-primary)] shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_20px_rgba(0,255,255,0.1)]">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
               <div>
-                <h3 style={{ fontSize: '1.5rem', color: 'var(--color-primary)', margin: '0 0 0.25rem 0', fontWeight: 'bold' }}>
-                  {selectedWord.word}
-                </h3>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  <h3 style={{ fontSize: '1.6rem', color: 'var(--color-primary)', margin: 0, fontWeight: 'bold' }}>
+                    {selectedWord.word}
+                  </h3>
+                  {selectedWord.level && (
+                    <span style={{
+                      fontSize: '0.75rem',
+                      padding: '0.2rem 0.5rem',
+                      borderRadius: '9999px',
+                      background: 'rgba(0,255,255,0.1)',
+                      color: 'var(--color-primary)',
+                      border: '1px solid rgba(0,255,255,0.2)'
+                    }}>
+                      {selectedWord.level}
+                    </span>
+                  )}
+                </div>
+
                 {!selectedWord.notFound && (
-                  <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-                    <span style={{ fontSize: '0.85rem', color: 'var(--color-neutral)' }}>{selectedWord.type}</span>
+                  <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', marginTop: '0.25rem', flexWrap: 'wrap' }}>
+                    {selectedWord.type && (
+                      <span style={{ fontSize: '0.85rem', color: 'var(--color-neutral)' }}>{selectedWord.type}</span>
+                    )}
                     {selectedWord.ipa && (
                       <span style={{ fontSize: '0.85rem', color: 'var(--color-neutral)', fontStyle: 'italic' }}>/{selectedWord.ipa}/</span>
+                    )}
+                    {selectedWord.note && (
+                      <span style={{
+                        fontSize: '0.8rem',
+                        color: 'var(--color-primary)',
+                        background: 'rgba(255,255,255,0.06)',
+                        padding: '0.1rem 0.4rem',
+                        borderRadius: '4px'
+                      }}>
+                        {selectedWord.note}
+                      </span>
                     )}
                   </div>
                 )}
               </div>
+
               <div style={{ display: 'flex', gap: '0.5rem' }}>
                 <button 
                   onClick={() => playAudio(selectedWord.word)}
@@ -181,12 +201,12 @@ const StoryReader = () => {
 
             {!selectedWord.notFound ? (
               <>
-                <p style={{ fontSize: '1.2rem', color: 'var(--color-secondary)', margin: '0 0 1rem 0' }}>
+                <p style={{ fontSize: '1.2rem', color: 'var(--color-secondary)', margin: '0 0 0.75rem 0', fontWeight: '500' }}>
                   {selectedWord.meaning || 'ไม่มีคำแปล'}
                 </p>
                 {selectedWord.thai_pronunciation && (
                   <p style={{ fontSize: '0.9rem', color: 'var(--color-neutral)', margin: 0 }}>
-                    คำอ่าน: {selectedWord.thai_pronunciation}
+                    คำอ่าน: <span style={{ color: 'var(--color-primary)' }}>{selectedWord.thai_pronunciation}</span>
                   </p>
                 )}
               </>
