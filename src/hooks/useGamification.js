@@ -21,10 +21,55 @@ const BADGES = [
   { id: 'master', name: 'Master', description: 'Reach Level 10', requiredLevel: 10, icon: '👑' },
 ];
 
+export const getRankTitle = (level) => {
+  if (level <= 1) return { title: 'Code Initiate', color: '#38bdf8', icon: '⚡' };
+  if (level <= 3) return { title: 'Cyber Scholar', color: '#00f2fe', icon: '🧠' };
+  if (level <= 5) return { title: 'Vocab Specialist', color: '#a855f7', icon: '🔮' };
+  if (level <= 7) return { title: 'Neural Elite', color: '#ec4899', icon: '💎' };
+  if (level <= 9) return { title: 'Cyber Master', color: '#f59e0b', icon: '🔥' };
+  return { title: 'Vocab Overlord', color: '#22c55e', icon: '👑' };
+};
+
+const getTodayString = () => {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+};
+
+const calculateStreak = (saved) => {
+  const today = getTodayString();
+  if (!saved || !saved.lastActiveDate) {
+    return { streakDays: 1, lastActiveDate: today };
+  }
+  
+  if (saved.lastActiveDate === today) {
+    return { streakDays: saved.streakDays || 1, lastActiveDate: today };
+  }
+
+  const lastDate = new Date(saved.lastActiveDate);
+  const currentDate = new Date(today);
+  const diffTime = Math.abs(currentDate - lastDate);
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+  if (diffDays === 1) {
+    return { streakDays: (saved.streakDays || 1) + 1, lastActiveDate: today };
+  } else {
+    return { streakDays: 1, lastActiveDate: today };
+  }
+};
+
 export const useGamification = () => {
   const [profile, setProfile] = useState(() => {
     const saved = localStorage.getItem('english_study_profile');
-    return saved ? JSON.parse(saved) : { exp: 0, level: 1, badges: [] };
+    const parsed = saved ? JSON.parse(saved) : null;
+    const streakInfo = calculateStreak(parsed);
+
+    return {
+      exp: parsed?.exp || 0,
+      level: parsed?.level || 1,
+      badges: parsed?.badges || [],
+      streakDays: streakInfo.streakDays,
+      lastActiveDate: streakInfo.lastActiveDate
+    };
   });
 
   const [recentLevelUp, setRecentLevelUp] = useState(false);
@@ -38,17 +83,18 @@ export const useGamification = () => {
   useEffect(() => {
     const handleProfileUpdate = (e) => {
       // Prevent infinite loop by checking if the state is actually different
-      if (e.detail && e.detail.exp !== profile.exp) {
+      if (e.detail && (e.detail.exp !== profile.exp || e.detail.streakDays !== profile.streakDays)) {
         setProfile(e.detail);
       }
     };
     window.addEventListener('profile_updated', handleProfileUpdate);
     return () => window.removeEventListener('profile_updated', handleProfileUpdate);
-  }, [profile.exp]);
+  }, [profile.exp, profile.streakDays]);
 
   const addExp = useCallback((amount) => {
     setProfile(prev => {
       const newExp = prev.exp + amount;
+      const today = getTodayString();
       
       // Calculate level
       let newLevel = 1;
@@ -103,9 +149,11 @@ export const useGamification = () => {
       }
 
       return {
+        ...prev,
         exp: newExp,
         level: newLevel,
-        badges: earnedBadges
+        badges: earnedBadges,
+        lastActiveDate: today
       };
     });
   }, []);
@@ -130,10 +178,16 @@ export const useGamification = () => {
     return maxDefined + extraLevels * 1000;
   };
 
+  const rankInfo = getRankTitle(profile.level);
+
   return {
     exp: profile.exp,
     level: profile.level,
     badges: profile.badges,
+    streakDays: profile.streakDays || 1,
+    rankTitle: rankInfo.title,
+    rankColor: rankInfo.color,
+    rankIcon: rankInfo.icon,
     addExp,
     recentLevelUp,
     newBadge,
