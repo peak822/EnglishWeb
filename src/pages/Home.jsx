@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
   BookOpen, 
@@ -23,6 +23,11 @@ import { useGamification } from '../hooks/useGamification';
 const Home = () => {
   const navigate = useNavigate();
   const { exp, level, rankTitle, rankColor, rankIcon, streakDays, badges, nextLevelExp, currentLevelBaseExp } = useGamification();
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+
+  useEffect(() => {
+    setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0 || window.innerWidth < 768);
+  }, []);
 
   const expProgress = Math.max(0, Math.min(100, ((exp - currentLevelBaseExp) / (nextLevelExp - currentLevelBaseExp)) * 100));
 
@@ -138,44 +143,44 @@ const Home = () => {
       id: 'grammar',
       title: 'ไวยากรณ์และโครงสร้างประโยค',
       subtitle: 'Grammar & Structure',
-      icon: '🧩',
-      color: '#8b5cf6',
+      icon: '📐',
+      color: '#c084fc',
       modes: [
         {
           id: 'pos',
-          title: 'แยกแยะชนิดของคำ (POS)',
-          subtitle: 'Rapid Fire Part of Speech',
-          description: 'แยกแยะชนิดของคำ (Noun, Verb, Adj, Adv) อย่างรวดเร็วด้วย UI สไตล์ Cyberpunk สุดล้ำ',
-          icon: <Zap size={28} />,
+          title: 'ฝึกจำแนก Part of Speech',
+          subtitle: 'Rapid Fire Word Class Quiz',
+          description: 'ฝึกสัญชาตญาณจำแนกคำศัพท์ 8 ชนิด (Noun, Verb, Adj ฯลฯ) พร้อมระบบคอมโบและเสียงเอฟเฟกต์',
+          icon: <Layers size={28} />,
           path: '/pos',
-          tag: '⚡ Rapid POS',
-          color: '#8b5cf6'
+          tag: '⚡ Speed Grammar',
+          color: '#e879f9'
         },
         {
           id: 'pos-guide',
-          title: 'คู่มือ Part of Speech 7 ชนิด',
-          subtitle: 'Comprehensive POS Guide',
-          description: 'บทเรียนสรุปชนิดของคำทั้ง 7 ชนิดอย่างละเอียด พร้อมตัวอย่างคำศัพท์จริงและเทคนิคจำง่าย',
-          icon: <Bookmark size={28} />,
+          title: 'คู่มือ 8 Parts of Speech',
+          subtitle: 'Grammar Cheat Sheet',
+          description: 'สรุปหน้าที่ ตำแหน่งในประโยค และข้อสังเกตของคำทั้ง 8 ชนิด เข้าใจง่ายพร้อมตัวอย่าง',
+          icon: <FileText size={28} />,
           path: '/pos-guide',
-          tag: '📘 Grammar Guide',
-          color: '#3b82f6'
+          tag: '📚 Cheat Sheet',
+          color: '#38bdf8'
         },
         {
           id: 'syntax',
-          title: 'เรียงประโยค (Syntax)',
-          subtitle: 'Sentence Ordering Puzzle',
-          description: 'ประกอบชิ้นส่วนคำศัพท์ให้กลายเป็นประโยคภาษาอังกฤษที่ถูกต้องตามหลักไวยากรณ์',
-          icon: <Layers size={28} />,
+          title: 'วิเคราะห์โครงสร้างประโยค (Syntax)',
+          subtitle: 'Sentence Blueprint Builder',
+          description: 'ทำความเข้าใจ Subject, Verb, Object, Prepositional Phrase ด้วยแถบสีและไฮไลต์',
+          icon: <Bookmark size={28} />,
           path: '/syntax',
-          tag: '🧩 Sentence Flow',
-          color: '#f43f5e'
+          tag: '🧩 Syntax Master',
+          color: '#a855f7'
         },
         {
           id: 'context',
-          title: 'เติมคำในช่องว่าง (Context)',
-          subtitle: 'Sentence Fill-in-the-Blank',
-          description: 'เลือกคำศัพท์ที่ถูกต้องมาเติมลงในประโยคจริง เพื่อเข้าใจบริบทการใช้งานอย่างถ่องแท้',
+          title: 'เติมคำในช่องว่าง (Context Clues)',
+          subtitle: 'Cloze Reading Challenge',
+          description: 'ฝึกวิเคราะห์บริบทของประโยคเพื่อเลือกคำศัพท์ที่ถูกต้องและเหมาะสมที่สุด',
           icon: <FileText size={28} />,
           path: '/context',
           tag: '📝 Context Mastery',
@@ -185,8 +190,50 @@ const Home = () => {
     }
   ];
 
+  const renderCardContent = (mode) => (
+    <div 
+      className="home-mode-card"
+      style={{ '--card-color': mode.color }}
+      onClick={() => navigate(mode.path)}
+    >
+      <div className="home-mode-top">
+        <div 
+          className="home-mode-icon-box"
+          style={{ 
+            color: mode.color, 
+            background: `${mode.color}1a`,
+            border: `1.5px solid ${mode.color}55`
+          }}
+        >
+          {mode.icon}
+        </div>
+        <span 
+          className="home-mode-tag"
+          style={{ 
+            color: mode.color, 
+            background: `${mode.color}15`,
+            border: `1px solid ${mode.color}40`
+          }}
+        >
+          {mode.tag}
+        </span>
+      </div>
+
+      <h3 className="home-mode-title">{mode.title}</h3>
+      <div className="text-xs font-semibold mb-2" style={{ color: mode.color }}>
+        {mode.subtitle}
+      </div>
+      <p className="home-mode-desc">{mode.description}</p>
+
+      <div className="home-mode-action" style={{ color: mode.color }}>
+        <span>เข้าสู่โหมดฝึก</span>
+        <ArrowRight size={18} className="home-mode-action-arrow" />
+      </div>
+    </div>
+  );
+
   return (
-    <div className="container animate-fade-up" style={{ maxWidth: '1180px', padding: '1rem 1.25rem 4rem 1.25rem' }}>
+    <div className="container animate-fade-up" style={{ maxWidth: '1180px', padding: '1rem 1rem 4rem 1rem' }}>
       
       {/* 🚀 CYBERPUNK COMMAND DECK */}
       <section className="home-command-deck">
@@ -196,11 +243,11 @@ const Home = () => {
           <div className="home-profile-header">
             <div className="home-avatar-wrap">
               <div className="home-avatar-circle" style={{ color: rankColor, borderColor: rankColor }}>
-                <span style={{ fontSize: '1.75rem' }}>{rankIcon}</span>
+                <span className="text-2xl sm:text-3xl">{rankIcon}</span>
               </div>
               <div>
-                <div className="flex items-center gap-2">
-                  <span className="text-xl font-extrabold text-white">Commander</span>
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-lg sm:text-xl font-extrabold text-white">Commander</span>
                   <span className="home-rank-badge" style={{ color: rankColor, borderColor: rankColor, background: `${rankColor}1a` }}>
                     Lv.{level} • {rankTitle}
                   </span>
@@ -214,12 +261,12 @@ const Home = () => {
             {/* Streak & Badges */}
             <div className="flex items-center gap-2">
               <div className="home-streak-badge">
-                <Flame size={18} fill="#f59e0b" />
+                <Flame size={16} fill="#f59e0b" />
                 <span>{streakDays} วันต่อเนื่อง</span>
               </div>
               {badges.length > 0 && (
-                <div className="flex items-center gap-1 bg-[rgba(168,85,247,0.15)] border border-[rgba(168,85,247,0.4)] px-3 py-1.5 rounded-full text-[#c084fc] font-bold text-xs">
-                  <Award size={16} />
+                <div className="flex items-center gap-1 bg-[rgba(168,85,247,0.15)] border border-[rgba(168,85,247,0.4)] px-2.5 py-1 rounded-full text-[#c084fc] font-bold text-xs">
+                  <Award size={15} />
                   <span>{badges.length}</span>
                 </div>
               )}
@@ -242,7 +289,7 @@ const Home = () => {
             <span className="beacon-dot" />
             <span>⚡ โหมดเด่นแนะนำวันนี้ (Daily Spotlight)</span>
           </div>
-          <h3 className="text-lg font-bold text-white mb-1">Rapid Fire POS: แยกแยะชนิดของคำ</h3>
+          <h3 className="text-base sm:text-lg font-bold text-white mb-1">Rapid Fire POS: แยกแยะชนิดของคำ</h3>
           <p className="text-xs text-[#94a3b8] mb-4 leading-relaxed">
             ฝึกจำแนก Noun, Verb, Adj, Adv ด้วยความเร็วสูง สร้างสัญชาตญาณไวยากรณ์อัตโนมัติ พร้อม UI สุดล้ำ!
           </p>
@@ -250,11 +297,11 @@ const Home = () => {
             className="home-spotlight-btn"
             onClick={() => navigate('/pos')}
           >
-            <span className="flex items-center gap-2 text-sm">
-              <Sparkles size={18} className="text-[#fbbf24]" />
+            <span className="flex items-center gap-2 text-xs sm:text-sm">
+              <Sparkles size={16} className="text-[#fbbf24]" />
               <span>เริ่มฝึกโหมดแนะนำ</span>
             </span>
-            <ArrowRight size={18} />
+            <ArrowRight size={16} />
           </button>
         </div>
 
@@ -277,7 +324,7 @@ const Home = () => {
                 <span>{domain.icon}</span>
               </div>
               <div>
-                <h2 className="text-xl font-bold text-white flex items-center gap-2">
+                <h2 className="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
                   {domain.title}
                 </h2>
                 <div className="text-xs font-medium text-[#94a3b8]">
@@ -294,57 +341,25 @@ const Home = () => {
           {/* Mode Cards Grid */}
           <div className="home-mode-grid">
             {domain.modes.map((mode) => (
-              <Tilt
-                key={mode.id}
-                glareEnable={true}
-                glareMaxOpacity={0.12}
-                glareColor={mode.color}
-                glarePosition="all"
-                tiltMaxAngleX={8}
-                tiltMaxAngleY={8}
-                scale={1.02}
-                transitionSpeed={2000}
-              >
-                <div 
-                  className="home-mode-card"
-                  style={{ '--card-color': mode.color }}
-                  onClick={() => navigate(mode.path)}
-                >
-                  <div className="home-mode-top">
-                    <div 
-                      className="home-mode-icon-box"
-                      style={{ 
-                        color: mode.color, 
-                        background: `${mode.color}1a`,
-                        border: `1.5px solid ${mode.color}55`
-                      }}
-                    >
-                      {mode.icon}
-                    </div>
-                    <span 
-                      className="home-mode-tag"
-                      style={{ 
-                        color: mode.color, 
-                        background: `${mode.color}15`,
-                        border: `1px solid ${mode.color}40`
-                      }}
-                    >
-                      {mode.tag}
-                    </span>
-                  </div>
-
-                  <h3 className="home-mode-title">{mode.title}</h3>
-                  <div className="text-xs font-semibold mb-2" style={{ color: mode.color }}>
-                    {mode.subtitle}
-                  </div>
-                  <p className="home-mode-desc">{mode.description}</p>
-
-                  <div className="home-mode-action" style={{ color: mode.color }}>
-                    <span>เข้าสู่โหมดฝึก</span>
-                    <ArrowRight size={18} className="home-mode-action-arrow" />
-                  </div>
+              isTouchDevice ? (
+                <div key={mode.id}>
+                  {renderCardContent(mode)}
                 </div>
-              </Tilt>
+              ) : (
+                <Tilt
+                  key={mode.id}
+                  glareEnable={true}
+                  glareMaxOpacity={0.12}
+                  glareColor={mode.color}
+                  glarePosition="all"
+                  tiltMaxAngleX={8}
+                  tiltMaxAngleY={8}
+                  scale={1.02}
+                  transitionSpeed={2000}
+                >
+                  {renderCardContent(mode)}
+                </Tilt>
+              )
             ))}
           </div>
 
