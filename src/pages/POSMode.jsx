@@ -370,16 +370,6 @@ const POSMode = () => {
                   {info.nameEn}
                 </span>
               </div>
-
-              {/* Thai Name */}
-              <div className="pos-btn-option-th">
-                {info.nameTh}
-              </div>
-
-              {/* Thai Description Hint */}
-              <div className="pos-btn-option-desc">
-                {info.descTh}
-              </div>
             </button>
           );
         })}

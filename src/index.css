@@ -994,15 +994,14 @@ a:hover {
 
 .pos-btn-option {
   width: 100%;
-  min-height: 80px;
-  padding: 0.85rem 1rem;
-  border-radius: 16px;
+  min-height: 64px;
+  padding: 0.9rem 1.25rem;
+  border-radius: 18px;
   background: rgba(10, 16, 32, 0.85);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1.5px solid rgba(255, 255, 255, 0.12);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -1039,26 +1038,16 @@ a:hover {
 .pos-btn-option-title {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.2rem;
+  justify-content: center;
+  gap: 0.65rem;
 }
 .pos-btn-option-icon {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
 }
 .pos-btn-option-en {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   font-weight: 800;
-  letter-spacing: 0.04em;
-}
-.pos-btn-option-th {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #e2e8f0;
-}
-.pos-btn-option-desc {
-  font-size: 0.72rem;
-  color: #94a3b8;
-  margin-top: 0.15rem;
+  letter-spacing: 0.03em;
 }
 
 /* Start & Game Over Cards */
