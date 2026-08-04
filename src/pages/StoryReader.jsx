@@ -198,12 +198,12 @@ const StoryReader = () => {
           <div style={{ display: 'flex', justifyContent: 'center', gap: '0.75rem', marginTop: '1.25rem', flexWrap: 'wrap' }}>
             <button
               onClick={toggleFullStoryAudio}
-              className={`ui-btn ${isPlayingFullStory ? 'ui-btn-secondary ring-2 ring-pink-500' : 'ui-btn-primary'}`}
+              className={`ui-btn ${isPlayingFullStory ? 'ui-btn-accent' : 'ui-btn-primary'}`}
               style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.6rem 1.25rem', borderRadius: '9999px' }}
             >
               {isPlayingFullStory ? (
                 <>
-                  <Square size={18} className="text-pink-400 animate-pulse" />
+                  <Square size={18} />
                   <span>⏹️ หยุดฟังเสียง (Stop Audio)</span>
                 </>
               ) : (
@@ -223,36 +223,39 @@ const StoryReader = () => {
       </Card>
 
       {/* Bottom Action Bar */}
-      <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 p-4 rounded-[var(--radius-lg)] bg-white/5 border border-white/10 backdrop-blur-md">
+      <div className="story-action-bar">
+        {/* Toggle Translation Button */}
         <button
           onClick={() => setShowTranslation(prev => !prev)}
-          className={`ui-btn w-full sm:w-auto flex items-center justify-center gap-2 px-5 py-3 rounded-[var(--radius-md)] transition-all font-semibold ${
-            showTranslation 
-              ? 'bg-[rgba(0,242,254,0.15)] text-[var(--color-primary)] border border-[var(--color-primary)] shadow-[0_0_15px_rgba(0,242,254,0.3)]' 
-              : 'ui-btn-primary'
-          }`}
+          className={`ui-btn ${showTranslation ? 'ui-btn-accent' : 'ui-btn-primary'}`}
+          style={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            justifyContent: 'center', 
+            gap: '0.5rem',
+            padding: '0.75rem 1.5rem',
+            fontSize: '0.95rem'
+          }}
         >
           <Languages size={20} />
-          <span>{showTranslation ? 'ซ่อนคำแปล (Hide Translation)' : '🇹🇭 แปลบทความ (Show Translation)'}</span>
+          <span>{showTranslation ? 'ซ่อนคำแปล (Hide Translation)' : 'แปลบทความ (Show Translation)'}</span>
         </button>
 
+        {/* EXP Reward Button */}
         <button
           onClick={handleFinishStory}
           disabled={isCompleted}
-          className={`ui-btn w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-[var(--radius-md)] font-bold transition-all ${
-            isCompleted
-              ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 cursor-default opacity-90'
-              : 'bg-gradient-to-r from-emerald-500 to-teal-500 text-white hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:scale-105 active:scale-95'
-          }`}
+          className={`story-btn-exp ${isCompleted ? 'completed' : ''}`}
+          style={{ fontSize: '0.95rem' }}
         >
           {isCompleted ? (
             <>
-              <CheckCircle2 size={20} className="text-emerald-400" />
+              <CheckCircle2 size={20} />
               <span>อ่านจบแล้ว (+20 EXP ได้รับแล้ว)</span>
             </>
           ) : (
             <>
-              <Sparkles size={20} className="text-yellow-300" />
+              <Sparkles size={20} color="#FFD700" />
               <span>อ่านจบแล้ว (+20 EXP)</span>
             </>
           )}
@@ -261,17 +264,36 @@ const StoryReader = () => {
 
       {/* Expandable Thai Translation Card */}
       {showTranslation && (
-        <Card className="mt-6 p-6 md:p-10 border border-[var(--color-secondary)] shadow-[0_0_25px_rgba(255,0,127,0.15)] animate-fade-up">
-          <div className="flex items-center gap-3 pb-3 mb-4 border-b border-white/10">
-            <span className="text-2xl">🇹🇭</span>
+        <Card className="story-translation-box animate-fade-up p-6 md:p-10">
+          <div style={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: '0.75rem', 
+            paddingBottom: '0.75rem', 
+            marginBottom: '1.25rem', 
+            borderBottom: '1px solid rgba(255, 255, 255, 0.1)' 
+          }}>
+            <span style={{ 
+              background: 'linear-gradient(135deg, #FF00FF, #00FFFF)', 
+              color: '#FFFFFF', 
+              fontSize: '0.75rem', 
+              fontWeight: 'bold', 
+              padding: '0.2rem 0.6rem', 
+              borderRadius: '4px',
+              letterSpacing: '1px'
+            }}>
+              THAI
+            </span>
             <div>
-              <span className="text-xs uppercase tracking-wider text-[var(--color-neutral)] font-bold">คำแปลภาษาไทย</span>
-              <h3 className="text-xl md:text-2xl font-bold text-[var(--color-secondary)] m-0">
+              <span style={{ fontSize: '0.75rem', color: 'var(--color-primary)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 'bold' }}>
+                คำแปลภาษาไทย
+              </span>
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--color-secondary)', margin: 0 }}>
                 {story.titleThai || story.title}
               </h3>
             </div>
           </div>
-          <p className="leading-relaxed text-lg md:text-xl text-white/90 font-normal tracking-wide whitespace-pre-line">
+          <p style={{ lineHeight: '2', fontSize: '1.15rem', color: 'rgba(255, 255, 255, 0.95)', whiteSpace: 'pre-line' }}>
             {story.contentThai}
           </p>
         </Card>
