@@ -2,153 +2,191 @@
   {
     "id": "story-a1-1",
     "title": "A Day at the Park",
+    "titleThai": "หนึ่งวันที่สวนสาธารณะ",
     "genre": "Daily Life",
     "level": "A1",
     "readTime": "1 min",
-    "content": "Today is a beautiful day. The sun is shining. I go to the park with my dog. We run and play on the grass. My dog is very happy. He loves to chase his ball. After a while, we get tired. We sit under a big tree and drink some water. It's a great day."
+    "content": "Today is a beautiful day. The sun is shining. I go to the park with my dog. We run and play on the grass. My dog is very happy. He loves to chase his ball. After a while, we get tired. We sit under a big tree and drink some water. It's a great day.",
+    "contentThai": "วันนี้เป็นวันที่อากาศแจ่มใส แสงแดดกำลังส่องประกาย ฉันไปสวนสาธารณะกับสุนัขของฉัน พวกเราวิ่งเล่นบนสนามหญ้า เจ้าสุนัขของฉันมีความสุขมาก มันชอบวิ่งไล่ตามลูกบอลของมัน หลังจากนั้นสักพัก พวกเราก็เริ่มเหนื่อย เราจึงนั่งพักใต้ต้นไม้ใหญ่และดื่มน้ำ มันเป็นวันที่ยอดเยี่ยมจริงๆ"
   },
   {
     "id": "story-a2-1",
     "title": "The Secret Map",
+    "titleThai": "แผนที่ลับ",
     "genre": "Adventure",
     "level": "A2",
     "readTime": "2 mins",
-    "content": "Yesterday, Tom found an old map in the local library. It was hiding inside a heavy history book. The map showed a strange island with a huge mountain in the middle. At the top, there was a red cross. Tom was so excited! He called his best friend, Sarah, right away to tell her. They agreed to meet at a coffee shop the next morning to plan their big adventure."
+    "content": "Yesterday, Tom found an old map in the local library. It was hiding inside a heavy history book. The map showed a strange island with a huge mountain in the middle. At the top, there was a red cross. Tom was so excited! He called his best friend, Sarah, right away to tell her. They agreed to meet at a coffee shop the next morning to plan their big adventure.",
+    "contentThai": "เมื่อวานนี้ ทอมพบแผนที่เก่าแก่ฉบับหนึ่งในห้องสมุดชุมชน มันซ่อนอยู่ภายในหนังสือประวัติศาสตร์เล่มหนา แผนที่นั้นแสดงภาพเกาะประหลาดที่มีภูเขาขนาดยักษ์อยู่ตรงกลาง และบนยอดเขามีกากบาทสีแดง ทอมตื่นเต้นมาก! เขารีบโทรหาซาร่าห์เพื่อนสนิทของเขาทันทีเพื่อเล่าเรื่องนี้ให้ฟัง พวกเขาตกลงที่จะเจอกันที่ร้านกาแฟในเช้าวันรุ่งขึ้นเพื่อวางแผนการผจญภัยครั้งยิ่งใหญ่"
   },
   {
     "id": "story-b1-1",
     "title": "The First Colony",
+    "titleThai": "อาณานิคมแห่งแรก",
     "genre": "Sci-Fi",
     "level": "B1",
     "readTime": "3 mins",
-    "content": "The trip to Mars took seven long months. When the ship finally landed, the crew felt both relieved and nervous. They were the first humans to set up a permanent base on the red planet. Captain Reynolds stepped out of the airlock in his heavy suit. The landscape was totally empty, covered in red dust and sharp rocks. Their first job was to set up the solar panels before it got freezing cold at night. It was a dangerous mission, but everyone knew it was a huge step for humanity."
+    "content": "The trip to Mars took seven long months. When the ship finally landed, the crew felt both relieved and nervous. They were the first humans to set up a permanent base on the red planet. Captain Reynolds stepped out of the airlock in his heavy suit. The landscape was totally empty, covered in red dust and sharp rocks. Their first job was to set up the solar panels before it got freezing cold at night. It was a dangerous mission, but everyone knew it was a huge step for humanity.",
+    "contentThai": "การเดินทางสู่ดาวอังคารใช้เวลายาวนานถึงเจ็ดเดือน เมื่อยานลงจอดในที่สุด ลูกเรือรู้สึกทั้งโล่งใจและตื่นเต้นกังวล พวกเขาคือมนุษย์กลุ่มแรกที่จะสร้างฐานที่มั่นถาวรบนดาวเคราะห์สีแดง กัปตันเรย์โนลด์สก้าวออกจากห้องปรับความดันในชุดอวกาศที่หนาหนัก ทัศนียภาพรอบด้านว่างเปล่าอย่างสิ้นเชิง ปกคลุมไปด้วยฝุ่นสีแดงและโขดหินแหลมคม งานแรกของพวกเขาคือการติดตั้งแผงโซลาร์เซลล์ก่อนที่อุณหภูมิจะหนาวจัดจนติดลบในเวลากลางคืน มันเป็นภารกิจที่อันตราย แต่ทุกคนรู้ดีว่านี่คือก้าวที่ยิ่งใหญ่สำหรับมนุษยชาติ"
   },
   {
     "id": "story-a1-2",
     "title": "Morning Coffee",
+    "titleThai": "กาแฟยามเช้า",
     "genre": "Daily Life",
     "level": "A1",
     "readTime": "1 min",
-    "content": "I wake up at seven o'clock. The sun is bright today. I walk to the kitchen and make a cup of hot coffee. It smells really good. I look out the window and watch the birds. I drink my coffee slowly. Then, I take a shower and get dressed. Now I'm ready for work."
+    "content": "I wake up at seven o'clock. The sun is bright today. I walk to the kitchen and make a cup of hot coffee. It smells really good. I look out the window and watch the birds. I drink my coffee slowly. Then, I take a shower and get dressed. Now I'm ready for work.",
+    "contentThai": "ฉันตื่นนอนตอนเจ็ดโมงเช้า วันนี้แสงแดดสดใสมาก ฉันเดินไปที่ห้องครัวและชงกาแฟร้อนหนึ่งแก้ว กลิ่นมันหอมมากจริงๆ ฉันมองออกไปนอกหน้าต่างและดูนกบินไปมา ฉันจิบกาแฟอย่างช้าๆ จากนั้นฉันก็ไปอาบน้ำและแต่งตัว ตอนนี้ฉันพร้อมสำหรับไปทำงานแล้ว"
   },
   {
     "id": "story-a2-2",
     "title": "The Supermarket Trip",
+    "titleThai": "ไปซื้อของที่ซูเปอร์มาร์เก็ต",
     "genre": "Daily Life",
     "level": "A2",
     "readTime": "2 mins",
-    "content": "On Saturday afternoon, I went to the supermarket with a long shopping list. First, I picked up some fresh vegetables and apples. Next, I grabbed some milk and cheese from the dairy aisle. I couldn't find the bread anywhere, so I asked a worker for help. He pointed me toward the bakery. In the end, I waited in a long line at the checkout, paid with my card, and carried my heavy bags home."
+    "content": "On Saturday afternoon, I went to the supermarket with a long shopping list. First, I picked up some fresh vegetables and apples. Next, I grabbed some milk and cheese from the dairy aisle. I couldn't find the bread anywhere, so I asked a worker for help. He pointed me toward the bakery. In the end, I waited in a long line at the checkout, paid with my card, and carried my heavy bags home.",
+    "contentThai": "ในบ่ายวันเสาร์ ฉันไปซูเปอร์มาร์เก็ตพร้อมรายการซื้อของยาวเหยียด อันดับแรก ฉันเลือกผักสดและแอปเปิ้ล ถัดมา ฉันหยิบนมและชีสจากแผนกผลิตภัณฑ์นม ฉันหาขนมปังไม่เจอเลย จึงขอความช่วยเหลือจากพนักงาน เขาชี้ทางให้ฉันไปยังโซนเบเกอรี่ ในที่สุด ฉันก็เข้าแถวรอจ่ายเงินที่แคชเชียร์ จ่ายด้วยบัตร และหิ้วถุงของหนักๆ กลับบ้าน"
   },
   {
     "id": "story-b1-2",
     "title": "A Busy Day at the Office",
+    "titleThai": "วันที่แสนวุ่นวายในออฟฟิศ",
     "genre": "Daily Life",
     "level": "B1",
     "readTime": "3 mins",
-    "content": "Tuesday was a crazy day at the office. I got in at 8:30 AM and jumped straight into answering emails. At 10:00 AM, we had a team meeting about the new marketing project, and my boss gave me three new tasks to finish by Friday. I was feeling pretty stressed out. But at noon, I went out for lunch with my coworkers. We talked about our weekend plans and had a good laugh. After that, I felt a lot better and managed to get through most of my work before heading home."
+    "content": "Tuesday was a crazy day at the office. I got in at 8:30 AM and jumped straight into answering emails. At 10:00 AM, we had a team meeting about the new marketing project, and my boss gave me three new tasks to finish by Friday. I was feeling pretty stressed out. But at noon, I went out for lunch with my coworkers. We talked about our weekend plans and had a good laugh. After that, I felt a lot better and managed to get through most of my work before heading home.",
+    "contentThai": "วันอังคารเป็นวันที่วุ่นวายสุดๆ ในออฟฟิศ ฉันมาถึงตอน 8:30 น. และเริ่มตอบอีเมลทันที ตอน 10:00 น. พวกเรามีการประชุมทีมเกี่ยวกับโปรเจกต์การตลาดใหม่ และหัวหน้าก็มอบหมายงานใหม่ให้ฉันสามงานที่ต้องทำให้เสร็จภายในวันศุกร์ ฉันรู้สึกเครียดพอสมควร แต่ตอนเที่ยง ฉันออกไปทานอาหารกลางวันกับเพื่อนร่วมงาน เราคุยกันเรื่องแผนการในวันหยุดสุดสัปดาห์และหัวเราะกันอย่างสนุกสนาน หลังจากนั้น ฉันรู้สึกดีขึ้นมากและสามารถเคลียร์งานส่วนใหญ่ได้ก่อนเดินทางกลับบ้าน"
   },
   {
     "id": "story-b2-1",
     "title": "Weekend Chores and Relaxation",
+    "titleThai": "งานบ้านวันหยุดและการพักผ่อน",
     "genre": "Daily Life",
     "level": "B2",
     "readTime": "4 mins",
-    "content": "My apartment was a complete mess by Friday night, so I decided to get all my chores out of the way early on Saturday. I woke up, drank some coffee, and got straight to work. I vacuumed the whole place, scrubbed the bathroom, and ran two loads of laundry. It was exhausting, but seeing everything spotless felt amazing. By early afternoon, I was finally done. I brewed a pot of tea and crashed on the sofa with a book I'd been wanting to read. After working so hard all morning, just sitting quietly felt like the best reward."
+    "content": "My apartment was a complete mess by Friday night, so I decided to get all my chores out of the way early on Saturday. I woke up, drank some coffee, and got straight to work. I vacuumed the whole place, scrubbed the bathroom, and ran two loads of laundry. It was exhausting, but seeing everything spotless felt amazing. By early afternoon, I was finally done. I brewed a pot of tea and crashed on the sofa with a book I'd been wanting to read. After working so hard all morning, just sitting quietly felt like the best reward.",
+    "contentThai": "อพาร์ตเมนต์ของฉันรกมากจนถึงคืนวันศุกร์ ฉันจึงตัดสินใจเคลียร์งานบ้านทั้งหมดให้เสร็จตั้งแต่ช่วงเช้าวันเสาร์ ฉันตื่นนอน ดื่มกาแฟ และเริ่มลงมือทำงานบ้านทันที ฉันดูดฝุ่นทั่วทั้งห้อง ขัดห้องน้ำ และซักผ้าไปสองรอบ มันเหนื่อยมาก แต่การได้เห็นทุกอย่างสะอาดหมดจดทำให้รู้สึกยอดเยี่ยมจริงๆ พอถึงช่วงบ่ายแก่ๆ ในที่สุดฉันก็ทำเสร็จ ฉันชงชาหนึ่งกาแล้วทิ้งตัวลงบนโซฟาพร้อมหนังสือเล่มที่อยากอ่านมานาน หลังจากทำงานหนักมาตลอดทั้งเช้า การได้นั่งพักเงียบๆ ช่างเป็นรางวัลที่ดีที่สุด"
   },
   {
     "id": "story-a1-3",
     "title": "My Pet Cat",
+    "titleThai": "แมวสัตว์เลี้ยงของฉัน",
     "genre": "Daily Life",
     "level": "A1",
     "readTime": "1 min",
-    "content": "I have a small cat named Luna. She is black and white. Every morning, I give her food and water. She loves to eat fish. After she eats, she sleeps on my bed. In the afternoon, we play with a small toy. Luna runs very fast! She makes me smile every day. I love my cat so much."
+    "content": "I have a small cat named Luna. She is black and white. Every morning, I give her food and water. She loves to eat fish. After she eats, she sleeps on my bed. In the afternoon, we play with a small toy. Luna runs very fast! She makes me smile every day. I love my cat so much.",
+    "contentThai": "ฉันมีแมวตัวเล็กชื่อลูน่า เธอมีขนสีขาวดำ ทุกเช้าฉันจะให้อาหารและน้ำแก่เธอ เธอชอบกินปลามาก หลังจากกินเสร็จ เธอก็จะนอนหลับบนเตียงของฉัน ในตอนบ่าย พวกเราเล่นของเล่นชิ้นเล็กๆ ด้วยกัน ลูน่าวิ่งเร็วมาก! เธอทำให้ฉันยิ้มได้ในทุกๆ วัน ฉันรักแมวของฉันมากจริงๆ"
   },
   {
     "id": "story-a1-4",
     "title": "Cooking Dinner",
+    "titleThai": "ทำอาหารเย็น",
     "genre": "Daily Life",
     "level": "A1",
     "readTime": "1 min",
-    "content": "It's six o'clock in the evening and I'm very hungry. I go to the kitchen to cook dinner. I wash some vegetables and cut them up. I put rice in a pot with some water. Then, I fry an egg in a pan. The food smells great. I sit at the table to eat. It's really delicious!"
+    "content": "It's six o'clock in the evening and I'm very hungry. I go to the kitchen to cook dinner. I wash some vegetables and cut them up. I put rice in a pot with some water. Then, I fry an egg in a pan. The food smells great. I sit at the table to eat. It's really delicious!",
+    "contentThai": "ตอนนี้เวลาหกโมงเย็นแล้วและฉันหิวมาก ฉันเดินไปที่ห้องครัวเพื่อทำอาหารเย็น ฉันล้างผักและหั่นเป็นชิ้นๆ ฉันใส่ข้าวลงในหม้อพร้อมน้ำ จากนั้นฉันก็ทอดไข่ในกระทะ กลิ่นอาหารหอมน่ากินมาก ฉันนั่งลงที่โต๊ะเพื่อรับประทาน มันอร่อยมากจริงๆ!"
   },
   {
     "id": "story-a1-5",
     "title": "Going to School",
+    "titleThai": "ไปโรงเรียน",
     "genre": "Daily Life",
     "level": "A1",
     "readTime": "2 mins",
-    "content": "I wake up early on Monday morning. I wash my face and brush my teeth. I put on my school uniform. Then, I eat some bread and drink milk. I grab my bag and say goodbye to my mom. I walk to the bus stop. The yellow bus comes at eight o'clock. I sit with my friend. We talk and laugh all the way to school."
+    "content": "I wake up early on Monday morning. I wash my face and brush my teeth. I put on my school uniform. Then, I eat some bread and drink milk. I grab my bag and say goodbye to my mom. I walk to the bus stop. The yellow bus comes at eight o'clock. I sit with my friend. We talk and laugh all the way to school.",
+    "contentThai": "ฉันตื่นแต่เช้าในเช้าวันจันทร์ ฉันล้างหน้าและแปรงฟัน ฉันสวมเครื่องแบบนักเรียน จากนั้น ฉันกินขนมปังและดื่มนม ฉันหยิบกระเป๋าและบอกลาคุณแม่ ฉันเดินไปที่ป้ายรถประจำทาง รถบัสสีเหลืองมาถึงตอนแปดโมงตรง ฉันนั่งกับเพื่อนของฉัน พวกเราคุยและหัวเราะกันไปตลอดทางจนถึงโรงเรียน"
   },
   {
     "id": "story-a2-3",
     "title": "A Visit to the Dentist",
+    "titleThai": "ไปพบทันตแพทย์",
     "genre": "Daily Life",
     "level": "A2",
     "readTime": "2 mins",
-    "content": "Yesterday afternoon, I went to the dentist for a check-up. I was a little nervous while sitting in the waiting room. The nurse called my name, and I sat in a big chair. The dentist asked me to open my mouth wide. He looked at my teeth with a tiny mirror. He told me that my teeth were healthy and clean. I was so relieved! I promised to keep brushing my teeth twice a day."
+    "content": "Yesterday afternoon, I went to the dentist for a check-up. I was a little nervous while sitting in the waiting room. The nurse called my name, and I sat in a big chair. The dentist asked me to open my mouth wide. He looked at my teeth with a tiny mirror. He told me that my teeth were healthy and clean. I was so relieved! I promised to keep brushing my teeth twice a day.",
+    "contentThai": "เมื่อบ่ายวานนี้ ฉันไปพบทันตแพทย์เพื่อตรวจสุขภาพฟัน ฉันรู้สึกกังวลเล็กน้อยขณะนั่งอยู่ในห้องรอตรวจ พยาบาลเรียกชื่อของฉัน และฉันก็นั่งลงบนเก้าอี้ตัวใหญ่ ทันตแพทย์บอกให้ฉันอ้าปากกว้างๆ เขาตรวจดูฟันของฉันด้วยกระจกบานเล็ก เขาบอกฉันว่าฟันของฉันแข็งแรงและสะอาดดี ฉันโล่งใจมาก! ฉันสัญญาว่าจะแปรงฟันวันละสองครั้งต่อไปอย่างสม่ำเสมอ"
   },
   {
     "id": "story-a2-4",
     "title": "Cleaning the House",
+    "titleThai": "ทำความสะอาดบ้าน",
     "genre": "Daily Life",
     "level": "A2",
     "readTime": "2 mins",
-    "content": "Sunday is our family cleaning day. In the morning, we cleaned the whole house together. My dad washed the car outside, and my mom swept the floors. I helped out by dusting the shelves and taking out the trash. It took us about two hours to finish. After all that hard work, the house looked amazing. We just sat on the sofa and watched a movie to relax."
+    "content": "Sunday is our family cleaning day. In the morning, we cleaned the whole house together. My dad washed the car outside, and my mom swept the floors. I helped out by dusting the shelves and taking out the trash. It took us about two hours to finish. After all that hard work, the house looked amazing. We just sat on the sofa and watched a movie to relax.",
+    "contentThai": "วันอาทิตย์เป็นวันทำความสะอาดของครอบครัวเรา ในตอนเช้า พวกเราช่วยกันทำความสะอาดทั่วทั้งบ้าน พ่อของฉันล้างรถข้างนอก และแม่กวาดพื้น ฉันช่วยปัดฝุ่นตามชั้นวางของและนำขยะออกไปทิ้ง พวกเราใช้เวลาประมาณสองชั่วโมงจึงเสร็จ หลังจากเหน็ดเหนื่อยกับการทำงาน บ้านก็ดูสะอาดสวยงามมาก พวกเราเพียงแค่นั่งบนโซฟาและดูภาพยนตร์เพื่อพักผ่อนอย่างสบายใจ"
   },
   {
     "id": "story-a2-5",
     "title": "Buying New Shoes",
+    "titleThai": "ซื้อรองเท้าคู่ใหม่",
     "genre": "Daily Life",
     "level": "A2",
     "readTime": "2 mins",
-    "content": "My old running shoes were falling apart, so I needed some new ones. After work, I drove to the mall and went into a big sports store. There were so many shoes on the shelves! A nice worker asked if I needed any help. I tried on a blue pair and a black pair. The blue ones were super comfortable and fit perfectly. I paid for them and went home with a big smile."
+    "content": "My old running shoes were falling apart, so I needed some new ones. After work, I drove to the mall and went into a big sports store. There were so many shoes on the shelves! A nice worker asked if I needed any help. I tried on a blue pair and a black pair. The blue ones were super comfortable and fit perfectly. I paid for them and went home with a big smile.",
+    "contentThai": "รองเท้าวิ่งคู่เก่าของฉันเริ่มพังชำรุดแล้ว ฉันจึงจำเป็นต้องซื้อคู่ใหม่ หลังเลิกงาน ฉันขับรถไปห้างสรรพสินค้าและเดินเข้าไปในร้านขายอุปกรณ์กีฬาขนาดใหญ่ มีรองเท้ามากมายวางอยู่บนชั้นวาง! พนักงานที่อัธยาศัยดีคนหนึ่งถามว่าฉันต้องการความช่วยเหลือไหม ฉันลองใส่คู่สีน้ำเงินและคู่สีดำ คู่สีน้ำเงินใส่สบายสุดๆ และพอดีเป๊ะ ฉันจ่ายเงินซื้อและกลับบ้านด้วยรอยยิ้มกว้าง"
   },
   {
     "id": "story-b1-3",
     "title": "Planning a Birthday Party",
+    "titleThai": "วางแผนงานเลี้ยงวันเกิด",
     "genre": "Daily Life",
     "level": "B1",
     "readTime": "3 mins",
-    "content": "My sister's birthday is next week, and I'm planning a surprise party for her. First, I made a guest list and sent texts to all her close friends. Then, I went to the local bakery to order a chocolate cake. The hardest part was buying decorations without her finding out. I managed to sneak in some balloons and a banner. I've asked my parents to take her out to dinner while I set everything up at the house. I can't wait to see her face when she walks through the door!"
+    "content": "My sister's birthday is next week, and I'm planning a surprise party for her. First, I made a guest list and sent texts to all her close friends. Then, I went to the local bakery to order a chocolate cake. The hardest part was buying decorations without her finding out. I managed to sneak in some balloons and a banner. I've asked my parents to take her out to dinner while I set everything up at the house. I can't wait to see her face when she walks through the door!",
+    "contentThai": "วันเกิดของน้องสาวฉันคือสัปดาห์หน้า และฉันกำลังวางแผนจัดงานปาร์ตี้เซอร์ไพรส์ให้เธอ ขั้นแรก ฉันทำรายชื่อแขกและส่งข้อความไปหาเพื่อนสนิททุกคนของเธอ จากนั้น ฉันไปที่ร้านเบเกอรี่แถวบ้านเพื่อสั่งเค้กช็อกโกแลต ส่วนที่ยากที่สุดคือการซื้อของตกแต่งโดยไม่ให้เธอรู้ตัว ฉันแอบเอาลูกโป่งและป้ายผ้าเข้ามาได้สำเร็จ ฉันขอให้พ่อแม่พาเธอออกไปทานอาหารเย็นข้างนอกระหว่างที่ฉันจัดเตรียมทุกอย่างที่บ้าน ฉันแทบรอไม่ไหวที่จะได้เห็นสีหน้าของเธอเมื่อเธอเปิดประตูเดินเข้ามา!"
   },
   {
     "id": "story-b1-4",
     "title": "A Fitness Routine",
+    "titleThai": "กิจวัตรการออกกำลังกาย",
     "genre": "Daily Life",
     "level": "B1",
     "readTime": "3 mins",
-    "content": "I've been trying to get back into shape over the past few months. I joined a gym that's just a ten-minute walk from my apartment, and I try to go three times a week after work. My usual workout is about thirty minutes on the treadmill, followed by some light weightlifting. Honestly, it was pretty hard to stay motivated at first, especially when I was tired. But I soon noticed I had way more energy during the day. Now, going to the gym is just a normal part of my week, and I actually look forward to it."
+    "content": "I've been trying to get back into shape over the past few months. I joined a gym that's just a ten-minute walk from my apartment, and I try to go three times a week after work. My usual workout is about thirty minutes on the treadmill, followed by some light weightlifting. Honestly, it was pretty hard to stay motivated at first, especially when I was tired. But I soon noticed I had way more energy during the day. Now, going to the gym is just a normal part of my week, and I actually look forward to it.",
+    "contentThai": "ฉันพยายามกลับมาฟิตหุ่นในช่วงสองสามเดือนที่ผ่านมา ฉันสมัครฟิตเนสที่เดินจากอพาร์ตเมนต์เพียงสิบนาที และพยายามไปสัปดาห์ละสามครั้งหลังเลิกงาน การออกกำลังกายตามปกติของฉันคือการวิ่งบนลู่วิ่งประมาณสามสิบนาที ตามด้วยการยกน้ำหนักเบาๆ ตามตรงเลยนะ ช่วงแรกๆ มันค่อนข้างยากที่จะรักษาแรงบันดาลใจไว้ โดยเฉพาะเวลาที่รู้สึกเหนื่อยล้า แต่ไม่นานฉันก็สังเกตเห็นว่าตัวเองมีพลังงานมากขึ้นในระหว่างวัน ตอนนี้ การไปฟิตเนสกลายเป็นส่วนหนึ่งตามปกติในแต่ละสัปดาห์ และฉันก็ตั้งตารอมันจริงๆ"
   },
   {
     "id": "story-b1-5",
     "title": "Car Trouble",
+    "titleThai": "ปัญหารถเสีย",
     "genre": "Daily Life",
     "level": "B1",
     "readTime": "3 mins",
-    "content": "My morning got off to a terrible start when my car broke down on the way to work. I heard a loud clunking noise from the engine, and then it just died. I managed to steer it to the side of the road and put my flashers on. I had to call a tow truck right away, and then I called my boss to tell him I'd be late. The tow truck showed up about thirty minutes later and took my car to a nearby garage. It was super stressful, but luckily, the repair bill wasn't as bad as I thought it would be."
+    "content": "My morning got off to a terrible start when my car broke down on the way to work. I heard a loud clunking noise from the engine, and then it just died. I managed to steer it to the side of the road and put my flashers on. I had to call a tow truck right away, and then I called my boss to tell him I'd be late. The tow truck showed up about thirty minutes later and took my car to a nearby garage. It was super stressful, but luckily, the repair bill wasn't as bad as I thought it would be.",
+    "contentThai": "เช้าของฉันเริ่มต้นอย่างย่ำแย่เมื่อรถยนต์เกิดเสียระหว่างทางไปทำงาน ฉันได้ยินเสียงโลหะกระแทกดังสนั่นจากเครื่องยนต์ แล้วรถก็ดับไปเฉยๆ ฉันพยายามประคองพวงมาลัยเข้าข้างทางและเปิดไฟฉุกเฉิน ฉันต้องโทรเรียกรถลากทันที จากนั้นก็โทรหาหัวหน้าเพื่อแจ้งว่าจะไปสาย รถลากมาถึงประมาณสามสิบนาทีหลังจากนั้นและลากรถของฉันไปยังอู่ซ่อมใกล้ๆ มันตึงเครียดมาก แต่โชคดีที่ค่าซ่อมไม่ได้แพงอย่างที่คิดไว้"
   },
   {
     "id": "story-b2-2",
     "title": "Managing Personal Finances",
+    "titleThai": "การจัดการการเงินส่วนบุคคล",
     "genre": "Daily Life",
     "level": "B2",
     "readTime": "4 mins",
-    "content": "I recently realized I had no idea where all my money was going by the end of the month, so I decided to finally sit down and look at my expenses. I went through my bank statements and split everything into essentials, like rent and groceries, and fun stuff, like eating out. I was honestly shocked to see how much I was spending just on grabbing coffee every morning. Once I saw the numbers, I set up a much stricter budget and started automatically putting a chunk of my paycheck into savings. Using a tracking app on my phone has made a huge difference, and I'm feeling a lot better about my financial situation now."
+    "content": "I recently realized I had no idea where all my money was going by the end of the month, so I decided to finally sit down and look at my expenses. I went through my bank statements and split everything into essentials, like rent and groceries, and fun stuff, like eating out. I was honestly shocked to see how much I was spending just on grabbing coffee every morning. Once I saw the numbers, I set up a much stricter budget and started automatically putting a chunk of my paycheck into savings. Using a tracking app on my phone has made a huge difference, and I'm feeling a lot better about my financial situation now.",
+    "contentThai": "เมื่อไม่นานมานี้ ฉันเพิ่งตระหนักว่าฉันไม่รู้เลยว่าเงินของตัวเองหายไปไหนหมดเมื่อถึงสิ้นเดือน ฉันจึงตัดสินใจนั่งลงและตรวจสอบค่าใช้จ่ายอย่างจริงจัง ฉันไล่ดูรายการเดินบัญชีธนาคารและแบ่งทุกอย่างออกเป็นรายจ่ายจำเป็น เช่น ค่าเช่าห้องและของสด และของฟุ่มเฟือยเพื่อความบันเทิง เช่น การทานอาหารนอกบ้าน เอาจริงๆ ฉันตกใจมากที่เห็นว่าตัวเองเสียเงินไปมากแค่ไหนกับการซื้อกาแฟดื่มทุกเช้า เมื่อเห็นตัวเลขชัดเจน ฉันจึงตั้งงบประมาณที่เข้มงวดยิ่งขึ้น และเริ่มโอนเงินส่วนหนึ่งจากเงินเดือนเข้าบัญชีออมทรัพย์โดยอัตโนมัติ การใช้แอปบันทึกรายรับรายจ่ายบนมือถือช่วยสร้างความเปลี่ยนแปลงอย่างมาก และตอนนี้ฉันรู้สึกสบายใจขึ้นมากกับสถานะทางการเงินของตัวเอง"
   },
   {
     "id": "story-b2-3",
     "title": "A Difficult Conversation",
+    "titleThai": "การพูดคุยที่ยากลำบาก",
     "genre": "Daily Life",
     "level": "B2",
     "readTime": "4 mins",
-    "content": "Last week, I had to have a really awkward conversation with a coworker. They'd been consistently late with their parts of our project, and it was starting to hold everything up. I asked if we could grab a coffee and chat, trying to keep things casual. I just explained that the missed deadlines were making it hard for the rest of the team to move forward. It turned out they were dealing with some heavy personal stuff and were just totally overwhelmed. We ended up adjusting the schedule to give them some breathing room, and things have been running much smoother since then."
+    "content": "Last week, I had to have a really awkward conversation with a coworker. They'd been consistently late with their parts of our project, and it was starting to hold everything up. I asked if we could grab a coffee and chat, trying to keep things casual. I just explained that the missed deadlines were making it hard for the rest of the team to move forward. It turned out they were dealing with some heavy personal stuff and were just totally overwhelmed. We ended up adjusting the schedule to give them some breathing room, and things have been running much smoother since then.",
+    "contentThai": "เมื่อสัปดาห์ที่แล้ว ฉันต้องพูดคุยเรื่องที่น่าอึดอัดใจกับเพื่อนร่วมงานคนหนึ่ง พวกเขาส่งงานในส่วนของตนเองล่าช้าอย่างต่อเนื่องจนเริ่มทำให้โปรเจกต์ทั้งหมดล่าช้าตามไปด้วย ฉันจึงชวนพวกเขาไปดื่มกาแฟและพูดคุย โดยพยายามรักษาบรรยากาศให้เป็นกันเอง ฉันอธิบายตรงๆ ว่าการส่งงานไม่ทันกำหนดทำให้ทีมที่เหลือทำงานต่อได้ยาก ปรากฏว่าพวกเขากำลังเผชิญกับปัญหาส่วนตัวที่หนักหน่วงและรู้สึกรับมือไม่ไหวจริงๆ ในที่สุดพวกเราจึงช่วยกันปรับตารางเวลาเพื่อเปิดโอกาสให้พวกเขามีเวลาหายใจบ้าง และนับแต่นั้นมา การทำงานก็ราบรื่นขึ้นอย่างมาก"
   },
   {
     "id": "story-b2-4",
     "title": "Adapting to a New Neighborhood",
+    "titleThai": "การปรับตัวเข้ากับย่านใหม่",
     "genre": "Daily Life",
     "level": "B2",
     "readTime": "4 mins",
-    "content": "Moving to a new city is always a weird mix of being excited and totally terrified. For the first few weeks in my new neighborhood, I made a point to just walk around and get a feel for the place. I found the closest grocery store, scoped out a nice park, and tracked down a great little coffee shop. I felt pretty lonely at first, not knowing anyone around. But then I volunteered for a weekend park clean-up, which ended up being a great way to meet people. We chatted while we worked, and I actually made a few friends. It finally feels like I'm starting to settle in."
+    "content": "Moving to a new city is always a weird mix of being excited and totally terrified. For the first few weeks in my new neighborhood, I made a point to just walk around and get a feel for the place. I found the closest grocery store, scoped out a nice park, and tracked down a great little coffee shop. I felt pretty lonely at first, not knowing anyone around. But then I volunteered for a weekend park clean-up, which ended up being a great way to meet people. We chatted while we worked, and I actually made a few friends. It finally feels like I'm starting to settle in.",
+    "contentThai": "การย้ายมาอยู่เมืองใหม่มักจะเป็นความรู้สึกผสมปนเปที่แปลกประหลาดระหว่างความตื่นเต้นและความกลัว ในช่วงสองสามสัปดาห์แรกในย่านใหม่ ฉันตั้งใจเดินสำรวจรอบๆ เพื่อให้คุ้นเคยกับสถานที่ ฉันหาร้านขายของชำที่ใกล้ที่สุด สำรวจสวนสาธารณะบรรยากาศดี และตามหาร้านกาแฟเล็กๆ ที่ยอดเยี่ยม ตอนแรกฉันรู้สึกเหงาพอสมควรเพราะไม่รู้จักใครเลย แต่แล้วฉันก็ไปเป็นอาสาสมัครทำความสะอาดสวนสาธารณะในวันหยุดสุดสัปดาห์ ซึ่งกลายเป็นวิธีที่ดีเยี่ยมในการพบปะผู้คน พวกเราคุยกันระหว่างทำงาน และฉันก็ได้เพื่อนใหม่มาสองสามคน ในที่สุดฉันก็เริ่มรู้สึกว่าตัวเองลงหลักปักฐานได้อย่างอบอุ่นแล้ว"
   }
 ]
