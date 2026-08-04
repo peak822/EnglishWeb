@@ -1,16 +1,41 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Volume2, X } from 'lucide-react';
+import { ArrowLeft, Volume2, Square, X, Languages, CheckCircle2, Sparkles } from 'lucide-react';
+import confetti from 'canvas-confetti';
 import Card from '../components/Card';
 import storiesData from '../data/stories.json';
 import { lookupWord } from '../utils/wordLookup';
+import { useGamification } from '../hooks/useGamification';
 
 const StoryReader = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { addExp } = useGamification();
+
   const [selectedWord, setSelectedWord] = useState(null);
+  const [showTranslation, setShowTranslation] = useState(false);
+  const [isPlayingFullStory, setIsPlayingFullStory] = useState(false);
+  const [isCompleted, setIsCompleted] = useState(false);
 
   const story = useMemo(() => storiesData.find(s => s.id === id), [id]);
+
+  // Clean up speech synthesis and reset states on story change or unmount
+  useEffect(() => {
+    return () => {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    setShowTranslation(false);
+    setIsPlayingFullStory(false);
+    setIsCompleted(false);
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+    }
+  }, [id]);
 
   if (!story) {
     return (
@@ -31,15 +56,56 @@ const StoryReader = () => {
     }
   };
 
+  // Play pronunciation for a single word
   const playAudio = (word) => {
     if ('speechSynthesis' in window && word) {
       window.speechSynthesis.cancel();
+      setIsPlayingFullStory(false);
       // Clean word for speech synthesis
       const cleanSpeak = word.replace(/^[.,!?;:'"“”‘’()\[\]{}—–\s]+|[.,!?;:'"“”‘’()\[\]{}—–\s]+$/g, '');
       const utterance = new SpeechSynthesisUtterance(cleanSpeak);
       utterance.lang = 'en-US';
       window.speechSynthesis.speak(utterance);
     }
+  };
+
+  // Toggle full story narration
+  const toggleFullStoryAudio = () => {
+    if (!('speechSynthesis' in window)) return;
+
+    if (isPlayingFullStory) {
+      window.speechSynthesis.cancel();
+      setIsPlayingFullStory(false);
+    } else {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(story.content);
+      utterance.lang = 'en-US';
+      utterance.rate = 0.9; // Slightly comfortable reading pace
+
+      utterance.onend = () => {
+        setIsPlayingFullStory(false);
+      };
+
+      utterance.onerror = () => {
+        setIsPlayingFullStory(false);
+      };
+
+      window.speechSynthesis.speak(utterance);
+      setIsPlayingFullStory(true);
+    }
+  };
+
+  // Handle completion reward
+  const handleFinishStory = () => {
+    if (isCompleted) return;
+    setIsCompleted(true);
+    addExp(20);
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 },
+      colors: ['#00FFFF', '#FF00FF', '#10B981']
+    });
   };
 
   // Render text with clickable words
@@ -106,7 +172,7 @@ const StoryReader = () => {
         </div>
 
         {/* Title */}
-        <div style={{ textAlign: 'center', paddingBottom: '1rem' }}>
+        <div style={{ textAlign: 'center', paddingBottom: '0.5rem' }}>
           <span style={{
             fontSize: '0.85rem',
             color: 'var(--color-primary)',
@@ -127,6 +193,27 @@ const StoryReader = () => {
           <div style={{ color: 'var(--color-neutral)', fontSize: '0.9rem' }}>
             {story.genre} • {story.readTime}
           </div>
+
+          {/* Full Story Narration Control */}
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '0.75rem', marginTop: '1.25rem', flexWrap: 'wrap' }}>
+            <button
+              onClick={toggleFullStoryAudio}
+              className={`ui-btn ${isPlayingFullStory ? 'ui-btn-secondary ring-2 ring-pink-500' : 'ui-btn-primary'}`}
+              style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.6rem 1.25rem', borderRadius: '9999px' }}
+            >
+              {isPlayingFullStory ? (
+                <>
+                  <Square size={18} className="text-pink-400 animate-pulse" />
+                  <span>⏹️ หยุดฟังเสียง (Stop Audio)</span>
+                </>
+              ) : (
+                <>
+                  <Volume2 size={18} />
+                  <span>🔊 ฟังเสียงทั้งบทความ (Read Aloud)</span>
+                </>
+              )}
+            </button>
+          </div>
         </div>
       </Card>
 
@@ -134,6 +221,61 @@ const StoryReader = () => {
       <Card className="p-6 md:p-10 leading-loose text-lg md:text-xl text-white/90">
         {renderInteractiveText(story.content)}
       </Card>
+
+      {/* Bottom Action Bar */}
+      <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 p-4 rounded-[var(--radius-lg)] bg-white/5 border border-white/10 backdrop-blur-md">
+        <button
+          onClick={() => setShowTranslation(prev => !prev)}
+          className={`ui-btn w-full sm:w-auto flex items-center justify-center gap-2 px-5 py-3 rounded-[var(--radius-md)] transition-all font-semibold ${
+            showTranslation 
+              ? 'bg-[rgba(0,242,254,0.15)] text-[var(--color-primary)] border border-[var(--color-primary)] shadow-[0_0_15px_rgba(0,242,254,0.3)]' 
+              : 'ui-btn-primary'
+          }`}
+        >
+          <Languages size={20} />
+          <span>{showTranslation ? 'ซ่อนคำแปล (Hide Translation)' : '🇹🇭 แปลบทความ (Show Translation)'}</span>
+        </button>
+
+        <button
+          onClick={handleFinishStory}
+          disabled={isCompleted}
+          className={`ui-btn w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-[var(--radius-md)] font-bold transition-all ${
+            isCompleted
+              ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 cursor-default opacity-90'
+              : 'bg-gradient-to-r from-emerald-500 to-teal-500 text-white hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:scale-105 active:scale-95'
+          }`}
+        >
+          {isCompleted ? (
+            <>
+              <CheckCircle2 size={20} className="text-emerald-400" />
+              <span>อ่านจบแล้ว (+20 EXP ได้รับแล้ว)</span>
+            </>
+          ) : (
+            <>
+              <Sparkles size={20} className="text-yellow-300" />
+              <span>อ่านจบแล้ว (+20 EXP)</span>
+            </>
+          )}
+        </button>
+      </div>
+
+      {/* Expandable Thai Translation Card */}
+      {showTranslation && (
+        <Card className="mt-6 p-6 md:p-10 border border-[var(--color-secondary)] shadow-[0_0_25px_rgba(255,0,127,0.15)] animate-fade-up">
+          <div className="flex items-center gap-3 pb-3 mb-4 border-b border-white/10">
+            <span className="text-2xl">🇹🇭</span>
+            <div>
+              <span className="text-xs uppercase tracking-wider text-[var(--color-neutral)] font-bold">คำแปลภาษาไทย</span>
+              <h3 className="text-xl md:text-2xl font-bold text-[var(--color-secondary)] m-0">
+                {story.titleThai || story.title}
+              </h3>
+            </div>
+          </div>
+          <p className="leading-relaxed text-lg md:text-xl text-white/90 font-normal tracking-wide whitespace-pre-line">
+            {story.contentThai}
+          </p>
+        </Card>
+      )}
 
       {/* Word Details Modal/Drawer */}
       {selectedWord && (
