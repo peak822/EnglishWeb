@@ -7,17 +7,17 @@
     "level": "A1",
     "readTime": "1 min",
     "content": "Today is a beautiful day. The sun is shining. I go to the park with my dog. We run and play on the grass. My dog is very happy. He loves to chase his ball. After a while, we get tired. We sit under a big tree and drink some water. It's a great day.",
-    "contentThai": "วันนี้เป็นวันที่อากาศแจ่มใส แสงแดดกำลังส่องประกาย ฉันไปสวนสาธารณะกับสุนัขของฉัน พวกเราวิ่งเล่นบนสนามหญ้า เจ้าสุนัขของฉันมีความสุขมาก มันชอบวิ่งไล่ตามลูกบอลของมัน หลังจากนั้นสักพัก พวกเราก็เริ่มเหนื่อย เราจึงนั่งพักใต้ต้นไม้ใหญ่และดื่มน้ำ มันเป็นวันที่ยอดเยี่ยมจริงๆ"
+    "contentThai": "วันนี้อากาศดีมาก แสงแดดสดใส ฉันพาสุนัขตัวโปรดไปเดินเล่นที่สวนสาธารณะ เราวิ่งเล่นกันบนสนามหญ้าอย่างสนุกสนาน เจ้าตูบดูมีความสุขมาก มันชอบวิ่งไล่กวดลูกบอลเป็นที่สุด พอเล่นไปสักพักจนเริ่มเหนื่อย เราก็พากันมานั่งพักดื่มน้ำใต้ร่มไม้ใหญ่ ช่างเป็นวันที่ยอดเยี่ยมจริงๆ"
   },
   {
     "id": "story-a2-1",
     "title": "The Secret Map",
-    "titleThai": "แผนที่ลับ",
+    "titleThai": "แผนที่ลายแทงลึกลับ",
     "genre": "Adventure",
     "level": "A2",
     "readTime": "2 mins",
     "content": "Yesterday, Tom found an old map in the local library. It was hiding inside a heavy history book. The map showed a strange island with a huge mountain in the middle. At the top, there was a red cross. Tom was so excited! He called his best friend, Sarah, right away to tell her. They agreed to meet at a coffee shop the next morning to plan their big adventure.",
-    "contentThai": "เมื่อวานนี้ ทอมพบแผนที่เก่าแก่ฉบับหนึ่งในห้องสมุดชุมชน มันซ่อนอยู่ภายในหนังสือประวัติศาสตร์เล่มหนา แผนที่นั้นแสดงภาพเกาะประหลาดที่มีภูเขาขนาดยักษ์อยู่ตรงกลาง และบนยอดเขามีกากบาทสีแดง ทอมตื่นเต้นมาก! เขารีบโทรหาซาร่าห์เพื่อนสนิทของเขาทันทีเพื่อเล่าเรื่องนี้ให้ฟัง พวกเขาตกลงที่จะเจอกันที่ร้านกาแฟในเช้าวันรุ่งขึ้นเพื่อวางแผนการผจญภัยครั้งยิ่งใหญ่"
+    "contentThai": "เมื่อวานนี้ ทอมบังเอิญเจอแผนที่โบราณแผ่นหนึ่งซ่อนอยู่ในหนังสือประวัติศาสตร์เล่มหนาที่ห้องสมุดชุมชน บนแผนที่เผยให้เห็นเกาะลึกลับที่มีภูเขาสูงตระหง่านอยู่ตรงกลาง พร้อมเครื่องหมายกากบาทสีแดงบนยอดเขา ทอมตื่นเต้นจนเนื้อเต้น เขารีบต่อสายหาซาร่าห์เพื่อนสนิททันที ทั้งคู่นัดเจอกันที่ร้านกาแฟในเช้าวันถัดไปเพื่อร่วมกันวางแผนการผจญภัยครั้งใหญ่"
   },
   {
     "id": "story-b1-1",
@@ -27,7 +27,7 @@
     "level": "B1",
     "readTime": "3 mins",
     "content": "The trip to Mars took seven long months. When the ship finally landed, the crew felt both relieved and nervous. They were the first humans to set up a permanent base on the red planet. Captain Reynolds stepped out of the airlock in his heavy suit. The landscape was totally empty, covered in red dust and sharp rocks. Their first job was to set up the solar panels before it got freezing cold at night. It was a dangerous mission, but everyone knew it was a huge step for humanity.",
-    "contentThai": "การเดินทางสู่ดาวอังคารใช้เวลายาวนานถึงเจ็ดเดือน เมื่อยานลงจอดในที่สุด ลูกเรือรู้สึกทั้งโล่งใจและตื่นเต้นกังวล พวกเขาคือมนุษย์กลุ่มแรกที่จะสร้างฐานที่มั่นถาวรบนดาวเคราะห์สีแดง กัปตันเรย์โนลด์สก้าวออกจากห้องปรับความดันในชุดอวกาศที่หนาหนัก ทัศนียภาพรอบด้านว่างเปล่าอย่างสิ้นเชิง ปกคลุมไปด้วยฝุ่นสีแดงและโขดหินแหลมคม งานแรกของพวกเขาคือการติดตั้งแผงโซลาร์เซลล์ก่อนที่อุณหภูมิจะหนาวจัดจนติดลบในเวลากลางคืน มันเป็นภารกิจที่อันตราย แต่ทุกคนรู้ดีว่านี่คือก้าวที่ยิ่งใหญ่สำหรับมนุษยชาติ"
+    "contentThai": "การเดินทางสู่ดาวอังคารกินเวลายาวนานถึงเจ็ดเดือนเต็ม เมื่อยานอวกาศลงจอดในที่สุด เหล่าลูกเรือต่างรู้สึกทั้งโล่งใจและตื่นเต้นประหม่าในเวลาเดียวกัน พวกเขาคือมนุษย์กลุ่มแรกที่จะมาสร้างฐานที่มั่นถาวรบนดาวเคราะห์สีแดงดวงนี้ กัปตันเรย์โนลด์สก้าวเท้าออกจากประตูแอร์ล็อคในชุดอวกาศอันหนักอึ้ง ภูมิทัศน์เบื้องหน้าช่างเวิ้งว้างว่างเปล่า ถูกปกคลุมไปด้วยฝุ่นผงสีแดงและโขดหินแหลมคม ภารกิจแรกของพวกเขาคือการติดตั้งแผงโซลาร์เซลล์ให้เสร็จสิ้น ก่อนที่ความหนาวเหน็บยะเยือกจะมาเยือนในยามค่ำคืน แม้จะเป็นภารกิจที่เต็มไปด้วยอันตราย แต่ทุกคนต่างรู้ดีว่านี่คือก้าวย่างที่ยิ่งใหญ่ของมวลมนุษยชาติ"
   },
   {
     "id": "story-a1-2",
@@ -37,17 +37,17 @@
     "level": "A1",
     "readTime": "1 min",
     "content": "I wake up at seven o'clock. The sun is bright today. I walk to the kitchen and make a cup of hot coffee. It smells really good. I look out the window and watch the birds. I drink my coffee slowly. Then, I take a shower and get dressed. Now I'm ready for work.",
-    "contentThai": "ฉันตื่นนอนตอนเจ็ดโมงเช้า วันนี้แสงแดดสดใสมาก ฉันเดินไปที่ห้องครัวและชงกาแฟร้อนหนึ่งแก้ว กลิ่นมันหอมมากจริงๆ ฉันมองออกไปนอกหน้าต่างและดูนกบินไปมา ฉันจิบกาแฟอย่างช้าๆ จากนั้นฉันก็ไปอาบน้ำและแต่งตัว ตอนนี้ฉันพร้อมสำหรับไปทำงานแล้ว"
+    "contentThai": "ฉันตื่นตอนเจ็ดโมงเช้า วันนี้แดดแจ่มใสกำลังดี ฉันเดินเข้าครัวไปชงกาแฟร้อนๆ สักแก้ว กลิ่นหอมกรุ่นชวนสดชื่น ระหว่างจิบกาแฟช้าๆ พลางมองดูนกนอกหน้าต่างเพลินๆ จากนั้นจึงไปอาบน้ำแต่งตัว ตอนนี้ฉันพร้อมเริ่มงานของวันแล้ว"
   },
   {
     "id": "story-a2-2",
     "title": "The Supermarket Trip",
-    "titleThai": "ไปซื้อของที่ซูเปอร์มาร์เก็ต",
+    "titleThai": "จ่ายตลาดที่ซูเปอร์มาร์เก็ต",
     "genre": "Daily Life",
     "level": "A2",
     "readTime": "2 mins",
     "content": "On Saturday afternoon, I went to the supermarket with a long shopping list. First, I picked up some fresh vegetables and apples. Next, I grabbed some milk and cheese from the dairy aisle. I couldn't find the bread anywhere, so I asked a worker for help. He pointed me toward the bakery. In the end, I waited in a long line at the checkout, paid with my card, and carried my heavy bags home.",
-    "contentThai": "ในบ่ายวันเสาร์ ฉันไปซูเปอร์มาร์เก็ตพร้อมรายการซื้อของยาวเหยียด อันดับแรก ฉันเลือกผักสดและแอปเปิ้ล ถัดมา ฉันหยิบนมและชีสจากแผนกผลิตภัณฑ์นม ฉันหาขนมปังไม่เจอเลย จึงขอความช่วยเหลือจากพนักงาน เขาชี้ทางให้ฉันไปยังโซนเบเกอรี่ ในที่สุด ฉันก็เข้าแถวรอจ่ายเงินที่แคชเชียร์ จ่ายด้วยบัตร และหิ้วถุงของหนักๆ กลับบ้าน"
+    "contentThai": "บ่ายวันเสาร์ ฉันแวะไปซูเปอร์มาร์เก็ตพร้อมลิสต์รายการของที่ต้องซื้อยาวเหยียด เริ่มจากหยิบผักสดและแอปเปิ้ลกรอบๆ ก่อน จากนั้นจึงเดินไปโซนผลิตภัณฑ์นมเพื่อหยิบนมและชีส พอหาชั้นวางขนมปังไม่เจอ ฉันจึงหันไปขอความช่วยเหลือจากพนักงาน ซึ่งเขาก็ชี้ทางไปยังโซนเบเกอรี่ให้อย่างสุภาพ สุดท้ายฉันไปยืนต่อแถวจ่ายเงินที่แคชเชียร์ รูดบัตรเรียบร้อย แล้วหิ้วถุงของพะรุงพะรังกลับบ้านอย่างสบายใจ"
   },
   {
     "id": "story-b1-2",
@@ -57,257 +57,257 @@
     "level": "B1",
     "readTime": "3 mins",
     "content": "Tuesday was a crazy day at the office. I got in at 8:30 AM and jumped straight into answering emails. At 10:00 AM, we had a team meeting about the new marketing project, and my boss gave me three new tasks to finish by Friday. I was feeling pretty stressed out. But at noon, I went out for lunch with my coworkers. We talked about our weekend plans and had a good laugh. After that, I felt a lot better and managed to get through most of my work before heading home.",
-    "contentThai": "วันอังคารเป็นวันที่วุ่นวายสุดๆ ในออฟฟิศ ฉันมาถึงตอน 8:30 น. และเริ่มตอบอีเมลทันที ตอน 10:00 น. พวกเรามีการประชุมทีมเกี่ยวกับโปรเจกต์การตลาดใหม่ และหัวหน้าก็มอบหมายงานใหม่ให้ฉันสามงานที่ต้องทำให้เสร็จภายในวันศุกร์ ฉันรู้สึกเครียดพอสมควร แต่ตอนเที่ยง ฉันออกไปทานอาหารกลางวันกับเพื่อนร่วมงาน เราคุยกันเรื่องแผนการในวันหยุดสุดสัปดาห์และหัวเราะกันอย่างสนุกสนาน หลังจากนั้น ฉันรู้สึกดีขึ้นมากและสามารถเคลียร์งานส่วนใหญ่ได้ก่อนเดินทางกลับบ้าน"
+    "contentThai": "วันอังคารที่ผ่านมาเป็นวันที่วุ่นวายสุดๆ ในที่ทำงาน ฉันมาถึงออฟฟิศตอน 8:30 น. แล้วรีบเคลียร์ตอบอีเมลทันที พอถึง 10:00 น. ก็มีประชุมทีมเรื่องแคมเปญการตลาดใหม่ แถมหัวหน้ายังมอบหมายงานด่วนอีกสามชิ้นที่ต้องเสร็จภายในวันศุกร์ ทำเอาฉันรู้สึกเครียดและกดดันไม่น้อย แต่พอถึงมื้อเที่ยง ฉันออกไปทานข้าวกับเพื่อนร่วมงาน เราพูดคุยเรื่องแพลนวันหยุดและหัวเราะกันอย่างสนุกสนาน ทำให้ฉันรู้สึกผ่อนคลายและมีพลังใจกลับมาลุยสะสางงานจนเสร็จไปได้มากก่อนเดินทางกลับบ้าน"
   },
   {
     "id": "story-b2-1",
     "title": "Weekend Chores and Relaxation",
-    "titleThai": "งานบ้านวันหยุดและการพักผ่อน",
+    "titleThai": "งานบ้านวันหยุดและการพักผ่อนที่แท้จริง",
     "genre": "Daily Life",
     "level": "B2",
     "readTime": "4 mins",
     "content": "My apartment was a complete mess by Friday night, so I decided to get all my chores out of the way early on Saturday. I woke up, drank some coffee, and got straight to work. I vacuumed the whole place, scrubbed the bathroom, and ran two loads of laundry. It was exhausting, but seeing everything spotless felt amazing. By early afternoon, I was finally done. I brewed a pot of tea and crashed on the sofa with a book I'd been wanting to read. After working so hard all morning, just sitting quietly felt like the best reward.",
-    "contentThai": "อพาร์ตเมนต์ของฉันรกมากจนถึงคืนวันศุกร์ ฉันจึงตัดสินใจเคลียร์งานบ้านทั้งหมดให้เสร็จตั้งแต่ช่วงเช้าวันเสาร์ ฉันตื่นนอน ดื่มกาแฟ และเริ่มลงมือทำงานบ้านทันที ฉันดูดฝุ่นทั่วทั้งห้อง ขัดห้องน้ำ และซักผ้าไปสองรอบ มันเหนื่อยมาก แต่การได้เห็นทุกอย่างสะอาดหมดจดทำให้รู้สึกยอดเยี่ยมจริงๆ พอถึงช่วงบ่ายแก่ๆ ในที่สุดฉันก็ทำเสร็จ ฉันชงชาหนึ่งกาแล้วทิ้งตัวลงบนโซฟาพร้อมหนังสือเล่มที่อยากอ่านมานาน หลังจากทำงานหนักมาตลอดทั้งเช้า การได้นั่งพักเงียบๆ ช่างเป็นรางวัลที่ดีที่สุด"
+    "contentThai": "พอถึงคืนวันศุกร์ สภาพห้องของฉันก็รกจนแทบดูไม่ได้ ฉันเลยตั้งใจว่าจะเคลียร์งานบ้านทุกอย่างให้เสร็จตั้งแต่เช้าวันเสาร์ ตื่นมาปุ๊บก็จิบกาแฟเติมพลังแล้วลุยทำความสะอาดทันที ทั้งดูดฝุ่นทั่วทั้งห้อง ขัดห้องน้ำจนเอี่ยม และซักผ้าไปอีกสองรอบใหญ่ แม้จะเหนื่อยเอาเรื่อง แต่พอเห็นทุกซอกทุกมุมสะอาดสะอ้านก็รู้สึกฟินสุดๆ พอบ่ายคล้อย งานบ้านทุกอย่างก็เสร็จเรียบร้อย ฉันเลยชงชาร้อนๆ หนึ่งกา แล้วทิ้งตัวลงบนโซฟาหยิบหนังสือเล่มโปรดที่อยากอ่านมานานขึ้นมาเปิดอ่าน หลังลุยงานหนักมาทั้งเช้า การได้นั่งพักผ่อนเงียบๆ แบบนี้ ช่างเป็นรางวัลชีวิตที่ดีที่สุดจริงๆ"
   },
   {
     "id": "story-a1-3",
     "title": "My Pet Cat",
-    "titleThai": "แมวสัตว์เลี้ยงของฉัน",
+    "titleThai": "ลูน่า แมวตัวโปรดของฉัน",
     "genre": "Daily Life",
     "level": "A1",
     "readTime": "1 min",
     "content": "I have a small cat named Luna. She is black and white. Every morning, I give her food and water. She loves to eat fish. After she eats, she sleeps on my bed. In the afternoon, we play with a small toy. Luna runs very fast! She makes me smile every day. I love my cat so much.",
-    "contentThai": "ฉันมีแมวตัวเล็กชื่อลูน่า เธอมีขนสีขาวดำ ทุกเช้าฉันจะให้อาหารและน้ำแก่เธอ เธอชอบกินปลามาก หลังจากกินเสร็จ เธอก็จะนอนหลับบนเตียงของฉัน ในตอนบ่าย พวกเราเล่นของเล่นชิ้นเล็กๆ ด้วยกัน ลูน่าวิ่งเร็วมาก! เธอทำให้ฉันยิ้มได้ในทุกๆ วัน ฉันรักแมวของฉันมากจริงๆ"
+    "contentThai": "ฉันเลี้ยงแมวตัวเล็กๆ ไว้ตัวหนึ่งชื่อว่าลูน่า ขนของมันมีสีขาวสลับดำ ทุกๆ เช้าฉันจะคอยเตรียมอาหารและน้ำให้ เจ้าลูน่าชอบกินปลามาก พออิ่มท้องแล้วมันก็จะแอบไปนอนหลับปุ๋ยบนเตียงของฉัน ตกบ่ายเรามักจะเล่นของเล่นชิ้นเล็กๆ ด้วยกัน ลูน่าวิ่งไวสุดๆ เจ้าเหมียวตัวนี้คอยเรียกรอยยิ้มให้ฉันได้ทุกวัน ฉันรักแมวตัวนี้มากจริงๆ"
   },
   {
     "id": "story-a1-4",
     "title": "Cooking Dinner",
-    "titleThai": "ทำอาหารเย็น",
+    "titleThai": "ทำมื้อเย็นง่ายๆ",
     "genre": "Daily Life",
     "level": "A1",
     "readTime": "1 min",
     "content": "It's six o'clock in the evening and I'm very hungry. I go to the kitchen to cook dinner. I wash some vegetables and cut them up. I put rice in a pot with some water. Then, I fry an egg in a pan. The food smells great. I sit at the table to eat. It's really delicious!",
-    "contentThai": "ตอนนี้เวลาหกโมงเย็นแล้วและฉันหิวมาก ฉันเดินไปที่ห้องครัวเพื่อทำอาหารเย็น ฉันล้างผักและหั่นเป็นชิ้นๆ ฉันใส่ข้าวลงในหม้อพร้อมน้ำ จากนั้นฉันก็ทอดไข่ในกระทะ กลิ่นอาหารหอมน่ากินมาก ฉันนั่งลงที่โต๊ะเพื่อรับประทาน มันอร่อยมากจริงๆ!"
+    "contentThai": "ตอนนี้เวลาหกโมงเย็น ท้องฉันเริ่มร้องหิวแล้ว ฉันจึงเดินเข้าครัวไปทำมื้อค่ำ ฉันล้างผักสดแล้วหั่นเตรียมไว้ ซาวข้าวใส่หม้อตวงน้ำให้พอดี จากนั้นก็ตอกไข่ลงไปทอดในกระทะจนส่งกลิ่นหอมฟุ้ง ฉันยกอาหารมานั่งกินที่โต๊ะ บอกเลยว่าอร่อยติดใจจริงๆ!"
   },
   {
     "id": "story-a1-5",
     "title": "Going to School",
-    "titleThai": "ไปโรงเรียน",
+    "titleThai": "วันเปิดเทอมไปโรงเรียน",
     "genre": "Daily Life",
     "level": "A1",
     "readTime": "2 mins",
     "content": "I wake up early on Monday morning. I wash my face and brush my teeth. I put on my school uniform. Then, I eat some bread and drink milk. I grab my bag and say goodbye to my mom. I walk to the bus stop. The yellow bus comes at eight o'clock. I sit with my friend. We talk and laugh all the way to school.",
-    "contentThai": "ฉันตื่นแต่เช้าในเช้าวันจันทร์ ฉันล้างหน้าและแปรงฟัน ฉันสวมเครื่องแบบนักเรียน จากนั้น ฉันกินขนมปังและดื่มนม ฉันหยิบกระเป๋าและบอกลาคุณแม่ ฉันเดินไปที่ป้ายรถประจำทาง รถบัสสีเหลืองมาถึงตอนแปดโมงตรง ฉันนั่งกับเพื่อนของฉัน พวกเราคุยและหัวเราะกันไปตลอดทางจนถึงโรงเรียน"
+    "contentThai": "เช้าวันจันทร์ฉันตื่นแต่เช้าตรู่ ล้างหน้าแปรงฟันแล้วสวมชุดนักเรียนเรียบร้อย จากนั้นก็รองท้องด้วยขนมปังกับนมสดสักแก้ว ฉันหยิบกระเป๋าและบอกลาคุณแม่ก่อนเดินไปยังป้ายรถเมล์ รถโรงเรียนคันสีเหลืองแล่นมาเทียบตรงเวลาแปดโมงพอดี ฉันขึ้นไปนั่งข้างเพื่อนสนิท เราพูดคุยหัวเราะกันอย่างสนุกสนานตลอดทางจนถึงโรงเรียน"
   },
   {
     "id": "story-a2-3",
     "title": "A Visit to the Dentist",
-    "titleThai": "ไปพบทันตแพทย์",
+    "titleThai": "ไปตรวจสุขภาพฟัน",
     "genre": "Daily Life",
     "level": "A2",
     "readTime": "2 mins",
     "content": "Yesterday afternoon, I went to the dentist for a check-up. I was a little nervous while sitting in the waiting room. The nurse called my name, and I sat in a big chair. The dentist asked me to open my mouth wide. He looked at my teeth with a tiny mirror. He told me that my teeth were healthy and clean. I was so relieved! I promised to keep brushing my teeth twice a day.",
-    "contentThai": "เมื่อบ่ายวานนี้ ฉันไปพบทันตแพทย์เพื่อตรวจสุขภาพฟัน ฉันรู้สึกกังวลเล็กน้อยขณะนั่งอยู่ในห้องรอตรวจ พยาบาลเรียกชื่อของฉัน และฉันก็นั่งลงบนเก้าอี้ตัวใหญ่ ทันตแพทย์บอกให้ฉันอ้าปากกว้างๆ เขาตรวจดูฟันของฉันด้วยกระจกบานเล็ก เขาบอกฉันว่าฟันของฉันแข็งแรงและสะอาดดี ฉันโล่งใจมาก! ฉันสัญญาว่าจะแปรงฟันวันละสองครั้งต่อไปอย่างสม่ำเสมอ"
+    "contentThai": "เมื่อบ่ายวานนี้ ฉันมีนัดตรวจฟันกับทันตแพทย์ ช่วงที่นั่งรออยู่ในห้องพักก็แอบรู้สึกเกร็งๆ อยู่บ้าง พอพยาบาลเรียกชื่อ ฉันก็เดินเข้าไปเอนตัวลงบนเก้าอี้ทำฟัน คุณหมอบอกให้อ้าปากกว้างๆ แล้วใช้กระจกบานเล็กส่องตรวจดูฟันอย่างละเอียด ก่อนจะบอกด้วยรอยยิ้มว่าฟันของฉันสะอาดและแข็งแรงดีทุกซี่ ทำเอาฉันโล่งอกไปทีเดียว! และฉันตั้งใจว่าจะแปรงฟันวันละสองครั้งอย่างสม่ำเสมอต่อไป"
   },
   {
     "id": "story-a2-4",
     "title": "Cleaning the House",
-    "titleThai": "ทำความสะอาดบ้าน",
+    "titleThai": "วันทำความสะอาดประจำสัปดาห์",
     "genre": "Daily Life",
     "level": "A2",
     "readTime": "2 mins",
     "content": "Sunday is our family cleaning day. In the morning, we cleaned the whole house together. My dad washed the car outside, and my mom swept the floors. I helped out by dusting the shelves and taking out the trash. It took us about two hours to finish. After all that hard work, the house looked amazing. We just sat on the sofa and watched a movie to relax.",
-    "contentThai": "วันอาทิตย์เป็นวันทำความสะอาดของครอบครัวเรา ในตอนเช้า พวกเราช่วยกันทำความสะอาดทั่วทั้งบ้าน พ่อของฉันล้างรถข้างนอก และแม่กวาดพื้น ฉันช่วยปัดฝุ่นตามชั้นวางของและนำขยะออกไปทิ้ง พวกเราใช้เวลาประมาณสองชั่วโมงจึงเสร็จ หลังจากเหน็ดเหนื่อยกับการทำงาน บ้านก็ดูสะอาดสวยงามมาก พวกเราเพียงแค่นั่งบนโซฟาและดูภาพยนตร์เพื่อพักผ่อนอย่างสบายใจ"
+    "contentThai": "วันอาทิตย์เป็นวันบิ๊กคลีนนิ่งของครอบครัวเรา ช่วงเช้าทุกคนต่างช่วยกันคนละไม้คนละมือ พ่อออกไปล้างรถด้านนอก ส่วนแม่รับหน้าที่กวาดและถูพื้นบ้าน ฉันช่วยปัดฝุ่นตามชั้นวางของและนำขยะไปทิ้งข้างนอก เราใช้เวลาราวสองชั่วโมงบ้านก็สะอาดเอี่ยมสะอ้าน น่าอยู่ขึ้นเป็นกอง หลังจากเหน็ดเหนื่อยมาทั้งเช้า พวกเราก็นั่งเอนหลังบนโซฟาดูหนังเรื่องโปรดด้วยกันอย่างเพลิดเพลิน"
   },
   {
     "id": "story-a2-5",
     "title": "Buying New Shoes",
-    "titleThai": "ซื้อรองเท้าคู่ใหม่",
+    "titleThai": "ถอยรองเท้าวิ่งคู่ใหม่",
     "genre": "Daily Life",
     "level": "A2",
     "readTime": "2 mins",
     "content": "My old running shoes were falling apart, so I needed some new ones. After work, I drove to the mall and went into a big sports store. There were so many shoes on the shelves! A nice worker asked if I needed any help. I tried on a blue pair and a black pair. The blue ones were super comfortable and fit perfectly. I paid for them and went home with a big smile.",
-    "contentThai": "รองเท้าวิ่งคู่เก่าของฉันเริ่มพังชำรุดแล้ว ฉันจึงจำเป็นต้องซื้อคู่ใหม่ หลังเลิกงาน ฉันขับรถไปห้างสรรพสินค้าและเดินเข้าไปในร้านขายอุปกรณ์กีฬาขนาดใหญ่ มีรองเท้ามากมายวางอยู่บนชั้นวาง! พนักงานที่อัธยาศัยดีคนหนึ่งถามว่าฉันต้องการความช่วยเหลือไหม ฉันลองใส่คู่สีน้ำเงินและคู่สีดำ คู่สีน้ำเงินใส่สบายสุดๆ และพอดีเป๊ะ ฉันจ่ายเงินซื้อและกลับบ้านด้วยรอยยิ้มกว้าง"
+    "contentThai": "รองเท้าวิ่งคู่เก่งของฉันเริ่มพังจนแทบใส่ไม่ได้ ฉันจึงตัดสินใจซื้อคู่ใหม่ หลังเลิกงานเลยขับรถตรงไปห้างแล้วแวะเข้าร้านอุปกรณ์กีฬาขนาดใหญ่ บนชั้นวางมีรองเท้าให้เลือกละลานตา พนักงานเข้ามาทักทายและให้คำแนะนำอย่างเป็นกันเอง ฉันลองสวมทั้งคู่สีน้ำเงินและสีดำ ปรากฏว่าคู่สีน้ำเงินใส่สบายและกระชับเท้าพอดีเป๊ะ ฉันจึงตกลงซื้อและเดินถือถุงกลับบ้านด้วยรอยยิ้มเต็มหน้า"
   },
   {
     "id": "story-b1-3",
     "title": "Planning a Birthday Party",
-    "titleThai": "วางแผนงานเลี้ยงวันเกิด",
+    "titleThai": "แผนเซอร์ไพรส์วันเกิดน้องสาว",
     "genre": "Daily Life",
     "level": "B1",
     "readTime": "3 mins",
     "content": "My sister's birthday is next week, and I'm planning a surprise party for her. First, I made a guest list and sent texts to all her close friends. Then, I went to the local bakery to order a chocolate cake. The hardest part was buying decorations without her finding out. I managed to sneak in some balloons and a banner. I've asked my parents to take her out to dinner while I set everything up at the house. I can't wait to see her face when she walks through the door!",
-    "contentThai": "วันเกิดของน้องสาวฉันคือสัปดาห์หน้า และฉันกำลังวางแผนจัดงานปาร์ตี้เซอร์ไพรส์ให้เธอ ขั้นแรก ฉันทำรายชื่อแขกและส่งข้อความไปหาเพื่อนสนิททุกคนของเธอ จากนั้น ฉันไปที่ร้านเบเกอรี่แถวบ้านเพื่อสั่งเค้กช็อกโกแลต ส่วนที่ยากที่สุดคือการซื้อของตกแต่งโดยไม่ให้เธอรู้ตัว ฉันแอบเอาลูกโป่งและป้ายผ้าเข้ามาได้สำเร็จ ฉันขอให้พ่อแม่พาเธอออกไปทานอาหารเย็นข้างนอกระหว่างที่ฉันจัดเตรียมทุกอย่างที่บ้าน ฉันแทบรอไม่ไหวที่จะได้เห็นสีหน้าของเธอเมื่อเธอเปิดประตูเดินเข้ามา!"
+    "contentThai": "สัปดาห์หน้าเป็นวันเกิดของน้องสาว ฉันเลยแอบวางแผนจัดปาร์ตี้เซอร์ไพรส์ให้เธอ เริ่มต้นด้วยการลิสต์รายชื่อแขกแล้วส่งข้อความนัดแนะกับกลุ่มเพื่อนสนิทของเธอ จากนั้นฉันก็แวะไปสั่งเค้กช็อกโกแลตที่ร้านเบเกอรี่เจ้าประจำ ส่วนที่ท้าทายที่สุดคือการแอบซื้อของตกแต่งไม่ให้เธอจับได้ ซึ่งฉันก็แอบหอบลูกโป่งและป้ายแบนเนอร์เข้าบ้านมาจนสำเร็จ ฉันวานให้พ่อกับแม่พาน้องออกไปทานข้าวนอกบ้าน ระหว่างที่ฉันเนรมิตตกแต่งบ้านรอ ตื่นเต้นจนแทบอดใจรอเห็นสีหน้าประหลาดใจของเธอตอนเปิดประตูเข้ามาไม่ไหวแล้ว!"
   },
   {
     "id": "story-b1-4",
     "title": "A Fitness Routine",
-    "titleThai": "กิจวัตรการออกกำลังกาย",
+    "titleThai": "ฟิตหุ่นและดูแลสุขภาพ",
     "genre": "Daily Life",
     "level": "B1",
     "readTime": "3 mins",
     "content": "I've been trying to get back into shape over the past few months. I joined a gym that's just a ten-minute walk from my apartment, and I try to go three times a week after work. My usual workout is about thirty minutes on the treadmill, followed by some light weightlifting. Honestly, it was pretty hard to stay motivated at first, especially when I was tired. But I soon noticed I had way more energy during the day. Now, going to the gym is just a normal part of my week, and I actually look forward to it.",
-    "contentThai": "ฉันพยายามกลับมาฟิตหุ่นในช่วงสองสามเดือนที่ผ่านมา ฉันสมัครฟิตเนสที่เดินจากอพาร์ตเมนต์เพียงสิบนาที และพยายามไปสัปดาห์ละสามครั้งหลังเลิกงาน การออกกำลังกายตามปกติของฉันคือการวิ่งบนลู่วิ่งประมาณสามสิบนาที ตามด้วยการยกน้ำหนักเบาๆ ตามตรงเลยนะ ช่วงแรกๆ มันค่อนข้างยากที่จะรักษาแรงบันดาลใจไว้ โดยเฉพาะเวลาที่รู้สึกเหนื่อยล้า แต่ไม่นานฉันก็สังเกตเห็นว่าตัวเองมีพลังงานมากขึ้นในระหว่างวัน ตอนนี้ การไปฟิตเนสกลายเป็นส่วนหนึ่งตามปกติในแต่ละสัปดาห์ และฉันก็ตั้งตารอมันจริงๆ"
+    "contentThai": "ช่วงสองสามเดือนที่ผ่านมา ฉันตั้งใจจะกลับมาฟิตหุ่นและดูแลสุขภาพอย่างจริงจัง จึงตัดสินใจสมัครฟิตเนสที่อยู่ห่างจากอพาร์ตเมนต์แค่เดินสิบนาที และพยายามไปออกกำลังกายหลังเลิกงานให้ได้สัปดาห์ละสามวัน โปรแกรมประจำของฉันคือวิ่งบนลู่วิ่งสัก 30 นาที แล้วต่อด้วยการเวทเทรนนิ่งเบาๆ ยอมรับตามตรงว่าช่วงแรกๆ การสร้างวินัยให้ตัวเองเป็นเรื่องยากมาก โดยเฉพาะในวันที่เหนื่อยล้าจากการทำงาน แต่ไม่นานฉันก็เริ่มสัมผัสได้ว่าร่างกายกระปรี้กระเปร่าและมีพลังมากขึ้นอย่างเห็นได้ชัด ตอนนี้การเข้าฟิตเนสกลายเป็นส่วนหนึ่งของชีวิตประจำวันที่ฉันเฝ้ารอไปแล้ว"
   },
   {
     "id": "story-b1-5",
     "title": "Car Trouble",
-    "titleThai": "ปัญหารถเสีย",
+    "titleThai": "เช้าวันวุ่นกับปัญหารถเสีย",
     "genre": "Daily Life",
     "level": "B1",
     "readTime": "3 mins",
     "content": "My morning got off to a terrible start when my car broke down on the way to work. I heard a loud clunking noise from the engine, and then it just died. I managed to steer it to the side of the road and put my flashers on. I had to call a tow truck right away, and then I called my boss to tell him I'd be late. The tow truck showed up about thirty minutes later and took my car to a nearby garage. It was super stressful, but luckily, the repair bill wasn't as bad as I thought it would be.",
-    "contentThai": "เช้าของฉันเริ่มต้นอย่างย่ำแย่เมื่อรถยนต์เกิดเสียระหว่างทางไปทำงาน ฉันได้ยินเสียงโลหะกระแทกดังสนั่นจากเครื่องยนต์ แล้วรถก็ดับไปเฉยๆ ฉันพยายามประคองพวงมาลัยเข้าข้างทางและเปิดไฟฉุกเฉิน ฉันต้องโทรเรียกรถลากทันที จากนั้นก็โทรหาหัวหน้าเพื่อแจ้งว่าจะไปสาย รถลากมาถึงประมาณสามสิบนาทีหลังจากนั้นและลากรถของฉันไปยังอู่ซ่อมใกล้ๆ มันตึงเครียดมาก แต่โชคดีที่ค่าซ่อมไม่ได้แพงอย่างที่คิดไว้"
+    "contentThai": "เช้าวันนี้เริ่มต้นได้ไม่ค่อยสวยเท่าไหร่ เพราะรถยนต์คู่ใจดันมาดับกลางทางระหว่างขับไปทำงาน จู่ๆ ก็มีเสียงโลหะกระแทกดังตึงตังจากห้องเครื่องแล้วเครื่องยนต์ก็ดับวูบไปทันที ฉันประคองพวงมาลัยหักเข้าข้างทางแล้วรีบเปิดไฟฉุกเฉิน จากนั้นจึงรีบโทรเรียกรถยกและโทรบอกหัวหน้าว่าคงเข้างานสาย รถยกมาถึงในอีกครึ่งชั่วโมงถัดมาแล้วลากรถไปยังอู่ซ่อมใกล้ๆ แม้จะรู้สึกเครียดและวุ่นวายสุดๆ แต่ก็ยังโชคดีที่ค่าซ่อมไม่ได้แพงหูฉี่อย่างที่กังวลไว้"
   },
   {
     "id": "story-b2-2",
     "title": "Managing Personal Finances",
-    "titleThai": "การจัดการการเงินส่วนบุคคล",
+    "titleThai": "จัดระเบียบการเงินส่วนบุคคล",
     "genre": "Daily Life",
     "level": "B2",
     "readTime": "4 mins",
     "content": "I recently realized I had no idea where all my money was going by the end of the month, so I decided to finally sit down and look at my expenses. I went through my bank statements and split everything into essentials, like rent and groceries, and fun stuff, like eating out. I was honestly shocked to see how much I was spending just on grabbing coffee every morning. Once I saw the numbers, I set up a much stricter budget and started automatically putting a chunk of my paycheck into savings. Using a tracking app on my phone has made a huge difference, and I'm feeling a lot better about my financial situation now.",
-    "contentThai": "เมื่อไม่นานมานี้ ฉันเพิ่งตระหนักว่าฉันไม่รู้เลยว่าเงินของตัวเองหายไปไหนหมดเมื่อถึงสิ้นเดือน ฉันจึงตัดสินใจนั่งลงและตรวจสอบค่าใช้จ่ายอย่างจริงจัง ฉันไล่ดูรายการเดินบัญชีธนาคารและแบ่งทุกอย่างออกเป็นรายจ่ายจำเป็น เช่น ค่าเช่าห้องและของสด และของฟุ่มเฟือยเพื่อความบันเทิง เช่น การทานอาหารนอกบ้าน เอาจริงๆ ฉันตกใจมากที่เห็นว่าตัวเองเสียเงินไปมากแค่ไหนกับการซื้อกาแฟดื่มทุกเช้า เมื่อเห็นตัวเลขชัดเจน ฉันจึงตั้งงบประมาณที่เข้มงวดยิ่งขึ้น และเริ่มโอนเงินส่วนหนึ่งจากเงินเดือนเข้าบัญชีออมทรัพย์โดยอัตโนมัติ การใช้แอปบันทึกรายรับรายจ่ายบนมือถือช่วยสร้างความเปลี่ยนแปลงอย่างมาก และตอนนี้ฉันรู้สึกสบายใจขึ้นมากกับสถานะทางการเงินของตัวเอง"
+    "contentThai": "เมื่อเร็วๆ นี้ ฉันเพิ่งสังเกตว่าพอถึงสิ้นเดือนทีไร เงินมักจะหายไปไหนหมดก็ไม่รู้ เลยตัดสินใจนั่งลงเช็กค่าใช้จ่ายอย่างจริงจัง ฉันเปิดสเตตเมนต์ธนาคารมาไล่ดูทีละรายการ แล้วแยกเป็นค่าใช้จ่ายจำเป็นอย่างค่าเช่าห้องกับของสด ออกจากค่าใช้จ่ายเพื่อความบันเทิงอย่างการกินข้าวนอกบ้าน บอกตรงๆ ว่าตกใจมากที่เห็นยอดเงินที่เสียไปกับค่ากาแฟยามเช้าในแต่ละเดือน พอเห็นตัวเลขชัดเจน ฉันจึงตั้งงบประมาณรายจ่ายให้รัดกุมขึ้น พร้อมตั้งระบบโอนเงินส่วนหนึ่งจากเงินเดือนเข้าบัญชีออมทรัพย์โดยอัตโนมัติทันทีที่เงินออก การมีแอปบันทึกรายรับรายจ่ายในมือถือช่วยชีวิตได้เยอะมาก ทำให้ตอนนี้ฉันรู้สึกมั่นคงและสบายใจกับสถานะทางการเงินของตัวเองขึ้นเยอะ"
   },
   {
     "id": "story-b2-3",
     "title": "A Difficult Conversation",
-    "titleThai": "การพูดคุยที่ยากลำบาก",
+    "titleThai": "เปิดอกคุยเรื่องงานอย่างมืออาชีพ",
     "genre": "Daily Life",
     "level": "B2",
     "readTime": "4 mins",
     "content": "Last week, I had to have a really awkward conversation with a coworker. They'd been consistently late with their parts of our project, and it was starting to hold everything up. I asked if we could grab a coffee and chat, trying to keep things casual. I just explained that the missed deadlines were making it hard for the rest of the team to move forward. It turned out they were dealing with some heavy personal stuff and were just totally overwhelmed. We ended up adjusting the schedule to give them some breathing room, and things have been running much smoother since then.",
-    "contentThai": "เมื่อสัปดาห์ที่แล้ว ฉันต้องพูดคุยเรื่องที่น่าอึดอัดใจกับเพื่อนร่วมงานคนหนึ่ง พวกเขาส่งงานในส่วนของตนเองล่าช้าอย่างต่อเนื่องจนเริ่มทำให้โปรเจกต์ทั้งหมดล่าช้าตามไปด้วย ฉันจึงชวนพวกเขาไปดื่มกาแฟและพูดคุย โดยพยายามรักษาบรรยากาศให้เป็นกันเอง ฉันอธิบายตรงๆ ว่าการส่งงานไม่ทันกำหนดทำให้ทีมที่เหลือทำงานต่อได้ยาก ปรากฏว่าพวกเขากำลังเผชิญกับปัญหาส่วนตัวที่หนักหน่วงและรู้สึกรับมือไม่ไหวจริงๆ ในที่สุดพวกเราจึงช่วยกันปรับตารางเวลาเพื่อเปิดโอกาสให้พวกเขามีเวลาหายใจบ้าง และนับแต่นั้นมา การทำงานก็ราบรื่นขึ้นอย่างมาก"
+    "contentThai": "เมื่อสัปดาห์ก่อน ฉันจำเป็นต้องเปิดอกคุยเรื่องที่ค่อนข้างอึดอัดกับเพื่อนร่วมงานคนหนึ่ง เพราะเขาส่งงานในส่วนของตัวเองล่าช้าอย่างต่อเนื่อง จนเริ่มกระทบต่อไทม์ไลน์ภาพรวมของโปรเจกต์ ฉันเลยชวนเขาไปนั่งดื่มกาแฟและพูดคุยกันสบายๆ โดยอธิบายตรงไปตรงมาว่ากำหนดส่งงานที่คลาดเคลื่อนกำลังทำให้เพื่อนๆ ในทีมเดินหน้าต่อได้ยาก ซึ่งปรากฏว่าเขากำลังเผชิญกับปัญหาส่วนตัวที่หนักหน่วงจนรับมือแทบไม่ไหว เราจึงช่วยกันปรับตารางการทำงานใหม่เพื่อช่วยผ่อนแรงให้เขามีเวลาหายใจหายคอมากขึ้น หลังจากวันนั้น บรรยากาศและการประสานงานในทีมก็ราบรื่นและคล่องตัวขึ้นอย่างเห็นได้ชัด"
   },
   {
     "id": "story-b2-4",
     "title": "Adapting to a New Neighborhood",
-    "titleThai": "การปรับตัวเข้ากับย่านใหม่",
+    "titleThai": "ปรับตัวเข้ากับย่านที่อยู่อาศัยใหม่",
     "genre": "Daily Life",
     "level": "B2",
     "readTime": "4 mins",
     "content": "Moving to a new city is always a weird mix of being excited and totally terrified. For the first few weeks in my new neighborhood, I made a point to just walk around and get a feel for the place. I found the closest grocery store, scoped out a nice park, and tracked down a great little coffee shop. I felt pretty lonely at first, not knowing anyone around. But then I volunteered for a weekend park clean-up, which ended up being a great way to meet people. We chatted while we worked, and I actually made a few friends. It finally feels like I'm starting to settle in.",
-    "contentThai": "การย้ายมาอยู่เมืองใหม่มักจะเป็นความรู้สึกผสมปนเปที่แปลกประหลาดระหว่างความตื่นเต้นและความกลัว ในช่วงสองสามสัปดาห์แรกในย่านใหม่ ฉันตั้งใจเดินสำรวจรอบๆ เพื่อให้คุ้นเคยกับสถานที่ ฉันหาร้านขายของชำที่ใกล้ที่สุด สำรวจสวนสาธารณะบรรยากาศดี และตามหาร้านกาแฟเล็กๆ ที่ยอดเยี่ยม ตอนแรกฉันรู้สึกเหงาพอสมควรเพราะไม่รู้จักใครเลย แต่แล้วฉันก็ไปเป็นอาสาสมัครทำความสะอาดสวนสาธารณะในวันหยุดสุดสัปดาห์ ซึ่งกลายเป็นวิธีที่ดีเยี่ยมในการพบปะผู้คน พวกเราคุยกันระหว่างทำงาน และฉันก็ได้เพื่อนใหม่มาสองสามคน ในที่สุดฉันก็เริ่มรู้สึกว่าตัวเองลงหลักปักฐานได้อย่างอบอุ่นแล้ว"
+    "contentThai": "การย้ายมาอยู่เมืองใหม่มักเต็มไปด้วยความรู้สึกก้ำกึ่งระหว่างความตื่นเต้นกับความกังวล ในช่วงสองสามสัปดาห์แรก ฉันตั้งใจออกเดินสำรวจรอบๆ เพื่อทำความคุ้นเคยกับละแวกบ้าน จนได้เจอร้านขายของชำที่ใกล้ที่สุด สวนสาธารณะร่มรื่น และคาเฟ่เล็กๆ บรรยากาศน่านั่ง ตอนแรกก็แอบรู้สึกเหงาอยู่บ้างเพราะยังไม่รู้จักใครเลย แต่พอได้ลองไปเป็นอาสาสมัครช่วยทำความสะอาดสวนสาธารณะในวันหยุดสุดสัปดาห์ นั่นกลับกลายเป็นจุดเริ่มต้นที่ดีเยี่ยมในการทำความรู้จักเพื่อนบ้าน เราได้พูดคุยแลกเปลี่ยนกันระหว่างช่วยกันทำงาน จนฉันได้เพื่อนใหม่มาสองสามคน ในที่สุดฉันก็เริ่มรู้สึกว่าที่นี่กลายเป็นบ้านที่อบอุ่นและลงตัวสำหรับฉันแล้ว"
   },
   {
     "id": "story-a1-6",
     "title": "Ordering at a Cafe",
-    "titleThai": "สั่งอาหารที่คาเฟ่",
+    "titleThai": "แวะสั่งของอร่อยที่คาเฟ่",
     "genre": "Daily Life",
     "level": "A1",
     "readTime": "1 min",
     "content": "I walk into a cozy cafe on Sunday morning. The waiter smiles and hands me a menu. I order a chicken sandwich and an iced lemon tea. I ask to eat here. The waiter brings my food in five minutes. The sandwich is warm and tasty. I pay with cash and thank the waiter.",
-    "contentThai": "ฉันเดินเข้าไปในคาเฟ่ที่แสนอบอุ่นในเช้าวันอาทิตย์ พนักงานเสิร์ฟยิ้มและยื่นเมนูให้ฉัน ฉันสั่งแซนด์วิชไก่และชามะนาวเย็นหนึ่งแก้ว ฉันบอกว่าทานที่นี่ พนักงานนำอาหารมาเสิร์ฟภายในห้านาที แซนด์วิชอุ่นและอร่อยมาก ฉันจ่ายเงินสดและกล่าวขอบคุณพนักงานเสิร์ฟ"
+    "contentThai": "เช้าวันอาทิตย์ ฉันเดินเข้าไปในคาเฟ่บรรยากาศอบอุ่น พนักงานเสิร์ฟยิ้มต้อนรับพร้อมยื่นเมนูให้ ฉันสั่งแซนด์วิชไก่กับชามะนาวเย็นหนึ่งแก้ว และขอนั่งทานที่ร้าน เพียงห้านาที พนักงานก็นำอาหารมาเสิร์ฟ แซนด์วิชอุ่นๆ รสชาติกลมกล่อมอร่อยมาก ฉันจ่ายเงินสดและเอ่ยขอบคุณพนักงานก่อนกลับ"
   },
   {
     "id": "story-a1-7",
     "title": "Asking for Directions",
-    "titleThai": "การถามทาง",
+    "titleThai": "ถามทางใจกลางเมือง",
     "genre": "Daily Life",
     "level": "A1",
     "readTime": "1 min",
     "content": "I am lost in the city center. I need to find the train station. I see a police officer near a shop. I say, \"Excuse me, where is the train station?\" The officer smiles and says, \"Walk straight for two blocks, then turn left. It is next to the big bank.\" I thank him and follow his directions. Soon, I see the station.",
-    "contentThai": "ฉันหลงทางอยู่ในใจกลางเมือง ฉันต้องไปที่สถานีรถไฟ ฉันเห็นตำรวจคนหนึ่งอยู่ใกล้ร้านค้า ฉันจึงพูดว่า \"ขอโทษนะคะ สถานีรถไฟไปทางไหนคะ\" ตำรวจยิ้มแล้วตอบว่า \"เดินตรงไปสองบล็อก แล้วเลี้ยวซ้าย มันอยู่ติดกับธนาคารใหญ่ครับ\" ฉันขอบคุณเขาและเดินตามเส้นทางที่บอก ไม่นาน ฉันก็มองเห็นสถานีรถไฟ"
+    "contentThai": "ฉันหลงทางอยู่แถวย่านใจกลางเมือง และกำลังมองหาสถานีรถไฟ บังเอิญเห็นคุณตำรวจยืนอยู่หน้าร้านค้าแถวนั้น จึงเดินเข้าไปถามว่า \"ขอโทษนะคะ สถานีรถไฟไปทางไหนคะ\" คุณตำรวจยิ้มอย่างใจดีแล้วบอกว่า \"เดินตรงไปสองช่วงตึกแล้วเลี้ยวซ้าย จะอยู่ติดกับธนาคารใหญ่ครับ\" ฉันขอบคุณเขาแล้วเดินตามทางที่บอก เพียงครู่เดียวก็มองเห็นสถานีรถไฟอยู่เบื้องหน้า"
   },
   {
     "id": "story-a1-8",
     "title": "At the Pharmacy",
-    "titleThai": "ที่ร้านขายยา",
+    "titleThai": "แวะซื้อยาที่ร้านขายยา",
     "genre": "Daily Life",
     "level": "A1",
     "readTime": "1 min",
     "content": "I feel sick today. I have a bad headache and a cough. I walk to the local pharmacy to get medicine. The pharmacist asks, \"How can I help you?\" I tell him my symptoms. He gives me some pills and syrup. He tells me to take two pills after breakfast and dinner. He also says to drink plenty of warm water. I feel happy to get help.",
-    "contentThai": "วันนี้ฉันรู้สึกไม่สบาย ฉันปวดศีรษะมากและมีอาการไอ ฉันเดินไปที่ร้านขายยาแถวบ้านเพื่อซื้อยา เภสัชกรถามว่า \"มีอะไรให้ช่วยไหมครับ\" ฉันบอกอาการของตัวเองไป เขาให้ยาเม็ดและยาน้ำเชื่อมมา เขาบอกให้ฉันทานยาวันละสองเม็ดหลังอาหารเช้าและเย็น อีกทั้งยังแนะนำให้ดื่มน้ำอุ่นมากๆ ฉันรู้สึกดีใจที่ได้รับความช่วยเหลือ"
+    "contentThai": "วันนี้ฉันรู้สึกไม่ค่อยสบาย ทั้งปวดหัวตึบและมีอาการไอ จึงแวะไปซื้อยาที่ร้านขายยาใกล้บ้าน เภสัชกรทักทายอย่างเป็นกันเองว่า \"มีอาการอย่างไรให้ช่วยบ้างครับ\" ฉันเล่าอาการให้ฟัง เขาจึงจัดยาเม็ดและยาน้ำแก้ไอมาให้ พร้อมแนะนำให้ทานยาครั้งละสองเม็ดหลังอาหารเช้าและเย็น และอย่าลืมดื่มน้ำอุ่นเยอะๆ ฉันรู้สึกสบายใจและขอบคุณที่ได้รับคำแนะนำเป็นอย่างดี"
   },
   {
     "id": "story-a2-6",
     "title": "Checking In at a Hotel",
-    "titleThai": "เช็คอินที่โรงแรม",
+    "titleThai": "เช็กอินเข้าพักที่โรงแรม",
     "genre": "Daily Life",
     "level": "A2",
     "readTime": "2 mins",
     "content": "After a long bus ride, we finally arrived at our hotel in the evening. I walked up to the front desk with our reservation confirmation. The receptionist welcomed us warmly and asked for my ID card. She checked the system and confirmed our two-night stay in a double room. She gave us two electronic key cards and explained that breakfast was served on the second floor from 7:00 AM to 10:00 AM. She also gave us the Wi-Fi password. We took the elevator up to the fourth floor, unpacked our bags, and relaxed on the comfortable bed.",
-    "contentThai": "หลังจากนั่งรถบัสมาเป็นเวลานาน ในที่สุดพวกเราก็มาถึงโรงแรมในตอนเย็น ฉันเดินไปที่เคาน์เตอร์ต้อนรับพร้อมใบยืนยันการจอง พนักงานต้อนรับกล่าวต้อนรับอย่างอบอุ่นและขอดูบัตรประชาชนของฉัน เธอตรวจสอบในระบบและยืนยันการเข้าพักสองคืนในห้องเตียงคู่ เธอให้คีย์การ์ดสองใบและอธิบายว่าอาหารเช้าเสิร์ฟที่ชั้นสองตั้งแต่เวลา 7:00 น. ถึง 10:00 น. เธอยังให้รหัสผ่าน Wi-Fi แก่เราด้วย พวกเราขึ้นลิฟต์ไปยังชั้นสี่ แกะกระเป๋าเดินทาง และพักผ่อนบนเตียงที่แสนสบาย"
+    "contentThai": "หลังนั่งรถทัวร์เดินทางมาอย่างยาวนาน ในที่สุดเราก็มาถึงโรงแรมในช่วงค่ำ ฉันเดินตรงไปที่เคาน์เตอร์ต้อนรับพร้อมยื่นเอกสารการจอง พนักงานต้อนรับยิ้มแย้มกล่าวต้อนรับอย่างอบอุ่นและขอดูบัตรประชาชนเพื่อเช็กข้อมูลในระบบ เธอยืนยันการเข้าพัก 2 คืนในห้องเตียงคู่ พร้อมส่งมอบคีย์การ์ด 2 ใบและแจ้งว่าอาหารเช้าเปิดบริการที่ชั้น 2 ตั้งแต่ 7:00 ถึง 10:00 น. รวมทั้งบอกรหัส Wi-Fi เราขึ้นลิฟต์ไปยังชั้น 4 รื้อกระเป๋าเก็บของ แล้วทิ้งตัวลงพักผ่อนบนเตียงนุ่มๆ อย่างสบายใจ"
   },
   {
     "id": "story-a2-7",
     "title": "Returning a Store Item",
-    "titleThai": "คืนสินค้าที่ร้านค้า",
+    "titleThai": "ขอเปลี่ยนไซซ์เสื้อที่ร้านค้า",
     "genre": "Daily Life",
     "level": "A2",
     "readTime": "2 mins",
     "content": "Last weekend, I bought a blue jacket at a clothing store in the mall. When I tried it on at home, I realized it was too tight around the shoulders. Today after work, I went back to the store with the jacket and the receipt. I explained the issue politely to the shop assistant. She checked the tag and the receipt to make sure everything was in good condition. Then, she helped me find the same jacket in a larger size. It fit me much better! The exchange was fast and easy, and I left the store very satisfied.",
-    "contentThai": "เมื่อสุดสัปดาห์ที่แล้ว ฉันซื้อเสื้อแจ็กเก็ตสีน้ำเงินจากร้านขายเสื้อผ้าในห้างสรรพสินค้า เมื่อลองใส่ที่บ้าน ฉันพบว่ามันแน่นเกินไปบริเวณหัวไหล่ วันนี้หลังเลิกงาน ฉันจึงกลับไปที่ร้านพร้อมเสื้อแจ็กเก็ตและใบเสร็จ ฉันอธิบายปัญหาให้พนักงานขายฟังอย่างสุภาพ เธอตรวจดูป้ายสินค้าและใบเสร็จเพื่อให้แน่ใจว่าสินค้าอยู่ในสภาพสมบูรณ์ จากนั้น เธอช่วยฉันหาแจ็กเก็ตตัวเดิมในขนาดที่ใหญ่ขึ้น มันพอดีตัวฉันมากกว่าเดิมมาก! การเปลี่ยนสินค้าเป็นไปอย่างรวดเร็วและง่ายดาย และฉันออกจากร้านด้วยความพึงพอใจอย่างยิ่ง"
+    "contentThai": "เมื่อสุดสัปดาห์ก่อน ฉันซื้อเสื้อแจ็กเก็ตสีน้ำเงินมาจากร้านในห้าง แต่พอกลับมาลองใส่อีกทีที่บ้านกลับรู้สึกว่ามันฟิตแน่นตรงช่วงไหล่เกินไป วันนี้หลังเลิกงานฉันจึงนำเสื้อแจ็กเก็ตพร้อมใบเสร็จกลับไปที่ร้าน ฉันอธิบายปัญหาให้พนักงานฟังอย่างสุภาพ เธอตรวจดูป้ายราคาและใบเสร็จจนแน่ใจว่าสินค้าอยู่ในสภาพสมบูรณ์ ก่อนจะช่วยหาไซซ์ที่ใหญ่ขึ้นให้ พอลองใส่แล้วพอดีตัวขึ้นมาก! ขั้นตอนการเปลี่ยนสินค้ารวดเร็วและง่ายดาย ทำเอาฉันเดินออกจากร้านด้วยความประทับใจสุดๆ"
   },
   {
     "id": "story-a2-8",
     "title": "Booking a Doctor's Appointment",
-    "titleThai": "นัดหมายแพทย์",
+    "titleThai": "โทรนัดหมายตรวจสุขภาพ",
     "genre": "Daily Life",
     "level": "A2",
     "readTime": "2 mins",
     "content": "Yesterday morning, I called the medical clinic to schedule an annual health check-up. The receptionist answered politely and asked for my full name and date of birth. She asked which doctor I wanted to see and what time suited me best. I requested an appointment on Friday afternoon after 3:00 PM. She checked the schedule and booked me with Dr. Evans for 3:30 PM. She reminded me to bring my insurance card and avoid eating heavy food before the appointment. I noted the date in my calendar immediately.",
-    "contentThai": "เมื่อเช้าวานนี้ ฉันโทรศัพท์ไปที่คลินิกการแพทย์เพื่อนัดหมายการตรวจสุขภาพประจำปี พนักงานต้อนรับรับสายอย่างสุภาพและสอบถามชื่อ-นามสกุลรวมถึงวันเดือนปีเกิดของฉัน เธอถามว่าฉันต้องการพบแพทย์ท่านใดและเวลาไหนที่สะดวกที่สุด ฉันขอนัดหมายในบ่ายวันศุกร์หลังเวลา 15:00 น. เธอตรวจสอบตารางเวลาและนัดหมายให้ฉันพบคุณหมออีแวนส์ในเวลา 15:30 น. เธอเตือนให้ฉันนำบัตรประกันสุขภาพไปด้วยและหลีกเลี่ยงการรับประทานอาหารมื้อหนักก่อนการตรวจ ฉันจดบันทึกวันนัดลงในปฏิทินทันที"
+    "contentThai": "เมื่อวานช่วงเช้า ฉันโทรไปคลินิกเพื่อนัดตรวจสุขภาพประจำปี เจ้าหน้าที่รับสายด้วยน้ำเสียงสุภาพและสอบถามชื่อ-นามสกุลพร้อมวันเกิด จากนั้นจึงถามว่าฉันต้องการตรวจกับแพทย์ท่านใดและสะดวกช่วงเวลาไหนเป็นพิเศษ ฉันขอนัดเป็นช่วงบ่ายวันศุกร์หลังบ่ายสามโมง เธอตรวจสอบตารางแล้วลงคิวนัดกับคุณหมออีแวนส์ในเวลา 15:30 น. พร้อมกำชับให้นำบัตรประกันสุขภาพมาด้วยและงดอาหารมื้อหนักก่อนตรวจ ฉันจึงรีบจดบันทึกวันนัดลงปฏิทินทันที"
   },
   {
     "id": "story-b1-6",
     "title": "Dealing with Customer Service",
-    "titleThai": "การติดต่อฝ่ายบริการลูกค้า",
+    "titleThai": "ประสบการณ์ติดต่อฝ่ายบริการลูกค้า",
     "genre": "Daily Life",
     "level": "B1",
     "readTime": "3 mins",
     "content": "A few days ago, I ordered an electric coffee maker online, but when the package arrived, the glass pot was cracked. I was quite frustrated, so I contacted customer support through their live chat. The representative, Marcus, was very understanding and apologized for the inconvenience. He asked me to upload a quick photo of the damaged package along with my order number. Within ten minutes, he verified the issue and offered two options: a full refund or a free replacement sent by express delivery. I chose the replacement, and the new coffee maker arrived in perfect condition two days later. The prompt support turned a bad experience into a positive one.",
-    "contentThai": "สองสามวันก่อน ฉันสั่งซื้อเครื่องชงกาแฟไฟฟ้าทางออนไลน์ แต่เมื่อพัสดุมาถึง ปรากฏว่าโถแก้วมีรอยแตกร้าว ฉันรู้สึกหงุดหงิดพอสมควร จึงติดต่อฝ่ายบริการลูกค้าผ่านระบบแชทสด ตัวแทนฝ่ายบริการชื่อมาร์คัสเข้าใจปัญหาเป็นอย่างดีและกล่าวขออภัยในความไม่สะดวก เขาขอให้ฉันอัปโหลดรูปถ่ายพัสดุที่เสียหายพร้อมกับหมายเลขคำสั่งซื้อ ภายในสิบนาที เขาตรวจสอบปัญหาเรียบร้อยและเสนอทางเลือกสองทาง ได้แก่ การคืนเงินเต็มจำนวน หรือการส่งสินค้าทดแทนชิ้นใหม่ด้วยบริการส่งด่วน ฉันเลือกรับสินค้าทดแทน และเครื่องชงกาแฟเครื่องใหม่ก็มาถึงในสภาพสมบูรณ์แบบในอีกสองวันถัดมา การดูแลที่รวดเร็วช่วยเปลี่ยนประสบการณ์ที่แย่ให้กลายเป็นความประทับใจ"
+    "contentThai": "สองสามวันก่อน ฉันสั่งเครื่องชงกาแฟไฟฟ้าทางออนไลน์ แต่พอกล่องพัสดุมาถึง โถแก้วด้านในกลับมีรอยแตกร้าว ฉันรู้สึกหงุดหงิดไม่น้อยจึงรีบทักแชทสดไปหาฝ่ายบริการลูกค้า เจ้าหน้าที่ชื่อมาร์คัสรับฟังปัญหาด้วยความเข้าใจและกล่าวขอโทษอย่างจริงใจ เขาขอให้ฉันส่งรูปถ่ายของสินค้าที่ชำรุดพร้อมระบุหมายเลขคำสั่งซื้อ เพียงไม่ถึงสิบนาที เขาก็ตรวจสอบเรื่องเรียบร้อยและเสนอทางออกให้สองทาง คือขอรับเงินคืนเต็มจำนวน หรือให้จัดส่งสินค้าชิ้นใหม่แบบด่วนพิเศษโดยไม่มีค่าใช้จ่าย ฉันเลือกรับเครื่องใหม่ และอีกเพียงสองวันถัดมา เครื่องชงกาแฟเครื่องใหม่ก็ส่งถึงมือในสภาพสมบูรณ์ไร้รอยขีดข่วน การบริการที่รวดเร็วและใส่ใจช่วยเปลี่ยนประสบการณ์แย่ๆ ให้กลายเป็นความประทับใจได้อย่างยอดเยี่ยม"
   },
   {
     "id": "story-b1-7",
     "title": "A Job Interview Experience",
-    "titleThai": "ประสบการณ์การสัมภาษณ์งาน",
+    "titleThai": "ประสบการณ์สัมภาษณ์งาน",
     "genre": "Daily Life",
     "level": "B1",
     "readTime": "3 mins",
     "content": "Last Thursday, I had a job interview for a junior web developer position at an IT company. Even though I prepared thoroughly, my heart was racing as I sat in the conference room. The interviewers introduced themselves and began by asking about my background and recent portfolio projects. I highlighted my problem-solving skills and gave concrete examples of how I worked in team settings. When they asked how I handle tight deadlines, I explained my method for prioritizing critical features first. Toward the end, they invited me to ask questions about company culture and development workflows. Walking out of the building, I felt confident that I had presented my best self.",
-    "contentThai": "เมื่อวันพฤหัสบดีที่ผ่านมา ฉันได้เข้ารับการสัมภาษณ์งานในตำแหน่งนักพัฒนาเว็บระดับจูเนียร์ที่บริษัทไอทีแห่งหนึ่ง แม้ว่าจะเตรียมตัวมาอย่างถี่ถ้วน แต่หัวใจของฉันยังคงเต้นแรงขณะนั่งอยู่ในห้องประชุม ผู้สัมภาษณ์แนะนำตัวและเริ่มสอบถามเกี่ยวกับประวัติและผลงานโปรเจกต์ล่าสุดของฉัน ฉันเน้นย้ำถึงทักษะการแก้ปัญหาและยกตัวอย่างที่เป็นรูปธรรมว่าฉันทำงานร่วมกับทีมอย่างไร เมื่อพวกเขาถามว่าฉันรับมือกับกำหนดส่งงานที่กระชั้นชิดอย่างไร ฉันได้อธิบายวิธีจัดลำดับความสำคัญของฟีเจอร์หลักก่อน ในช่วงท้าย พวกเขาเปิดโอกาสให้ฉันถามเกี่ยวกับวัฒนธรรมองค์กรและขั้นตอนการทำงาน เมื่อเดินออกจากอาคาร ฉันรู้สึกมั่นใจว่าได้แสดงศักยภาพที่ดีที่สุดของตัวเองออกไปแล้ว"
+    "contentThai": "เมื่อวันพฤหัสบดีที่ผ่านมา ฉันมีนัดสัมภาษณ์งานตำแหน่ง Junior Web Developer ที่บริษัทไอทีแห่งหนึ่ง แม้จะเตรียมตัวมาอย่างเข้มข้น แต่หัวใจก็ยังเต้นระทึกขณะนั่งรออยู่ในห้องประชุม คณะผู้สัมภาษณ์เริ่มจากการแนะนำตัวแล้วชวนคุยถึงประวัติการศึกษาและผลงานในพอร์ตโฟลิโอ ฉันเน้นย้ำถึงทักษะการแก้ปัญหาพร้อมยกตัวอย่างจริงของการทำงานเป็นทีม พอถูกถามถึงวิธีรับมือกับเส้นตายที่กระชั้นชิด ฉันจึงอธิบายขั้นตอนการจัดลำดับความสำคัญของฟีเจอร์หลักก่อน ช่วงท้ายพวกเขายังเปิดโอกาสให้ฉันได้ถามเจาะลึกเกี่ยวกับวัฒนธรรมองค์กรและกระบวนการพัฒนาซอฟต์แวร์ ตอนเดินออกจากตึก ฉันรู้สึกมั่นใจเต็มเปี่ยมว่าได้แสดงศักยภาพที่ดีที่สุดของตัวเองออกไปแล้ว"
   },
   {
     "id": "story-b1-8",
     "title": "Finding and Renting an Apartment",
-    "titleThai": "การหาและเช่าอพาร์ตเมนต์",
+    "titleThai": "การหาและเช่าห้องพักในเมือง",
     "genre": "Daily Life",
     "level": "B1",
     "readTime": "3 mins",
     "content": "Finding a suitable apartment in the city was one of the most challenging things I did this year. I spent weeks browsing rental websites, filtering for places near public transit and within my monthly budget. Finally, I found a bright studio apartment near a subway station and scheduled a viewing. When I inspected the place, I checked the water pressure, inspected the windows, and asked the landlord about utility costs and maintenance policies. Everything met my expectations, so I filled out the rental application that evening. After passing the background check, I signed a one-year lease and paid the security deposit. Having my own quiet space makes the daily commute much easier.",
-    "contentThai": "การหาอพาร์ตเมนต์ที่เหมาะสมในเมืองเป็นหนึ่งในสิ่งที่ท้าทายที่สุดที่ฉันทำในปีนี้ ฉันใช้เวลาหลายสัปดาห์ค้นหาบนเว็บไซต์ให้เช่าที่พัก โดยกรองเฉพาะสถานที่ใกล้ระบบขนส่งสาธารณะและอยู่ในงบประมาณรายเดือน ในที่สุด ฉันก็พบห้องสตูดิโอที่สว่างสดใสใกล้สถานีรถไฟฟ้าใต้ดินและนัดหมายเข้าชม เมื่อไปตรวจดูห้อง ฉันได้ทดสอบแรงดันน้ำ ตรวจดูหน้าต่าง และสอบถามเจ้าของห้องเกี่ยวกับค่าสาธารณูปโภคและนโยบายการซ่อมบำรุง ทุกอย่างตรงตามที่คาดหวัง ฉันจึงกรอกใบสมัครขอเช่าในเย็นวันนั้น หลังผ่านการตรวจสอบประวัติ ฉันได้เซ็นสัญญาเช่าหนึ่งปีและชำระเงินมัดจำ การมีพื้นที่ส่วนตัวที่เงียบสงบช่วยให้การเดินทางไปทำงานในแต่ละวันสะดวกสบายขึ้นมาก"
+    "contentThai": "การหาอพาร์ตเมนต์ที่ถูกใจในเมืองถือเป็นหนึ่งในภารกิจสุดท้าทายของฉันในปีนี้ ฉันใช้เวลาหลายสัปดาห์ท่องเว็บหาที่พัก คอยคัดกรองเฉพาะห้องที่ใกล้รถไฟฟ้าและอยู่ในงบประมาณรายเดือน ในที่สุดก็เจอห้องสตูดิโอโปร่งโล่งใกล้สถานีรถไฟใต้ดินจึงรีบนัดหมายเข้าชมห้องจริง ตอนตรวจเช็ก ฉันได้ลองเปิดดูแรงดันน้ำ ตรวจความแน่นหนาของหน้าต่าง และสอบถามเจ้าของห้องเรื่องค่าน้ำค่าไฟรวมถึงการดูแลซ่อมบำรุง ทุกอย่างลงตัวตรงตามที่ต้องการ ฉันจึงกรอกใบสมัครขอเช่าในเย็นวันนั้นเลย หลังผ่านการตรวจสอบประวัติเรียบร้อย ฉันก็ได้เซ็นสัญญาเช่า 1 ปีพร้อมวางเงินมัดจำ การมีพื้นที่ส่วนตัวที่เงียบสงบช่วยให้การใช้ชีวิตและการเดินทางในแต่ละวันสะดวกสบายขึ้นมาก"
   },
   {
     "id": "story-b2-5",
     "title": "Negotiating a Project Deadline",
-    "titleThai": "การเจรจาต่อรองกำหนดส่งงาน",
+    "titleThai": "เจรจาต่อรองขยายกำหนดส่งงาน",
     "genre": "Daily Life",
     "level": "B2",
     "readTime": "4 mins",
     "content": "Halfway through our quarterly software release, our engineering team ran into unexpected compatibility hurdles with the legacy database. Realizing that rushing the deployment could introduce critical bugs for our end users, I scheduled a strategic meeting with our product manager and stakeholders. Instead of simply requesting more time, I prepared a detailed assessment outlining the technical bottlenecks alongside three realistic recovery scenarios. I proposed reprioritizing non-essential UI features to the following sprint while extending the core integration testing by one week. The stakeholders appreciated the transparent risk evaluation and approved the revised timeline. Taking the initiative to address potential pitfalls constructively turned what could have been a crisis into a showcase of dependable leadership.",
-    "contentThai": "ในช่วงกึ่งกลางของการส่งมอบซอฟต์แวร์ประจำไตรมาส ทีมวิศวกรของเราพบกับอุปสรรคด้านความเข้ากันไม่ได้ของระบบฐานข้อมูลรุ่นเก่า เมื่อตระหนักว่าการเร่งเปิดตัวอาจทำให้เกิดข้อผิดพลาดร้ายแรงต่อผู้ใช้งาน ฉันจึงนัดประชุมเชิงกลยุทธ์กับผู้จัดการผลิตภัณฑ์และผู้มีส่วนได้ส่วนเสีย แทนที่จะเพียงแค่ขอเวลาเพิ่ม ฉันได้เตรียมการประเมินโดยละเอียดที่ระบุจุดคอขวดทางเทคนิคควบคู่ไปกับ 3 ทางเลือกในการแก้ไขที่เป็นไปได้จริง ฉันเสนอให้เลื่อนฟีเจอร์ตกแต่งส่วนหน้าที่ไม่จำเป็นไปยังรอบการพัฒนาถัดไป และขยายเวลาการทดสอบระบบหลักออกไปหนึ่งสัปดาห์ ผู้มีส่วนได้ส่วนเสียชื่นชมการประเมินความเสี่ยงที่โปร่งใสและอนุมัติตารางเวลาที่ปรับปรุงใหม่ การริเริ่มรับมือกับปัญหาที่อาจเกิดขึ้นอย่างสร้างสรรค์ได้เปลี่ยนสิ่งที่อาจกลายเป็นวิกฤตให้กลายเป็นการแสดงความเป็นผู้นำที่พึ่งพาได้"
+    "contentThai": "ช่วงกึ่งกลางของการพัฒนาซอฟต์แวร์ประจำไตรมาส ทีมวิศวกรของเราต้องเผชิญกับปัญหาความเข้ากันไม่ได้ของระบบฐานข้อมูลรุ่นเดิมอย่างไม่คาดคิด เมื่อตระหนักว่าการเร่งรีบส่งมอบงานอาจนำไปสู่ข้อผิดพลาดร้ายแรงสำหรับผู้ใช้งานจริง ฉันจึงนัดประชุมเชิงกลยุทธ์ร่วมกับผู้จัดการผลิตภัณฑ์และผู้มีส่วนได้ส่วนเสีย แทนที่จะเข้าไปเพียงเพื่อขอต่อเวลา ฉันได้เตรียมรายงานประเมินความเสี่ยงอย่างละเอียด ชี้แจงจุดคอขวดทางเทคนิค พร้อมเสนอทางออกที่เป็นไปได้จริง 3 รูปแบบ โดยเสนอให้ยกยอดฟีเจอร์ส่วนตกแต่งที่ไม่จำเป็นไปไว้ในสปรินต์ถัดไป แล้วขยายเวลาการทดสอบระบบหลักเพิ่มอีกหนึ่งสัปดาห์ ทางผู้บริหารชื่นชมการวิเคราะห์ความเสี่ยงที่โปร่งใสและอนุมัติไทม์ไลน์ใหม่ทันที การกล้าลุกขึ้นมาเผชิญหน้ากับอุปสรรคอย่างสร้างสรรค์ ได้เปลี่ยนสถานการณ์ที่อาจกลายเป็นวิกฤตให้กลายเป็นโอกาสในการแสดงภาวะผู้นำที่พึ่งพาได้อย่างแท้จริง"
   },
   {
     "id": "story-b2-6",
     "title": "Resolving a Roommate Dispute",
-    "titleThai": "การปรับความเข้าใจและการอยู่ร่วมกัน",
+    "titleThai": "ปรับความเข้าใจและเคลียร์ใจกับรูมเมต",
     "genre": "Daily Life",
     "level": "B2",
     "readTime": "4 mins",
     "content": "Living harmoniously with a roommate requires continuous empathy and clear boundaries. After several weeks of growing frustration over unwashed dishes and late-night noise, I felt that passive resistance would only poison the atmosphere. I invited my roommate, Alex, for dinner at our dining table to address the matter calmly. I used 'I' statements to convey how sleep disruption was affecting my productivity without sounding accusatory. Alex acknowledged that an intense freelance workload had caused him to neglect shared duties. Together, we drafted a shared chore chart and established quiet hours starting from 11:00 PM on weekdays. By addressing friction directly yet diplomatically, we restored mutual respect and transformed our shared apartment into a stress-free sanctuary.",
-    "contentThai": "การอยู่ร่วมกับรูมเมตอย่างราบรื่นจำเป็นต้องอาศัยความเข้าอกเข้าใจและการกำหนดขอบเขตที่ชัดเจนอย่างต่อเนื่อง หลังจากที่ความอึดอัดใจเริ่มสะสมมาหลายสัปดาห์เกี่ยวกับจานชามที่ไม่ได้ล้างและเสียงดังยามดึก ฉันรู้สึกว่าการนิ่งเฉยมีแต่จะทำให้บรรยากาศแย่ลง ฉันจึงชวนอเล็กซ์ รูมเมตของฉัน มารับประทานอาหารเย็นที่โต๊ะอาหารเพื่อพูดคุยกันอย่างใจเย็น ฉันใช้ประโยคที่เน้นความรู้สึกของตัวเองเพื่อสื่อสารว่าการนอนหลับไม่สนิทส่งผลต่อประสิทธิภาพการทำงานของฉันอย่างไรโดยไม่ใช้น้ำเสียงกล่าวโทษ อเล็กซ์ยอมรับว่างานฟรีแลนซ์ที่รัดตัวทำให้เขาละเลยหน้าที่ส่วนรวม พวกเราจึงร่วมกันร่างตารางเวรทำความสะอาดและกำหนดช่วงเวลาห้ามส่งเสียงดังตั้งแต่ 23:00 น. ในวันธรรมดา การเผชิญหน้ากับความขัดแย้งอย่างตรงไปตรงมาและประนีประนอมช่วยฟื้นฟูความเคารพซึ่งกันและกัน และเปลี่ยนอพาร์ตเมนต์ของเราให้กลับมาเป็นพื้นที่พักผ่อนที่ไร้ความเครียดอีกครั้ง"
+    "contentThai": "การอยู่ร่วมห้องกับรูมเมตอย่างสงบสุขจำเป็นต้องอาศัยความเข้าอกเข้าใจและการมีขอบเขตที่ชัดเจน หลังจากเริ่มอึดอัดใจสะสมมาหลายสัปดาห์เรื่องกองจานที่ไม่ได้ล้างและเสียงรบกวนตอนดึก ฉันรู้สึกว่าการเงียบทนต่อไปมีแต่จะทำให้บรรยากาศเสีย ฉันจึงชวนอเล็กซ์ รูมเมตของฉัน มาร่วมโต๊ะทานมื้อค่ำเพื่อเปิดอกคุยกันอย่างใจเย็น ฉันเลือกใช้ประโยคที่สื่อถึงความรู้สึกของตัวเอง เพื่อบอกเล่าว่าการนอนหลับไม่สนิทส่งผลกระทบต่อประสิทธิภาพการทำงานของฉันอย่างไร โดยหลีกเลี่ยงการใช้น้ำเสียงตำหนิ อเล็กซ์ยอมรับตรงๆ ว่างานฟรีแลนซ์ที่รัดตัวทำให้เขาเผลอละเลยหน้าที่ส่วนรวมไป เราจึงร่วมกันทำตารางเวรทำความสะอาดและตั้งกฎช่วงเวลาห้ามส่งเสียงดังหลัง 23:00 น. ในวันธรรมดา การหันหน้าเข้าหากันอย่างเปิดใจและประนีประนอม ช่วยคืนความเคารพซึ่งกันและกัน และเปลี่ยนห้องพักของเราให้กลับมาเป็นเซฟโซนที่แสนผ่อนคลายอีกครั้ง"
   },
   {
     "id": "story-b2-7",
     "title": "Handling Flight Delays & Airline Compensation",
-    "titleThai": "การรับมือเที่ยวบินล่าช้าและการเรียกร้องค่าชดเชย",
+    "titleThai": "รับมือไฟลต์ดีเลย์และการเคลมเงินชดเชย",
     "genre": "Daily Life",
     "level": "B2",
     "readTime": "4 mins",
     "content": "While traveling internationally for a business conference, severe weather conditions triggered widespread airport chaos, culminating in the cancellation of my connecting flight. Rather than joining the massive, overwhelmed queue at the service desk, I promptly opened the airline's mobile app to secure a seat on the earliest available departure the following morning. Simultaneously, I approached an agent to request meal vouchers and hotel accommodations as mandated by passenger rights regulations. I retained all receipts for out-of-pocket transportation and food expenses. Upon returning home, I filed a formal compensation claim through the carrier's online portal, attaching digital copies of boarding passes and expense invoices. Within three weeks, the claim was approved and fully reimbursed, proving that staying composed and knowing your rights is crucial when travel plans go awry.",
-    "contentThai": "ระหว่างการเดินทางไปร่วมการประชุมทางธุรกิจในต่างประเทศ สภาพอากาศที่แปรปรวนรุนแรงทำให้เกิดความโกลาหลทั่วสนามบิน จนนำไปสู่การยกเลิกเที่ยวบินต่อเครื่องของฉัน แทนที่จะไปต่อแถวยาวเหยียดที่เคาน์เตอร์บริการ ฉันรีบเปิดแอปพลิเคชันของสายการบินเพื่อจองที่นั่งในเที่ยวบินแรกสุดของเช้าวันถัดไปทันที ในขณะเดียวกัน ฉันได้เดินไปสอบถามเจ้าหน้าที่เพื่อขอรับคูปองอาหารและที่พักโรงแรมตามสิทธิคุ้มครองผู้โดยสาร ฉันเก็บใบเสร็จค่าเดินทางและค่าอาหารที่สำรองจ่ายไว้ทั้งหมด เมื่อเดินทางกลับถึงบ้าน ฉันได้ยื่นเรื่องเรียกร้องค่าชดเชยอย่างเป็นทางการผ่านพอร์ทัลออนไลน์ของสายการบิน พร้อมแนบสำเนาบอร์ดดิ้งพาสและใบเสร็จค่าใช้จ่าย ภายในสามสัปดาห์ คำร้องได้รับการอนุมัติและจ่ายเงินชดเชยเต็มจำนวน ซึ่งพิสูจน์ว่าการมีสติและการรู้สิทธิของตนเองมีความสำคัญยิ่งเมื่อแผนการเดินทางเกิดความผิดพลาด"
+    "contentThai": "ระหว่างเดินทางไปร่วมประชุมธุรกิจในต่างประเทศ สภาพอากาศที่เลวร้ายกะทันหันทำให้สนามบินตกอยู่ในความโกลาหล จนส่งผลให้เที่ยวบินต่อเครื่องของฉันถูกยกเลิก แทนที่จะไปยืนต่อแถวยาวเหยียดที่เคาน์เตอร์บริการลูกค้า ฉันรีบเปิดแอปพลิเคชันของสายการบินเพื่อจองที่นั่งเที่ยวบินแรกสุดของเช้าวันรุ่งขึ้นทันที พร้อมกับเดินไปติดต่อเจ้าหน้าที่เพื่อขอรับคูปองอาหารและที่พักโรงแรมตามสิทธิคุ้มครองผู้โดยสาร ฉันเก็บใบเสร็จค่าเดินทางและค่าอาหารที่จำเป็นต้องสำรองจ่ายไว้ทั้งหมด เมื่อเดินทางกลับถึงบ้าน ฉันจึงยื่นเรื่องเคลมค่าชดเชยอย่างเป็นทางการผ่านพอร์ทัลออนไลน์ของสายการบิน พร้อมแนบหลักฐานบอร์ดดิ้งพาสและใบเสร็จอย่างครบถ้วน ภายในเวลาเพียงสามสัปดาห์ คำร้องก็ได้รับการอนุมัติและโอนเงินคืนเต็มจำนวน ซึ่งพิสูจน์ให้เห็นว่าการตั้งสติและรู้สิทธิ์ของตนเองคือหัวใจสำคัญเมื่อแผนการเดินทางเกิดสะดุดลง"
   }
 ]
 
