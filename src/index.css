@@ -1502,3 +1502,97 @@ a:hover {
   transform: translateX(4px);
 }
 
+/* ==========================================================================
+   Story & Level Selection Cyber-Glass Styling
+   ========================================================================== */
+
+.cyber-glass-card {
+  background: rgba(10, 15, 30, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  border-radius: var(--radius-lg);
+  transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.cyber-glass-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 255, 255, 0.4);
+  box-shadow: 0 12px 30px -5px rgba(0, 255, 255, 0.15), inset 0 0 15px rgba(0, 255, 255, 0.05);
+}
+
+.cyber-glass-card.level-card-a1:hover {
+  border-color: rgba(74, 222, 128, 0.6);
+  box-shadow: 0 14px 32px -5px rgba(74, 222, 128, 0.22), inset 0 0 15px rgba(74, 222, 128, 0.06);
+}
+
+.cyber-glass-card.level-card-a2:hover {
+  border-color: rgba(45, 212, 191, 0.6);
+  box-shadow: 0 14px 32px -5px rgba(45, 212, 191, 0.22), inset 0 0 15px rgba(45, 212, 191, 0.06);
+}
+
+.cyber-glass-card.level-card-b1:hover {
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: 0 14px 32px -5px rgba(56, 189, 248, 0.22), inset 0 0 15px rgba(56, 189, 248, 0.06);
+}
+
+.cyber-glass-card.level-card-b2:hover {
+  border-color: rgba(192, 132, 252, 0.6);
+  box-shadow: 0 14px 32px -5px rgba(192, 132, 252, 0.22), inset 0 0 15px rgba(192, 132, 252, 0.06);
+}
+
+/* Quick Level Switcher Pills */
+.story-level-pill {
+  padding: 0.5rem 1.15rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(15, 23, 42, 0.65);
+  color: #94a3b8;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.story-level-pill:hover {
+  color: #fff;
+  border-color: rgba(0, 255, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+.story-level-pill.active-A1 {
+  background: rgba(74, 222, 128, 0.18);
+  border-color: #4ade80;
+  color: #4ade80;
+  box-shadow: 0 0 12px rgba(74, 222, 128, 0.35);
+}
+
+.story-level-pill.active-A2 {
+  background: rgba(45, 212, 191, 0.18);
+  border-color: #2dd4bf;
+  color: #2dd4bf;
+  box-shadow: 0 0 12px rgba(45, 212, 191, 0.35);
+}
+
+.story-level-pill.active-B1 {
+  background: rgba(56, 189, 248, 0.18);
+  border-color: #38bdf8;
+  color: #38bdf8;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.35);
+}
+
+.story-level-pill.active-B2 {
+  background: rgba(192, 132, 252, 0.18);
+  border-color: #c084fc;
+  color: #c084fc;
+  box-shadow: 0 0 12px rgba(192, 132, 252, 0.35);
+}
+
+
