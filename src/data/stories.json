@@ -188,5 +188,36 @@
     "readTime": "4 mins",
     "content": "Moving to a new city is always a weird mix of being excited and totally terrified. For the first few weeks in my new neighborhood, I made a point to just walk around and get a feel for the place. I found the closest grocery store, scoped out a nice park, and tracked down a great little coffee shop. I felt pretty lonely at first, not knowing anyone around. But then I volunteered for a weekend park clean-up, which ended up being a great way to meet people. We chatted while we worked, and I actually made a few friends. It finally feels like I'm starting to settle in.",
     "contentThai": "การย้ายมาอยู่เมืองใหม่มักจะเป็นความรู้สึกผสมปนเปที่แปลกประหลาดระหว่างความตื่นเต้นและความกลัว ในช่วงสองสามสัปดาห์แรกในย่านใหม่ ฉันตั้งใจเดินสำรวจรอบๆ เพื่อให้คุ้นเคยกับสถานที่ ฉันหาร้านขายของชำที่ใกล้ที่สุด สำรวจสวนสาธารณะบรรยากาศดี และตามหาร้านกาแฟเล็กๆ ที่ยอดเยี่ยม ตอนแรกฉันรู้สึกเหงาพอสมควรเพราะไม่รู้จักใครเลย แต่แล้วฉันก็ไปเป็นอาสาสมัครทำความสะอาดสวนสาธารณะในวันหยุดสุดสัปดาห์ ซึ่งกลายเป็นวิธีที่ดีเยี่ยมในการพบปะผู้คน พวกเราคุยกันระหว่างทำงาน และฉันก็ได้เพื่อนใหม่มาสองสามคน ในที่สุดฉันก็เริ่มรู้สึกว่าตัวเองลงหลักปักฐานได้อย่างอบอุ่นแล้ว"
+  },
+  {
+    "id": "story-a1-6",
+    "title": "Ordering at a Cafe",
+    "titleThai": "สั่งอาหารที่คาเฟ่",
+    "genre": "Daily Life",
+    "level": "A1",
+    "readTime": "1 min",
+    "content": "I walk into a cozy cafe on Sunday morning. The waiter smiles and hands me a menu. I order a chicken sandwich and an iced lemon tea. I ask to eat here. The waiter brings my food in five minutes. The sandwich is warm and tasty. I pay with cash and thank the waiter.",
+    "contentThai": "ฉันเดินเข้าไปในคาเฟ่ที่แสนอบอุ่นในเช้าวันอาทิตย์ พนักงานเสิร์ฟยิ้มและยื่นเมนูให้ฉัน ฉันสั่งแซนด์วิชไก่และชามะนาวเย็นหนึ่งแก้ว ฉันบอกว่าทานที่นี่ พนักงานนำอาหารมาเสิร์ฟภายในห้านาที แซนด์วิชอุ่นและอร่อยมาก ฉันจ่ายเงินสดและกล่าวขอบคุณพนักงานเสิร์ฟ"
+  },
+  {
+    "id": "story-a1-7",
+    "title": "Asking for Directions",
+    "titleThai": "การถามทาง",
+    "genre": "Daily Life",
+    "level": "A1",
+    "readTime": "1 min",
+    "content": "I am lost in the city center. I need to find the train station. I see a police officer near a shop. I say, \"Excuse me, where is the train station?\" The officer smiles and says, \"Walk straight for two blocks, then turn left. It is next to the big bank.\" I thank him and follow his directions. Soon, I see the station.",
+    "contentThai": "ฉันหลงทางอยู่ในใจกลางเมือง ฉันต้องไปที่สถานีรถไฟ ฉันเห็นตำรวจคนหนึ่งอยู่ใกล้ร้านค้า ฉันจึงพูดว่า \"ขอโทษนะคะ สถานีรถไฟไปทางไหนคะ\" ตำรวจยิ้มแล้วตอบว่า \"เดินตรงไปสองบล็อก แล้วเลี้ยวซ้าย มันอยู่ติดกับธนาคารใหญ่ครับ\" ฉันขอบคุณเขาและเดินตามเส้นทางที่บอก ไม่นาน ฉันก็มองเห็นสถานีรถไฟ"
+  },
+  {
+    "id": "story-a1-8",
+    "title": "At the Pharmacy",
+    "titleThai": "ที่ร้านขายยา",
+    "genre": "Daily Life",
+    "level": "A1",
+    "readTime": "1 min",
+    "content": "I feel sick today. I have a bad headache and a cough. I walk to the local pharmacy to get medicine. The pharmacist asks, \"How can I help you?\" I tell him my symptoms. He gives me some pills and syrup. He tells me to take two pills after breakfast and dinner. He also says to drink plenty of warm water. I feel happy to get help.",
+    "contentThai": "วันนี้ฉันรู้สึกไม่สบาย ฉันปวดศีรษะมากและมีอาการไอ ฉันเดินไปที่ร้านขายยาแถวบ้านเพื่อซื้อยา เภสัชกรถามว่า \"มีอะไรให้ช่วยไหมครับ\" ฉันบอกอาการของตัวเองไป เขาให้ยาเม็ดและยาน้ำเชื่อมมา เขาบอกให้ฉันทานยาวันละสองเม็ดหลังอาหารเช้าและเย็น อีกทั้งยังแนะนำให้ดื่มน้ำอุ่นมากๆ ฉันรู้สึกดีใจที่ได้รับความช่วยเหลือ"
   }
 ]
+
