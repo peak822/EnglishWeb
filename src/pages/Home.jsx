@@ -51,9 +51,9 @@ const Home = () => {
         },
         {
           id: 'read',
-          title: 'คลังคำศัพท์ Oxford 3000',
+          title: 'คลังคำศัพท์ Oxford 5000',
           subtitle: 'Vocabulary Browser',
-          description: 'ค้นหาและเปิดดูคลังคำศัพท์ 3,000 คำหลักที่จำเป็นที่สุด พร้อมคำแปลและระดับความยาก A1-B2',
+          description: 'ค้นหาและเปิดดูคลังคำศัพท์ 5,000 คำหลักที่จำเป็นที่สุด พร้อมคำแปลและระดับความยาก A1-C1',
           icon: <Compass size={28} />,
           path: '/read',
           tag: '📚 Vocab Bank',

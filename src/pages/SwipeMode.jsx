@@ -153,34 +153,52 @@ const SwipeMode = () => {
     };
   }, [currentCard, isGameOver, hasWon, swipeState, handleSwipe]);
 
-  // Swipe/Pointer handlers
+  // Drag & Swipe Pointer state
+  const [dragOffset, setDragOffset] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
   const pointerStartX = useRef(null);
+
   const handlePointerDown = (e) => {
-    // Prevent default drag behavior for images/text
-    if (e.target.tagName !== 'BUTTON') {
-      pointerStartX.current = e.clientX;
-      e.target.setPointerCapture(e.pointerId);
-    }
+    if (e.target.tagName === 'BUTTON' || isGameOver || hasWon || isTransitioningGameOver || swipeState || !currentCard) return;
+    pointerStartX.current = e.clientX;
+    setIsDragging(true);
+    try {
+      e.currentTarget.setPointerCapture(e.pointerId);
+    } catch (_) {}
+  };
+
+  const handlePointerMove = (e) => {
+    if (!isDragging || pointerStartX.current === null) return;
+    const diff = e.clientX - pointerStartX.current;
+    setDragOffset(diff);
   };
   
   const handlePointerUp = (e) => {
     if (pointerStartX.current === null) return;
-    const pointerEndX = e.clientX;
-    const diff = pointerEndX - pointerStartX.current;
+    const diff = e.clientX - pointerStartX.current;
     
-    if (Math.abs(diff) > 50) { // Threshold for swipe
+    try {
+      e.currentTarget.releasePointerCapture(e.pointerId);
+    } catch (_) {}
+    
+    pointerStartX.current = null;
+    setIsDragging(false);
+    setDragOffset(0);
+    
+    if (Math.abs(diff) > 45) { // Threshold for swipe
       if (diff > 0) handleSwipe('right');
       else handleSwipe('left');
     }
-    
-    e.target.releasePointerCapture(e.pointerId);
-    pointerStartX.current = null;
   };
 
   const handlePointerCancel = (e) => {
     if (pointerStartX.current !== null) {
-      e.target.releasePointerCapture(e.pointerId);
+      try {
+        e.currentTarget.releasePointerCapture(e.pointerId);
+      } catch (_) {}
       pointerStartX.current = null;
+      setIsDragging(false);
+      setDragOffset(0);
     }
   };
 
@@ -286,12 +304,20 @@ const SwipeMode = () => {
             <div 
               className={`swipe-card-container relative w-full max-w-sm ${swipeState === 'left' ? 'swipe-left-anim' : swipeState === 'right' ? 'swipe-right-anim' : ''} cursor-grab active:cursor-grabbing`}
               onPointerDown={handlePointerDown}
+              onPointerMove={handlePointerMove}
               onPointerUp={handlePointerUp}
               onPointerCancel={handlePointerCancel}
+              style={{
+                transform: isDragging 
+                  ? `translateX(${dragOffset}px) rotate(${dragOffset * 0.08}deg)` 
+                  : undefined,
+                transition: isDragging ? 'none' : undefined,
+                touchAction: 'none'
+              }}
             >
               <Card className={`p-6 sm:p-10 text-center relative overflow-hidden h-64 sm:h-80 flex flex-col justify-center items-center shadow-2xl border-2 select-none transition-all duration-200 ${
-                swipeFeedback === 'success' ? 'border-green-400 bg-green-500/40 shadow-[0_0_30px_rgba(34,197,94,0.6)]' : 
-                swipeFeedback === 'error' ? 'border-red-400 bg-red-500/40 shadow-[0_0_30px_rgba(239,68,68,0.6)]' : 
+                swipeFeedback === 'success' || (isDragging && dragOffset > 30) ? 'border-green-400 bg-green-500/30 shadow-[0_0_30px_rgba(34,197,94,0.6)]' : 
+                swipeFeedback === 'error' || (isDragging && dragOffset < -30) ? 'border-red-400 bg-red-500/30 shadow-[0_0_30px_rgba(239,68,68,0.6)]' : 
                 'border-white/10'
               }`}>
                 {/* Cross Stamp on Mistake */}

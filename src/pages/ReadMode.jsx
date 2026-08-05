@@ -45,7 +45,7 @@ const ReadMode = () => {
       <div className="read-mode-wrapper">
         <div className="text-center mb-10">
           <h2 className="text-gradient mb-4">Reading Mode</h2>
-          <p className="read-mode-subtitle">Browse all 3,000 Oxford vocabulary words.</p>
+          <p className="read-mode-subtitle">Browse all 5,000 Oxford vocabulary words.</p>
         </div>
 
         {/* Controls Section */}

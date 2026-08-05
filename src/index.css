@@ -377,16 +377,32 @@ a:hover {
 
 /* Speed Swipe Animations */
 .swipe-card-container {
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s;
-  touch-action: pan-y; /* Prevent browser swipe-to-go-back gesture */
+  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.25s;
+  touch-action: none; /* Fully capture touch to prevent mobile browser swipe-to-go-back and scrolling */
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .swipe-left-anim {
-  transform: translateX(-150px) rotate(-15deg);
-  opacity: 0.2;
+  transform: translateX(-160px) rotate(-18deg) !important;
+  opacity: 0;
 }
 .swipe-right-anim {
-  transform: translateX(150px) rotate(15deg);
-  opacity: 0.2;
+  transform: translateX(160px) rotate(18deg) !important;
+  opacity: 0;
+}
+
+/* Mobile Safe-Area & Modal Drawers */
+.mobile-safe-drawer {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: max(1rem, env(safe-area-inset-bottom, 1rem));
+  width: 92%;
+  max-width: 32rem;
+  z-index: 100;
+  touch-action: manipulation;
 }
 
 .feedback-glow-success {

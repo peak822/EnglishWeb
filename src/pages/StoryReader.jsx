@@ -126,8 +126,11 @@ const StoryReader = () => {
           style={{ 
             cursor: 'pointer',
             transition: 'color 0.2s, textShadow 0.2s',
+            touchAction: 'manipulation',
+            WebkitTapHighlightColor: 'rgba(0, 255, 255, 0.25)',
+            display: 'inline-block'
           }}
-          className="hover:text-[var(--color-primary)] hover:drop-shadow-[0_0_5px_var(--color-primary)]"
+          className="hover:text-[var(--color-primary)] hover:drop-shadow-[0_0_5px_var(--color-primary)] active:text-[var(--color-primary)]"
           onMouseEnter={(e) => {
             e.target.style.color = 'var(--color-primary)';
             e.target.style.textShadow = '0 0 5px var(--color-primary)';
@@ -301,7 +304,12 @@ const StoryReader = () => {
 
       {/* Word Details Modal/Drawer */}
       {selectedWord && (
-        <div className="fixed bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 w-11/12 max-w-lg z-[100] animate-[slideUp_0.3s_ease-out]">
+        <div 
+          className="mobile-safe-drawer animate-[slideUp_0.3s_ease-out]"
+          style={{
+            bottom: 'max(1rem, env(safe-area-inset-bottom, 1rem))'
+          }}
+        >
           <Card className="p-6 border border-[var(--color-primary)] shadow-[0_10px_30px_rgba(0,0,0,0.5),0_0_20px_rgba(0,255,255,0.1)]">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
               <div>

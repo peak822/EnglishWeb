@@ -60,7 +60,7 @@ const POSGuide = () => {
         <div className="text-center mb-8">
           <h2 className="text-gradient mb-4 text-3xl md:text-5xl font-extrabold tracking-tight">Part of Speech Guide</h2>
           <p className="text-gray-300 max-w-2xl mx-auto text-base md:text-lg">
-            เรียนรู้ชนิดของคำในภาษาอังกฤษ พร้อมตัวอย่างจากคลัง Oxford 3000
+            เรียนรู้ชนิดของคำในภาษาอังกฤษ พร้อมตัวอย่างจากคลัง Oxford 5000
           </p>
         </div>
 
@@ -169,11 +169,11 @@ const POSGuide = () => {
         </div>
       </Card>
 
-      {/* Example Words from Oxford 3000 */}
+      {/* Example Words from Oxford 5000 */}
       <Card style={{ padding: '2rem', marginBottom: '2rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
           <h4 style={{ fontSize: '1.1rem', fontWeight: 'bold', color: 'var(--color-secondary)', margin: 0 }}>
-            📚 ตัวอย่างคำศัพท์จาก Oxford 3000
+            📚 ตัวอย่างคำศัพท์จาก Oxford 5000
           </h4>
           <span style={{ 
             fontSize: '0.8rem', 
