@@ -278,8 +278,39 @@
     "readTime": "3 mins",
     "content": "Finding a suitable apartment in the city was one of the most challenging things I did this year. I spent weeks browsing rental websites, filtering for places near public transit and within my monthly budget. Finally, I found a bright studio apartment near a subway station and scheduled a viewing. When I inspected the place, I checked the water pressure, inspected the windows, and asked the landlord about utility costs and maintenance policies. Everything met my expectations, so I filled out the rental application that evening. After passing the background check, I signed a one-year lease and paid the security deposit. Having my own quiet space makes the daily commute much easier.",
     "contentThai": "การหาอพาร์ตเมนต์ที่เหมาะสมในเมืองเป็นหนึ่งในสิ่งที่ท้าทายที่สุดที่ฉันทำในปีนี้ ฉันใช้เวลาหลายสัปดาห์ค้นหาบนเว็บไซต์ให้เช่าที่พัก โดยกรองเฉพาะสถานที่ใกล้ระบบขนส่งสาธารณะและอยู่ในงบประมาณรายเดือน ในที่สุด ฉันก็พบห้องสตูดิโอที่สว่างสดใสใกล้สถานีรถไฟฟ้าใต้ดินและนัดหมายเข้าชม เมื่อไปตรวจดูห้อง ฉันได้ทดสอบแรงดันน้ำ ตรวจดูหน้าต่าง และสอบถามเจ้าของห้องเกี่ยวกับค่าสาธารณูปโภคและนโยบายการซ่อมบำรุง ทุกอย่างตรงตามที่คาดหวัง ฉันจึงกรอกใบสมัครขอเช่าในเย็นวันนั้น หลังผ่านการตรวจสอบประวัติ ฉันได้เซ็นสัญญาเช่าหนึ่งปีและชำระเงินมัดจำ การมีพื้นที่ส่วนตัวที่เงียบสงบช่วยให้การเดินทางไปทำงานในแต่ละวันสะดวกสบายขึ้นมาก"
+  },
+  {
+    "id": "story-b2-5",
+    "title": "Negotiating a Project Deadline",
+    "titleThai": "การเจรจาต่อรองกำหนดส่งงาน",
+    "genre": "Daily Life",
+    "level": "B2",
+    "readTime": "4 mins",
+    "content": "Halfway through our quarterly software release, our engineering team ran into unexpected compatibility hurdles with the legacy database. Realizing that rushing the deployment could introduce critical bugs for our end users, I scheduled a strategic meeting with our product manager and stakeholders. Instead of simply requesting more time, I prepared a detailed assessment outlining the technical bottlenecks alongside three realistic recovery scenarios. I proposed reprioritizing non-essential UI features to the following sprint while extending the core integration testing by one week. The stakeholders appreciated the transparent risk evaluation and approved the revised timeline. Taking the initiative to address potential pitfalls constructively turned what could have been a crisis into a showcase of dependable leadership.",
+    "contentThai": "ในช่วงกึ่งกลางของการส่งมอบซอฟต์แวร์ประจำไตรมาส ทีมวิศวกรของเราพบกับอุปสรรคด้านความเข้ากันไม่ได้ของระบบฐานข้อมูลรุ่นเก่า เมื่อตระหนักว่าการเร่งเปิดตัวอาจทำให้เกิดข้อผิดพลาดร้ายแรงต่อผู้ใช้งาน ฉันจึงนัดประชุมเชิงกลยุทธ์กับผู้จัดการผลิตภัณฑ์และผู้มีส่วนได้ส่วนเสีย แทนที่จะเพียงแค่ขอเวลาเพิ่ม ฉันได้เตรียมการประเมินโดยละเอียดที่ระบุจุดคอขวดทางเทคนิคควบคู่ไปกับ 3 ทางเลือกในการแก้ไขที่เป็นไปได้จริง ฉันเสนอให้เลื่อนฟีเจอร์ตกแต่งส่วนหน้าที่ไม่จำเป็นไปยังรอบการพัฒนาถัดไป และขยายเวลาการทดสอบระบบหลักออกไปหนึ่งสัปดาห์ ผู้มีส่วนได้ส่วนเสียชื่นชมการประเมินความเสี่ยงที่โปร่งใสและอนุมัติตารางเวลาที่ปรับปรุงใหม่ การริเริ่มรับมือกับปัญหาที่อาจเกิดขึ้นอย่างสร้างสรรค์ได้เปลี่ยนสิ่งที่อาจกลายเป็นวิกฤตให้กลายเป็นการแสดงความเป็นผู้นำที่พึ่งพาได้"
+  },
+  {
+    "id": "story-b2-6",
+    "title": "Resolving a Roommate Dispute",
+    "titleThai": "การปรับความเข้าใจและการอยู่ร่วมกัน",
+    "genre": "Daily Life",
+    "level": "B2",
+    "readTime": "4 mins",
+    "content": "Living harmoniously with a roommate requires continuous empathy and clear boundaries. After several weeks of growing frustration over unwashed dishes and late-night noise, I felt that passive resistance would only poison the atmosphere. I invited my roommate, Alex, for dinner at our dining table to address the matter calmly. I used 'I' statements to convey how sleep disruption was affecting my productivity without sounding accusatory. Alex acknowledged that an intense freelance workload had caused him to neglect shared duties. Together, we drafted a shared chore chart and established quiet hours starting from 11:00 PM on weekdays. By addressing friction directly yet diplomatically, we restored mutual respect and transformed our shared apartment into a stress-free sanctuary.",
+    "contentThai": "การอยู่ร่วมกับรูมเมตอย่างราบรื่นจำเป็นต้องอาศัยความเข้าอกเข้าใจและการกำหนดขอบเขตที่ชัดเจนอย่างต่อเนื่อง หลังจากที่ความอึดอัดใจเริ่มสะสมมาหลายสัปดาห์เกี่ยวกับจานชามที่ไม่ได้ล้างและเสียงดังยามดึก ฉันรู้สึกว่าการนิ่งเฉยมีแต่จะทำให้บรรยากาศแย่ลง ฉันจึงชวนอเล็กซ์ รูมเมตของฉัน มารับประทานอาหารเย็นที่โต๊ะอาหารเพื่อพูดคุยกันอย่างใจเย็น ฉันใช้ประโยคที่เน้นความรู้สึกของตัวเองเพื่อสื่อสารว่าการนอนหลับไม่สนิทส่งผลต่อประสิทธิภาพการทำงานของฉันอย่างไรโดยไม่ใช้น้ำเสียงกล่าวโทษ อเล็กซ์ยอมรับว่างานฟรีแลนซ์ที่รัดตัวทำให้เขาละเลยหน้าที่ส่วนรวม พวกเราจึงร่วมกันร่างตารางเวรทำความสะอาดและกำหนดช่วงเวลาห้ามส่งเสียงดังตั้งแต่ 23:00 น. ในวันธรรมดา การเผชิญหน้ากับความขัดแย้งอย่างตรงไปตรงมาและประนีประนอมช่วยฟื้นฟูความเคารพซึ่งกันและกัน และเปลี่ยนอพาร์ตเมนต์ของเราให้กลับมาเป็นพื้นที่พักผ่อนที่ไร้ความเครียดอีกครั้ง"
+  },
+  {
+    "id": "story-b2-7",
+    "title": "Handling Flight Delays & Airline Compensation",
+    "titleThai": "การรับมือเที่ยวบินล่าช้าและการเรียกร้องค่าชดเชย",
+    "genre": "Daily Life",
+    "level": "B2",
+    "readTime": "4 mins",
+    "content": "While traveling internationally for a business conference, severe weather conditions triggered widespread airport chaos, culminating in the cancellation of my connecting flight. Rather than joining the massive, overwhelmed queue at the service desk, I promptly opened the airline's mobile app to secure a seat on the earliest available departure the following morning. Simultaneously, I approached an agent to request meal vouchers and hotel accommodations as mandated by passenger rights regulations. I retained all receipts for out-of-pocket transportation and food expenses. Upon returning home, I filed a formal compensation claim through the carrier's online portal, attaching digital copies of boarding passes and expense invoices. Within three weeks, the claim was approved and fully reimbursed, proving that staying composed and knowing your rights is crucial when travel plans go awry.",
+    "contentThai": "ระหว่างการเดินทางไปร่วมการประชุมทางธุรกิจในต่างประเทศ สภาพอากาศที่แปรปรวนรุนแรงทำให้เกิดความโกลาหลทั่วสนามบิน จนนำไปสู่การยกเลิกเที่ยวบินต่อเครื่องของฉัน แทนที่จะไปต่อแถวยาวเหยียดที่เคาน์เตอร์บริการ ฉันรีบเปิดแอปพลิเคชันของสายการบินเพื่อจองที่นั่งในเที่ยวบินแรกสุดของเช้าวันถัดไปทันที ในขณะเดียวกัน ฉันได้เดินไปสอบถามเจ้าหน้าที่เพื่อขอรับคูปองอาหารและที่พักโรงแรมตามสิทธิคุ้มครองผู้โดยสาร ฉันเก็บใบเสร็จค่าเดินทางและค่าอาหารที่สำรองจ่ายไว้ทั้งหมด เมื่อเดินทางกลับถึงบ้าน ฉันได้ยื่นเรื่องเรียกร้องค่าชดเชยอย่างเป็นทางการผ่านพอร์ทัลออนไลน์ของสายการบิน พร้อมแนบสำเนาบอร์ดดิ้งพาสและใบเสร็จค่าใช้จ่าย ภายในสามสัปดาห์ คำร้องได้รับการอนุมัติและจ่ายเงินชดเชยเต็มจำนวน ซึ่งพิสูจน์ว่าการมีสติและการรู้สิทธิของตนเองมีความสำคัญยิ่งเมื่อแผนการเดินทางเกิดความผิดพลาด"
   }
 ]
+
 
 
 
