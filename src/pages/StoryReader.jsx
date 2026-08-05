@@ -6,6 +6,7 @@ import Card from '../components/Card';
 import storiesData from '../data/stories.json';
 import { lookupWord } from '../utils/wordLookup';
 import { useGamification } from '../hooks/useGamification';
+import { speakText, speakStory, stopSpeech } from '../utils/audioService';
 
 const StoryReader = () => {
   const { id } = useParams();
@@ -22,9 +23,7 @@ const StoryReader = () => {
   // Clean up speech synthesis and reset states on story change or unmount
   useEffect(() => {
     return () => {
-      if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
-      }
+      stopSpeech();
     };
   }, []);
 
@@ -32,9 +31,7 @@ const StoryReader = () => {
     setShowTranslation(false);
     setIsPlayingFullStory(false);
     setIsCompleted(false);
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-    }
+    stopSpeech();
   }, [id]);
 
   if (!story) {
@@ -58,40 +55,24 @@ const StoryReader = () => {
 
   // Play pronunciation for a single word
   const playAudio = (word) => {
-    if ('speechSynthesis' in window && word) {
-      window.speechSynthesis.cancel();
+    if (word) {
       setIsPlayingFullStory(false);
-      // Clean word for speech synthesis
-      const cleanSpeak = word.replace(/^[.,!?;:'"“”‘’()\[\]{}—–\s]+|[.,!?;:'"“”‘’()\[\]{}—–\s]+$/g, '');
-      const utterance = new SpeechSynthesisUtterance(cleanSpeak);
-      utterance.lang = 'en-US';
-      window.speechSynthesis.speak(utterance);
+      speakText(word);
     }
   };
 
   // Toggle full story narration
   const toggleFullStoryAudio = () => {
-    if (!('speechSynthesis' in window)) return;
-
     if (isPlayingFullStory) {
-      window.speechSynthesis.cancel();
+      stopSpeech();
       setIsPlayingFullStory(false);
     } else {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(story.content);
-      utterance.lang = 'en-US';
-      utterance.rate = 0.9; // Slightly comfortable reading pace
-
-      utterance.onend = () => {
-        setIsPlayingFullStory(false);
-      };
-
-      utterance.onerror = () => {
-        setIsPlayingFullStory(false);
-      };
-
-      window.speechSynthesis.speak(utterance);
       setIsPlayingFullStory(true);
+      speakStory(story.content, {
+        rate: 0.9,
+        onEnd: () => setIsPlayingFullStory(false),
+        onError: () => setIsPlayingFullStory(false)
+      });
     }
   };
 

@@ -5,6 +5,7 @@ import vocabularyData from '../data/vocabulary.json';
 import { filterWords, THEMES } from '../hooks/useCategories';
 import { Search, ChevronLeft, ChevronRight, FileText, Volume2 } from 'lucide-react';
 import LevelSelector from '../components/LevelSelector';
+import { speakText } from '../utils/audioService';
 
 const ReadMode = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -32,12 +33,7 @@ const ReadMode = () => {
   }, [searchTerm, level]);
 
   const playAudio = (word) => {
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(word);
-      utterance.lang = 'en-US';
-      window.speechSynthesis.speak(utterance);
-    }
+    speakText(word);
   };
 
   return (

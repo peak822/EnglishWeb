@@ -6,6 +6,7 @@ import LevelSelector from '../components/LevelSelector';
 import { useGamification } from '../hooks/useGamification';
 import { filterWords } from '../hooks/useCategories';
 import vocabularyData from '../data/vocabulary.json';
+import { speakText, stopSpeech } from '../utils/audioService';
 
 const ListeningMode = () => {
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ const ListeningMode = () => {
   useEffect(() => {
     return () => {
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
-      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      stopSpeech();
     };
   }, []);
 
@@ -47,12 +48,7 @@ const ListeningMode = () => {
 
   const playAudio = () => {
     if (!currentWord) return;
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(currentWord.word);
-      utterance.lang = 'en-US';
-      window.speechSynthesis.speak(utterance);
-    }
+    speakText(currentWord.word);
   };
 
   const generateOptions = () => {

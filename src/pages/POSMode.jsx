@@ -4,6 +4,7 @@ import { Timer, Zap, ArrowLeft, RotateCcw, Volume2, Trophy, Flame, Sparkles, Che
 import { useGamification } from '../hooks/useGamification';
 import { generateQuestion, POS_DETAILS } from '../utils/posUtils';
 import vocabularyData from '../data/vocabulary.json';
+import { speakText, stopSpeech } from '../utils/audioService';
 
 const POSMode = () => {
   const navigate = useNavigate();
@@ -22,13 +23,14 @@ const POSMode = () => {
   const [feedback, setFeedback] = useState(null); // { type: 'correct' | 'wrong', pos: string }
   const [scorePopup, setScorePopup] = useState(null);
 
+  useEffect(() => {
+    return () => {
+      stopSpeech();
+    };
+  }, []);
+
   const playWordAudio = (text) => {
-    if ('speechSynthesis' in window && text) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = 'en-US';
-      window.speechSynthesis.speak(utterance);
-    }
+    speakText(text);
   };
 
   const startGame = () => {

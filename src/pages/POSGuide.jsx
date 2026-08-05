@@ -5,6 +5,7 @@ import Card from '../components/Card';
 import { POS_LESSONS } from '../data/posLessons';
 import { extractPrimaryPOS, POS_MAP } from '../utils/posUtils';
 import vocabularyData from '../data/vocabulary.json';
+import { speakText } from '../utils/audioService';
 
 const POSGuide = () => {
   const navigate = useNavigate();
@@ -24,12 +25,7 @@ const POSGuide = () => {
   const exampleWords = matchingWords.slice(0, 10);
 
   const playAudio = (word) => {
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(word);
-      utterance.lang = 'en-US';
-      window.speechSynthesis.speak(utterance);
-    }
+    speakText(word);
   };
 
   // Parse example sentence to highlight bold words

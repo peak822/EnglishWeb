@@ -5,6 +5,7 @@ import vocabularyData from '../data/vocabulary.json';
 import { useGamification } from '../hooks/useGamification';
 import { filterWords } from '../hooks/useCategories';
 import LevelSelector from '../components/LevelSelector';
+import { speakText, stopSpeech } from '../utils/audioService';
 
 const MatchMode = () => {
   const { addExp } = useGamification();
@@ -17,13 +18,15 @@ const MatchMode = () => {
   const [isLocked, setIsLocked] = useState(false);
   const timeoutRef = useRef(null);
 
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      stopSpeech();
+    };
+  }, []);
+
   const playAudio = (text) => {
-    if ('speechSynthesis' in window && text) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = 'en-US';
-      window.speechSynthesis.speak(utterance);
-    }
+    speakText(text);
   };
 
   const startNewGame = () => {
