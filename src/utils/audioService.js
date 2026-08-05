@@ -2,20 +2,23 @@
  * Resilient Audio & Speech Service
  * 
  * Features:
- * 1. Garbage Collection (GC) Protection: Keeps global references so browser doesn't drop speech mid-way.
- * 2. Asynchronous Voice Loader: Detects and selects natural English voices (en-US / en-GB).
- * 3. Chrome Queue Unstuck: Auto-resumes paused synthesis and prevents cancel-speak race conditions.
- * 4. Multi-Sentence Story Chunking: Splits long stories to bypass browser ~200-char / 15s TTS limits.
- * 5. Dual-Engine Audio Fallback: Automatically falls back to HTML5 Audio if Web Speech is blocked/unavailable.
+ * 1. Garbage Collection (GC) Protection: Keeps global references in a Set so V8/WebKit doesn't drop speech mid-playback.
+ * 2. Story Playback Session Engine: Sentence-by-sentence sequential narrator with session tracking and keepalive.
+ * 3. Asynchronous Voice Loader: Automatically selects natural, high-clarity English voices (US / GB / Natural).
+ * 4. Chrome Queue Deadlock Prevention: Avoids cancel-speak collisions and automatically resumes paused states.
+ * 5. Dual-Engine Audio Fallback: Automatically falls back to high-quality online audio CDN if Web Speech API is blocked.
  */
 
 // Retain active utterances to prevent V8/WebKit garbage collection
 const activeUtterances = new Set();
 let currentAudio = null;
 let cachedVoices = [];
-let isVoicesLoaded = false;
+let keepAliveTimer = null;
+let currentStorySessionId = 0;
+
 let storyPlaybackState = {
   isPlaying: false,
+  sessionId: 0,
   sentences: [],
   currentIndex: 0,
   options: null,
@@ -28,7 +31,6 @@ const loadVoices = () => {
     const voices = window.speechSynthesis.getVoices() || [];
     if (voices.length > 0) {
       cachedVoices = voices;
-      isVoicesLoaded = true;
     }
     return voices;
   } catch (e) {
@@ -45,6 +47,29 @@ if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
     };
   }
 }
+
+// Keep-alive timer for long Web Speech playback (Chrome 14s timeout workaround)
+const startKeepAlive = () => {
+  stopKeepAlive();
+  if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
+  keepAliveTimer = setInterval(() => {
+    try {
+      if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
+        window.speechSynthesis.pause();
+        window.speechSynthesis.resume();
+      }
+    } catch (e) {
+      // ignore
+    }
+  }, 5000);
+};
+
+const stopKeepAlive = () => {
+  if (keepAliveTimer) {
+    clearInterval(keepAliveTimer);
+    keepAliveTimer = null;
+  }
+};
 
 /**
  * Find the most natural English voice available
@@ -84,13 +109,18 @@ export const getBestEnglishVoice = () => {
 };
 
 /**
- * Stop any active audio and speech synthesis
+ * Stop any active audio, speech synthesis, and story playback
  */
 export const stopSpeech = () => {
+  // Invalidate any active story session
+  currentStorySessionId++;
   storyPlaybackState.isPlaying = false;
+  storyPlaybackState.sessionId = currentStorySessionId;
   storyPlaybackState.sentences = [];
   storyPlaybackState.currentIndex = 0;
   storyPlaybackState.options = null;
+
+  stopKeepAlive();
 
   if (currentAudio) {
     try {
@@ -123,10 +153,12 @@ export const playFallbackAudio = (text, options = {}) => {
       return;
     }
 
-    stopSpeech();
+    // If not a story sentence part, stop previous speech
+    if (!options.isStoryPart) {
+      stopSpeech();
+    }
 
     const cleanText = text.trim();
-    // Primary fallback: High quality US English pronunciation dictionary CDN
     const audioUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanText)}&type=2`;
     
     const audio = new Audio(audioUrl);
@@ -156,7 +188,7 @@ export const playFallbackAudio = (text, options = {}) => {
       fallbackAudio.onerror = (err) => {
         currentAudio = null;
         if (options.onError) options.onError(err);
-        resolve(); // resolve gracefully so UI doesn't crash
+        resolve();
       };
 
       fallbackAudio.play().catch(e => {
@@ -167,7 +199,6 @@ export const playFallbackAudio = (text, options = {}) => {
     };
 
     audio.play().catch(err => {
-      // In case autoplay is blocked or network failed
       console.warn('Fallback audio play failed:', err);
       if (options.onError) options.onError(err);
       resolve();
@@ -184,70 +215,69 @@ export const speakText = (text, options = {}) => {
   const cleanText = text.replace(/^[.,!?;:'"“”‘’()[\]{}—–\s]+|[.,!?;:'"“”‘’()[\]{}—–\s]+$/g, '').trim();
   if (!cleanText) return;
 
+  // If this is an independent word click (not part of story narration), stop existing speech and story
+  if (!options.isStoryPart) {
+    stopSpeech();
+  }
+
   // If force fallback requested or SpeechSynthesis is not supported
   if (options.forceFallback || typeof window === 'undefined' || !('speechSynthesis' in window)) {
     playFallbackAudio(cleanText, options);
     return;
   }
 
-  stopSpeech();
-
-  // Web Speech API execution with GC protection & voice selection
-  setTimeout(() => {
-    try {
-      if (window.speechSynthesis.paused) {
-        window.speechSynthesis.resume();
-      }
-
-      const utterance = new SpeechSynthesisUtterance(cleanText);
-      utterance.lang = 'en-US';
-      utterance.rate = options.rate || 1.0;
-      utterance.pitch = options.pitch || 1.0;
-
-      const bestVoice = getBestEnglishVoice();
-      if (bestVoice) {
-        utterance.voice = bestVoice;
-      }
-
-      // GC Protection: keep reference in Set until utterance completes
-      activeUtterances.add(utterance);
-
-      let hasFinished = false;
-
-      const cleanup = () => {
-        if (!hasFinished) {
-          hasFinished = true;
-          activeUtterances.delete(utterance);
-        }
-      };
-
-      utterance.onend = () => {
-        cleanup();
-        if (options.onEnd) options.onEnd();
-      };
-
-      utterance.onerror = (event) => {
-        cleanup();
-        // If error is not a user cancel, attempt fallback
-        if (event.error !== 'canceled' && event.error !== 'interrupted') {
-          console.warn('SpeechSynthesis error, falling back to audio CDN:', event.error);
-          playFallbackAudio(cleanText, options);
-        } else if (options.onError) {
-          options.onError(event);
-        }
-      };
-
-      window.speechSynthesis.speak(utterance);
-
-      // Heartbeat resume in case browser pauses speech
-      if (window.speechSynthesis.paused) {
-        window.speechSynthesis.resume();
-      }
-    } catch (err) {
-      console.warn('SpeechSynthesis invocation failed, falling back:', err);
-      playFallbackAudio(cleanText, options);
+  try {
+    if (window.speechSynthesis.paused) {
+      window.speechSynthesis.resume();
     }
-  }, 20);
+
+    const utterance = new SpeechSynthesisUtterance(cleanText);
+    utterance.lang = 'en-US';
+    utterance.rate = options.rate || 1.0;
+    utterance.pitch = options.pitch || 1.0;
+
+    const bestVoice = getBestEnglishVoice();
+    if (bestVoice) {
+      utterance.voice = bestVoice;
+    }
+
+    // GC Protection: retain reference in Set until utterance completes
+    activeUtterances.add(utterance);
+
+    let hasFinished = false;
+
+    const cleanup = () => {
+      if (!hasFinished) {
+        hasFinished = true;
+        activeUtterances.delete(utterance);
+      }
+    };
+
+    utterance.onend = () => {
+      cleanup();
+      if (options.onEnd) options.onEnd();
+    };
+
+    utterance.onerror = (event) => {
+      cleanup();
+      // If error is not a user cancel, attempt fallback
+      if (event.error !== 'canceled' && event.error !== 'interrupted') {
+        console.warn('SpeechSynthesis error, falling back to audio CDN:', event.error);
+        playFallbackAudio(cleanText, options);
+      } else if (options.onError) {
+        options.onError(event);
+      }
+    };
+
+    window.speechSynthesis.speak(utterance);
+
+    if (window.speechSynthesis.paused) {
+      window.speechSynthesis.resume();
+    }
+  } catch (err) {
+    console.warn('SpeechSynthesis invocation failed, falling back:', err);
+    playFallbackAudio(cleanText, options);
+  }
 };
 
 /**
@@ -255,7 +285,7 @@ export const speakText = (text, options = {}) => {
  */
 export const splitIntoSentences = (text) => {
   if (!text) return [];
-  // Match sentence ending punctuation followed by space or newline
+  // Match sentences ending with . ! ? or newlines
   const rawSentences = text.match(/[^.!?\n]+[.!?]+|[^.!?\n]+/g) || [text];
   return rawSentences
     .map(s => s.trim())
@@ -268,21 +298,30 @@ export const splitIntoSentences = (text) => {
 export const speakStory = (fullText, options = {}) => {
   if (!fullText || fullText.trim() === '') return;
 
+  // Stop any previous speech
   stopSpeech();
 
   const sentences = splitIntoSentences(fullText);
   if (sentences.length === 0) return;
 
+  const thisSessionId = currentStorySessionId;
   storyPlaybackState.isPlaying = true;
+  storyPlaybackState.sessionId = thisSessionId;
   storyPlaybackState.sentences = sentences;
   storyPlaybackState.currentIndex = 0;
   storyPlaybackState.options = options;
 
+  startKeepAlive();
+
   const playNextSentence = () => {
-    if (!storyPlaybackState.isPlaying) return;
+    // Abort if stopped or session changed
+    if (!storyPlaybackState.isPlaying || storyPlaybackState.sessionId !== thisSessionId) {
+      return;
+    }
 
     if (storyPlaybackState.currentIndex >= storyPlaybackState.sentences.length) {
       storyPlaybackState.isPlaying = false;
+      stopKeepAlive();
       if (options.onEnd) options.onEnd();
       return;
     }
@@ -293,17 +332,18 @@ export const speakStory = (fullText, options = {}) => {
     }
 
     speakText(currentSentence, {
+      isStoryPart: true, // Crucial: prevents speakText from resetting storyPlaybackState
       rate: options.rate || 0.9,
       onEnd: () => {
-        if (!storyPlaybackState.isPlaying) return;
+        if (!storyPlaybackState.isPlaying || storyPlaybackState.sessionId !== thisSessionId) return;
         storyPlaybackState.currentIndex++;
-        // Brief natural pause between sentences (150ms)
-        setTimeout(playNextSentence, 150);
+        // Short natural breath pause between sentences (200ms)
+        setTimeout(playNextSentence, 200);
       },
       onError: (err) => {
-        if (!storyPlaybackState.isPlaying) return;
+        if (!storyPlaybackState.isPlaying || storyPlaybackState.sessionId !== thisSessionId) return;
         storyPlaybackState.currentIndex++;
-        setTimeout(playNextSentence, 150);
+        setTimeout(playNextSentence, 200);
       }
     });
   };
