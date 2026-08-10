@@ -72,11 +72,46 @@ const stopKeepAlive = () => {
 };
 
 /**
+ * Get all available English voices
+ */
+export const getAvailableVoices = () => {
+  const voices = cachedVoices.length > 0 ? cachedVoices : loadVoices();
+  return voices.filter(v => v.lang.startsWith('en'));
+};
+
+/**
+ * Get the user's preferred voice URI from localStorage
+ */
+export const getPreferredVoice = () => {
+  if (typeof window === 'undefined') return null;
+  return localStorage.getItem('preferred_voice_uri');
+};
+
+/**
+ * Set the user's preferred voice URI to localStorage
+ */
+export const setPreferredVoice = (voiceURI) => {
+  if (typeof window === 'undefined') return;
+  if (voiceURI) {
+    localStorage.setItem('preferred_voice_uri', voiceURI);
+  } else {
+    localStorage.removeItem('preferred_voice_uri');
+  }
+};
+
+/**
  * Find the most natural English voice available
  */
 export const getBestEnglishVoice = () => {
   const voices = cachedVoices.length > 0 ? cachedVoices : loadVoices();
   if (!voices || voices.length === 0) return null;
+
+  // 0. Look for user's preferred voice first
+  const preferredUri = getPreferredVoice();
+  if (preferredUri) {
+    const preferred = voices.find(v => v.voiceURI === preferredUri);
+    if (preferred) return preferred;
+  }
 
   // 1. Look for preferred high-quality English voices
   const preferredNames = [

@@ -15,15 +15,18 @@ import {
   Compass,
   Layers,
   FileText,
-  Bookmark
+  Bookmark,
+  Settings
 } from 'lucide-react';
 import Tilt from 'react-parallax-tilt';
 import { useGamification } from '../hooks/useGamification';
+import VoiceSettings from '../components/VoiceSettings';
 
 const Home = () => {
   const navigate = useNavigate();
   const { exp, level, rankTitle, rankColor, rankIcon, streakDays, badges, nextLevelExp, currentLevelBaseExp } = useGamification();
   const [isTouchDevice, setIsTouchDevice] = useState(false);
+  const [isVoiceSettingsOpen, setIsVoiceSettingsOpen] = useState(false);
 
   useEffect(() => {
     setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0 || window.innerWidth < 768);
@@ -281,6 +284,14 @@ const Home = () => {
             <span style={{ color: '#00f2fe' }}>{exp} EXP</span>
             <span>เป้าหมาย {nextLevelExp} EXP ({Math.round(expProgress)}%)</span>
           </div>
+          
+          <button 
+            onClick={() => setIsVoiceSettingsOpen(true)}
+            className="mt-4 w-full flex items-center justify-center gap-2 bg-[#334155]/50 hover:bg-[#334155] border border-[#475569] text-slate-300 hover:text-white py-2 rounded-lg text-sm font-medium transition-colors"
+          >
+            <Settings size={16} />
+            ตั้งค่าเสียงพูด (Voice Settings)
+          </button>
         </div>
 
         {/* Spotlight Card */}
@@ -365,6 +376,11 @@ const Home = () => {
 
         </section>
       ))}
+
+      <VoiceSettings 
+        isOpen={isVoiceSettingsOpen} 
+        onClose={() => setIsVoiceSettingsOpen(false)} 
+      />
 
     </div>
   );
