@@ -69,7 +69,6 @@ const StoryReader = () => {
     } else {
       setIsPlayingFullStory(true);
       speakStory(story.content, {
-        rate: 0.9,
         onEnd: () => setIsPlayingFullStory(false),
         onError: () => setIsPlayingFullStory(false)
       });

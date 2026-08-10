@@ -100,6 +100,23 @@ export const setPreferredVoice = (voiceURI) => {
 };
 
 /**
+ * Get the user's preferred speech speed from localStorage (default 0.9)
+ */
+export const getPreferredSpeed = () => {
+  if (typeof window === 'undefined') return 0.85;
+  const speed = localStorage.getItem('preferred_voice_speed');
+  return speed ? parseFloat(speed) : 0.85;
+};
+
+/**
+ * Set the user's preferred speech speed
+ */
+export const setPreferredSpeed = (speed) => {
+  if (typeof window === 'undefined') return;
+  localStorage.setItem('preferred_voice_speed', speed.toString());
+};
+
+/**
  * Find the most natural English voice available
  */
 export const getBestEnglishVoice = () => {
@@ -268,7 +285,8 @@ export const speakText = (text, options = {}) => {
 
     const utterance = new SpeechSynthesisUtterance(cleanText);
     utterance.lang = 'en-US';
-    utterance.rate = options.rate || 1.0;
+    // Use option rate, or user preferred speed
+    utterance.rate = options.rate || getPreferredSpeed();
     utterance.pitch = options.pitch || 1.0;
 
     const bestVoice = getBestEnglishVoice();
@@ -316,19 +334,18 @@ export const speakText = (text, options = {}) => {
 };
 
 /**
- * Split text into natural sentence chunks
+ * Split text into large continuous chunks (paragraphs) for natural intonation
  */
-export const splitIntoSentences = (text) => {
+export const splitIntoParagraphs = (text) => {
   if (!text) return [];
-  // Match sentences ending with . ! ? or newlines
-  const rawSentences = text.match(/[^.!?\n]+[.!?]+|[^.!?\n]+/g) || [text];
-  return rawSentences
+  // Match paragraphs to allow TTS engine to handle natural punctuation pauses
+  return text.split(/\n+/)
     .map(s => s.trim())
     .filter(s => s.length > 0);
 };
 
 /**
- * Speak full story or article sequentially sentence-by-sentence
+ * Speak full story or article sequentially chunk-by-chunk
  */
 export const speakStory = (fullText, options = {}) => {
   if (!fullText || fullText.trim() === '') return;
@@ -336,7 +353,7 @@ export const speakStory = (fullText, options = {}) => {
   // Stop any previous speech
   stopSpeech();
 
-  const sentences = splitIntoSentences(fullText);
+  const sentences = splitIntoParagraphs(fullText);
   if (sentences.length === 0) return;
 
   const thisSessionId = currentStorySessionId;
@@ -367,18 +384,18 @@ export const speakStory = (fullText, options = {}) => {
     }
 
     speakText(currentSentence, {
-      isStoryPart: true, // Crucial: prevents speakText from resetting storyPlaybackState
-      rate: options.rate || 0.9,
+      isStoryPart: true,
+      rate: options.rate || getPreferredSpeed(),
       onEnd: () => {
         if (!storyPlaybackState.isPlaying || storyPlaybackState.sessionId !== thisSessionId) return;
         storyPlaybackState.currentIndex++;
-        // Short natural breath pause between sentences (200ms)
-        setTimeout(playNextSentence, 200);
+        // Natural breath pause between paragraphs (500ms)
+        setTimeout(playNextSentence, 500);
       },
       onError: (err) => {
         if (!storyPlaybackState.isPlaying || storyPlaybackState.sessionId !== thisSessionId) return;
         storyPlaybackState.currentIndex++;
-        setTimeout(playNextSentence, 200);
+        setTimeout(playNextSentence, 500);
       }
     });
   };

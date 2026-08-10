@@ -287,7 +287,7 @@ const Home = () => {
           
           <button 
             onClick={() => setIsVoiceSettingsOpen(true)}
-            className="mt-4 w-full flex items-center justify-center gap-2 bg-[#334155]/50 hover:bg-[#334155] border border-[#475569] text-slate-300 hover:text-white py-2 rounded-lg text-sm font-medium transition-colors"
+            className="home-voice-settings-btn"
           >
             <Settings size={16} />
             ตั้งค่าเสียงพูด (Voice Settings)

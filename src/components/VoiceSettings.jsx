@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Settings, Volume2, X, Check } from 'lucide-react';
-import { getAvailableVoices, getPreferredVoice, setPreferredVoice, getBestEnglishVoice } from '../utils/audioService';
+import { getAvailableVoices, getPreferredVoice, setPreferredVoice, getBestEnglishVoice, getPreferredSpeed, setPreferredSpeed } from '../utils/audioService';
+import './VoiceSettings.css';
 
 const VoiceSettings = ({ isOpen, onClose }) => {
   const [voices, setVoices] = useState([]);
   const [selectedVoiceUri, setSelectedVoiceUri] = useState('');
+  const [selectedSpeed, setSelectedSpeed] = useState(0.85);
   const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
     if (isOpen) {
-      // Load voices
       const load = () => {
         const available = getAvailableVoices();
         setVoices(available);
@@ -21,10 +22,11 @@ const VoiceSettings = ({ isOpen, onClose }) => {
           const best = getBestEnglishVoice();
           if (best) setSelectedVoiceUri(best.voiceURI);
         }
+        
+        setSelectedSpeed(getPreferredSpeed());
       };
 
       load();
-      // Handle late voice loading
       if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
         window.speechSynthesis.onvoiceschanged = load;
       }
@@ -36,7 +38,6 @@ const VoiceSettings = ({ isOpen, onClose }) => {
   const handleTestVoice = () => {
     if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
     
-    // Stop current speech
     window.speechSynthesis.cancel();
 
     const utterance = new SpeechSynthesisUtterance("Hello! I am your new voice assistant. How do I sound?");
@@ -45,6 +46,7 @@ const VoiceSettings = ({ isOpen, onClose }) => {
       utterance.voice = voice;
     }
     utterance.lang = 'en-US';
+    utterance.rate = selectedSpeed;
     
     utterance.onstart = () => setIsPlaying(true);
     utterance.onend = () => setIsPlaying(false);
@@ -55,46 +57,40 @@ const VoiceSettings = ({ isOpen, onClose }) => {
 
   const handleSave = () => {
     setPreferredVoice(selectedVoiceUri);
+    setPreferredSpeed(selectedSpeed);
     onClose();
   };
 
-  // Group voices by Natural/Standard for better UI
   const onlineVoices = voices.filter(v => v.name.includes('Online') || v.name.includes('Natural') || v.name.includes('Google'));
   const otherVoices = voices.filter(v => !onlineVoices.includes(v));
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
-      <div className="bg-[#1e293b] border border-[#334155] rounded-2xl w-full max-w-md shadow-2xl overflow-hidden flex flex-col">
+    <div className="voice-settings-overlay">
+      <div className="voice-settings-modal">
         
         {/* Header */}
-        <div className="flex items-center justify-between p-4 border-b border-[#334155] bg-[#0f172a]">
-          <div className="flex items-center gap-2 text-white font-bold">
-            <Settings size={20} className="text-[#38bdf8]" />
-            <h2>ตั้งค่าเสียงคนพูด (Voice Settings)</h2>
+        <div className="voice-settings-header">
+          <div className="voice-settings-title">
+            <Settings size={20} color="#00ffff" />
+            <span>ตั้งค่าเสียงพูด (Voice Settings)</span>
           </div>
-          <button 
-            onClick={onClose}
-            className="p-1.5 text-slate-400 hover:text-white hover:bg-slate-700 rounded-lg transition-colors"
-          >
+          <button onClick={onClose} className="voice-settings-close" title="Close">
             <X size={20} />
           </button>
         </div>
 
         {/* Body */}
-        <div className="p-5 space-y-4">
-          <p className="text-sm text-slate-300 leading-relaxed">
-            ระบบจะพยายามค้นหาเสียง <strong>Online Neural Voices</strong> ที่มีความเป็นธรรมชาติสูงบนเครื่องของคุณ 
-            (เช่น Microsoft Guy หรือ Google US)
+        <div className="voice-settings-body">
+          <p className="voice-settings-info">
+            ระบบจะพยายามค้นหาเสียง <strong>Online Neural Voices</strong> ที่มีความเป็นธรรมชาติสูงบนเครื่องของคุณ
           </p>
 
-          <div className="space-y-1.5">
-            <label className="text-xs font-semibold text-slate-400 uppercase tracking-wider">
-              เลือกเสียง (Select Voice)
-            </label>
+          <div className="voice-select-wrapper">
+            <label className="voice-select-label">เลือกเสียง (Select Voice)</label>
             <select
               value={selectedVoiceUri}
               onChange={(e) => setSelectedVoiceUri(e.target.value)}
-              className="w-full bg-[#0f172a] border border-[#334155] text-white rounded-lg p-3 outline-none focus:border-[#38bdf8] transition-colors"
+              className="voice-select-input"
             >
               {onlineVoices.length > 0 && (
                 <optgroup label="🌟 Premium Online Voices">
@@ -122,30 +118,43 @@ const VoiceSettings = ({ isOpen, onClose }) => {
             </select>
           </div>
 
-          <div className="pt-2">
-            <button
-              onClick={handleTestVoice}
-              disabled={isPlaying || voices.length === 0}
-              className="w-full flex items-center justify-center gap-2 bg-[#334155] hover:bg-[#475569] disabled:opacity-50 text-white font-medium py-2.5 rounded-lg transition-colors"
-            >
-              <Volume2 size={18} className={isPlaying ? "text-[#38bdf8] animate-pulse" : ""} />
-              {isPlaying ? 'กำลังเล่นเสียง...' : 'ทดสอบฟังเสียง (Test Voice)'}
-            </button>
+          <div className="voice-select-wrapper" style={{ marginTop: '0.5rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <label className="voice-select-label">ความเร็วเสียง (Voice Speed)</label>
+              <span style={{ color: '#00ffff', fontSize: '0.85rem', fontWeight: 'bold' }}>{selectedSpeed}x</span>
+            </div>
+            <input 
+              type="range" 
+              min="0.5" 
+              max="1.5" 
+              step="0.05" 
+              value={selectedSpeed}
+              onChange={(e) => setSelectedSpeed(parseFloat(e.target.value))}
+              style={{ width: '100%', accentColor: '#00ffff', cursor: 'pointer' }}
+            />
+            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.7rem', color: '#94a3b8' }}>
+              <span>ช้า (Slow)</span>
+              <span>ปกติ (Normal)</span>
+              <span>เร็ว (Fast)</span>
+            </div>
           </div>
+
+          <button
+            onClick={handleTestVoice}
+            disabled={isPlaying || voices.length === 0}
+            className={`voice-test-btn ${isPlaying ? 'playing' : ''}`}
+          >
+            <Volume2 size={18} className={isPlaying ? 'voice-test-icon' : ''} />
+            {isPlaying ? 'กำลังเล่นเสียง...' : 'ทดสอบฟังเสียง (Test Voice)'}
+          </button>
         </div>
 
         {/* Footer */}
-        <div className="p-4 border-t border-[#334155] bg-[#0f172a] flex justify-end gap-2">
-          <button
-            onClick={onClose}
-            className="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors"
-          >
+        <div className="voice-settings-footer">
+          <button onClick={onClose} className="voice-btn-cancel">
             ยกเลิก
           </button>
-          <button
-            onClick={handleSave}
-            className="flex items-center gap-1.5 px-5 py-2 text-sm font-bold text-white bg-[#0ea5e9] hover:bg-[#0284c7] rounded-lg shadow-lg shadow-[#0ea5e9]/20 transition-all active:scale-95"
-          >
+          <button onClick={handleSave} className="voice-btn-save">
             <Check size={16} />
             บันทึก
           </button>
