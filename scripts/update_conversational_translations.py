@@ -1,0 +1,507 @@
+# -*- coding: utf-8 -*-
+"""
+Conversational & Natural Daily Life Story Translations Master Update
+Updates all 47 stories in src/data/stories.json to natural, fluid, spoken Thai
+suitable for everyday speaking, real-world communication, and reading comprehension.
+"""
+
+import json
+import sys
+
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
+
+# Master Dictionary of all 47 polished stories with natural conversational Thai translations
+MASTER_STORIES = [
+    # =========================================================================
+    # LEVEL A1 (12 Stories)
+    # =========================================================================
+    {
+        "id": "story-a1-1",
+        "title": "A Day at the Park",
+        "titleThai": "หนึ่งวันที่สวนสาธารณะ",
+        "genre": "Daily Life",
+        "level": "A1",
+        "readTime": "3 mins",
+        "content": "Today is a beautiful day. The sun is shining. I go to the park with my dog. We run and play on the grass. My dog is very happy. He loves to chase his ball. After a while, we get tired. We sit under a big tree and drink some water. It's a great day.",
+        "contentThai": "วันนี้อากาศดีมาก แดดแจ่มใสกำลังสบาย ฉันพาน้องหมาไปวิ่งเล่นที่สวนสาธารณะแถวบ้าน เราวิ่งเล่นกันบนสนามหญ้าอย่างสนุกสนาน เจ้าตูบดูแฮปปี้สุดๆ มันชอบวิ่งไล่กวดลูกบอลเป็นที่สุด พอเล่นไปสักพักจนเริ่มเหนื่อย เราก็พากันมานั่งพักดื่มน้ำเย็นๆ ใต้ร่มไม้ใหญ่ ช่างเป็นวันที่ดีและผ่อนคลายจริงๆ"
+    },
+    {
+        "id": "story-a1-2",
+        "title": "Morning Coffee",
+        "titleThai": "กาแฟแก้วโปรดยามเช้า",
+        "genre": "Daily Life",
+        "level": "A1",
+        "readTime": "3 mins",
+        "content": "I wake up at seven o'clock. The sun is bright today. I walk to the kitchen and make a cup of hot coffee. It smells really good. I look out the window and watch the birds. I drink my coffee slowly. Then, I take a shower and get dressed. Now I'm ready for work.",
+        "contentThai": "ฉันตื่นตอนเจ็ดโมงเช้า วันนี้แดดส่องสว่างสดใส ฉันเดินเข้าครัวไปชงกาแฟร้อนๆ สักแก้ว กลิ่นหอมกรุ่นชวนให้ตื่นเต็มตา ระหว่างจิบกาแฟช้าๆ พลางมองดูนกนอกหน้าต่างเพลินๆ จากนั้นฉันก็ไปอาบน้ำแต่งตัว ตอนนี้พร้อมลุยงานของวันใหม่แล้ว"
+    },
+    {
+        "id": "story-a1-3",
+        "title": "The Lost Cat",
+        "titleThai": "ตามหาเจ้าเหมียวที่หายไป",
+        "genre": "Daily Life",
+        "level": "A1",
+        "readTime": "3 mins",
+        "content": "My little cat, Luna, is lost. She is black and white. I look under the bed and in the garden, but she isn't there. I ask my neighbor for help. We walk down the street and call her name. Suddenly, we hear a soft sound. Luna is sitting on a low wall! I pick her up and hug her. I am so relieved.",
+        "contentThai": "ลูน่า เจ้าแมวตัวน้อยของฉันหายตัวไป มันเป็นแมวสีขาวดำลายจุด ฉันลองก้มดูใต้เตียงและเดินหาในสวนก็ไม่เจอ เลยไปขอให้เพื่อนบ้านช่วยกันตามหา เราเดินลัดเลาะไปตามซอยพร้อมกับร้องเรียกชื่อมัน ทันใดนั้นเอง เราก็ได้ยินเสียงร้องเหมียวๆ เบาๆ พอหันไปดูก็เห็นลูน่านั่งอยู่บนกำแพงเตี้ยๆ พอดี ฉันรีบอุ้มมันเข้ามากอดไว้ด้วยความโล่งอกสุดๆ"
+    },
+    {
+        "id": "story-a1-4",
+        "title": "Buying Groceries",
+        "titleThai": "แวะซื้อของสดเข้าบ้าน",
+        "genre": "Daily Life",
+        "level": "A1",
+        "readTime": "3 mins",
+        "content": "Today I need to buy food for the week. I take a cloth bag and walk to the local market. I choose five red apples, a bag of rice, and some fresh fish. The shopkeeper is friendly and gives me a free lemon. I pay with cash and thank him. Now my fridge is full of good food.",
+        "contentThai": "วันนี้ฉันต้องออกไปซื้อของกินเข้าบ้านไว้สำหรับทั้งสัปดาห์ ฉันหยิบถุงผ้าแล้วเดินไปตลาดแถวบ้าน ฉันเลือกซื้อแอปเปิ้ลสีแดงห้าลูก ข้าวสารหนึ่งถุง และปลาสดๆ อีกสองสามตัว พ่อค้าใจดีมากแถมมะนาวให้ฉันฟรีด้วยหนึ่งลูก ฉันจ่ายเงินสดแล้วขอบคุณเขา ตอนนี้ตู้เย็นที่บ้านมีของอร่อยๆ ตุนไว้เต็มเอี้ยดแล้ว"
+    },
+    {
+        "id": "story-a1-5",
+        "title": "Rainy Afternoon",
+        "titleThai": "บ่ายวันฝนพรำแสนอบอุ่น",
+        "genre": "Daily Life",
+        "level": "A1",
+        "readTime": "3 mins",
+        "content": "It starts to rain in the afternoon. Big drops hit the window. I can't go outside to play tennis, so I stay in my living room. I wrap myself in a warm blanket and read an interesting storybook. My mother bakes chocolate cookies in the kitchen. The whole house smells sweet. Rainy days can be cozy too.",
+        "contentThai": "ช่วงบ่ายฝนเริ่มเทลงมา เม็ดฝนกระทบกระจกหน้าต่างเสียงดังเปาะแปะ ฉันออกไปเล่นเทนนิสข้างนอกไม่ได้ เลยเลือกนั่งเล่นชิลๆ ในห้องนั่งเล่นแทน ฉันเอาผ้าห่มนุ่มๆ มาคลุมตัวแล้วหยิบหนังสือนิยายสนุกๆ มานั่งอ่าน ส่วนคุณแม่ก็กำลังอบคุกกี้ช็อกโกแลตอยู่ในครัว ส่งกลิ่นหอมหวานฟุ้งไปทั่วบ้าน วันฝนตกแบบนี้ก็ให้ความรู้สึกอบอุ่นสบายใจดีเหมือนกันนะ"
+    },
+    {
+        "id": "story-a1-6",
+        "title": "A Surprise Birthday Party",
+        "titleThai": "เซอร์ไพรส์วันเกิดสุดประทับใจ",
+        "genre": "Daily Life",
+        "level": "A1",
+        "readTime": "3 mins",
+        "content": "Yesterday was my brother's birthday. My mom and I planned a secret party for him. While he was at school, we decorated the living room with colorful balloons and a big banner. My dad bought a huge chocolate cake from the bakery. At five o'clock, my brother opened the front door. We all jumped out and shouted, 'Surprise! Happy Birthday!' He smiled happily and blew out all the candles. It was a wonderful family celebration.",
+        "contentThai": "เมื่อวานนี้เป็นวันเกิดของพี่ชาย ฉันกับคุณแม่เลยแอบวางแผนจัดปาร์ตี้เซอร์ไพรส์ให้เขา ตอนที่เขาไปโรงเรียน เราช่วยกันตกแต่งห้องนั่งเล่นด้วยลูกโป่งหลากสีและติดป้ายวันเกิดผืนใหญ่ ส่วนคุณพ่อก็แวะซื้อเค้กช็อกโกแลตก้อนโตมาจากร้านเบเกอรี่ พอถึงตอนห้าโมงเย็น พี่ชายเปิดประตูบ้านเข้ามา พวกเราทุกคนก็กระโดดออกมาพร้อมตะโกนว่า 'เซอร์ไพรส์! สุขสันต์วันเกิดนะ!' พี่ชายยิ้มกว้างด้วยความดีใจแล้วเป่าเทียนจนดับหมด เป็นค่ำคืนที่อบอุ่นและมีความสุขกันทั้งครอบครัว"
+    },
+    {
+        "id": "story-a1-7",
+        "title": "Weekend Jogging",
+        "titleThai": "วิ่งออกกำลังกายวันหยุดสุดสดชื่น",
+        "genre": "Daily Life",
+        "level": "A1",
+        "readTime": "3 mins",
+        "content": "Every Saturday morning, I put on my running shoes and go for a jog around the lake. The morning air is cool and refreshing. I see many people walking their dogs and riding bicycles. I run for twenty minutes without stopping. After my jog, I do some light stretching on the grass and drink cold water. Exercising in the morning gives me lots of energy for the whole day.",
+        "contentThai": "ทุกเช้าวันเสาร์ ฉันจะสวมรองเท้าวิ่งคู่โปรดแล้วออกไปวิ่งเหยาะๆ รอบทะเลสาบ อากาศยามเช้าเย็นสบายและสดชื่นมาก ฉันเห็นผู้คนมากมายพาน้องหมามาเดินเล่นและปั่นจักรยานกันอย่างเพลิดเพลิน ฉันวิ่งต่อเนื่องยี่สิบนาทีโดยไม่หยุดพัก พอวิ่งเสร็จ ก็มายืดเส้นยืดสายเบาๆ บนสนามหญ้าแล้วจิบน้ำเย็นๆ การได้ออกกำลังกายตอนเช้าช่วยเติมพลังให้ฉันกระปรี้กระเปร่าไปได้ตลอดทั้งวัน"
+    },
+    {
+        "id": "story-a1-8",
+        "title": "Visiting the Zoo",
+        "titleThai": "พาครอบครัวเที่ยวสวนสัตว์",
+        "genre": "Daily Life",
+        "level": "A1",
+        "readTime": "3 mins",
+        "content": "Last Sunday, my family visited the city zoo. The weather was sunny and warm. First, we went to see the tall giraffes eating green leaves from tall trees. Next, we watched the funny monkeys swinging between ropes. My little sister loved the giant elephants the most. We took many photos together and ate strawberry ice cream near the duck pond. It was an exciting and fun trip for all of us.",
+        "contentThai": "เมื่อวันอาทิตย์ที่ผ่านมา ครอบครัวของฉันพากันไปเที่ยวสวนสัตว์ประจำเมือง อากาศแดดดีและอบอุ่นกำลังสบาย เริ่มแรก เราแวะไปดูเจ้ายีราฟคอยาวกำลังเคี้ยวใบไม้อยู่บนยอดไม้สูง จากนั้นก็ไปยืนดูพวกลิงจ๋อห้อยโหนเชือกไปมาอย่างสนุกสนาน น้องสาวตัวน้อยของฉันชอบคุณช้างตัวยักษ์ที่สุด เราถ่ายรูปคู่ด้วยกันเยอะมาก และแวะทานไอศกรีมสตรอว์เบอร์รีริมสระน้ำเป็ด เป็นทริปที่สนุกสนานและสร้างรอยยิ้มให้กับทุกคนในบ้านจริงๆ"
+    },
+    {
+        "id": "story-a1-9",
+        "title": "Cooking Dinner at Home",
+        "titleThai": "ทำอาหารเย็นทานเองที่บ้าน",
+        "genre": "Daily Life",
+        "level": "A1",
+        "readTime": "3 mins",
+        "content": "Tonight, I decide to cook dinner at home instead of buying fast food. I open the refrigerator and find fresh tomatoes, onions, garlic, and pasta. First, I wash my hands and chop the vegetables on a wooden cutting board. I put a pot of water on the stove and add a little salt. When the water is boiling hot, I put in the pasta. In a pan, I heat some olive oil and fry the garlic until it smells wonderful. Next, I add the sweet tomatoes and stir everything together with a spoon. After ten minutes, the pasta is soft and ready. I drain the hot water and mix the noodles with the red tomato sauce. I put everything on a large white plate and sprinkle yellow cheese on top. It tastes delicious, warm, and healthy. Eating a simple homemade meal brings me great joy after a busy day. Finally, I wash the dishes and clean the kitchen counter before going to bed.",
+        "contentThai": "คืนนี้ฉันตั้งใจจะทำกับข้าวทานเองที่บ้านแทนการสั่งฟาสต์ฟู้ด ฉันเปิดตู้เย็นดู เจอทั้งมะเขือเทศสด หัวหอม กระเทียม แล้วก็เส้นพาสต้า เริ่มแรก ฉันล้างมือให้สะอาดแล้วซอยผักบนเขียงไม้ ฉันตั้งหม้อต้มน้ำบนเตาแล้วเหยาะเกลือลงไปนิดหน่อย พอน้ำเดือดพล่าน ก็หย่อนเส้นพาสต้าลงไป ในกระทะอีกใบ ฉันตั้งน้ำมันมะกอกให้ร้อนแล้วเจียวกระเทียมจนส่งกลิ่นหอมฟุ้ง จากนั้นก็ใส่มะเขือเทศลงไปผัดคลุกเคล้าให้เข้ากัน ผ่านไปสิบนาที เส้นพาสต้าก็สุกนุ่มกำลังดี ฉันเทน้ำทิ้งแล้วนำเส้นไปคลุกกับซอสมะเขือเทศสีแดงสด ตักใส่จานใบใหญ่แล้วโรยชีสเยิ้มๆ ไว้ด้านบน รสชาติอร่อย กลมกล่อม แถมดีต่อสุขภาพ การได้ทานอาหารทำเองง่ายๆ ช่วยให้รู้สึกฟินและคลายเหนื่อยไปได้เยอะเลย สุดท้ายก็ล้างจานและเช็ดเคาน์เตอร์ครัวจนสะอาดเอี่ยมก่อนเข้านอน"
+    },
+    {
+        "id": "story-a1-10",
+        "title": "A Visit to the Doctor",
+        "titleThai": "ไปหาหมอที่คลินิก",
+        "genre": "Daily Life",
+        "level": "A1",
+        "readTime": "3 mins",
+        "content": "This morning, I woke up feeling very sick. My head was hurting, my throat was sore, and my body felt hot. I called my local clinic and booked an appointment for ten o'clock. When I arrived, the friendly nurse checked my temperature and wrote down my name. A few minutes later, Doctor Miller called me into his clean office. He asked me questions about my symptoms and listened to my chest with a stethoscope. He checked my throat with a small light and smiled kindly. He told me that I had a common seasonal cold and needed plenty of rest. He wrote a prescription for cough syrup and pain medicine. He told me to drink lots of warm water, eat chicken soup, and sleep at least eight hours each night. On my way out, I picked up my medicine from the pharmacy counter next door. I paid the bill and took a taxi back to my apartment. I took my first dose of medicine and went straight to sleep. Taking care of your health is very important.",
+        "contentThai": "เช้าวันนี้ฉันตื่นขึ้นมาด้วยอาการไม่ค่อยดี ทั้งปวดหัว เจ็บคอ แล้วตัวก็รุมๆ เหมือนจะมีไข้ ฉันเลยรีบโทรไปนัดตรวจที่คลินิกใกล้บ้านตอนสิบโมงเช้า พอไปถึง พี่พยาบาลใจดีก็ช่วยวัดไข้และลงทะเบียนให้ รอแค่แป๊บเดียว คุณหมอมิลเลอร์ก็เรียกฉันเข้าไปในห้องตรวจ คุณหมอถามอาการอย่างละเอียดแล้วใช้หูฟังตรวจดูการหายใจ จากนั้นก็ใช้ไฟฉายส่องดูในคอแล้วยิ้มให้อย่างใจดี คุณหมอบอกว่าเป็นแค่หวัดธรรมดาตามฤดูกาล ขอให้พักผ่อนเยอะๆ แล้วเขียนใบสั่งยาน้ำแก้ไอกับยาลดไข้ให้ พร้อมกำชับว่าให้ดื่มน้ำอุ่นมากๆ ทานซุปร้อนๆ และนอนให้ครบแปดชั่วโมง ขากลับ ฉันแวะรับยาที่เคาน์เตอร์ข้างๆ จ่ายเงินเสร็จก็นั่งแท็กซี่กลับห้อง พอกลับถึงห้อง ฉันก็ทานยาทันทีแล้วนอนพักผ่อนยาวๆ สุขภาพร่างกายเป็นเรื่องสำคัญที่สุดจริงๆ"
+    },
+    {
+        "id": "story-a1-11",
+        "title": "Doing the Laundry and Weekend Chores",
+        "titleThai": "ซักผ้าและทำงานบ้านวันหยุด",
+        "genre": "Daily Life",
+        "level": "A1",
+        "readTime": "3 mins",
+        "content": "Saturday is always my chore day. I wake up early and look around my messy room. Clothes are sitting on the chair and dust is on the floor. First, I collect all the dirty clothes and sort them into two piles: white clothes and colored clothes. I carry the first basket to the washing machine, add laundry detergent, and press the start button. While the machine is spinning, I grab a broom and sweep the living room floor. Next, I mop the tiles until they are shiny and clean. When the washing machine sings its final song, I take out the wet clothes. I walk outside to the sunny balcony and hang my shirts and towels on the metal rack. The warm sunlight and fresh breeze make them smell wonderful. After that, I change my bed sheets and wipe the dust off my desk. By noon, my whole house is fresh and tidy. Doing housework takes energy, but relaxing in a clean home feels amazing.",
+        "contentThai": "วันเสาร์เป็นวันเคลียร์งานบ้านของฉันเสมอ ฉันตื่นแต่เช้าแล้วกวาดตามองรอบห้องที่ค่อนข้างรก มีเสื้อผ้าวางพาดอยู่บนเก้าอี้และเริ่มมีฝุ่นเกาะตามพื้น เริ่มแรก ฉันรวบรวมเสื้อผ้าที่ใส่แล้วมาแยกเป็นสองกอง คือ ผ้าขาวกับผ้าสี ฉันยกตะกร้าไปที่เครื่องซักผ้า ใส่ผงซักฟอก แล้วกดปุ่มเริ่มทำงาน ระหว่างที่เครื่องกำลังซัก ฉันก็หยิบไม้กวาดมากวาดห้องนั่งเล่น จากนั้นก็ถูพื้นกระเบื้องจนสะอาดเงาวับ พอเครื่องซักผ้าส่งเสียงเตือนว่าเสร็จแล้ว ฉันก็นำผ้าเปียกออกมาตากแดดรับลมที่ระเบียง กลิ่นแดดอ่อนๆ ทำให้ผ้าหอมสดชื่นมาก หลังจากนั้น ฉันก็เปลี่ยนผ้าปูที่นอนผืนใหม่และเช็ดฝุ่นบนโต๊ะทำงาน พอถึงเที่ยงวัน ทั้งบ้านก็สะอาดสะอ้านน่าอยู่ งานบ้านอาจจะเหนื่อยหน่อย แต่พอเสร็จแล้วได้พักผ่อนในบ้านที่สะอาด มันรู้สึกโล่งสบายใจสุดๆ เลย"
+    },
+    {
+        "id": "story-a1-12",
+        "title": "Weekend Market Shopping",
+        "titleThai": "เดินช้อปปิ้งตลาดนัดวันหยุด",
+        "genre": "Daily Life",
+        "level": "A1",
+        "readTime": "3 mins",
+        "content": "On Sunday morning, the neighborhood weekend market is full of life. People walk between colorful stalls with canvas bags in their hands. The air is filled with the smell of sweet flowers, fresh bread, and grilled meat. I walk to the fruit stall first. The friendly vendor greets me with a big smile. I choose six yellow bananas, four red apples, and a box of fresh strawberries. Next, I visit the bakery stand. The baker just took hot bread out of the oven. I buy a loaf of whole wheat bread and two chocolate muffins for my sister. As the morning gets hotter, I stop at a small drink cart and order a glass of cold iced lemon tea. I sit on a green wooden bench near the fountain to rest my feet and enjoy my cold drink. Walking through the market and meeting local neighbors makes my weekend special and joyful.",
+        "contentThai": "เช้าวันอาทิตย์ ตลาดนัดแถวบ้านจะคึกคักและมีชีวิตชีวามาก ผู้คนต่างเดินเลือกซื้อของตามซุ้มร้านค้าพร้อมหิ้วถุงผ้าในมือ กลิ่นหอมของดอกไม้ ขนมปังอบใหม่ และเนื้อย่างลอยเตะจมูกไปทั่ว ฉันเดินตรงไปที่แผงผลไม้ก่อนเป็นที่แรก พ่อค้ายิ้มต้อนรับอย่างเป็นกันเอง ฉันเลือกซื้อกล้วยหอมหกผล แอปเปิ้ลสี่ลูก แล้วก็สตรอว์เบอร์รีสดอีกหนึ่งกล่อง ต่อมา ฉันแวะไปที่ร้านเบเกอรี่ คนทำขนมเพิ่งยกขนมปังร้อนๆ ออกจากเตาพอดี ฉันเลยซื้อขนมปังโฮลวีตหนึ่งแถวกับมัฟฟินช็อกโกแลตสองชิ้นไปฝากน้องสาว พอแดดเริ่มแรงขึ้น ฉันก็แวะรถเข็นขายน้ำ สั่งชามะนาวเย็นเจี๊ยบมาชื่นใจสักแก้ว แล้วไปนั่งพักขาบนม้านั่งไม้ริมน้ำพุ การได้เดินเล่นในตลาดและทักทายคนในละแวกบ้านทำให้วันหยุดของฉันแฮปปี้และมีความสุขมาก"
+    },
+
+    # =========================================================================
+    # LEVEL A2 (12 Stories)
+    # =========================================================================
+    {
+        "id": "story-a2-1",
+        "title": "The Secret Map",
+        "titleThai": "แผนที่ลายแทงลึกลับ",
+        "genre": "Adventure",
+        "level": "A2",
+        "readTime": "4 mins",
+        "content": "Yesterday, Tom found an old map in the local library. It was hiding inside a heavy history book. The map showed a strange island with a huge mountain in the middle. At the top, there was a red cross. Tom was so excited! He called his best friend, Sarah, right away to tell her. They agreed to meet at a coffee shop the next morning to plan their big adventure.",
+        "contentThai": "เมื่อวานนี้ ทอมบังเอิญเจอแผนที่เก่าแก่แผ่นหนึ่งซ่อนอยู่ในหนังสือประวัติศาสตร์เล่มหนาที่ห้องสมุดชุมชน บนแผนที่เผยให้เห็นเกาะปริศนาที่มีภูเขาสูงตระหง่านอยู่ตรงกลาง พร้อมเครื่องหมายกากบาทสีแดงบนยอดเขา ทอมตื่นเต้นจนเนื้อเต้น เขารีบต่อสายหาซาร่าห์เพื่อนสนิททันที ทั้งคู่นัดเจอกันที่ร้านกาแฟในเช้าวันถัดไปเพื่อร่วมกันวางแผนการผจญภัยครั้งใหญ่"
+    },
+    {
+        "id": "story-a2-2",
+        "title": "The Supermarket Trip",
+        "titleThai": "จ่ายตลาดที่ซูเปอร์มาร์เก็ต",
+        "genre": "Daily Life",
+        "level": "A2",
+        "readTime": "4 mins",
+        "content": "On Saturday afternoon, I went to the supermarket with a long shopping list. First, I picked up some fresh vegetables and apples. Next, I grabbed some milk and cheese from the dairy aisle. I couldn't find the bread anywhere, so I asked a worker for help. He pointed me toward the bakery. In the end, I waited in a long line at the checkout, paid with my card, and carried my heavy bags home.",
+        "contentThai": "บ่ายวันเสาร์ ฉันแวะไปซูเปอร์มาร์เก็ตพร้อมลิสต์ของที่ต้องซื้อยาวเหยียด เริ่มจากหยิบผักสดกับแอปเปิ้ลกรอบๆ ก่อน จากนั้นก็เดินไปโซนผลิตภัณฑ์นมเพื่อหยิบนมและชีส พอหาชั้นวางขนมปังไม่เจอ ฉันเลยเดินไปถามพนักงานแถวนั้น ซึ่งเขาก็ชี้ทางไปยังโซนเบเกอรี่ให้อย่างสุภาพ สุดท้ายก็ไปยืนต่อคิวยาวที่แคชเชียร์ รูดบัตรจ่ายเงินเรียบร้อย แล้วหิ้วถุงของพะรุงพะรังกลับบ้านอย่างสบายใจ"
+    },
+    {
+        "id": "story-a2-3",
+        "title": "The Broken Clock",
+        "titleThai": "ซ่อมนาฬิกาโบราณของคุณปู่",
+        "genre": "Daily Life",
+        "level": "A2",
+        "readTime": "4 mins",
+        "content": "There was an old grandfather clock in our living room. It had been ticking quietly for thirty years. One morning, the hands stopped moving at exactly 4:15. My father opened the small glass door and carefully inspected the brass gears inside. He found a tiny loose screw. With a small screwdriver, he tightened the gear and wound the heavy weights. Suddenly, the clock chimed loudly! We all smiled and clapped our hands.",
+        "contentThai": "ในห้องนั่งเล่นบ้านเรามีนาฬิกาโบราณตั้งพื้นของคุณปู่ตั้งอยู่เรือนหนึ่ง มันเดินติ๊กๆ อย่างเงียบเชียบมานานกว่าสามสิบปีแล้ว แต่วันหนึ่ง เข็มนาฬิกากลับหยุดเดินสนิทตรงเวลา 4:15 น. พอดี คุณพ่อเลยเปิดประตูกระจกบานเล็กแล้วค่อยๆ ส่องดูฟันเฟืองทองเหลืองข้างใน จนพบว่ามีน็อตตัวจิ๋วหลวมอยู่ตัวหนึ่ง คุณพ่อหยิบไขควงอันเล็กมาขันฟันเฟืองให้แน่นแล้วไขลานลูกตุ้ม ทันใดนั้น นาฬิกาก็ตีเสียงดังกังวานขึ้นมาอีกครั้ง! พวกเราทุกคนยิ้มกว้างและปรบมือกันอย่างดีใจ"
+    },
+    {
+        "id": "story-a2-4",
+        "title": "The Midnight Train",
+        "titleThai": "การเดินทางบนรถไฟขบวนเที่ยงคืน",
+        "genre": "Mystery",
+        "level": "A2",
+        "readTime": "4 mins",
+        "content": "Mark was the only passenger in the train carriage. Outside, the night was pitch black with heavy rain hitting the glass windows. The train rattled along the steel tracks smoothly. At exactly midnight, the lights flickered and went out for three seconds. When they came back on, Mark noticed an old brown leather suitcase sitting on the empty seat across from him. There was no one else around.",
+        "contentThai": "มาร์กเป็นผู้โดยสารเพียงคนเดียวที่นั่งอยู่ในตู้รถไฟ ข้างนอกมืดสนิทและมีฝนตกหนักกระทบกระจกหน้าต่าง รถไฟวิ่งไปตามรางเหล็กอย่างนุ่มนวล พอถึงเวลาเที่ยงคืนตรง ไฟในตู้ก็กะพริบแล้วดับวูบไปราวสามวินาที เมื่อไฟสว่างขึ้นมาอีกครั้ง มาร์กก็สังเกตเห็นกระเป๋าเดินทางหนังสีน้ำตาลใบเก่าใบหนึ่งวางอยู่บนเบาะว่างตรงข้ามกับเขา โดยที่รอบๆ นั้นไม่มีใครอยู่เลยแม้แต่คนเดียว"
+    },
+    {
+        "id": "story-a2-5",
+        "title": "A Trip to the Beach",
+        "titleThai": "ทริปเที่ยวทะเลแสนสนุก",
+        "genre": "Daily Life",
+        "level": "A2",
+        "readTime": "4 mins",
+        "content": "Last summer, my friends and I drove to the seaside for a weekend getaway. The ocean was sparkling blue under the bright sun. We laid our towels on the warm sand and ran straight into the cool waves. We played beach volleyball and built a giant sandcastle with shells. As the evening approached, we watched the golden sunset and ate grilled seafood by the shore. It was the most relaxing weekend of the year.",
+        "contentThai": "เมื่อหน้าร้อนที่แล้ว ฉันกับกลุ่มเพื่อนขับรถไปเที่ยวทะเลช่วงวันหยุดสุดสัปดาห์ ผืนน้ำทะเลสีฟ้าครามระยิบระยับใต้แสงแดดจ้า เราปูผ้าเช็ดตัวบนผืนทรายอุ่นๆ แล้วพากันวิ่งกระโดดลงไปเล่นคลื่นเย็นฉ่ำ เราเล่นวอลเลย์บอลชายหาดและช่วยกันก่อปราสาททรายหลังใหญ่ตกแต่งด้วยเปลือกหอย พอตกเย็น เราก็นั่งชมพระอาทิตย์ตกดินสีทองอร่ามพลางทานอาหารทะเลปิ้งย่างริมหาด นับเป็นวันหยุดที่ผ่อนคลายและมีความสุขที่สุดในรอบปี"
+    },
+    {
+        "id": "story-a2-6",
+        "title": "Fixing the Bicycle",
+        "titleThai": "ซ่อมจักรยานคู่ใจ",
+        "genre": "Daily Life",
+        "level": "A2",
+        "readTime": "4 mins",
+        "content": "On Sunday afternoon, my bicycle had a flat tire. I couldn't ride to the park with my friends. My older brother offered to help me fix it. He grabbed a bucket of water, a wrench, and a repair patch kit from the garage. We took off the rubber tire and found a tiny thorn stuck inside the tube. We patched the small hole, pumped air back in, and tested the brakes. Within thirty minutes, my bike was rolling smoothly again!",
+        "contentThai": "บ่ายวันอาทิตย์ ยางรถจักรยานของฉันเกิดแบนแต๊ดแต๋ ทำให้ปั่นไปเล่นกับเพื่อนที่สวนสาธารณะไม่ได้ พี่ชายเลยอาสาเข้ามาช่วยซ่อม เขาไปหยิบถังน้ำ ประแจ และชุดปะยางมาจากโรงรถ เราช่วยกันงัดยางนอกออกมาแล้วเจอหนามแหลมเล็กๆ ฝังอยู่ในยางใน เราจัดการปะรอยรั่ว สูบลมเข้าไปใหม่จนแน่น แล้วทดสอบระบบเบรก ไม่ถึงครึ่งชั่วโมง จักรยานคู่ใจของฉันก็กลับมาปั่นฉิวได้เหมือนเดิม!"
+    },
+    {
+        "id": "story-a2-7",
+        "title": "The Cooking Competition",
+        "titleThai": "ประลองฝีมือแข่งทำอาหาร",
+        "genre": "Daily Life",
+        "level": "A2",
+        "readTime": "4 mins",
+        "content": "Our neighborhood organized an annual amateur cooking contest at the community center. Ten contestants competed to make the best pasta dish in forty-five minutes. Maria decided to prepare her grandmother's secret tomato and basil recipe. She chopped garlic finely, simmered sweet cherry tomatoes, and seasoned the sauce with freshly picked herbs. When the three judges tasted her dish, their eyes lit up with delight. Maria proudly won first prize and a shiny golden chef trophy!",
+        "contentThai": "ชุมชนแถวบ้านเราจัดงานประกวดทำอาหารประจำปีขึ้นที่ศูนย์เยาวชน มีผู้เข้าแข่งขันสิบคนมาประลองฝีมือทำเมนูพาสต้าที่ดีที่สุดภายในเวลาสี่สิบห้านาที มาเรียตัดสินใจทำสูตรลับพาสต้ามะเขือเทศโหระพาของคุณยาย เธอซอยกระเทียมอย่างประณีต เคี่ยวซอสมะเขือเทศเชอร์รี่จนหอมหวาน และปรุงรสด้วยสมุนไพรสด พอคณะกรรมการทั้งสามท่านได้ชิม ก็ถึงกับตาโตด้วยความประทับใจ มาเรียคว้ารางวัลชนะเลิศพร้อมถ้วยเชฟทองคำมาครองอย่างภาคภูมิใจ!"
+    },
+    {
+        "id": "story-a2-8",
+        "title": "Learning to Swim",
+        "titleThai": "ก้าวข้ามความกลัวฝึกว่ายน้ำครั้งแรก",
+        "genre": "Daily Life",
+        "level": "A2",
+        "readTime": "4 mins",
+        "content": "Leo had always been afraid of deep water. At the age of twelve, he decided to conquer his fear and enrolled in a beginner swimming class at the local sports center. On the first day, Coach Dan taught him how to blow bubbles underwater and float calmly like a starfish. Step by step, Leo practiced kicking his legs and coordinating his breathing. By the end of the month, he could confidently swim across the entire pool on his own!",
+        "contentThai": "ลีโอเป็นคนที่กลัวน้ำลึกมาโดยตลอด พออายุได้สิบสองปี เขาจึงตัดสินใจเอาชนะความกลัวด้วยการสมัครเรียนว่ายน้ำขั้นพื้นฐานที่ศูนย์กีฬาชุมชน ในวันแรก โค้ชแดนสอนวิธีเป่าฟองอากาศในน้ำและลอยตัวนิ่งๆ เหมือนปลาดาว ลีโอค่อยๆ ฝึกเตะขาและจับจังหวะหายใจไปทีละสเต็ป พอสิ้นเดือน เขาก็สามารถว่ายข้ามสระน้ำใหญ่ได้ด้วยตัวเองอย่างมั่นใจ!"
+    },
+    {
+        "id": "story-a2-9",
+        "title": "Renting a New Apartment",
+        "titleThai": "หาเช่าอพาร์ตเมนต์ห้องใหม่",
+        "genre": "Daily Life",
+        "level": "A2",
+        "readTime": "4 mins",
+        "content": "Finding the right place to live in a bustling city is never an easy task. After searching through several online rental listings for two weeks, David finally booked an appointment to view a one-bedroom apartment near the central metro station. He met the property agent, Mrs. Garcia, right outside the building entrance on Thursday afternoon.\n\nAs they walked inside, David immediately noticed how clean and well-maintained the lobby was. They took the elevator up to the fourth floor. The apartment had large glass windows that allowed plenty of natural sunlight to brighten the living room. The kitchen was equipped with a modern stove, a spacious refrigerator, and wooden cabinets. In the bedroom, there was a large wardrobe with sliding doors and enough space for a queen-sized bed.\n\nDavid asked Mrs. Garcia several important practical questions: \"Are water and high-speed internet included in the monthly rent? Is there an extra fee for parking a bicycle in the basement?\" Mrs. Garcia explained that water was covered, but electricity and internet were paid separately. She also showed him the quiet communal laundry room on the ground floor. Impressed by the reasonable price and convenient location, David decided to submit his rental application and signed the one-year lease contract with confidence.",
+        "contentThai": "การหาห้องพักที่ถูกใจในเมืองใหญ่ไม่ใช่เรื่องง่ายเลยจริงๆ หลังจากไถดูประกาศเช่าห้องออนไลน์มาสองสัปดาห์เต็ม ในที่สุดเดวิดก็นัดดูห้องพักแบบหนึ่งห้องนอนใกล้สถานีรถไฟฟ้าใจกลางเมือง เขาได้เจอกับคุณการ์เซีย นายหน้าดูแลห้อง ที่หน้าตึกในบ่ายวันพฤหัสบดี\n\nพอก้าวเท้าเข้าไป เดวิดสังเกตเห็นทันทีว่าล็อบบี้สะอาดสะอ้านและดูแลดีมาก ทั้งคู่ขึ้นลิฟต์ไปยังชั้นสี่ ตัวห้องมีหน้าต่างกระจกบานใหญ่ เปิดรับแสงแดดธรรมชาติเข้ามาทำให้ห้องนั่งเล่นดูโปร่งโล่งสบายตา ห้องครัวมีเตาไฟฟ้า ตู้เย็นใบใหญ่ และตู้เก็บของบิลต์อิน ส่วนในห้องนอนก็มีตู้เสื้อผ้าบานเลื่อนขนาดใหญ่พร้อมพื้นที่กว้างพอสำหรับวางเตียงไซส์ใหญ่ได้สบายๆ\n\nเดวิดเอ่ยถามคำถามสำคัญที่จำเป็นในชีวิตประจำวันว่า \"ค่าเช่ารายเดือนนี้รวมค่าน้ำกับเน็ตความเร็วสูงหรือยังครับ? แล้วถ้าจะจอดจักรยานชั้นใต้ดินมีคิดค่าบริการเพิ่มไหมครับ?\" คุณการ์เซียอธิบายว่าค่าน้ำรวมอยู่ในค่าเช่าแล้ว ส่วนค่าไฟกับค่าเน็ตต้องจ่ายแยกต่างหาก เธอยังพาเดินไปดูห้องซักผ้าส่วนกลางที่ชั้นล่างด้วย ด้วยราคาที่สมเหตุสมผลและทำเลที่เดินทางสะดวก เดวิดจึงตัดสินใจยื่นเอกสารและเซ็นสัญญาเช่าหนึ่งปีทันทีอย่างมั่นใจ"
+    },
+    {
+        "id": "story-a2-10",
+        "title": "Planning a Weekend Road Trip",
+        "titleThai": "วางแผนขับรถเที่ยวต่างจังหวัด",
+        "genre": "Daily Life",
+        "level": "A2",
+        "readTime": "4 mins",
+        "content": "Every few months, Emma and her two closest friends love to escape the noisy city and explore scenic mountain villages. Planning a successful weekend road trip requires careful preparation so that nothing goes wrong along the way.\n\nOn Wednesday evening, the group gathered at Emma's kitchen table with maps, notebooks, and travel apps open on their tablets. First, they mapped out the most scenic driving route through the national park rather than taking the crowded highway. They searched for a cozy wooden cabin near a clear mountain lake and booked it online after checking positive guest reviews.\n\nThe next step was preparing the vehicle. On Friday morning, Emma took her compact car to the local service garage. The mechanic checked the tire pressure, tested the brakes, replaced the windshield wiper fluid, and inspected the engine oil. Meanwhile, her friends went to the grocery store to buy snacks, bottled mineral water, energy bars, and a portable first-aid kit.\n\nEarly Saturday morning, with the car trunk packed and a cheerful road trip music playlist ready on the stereo, they set off as the morning sun rose over the horizon. Traveling together with good friends and breathing fresh country air made every mile worth the effort.",
+        "contentThai": "ทุกๆ สองสามเดือน เอ็มม่ากับเพื่อนสนิทอีกสองคนมักจะหาเวลาหนีความวุ่นวายในเมืองไปขับรถเที่ยวตามหมู่บ้านบนดอยสวยๆ การวางแผนโร้ดทริปวันหยุดให้ราบรื่นต้องเตรียมตัวให้พร้อม จะได้ไม่เจอปัญหากลางทาง\n\nค่ำวันพุธ ทั้งสามคนมารวมตัวกันที่โต๊ะกินข้าวบ้านเอ็มม่า พร้อมกางแผนที่ จดโน้ต และเปิดแอปท่องเที่ยวบนแท็บเล็ต เริ่มแรก พวกเขาวางเส้นทางขับรถเลียบอุทยานแห่งชาติที่วิวสวยสะกดตา แทนการวิ่งบนทางหลวงสายหลักที่รถติด พวกเขาค้นหากระท่อมไม้อบอุ่นริมทะเลสาบบนเขาแล้วกดจองออนไลน์ทันทีหลังจากอ่านรีวิวดีๆ จากคนที่เคยไปพัก\n\nขั้นตอนต่อมาคือการตรวจเช็กรถ ในเช้าวันศุกร์ เอ็มม่าเอารถคันเก่งไปเข้าอู่ ช่างยนต์ช่วยตรวจเช็กลมยาง เช็กระบบเบรก เติมน้ำยาฉีดกระจก และดูระดับน้ำมันเครื่อง ส่วนเพื่อนๆ ก็แวะซูเปอร์มาร์เก็ต ซื้อขนมขบเคี้ยว น้ำดื่ม ขนมเพิ่มพลังงาน และชุดปฐมพยาบาลพกพาติดรถไว้\n\nเช้าตรู่วันเสาร์ พอเก็บของใส่ท้ายรถเรียบร้อยและเปิดเพลงเพราะๆ คลอเบาๆ ในรถ พวกเขาก็ออกเดินทางรับแสงตะวันยามเช้า การได้เดินทางกับเพื่อนรู้ใจและสูดอากาศบริสุทธิ์นอกเมือง ทำให้ทุกกิโลเมตรเต็มไปด้วยความสุขจริงๆ"
+    },
+    {
+        "id": "story-a2-11",
+        "title": "Dining at a Busy Italian Restaurant",
+        "titleThai": "ทานมื้อค่ำที่ร้านอาหารอิตาเลียนยอดนิยม",
+        "genre": "Daily Life",
+        "level": "A2",
+        "readTime": "4 mins",
+        "content": "To celebrate Lisa's recent work promotion, she invited her brother Mark to a charming Italian trattoria located in the downtown art district. The restaurant was famous for its wood-fired pizzas and homemade pasta, which meant it was packed with lively customers on Friday evenings.\n\nWhen they entered, the pleasant aroma of roasted garlic, melted mozzarella, and fresh basil filled the warm dining room. The head waiter greeted them politely, checked their reservation name on his tablet, and escorted them to a candlelit corner table by the arched window.\n\nAfter browsing through the illustrated menu, they ordered a crispy garlic bruschetta as an appetizer. For the main course, Lisa selected the creamy mushroom fettuccine, while Mark opted for a classic margherita pizza topped with ripe cherry tomatoes. When the food arrived hot from the kitchen, every bite was bursting with authentic Mediterranean flavor.\n\nAt the end of the lovely dinner, Mark signaled the waiter and asked for the check: \"Could we please split the bill between two credit cards?\" The waiter smiled, brought two payment terminals, and thanked them warmly for their visit. It was a delightful dining experience filled with memorable conversation and delicious cuisine.",
+        "contentThai": "เพื่อฉลองการได้เลื่อนตำแหน่งงานใหม่ ลิซ่าเลยชวนมาร์กน้องชายไปทานมื้อค่ำที่ร้านอาหารอิตาเลียนบรรยากาศอบอุ่นใจกลางย่านศิลปะ ร้านนี้ขึ้นชื่อเรื่องพิซซ่าเตาถ่านกับพาสต้าเส้นสด จึงมีลูกค้าแน่นร้านเสมอในคืนวันศุกร์\n\nพอก้าวเข้าไปในร้าน กลิ่นหอมของกระเทียมย่าง มอสซาเรลล่าชีสเยิ้มๆ และใบโหระพาสดก็ลอยอบอวลไปทั่วห้องอาหาร พนักงานต้อนรับยิ้มทักทายอย่างสุภาพ เช็กชื่อที่จองไว้บนแท็บเล็ต แล้วพาไปนั่งโต๊ะมุมห้องริมหน้าต่างโค้งที่มีแสงเทียนสร้างบรรยากาศ\n\nหลังจากเปิดดูเมนู ทั้งคู่สั่งบรูสเก็ตต้ากระเทียมกรอบๆ มาทานเล่นเป็นจานแรก ส่วนจานหลัก ลิซ่าเลือกเฟตตูชินีครีมเห็ดรสละมุน ส่วนมาร์กเลือกพิซซ่ามาร์เกริต้าแบบคลาสสิกที่แต่งหน้าด้วยมะเขือเทศเชอร์รี่ฉ่ำๆ พออาหารร้อนๆ ยกมาเสิร์ฟ ทุกคำที่ทานก็อร่อยเข้มข้นสไตล์อิตาเลียนแท้ๆ\n\nพอทานเสร็จ มาร์กก็ส่งสัญญาณเรียกพนักงานเพื่อเช็กบิล \"ช่วยแยกรูดบัตรเครดิตคนละครึ่งได้ไหมครับ?\" พนักงานยิ้มรับ นำเครื่องรูดบัตรมาให้ และกล่าวขอบคุณอย่างเป็นกันเอง นับเป็นมื้อค่ำที่น่าประทับใจ ได้พูดคุยเม้าท์มอยกันอย่างมีความสุขและอิ่มอร่อยสุดๆ"
+    },
+    {
+        "id": "story-a2-12",
+        "title": "Returning an Item at the Department Store",
+        "titleThai": "เปลี่ยนคืนสินค้าที่ห้างสรรพสินค้า",
+        "genre": "Daily Life",
+        "level": "A2",
+        "readTime": "4 mins",
+        "content": "Last weekend, Kevin bought a dark blue winter sweater during a seasonal clearance sale at the city center department store. However, when he tried it on at home in front of the mirror, he realized that the sleeves were far too long and the shoulders felt uncomfortable.\n\nOn Monday afternoon, Kevin placed the sweater neatly back into its original paper bag, made sure the price tag was still attached, and tucked the paper receipt into his wallet. He rode the bus back to the store and walked straight to the customer service counter on the second floor.\n\nA polite store representative named Sarah greeted him: \"Good afternoon! How can I assist you today?\" Kevin explained calmly: \"Hello. I purchased this sweater two days ago, but the size is too large for me. I would like to exchange it for a medium size or request a refund if that size is out of stock.\"\n\nSarah inspected the garment to ensure it was unworn, scanned the barcode on the receipt, and checked their inventory database. Luckily, there was one medium sweater left in the back stockroom. Within five minutes, she brought out the replacement, handed Kevin his new receipt, and wished him a wonderful day. Kevin was thrilled with the smooth and hassle-free return policy.",
+        "contentThai": "เมื่อสุดสัปดาห์ที่ผ่านมา เควินซื้อเสื้อสเวตเตอร์กันหนาวสีน้ำเงินเข้มตัวหนึ่งในช่วงลดราคาที่ห้างใจกลางเมือง แต่พอกลับมาลองสวมหน้ากระจกที่บ้าน กลับพบว่าแขนเสื้อยาวเกินไปและช่วงไหล่รัดแน่นจนอึดอัด\n\nบ่ายวันจันทร์ เควินเลยพับเสื้อเก็บใส่ถุงกระดาษเดิม เช็กดูว่าป้ายราคายังติดอยู่ครบ แล้วเก็บใบเสร็จใส่กระเป๋าตังค์ เขานั่งรถเมล์กลับไปที่ห้างแล้วเดินตรงไปยังเคาน์เตอร์บริการลูกค้าบนชั้นสองทันที\n\nพนักงานต้อนรับชื่อซาร่าห์กล่าวทักทายอย่างสุภาพว่า \"สวัสดีค่ะ มีอะไรให้ช่วยดูแลไหมคะ?\" เควินอธิบายอย่างใจเย็นว่า \"สวัสดีครับ พอดีผมซื้อเสื้อตัวนี้ไปเมื่อสองวันก่อน แต่ไซส์ใหญ่ไปหน่อย อยากจะขอเปลี่ยนเป็นไซส์ M หรือถ้าไซส์หมด ขอคืนเงินแทนได้ไหมครับ\"\n\nซาร่าห์ตรวจดูสภาพเสื้อเพื่อให้แน่ใจว่ายังไม่ผ่านการใส่ สแกนบาร์โค้ดบนใบเสร็จ แล้วเช็กในระบบสต็อก โชคดีที่ยังมีเสื้อไซส์ M เหลืออยู่ในคลังด้านหลังอีกหนึ่งตัว ไม่ถึงห้านาที เธอก็นำเสื้อตัวใหม่มาให้พร้อมพิมพ์ใบเสร็จเปลี่ยนสินค้าและกล่าวอวยพรอย่างเป็นกันเอง เควินรู้สึกประทับใจมากที่ขั้นตอนการเปลี่ยนสินค้าง่ายดาย รวดเร็ว และไม่มีปัญหาจุกจิกเลย"
+    },
+
+    # =========================================================================
+    # LEVEL B1 (12 Stories)
+    # =========================================================================
+    {
+        "id": "story-b1-1",
+        "title": "The First Colony",
+        "titleThai": "อาณานิคมแห่งแรกบนดาวอังคาร",
+        "genre": "Sci-Fi",
+        "level": "B1",
+        "readTime": "5 mins",
+        "content": "The trip to Mars took seven long months. When the ship finally landed, the crew felt both relieved and nervous. They were the first humans to set up a permanent base on the red planet. Captain Reynolds stepped out of the airlock in his heavy suit. The landscape was totally empty, covered in red dust and sharp rocks. Their first job was to set up the solar panels before it got freezing cold at night. It was a dangerous mission, but everyone knew it was a huge step for humanity.",
+        "contentThai": "การเดินทางสู่อวกาศสู่ดาวอังคารกินเวลายาวนานถึงเจ็ดเดือนเต็ม เมื่อยานลงจอดได้สำเร็จ ลูกเรือทุกคนต่างรู้สึกทั้งโล่งใจและตื่นเต้นระทึกไปพร้อมๆ กัน พวกเขาคือมนุษย์กลุ่มแรกที่จะมาสร้างฐานที่มั่นถาวรบนดาวเคราะห์สีแดง กัปตันเรย์โนลด์สก้าวเท้าออกจากประตูแอร์ล็อคในชุดอวกาศ ภูมิทัศน์เบื้องหน้าช่างเวิ้งว้างว่างเปล่า มีเพียงฝุ่นผงสีแดงและโขดหินแหลมคมสุดสายตา ภารกิจแรกคือการติดตั้งแผงโซลาร์เซลล์ให้เสร็จสิ้นก่อนที่ความหนาวเหน็บยะเยือกจะมาเยือนในยามค่ำคืน แม้จะเป็นภารกิจที่เสี่ยงอันตราย แต่ทุกคนต่างรู้ดีว่านี่คือก้าวที่ยิ่งใหญ่ของมนุษยชาติ"
+    },
+    {
+        "id": "story-b1-2",
+        "title": "A Busy Day at the Office",
+        "titleThai": "วันที่แสนวุ่นวายในออฟฟิศ",
+        "genre": "Daily Life",
+        "level": "B1",
+        "readTime": "5 mins",
+        "content": "Tuesday was a crazy day at the office. I got in at 8:30 AM and jumped straight into answering emails. At 10:00 AM, we had a team meeting about the new marketing project, and my boss gave me three new tasks to finish by Friday. I was feeling pretty stressed out. But at noon, I went out for lunch with my coworkers. We talked about our weekend plans and had a good laugh. After that, I felt a lot better and managed to get through most of my work before heading home.",
+        "contentThai": "วันอังคารที่ผ่านมาเป็นวันที่วุ่นวายสุดๆ ในที่ทำงาน ฉันมาถึงออฟฟิศตอนแปดโมงครึ่ง ก็รีบลุยเคลียร์ตอบอีเมลทันที พอถึงสิบโมงเช้า ก็มีประชุมทีมเรื่องแคมเปญการตลาดใหม่ แถมหัวหน้ายังมอบหมายงานด่วนให้อีกสามชิ้นที่ต้องส่งภายในวันศุกร์ ทำเอาฉันรู้สึกเครียดและกดดันไม่น้อย แต่พอมื้อเที่ยง ฉันออกไปทานข้าวกับเพื่อนร่วมงาน เราคุยเรื่องแพลนวันหยุดและเม้าท์มอยกันอย่างสนุกสนาน ทำให้ฉันรู้สึกผ่อนคลายและมีพลังใจกลับมาลุยสะสางงานจนเสร็จไปได้เยอะก่อนกลับบ้าน"
+    },
+    {
+        "id": "story-b1-3",
+        "title": "The Stolen Painting",
+        "titleThai": "คดีภาพวาดปริศนาที่หายไป",
+        "genre": "Mystery",
+        "level": "B1",
+        "readTime": "5 mins",
+        "content": "Detective Miller stood in front of the empty golden frame in the city gallery. The famous Renaissance portrait, valued at over five million dollars, had vanished overnight without triggering any alarm sensors. The security guard insisted that all heavy iron doors were locked securely at 10:00 PM. Inspecting the polished marble floor closely, Miller spotted a single red feather and faint footprints leading toward the rooftop ventilation shaft. The thief was clearly a seasoned professional.",
+        "contentThai": "นักสืบมิลเลอร์ยืนเพ่งมองกรอบรูปสีทองที่ว่างเปล่าในหอศิลป์ประจำเมือง ภาพวาดพอร์ตเทรตยุคเรเนสซองส์อันทรงคุณค่ามูลค่ากว่าห้าล้านดอลลาร์อันตรธานหายไปอย่างไร้ร่องรอยในชั่วข้ามคืน โดยไม่มีสัญญาณเตือนภัยดังขึ้นเลยแม้แต่จุดเดียว รปภ. ยืนยันหนักแน่นว่าประตูด้านหน้าทั้งหมดถูกลงกลอนแน่นหนาตั้งแต่สี่ทุ่ม เมื่อก้มตรวจสอบพื้นหินอ่อนขัดมันอย่างละเอียด มิลเลอร์ก็พบขนนกสีแดงเส้นหนึ่งและรอยเท้าจางๆ ที่มุ่งตรงไปยังช่องระบายอากาศบนดาดฟ้า เห็นได้ชัดว่าหัวขโมยรายนี้ต้องเป็นมืออาชีพชั้นเซียนแน่นอน"
+    },
+    {
+        "id": "story-b1-4",
+        "title": "The Job Interview",
+        "titleThai": "การสัมภาษณ์งานที่น่าจดจำ",
+        "genre": "Daily Life",
+        "level": "B1",
+        "readTime": "5 mins",
+        "content": "Anna adjusted her blazer as she sat in the brightly lit reception area of the international consulting firm. Her heart was beating fast, but she took deep breaths to stay calm. When the hiring manager invited her into the conference room, Anna greeted the panel with a confident smile and firm handshake. She answered behavioral questions smoothly, highlighting her previous experience in data analysis and cross-cultural teamwork. By the end of the interview, she felt genuinely proud of her performance.",
+        "contentThai": "แอนนาจัดเสื้อสูทให้เข้าที่ขณะนั่งรออยู่ในโถงต้อนรับของบริษัทที่ปรึกษาระดับนานาชาติ แม้หัวใจจะเต้นรัวด้วยความตื่นเต้น แต่เธอก็ค่อยๆ สูดหายใจเข้าลึกๆ เพื่อดึงสติให้สงบ เมื่อผู้จัดการฝ่ายบุคคลเชิญเข้าไปในห้องประชุม แอนนายิ้มทักทายคณะกรรมการด้วยความมั่นใจและจับมือทักทายอย่างกระฉับกระเฉง เธอตอบคำถามสัมภาษณ์เชิงพฤติกรรมได้อย่างลื่นไหล พร้อมยกตัวอย่างผลงานด้านการวิเคราะห์ข้อมูลและการทำงานร่วมกับทีมต่างชาติได้อย่างชัดเจน เมื่อสัมภาษณ์เสร็จ เธอก็รู้สึกภูมิใจในความมั่นใจของตัวเองอย่างยิ่ง"
+    },
+    {
+        "id": "story-b1-5",
+        "title": "The AI Breakthrough",
+        "titleThai": "ก้าวล้ำของปัญญาประดิษฐ์",
+        "genre": "Sci-Fi",
+        "level": "B1",
+        "readTime": "5 mins",
+        "content": "Dr. Aris had spent six relentless years developing a quantum neural algorithm designed to predict global weather disruptions. Late on a rainy Thursday night, the laboratory supercomputers finished synthesizing massive atmospheric satellite data. Instead of generating standard statistical projections, the AI model outputted a remarkably precise climate map predicting a severe tropical storm forty-eight hours before standard radar detected it. This groundbreaking innovation had the potential to save countless lives.",
+        "contentThai": "ดร. แอริส ทุ่มเทเวลากว่าหกปีเต็มในการพัฒนาอัลกอริทึมควอนตัมเพื่อพยากรณ์สภาพอากาศแปรปรวนทั่วโลก ในดึกสงัดของคืนวันพฤหัสบดี ซูเปอร์คอมพิวเตอร์ในแล็บประมวลผลข้อมูลดาวเทียมชั้นบรรยากาศเสร็จสิ้น แทนที่จะแสดงเพียงตัวเลขสถิติธรรมดา โมเดล AI กลับสร้างแผนที่สภาพอากาศที่แม่นยำสูง โดยทำนายการเกิดพายุโซนร้อนล่วงหน้าได้ถึงสี่สิบแปดชั่วโมงก่อนที่เรดาร์ตรวจอากาศทั่วไปจะตรวจพบ นวัตกรรมครั้งประวัติศาสตร์นี้มีศักยภาพที่จะช่วยปกป้องชีวิตผู้คนนับไม่ถ้วน"
+    },
+    {
+        "id": "story-b1-6",
+        "title": "A Strange Discovery in the Deep Sea",
+        "titleThai": "การค้นพบใต้ทะเลลึก",
+        "genre": "Adventure",
+        "level": "B1",
+        "readTime": "5 mins",
+        "content": "Submersible pilot Elena descended three thousand meters into the uncharted Mariana Trench. Powerful halogen floodlights cut through the pitch-black abyss, revealing underwater volcanic vents spewing mineral-rich black smoke. Suddenly, the sonar scanner beeped rhythmically. Resting on the seabed was a perfectly symmetrical metallic structure covered in glowing bioluminescent coral. It did not match any known geological formation.",
+        "contentThai": "เอเลน่า นักบินเรือดำน้ำสำรวจ ดำดิ่งลงสู่ความลึกสามพันเมตรใต้ร่องลึกบาดาลมาเรียนา ไฟสปอตไลต์กำลังแรงส่องทะลุความมืดมิดใต้ทะเลลึก เผยให้เห็นปล่องภูเขาไฟใต้น้ำที่พ่นควันแร่ธาตุสีดำออกมา ทันใดนั้น เครื่องสแกนโซนาร์ก็ส่งเสียงเตือนเป็นจังหวะ บนพื้นทรายใต้ทะเลปรากฏโครงสร้างโลหะที่มีรูปทรงสมมาตรอย่างสมบูรณ์แบบ ปกคลุมไปด้วยปะการังเรืองแสงสวยงาม ซึ่งไม่ตรงกับโครงสร้างทางธรณีวิทยาตามธรรมชาติที่เคยค้นพบมาก่อนเลย"
+    },
+    {
+        "id": "story-b1-7",
+        "title": "The Marathon Journey",
+        "titleThai": "เส้นทางสู่การวิ่งมาราธอน",
+        "genre": "Daily Life",
+        "level": "B1",
+        "readTime": "5 mins",
+        "content": "Training for a full marathon requires immense dedication, mental discipline, and progressive physical endurance. Six months ago, James could barely run two kilometers without feeling completely exhausted. He followed a structured weekly training regimen, gradually increasing his long weekend runs from five to thirty kilometers. On race day, surrounded by thousands of passionate runners, James paced himself steadily. Crossing the finish line at 3 hours and 50 minutes was the greatest athletic milestone of his life.",
+        "contentThai": "การฝึกซ้อมเพื่อวิ่งมาราธอนฟูลระยะ 42.195 กิโลเมตร ต้องอาศัยความมุ่งมั่น วินัย และการสร้างความฟิตของร่างกายอย่างต่อเนื่อง เมื่อหกเดือนก่อน เจมส์ยังวิ่งได้แค่สองกิโลเมตรก็เหนื่อยหอบจนแทบหมดแรง แต่เขาตั้งใจฝึกตามตารางรายสัปดาห์ ค่อยๆ ขยับระยะทางวิ่งยาวช่วงวันหยุดจากห้ากิโลเมตรจนแตะสามสิบกิโลเมตร ในวันแข่งขัน ท่ามกลางนักวิ่งนับพันคน เจมส์คุมจังหวะการวิ่งได้อย่างสม่ำเสมอ และเมื่อเขาวิ่งแตะเส้นชัยด้วยเวลา 3 ชั่วโมง 50 นาที มันคือความสำเร็จครั้งยิ่งใหญ่ที่สุดในชีวิตของเขา"
+    },
+    {
+        "id": "story-b1-8",
+        "title": "Starting a Small Business",
+        "titleThai": "เริ่มต้นทำธุรกิจร้านกาแฟของตัวเอง",
+        "genre": "Daily Life",
+        "level": "B1",
+        "readTime": "5 mins",
+        "content": "After working eight years as a corporate graphic designer, Chloe took a bold leap of faith to open her own specialty coffee bar. She drafted a comprehensive business plan, secured a microloan from a local credit union, and renovated a quaint brick shopfront. She sourced single-origin fair-trade coffee beans from organic growers and baked homemade vegan pastries daily. Within six months, her welcoming café became the neighborhood's favorite morning destination.",
+        "contentThai": "หลังจากทำงานเป็นกราฟิกดีไซเนอร์ในบริษัทมานานกว่าแปดปี โคลอี้ตัดสินใจก้าวออกจากคอมฟอร์ตโซนเพื่อเปิดร้านกาแฟสเปเชียลตี้ของตัวเอง เธอเขียนแผนธุรกิจอย่างละเอียด ยื่นขอสินเชื่อจากสหกรณ์เครดิตยูเนียน และรีโนเวทตึกแถวอิฐเก่าให้กลายเป็นร้านกาแฟสุดอบอุ่น เธอคัดสรรเมล็ดกาแฟออร์แกนิกจากแหล่งเพาะปลูกที่เป็นธรรม และลงมืออบขนมเบเกอรี่สดใหม่ทุกวัน ไม่ถึงครึ่งปี คาเฟ่เล็กๆ แสนอบอุ่นของเธอก็กลายเป็นจุดเช็กอินยอดฮิตยามเช้าของคนในละแวกนั้น"
+    },
+    {
+        "id": "story-b1-9",
+        "title": "Managing a Monthly Budget and Savings",
+        "titleThai": "การวางแผนการเงินและจัดงบประมาณรายเดือน",
+        "genre": "Daily Life",
+        "level": "B1",
+        "readTime": "5 mins",
+        "content": "For many young working professionals, achieving financial stability starts with building disciplined personal budgeting habits. After noticing that her bank balance was steadily dwindling toward the end of each month, Rachel decided it was time to conduct a comprehensive audit of her personal finances.\n\nShe began by downloading her bank statements from the past three months and importing the transaction data into a digital spreadsheet. To get a clear picture of her cash flow, Rachel categorized every expense into three distinct buckets: fixed necessities (apartment rent, utility bills, health insurance, and public transit), variable living costs (groceries, cooking supplies, and household maintenance), and discretionary lifestyle spending (restaurant dining, streaming subscriptions, and weekend shopping).\n\nThe numbers revealed surprising insights. Rachel was spending nearly twenty-five percent of her income on impulse coffee purchases and takeout food delivery apps. By recognizing these unconscious spending patterns, she established a realistic monthly budget based on the 50-30-20 rule: fifty percent for essential needs, thirty percent for personal wants, and twenty percent dedicated strictly to savings and long-term investments.\n\nFurthermore, Rachel set up an automated transfer on payday that immediately diverts two hundred dollars into a high-yield emergency savings account before she has the temptation to spend it. Within four months, she accumulated a reliable financial cushion that provided genuine peace of mind and helped her prepare for future aspirations like purchasing her first vehicle.",
+        "contentThai": "สำหรับคนวัยทำงานหลายคน ความมั่นคงทางการเงินเริ่มต้นจากการมีวินัยในการจัดทำงบประมาณส่วนบุคคล หลังจากสังเกตเห็นว่าเงินในบัญชีร่อยหรอลงอย่างรวดเร็วช่วงปลายเดือน ราเชลจึงตัดสินใจตรวจสอบและจัดระเบียบการเงินของตัวเองอย่างจริงจัง\n\nเธอเริ่มต้นด้วยการดาวน์โหลดรายการเดินบัญชีย้อนหลังสามเดือนมาแยกประเภทลงในสเปรดชีต เพื่อให้เห็นภาพกระแสเงินสดชัดเจน ราเชลได้จัดหมวดหมู่ค่าใช้จ่ายออกเป็นสามกลุ่มหลัก คือ ค่าใช้จ่ายจำเป็นคงที่ (ค่าเช่าห้อง ค่าน้ำค่าไฟ ประกันสุขภาพ และค่าเดินทาง) ค่าใช้จ่ายผันแปรในชีวิตประจำวัน (ของสด ของใช้ในบ้าน) และค่าใช้จ่ายเพื่อความสุขส่วนตัว (การทานอาหารนอกบ้าน ค่าแอปสตรีมมิ่ง และการช้อปปิ้ง)\n\nตัวเลขที่ออกมาทำเอาเธอตกใจ เพราะราเชลหมดเงินไปเกือบหนึ่งในสี่ของเงินเดือนกับกาแฟแก้วโปรดและแอปสั่งอาหารเดลิเวอรี่โดยไม่รู้ตัว เมื่อรู้พฤติกรรมการใช้จ่ายที่แท้จริง เธอจึงวางงบประมาณใหม่ตามกฎ 50-30-20 คือ 50% สำหรับรายจ่ายจำเป็น 30% สำหรับความสุขส่วนตัว และ 20% สำหรับการออมเงินและลงทุนระยะยาว\n\nนอกจากนี้ ราเชลยังตั้งระบบโอนเงินอัตโนมัติในวันเงินเดือนออก โดยหักเงินสองร้อยดอลลาร์เข้าบัญชีเงินออมฉุกเฉินดอกเบี้ยสูงทันทีก่อนที่จะมีโอกาสนำไปใช้ เพียงสี่เดือน เธอก็สามารถสะสมเงินสำรองฉุกเฉินที่ช่วยให้อุ่นใจและพร้อมสำหรับเป้าหมายใหญ่ในอนาคต เช่น การซื้อรถยนต์คันแรกได้อย่างมั่นใจ"
+    },
+    {
+        "id": "story-b1-10",
+        "title": "Resolving a Customer Support Dispute",
+        "titleThai": "การแก้ปัญหาบริการลูกค้าและติดตามพัสดุ",
+        "genre": "Daily Life",
+        "level": "B1",
+        "readTime": "5 mins",
+        "content": "Online shopping offers unmatched convenience, but occasional delivery mishaps can test any consumer's patience. When Brandon ordered an expensive ergonomic office chair for his home workstation, the tracking portal indicated that the parcel had been successfully delivered to his front porch. However, when Brandon arrived home from work, the porch was completely empty.\n\nRather than reacting with anger, Brandon approached the situation systematically. First, he checked with his immediate neighbors to verify whether the courier had mistakenly dropped the large cardboard box at the wrong house number. Next, he checked his security camera footage, which confirmed that no delivery van had visited his driveway that afternoon.\n\nArmed with concrete evidence, Brandon contacted the e-commerce customer support helpline. When connected with a representative named Daniel, Brandon explained the situation clearly and politely: \"I am calling regarding order number 84920. The delivery status is marked as completed, but I have verified that the package was not delivered to my address. I have camera timestamps to support this claim.\"\n\nDaniel appreciated Brandon's composed and well-documented explanation. He immediately initiated an internal investigation with the regional logistics dispatch team. Recognizing that the driver had scanned the barcode at a completely different street junction, Daniel issued an expedited replacement shipment with express next-day delivery at no additional charge. By communicating assertively yet professionally, Brandon resolved a stressful dispute quickly and successfully.",
+        "contentThai": "แม้การช้อปปิ้งออนไลน์จะสะดวกสบายมาก แต่ข้อผิดพลาดในการจัดส่งที่เกิดขึ้นเป็นครั้งคราวก็สามารถทดสอบความอดทนของเราได้เสมอ เมื่อแบรนดอนสั่งเก้าอี้ทำงานเพื่อสุขภาพราคาค่อนข้างสูงมาใช้งานที่บ้าน ระบบติดตามพัสดุแจ้งว่าสินค้าส่งถึงหน้าบ้านเรียบร้อยแล้ว แต่พอกลับถึงบ้าน บริเวณหน้าบ้านกลับว่างเปล่า ไม่มีกล่องพัสดุใดๆ เลย\n\nแทนที่จะใช้อารมณ์โกรธ แบรนดอนเลือกจัดการกับสถานการณ์อย่างใจเย็นและเป็นระบบ เริ่มแรก เขาเดินไปถามเพื่อนบ้านข้างเคียงว่าคนส่งของเผลอส่งผิดบ้านหรือไม่ จากนั้นก็เปิดเช็กภาพจากกล้องวงจรปิดหน้าบ้าน ซึ่งยืนยันชัดเจนว่าไม่มีรถส่งของคันไหนขับเข้ามาเลยในช่วงบ่ายวันนั้น\n\nเมื่อมีหลักฐานชัดเจน แบรนดอนจึงโทรติดต่อไปยังศูนย์บริการลูกค้า เมื่อมีเจ้าหน้าที่ชื่อแดเนียลรับสาย แบรนดอนได้อธิบายสถานการณ์อย่างสุภาพและตรงประเด็นว่า \"ผมโทรมาเกี่ยวกับออเดอร์หมายเลข 84920 ครับ ในระบบขึ้นว่าส่งของแล้ว แต่ผมตรวจสอบแล้วไม่พบสินค้า และมีภาพจากกล้องวงจรปิดยืนยันเวลาดังกล่าวครับ\"\n\nแดเนียลประทับใจในการพูดจาที่ใจเย็นและมีหลักฐานครบถ้วนของแบรนดอน เขาจึงเปิดเรื่องตรวจสอบกับฝ่ายจัดส่งทันที เมื่อพบว่าคนขับสแกนส่งพัสดุผิดซอย แดเนียลจึงจัดส่งสินค้าชิ้นใหม่แบบด่วนพิเศษให้ถึงในวันรุ่งขึ้นโดยไม่มีค่าใช้จ่ายเพิ่มเติม การสื่อสารอย่างหนักแน่นแต่สุภาพช่วยให้แบรนดอนแก้ปัญหาที่น่าปวดหัวได้อย่างรวดเร็วและราบรื่น"
+    },
+    {
+        "id": "story-b1-11",
+        "title": "Preparing for an Important Job Interview",
+        "titleThai": "เตรียมตัวสัมภาษณ์งานตำแหน่งสำคัญ",
+        "genre": "Daily Life",
+        "level": "B1",
+        "readTime": "5 mins",
+        "content": "Transitioning to a higher career position requires thorough preparation, confidence, and strong communication skills. When Sophia received an invitation for a second-round interview as a project coordinator at an international technology firm, she knew she had to prepare meticulously.\n\nShe began her preparation by studying the company's core values, recent product launches, and corporate culture. She reviewed the job description line by line, highlighting key qualifications such as cross-functional leadership, agile workflow management, and client negotiations. To ensure her answers were structured and persuasive, Sophia utilized the renowned STAR framework: Situation, Task, Action, and Result.\n\nShe drafted concrete workplace examples demonstrating how she had previously resolved challenging deadlines, streamlined operational bottlenecks, and mediated team disagreements. She practiced delivering these answers aloud in front of a mirror and recorded voice memos to refine her speaking cadence, tone, and body language.\n\nOn the morning of the interview, Sophia dressed in sharp business attire, arrived fifteen minutes early to compose her thoughts, and reviewed her thoughtful list of questions for the hiring panel. During the interview, she maintained steady eye contact, listened attentively without interrupting, and shared her achievements with genuine enthusiasm. Her disciplined preparation paid off when the HR director called two days later with a formal employment offer.",
+        "contentThai": "การก้าวหน้าสู่ตำแหน่งงานที่สูงขึ้นจำเป็นต้องอาศัยการเตรียมความพร้อม ความมั่นใจ และทักษะการสื่อสารที่ดี เมื่อโซเฟียได้รับอีเมลเชิญสัมภาษณ์รอบสองในตำแหน่งผู้ประสานงานโครงการของบริษัทเทคโนโลยีชั้นนำ เธอรู้ดีว่าจะต้องเตรียมตัวอย่างรอบคอบที่สุด\n\nเธอเริ่มต้นด้วยการศึกษาค่านิยมขององค์กร ผลิตภัณฑ์ใหม่ที่เพิ่งเปิดตัว และวัฒนธรรมการทำงานของบริษัท เธออ่านรายละเอียดงานทีละบรรทัด ไฮไลต์ทักษะสำคัญ เช่น การเป็นผู้นำทีมข้ามสายงาน การทำงานแบบ Agile และการเจรจากับลูกค้า เพื่อให้การตอบคำถามมีโครงสร้างที่น่าเชื่อถือ โซเฟียจึงใช้เทคนิค STAR คือ Situation (สถานการณ์), Task (โจทย์ที่ได้รับ), Action (การลงมือทำ) และ Result (ผลลัพธ์ที่ได้)\n\nเธอร่างตัวอย่างประสบการณ์ทำงานจริง เช่น การแก้ปัญหางานด่วน การลดขั้นตอนที่ยุ่งยาก และการไกล่เกลี่ยความคิดเห็นที่ไม่ตรงกันในทีม เธอฝึกพูดตอบคำถามหน้ากระจกและอัดเสียงตัวเองไว้ฟังเพื่อปรับจังหวะการพูด น้ำเสียง และภาษากายให้ดูเป็นมืออาชีพ\n\nในวันสัมภาษณ์ โซเฟียแต่งกายด้วยชุดสุภาพ มาถึงก่อนเวลานัดสิบห้านาทีเพื่อทำสมาธิ และทบทวนคำถามที่เตรียมไว้ถามกรรมการ ในห้องสัมภาษณ์ เธอสบตาอย่างมั่นใจ ตั้งใจฟังโดยไม่พูดแทรก และเล่าผลงานด้วยความกระตือรือร้น ความทุ่มเทในการเตรียมตัวของเธอประสบผลสำเร็จอย่างงดงาม เมื่อฝ่ายบุคคลโทรมาแจ้งข่าวดีเสนองานให้อย่างเป็นทางการในอีกสองวันถัดมา"
+    },
+    {
+        "id": "story-b1-12",
+        "title": "Building a Balanced Daily Routine",
+        "titleThai": "สร้างกิจวัตรเพื่อสุขภาพและสมดุลชีวิต",
+        "genre": "Daily Life",
+        "level": "B1",
+        "readTime": "5 mins",
+        "content": "In an era dominated by constant digital connectivity and demanding work commitments, maintaining physical vitality and mental clarity is a continuous challenge. After experiencing chronic fatigue and creative burnout, Nathan realized that his chaotic lifestyle needed a structured and sustainable daily routine.\n\nHe started by overhauling his sleep hygiene. Nathan established a strict rule of turning off all blue-light screens—including his smartphone, tablet, and television—at least forty-five minutes before bedtime. Instead of scrolling through social media feeds late into the night, he read paperback books and practiced light breathing meditation. This simple adjustment helped him fall asleep faster and wake up feeling genuinely restored.\n\nIn the mornings, Nathan reserved the first hour of the day exclusively for personal wellness before checking work emails. He drank a large glass of lemon water, prepared a nutritious breakfast with whole grains and fresh fruit, and engaged in thirty minutes of brisk jogging around the neighborhood park. During the workday, he used the Pomodoro technique—working in focused twenty-five-minute intervals followed by brief five-minute walking breaks to reduce eye strain and muscle tension.\n\nBy establishing healthy boundaries and prioritizing self-care alongside professional duties, Nathan transformed his daily energy levels. He discovered that true productivity is not about working until exhaustion, but about managing energy with consistency and mindfulness.",
+        "contentThai": "ในยุคที่โลกออนไลน์เชื่อมต่อตลอดเวลาและงานเต็มไปด้วยความกดดัน การรักษาสุขภาพกายที่แข็งแรงและจิตใจที่ปลอดโปร่งถือเป็นเรื่องท้าทายมาก หลังจากเผชิญกับความเหนื่อยล้าสะสมและภาวะหมดไฟในการทำงาน นาธานตระหนักได้ว่าวิถีชีวิตที่เร่งรีบของเขาจำเป็นต้องจัดระเบียบกิจวัตรประจำวันใหม่ให้สมดุลและยั่งยืน\n\nเขาเริ่มต้นด้วยการปรับพฤติกรรมการนอน โดยตั้งกฎเหล็กว่าจะปิดหน้าจอที่มีแสงสีฟ้าทั้งหมด ทั้งมือถือ แท็บเล็ต และทีวี อย่างน้อยสี่สิบห้านาทีก่อนนอน แทนที่จะนอนไถฟีดโซเชียลดึกดื่น เขาเปลี่ยนมาอ่านหนังสือเล่มและฝึกสมาธิด้วยการหายใจช้าๆ การปรับเปลี่ยนง่ายๆ นี้ช่วยให้เขาหลับได้สนิทขึ้นและตื่นเช้ามาด้วยความสดชื่นแจ่มใส\n\nช่วงเช้า นาธานล็อกเวลาหนึ่งชั่วโมงแรกของวันไว้สำหรับดูแลตัวเองโดยเฉพาะก่อนจะเปิดดูอีเมลงาน เขาเริ่มต้นด้วยการดื่มน้ำมะนาวอุ่นๆ หนึ่งแก้วใหญ่ ทานอาหารเช้าที่มีประโยชน์จากธัญพืชและผลไม้สด พร้อมออกไปวิ่งเหยาะๆ รับลมที่สวนสาธารณะครึ่งชั่วโมง ในระหว่างวันทำงาน เขาใช้เทคนิคโพโมโดโร โดยโฟกัสกับงานยี่สิบห้านาทีสลับกับลุกเดินพักสายตาห้านาที\n\nการตั้งขอบเขตที่ชัดเจนและให้ความสำคัญกับการดูแลสุขภาพควบคู่ไปกับการทำงานช่วยเปลี่ยนระดับพลังงานในชีวิตของนาธานไปอย่างสิ้นเชิง เขาได้เรียนรู้ว่าประสิทธิภาพการทำงานที่แท้จริงไม่ได้มาจากการโหมงานจนหมดแรง แต่มาจากการบริหารพลังกายและพลังใจอย่างสม่ำเสมอและมีสติ"
+    },
+
+    # =========================================================================
+    # LEVEL B2 (11 Stories)
+    # =========================================================================
+    {
+        "id": "story-b2-1",
+        "title": "The Quantum Paradox",
+        "titleThai": "ปริศนาควอนตัมข้ามมิติเวลา",
+        "genre": "Sci-Fi",
+        "level": "B2",
+        "readTime": "6 mins",
+        "content": "Physicist Dr. Katherine Vance stood before the towering particle containment ring of the orbital collider. For three months, the quantum sensor had been registering inexplicable chronological fluctuations—microscopic energy particles that appeared to arrive three nanoseconds before their emission trigger was engaged.\n\nTraditional laws of causality dictated that an effect could never precede its cause. Yet, the empirical telemetry was undeniable. When Katherine initiated the full-spectrum synchronization sequence, the localized gravitational field warped, displaying visual echoes of the laboratory from forty-eight hours into the future. A handwritten warning message was visible on the digital whiteboard in the reflection: 'Do not initiate the subatomic pulse.' Understanding the profound paradox, Katherine immediately aborted the sequence, preserving the integrity of the spacetime continuum.",
+        "contentThai": "ดร. แคทเธอรีน แวนซ์ นักฟิสิกส์ชั้นนำ ยืนอยู่หน้าวงแหวนกักเก็บอนุภาคขนาดยักษ์ของเครื่องชนอนุภาคในวงโคจร ตลอดสามเดือนที่ผ่านมา เซนเซอร์ควอนตัมตรวจพบความผันผวนของมิติเวลาที่อธิบายไม่ได้ โดยมีอนุภาคพลังงานระดับไมโครปรากฏขึ้นก่อนที่สัญญาณปล่อยจะถูกเปิดใช้งานถึงสามนาโนวินาที\n\nตามกฎแห่งเหตุและผล ผลลัพธ์ย่อมไม่สามารถเกิดขึ้นก่อนสาเหตุได้ ทว่าข้อมูลตรวจวัดจริงกลับยืนยันชัดเจน เมื่อแคทเธอรีนเริ่มขั้นตอนการซิงโครไนซ์ สนามโน้มถ่วงเฉพาะจุดก็เกิดการบิดเบี้ยว เผยให้เห็นภาพสะท้อนของห้องแล็บจากอนาคตในอีกสี่สิบแปดชั่วโมงข้างหน้า บนไวท์บอร์ดดิจิทัลในภาพสะท้อนมีข้อความเตือนเขียนไว้ว่า 'ห้ามยิงพัลส์ระดับต่ำกว่าอะตอมเด็ดขาด' เมื่อตระหนักถึงความเสี่ยงอันตรายของปฏิทรรศน์นี้ แคทเธอรีนจึงสั่งยกเลิกขั้นตอนทั้งหมดทันที เพื่อรักษาเสถียรภาพของมิติเวลาไว้ได้อย่างปลอดภัย"
+    },
+    {
+        "id": "story-b2-2",
+        "title": "The Corporate Espionage",
+        "titleThai": "ปฏิบัติการจารกรรมข้อมูลองค์กร",
+        "genre": "Thriller",
+        "level": "B2",
+        "readTime": "6 mins",
+        "content": "Cybersecurity architect Marcus Cole noticed an anomalous data egress spike at 3:17 AM originating from an encrypted internal server. Someone within the aerospace defense contractor was systematically siphoning proprietary turbine blueprints using an authorized senior executive credential.\n\nKnowing that triggering an overt alert might prompt the perpetrator to deploy a ransomware wipe payload, Marcus acted covertly. He redirected the unauthorized data stream into an isolated digital sandbox environment containing deliberately modified falsified telemetry. Simultaneously, he cross-referenced building keycard logs with physical biometric surveillance feeds. The trail converged on an empty third-floor conference room where a rogue flash drive was actively bridging the air-gapped network. Federal agents intercepted the suspect at the airport departure gate three hours later.",
+        "contentThai": "มาร์คัส โคล สถาปนิกด้านความปลอดภัยไซเบอร์ ตรวจพบการถ่ายโอนข้อมูลผิดปกติเมื่อเวลา 03:17 น. จากเซิร์ฟเวอร์เข้ารหัสภายใน มีใครบางคนในบริษัทอุตสาหกรรมป้องกันประเทศกำลังทยอยดึงพิมพ์เขียวเทอร์ไบน์ที่เป็นความลับทางการค้า โดยใช้สิทธิการเข้าถึงของผู้บริหารระดับสูง\n\nด้วยความตระหนักว่าการกดสัญญาณเตือนแบบเปิดเผยอาจทำให้คนร้ายปล่อยมัลแวร์ทำลายหลักฐาน มาร์คัสจึงดำเนินการอย่างลับๆ เขาสลับเส้นทางส่งข้อมูลไปยังสภาพแวดล้อมจำลอง (Sandbox) ที่มีข้อมูลหลอกเตรียมไว้ พร้อมกันนั้น เขาได้นำบันทึกการแตะคีย์การ์ดมาเปรียบเทียบกับภาพกล้องวงจรปิดไบโอเมตริก ร่องรอยนำไปสู่ห้องประชุมชั้นสามที่ว่างเปล่า ซึ่งมีแฟลชไดรฟ์ดัดแปลงกำลังเชื่อมต่อกับระบบเครือข่าย เจ้าหน้าที่รัฐจึงสามารถเข้าสกัดจับผู้ต้องสงสัยได้ทันควัน ณ ประตูขึ้นเครื่องบินในอีกสามชั่วโมงต่อมา"
+    },
+    {
+        "id": "story-b2-3",
+        "title": "The Autonomous Driving Dilemma",
+        "titleThai": "โจทย์จริยธรรมของรถยนต์ไร้คนขับ",
+        "genre": "Sci-Fi",
+        "level": "B2",
+        "readTime": "6 mins",
+        "content": "Lead engineer Soren sat before the ethics review committee of the global automotive consortium. His development team was finalizing the decision-making matrix for Level 5 fully autonomous passenger vehicles facing unavoidable collision scenarios.\n\nThe algorithm was programmed to calculate trajectory simulations in milliseconds, evaluating occupant safety against potential pedestrian casualties. Committee members debated fiercely: Should the vehicle prioritize the survival of its paying passenger at all costs, or execute a utilitarian calculation that minimizes overall human harm? Soren argued that transparent, standardized ethical frameworks—rather than opaque corporate proprietary algorithms—were essential for public trust. His team implemented an open-source ethical arbitration model that set the international benchmark for autonomous transportation safety.",
+        "contentThai": "โซเรน หัวหน้าทีมวิศวกร นั่งอยู่หน้าคณะกรรมการตรวจสอบจริยธรรมของกลุ่มยานยนต์ระดับโลก ทีมพัฒนาของเขากำลังสรุปแบบจำลองการตัดสินใจสำหรับรถยนต์ไร้คนขับระดับ 5 ในสถานการณ์ที่อาจเกิดการชนซึ่งหลีกเลี่ยงไม่ได้\n\nอัลกอริทึมถูกตั้งโปรแกรมให้คำนวณวิถีการเคลื่อนที่ในเสี้ยววินาที เพื่อประเมินความปลอดภัยของผู้โดยสารเทียบกับความเสี่ยงต่อคนเดินถนน คณะกรรมการถกเถียงกันอย่างเข้มข้นว่า ตัวรถควรให้ความสำคัญกับความปลอดภัยของผู้โดยสารเป็นอันดับแรกในทุกกรณี หรือควรคำนวณตามหลักอรรถประโยชน์เพื่อลดการสูญเสียโดยรวมให้เหลือน้อยที่สุด? โซเรนยืนยันว่ากรอบจริยธรรมที่โปร่งใสและตรวจสอบได้ คือกุญแจสำคัญในการสร้างความเชื่อมั่นจากสาธารณชน ทีมของเขาจึงสร้างโมเดลจริยธรรมแบบเปิดเผย (Open-source) ซึ่งกลายมาเป็นมาตรฐานสากลสำหรับความปลอดภัยของยานยนต์ไร้คนขับในที่สุด"
+    },
+    {
+        "id": "story-b2-4",
+        "title": "Negotiating a High-Stakes Contract",
+        "titleThai": "การเจรจาสัญญาธุรกิจมูลค่าสูง",
+        "genre": "Daily Life",
+        "level": "B2",
+        "readTime": "6 mins",
+        "content": "In the glass-walled boardroom overlooking the bustling harbor, chief negotiator Evelyn prepared for the final round of international partnership talks. Her renewable energy startup was negotiating a forty-million-dollar distribution agreement with an established European power conglomerate.\n\nThe counterpart delegation took an aggressive opening stance, demanding exclusive regional distribution rights while offering lower royalty percentages. Rather than conceding under pressure or creating an impasse, Evelyn maintained a calm, principled negotiation approach. She presented comprehensive market analytics demonstrating that non-exclusive tier-based distribution would maximize total market penetration and drive higher aggregate revenue for both entities. After six hours of rigorous, constructive deliberation, both parties signed a mutually lucrative agreement that preserved Evelyn's strategic intellectual property.",
+        "contentThai": "ในห้องประชุมกระจกที่มองเห็นทิวทัศน์ท่าเรือใจกลางเมือง เอฟลิน หัวหน้าทีมเจรจาธุรกิจ เตรียมพร้อมสำหรับการเจรจารอบสุดท้าย บริษัทสตาร์ทอัพด้านพลังงานหมุนเวียนของเธอกำลังเจรจาข้อตกลงการจัดจำหน่ายมูลค่าสี่สิบล้านดอลลาร์กับกลุ่มทุนพลังงานยักษ์ใหญ่จากยุโรป\n\nทีมเจรจาฝั่งตรงข้ามเปิดฉากด้วยท่าทีดุดัน โดยเรียกร้องสิทธิ์การจัดจำหน่ายแต่เพียงผู้เดียวในภูมิภาคพร้อมเสนอส่วนแบ่งเปอร์เซ็นต์ที่ต่ำลง แทนที่จะยอมอ่อนข้อหรือปล่อยให้การเจรจาติดหล่ม เอฟลินรักษาความสุขุมและเจรจาบนพื้นฐานของข้อมูลเชิงลึก เธอได้นำเสนอการวิเคราะห์ตลาดที่แสดงให้เห็นว่าการกระจายสินค้าแบบแบ่งระดับจะช่วยเจาะตลาดได้กว้างกว่าและสร้างรายได้รวมที่สูงกว่าแก่ทั้งสองฝ่าย หลังจากการหารืออย่างเข้มข้นนานกว่าหกชั่วโมง ทั้งสองฝ่ายก็ได้ลงนามในสัญญาที่สร้างผลประโยชน์ร่วมกันอย่างคุ้มค่า และปกป้องทรัพย์สินทางปัญญาของบริษัทไว้ได้อย่างสมบูรณ์"
+    },
+    {
+        "id": "story-b2-5",
+        "title": "Climate Engineering and the Future",
+        "titleThai": "วิศวกรรมสภาพภูมิอากาศกับอนาคตโลก",
+        "genre": "Sci-Fi",
+        "level": "B2",
+        "readTime": "6 mins",
+        "content": "As global mean temperatures approached critical ecological tipping points, the United Nations Environmental Coalition authorized Project Stratoshield. Dr. Malik oversaw the deployment of solar radiation management drones designed to disperse reflective calcium carbonate aerosols into the upper stratosphere.\n\nThe engineering challenge was formidable: dispersing sufficient particles to reflect solar radiation by 1.5% without disrupting global monsoon cycles or triggering unintended agricultural droughts. Real-time satellite spectroscopy confirmed that localized surface cooling began within ninety days. However, Malik cautioned the assembly that geoengineering was merely an emergency technological tourniquet—not a substitute for systemic decarbonization, renewable transition, and biodiversity restoration.",
+        "contentThai": "เมื่ออุณหภูมิเฉลี่ยของโลกเข้าใกล้จุดวิกฤตทางระบบนิเวศ สหพันธ์สิ่งแวดล้อมแห่งสหประชาชาติจึงได้อนุมัติโครงการ 'สตราโตชิลด์' ดร. มาลิก ได้รับมอบหมายให้ดูแลการปล่อยโดรนกระจายละอองแคลเซียมคาร์บอเนตขึ้นสู่ชั้นบรรยากาศสตราโตสเฟียร์เพื่อช่วยสะท้อนรังสีความร้อนจากดวงอาทิตย์\n\nความท้าทายทางวิศวกรรมคือการสะท้อนรังสีให้ได้ 1.5% โดยไม่ส่งผลกระทบต่อวัฏจักรลมมรสุมหรือก่อให้เกิดภัยแล้งต่อพื้นที่เกษตรกรรม ข้อมูลจากดาวเทียมยืนยันว่าอุณหภูมิพื้นผิวเริ่มลดลงภายในเก้าสิบวัน อย่างไรก็ตาม ดร. มาลิก ได้กล่าวเตือนในที่ประชุมว่า วิศวกรรมสภาพภูมิอากาศเป็นเพียงเครื่องมือชะลอวิกฤตชั่วคราวเท่านั้น ไม่สามารถทดแทนการลดการปล่อยคาร์บอน การเปลี่ยนผ่านสู่พลังงานหมุนเวียน และการฟื้นฟูความหลากหลายทางชีวภาพอย่างยั่งยืนได้"
+    },
+    {
+        "id": "story-b2-6",
+        "title": "Resolving a Roommate Dispute",
+        "titleThai": "เปิดอกเคลียร์ใจและอยู่ร่วมกับรูมเมต",
+        "genre": "Daily Life",
+        "level": "B2",
+        "readTime": "6 mins",
+        "content": "Living harmoniously with a roommate requires continuous empathy and clear boundaries. After several weeks of growing frustration over unwashed dishes and late-night noise, I felt that passive resistance would only poison the atmosphere. I invited my roommate, Alex, for dinner at our dining table to address the matter calmly. I used 'I' statements to convey how sleep disruption was affecting my productivity without sounding accusatory. Alex acknowledged that an intense freelance workload had caused him to neglect shared duties. Together, we drafted a shared chore chart and established quiet hours starting from 11:00 PM on weekdays. By addressing friction directly yet diplomatically, we restored mutual respect and transformed our shared apartment into a stress-free sanctuary.",
+        "contentThai": "การอยู่ร่วมห้องกับรูมเมตอย่างราบรื่นต้องอาศัยความเข้าอกเข้าใจและการมีขอบเขตที่ชัดเจน หลังจากเริ่มอึดอัดใจสะสมมาหลายสัปดาห์เรื่องจานชามที่วางกองไว้และเสียงรบกวนตอนดึก ฉันรู้สึกว่าการเงียบทนต่อไปมีแต่จะทำให้บรรยากาศแย่ลง ฉันเลยชวนอเล็กซ์ รูมเมตของฉัน มานั่งทานมื้อค่ำเพื่อเปิดอกคุยกันตรงๆ อย่างใจเย็น ฉันเลือกใช้ประโยคที่บอกเล่าความรู้สึกของตัวเอง ว่าการนอนหลับไม่สนิทส่งผลกระทบต่องานของฉันอย่างไร โดยไม่ใช้น้ำเสียงตำหนิ อเล็กซ์ยอมรับตรงๆ ว่างานฟรีแลนซ์ที่รัดตัวช่วงนี้ทำให้เขาเผลอละเลยหน้าที่ส่วนรวมไป เราเลยช่วยกันทำตารางแบ่งเวรทำความสะอาดและตั้งกฎช่วงเวลาห้ามส่งเสียงดังหลังห้าทุ่มในวันธรรมดา การหันหน้าคุยกันอย่างเปิดใจและประนีประนอม ช่วยคืนความสบายใจและเปลี่ยนห้องพักของเราให้กลับมาเป็นพื้นที่พักผ่อนที่ผ่อนคลายอีกครั้ง"
+    },
+    {
+        "id": "story-b2-7",
+        "title": "Handling Flight Delays & Airline Compensation",
+        "titleThai": "รับมือไฟลต์ดีเลย์และการเคลมเงินชดเชย",
+        "genre": "Daily Life",
+        "level": "B2",
+        "readTime": "6 mins",
+        "content": "While traveling internationally for a business conference, severe weather conditions triggered widespread airport chaos, culminating in the cancellation of my connecting flight. Rather than joining the massive, overwhelmed queue at the service desk, I promptly opened the airline's mobile app to secure a seat on the earliest available departure the following morning. Simultaneously, I approached an agent to request meal vouchers and hotel accommodations as mandated by passenger rights regulations. I retained all receipts for out-of-pocket transportation and food expenses. Upon returning home, I filed a formal compensation claim through the carrier's online portal, attaching digital copies of boarding passes and expense invoices. Within three weeks, the claim was approved and fully reimbursed, proving that staying composed and knowing your rights is crucial when travel plans go awry.",
+        "contentThai": "ระหว่างเดินทางไปร่วมประชุมงานต่างประเทศ สภาพอากาศที่เลวร้ายกะทันหันทำให้สนามบินตกอยู่ในความโกลาหล จนเที่ยวบินต่อเครื่องของฉันถูกยกเลิก แทนที่จะไปยืนต่อแถวยาวเหยียดที่เคาน์เตอร์บริการลูกค้า ฉันรีบเปิดแอปพลิเคชันของสายการบินเพื่อกดจองที่นั่งเที่ยวบินแรกสุดของเช้าวันรุ่งขึ้นทันที พร้อมกับเดินไปติดต่อเจ้าหน้าที่เพื่อขอรับคูปองอาหารและที่พักโรงแรมตามสิทธิคุ้มครองผู้โดยสาร ฉันเก็บใบเสร็จค่าเดินทางและค่าอาหารที่จำเป็นต้องสำรองจ่ายไว้ทั้งหมด เมื่อเดินทางกลับถึงบ้าน ฉันจึงยื่นเรื่องเคลมค่าชดเชยอย่างเป็นทางการผ่านพอร์ทัลออนไลน์ของสายการบิน พร้อมแนบหลักฐานบอร์ดดิ้งพาสและใบเสร็จอย่างครบถ้วน ภายในเวลาเพียงสามสัปดาห์ คำร้องก็ได้รับการอนุมัติและโอนเงินคืนเต็มจำนวน ซึ่งพิสูจน์ให้เห็นว่าการตั้งสติและรู้สิทธิ์ของตัวเองคือหัวใจสำคัญเมื่อแผนการเดินทางเกิดสะดุดลง"
+    },
+    {
+        "id": "story-b2-8",
+        "title": "Negotiating a Flexible Remote Work Agreement",
+        "titleThai": "เจรจาต่อรองสัญญาทำงานแบบ Remote",
+        "genre": "Daily Life",
+        "level": "B2",
+        "readTime": "6 mins",
+        "content": "As modern organizations adapt to decentralized workforce models, negotiating a formal flexible remote work arrangement has become an essential professional skill. When Elena, a senior data analyst, decided to relocate to a coastal town to improve her quality of life, she knew she had to present a compelling business case to her corporate leadership team rather than framing her request merely as a personal convenience.\n\nOver the course of three weeks, Elena compiled a comprehensive proposal document. She analyzed her historical performance metrics over the past eighteen months, demonstrating that her analytical output, project completion rates, and cross-departmental collaboration had actually increased during previous remote work trials. She designed a structured communication blueprint that clearly outlined her planned working hours, response-time guarantees for urgent inquiries, and scheduled weekly virtual check-ins with stakeholders.\n\nDuring her formal proposal meeting with the department director and HR vice president, Elena articulated how the remote arrangement would create mutual value. She addressed potential leadership concerns proactively: \"To ensure complete transparency and team alignment, I have established standardized digital tracking dashboards on our project management platform. Furthermore, I will travel to the headquarters office for three consecutive days each quarter to lead in-person quarterly planning workshops.\"\n\nRecognizing her foresight, accountability, and outstanding track record, the executive committee approved the hybrid-remote agreement with minor adjustments. Elena's structured approach demonstrated that successful workplace negotiations rely on empirical evidence, clear accountability, and a thorough understanding of organizational priorities.",
+        "contentThai": "ในขณะที่องค์กรยุคใหม่เริ่มปรับตัวสู่รูปแบบการทำงานที่ยืดหยุ่น การเจรจาต่อรองข้อตกลงการทำงานแบบ Remote Work อย่างเป็นทางการจึงเป็นทักษะสำคัญสำหรับคนทำงานมืออาชีพ เมื่อเอเลน่า นักวิเคราะห์ข้อมูลระดับซีเนียร์ ตัดสินใจย้ายไปอยู่เมืองริมทะเลเพื่อยกระดับคุณภาพชีวิต เธอรู้ดีว่าจะต้องนำเสนอแผนงานเชิงธุรกิจที่ตอบโจทย์องค์กร แทนที่จะขอความยินยอมโดยอ้างเพียงความสะดวกส่วนตัว\n\nตลอดระยะเวลาสามสัปดาห์ เอเลน่าได้รวบรวมเอกสารข้อเสนอโครงการอย่างละเอียด เธอวิเคราะห์ตัวเลขผลงานของตัวเองตลอดสิบแปดเดือนที่ผ่านมา ซึ่งแสดงให้เห็นว่าผลงานการวิเคราะห์ การปิดโปรเจกต์ตรงเวลา และการประสานงานข้ามทีมมีประสิทธิภาพสูงขึ้นจริงในช่วงทดลองทำงานจากระยะไกล เธอยังออกแบบแนวทางการสื่อสารที่เป็นระบบ กำหนดเวลาทำงานที่แน่นอน ระยะเวลาตอบกลับข้อความด่วน และตารางประชุมออนไลน์ประจำสัปดาห์กับผู้เกี่ยวข้องทั้งหมด\n\nในการประชุมนำเสนอข้อเสนอกับผู้อำนวยการฝ่ายและรองประธานฝ่ายบุคคล เอเลน่าได้อธิบายถึงประโยชน์ที่ทั้งสองฝ่ายจะได้รับร่วมกัน พร้อมตอบข้อกังวลของผู้บริหารอย่างตรงจุดว่า \"เพื่อความโปร่งใสและการทำงานที่สอดคล้องกันของทีม ดิฉันได้สร้างแดชบอร์ดติดตามความคืบหน้าของงานบนระบบส่วนกลาง นอกจากนี้ ดิฉันจะเดินทางเข้าสำนักงานใหญ่ติดต่อกันสามวันในทุกๆ ไตรมาสเพื่อเป็นผู้นำการจัดเวิร์กช็อปวางแผนงานประจำไตรมาสแบบพบหน้ากันค่ะ\"\n\nด้วยความประทับใจในวิสัยทัศน์ ความรับผิดชอบ และผลงานที่ยอดเยี่ยม คณะกรรมการบริหารจึงอนุมัติข้อตกลงการทำงานแบบไฮบริด-รีโมตพร้อมปรับแก้รายละเอียดเล็กน้อย แนวทางที่เป็นระบบของเอเลน่าพิสูจน์ให้เห็นว่าการเจรจาต่อรองในที่ทำงานที่ประสบความสำเร็จนั้น ต้องอาศัยหลักฐานที่จับต้องได้ ความโปร่งใสในการวัดผล และความเข้าใจในเป้าหมายขององค์กรเป็นสำคัญ"
+    },
+    {
+        "id": "story-b2-9",
+        "title": "Navigating Urban Transit Modernization",
+        "titleThai": "ปรับตัวกับระบบขนส่งสาธารณะยุคใหม่",
+        "genre": "Daily Life",
+        "level": "B2",
+        "readTime": "6 mins",
+        "content": "Rapid urbanization and environmental initiatives are driving metropolitan cities across the globe to overhaul their public transportation infrastructure. When the capital city launched its multi-billion-dollar integrated smart mobility network, daily commuters faced a blend of cutting-edge technological advancements alongside transitional logistical challenges.\n\nMarcus, an architectural consultant who commutes across the city daily, closely monitored the rollout. The modernization replaced legacy paper tickets with biometric contactless payment gates, unified subterranean metro lines with elevated light rail networks, and integrated an all-electric bus rapid transit corridor. A newly developed municipal smartphone application allowed riders to track vehicle locations in real-time, monitor carbon emission savings, and reload virtual transit passes seamlessly.\n\nHowever, the initial launch phase was not without unexpected obstacles. During the first two weeks, software synchronization delays occasionally caused ticket barrier bottlenecks during morning peak hours, and route adjustments left several suburban passengers confused. Rather than becoming frustrated, Marcus adapted by utilizing multi-modal commuting strategies. He paired micro-mobility options—such as shared electric bicycles—for the first and last mile of his journey, while utilizing real-time digital crowd maps to bypass congested transfer stations.\n\nOver time, as the algorithms stabilized and frequency increased, the modernized transit network reduced average commuting times by twenty-five percent and noticeably improved urban air quality. Adapting to technological transitions requires patience, flexibility, and a willingness to embrace systemic innovation.",
+        "contentThai": "การเติบโตอย่างรวดเร็วของเมืองและนโยบายด้านสิ่งแวดล้อมกำลังผลักดันให้มหานครทั่วโลกเร่งปรับปรุงระบบขนส่งสาธารณะ เมื่อเมืองหลวงเปิดตัวโครงข่ายการเดินทางอัจฉริยะแบบครบวงจรมูลค่าหลายพันล้านดอลลาร์ ผู้คนที่ต้องเดินทางทุกวันจึงได้สัมผัสกับเทคโนโลยีที่ล้ำสมัย ควบคู่ไปกับความท้าทายในการปรับตัวช่วงเริ่มต้น\n\nมาร์คัส ที่ปรึกษาด้านสถาปัตยกรรมซึ่งต้องเดินทางข้ามเมืองเป็นประจำ ได้ติดตามการเปิดตัวระบบใหม่อย่างใกล้ชิด โครงการนี้ได้เปลี่ยนตั๋วกระดาษแบบเดิมมาเป็นประตูแตะบัตรไร้สัมผัส เชื่อมต่อรถไฟฟ้าใต้ดินเข้ากับรถไฟฟ้ารางเบายกระดับ และเพิ่มช่องทางเดินรถเมล์ไฟฟ้าด่วนพิเศษ แอปพลิเคชันบนมือถือช่วยให้ผู้โดยสารเช็กตำแหน่งรถได้แบบเรียลไทม์ คำนวณปริมาณการลดคาร์บอน และเติมเงินบัตรโดยสารดิจิทัลได้อย่างสะดวกรวดเร็ว\n\nอย่างไรก็ตาม ช่วงแรกของการใช้งานย่อมมีปัญหาติดขัดบ้าง ในช่วงสองสัปดาห์แรก ปัญหาระบบประมวลผลช้าทำให้เกิดความแออัดบริเวณประตูตรวจตั๋วช่วงเช้า และการปรับสายรถเมล์ทำให้ผู้โดยสารบางส่วนสับสน แต่มาร์คัสเลือกที่จะปรับตัวด้วยการผสมผสานการเดินทางหลายรูปแบบ เขาเลือกใช้จักรยานไฟฟ้าแบ่งปันสำหรับระยะทางช่วงแรกและช่วงท้ายของการเดินทาง พร้อมเปิดดูแผนที่ความหนาแน่นของผู้โดยสารแบบเรียลไทม์เพื่อเลี่ยงสถานีเปลี่ยนสายที่คนแน่น\n\nเมื่อเวลาผ่านไป ระบบเริ่มเสถียรและรอบรถเพิ่มขึ้น โครงข่ายขนส่งสาธารณะยุคใหม่นี้สามารถลดเวลาเดินทางเฉลี่ยลงได้ถึง 25% และช่วยให้อากาศในเมืองสะอาดขึ้นอย่างเห็นได้ชัด การปรับตัวเข้ากับการเปลี่ยนแปลงทางเทคโนโลยีจึงต้องอาศัยความอดทน ความยืดหยุ่น และการเปิดรับนวัตกรรมใหม่ๆ อย่างสร้างสรรค์"
+    },
+    {
+        "id": "story-b2-10",
+        "title": "Embracing a Sustainable Zero-Waste Lifestyle",
+        "titleThai": "วิถีชีวิตรักษ์โลกแบบ Zero-Waste ในบ้าน",
+        "genre": "Daily Life",
+        "level": "B2",
+        "readTime": "6 mins",
+        "content": "Growing awareness of climate change and environmental degradation has inspired millions of households worldwide to reconsider their daily consumption patterns. When Maya read a report stating that the average urban resident generates more than four hundred kilograms of landfill waste annually, she decided to embark on a mindful transition toward a low-impact, zero-waste lifestyle.\n\nRecognizing that absolute perfection is unrealistic, Maya focused on incremental, high-impact behavioral changes. She audited her household waste stream and discovered that single-use plastic packaging and organic food waste accounted for the vast majority of her trash bin. To address food waste, she set up an odorless countertop Bokashi composting bin in her kitchen, converting fruit peels, coffee grounds, and vegetable scraps into nutrient-rich soil conditioner for her balcony garden.\n\nFor grocery shopping, Maya invested in durable mesh produce bags, glass storage jars, and stainless-steel containers. She shifted her shopping habits toward local refill stations and bulk organic markets where dry goods—such as oats, rice, lentils, and laundry detergents—could be purchased by weight without disposable packaging. In her personal care routine, she replaced liquid shampoos and bottled cleansers with solid shampoo bars, bamboo toothbrushes, and safety razors.\n\nBeyond reducing waste, this mindful lifestyle brought substantial economic savings and simplified Maya's living environment. Her journey demonstrated that living sustainably is not about radical deprivation, but about intentional choices, conscious stewardship, and cultivating respect for our shared planetary ecosystem.",
+        "contentThai": "ความตระหนักรู้เรื่องภาวะโลกร้อนและสิ่งแวดล้อมทำให้หลายครัวเรือนทั่วโลกหันกลับมาทบทวนพฤติกรรมการใช้ชีวิตของตนเอง เมื่อมายาได้อ่านรายงานว่าคนเมืองหนึ่งคนสร้างขยะเฉลี่ยมากกว่าสี่ร้อยกิโลกรัมต่อปี เธอจึงตัดสินใจเริ่มต้นปรับเปลี่ยนวิถีชีวิตสู่แนวทางแบบ Zero-Waste เพื่อลดขยะอย่างมีสติ\n\nด้วยความเข้าใจว่าการทำให้ขยะเป็นศูนย์แบบร้อยเปอร์เซ็นต์ในทันทีเป็นเรื่องยาก มายาจึงเน้นที่การปรับเปลี่ยนพฤติกรรมทีละขั้น เธอสำรวจถังขยะในบ้านและพบว่าพลาสติกแบบใช้ครั้งเดียวทิ้งกับขยะเศษอาหารคือสัดส่วนที่เยอะที่สุด เพื่อจัดการกับขยะอินทรีย์ เธอได้ติดตั้งถังหมักปุ๋ยชีวภาพไร้กลิ่นขนาดกะทัดรัดไว้ในครัว เปลี่ยนเปลือกผลไม้ กากกาแฟ และเศษผักให้กลายเป็นปุ๋ยบำรุงดินชั้นดีสำหรับปลูกผักริมระเบียง\n\nสำหรับการซื้อของเข้าบ้าน มายาลงทุนซื้อถุงตาข่ายผ้าฝ้าย โหลแก้ว และกล่องสแตนเลส เธอเปลี่ยนมาซื้อของตามร้าน Refill Station และตลาดออร์แกนิกที่จำหน่ายข้าวสาร ข้าวโอ๊ต ถั่ว และน้ำยาซักผ้าแบบชั่งน้ำหนักโดยไม่ใช้บรรจุภัณฑ์พลาสติก ในห้องน้ำ เธอเปลี่ยนมาใช้สบู่และแชมพูก้อน แปรงสีฟันไม้ไผ่ และมีดโกนโลหะแบบเปลี่ยนใบมีดได้\n\nนอกจากการลดขยะได้อย่างมหาศาลแล้ว วิถีชีวิตที่เรียบง่ายนี้ยังช่วยให้มายาประหยัดเงินในกระเป๋าและทำให้บ้านดูโปร่งโล่งน่าอยู่ขึ้น ประสบการณ์ของเธอพิสูจน์ให้เห็นว่าการใช้ชีวิตอย่างยั่งยืนไม่ใช่การบังคับตัวเองให้อดกลั้น แต่คือการเลือกใช้อย่างรู้คุณค่าและใส่ใจดูแลโลกใบนี้ไปด้วยกัน"
+    },
+    {
+        "id": "story-b2-11",
+        "title": "Managing a Cross-Cultural Virtual Team Project",
+        "titleThai": "การบริหารโปรเจกต์กับทีมงานต่างชาติข้ามวัฒนธรรม",
+        "genre": "Daily Life",
+        "level": "B2",
+        "readTime": "6 mins",
+        "content": "In an increasingly interconnected global economy, leading a high-performing international project team requires sophisticated intercultural competence alongside agile project governance. When Julian was appointed lead technical program manager for a distributed software initiative spanning engineers across Tokyo, London, and San Francisco, he recognized that technological alignment alone would not guarantee delivery success.\n\nTime-zone disparities presented the first operational hurdle. With a sixteen-hour spread across team hubs, scheduling synchronous all-hands meetings frequently led to scheduling fatigue. Julian restructured the workflow toward an asynchronous-first communication paradigm. He established comprehensive documentation standards using centralized digital canvases and mandated that all architectural decisions, code reviews, and project blockers be recorded with transparent context rather than discussed in ephemeral video calls.\n\nEqually crucial was navigating diverse communication styles. Julian observed that junior engineers in the Tokyo office exhibited high deference to hierarchy and rarely voiced concerns in large meetings, whereas the Silicon Valley team favored direct, aggressive debate. To foster psychological safety, Julian implemented anonymous feedback retrospectives and dedicated weekly one-on-one virtual coffee check-ins.\n\nBy respecting cultural nuances, empowering localized autonomy, and standardizing asynchronous transparency, Julian's team delivered the product ahead of schedule with zero defect regressions. His experience highlighted that empathetic cross-cultural leadership is the cornerstone of modern global collaboration.",
+        "contentThai": "ในโลกการทำงานยุคโลกาภิวัตน์ที่เชื่อมต่อกันอย่างไร้พรมแดน การเป็นผู้นำทีมโปรเจกต์ระดับนานาชาติให้ประสบความสำเร็จต้องอาศัยทั้งทักษะความเข้าใจข้ามวัฒนธรรมและการบริหารโครงการแบบ Agile เมื่อจูเลียนได้รับแต่งตั้งให้เป็นผู้จัดการโปรแกรมทางเทคนิคสำหรับโครงการพัฒนาซอฟต์แวร์ระดับโลกที่มีทีมวิศวกรกระจายตัวอยู่ในโตเกียว ลอนดอน และซานฟรานซิสโก เขาตระหนักดีว่าความเชี่ยวชาญด้านเทคโนโลยีเพียงอย่างเดียวไม่สามารถการันตีความสำเร็จของงานได้\n\nความแตกต่างของไทม์โซนคือด่านแรกที่ต้องจัดการ ด้วยเวลาที่ต่างกันถึงสิบหกชั่วโมงระหว่างแต่ละทวีป การนัดประชุมพร้อมกันบ่อยๆ มักทำให้ทุกคนเหนื่อยล้า จูเลียนจึงปรับเปลี่ยนกระบวนการทำงานสู่รูปแบบ 'Asynchronous-first' หรือการสื่อสารแบบไม่ต้องรอตอบพร้อมกัน โดยกำหนดมาตรฐานการบันทึกเอกสารอย่างละเอียดบนระบบคลาวด์ส่วนกลาง และกำหนดให้การตัดสินใจด้านสถาปัตยกรรมระบบ การตรวจโค้ด และปัญหาที่ติดขัดทั้งหมดต้องถูกบันทึกไว้อย่างชัดเจน แทนที่จะพึ่งพาเพียงการประชุมวิดีโอคอลแบบสั้นๆ\n\nสิ่งที่สำคัญไม่แพ้กันคือการทำความเข้าใจสไตล์การสื่อสารที่แตกต่างกัน จูเลียนสังเกตเห็นว่าวิศวกรรุ่นน้องในทีมโตเกียวมีความเกรงใจต่อลำดับชั้นและไม่ค่อยกล้าออกความเห็นในที่ประชุมใหญ่ ขณะที่ทีมซานฟรานซิสโกคุ้นชินกับการถกเถียงอย่างตรงไปตรงมา เพื่อสร้างบรรยากาศที่ทุกคนกล้าพูดอย่างสบายใจ จูเลียนจึงเปิดช่องทางรับฟังความคิดเห็นแบบไม่ระบุชื่อ และจัดเซสชันคุยเดี่ยวแบบสบายๆ ประจำสัปดาห์\n\nด้วยการให้เกียรติความหลากหลายทางวัฒนธรรม การให้อิสระในการตัดสินใจ และการสื่อสารที่โปร่งใส ทีมของจูเลียนสามารถส่งมอบงานได้เสร็จก่อนกำหนดโดยไม่มีข้อผิดพลาด ประสบการณ์ของเขาย้ำเตือนว่าความเป็นผู้นำที่เข้าอกเข้าใจคนข้ามวัฒนธรรมคือหัวใจสำคัญของการทำงานร่วมกันระดับสากลในยุคนี้"
+    }
+]
+
+# Write the updated master stories to src/data/stories.json
+with open('src/data/stories.json', 'w', encoding='utf-8') as f:
+    json.dump(MASTER_STORIES, f, ensure_ascii=False, indent=2)
+
+print(f"Successfully updated all {len(MASTER_STORIES)} stories with conversational daily life Thai translations.")
