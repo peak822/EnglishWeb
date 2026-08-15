@@ -41,6 +41,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -50,6 +56,7 @@ body {
   overflow-x: hidden;
   line-height: 1.6;
   min-height: 100dvh;
+  -webkit-overflow-scrolling: touch;
   /* Cyberpunk Grid Background with Moon & High-Contrast Vignette */
   background-image: 
     linear-gradient(rgba(0, 255, 255, 0.04) 1px, transparent 1px),
@@ -258,15 +265,16 @@ a:hover {
 
 .match-card {
   position: relative;
-  height: 6.5rem;
+  height: clamp(6.25rem, 20vw, 9.5rem);
   width: 100%;
   border-radius: var(--radius-sm);
   cursor: pointer;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease, opacity 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease, opacity 0.3s ease;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 @media (min-width: 640px) {
   .match-card {
@@ -279,10 +287,13 @@ a:hover {
   }
 }
 
-/* Hover effects that respect rotation state */
+/* Hover & Active effects that respect rotation state */
 .match-card:hover:not(.matched):not(.rotate-y-180) {
   transform: scale(1.04);
   box-shadow: var(--shadow-lift);
+}
+.match-card:active:not(.matched):not(.rotate-y-180) {
+  transform: scale(0.97);
 }
 .match-card.rotate-y-180 {
   transform: rotateY(180deg);
@@ -290,6 +301,9 @@ a:hover {
 .match-card.rotate-y-180:hover:not(.matched) {
   transform: rotateY(180deg) scale(1.04);
   box-shadow: var(--shadow-lift);
+}
+.match-card.rotate-y-180:active:not(.matched) {
+  transform: rotateY(180deg) scale(0.97);
 }
 .match-card.matched {
   transform: rotateY(180deg);
@@ -308,7 +322,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
+  padding: 0.4rem;
   text-align: center;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -344,9 +358,9 @@ a:hover {
 
 .card-badge {
   position: absolute;
-  top: 0.4rem;
-  left: 0.5rem;
-  font-size: 0.85rem;
+  top: 0.25rem;
+  left: 0.35rem;
+  font-size: 0.8rem;
   opacity: 0.85;
   filter: drop-shadow(0 0 5px currentColor);
 }
@@ -358,17 +372,20 @@ a:hover {
 .type-word .card-text {
   color: var(--color-primary);
   text-shadow: 0 0 10px var(--color-primary);
-  font-size: 1.15rem;
+  font-size: clamp(0.9rem, 3.2vw, 1.25rem);
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
 }
 .type-meaning .card-text {
-  color: var(--color-accent);
-  text-shadow: 0 0 10px var(--color-accent);
-  font-size: 0.875rem;
+  color: var(--color-secondary);
+  font-size: clamp(0.72rem, 2.6vw, 0.95rem);
   font-weight: 600;
-  line-height: 1.35;
-  letter-spacing: normal;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .type-word .card-text { font-size: 1.25rem; }
@@ -1436,9 +1453,16 @@ a:hover {
   border: 1.5px solid rgba(255, 255, 255, 0.1);
   padding: 1.5rem;
   cursor: pointer;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
   transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   overflow: hidden;
+}
+
+.home-mode-card:active {
+  transform: scale(0.98);
 }
 
 .home-mode-card::before {

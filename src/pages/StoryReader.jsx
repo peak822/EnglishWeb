@@ -170,7 +170,7 @@ const StoryReader = () => {
           }}>
             Level {story.level}
           </span>
-          <h1 style={{ fontSize: '2.5rem', color: 'var(--color-secondary)', margin: '0.5rem 0' }}>
+          <h1 style={{ fontSize: 'clamp(1.4rem, 4.5vw, 2.5rem)', color: 'var(--color-secondary)', margin: '0.5rem 0', lineHeight: 1.25, fontWeight: 'bold' }}>
             {story.title}
           </h1>
           <div style={{ color: 'var(--color-neutral)', fontSize: '0.9rem' }}>

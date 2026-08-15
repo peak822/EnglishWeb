@@ -163,38 +163,66 @@ const TypingMode = () => {
                 }
               </div>
 
-              <form onSubmit={handleSubmit} className="flex flex-col items-center gap-6">
+              <form onSubmit={handleSubmit} className="flex flex-col items-center gap-4 w-full max-w-sm mx-auto">
                 <input
                   ref={inputRef}
                   type="text"
+                  inputMode="text"
+                  autoCapitalize="none"
+                  autoCorrect="off"
+                  spellCheck="false"
                   value={input}
                   onChange={handleInputChange}
-                  className={`typing-input ${
+                  className={`typing-input w-full ${
                     status === 'incorrect' ? 'error shake' : 
                     status === 'correct' ? 'success' : ''
                   }`}
-                  placeholder="Type word..."
+                  placeholder="Type English word..."
                   autoComplete="off"
                   disabled={status === 'revealed' || status === 'correct'}
                 />
-                <Button type="submit" variant="primary" className="w-64 mt-2" disabled={status === 'revealed' || status === 'correct'}>
-                  Submit Answer
-                </Button>
+                <div className="flex gap-3 w-full justify-center">
+                  <Button type="submit" variant="primary" className="flex-1 min-h-[44px]" disabled={status === 'revealed' || status === 'correct'}>
+                    Submit Answer
+                  </Button>
+                  <Button 
+                    type="button" 
+                    variant="secondary" 
+                    className="min-h-[44px]"
+                    onClick={() => {
+                      if (status === 'revealed' || status === 'correct') return;
+                      setStatus('revealed');
+                      timeoutRef.current = setTimeout(() => {
+                        setCurrentIndex(prev => prev + 1);
+                        setInput('');
+                        setStatus('idle');
+                        setWrongCount(0);
+                        setShowHint(false);
+                      }, 3000);
+                    }}
+                    disabled={status === 'revealed' || status === 'correct'}
+                  >
+                    เฉลย (Skip)
+                  </Button>
+                </div>
               </form>
 
               {(status === 'correct' || status === 'revealed') && (
-                <div className="mt-8 mx-auto animate-fade-up text-center p-6 bg-[rgba(255,255,255,0.05)] rounded-[var(--radius-md)] border border-[rgba(0,255,255,0.2)] w-full max-w-sm">
-                  <h3 className="text-2xl font-bold text-[var(--color-accent)] mb-2">{currentWord.meaning}</h3>
-                  <p className="font-mono text-[var(--color-neutral)] opacity-80">/{currentWord.ipa || 'no ipa'}/</p>
-                  <p className={`mt-4 font-semibold text-sm ${status === 'correct' ? 'text-[var(--color-primary)]' : 'text-red-400'}`}>
-                    {status === 'correct' ? 'Correct! Moving to next word...' : 'Skipping to next word...'}
+                <div className="mt-6 mx-auto animate-fade-up text-center p-5 bg-[rgba(255,255,255,0.05)] rounded-[var(--radius-md)] border border-[rgba(0,255,255,0.2)] w-full max-w-sm">
+                  <h3 className="text-xl sm:text-2xl font-bold text-[var(--color-accent)] mb-1">{currentWord.meaning}</h3>
+                  <p className="font-mono text-[var(--color-neutral)] opacity-90 text-sm">
+                    {currentWord.thai_pronunciation ? `[${currentWord.thai_pronunciation}] ` : ''}
+                    /{currentWord.ipa || 'no ipa'}/
+                  </p>
+                  <p className={`mt-3 font-semibold text-xs sm:text-sm ${status === 'correct' ? 'text-[var(--color-primary)]' : 'text-red-400'}`}>
+                    {status === 'correct' ? 'Correct! 🎉 กำลังไปคำถัดไป...' : 'เฉลยคำศัพท์: กำลังไปคำถัดไป...'}
                   </p>
                 </div>
               )}
 
               {showHint && status !== 'revealed' && status !== 'correct' && (
-                <div className="mt-6 text-[var(--color-neutral)] text-sm animate-fade-up bg-[rgba(255,255,255,0.05)] py-2 px-4 rounded-lg inline-block">
-                  Pronunciation: <span className="font-mono text-[var(--color-secondary)] ml-2">/{currentWord.ipa || currentWord.thai_pronunciation || 'N/A'}/</span>
+                <div className="mt-4 text-[var(--color-neutral)] text-sm animate-fade-up bg-[rgba(255,255,255,0.05)] py-2 px-4 rounded-lg inline-block border border-white/10">
+                  💡 คำอ่าน: <span className="font-mono text-[var(--color-secondary)] ml-1 font-bold">{currentWord.thai_pronunciation || currentWord.ipa || 'N/A'}</span>
                 </div>
               )}
               
@@ -202,9 +230,9 @@ const TypingMode = () => {
                 <button 
                   type="button"
                   onClick={() => setShowHint(true)}
-                  className="mt-8 text-btn"
+                  className="mt-6 text-btn text-xs sm:text-sm"
                 >
-                  Need a hint?
+                  Need a hint? (ขอคำใบ้)
                 </button>
               )}
             </div>

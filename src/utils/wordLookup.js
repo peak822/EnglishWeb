@@ -214,6 +214,19 @@ const irregulars = {
 
 // Supplemental vocabulary (story terms, proper names, modern words, etc.)
 const supplementalDict = {
+  'color': { word: 'color', type: 'n.', level: 'A1', meaning: 'สี (รูปสะกดแบบอเมริกันของ colour)', thai_pronunciation: 'คัล-เลอร์', ipa: 'ˈkʌlər' },
+  'colors': { word: 'colors', type: 'n.', level: 'A1', meaning: 'สีต่างๆ (หลายสี)', thai_pronunciation: 'คัล-เลอร์ส', ipa: 'ˈkʌlərz' },
+  'favorite': { word: 'favorite', type: 'adj., n.', level: 'A1', meaning: 'ที่ชื่นชอบที่สุด, ของโปรด (รูปสะกดแบบอเมริกันของ favourite)', thai_pronunciation: 'เฟ-เวอ-ริท', ipa: 'ˈfeɪvərɪt' },
+  'favorites': { word: 'favorites', type: 'n.', level: 'A1', meaning: 'ของโปรด, สิ่งที่ชอบที่สุด (หลายอย่าง)', thai_pronunciation: 'เฟ-เวอ-ริทส์', ipa: 'ˈfeɪvərɪts' },
+  'center': { word: 'center', type: 'n.', level: 'A1', meaning: 'ศูนย์กลาง, จุดศูนย์กลาง (รูปสะกดแบบอเมริกันของ centre)', thai_pronunciation: 'เซน-เทอร์', ipa: 'ˈsentər' },
+  'centers': { word: 'centers', type: 'n.', level: 'A1', meaning: 'ศูนย์กลาง (หลายแห่ง)', thai_pronunciation: 'เซน-เทอร์ส', ipa: 'ˈsentərz' },
+  'theater': { word: 'theater', type: 'n.', level: 'A1', meaning: 'โรงภาพยนตร์, โรงละคร (รูปสะกดแบบอเมริกันของ theatre)', thai_pronunciation: 'เธีย-เทอร์', ipa: 'ˈθiːətər' },
+  'theaters': { word: 'theaters', type: 'n.', level: 'A1', meaning: 'โรงภาพยนตร์/โรงละคร (หลายแห่ง)', thai_pronunciation: 'เธีย-เทอร์ส', ipa: 'ˈθiːətərz' },
+  'meter': { word: 'meter', type: 'n.', level: 'A1', meaning: 'เมตร (หน่วยวัด), มิเตอร์ (รูปสะกดแบบอเมริกันของ metre)', thai_pronunciation: 'มิ-เทอร์', ipa: 'ˈmiːtər' },
+  'meters': { word: 'meters', type: 'n.', level: 'A1', meaning: 'เมตร (หลายเมตร)', thai_pronunciation: 'มิ-เทอร์ส', ipa: 'ˈmiːtərz' },
+  'neighbor': { word: 'neighbor', type: 'n.', level: 'A1', meaning: 'เพื่อนบ้าน (รูปสะกดแบบอเมริกันของ neighbour)', thai_pronunciation: 'เน-เบอร์', ipa: 'ˈneɪbər' },
+  'neighbors': { word: 'neighbors', type: 'n.', level: 'A1', meaning: 'เพื่อนบ้าน (หลายคน)', thai_pronunciation: 'เน-เบอร์ส', ipa: 'ˈneɪbərz' },
+  'gray': { word: 'gray', type: 'adj., n.', level: 'A1', meaning: 'สีเทา (รูปสะกดแบบอเมริกันของ grey)', thai_pronunciation: 'เกรย์', ipa: 'ɡreɪ' },
   'chase': { word: 'chase', type: 'v., n.', level: 'A2', meaning: 'วิ่งไล่ตาม, ไล่กวด, การไล่ตาม', thai_pronunciation: 'เชส', ipa: 'tʃeɪs' },
   'relieved': { word: 'relieved', type: 'adj.', level: 'B1', meaning: 'รู้สึกโล่งใจ, คลายกังวล, ผ่อนคลาย', thai_pronunciation: 'ริ-ลีฟด์', ipa: 'rɪˈliːvd' },
   'airlock': { word: 'airlock', type: 'n.', level: 'B2', meaning: 'ประตูกักอากาศ, ห้องปรับความดันอากาศ', thai_pronunciation: 'แอร์-ล็อก', ipa: 'ˈeəlɒk' },

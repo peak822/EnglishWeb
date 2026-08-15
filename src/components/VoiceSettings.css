@@ -233,3 +233,29 @@
   border-color: #00ffff;
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
 }
+
+@media (max-width: 640px) {
+  .voice-settings-overlay {
+    align-items: flex-end;
+    padding: 0;
+  }
+  .voice-settings-modal {
+    max-width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    animation: slide-up-mobile 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .voice-settings-footer {
+    padding-bottom: max(1.25rem, env(safe-area-inset-bottom, 1.25rem));
+  }
+  .voice-btn-save, .voice-btn-cancel, .voice-test-btn {
+    min-height: 48px;
+  }
+}
+
+@keyframes slide-up-mobile {
+  from { transform: translateY(100%); opacity: 0.8; }
+  to { transform: translateY(0); opacity: 1; }
+}

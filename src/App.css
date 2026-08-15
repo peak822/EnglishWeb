@@ -10,7 +10,7 @@
   background: var(--color-nav);
   border-bottom: 2px solid var(--color-primary);
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
-  padding: 0.625rem 0;
+  padding: max(0.625rem, env(safe-area-inset-top)) max(0.5rem, env(safe-area-inset-right)) 0.625rem max(0.5rem, env(safe-area-inset-left));
   position: sticky;
   top: 0;
   z-index: 100;
@@ -412,13 +412,17 @@
 .letters-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: clamp(0.35rem, 1.5vw, 0.75rem);
   justify-content: center;
+  align-items: center;
+  max-width: 100%;
 }
 
 .letter-block {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: clamp(2.35rem, 8.5vw, 3.5rem);
+  height: clamp(2.35rem, 8.5vw, 3.5rem);
+  min-width: 36px;
+  min-height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -426,19 +430,24 @@
   border: 1px solid var(--color-primary);
   color: var(--color-primary);
   text-shadow: 0 0 5px var(--color-primary);
-  font-size: 1.5rem;
+  font-size: clamp(1.1rem, 4.5vw, 1.5rem);
   font-weight: 900;
   border-radius: var(--radius-sm);
   cursor: pointer;
   transition: all var(--transition-fast);
   user-select: none;
+  touch-action: manipulation;
   box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.1);
 }
 
 .letter-block:hover {
   background: rgba(0, 255, 255, 0.2);
-  transform: translateY(-4px) scale(1.05);
+  transform: translateY(-3px) scale(1.05);
   box-shadow: var(--glow-primary);
+}
+
+.letter-block:active {
+  transform: scale(0.94);
 }
 
 .letter-block.used {
@@ -448,18 +457,21 @@
 }
 
 .letter-slot {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: clamp(2.35rem, 8.5vw, 3.5rem);
+  height: clamp(2.35rem, 8.5vw, 3.5rem);
+  min-width: 36px;
+  min-height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 2px dashed rgba(255, 255, 255, 0.2);
   border-radius: var(--radius-sm);
-  font-size: 1.5rem;
+  font-size: clamp(1.1rem, 4.5vw, 1.5rem);
   font-weight: 700;
   color: var(--color-secondary);
   background: rgba(0,0,0,0.2);
   transition: all var(--transition-fast);
+  touch-action: manipulation;
 }
 
 .letter-slot.filled {
@@ -768,8 +780,9 @@
 
 .option-btn {
   width: 100%;
-  font-size: 1.125rem;
-  padding: 1rem !important;
+  font-size: clamp(1rem, 3.5vw, 1.125rem);
+  padding: 0.875rem 1.25rem !important;
+  min-height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -778,12 +791,20 @@
   color: #ffffff;
   border-radius: var(--radius-full);
   cursor: pointer;
-  transition: all var(--transition-normal);
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all var(--transition-fast);
 }
 
 .option-btn:hover {
   background: rgba(255, 255, 255, 0.15);
   border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.option-btn:active {
+  transform: scale(0.97);
 }
 
 .option-btn.correct-ans {

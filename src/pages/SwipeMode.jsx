@@ -5,7 +5,8 @@ import LevelSelector from '../components/LevelSelector';
 import vocabularyData from '../data/vocabulary.json';
 import { filterWords } from '../hooks/useCategories';
 import { useGamification } from '../hooks/useGamification';
-import { Heart, Check, X, Zap } from 'lucide-react';
+import { Heart, Check, X, Zap, Volume2 } from 'lucide-react';
+import { speakText } from '../utils/audioService';
 
 const SwipeMode = () => {
   const { addExp } = useGamification();
@@ -336,14 +337,34 @@ const SwipeMode = () => {
               </Card>
             </div>
             
-            {/* Helper buttons */}
-            <div className="flex w-full max-w-sm justify-between px-4 mt-8 md:justify-center md:gap-16">
-               <button onClick={() => handleSwipe('left')} className="p-4 rounded-full bg-red-500/20 text-red-400 border border-red-500/50 hover:bg-red-500/40 transition-colors">
-                 <X size={32} />
-               </button>
-               <button onClick={() => handleSwipe('right')} className="p-4 rounded-full bg-green-500/20 text-green-400 border border-green-500/50 hover:bg-green-500/40 transition-colors">
-                 <Check size={32} />
-               </button>
+            {/* Thumb-friendly Action Buttons */}
+            <div className="flex w-full max-w-sm justify-center items-center gap-3 sm:gap-6 px-2 mt-6">
+              <button 
+                onClick={() => handleSwipe('left')} 
+                className="flex-1 flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-red-500/20 text-red-400 border border-red-500/40 active:scale-95 hover:bg-red-500/30 transition-all font-bold shadow-[0_0_15px_rgba(239,68,68,0.2)] text-sm sm:text-base min-h-[48px]"
+                aria-label="Wrong translation (Swipe Left)"
+              >
+                <X size={22} />
+                <span>ผิด (Left)</span>
+              </button>
+              
+              <button
+                onClick={() => speakText(currentCard.word)}
+                className="p-3 rounded-xl bg-[rgba(0,255,255,0.1)] text-[var(--color-primary)] border border-[var(--color-primary)] active:scale-95 hover:bg-[rgba(0,255,255,0.2)] transition-all shadow-[0_0_15px_rgba(0,255,255,0.2)] min-h-[48px] min-w-[48px] flex items-center justify-center"
+                title="Listen to pronunciation"
+                aria-label="Listen"
+              >
+                <Volume2 size={22} />
+              </button>
+
+              <button 
+                onClick={() => handleSwipe('right')} 
+                className="flex-1 flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-green-500/20 text-green-400 border border-green-500/40 active:scale-95 hover:bg-green-500/30 transition-all font-bold shadow-[0_0_15px_rgba(34,197,94,0.2)] text-sm sm:text-base min-h-[48px]"
+                aria-label="Correct translation (Swipe Right)"
+              >
+                <Check size={22} />
+                <span>ถูก (Right)</span>
+              </button>
             </div>
           </div>
         )}
