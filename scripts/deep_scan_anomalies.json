@@ -1,0 +1,2772 @@
+[
+  {
+    "word": "beach",
+    "ipa": "biːtʃ",
+    "th": "บีช",
+    "meaning": "ชายหาด",
+    "issues": [
+      "Short Thai (บีช) for word length 5"
+    ]
+  },
+  {
+    "word": "blade",
+    "ipa": "ˈbɫeɪd",
+    "th": "เบลด",
+    "meaning": "ใบมีด",
+    "issues": [
+      "Short Thai (เบลด) for word length 5"
+    ]
+  },
+  {
+    "word": "blame",
+    "ipa": "bleɪm",
+    "th": "เบลม",
+    "meaning": "ตำหนิ",
+    "issues": [
+      "Short Thai (เบลม) for word length 5"
+    ]
+  },
+  {
+    "word": "bleak",
+    "ipa": "bliːk",
+    "th": "บลีค",
+    "meaning": "มืดมน, สิ้นหวัง, เยือกเย็น",
+    "issues": [
+      "Short Thai (บลีค) for word length 5"
+    ]
+  },
+  {
+    "word": "bleed",
+    "ipa": "ˈbɫid",
+    "th": "บลีด",
+    "meaning": "มีเลือดออก",
+    "issues": [
+      "Short Thai (บลีด) for word length 5"
+    ]
+  },
+  {
+    "word": "bless",
+    "ipa": "ˈbɫɛs",
+    "th": "เบลส",
+    "meaning": "อวยพร",
+    "issues": [
+      "Short Thai (เบลส) for word length 5"
+    ]
+  },
+  {
+    "word": "blood",
+    "ipa": "blʌd",
+    "th": "บลัด",
+    "meaning": "เลือด",
+    "issues": [
+      "Short Thai (บลัด) for word length 5"
+    ]
+  },
+  {
+    "word": "brain",
+    "ipa": "breɪn",
+    "th": "เบรน",
+    "meaning": "สมอง, สติปัญญา",
+    "issues": [
+      "Short Thai (เบรน) for word length 5"
+    ]
+  },
+  {
+    "word": "bread",
+    "ipa": "bred",
+    "th": "เบรด",
+    "meaning": "ขนมปัง",
+    "issues": [
+      "Short Thai (เบรด) for word length 5"
+    ]
+  },
+  {
+    "word": "break",
+    "ipa": "breɪk",
+    "th": "เบรก",
+    "meaning": "แตก, หัก, พักผ่อน, การหยุดพัก",
+    "issues": [
+      "Short Thai (เบรก) for word length 5"
+    ]
+  },
+  {
+    "word": "breed",
+    "ipa": "ˈbɹid",
+    "th": "บรีด",
+    "meaning": "ผสมพันธุ์",
+    "issues": [
+      "Short Thai (บรีด) for word length 5"
+    ]
+  },
+  {
+    "word": "brick",
+    "ipa": "ˈbɹɪk",
+    "th": "บริก",
+    "meaning": "อิฐ",
+    "issues": [
+      "Short Thai (บริก) for word length 5"
+    ]
+  },
+  {
+    "word": "brief",
+    "ipa": "briːf",
+    "th": "บรีฟ",
+    "meaning": "รวบรัด",
+    "issues": [
+      "Short Thai (บรีฟ) for word length 5"
+    ]
+  },
+  {
+    "word": "bring",
+    "ipa": "brɪŋ",
+    "th": "บริง",
+    "meaning": "นำมา",
+    "issues": [
+      "Short Thai (บริง) for word length 5"
+    ]
+  },
+  {
+    "word": "broad",
+    "ipa": "brɔːd",
+    "th": "บรอด",
+    "meaning": "กว้างๆ",
+    "issues": [
+      "Short Thai (บรอด) for word length 5"
+    ]
+  },
+  {
+    "word": "brush",
+    "ipa": "brʌʃ",
+    "th": "บรัช",
+    "meaning": "แปรง",
+    "issues": [
+      "Short Thai (บรัช) for word length 5"
+    ]
+  },
+  {
+    "word": "catch",
+    "ipa": "kæʧ",
+    "th": "แคช",
+    "meaning": "จับ",
+    "issues": [
+      "Short Thai (แคช) for word length 5"
+    ]
+  },
+  {
+    "word": "cause",
+    "ipa": "kɔz",
+    "th": "คอส",
+    "meaning": "สาเหตุ",
+    "issues": [
+      "Short Thai (คอส) for word length 5"
+    ]
+  },
+  {
+    "word": "cease",
+    "ipa": "ˈsis",
+    "th": "ซีส",
+    "meaning": "หยุด",
+    "issues": [
+      "Short Thai (ซีส) for word length 5"
+    ]
+  },
+  {
+    "word": "chain",
+    "ipa": "ʧeɪn",
+    "th": "เชน",
+    "meaning": "โซ่",
+    "issues": [
+      "Short Thai (เชน) for word length 5"
+    ]
+  },
+  {
+    "word": "chair",
+    "ipa": "ˈtʃɛɹ",
+    "th": "เช",
+    "meaning": "เก้าอี้",
+    "issues": [
+      "Short Thai (เช) for word length 5"
+    ]
+  },
+  {
+    "word": "chase",
+    "ipa": "tʃeɪs",
+    "th": "เชส",
+    "meaning": "ไล่ล่า, วิ่งกวด, ติดตาม",
+    "issues": [
+      "Short Thai (เชส) for word length 5"
+    ]
+  },
+  {
+    "word": "cheap",
+    "ipa": "ˈtʃip",
+    "th": "ชีพ",
+    "meaning": "ราคาถูก",
+    "issues": [
+      "Short Thai (ชีพ) for word length 5"
+    ]
+  },
+  {
+    "word": "cheat",
+    "ipa": "ʧit",
+    "th": "ชีต",
+    "meaning": "โกง",
+    "issues": [
+      "Short Thai (ชีต) for word length 5"
+    ]
+  },
+  {
+    "word": "check",
+    "ipa": "ˈtʃɛk",
+    "th": "เชก",
+    "meaning": "ตรวจสอบ",
+    "issues": [
+      "Short Thai (เชก) for word length 5"
+    ]
+  },
+  {
+    "word": "cheek",
+    "ipa": "ˈtʃik",
+    "th": "ชีก",
+    "meaning": "แก้ม",
+    "issues": [
+      "Short Thai (ชีก) for word length 5"
+    ]
+  },
+  {
+    "word": "cheer",
+    "ipa": "ˈtʃɪɹ",
+    "th": "ชิ",
+    "meaning": "เชียร์",
+    "issues": [
+      "Short Thai (ชิ) for word length 5"
+    ]
+  },
+  {
+    "word": "chief",
+    "ipa": "ʧif",
+    "th": "ชีฟ",
+    "meaning": "หัวหน้า",
+    "issues": [
+      "Short Thai (ชีฟ) for word length 5"
+    ]
+  },
+  {
+    "word": "claim",
+    "ipa": "kleɪm",
+    "th": "เคลม",
+    "meaning": "เรียกร้อง",
+    "issues": [
+      "Short Thai (เคลม) for word length 5"
+    ]
+  },
+  {
+    "word": "clash",
+    "ipa": "ˈkɫæʃ",
+    "th": "แคลช",
+    "meaning": "การปะทะกัน",
+    "issues": [
+      "Short Thai (แคลช) for word length 5"
+    ]
+  },
+  {
+    "word": "clean",
+    "ipa": "ˈkɫin",
+    "th": "คลีน",
+    "meaning": "ทำความสะอาด",
+    "issues": [
+      "Short Thai (คลีน) for word length 5"
+    ]
+  },
+  {
+    "word": "clear",
+    "ipa": "klɪr",
+    "th": "คลิ",
+    "meaning": "ชัดเจน",
+    "issues": [
+      "Short Thai (คลิ) for word length 5"
+    ]
+  },
+  {
+    "word": "click",
+    "ipa": "klɪk",
+    "th": "คิลก",
+    "meaning": "คลิก",
+    "issues": [
+      "Short Thai (คิลก) for word length 5"
+    ]
+  },
+  {
+    "word": "cliff",
+    "ipa": "ˈkɫɪf",
+    "th": "คลิฟ",
+    "meaning": "หน้าผา",
+    "issues": [
+      "Short Thai (คลิฟ) for word length 5"
+    ]
+  },
+  {
+    "word": "cling",
+    "ipa": "ˈkɫɪŋ",
+    "th": "คิลง",
+    "meaning": "เกาะติด",
+    "issues": [
+      "Short Thai (คิลง) for word length 5"
+    ]
+  },
+  {
+    "word": "close",
+    "ipa": "ˈkɫoʊs",
+    "th": "โคลส",
+    "meaning": "ปิด",
+    "issues": [
+      "Short Thai (โคลส) for word length 5"
+    ]
+  },
+  {
+    "word": "cloth",
+    "ipa": "klɔθ",
+    "th": "คลอธ",
+    "meaning": "ผ้า",
+    "issues": [
+      "Short Thai (คลอธ) for word length 5"
+    ]
+  },
+  {
+    "word": "coach",
+    "ipa": "koʊʧ",
+    "th": "โคช",
+    "meaning": "โค้ช",
+    "issues": [
+      "Short Thai (โคช) for word length 5"
+    ]
+  },
+  {
+    "word": "coarse",
+    "ipa": "ˈkɔɹs",
+    "th": "คอ",
+    "meaning": "หยาบ",
+    "issues": [
+      "Short Thai (คอ) for word length 6"
+    ]
+  },
+  {
+    "word": "collision",
+    "ipa": "kəˈɫɪʒən",
+    "th": "คะ-ลิ-จัน",
+    "meaning": "การชนกัน",
+    "issues": [
+      "Missing -ชัน ending"
+    ]
+  },
+  {
+    "word": "conclusion",
+    "ipa": "kənˈkluʒən",
+    "th": "คัน-คลู-จัน",
+    "meaning": "บทสรุป",
+    "issues": [
+      "Missing -ชัน ending"
+    ]
+  },
+  {
+    "word": "confusion",
+    "ipa": "kənˈfjuʒən",
+    "th": "คัน-ฟยู-จัน",
+    "meaning": "ความสับสน",
+    "issues": [
+      "Missing -ชัน ending"
+    ]
+  },
+  {
+    "word": "conversion",
+    "ipa": "kənˈvɝʒən",
+    "th": "คัน-เวอร์-จัน",
+    "meaning": "การแปลง",
+    "issues": [
+      "Missing -ชัน ending"
+    ]
+  },
+  {
+    "word": "corps",
+    "ipa": "ˈkɔɹ",
+    "th": "คอ",
+    "meaning": "คณะ",
+    "issues": [
+      "Short Thai (คอ) for word length 5"
+    ]
+  },
+  {
+    "word": "could",
+    "ipa": "kʊd",
+    "th": "คูด",
+    "meaning": "สามารถ",
+    "issues": [
+      "Short Thai (คูด) for word length 5"
+    ]
+  },
+  {
+    "word": "crash",
+    "ipa": "kræʃ",
+    "th": "แอช",
+    "meaning": "ชน",
+    "issues": [
+      "Short Thai (แอช) for word length 5"
+    ]
+  },
+  {
+    "word": "crawl",
+    "ipa": "krɔːl",
+    "th": "ครอล",
+    "meaning": "คลาน, เลื้อย",
+    "issues": [
+      "Short Thai (ครอล) for word length 5"
+    ]
+  },
+  {
+    "word": "cream",
+    "ipa": "ˈkɹim",
+    "th": "ครีม",
+    "meaning": "ครีม",
+    "issues": [
+      "Short Thai (ครีม) for word length 5"
+    ]
+  },
+  {
+    "word": "creed",
+    "ipa": "kriːd",
+    "th": "ครีด",
+    "meaning": "ลัทธิความเชื่อ, หลักคำสอน",
+    "issues": [
+      "Short Thai (ครีด) for word length 5"
+    ]
+  },
+  {
+    "word": "creep",
+    "ipa": "ˈkɹip",
+    "th": "ครีพ",
+    "meaning": "คืบคลาน",
+    "issues": [
+      "Short Thai (ครีพ) for word length 5"
+    ]
+  },
+  {
+    "word": "cross",
+    "ipa": "krɒs, krɔːs",
+    "th": "ครอส",
+    "meaning": "ข้าม, กากบาท, ไม้กางเขน",
+    "issues": [
+      "Short Thai (ครอส) for word length 5"
+    ]
+  },
+  {
+    "word": "crude",
+    "ipa": "kruːd",
+    "th": "ครูด",
+    "meaning": "ดิบ, หยาบ, น้ำมันดิบ",
+    "issues": [
+      "Short Thai (ครูด) for word length 5"
+    ]
+  },
+  {
+    "word": "crush",
+    "ipa": "ˈkɹəʃ",
+    "th": "ครัช",
+    "meaning": "ปิ๊ง",
+    "issues": [
+      "Short Thai (ครัช) for word length 5"
+    ]
+  },
+  {
+    "word": "curve",
+    "ipa": "kərv",
+    "th": "คะ",
+    "meaning": "เส้นโค้ง",
+    "issues": [
+      "Short Thai (คะ) for word length 5"
+    ]
+  },
+  {
+    "word": "death",
+    "ipa": "deθ",
+    "th": "เดธ",
+    "meaning": "ความตาย, การเสียชีวิต",
+    "issues": [
+      "Short Thai (เดธ) for word length 5"
+    ]
+  },
+  {
+    "word": "dense",
+    "ipa": "ˈdɛns",
+    "th": "ดี-น",
+    "meaning": "หนาแน่น",
+    "issues": [
+      "Short Thai (ดี-น) for word length 5"
+    ]
+  },
+  {
+    "word": "depth",
+    "ipa": "dɛpθ",
+    "th": "ดี-พ",
+    "meaning": "ความลึก",
+    "issues": [
+      "Short Thai (ดี-พ) for word length 5"
+    ]
+  },
+  {
+    "word": "drain",
+    "ipa": "dreɪn",
+    "th": "เดรน",
+    "meaning": "ระบายน้ำ, ท่อระบายน้ำ",
+    "issues": [
+      "Short Thai (เดรน) for word length 5"
+    ]
+  },
+  {
+    "word": "dream",
+    "ipa": "driːm",
+    "th": "ดรีม",
+    "meaning": "ฝัน, ความฝัน",
+    "issues": [
+      "Short Thai (ดรีม) for word length 5"
+    ]
+  },
+  {
+    "word": "dress",
+    "ipa": "dres",
+    "th": "เดรส",
+    "meaning": "ชุดกระโปรง, แต่งกาย",
+    "issues": [
+      "Short Thai (เดรส) for word length 5"
+    ]
+  },
+  {
+    "word": "drift",
+    "ipa": "ˈdɹɪft",
+    "th": "ดิรฟ",
+    "meaning": "ดริฟท์",
+    "issues": [
+      "Short Thai (ดิรฟ) for word length 5"
+    ]
+  },
+  {
+    "word": "faith",
+    "ipa": "feɪθ",
+    "th": "เฟธ",
+    "meaning": "ศรัทธา",
+    "issues": [
+      "Short Thai (เฟธ) for word length 5"
+    ]
+  },
+  {
+    "word": "fifth",
+    "ipa": "fɪθ ˈnəmbər",
+    "th": "ฟิฟ",
+    "meaning": "หมายเลขห้า",
+    "issues": [
+      "Short Thai (ฟิฟ) for word length 5"
+    ]
+  },
+  {
+    "word": "fight",
+    "ipa": "faɪt",
+    "th": "ไฟท์",
+    "meaning": "ต่อสู้, ชกมวย",
+    "issues": [
+      "Short Thai (ไฟท์) for word length 5"
+    ]
+  },
+  {
+    "word": "first",
+    "ipa": "fərst",
+    "th": "ฟะ",
+    "meaning": "อันดับแรก",
+    "issues": [
+      "Short Thai (ฟะ) for word length 5"
+    ]
+  },
+  {
+    "word": "flame",
+    "ipa": "fleɪm",
+    "th": "เฟลม",
+    "meaning": "เปลวไฟ",
+    "issues": [
+      "Short Thai (เฟลม) for word length 5"
+    ]
+  },
+  {
+    "word": "flash",
+    "ipa": "flæʃ",
+    "th": "แฟลช",
+    "meaning": "แฟลช",
+    "issues": [
+      "Short Thai (แฟลช) for word length 5"
+    ]
+  },
+  {
+    "word": "fleet",
+    "ipa": "ˈfɫit",
+    "th": "ฟลที",
+    "meaning": "กองทัพเรือ",
+    "issues": [
+      "Short Thai (ฟลที) for word length 5"
+    ]
+  },
+  {
+    "word": "flesh",
+    "ipa": "ˈfɫɛʃ",
+    "th": "เฟลช",
+    "meaning": "เนื้อ",
+    "issues": [
+      "Short Thai (เฟลช) for word length 5"
+    ]
+  },
+  {
+    "word": "float",
+    "ipa": "floʊt",
+    "th": "โฟลท",
+    "meaning": "ลอย",
+    "issues": [
+      "Short Thai (โฟลท) for word length 5"
+    ]
+  },
+  {
+    "word": "flood",
+    "ipa": "fləd",
+    "th": "ฟลัด",
+    "meaning": "น้ำท่วม",
+    "issues": [
+      "Short Thai (ฟลัด) for word length 5"
+    ]
+  },
+  {
+    "word": "floor",
+    "ipa": "flɔr",
+    "th": "ฟลอ",
+    "meaning": "พื้น",
+    "issues": [
+      "Short Thai (ฟลอ) for word length 5"
+    ]
+  },
+  {
+    "word": "frame",
+    "ipa": "freɪm",
+    "th": "เฟรม",
+    "meaning": "กรอบ",
+    "issues": [
+      "Short Thai (เฟรม) for word length 5"
+    ]
+  },
+  {
+    "word": "fraud",
+    "ipa": "frɔːd",
+    "th": "ฟรอด",
+    "meaning": "การฉ้อโกง, ผู้หลอกลวง",
+    "issues": [
+      "Short Thai (ฟรอด) for word length 5"
+    ]
+  },
+  {
+    "word": "fresh",
+    "ipa": "freʃ",
+    "th": "เฟรช",
+    "meaning": "สด, สดชื่น, ใหม่",
+    "issues": [
+      "Short Thai (เฟรช) for word length 5"
+    ]
+  },
+  {
+    "word": "fridge",
+    "ipa": "frɪʤ",
+    "th": "ฟิรด",
+    "meaning": "ตู้เย็น",
+    "issues": [
+      "Short Thai (ฟิรด) for word length 6"
+    ]
+  },
+  {
+    "word": "fruit",
+    "ipa": "fruːt",
+    "th": "ฟรูท",
+    "meaning": "ผลไม้",
+    "issues": [
+      "Short Thai (ฟรูท) for word length 5"
+    ]
+  },
+  {
+    "word": "fusion",
+    "ipa": "ˈfjuʒən",
+    "th": "ฟยู-จัน",
+    "meaning": "ฟิวชั่น",
+    "issues": [
+      "Missing -ชัน ending"
+    ]
+  },
+  {
+    "word": "gauge",
+    "ipa": "ˈɡeɪdʒ",
+    "th": "เกจ",
+    "meaning": "วัด",
+    "issues": [
+      "Short Thai (เกจ) for word length 5"
+    ]
+  },
+  {
+    "word": "glass",
+    "ipa": "ˈɡɫæs",
+    "th": "แกลส",
+    "meaning": "กระจก",
+    "issues": [
+      "Short Thai (แกลส) for word length 5"
+    ]
+  },
+  {
+    "word": "globe",
+    "ipa": "ˈɡɫoʊb",
+    "th": "โกลบ",
+    "meaning": "ลูกโลก",
+    "issues": [
+      "Short Thai (โกลบ) for word length 5"
+    ]
+  },
+  {
+    "word": "grace",
+    "ipa": "ɡreɪs",
+    "th": "เกรส",
+    "meaning": "พระคุณ",
+    "issues": [
+      "Short Thai (เกรส) for word length 5"
+    ]
+  },
+  {
+    "word": "grade",
+    "ipa": "ɡreɪd",
+    "th": "เกรด",
+    "meaning": "ระดับ, ชั้นเรียน, ผลการเรียน",
+    "issues": [
+      "Short Thai (เกรด) for word length 5"
+    ]
+  },
+  {
+    "word": "grain",
+    "ipa": "ɡreɪn",
+    "th": "เกรน",
+    "meaning": "เมล็ดข้าว, ธัญพืช",
+    "issues": [
+      "Short Thai (เกรน) for word length 5"
+    ]
+  },
+  {
+    "word": "grave",
+    "ipa": "ɡreɪv",
+    "th": "เกรฟ",
+    "meaning": "หลุมฝังศพ",
+    "issues": [
+      "Short Thai (เกรฟ) for word length 5"
+    ]
+  },
+  {
+    "word": "great",
+    "ipa": "ɡreɪt",
+    "th": "เกรท",
+    "meaning": "ยิ่งใหญ่, ดีเยี่ยม",
+    "issues": [
+      "Short Thai (เกรท) for word length 5"
+    ]
+  },
+  {
+    "word": "green",
+    "ipa": "ɡriːn",
+    "th": "กรีน",
+    "meaning": "สีเขียว",
+    "issues": [
+      "Short Thai (กรีน) for word length 5"
+    ]
+  },
+  {
+    "word": "greet",
+    "ipa": "ɡriːt",
+    "th": "กรีท",
+    "meaning": "ทักทาย, ต้อนรับ",
+    "issues": [
+      "Short Thai (กรีท) for word length 5"
+    ]
+  },
+  {
+    "word": "grief",
+    "ipa": "ɡriːf",
+    "th": "กรีฟ",
+    "meaning": "ความโศกเศร้า, ความทุกข์ระทม",
+    "issues": [
+      "Short Thai (กรีฟ) for word length 5"
+    ]
+  },
+  {
+    "word": "growth",
+    "ipa": "groʊθ",
+    "th": "โอธ",
+    "meaning": "การเจริญเติบโต",
+    "issues": [
+      "Short Thai (โอธ) for word length 6"
+    ]
+  },
+  {
+    "word": "guess",
+    "ipa": "ˈɡɛs",
+    "th": "เกส",
+    "meaning": "เดา",
+    "issues": [
+      "Short Thai (เกส) for word length 5"
+    ]
+  },
+  {
+    "word": "guide",
+    "ipa": "gaɪd",
+    "th": "ไกด์",
+    "meaning": "แนะนำ",
+    "issues": [
+      "Short Thai (ไกด์) for word length 5"
+    ]
+  },
+  {
+    "word": "heart",
+    "ipa": "hɑrt",
+    "th": "ฮา",
+    "meaning": "หัวใจ",
+    "issues": [
+      "Short Thai (ฮา) for word length 5"
+    ]
+  },
+  {
+    "word": "horrible",
+    "ipa": "ˈhɔrəbəl",
+    "th": "ฮอร์์-บิล",
+    "meaning": "น่ากลัว",
+    "issues": [
+      "Missing -เบิล ending"
+    ]
+  },
+  {
+    "word": "humble",
+    "ipa": "ˈhəmbəɫ",
+    "th": "ฮัม",
+    "meaning": "ถ่อมตัว",
+    "issues": [
+      "Short Thai (ฮัม) for word length 6"
+    ]
+  },
+  {
+    "word": "hungry",
+    "ipa": "ˈhəŋɡɹi",
+    "th": "ฮัง",
+    "meaning": "หิว",
+    "issues": [
+      "Short Thai (ฮัง) for word length 6"
+    ]
+  },
+  {
+    "word": "impossible",
+    "ipa": "ˌɪmˈpɑsəbəl",
+    "th": "อิม-พอส์-บิล",
+    "meaning": "เป็นไปไม่ได้",
+    "issues": [
+      "Missing -เบิล ending"
+    ]
+  },
+  {
+    "word": "inaccessible",
+    "ipa": "ˌɪnəkˈsɛsəbəɫ",
+    "th": "ไอ-แนก-เค็ส์-บิล",
+    "meaning": "ไม่สามารถเข้าถึงได้",
+    "issues": [
+      "Missing -เบิล ending"
+    ]
+  },
+  {
+    "word": "incompatible",
+    "ipa": "ˌɪnkəmˈpætəbəɫ",
+    "th": "อิน-ค็อม-แพท-บิล",
+    "meaning": "เข้ากันไม่ได้",
+    "issues": [
+      "Missing -เบิล ending"
+    ]
+  },
+  {
+    "word": "invincible",
+    "ipa": "ˌɪnˈvɪnsəbəɫ",
+    "th": "อิน-วิน-บิล",
+    "meaning": "อยู่ยงคงกระพัน",
+    "issues": [
+      "Missing -เบิล ending"
+    ]
+  },
+  {
+    "word": "irresistible",
+    "ipa": "ˌɪɹɪˈzɪstəbəɫ",
+    "th": "อิอร์-เรอะ-ซิสต์-บิล",
+    "meaning": "ไม่อาจต้านทานได้",
+    "issues": [
+      "Missing -เบิล ending"
+    ]
+  },
+  {
+    "word": "irresponsible",
+    "ipa": "ˌɪɹəˈspɑnsəbəɫ",
+    "th": "อิอร์-เร็ส์-พ็อนส์-บิล",
+    "meaning": "ขาดความรับผิดชอบ",
+    "issues": [
+      "Missing -เบิล ending"
+    ]
+  },
+  {
+    "word": "irreversible",
+    "ipa": "ˌɪɹɪˈvɝsəbəɫ",
+    "th": "อิอร์-เรอะ-เว็ร์ส-บิล",
+    "meaning": "กลับไม่ได้",
+    "issues": [
+      "Missing -เบิล ending"
+    ]
+  },
+  {
+    "word": "judge",
+    "ipa": "ʤəʤ",
+    "th": "จัจ",
+    "meaning": "ผู้พิพากษา",
+    "issues": [
+      "Short Thai (จัจ) for word length 5"
+    ]
+  },
+  {
+    "word": "juice",
+    "ipa": "ˈdʒus",
+    "th": "จูส",
+    "meaning": "น้ำผลไม้",
+    "issues": [
+      "Short Thai (จูส) for word length 5"
+    ]
+  },
+  {
+    "word": "kingdom",
+    "ipa": "ˈkɪŋdəm",
+    "th": "คิง",
+    "meaning": "อาณาจักร",
+    "issues": [
+      "Short Thai (คิง) for word length 7"
+    ]
+  },
+  {
+    "word": "kitchen",
+    "ipa": "ˈkɪtʃən",
+    "th": "คิท",
+    "meaning": "ครัว",
+    "issues": [
+      "Short Thai (คิท) for word length 7"
+    ]
+  },
+  {
+    "word": "knack",
+    "ipa": "ˈnæk",
+    "th": "แนก",
+    "meaning": "ความสามารถพิเศษ",
+    "issues": [
+      "Short Thai (แนก) for word length 5"
+    ]
+  },
+  {
+    "word": "knife",
+    "ipa": "naɪf",
+    "th": "ไนฟ์",
+    "meaning": "มีด",
+    "issues": [
+      "Short Thai (ไนฟ์) for word length 5"
+    ]
+  },
+  {
+    "word": "knock",
+    "ipa": "nɑk",
+    "th": "น็อก",
+    "meaning": "เคาะ",
+    "issues": [
+      "Short Thai (น็อก) for word length 5"
+    ]
+  },
+  {
+    "word": "large",
+    "ipa": "ˈɫɑɹdʒ",
+    "th": "ลา",
+    "meaning": "ใหญ่",
+    "issues": [
+      "Short Thai (ลา) for word length 5"
+    ]
+  },
+  {
+    "word": "lease",
+    "ipa": "ˈɫis",
+    "th": "ลีส์",
+    "meaning": "สัญญาเช่า",
+    "issues": [
+      "Short Thai (ลีส์) for word length 5"
+    ]
+  },
+  {
+    "word": "loose",
+    "ipa": "lus",
+    "th": "ลูส",
+    "meaning": "หลวม",
+    "issues": [
+      "Short Thai (ลูส) for word length 5"
+    ]
+  },
+  {
+    "word": "loyal",
+    "ipa": "ˈɫɔɪəɫ",
+    "th": "ลอย",
+    "meaning": "ภักดี",
+    "issues": [
+      "Short Thai (ลอย) for word length 5"
+    ]
+  },
+  {
+    "word": "lunch",
+    "ipa": "ˈɫəntʃ",
+    "th": "ลัน",
+    "meaning": "อาหารกลางวัน",
+    "issues": [
+      "Short Thai (ลัน) for word length 5"
+    ]
+  },
+  {
+    "word": "march",
+    "ipa": "ˈmɑɹtʃ",
+    "th": "มา",
+    "meaning": "มีนาคม",
+    "issues": [
+      "Short Thai (มา) for word length 5"
+    ]
+  },
+  {
+    "word": "match",
+    "ipa": "ˈmætʃ",
+    "th": "แมช",
+    "meaning": "จับคู่",
+    "issues": [
+      "Short Thai (แมช) for word length 5"
+    ]
+  },
+  {
+    "word": "minute",
+    "ipa": "ˈmɪnət",
+    "th": "ลูท",
+    "meaning": "นาที",
+    "issues": [
+      "Short Thai (ลูท) for word length 6"
+    ]
+  },
+  {
+    "word": "mischief",
+    "ipa": "ˈmɪstʃəf",
+    "th": "มิส์",
+    "meaning": "ความชั่วร้าย",
+    "issues": [
+      "Short Thai (มิส์) for word length 8"
+    ]
+  },
+  {
+    "word": "mosque",
+    "ipa": "ˈmɑsk",
+    "th": "มอส์",
+    "meaning": "มัสยิด",
+    "issues": [
+      "Short Thai (มอส์) for word length 6"
+    ]
+  },
+  {
+    "word": "mourn",
+    "ipa": "ˈmɔɹn",
+    "th": "มอ",
+    "meaning": "ไว้ทุกข์",
+    "issues": [
+      "Short Thai (มอ) for word length 5"
+    ]
+  },
+  {
+    "word": "mushroom",
+    "ipa": "ˈməʃɹum",
+    "th": "มัช",
+    "meaning": "เห็ด",
+    "issues": [
+      "Short Thai (มัช) for word length 8"
+    ]
+  },
+  {
+    "word": "nerve",
+    "ipa": "nərv",
+    "th": "นะ",
+    "meaning": "เส้นประสาท",
+    "issues": [
+      "Short Thai (นะ) for word length 5"
+    ]
+  },
+  {
+    "word": "niche",
+    "ipa": "ˈnɪtʃ",
+    "th": "นิก",
+    "meaning": "เฉพาะกลุ่ม",
+    "issues": [
+      "Short Thai (นิก) for word length 5"
+    ]
+  },
+  {
+    "word": "noble",
+    "ipa": "ˈnoʊbəɫ",
+    "th": "น็อบ",
+    "meaning": "มีเกียรติ",
+    "issues": [
+      "Short Thai (น็อบ) for word length 5"
+    ]
+  },
+  {
+    "word": "noise",
+    "ipa": "nɔɪz",
+    "th": "นอย",
+    "meaning": "เสียงรบกวน",
+    "issues": [
+      "Short Thai (นอย) for word length 5"
+    ]
+  },
+  {
+    "word": "nurse",
+    "ipa": "ˈnɝs",
+    "th": "นัร์",
+    "meaning": "พยาบาล",
+    "issues": [
+      "Short Thai (นัร์) for word length 5"
+    ]
+  },
+  {
+    "word": "nutrient",
+    "ipa": "ˈnutɹiənt",
+    "th": "นัท-อีรนท์",
+    "meaning": "สารอาหาร",
+    "issues": [
+      "Corrupted string artifact"
+    ]
+  },
+  {
+    "word": "ostensible",
+    "ipa": "ɑˈstɛnsəbəɫ",
+    "th": "อ็ออส์-เท็นส์-บิล",
+    "meaning": "เห็นได้ชัด",
+    "issues": [
+      "Missing -เบิล ending"
+    ]
+  },
+  {
+    "word": "ought",
+    "ipa": "ˈɔt",
+    "th": "อออท",
+    "meaning": "ควร",
+    "issues": [
+      "Short Thai (อออท) for word length 5"
+    ]
+  },
+  {
+    "word": "patch",
+    "ipa": "ˈpætʃ",
+    "th": "แพช",
+    "meaning": "แพทช์",
+    "issues": [
+      "Short Thai (แพช) for word length 5"
+    ]
+  },
+  {
+    "word": "pause",
+    "ipa": "ˈpɔz",
+    "th": "พอส",
+    "meaning": "หยุดชั่วคราว",
+    "issues": [
+      "Short Thai (พอส) for word length 5"
+    ]
+  },
+  {
+    "word": "peace",
+    "ipa": "piːs",
+    "th": "พีซ",
+    "meaning": "ความสงบ, สันติภาพ",
+    "issues": [
+      "Short Thai (พีซ) for word length 5"
+    ]
+  },
+  {
+    "word": "persuasion",
+    "ipa": "pɝˈsweɪʒən",
+    "th": "เพิร์ส์-เสวย์-จัน",
+    "meaning": "การโน้มน้าวใจ",
+    "issues": [
+      "Missing -ชัน ending"
+    ]
+  },
+  {
+    "word": "phase",
+    "ipa": "feɪz",
+    "th": "เฟส",
+    "meaning": "เฟส",
+    "issues": [
+      "Short Thai (เฟส) for word length 5"
+    ]
+  },
+  {
+    "word": "phone",
+    "ipa": "ˈfoʊn",
+    "th": "โฟน",
+    "meaning": "โทรศัพท์",
+    "issues": [
+      "Short Thai (โฟน) for word length 5"
+    ]
+  },
+  {
+    "word": "piece",
+    "ipa": "ˈpis",
+    "th": "พีส์",
+    "meaning": "ชิ้นส่วน",
+    "issues": [
+      "Short Thai (พีส์) for word length 5"
+    ]
+  },
+  {
+    "word": "pitch",
+    "ipa": "pɪʧ",
+    "th": "พิท",
+    "meaning": "ขว้าง",
+    "issues": [
+      "Short Thai (พิท) for word length 5"
+    ]
+  },
+  {
+    "word": "place",
+    "ipa": "pleɪs",
+    "th": "เพลส",
+    "meaning": "สถานที่",
+    "issues": [
+      "Short Thai (เพลส) for word length 5"
+    ]
+  },
+  {
+    "word": "plain",
+    "ipa": "pleɪn",
+    "th": "เพลน",
+    "meaning": "ธรรมดา",
+    "issues": [
+      "Short Thai (เพลน) for word length 5"
+    ]
+  },
+  {
+    "word": "plane",
+    "ipa": "pleɪn",
+    "th": "เพลน",
+    "meaning": "เครื่องบิน",
+    "issues": [
+      "Short Thai (เพลน) for word length 5"
+    ]
+  },
+  {
+    "word": "plate",
+    "ipa": "pleɪt",
+    "th": "เพลท",
+    "meaning": "จาน",
+    "issues": [
+      "Short Thai (เพลท) for word length 5"
+    ]
+  },
+  {
+    "word": "plead",
+    "ipa": "ˈpɫid",
+    "th": "พลีด",
+    "meaning": "ขอร้อง",
+    "issues": [
+      "Short Thai (พลีด) for word length 5"
+    ]
+  },
+  {
+    "word": "plunge",
+    "ipa": "ˈpɫəndʒ",
+    "th": "พัลน",
+    "meaning": "กระโดด",
+    "issues": [
+      "Short Thai (พัลน) for word length 6"
+    ]
+  },
+  {
+    "word": "possible",
+    "ipa": "ˈpɑsəbəl",
+    "th": "พอส์-บิล",
+    "meaning": "เป็นไปได้",
+    "issues": [
+      "Missing -เบิล ending"
+    ]
+  },
+  {
+    "word": "prayer",
+    "ipa": "prɛr",
+    "th": "เอ",
+    "meaning": "คำอธิษฐาน",
+    "issues": [
+      "Short Thai (เอ) for word length 6"
+    ]
+  },
+  {
+    "word": "press",
+    "ipa": "pres",
+    "th": "เพรส",
+    "meaning": "กด, หนังสือพิมพ์, สื่อมวลชน",
+    "issues": [
+      "Short Thai (เพรส) for word length 5"
+    ]
+  },
+  {
+    "word": "prince",
+    "ipa": "prɪns",
+    "th": "พิรน",
+    "meaning": "เจ้าชาย",
+    "issues": [
+      "Short Thai (พิรน) for word length 6"
+    ]
+  },
+  {
+    "word": "probe",
+    "ipa": "ˈpɹoʊb",
+    "th": "โอบ",
+    "meaning": "สอบสวน",
+    "issues": [
+      "Short Thai (โอบ) for word length 5"
+    ]
+  },
+  {
+    "word": "prone",
+    "ipa": "ˈpɹoʊn",
+    "th": "โอน",
+    "meaning": "คว่ำ",
+    "issues": [
+      "Short Thai (โอน) for word length 5"
+    ]
+  },
+  {
+    "word": "proof",
+    "ipa": "pruːf",
+    "th": "พรูฟ",
+    "meaning": "หลักฐาน, ข้อพิสูจน์",
+    "issues": [
+      "Short Thai (พรูฟ) for word length 5"
+    ]
+  },
+  {
+    "word": "provision",
+    "ipa": "pɹəˈvɪʒən",
+    "th": "พระ-วิ-จัน",
+    "meaning": "บทบัญญัติ",
+    "issues": [
+      "Missing -ชัน ending"
+    ]
+  },
+  {
+    "word": "pulse",
+    "ipa": "ˈpəɫs",
+    "th": "พัล",
+    "meaning": "ชีพจร",
+    "issues": [
+      "Short Thai (พัล) for word length 5"
+    ]
+  },
+  {
+    "word": "punch",
+    "ipa": "ˈpəntʃ",
+    "th": "พัน",
+    "meaning": "ต่อย",
+    "issues": [
+      "Short Thai (พัน) for word length 5"
+    ]
+  },
+  {
+    "word": "punctual",
+    "ipa": "ˈpəŋktʃuəɫ",
+    "th": "พัน",
+    "meaning": "ตรงต่อเวลา",
+    "issues": [
+      "Short Thai (พัน) for word length 8"
+    ]
+  },
+  {
+    "word": "quash",
+    "ipa": "ˈkwɔʃ",
+    "th": "ควอช",
+    "meaning": "ยุติ",
+    "issues": [
+      "Short Thai (ควอช) for word length 5"
+    ]
+  },
+  {
+    "word": "queen",
+    "ipa": "kwiːn",
+    "th": "ควีน",
+    "meaning": "ราชินี, พระราชินี",
+    "issues": [
+      "Short Thai (ควีน) for word length 5"
+    ]
+  },
+  {
+    "word": "queer",
+    "ipa": "ˈkwɪɹ",
+    "th": "ควิ",
+    "meaning": "แปลก",
+    "issues": [
+      "Short Thai (ควิ) for word length 5"
+    ]
+  },
+  {
+    "word": "quell",
+    "ipa": "ˈkwɛɫ",
+    "th": "เควล",
+    "meaning": "ระงับ",
+    "issues": [
+      "Short Thai (เควล) for word length 5"
+    ]
+  },
+  {
+    "word": "queue",
+    "ipa": "kju",
+    "th": "คิว",
+    "meaning": "คิว",
+    "issues": [
+      "Short Thai (คิว) for word length 5"
+    ]
+  },
+  {
+    "word": "quick",
+    "ipa": "kwɪk",
+    "th": "ควิก",
+    "meaning": "รวดเร็ว, ว่องไว",
+    "issues": [
+      "Short Thai (ควิก) for word length 5"
+    ]
+  },
+  {
+    "word": "quiet",
+    "ipa": "kwaɪət",
+    "th": "ควที",
+    "meaning": "เงียบ",
+    "issues": [
+      "Short Thai (ควที) for word length 5"
+    ]
+  },
+  {
+    "word": "quote",
+    "ipa": "kwoʊt",
+    "th": "โควท",
+    "meaning": "อ้าง",
+    "issues": [
+      "Short Thai (โควท) for word length 5"
+    ]
+  },
+  {
+    "word": "raise",
+    "ipa": "reɪz",
+    "th": "ไอร",
+    "meaning": "ยก",
+    "issues": [
+      "Short Thai (ไอร) for word length 5"
+    ]
+  },
+  {
+    "word": "reach",
+    "ipa": "riːtʃ",
+    "th": "รีช",
+    "meaning": "เอื้อมถึง, ไปถึง, ติดต่อ",
+    "issues": [
+      "Short Thai (รีช) for word length 5"
+    ]
+  },
+  {
+    "word": "reckless",
+    "ipa": "ˈɹɛkɫəs",
+    "th": "รี-ค",
+    "meaning": "ประมาท",
+    "issues": [
+      "Short Thai (รี-ค) for word length 8"
+    ]
+  },
+  {
+    "word": "rental",
+    "ipa": "ˈɹɛntəɫ",
+    "th": "รี-น",
+    "meaning": "เช่า",
+    "issues": [
+      "Short Thai (รี-น) for word length 6"
+    ]
+  },
+  {
+    "word": "reptile",
+    "ipa": "ˈɹɛptaɪɫ",
+    "th": "รี-พ",
+    "meaning": "สัตว์เลื้อยคลาน",
+    "issues": [
+      "Short Thai (รี-พ) for word length 7"
+    ]
+  },
+  {
+    "word": "riddle",
+    "ipa": "ˈɹɪdəɫ",
+    "th": "ริด",
+    "meaning": "ปริศนา",
+    "issues": [
+      "Short Thai (ริด) for word length 6"
+    ]
+  },
+  {
+    "word": "rifle",
+    "ipa": "ˈɹaɪfəɫ",
+    "th": "ริฟ",
+    "meaning": "ปืนไรเฟิล",
+    "issues": [
+      "Short Thai (ริฟ) for word length 5"
+    ]
+  },
+  {
+    "word": "right",
+    "ipa": "raɪt",
+    "th": "ไรท์",
+    "meaning": "ถูกต้อง, ทางขวา, สิทธิ",
+    "issues": [
+      "Short Thai (ไรท์) for word length 5"
+    ]
+  },
+  {
+    "word": "ripple",
+    "ipa": "ˈɹɪpəɫ",
+    "th": "ริพ",
+    "meaning": "ระลอกคลื่น",
+    "issues": [
+      "Short Thai (ริพ) for word length 6"
+    ]
+  },
+  {
+    "word": "rough",
+    "ipa": "rʌf",
+    "th": "รัฟ",
+    "meaning": "หยาบ, ขรุขระ, รุนแรง",
+    "issues": [
+      "Short Thai (รัฟ) for word length 5"
+    ]
+  },
+  {
+    "word": "route",
+    "ipa": "ruːt",
+    "th": "รูท",
+    "meaning": "เส้นทาง",
+    "issues": [
+      "Short Thai (รูท) for word length 5"
+    ]
+  },
+  {
+    "word": "royal",
+    "ipa": "rɔɪəl",
+    "th": "รอย",
+    "meaning": "พระราช",
+    "issues": [
+      "Short Thai (รอย) for word length 5"
+    ]
+  },
+  {
+    "word": "sauce",
+    "ipa": "sɔs",
+    "th": "ซอส",
+    "meaning": "ซอส",
+    "issues": [
+      "Short Thai (ซอส) for word length 5"
+    ]
+  },
+  {
+    "word": "scale",
+    "ipa": "skeɪl",
+    "th": "สเกล",
+    "meaning": "มาตราส่วน",
+    "issues": [
+      "Short Thai (สเกล) for word length 5"
+    ]
+  },
+  {
+    "word": "scare",
+    "ipa": "ˈskɛɹ",
+    "th": "เสค",
+    "meaning": "ทำให้ตกใจ",
+    "issues": [
+      "Short Thai (เสค) for word length 5"
+    ]
+  },
+  {
+    "word": "scared",
+    "ipa": "skɛrd",
+    "th": "เสค",
+    "meaning": "กลัว",
+    "issues": [
+      "Short Thai (เสค) for word length 6"
+    ]
+  },
+  {
+    "word": "scene",
+    "ipa": "sin",
+    "th": "ซีน",
+    "meaning": "ฉาก",
+    "issues": [
+      "Short Thai (ซีน) for word length 5"
+    ]
+  },
+  {
+    "word": "school",
+    "ipa": "ˈskuɫ",
+    "th": "สก",
+    "meaning": "โรงเรียน",
+    "issues": [
+      "Short Thai (สก) for word length 6"
+    ]
+  },
+  {
+    "word": "scope",
+    "ipa": "ˈskoʊp",
+    "th": "สโคป",
+    "meaning": "ขอบเขต",
+    "issues": [
+      "Short Thai (สโคป) for word length 5"
+    ]
+  },
+  {
+    "word": "score",
+    "ipa": "skɔr",
+    "th": "สคอ",
+    "meaning": "คะแนน",
+    "issues": [
+      "Short Thai (สคอ) for word length 5"
+    ]
+  },
+  {
+    "word": "scrap",
+    "ipa": "ˈskɹæp",
+    "th": "แอป",
+    "meaning": "เศษเหล็ก",
+    "issues": [
+      "Short Thai (แอป) for word length 5"
+    ]
+  },
+  {
+    "word": "scratch",
+    "ipa": "ˈskɹætʃ",
+    "th": "แอช",
+    "meaning": "รอยขีดข่วน",
+    "issues": [
+      "Short Thai (แอช) for word length 7"
+    ]
+  },
+  {
+    "word": "search",
+    "ipa": "sərʧ",
+    "th": "ซะ",
+    "meaning": "ค้นหา",
+    "issues": [
+      "Short Thai (ซะ) for word length 6"
+    ]
+  },
+  {
+    "word": "seclusion",
+    "ipa": "sɪˈkɫuʒən",
+    "th": "ซิก-คลู-จัน",
+    "meaning": "ความสันโดษ",
+    "issues": [
+      "Missing -ชัน ending"
+    ]
+  },
+  {
+    "word": "seize",
+    "ipa": "ˈsiz",
+    "th": "ซีส",
+    "meaning": "ยึด",
+    "issues": [
+      "Short Thai (ซีส) for word length 5"
+    ]
+  },
+  {
+    "word": "serve",
+    "ipa": "sərv",
+    "th": "ซะ",
+    "meaning": "ให้บริการ",
+    "issues": [
+      "Short Thai (ซะ) for word length 5"
+    ]
+  },
+  {
+    "word": "shade",
+    "ipa": "ʃeɪd",
+    "th": "เชด",
+    "meaning": "ร่มเงา",
+    "issues": [
+      "Short Thai (เชด) for word length 5"
+    ]
+  },
+  {
+    "word": "shake",
+    "ipa": "ʃeɪk",
+    "th": "เชค",
+    "meaning": "เขย่า",
+    "issues": [
+      "Short Thai (เชค) for word length 5"
+    ]
+  },
+  {
+    "word": "shall",
+    "ipa": "ʃæl",
+    "th": "แชล",
+    "meaning": "จะ",
+    "issues": [
+      "Short Thai (แชล) for word length 5"
+    ]
+  },
+  {
+    "word": "shame",
+    "ipa": "ʃeɪm",
+    "th": "เชม",
+    "meaning": "ความอัปยศ",
+    "issues": [
+      "Short Thai (เชม) for word length 5"
+    ]
+  },
+  {
+    "word": "shape",
+    "ipa": "ʃeɪp",
+    "th": "เชป",
+    "meaning": "รูปร่าง",
+    "issues": [
+      "Short Thai (เชป) for word length 5"
+    ]
+  },
+  {
+    "word": "share",
+    "ipa": "ˈʃɛɹ",
+    "th": "เช",
+    "meaning": "แบ่งปัน",
+    "issues": [
+      "Short Thai (เช) for word length 5"
+    ]
+  },
+  {
+    "word": "sheep",
+    "ipa": "ˈʃip",
+    "th": "ชพี",
+    "meaning": "แกะ",
+    "issues": [
+      "Short Thai (ชพี) for word length 5"
+    ]
+  },
+  {
+    "word": "sheer",
+    "ipa": "ˈʃɪɹ",
+    "th": "ชิ",
+    "meaning": "เลี่ยง",
+    "issues": [
+      "Short Thai (ชิ) for word length 5"
+    ]
+  },
+  {
+    "word": "sheet",
+    "ipa": "ʃiːt",
+    "th": "ชีท",
+    "meaning": "ผ้าปูที่นอน, แผ่นกระดาษ",
+    "issues": [
+      "Short Thai (ชีท) for word length 5"
+    ]
+  },
+  {
+    "word": "shell",
+    "ipa": "ʃɛl",
+    "th": "เชล",
+    "meaning": "เปลือก",
+    "issues": [
+      "Short Thai (เชล) for word length 5"
+    ]
+  },
+  {
+    "word": "shine",
+    "ipa": "ʃaɪn",
+    "th": "ไชน์",
+    "meaning": "ส่องแสง, เปล่งประกาย",
+    "issues": [
+      "Short Thai (ไชน์) for word length 5"
+    ]
+  },
+  {
+    "word": "shock",
+    "ipa": "ʃɑk",
+    "th": "ช็อก",
+    "meaning": "ช็อก",
+    "issues": [
+      "Short Thai (ช็อก) for word length 5"
+    ]
+  },
+  {
+    "word": "shoot",
+    "ipa": "ʃut",
+    "th": "ชูท",
+    "meaning": "ยิง",
+    "issues": [
+      "Short Thai (ชูท) for word length 5"
+    ]
+  },
+  {
+    "word": "shore",
+    "ipa": "ˈʃɔɹ",
+    "th": "ชอ",
+    "meaning": "ฝั่ง",
+    "issues": [
+      "Short Thai (ชอ) for word length 5"
+    ]
+  },
+  {
+    "word": "shrug",
+    "ipa": "ˈʃɹəɡ",
+    "th": "ชรัก",
+    "meaning": "ยัก",
+    "issues": [
+      "Short Thai (ชรัก) for word length 5"
+    ]
+  },
+  {
+    "word": "shuttle",
+    "ipa": "ˈʃətəɫ",
+    "th": "ชัท",
+    "meaning": "รถรับส่ง",
+    "issues": [
+      "Short Thai (ชัท) for word length 7"
+    ]
+  },
+  {
+    "word": "siege",
+    "ipa": "ˈsidʒ",
+    "th": "ซีจ",
+    "meaning": "ล้อม",
+    "issues": [
+      "Short Thai (ซีจ) for word length 5"
+    ]
+  },
+  {
+    "word": "since",
+    "ipa": "sɪns",
+    "th": "ซิน",
+    "meaning": "เนื่องจาก",
+    "issues": [
+      "Short Thai (ซิน) for word length 5"
+    ]
+  },
+  {
+    "word": "single",
+    "ipa": "ˈsɪŋgəl",
+    "th": "ซิง",
+    "meaning": "เดี่ยว",
+    "issues": [
+      "Short Thai (ซิง) for word length 6"
+    ]
+  },
+  {
+    "word": "sketch",
+    "ipa": "ˈskɛtʃ",
+    "th": "เสคช",
+    "meaning": "ร่าง",
+    "issues": [
+      "Short Thai (เสคช) for word length 6"
+    ]
+  },
+  {
+    "word": "skill",
+    "ipa": "ˈskɪɫ",
+    "th": "สิกล",
+    "meaning": "ทักษะ",
+    "issues": [
+      "Short Thai (สิกล) for word length 5"
+    ]
+  },
+  {
+    "word": "skull",
+    "ipa": "ˈskəɫ",
+    "th": "สักล",
+    "meaning": "กะโหลกศีรษะ",
+    "issues": [
+      "Short Thai (สักล) for word length 5"
+    ]
+  },
+  {
+    "word": "slash",
+    "ipa": "slæʃ",
+    "th": "สแลช",
+    "meaning": "เฉือน",
+    "issues": [
+      "Short Thai (สแลช) for word length 5"
+    ]
+  },
+  {
+    "word": "slave",
+    "ipa": "sleɪv",
+    "th": "สเลฟ",
+    "meaning": "ทาส",
+    "issues": [
+      "Short Thai (สเลฟ) for word length 5"
+    ]
+  },
+  {
+    "word": "sleep",
+    "ipa": "sliːp",
+    "th": "สลีป",
+    "meaning": "นอนหลับ",
+    "issues": [
+      "Short Thai (สลีป) for word length 5"
+    ]
+  },
+  {
+    "word": "slope",
+    "ipa": "sloʊp",
+    "th": "สโลป",
+    "meaning": "ความลาดชัน",
+    "issues": [
+      "Short Thai (สโลป) for word length 5"
+    ]
+  },
+  {
+    "word": "small",
+    "ipa": "smɔːl",
+    "th": "สมอล",
+    "meaning": "เล็ก, เล็กน้อย",
+    "issues": [
+      "Short Thai (สมอล) for word length 5"
+    ]
+  },
+  {
+    "word": "smart",
+    "ipa": "smɑrt",
+    "th": "สมา",
+    "meaning": "ปราดเปรื่อง",
+    "issues": [
+      "Short Thai (สมา) for word length 5"
+    ]
+  },
+  {
+    "word": "smash",
+    "ipa": "ˈsmæʃ",
+    "th": "แสมช",
+    "meaning": "ชน",
+    "issues": [
+      "Short Thai (แสมช) for word length 5"
+    ]
+  },
+  {
+    "word": "smell",
+    "ipa": "smel",
+    "th": "สเมล",
+    "meaning": "ได้กลิ่น, ดม, ส่งกลิ่น, กลิ่น",
+    "issues": [
+      "Short Thai (สเมล) for word length 5"
+    ]
+  },
+  {
+    "word": "smoke",
+    "ipa": "smoʊk",
+    "th": "โสมค",
+    "meaning": "ควัน",
+    "issues": [
+      "Short Thai (โสมค) for word length 5"
+    ]
+  },
+  {
+    "word": "smuggle",
+    "ipa": "ˈsməɡəɫ",
+    "th": "สัมก",
+    "meaning": "ลักลอบขนของ",
+    "issues": [
+      "Short Thai (สัมก) for word length 7",
+      "Corrupted string artifact"
+    ]
+  },
+  {
+    "word": "smuggler",
+    "ipa": "ˈsməɡəɫɝ",
+    "th": "สัมก",
+    "meaning": "คนลักลอบขนของ",
+    "issues": [
+      "Short Thai (สัมก) for word length 8",
+      "Corrupted string artifact"
+    ]
+  },
+  {
+    "word": "snake",
+    "ipa": "sneɪk",
+    "th": "สเนค",
+    "meaning": "งู",
+    "issues": [
+      "Short Thai (สเนค) for word length 5"
+    ]
+  },
+  {
+    "word": "snare",
+    "ipa": "ˈsnɛɹ",
+    "th": "เสน",
+    "meaning": "บ่วง",
+    "issues": [
+      "Short Thai (เสน) for word length 5"
+    ]
+  },
+  {
+    "word": "solve",
+    "ipa": "sɑlv",
+    "th": "ซอล",
+    "meaning": "แก้ปัญหา",
+    "issues": [
+      "Short Thai (ซอล) for word length 5"
+    ]
+  },
+  {
+    "word": "space",
+    "ipa": "speɪs",
+    "th": "สเปซ",
+    "meaning": "ช่องว่าง",
+    "issues": [
+      "Short Thai (สเปซ) for word length 5"
+    ]
+  },
+  {
+    "word": "spare",
+    "ipa": "ˈspɛɹ",
+    "th": "เสป",
+    "meaning": "อะไหล่",
+    "issues": [
+      "Short Thai (เสป) for word length 5"
+    ]
+  },
+  {
+    "word": "spawn",
+    "ipa": "ˈspɑn",
+    "th": "สปาน",
+    "meaning": "วางไข่",
+    "issues": [
+      "Short Thai (สปาน) for word length 5"
+    ]
+  },
+  {
+    "word": "speak",
+    "ipa": "ˈspik",
+    "th": "สปกี",
+    "meaning": "พูด",
+    "issues": [
+      "Short Thai (สปกี) for word length 5"
+    ]
+  },
+  {
+    "word": "speed",
+    "ipa": "spiːd",
+    "th": "สปีด",
+    "meaning": "ความเร็ว",
+    "issues": [
+      "Short Thai (สปีด) for word length 5"
+    ]
+  },
+  {
+    "word": "spell",
+    "ipa": "ˈspɛɫ",
+    "th": "เสปล",
+    "meaning": "สะกด",
+    "issues": [
+      "Short Thai (เสปล) for word length 5"
+    ]
+  },
+  {
+    "word": "spill",
+    "ipa": "ˈspɪɫ",
+    "th": "สพิล",
+    "meaning": "หก",
+    "issues": [
+      "Short Thai (สพิล) for word length 5"
+    ]
+  },
+  {
+    "word": "spoon",
+    "ipa": "spun",
+    "th": "สปูน",
+    "meaning": "ช้อน",
+    "issues": [
+      "Short Thai (สปูน) for word length 5"
+    ]
+  },
+  {
+    "word": "stifle",
+    "ipa": "ˈstaɪfəɫ",
+    "th": "สิตฟ",
+    "meaning": "ยับยั้ง",
+    "issues": [
+      "Short Thai (สิตฟ) for word length 6"
+    ]
+  },
+  {
+    "word": "subtlety",
+    "ipa": "ˈsətəɫti",
+    "th": "ซับ-ท-อี",
+    "meaning": "ความละเอียดอ่อน",
+    "issues": [
+      "Corrupted string artifact"
+    ]
+  },
+  {
+    "word": "suite",
+    "ipa": "ˈswit",
+    "th": "สวีท",
+    "meaning": "ห้องสวีท",
+    "issues": [
+      "Short Thai (สวีท) for word length 5"
+    ]
+  },
+  {
+    "word": "supplier",
+    "ipa": "səˈpɫaɪɝ",
+    "th": "ซัพ",
+    "meaning": "ซัพพลายเออร์",
+    "issues": [
+      "Short Thai (ซัพ) for word length 8"
+    ]
+  },
+  {
+    "word": "supply",
+    "ipa": "səˈplaɪ",
+    "th": "ซัพ",
+    "meaning": "จัดหา",
+    "issues": [
+      "Short Thai (ซัพ) for word length 6"
+    ]
+  },
+  {
+    "word": "surcharge",
+    "ipa": "ˈsɝˌtʃɑɹdʒ",
+    "th": "ซัร์",
+    "meaning": "ค่าธรรมเนียมเพิ่มเติม",
+    "issues": [
+      "Short Thai (ซัร์) for word length 9"
+    ]
+  },
+  {
+    "word": "surge",
+    "ipa": "ˈsɝdʒ",
+    "th": "ซัร์",
+    "meaning": "ไฟกระชาก",
+    "issues": [
+      "Short Thai (ซัร์) for word length 5"
+    ]
+  },
+  {
+    "word": "surgeon",
+    "ipa": "ˈsɝdʒən",
+    "th": "ซัร์",
+    "meaning": "ศัลยแพทย์",
+    "issues": [
+      "Short Thai (ซัร์) for word length 7"
+    ]
+  },
+  {
+    "word": "swear",
+    "ipa": "swɛr",
+    "th": "เสว",
+    "meaning": "สาบาน",
+    "issues": [
+      "Short Thai (เสว) for word length 5"
+    ]
+  },
+  {
+    "word": "sweep",
+    "ipa": "swip",
+    "th": "สวพี",
+    "meaning": "กวาด",
+    "issues": [
+      "Short Thai (สวพี) for word length 5"
+    ]
+  },
+  {
+    "word": "sweet",
+    "ipa": "swiːt",
+    "th": "สวีท",
+    "meaning": "หวาน, น่ารัก",
+    "issues": [
+      "Short Thai (สวีท) for word length 5"
+    ]
+  },
+  {
+    "word": "swell",
+    "ipa": "ˈswɛɫ",
+    "th": "เสวล",
+    "meaning": "บวม",
+    "issues": [
+      "Short Thai (เสวล) for word length 5"
+    ]
+  },
+  {
+    "word": "swing",
+    "ipa": "ˈswɪŋ",
+    "th": "สิวง",
+    "meaning": "สวิง",
+    "issues": [
+      "Short Thai (สิวง) for word length 5"
+    ]
+  },
+  {
+    "word": "switch",
+    "ipa": "swɪʧ",
+    "th": "สิวท",
+    "meaning": "สวิตช์",
+    "issues": [
+      "Short Thai (สิวท) for word length 6",
+      "Corrupted string artifact"
+    ]
+  },
+  {
+    "word": "teach",
+    "ipa": "tiːtʃ",
+    "th": "ทีช",
+    "meaning": "สอน",
+    "issues": [
+      "Short Thai (ทีช) for word length 5"
+    ]
+  },
+  {
+    "word": "television",
+    "ipa": "ˈtɛɫəˌvɪʒən",
+    "th": "เท-ละ-วิ-จัน",
+    "meaning": "โทรทัศน์",
+    "issues": [
+      "Missing -ชัน ending"
+    ]
+  },
+  {
+    "word": "their",
+    "ipa": "ðeər",
+    "th": "แดย์",
+    "meaning": "ของพวกเขา",
+    "issues": [
+      "Short Thai (แดย์) for word length 5"
+    ]
+  },
+  {
+    "word": "theirs",
+    "ipa": "ðɛrz",
+    "th": "เด",
+    "meaning": "พวกเขา",
+    "issues": [
+      "Short Thai (เด) for word length 6"
+    ]
+  },
+  {
+    "word": "theme",
+    "ipa": "θim",
+    "th": "ธีม",
+    "meaning": "ธีม",
+    "issues": [
+      "Short Thai (ธีม) for word length 5"
+    ]
+  },
+  {
+    "word": "there",
+    "ipa": "ˈðɛɹ",
+    "th": "เด",
+    "meaning": "ที่นั่น",
+    "issues": [
+      "Short Thai (เด) for word length 5"
+    ]
+  },
+  {
+    "word": "thick",
+    "ipa": "θɪk",
+    "th": "ธิก",
+    "meaning": "หนา",
+    "issues": [
+      "Short Thai (ธิก) for word length 5"
+    ]
+  },
+  {
+    "word": "thief",
+    "ipa": "θif",
+    "th": "ธฟี",
+    "meaning": "ขโมย",
+    "issues": [
+      "Short Thai (ธฟี) for word length 5"
+    ]
+  },
+  {
+    "word": "thing",
+    "ipa": "ˈθɪŋ",
+    "th": "ธิง",
+    "meaning": "สิ่ง",
+    "issues": [
+      "Short Thai (ธิง) for word length 5"
+    ]
+  },
+  {
+    "word": "though",
+    "ipa": "ðoʊ",
+    "th": "โด",
+    "meaning": "แม้ว่า",
+    "issues": [
+      "Short Thai (โด) for word length 6"
+    ]
+  },
+  {
+    "word": "thought-provoking",
+    "ipa": "ˈθɔt",
+    "th": "ธ็อต",
+    "meaning": "กระตุ้นความคิด",
+    "issues": [
+      "Short Thai (ธ็อต) for word length 17"
+    ]
+  },
+  {
+    "word": "thread",
+    "ipa": "ˈθɹɛd",
+    "th": "ธรดี",
+    "meaning": "ด้าย",
+    "issues": [
+      "Short Thai (ธรดี) for word length 6",
+      "Corrupted string artifact"
+    ]
+  },
+  {
+    "word": "threat",
+    "ipa": "θrɛt",
+    "th": "ธรที",
+    "meaning": "ภัยคุกคาม",
+    "issues": [
+      "Corrupted string artifact"
+    ]
+  },
+  {
+    "word": "three",
+    "ipa": "ˈiː",
+    "th": "ธรี",
+    "meaning": "สาม",
+    "issues": [
+      "Short Thai (ธรี) for word length 5"
+    ]
+  },
+  {
+    "word": "thrift",
+    "ipa": "ˈθɹɪft",
+    "th": "ธิรฟ",
+    "meaning": "ความประหยัด",
+    "issues": [
+      "Short Thai (ธิรฟ) for word length 6",
+      "Corrupted string artifact"
+    ]
+  },
+  {
+    "word": "thrifty",
+    "ipa": "ˈθɹɪfti",
+    "th": "ธิรฟ-อี",
+    "meaning": "ประหยัด",
+    "issues": [
+      "Corrupted string artifact"
+    ]
+  },
+  {
+    "word": "thrill",
+    "ipa": "ˈθɹɪɫ",
+    "th": "ธิรล",
+    "meaning": "ตื่นเต้น",
+    "issues": [
+      "Short Thai (ธิรล) for word length 6",
+      "Corrupted string artifact"
+    ]
+  },
+  {
+    "word": "thrilled",
+    "ipa": "ˈθɹɪɫd",
+    "th": "ธิรล-เล็ด",
+    "meaning": "ตื่นเต้น",
+    "issues": [
+      "Corrupted string artifact"
+    ]
+  },
+  {
+    "word": "throw",
+    "ipa": "θroʊ",
+    "th": "โอ",
+    "meaning": "โยน",
+    "issues": [
+      "Short Thai (โอ) for word length 5"
+    ]
+  },
+  {
+    "word": "thumb",
+    "ipa": "ˈθəm",
+    "th": "ธัม",
+    "meaning": "นิ้วหัวแม่มือ",
+    "issues": [
+      "Short Thai (ธัม) for word length 5"
+    ]
+  },
+  {
+    "word": "title",
+    "ipa": "ˈtaɪtəɫ",
+    "th": "ทิท",
+    "meaning": "ชื่อ",
+    "issues": [
+      "Short Thai (ทิท) for word length 5"
+    ]
+  },
+  {
+    "word": "tonne",
+    "ipa": "ˈtən",
+    "th": "ทอน",
+    "meaning": "ตัน",
+    "issues": [
+      "Short Thai (ทอน) for word length 5"
+    ]
+  },
+  {
+    "word": "tooth",
+    "ipa": "ˈtuθ",
+    "th": "ทูธ",
+    "meaning": "ฟัน",
+    "issues": [
+      "Short Thai (ทูธ) for word length 5"
+    ]
+  },
+  {
+    "word": "touch",
+    "ipa": "təʧ",
+    "th": "ทัช",
+    "meaning": "สัมผัส",
+    "issues": [
+      "Short Thai (ทัช) for word length 5"
+    ]
+  },
+  {
+    "word": "tough",
+    "ipa": "təf",
+    "th": "ทัฟ",
+    "meaning": "ยาก",
+    "issues": [
+      "Short Thai (ทัฟ) for word length 5"
+    ]
+  },
+  {
+    "word": "trace",
+    "ipa": "treɪs",
+    "th": "เทรส",
+    "meaning": "ตามรอย, ร่องรอย",
+    "issues": [
+      "Short Thai (เทรส) for word length 5"
+    ]
+  },
+  {
+    "word": "trade",
+    "ipa": "treɪd",
+    "th": "เทรด",
+    "meaning": "การค้า, ค้าขาย, แลกเปลี่ยน",
+    "issues": [
+      "Short Thai (เทรด) for word length 5"
+    ]
+  },
+  {
+    "word": "trail",
+    "ipa": "treɪl",
+    "th": "เทรล",
+    "meaning": "ทางเดินป่า, ร่องรอย",
+    "issues": [
+      "Short Thai (เทรล) for word length 5"
+    ]
+  },
+  {
+    "word": "train",
+    "ipa": "treɪn",
+    "th": "เทรน",
+    "meaning": "รถไฟ, ฝึกฝน, ฝึกอบรม",
+    "issues": [
+      "Short Thai (เทรน) for word length 5"
+    ]
+  },
+  {
+    "word": "trait",
+    "ipa": "treɪt",
+    "th": "เทรท",
+    "meaning": "ลักษณะนิสัย, คุณลักษณะเด่น",
+    "issues": [
+      "Short Thai (เทรท) for word length 5"
+    ]
+  },
+  {
+    "word": "treat",
+    "ipa": "triːt",
+    "th": "ทรีท",
+    "meaning": "ปฏิบัติต่อ, รักษา, เลี้ยงอาหาร",
+    "issues": [
+      "Short Thai (ทรีท) for word length 5"
+    ]
+  },
+  {
+    "word": "trick",
+    "ipa": "trɪk",
+    "th": "ติรก",
+    "meaning": "เล่ห์เหลี่ยม",
+    "issues": [
+      "Short Thai (ติรก) for word length 5"
+    ]
+  },
+  {
+    "word": "troop",
+    "ipa": "truːp",
+    "th": "ทรูป",
+    "meaning": "กองทหาร, กองกำลัง",
+    "issues": [
+      "Short Thai (ทรูป) for word length 5"
+    ]
+  },
+  {
+    "word": "truce",
+    "ipa": "truːs",
+    "th": "ทรูส",
+    "meaning": "การพักรบ, ข้อตกลงหยุดยิง",
+    "issues": [
+      "Short Thai (ทรูส) for word length 5"
+    ]
+  },
+  {
+    "word": "truck",
+    "ipa": "trək",
+    "th": "ตัรก",
+    "meaning": "รถบรรทุก",
+    "issues": [
+      "Short Thai (ตัรก) for word length 5"
+    ]
+  },
+  {
+    "word": "truth",
+    "ipa": "truθ",
+    "th": "ตัรธ",
+    "meaning": "ความจริง",
+    "issues": [
+      "Short Thai (ตัรธ) for word length 5"
+    ]
+  },
+  {
+    "word": "twenty",
+    "ipa": "ˈtwɛni",
+    "th": "ท-อี",
+    "meaning": "ยี่สิบ",
+    "issues": [
+      "Short Thai (ท-อี) for word length 6",
+      "Corrupted string artifact"
+    ]
+  },
+  {
+    "word": "unable",
+    "ipa": "əˈneɪbəl",
+    "th": "อัน-แอบ",
+    "meaning": "ไม่สามารถ",
+    "issues": [
+      "Missing -เบิล ending"
+    ]
+  },
+  {
+    "word": "uncle",
+    "ipa": "ˈəŋkəɫ",
+    "th": "นั",
+    "meaning": "ลุง",
+    "issues": [
+      "Short Thai (นั) for word length 5"
+    ]
+  },
+  {
+    "word": "unstable",
+    "ipa": "ənˈsteɪbəɫ",
+    "th": "อัน-แสตบ",
+    "meaning": "ไม่เสถียร",
+    "issues": [
+      "Missing -เบิล ending"
+    ]
+  },
+  {
+    "word": "vague",
+    "ipa": "ˈveɪɡ",
+    "th": "เวก",
+    "meaning": "คลุมเครือ",
+    "issues": [
+      "Short Thai (เวก) for word length 5"
+    ]
+  },
+  {
+    "word": "version",
+    "ipa": "ˈvərʒən",
+    "th": "วอร์-จัน",
+    "meaning": "รุ่น",
+    "issues": [
+      "Missing -ชัน ending"
+    ]
+  },
+  {
+    "word": "visual",
+    "ipa": "ˈvɪʒəwəl",
+    "th": "ลูท",
+    "meaning": "ภาพ",
+    "issues": [
+      "Short Thai (ลูท) for word length 6"
+    ]
+  },
+  {
+    "word": "voice",
+    "ipa": "vɔɪs",
+    "th": "วอย",
+    "meaning": "เสียง",
+    "issues": [
+      "Short Thai (วอย) for word length 5"
+    ]
+  },
+  {
+    "word": "voyage",
+    "ipa": "ˈvɔɪədʒ",
+    "th": "วอย",
+    "meaning": "การเดินทาง",
+    "issues": [
+      "Short Thai (วอย) for word length 6"
+    ]
+  },
+  {
+    "word": "warmth",
+    "ipa": "ˈwɔɹmθ",
+    "th": "วอ",
+    "meaning": "ความอบอุ่น",
+    "issues": [
+      "Short Thai (วอ) for word length 6"
+    ]
+  },
+  {
+    "word": "weigh",
+    "ipa": "weɪ",
+    "th": "เวย์",
+    "meaning": "ชั่งน้ำหนัก",
+    "issues": [
+      "Short Thai (เวย์) for word length 5"
+    ]
+  },
+  {
+    "word": "weird",
+    "ipa": "ˈwɪɹd",
+    "th": "วิ",
+    "meaning": "แปลก",
+    "issues": [
+      "Short Thai (วิ) for word length 5"
+    ]
+  },
+  {
+    "word": "wheat",
+    "ipa": "wiːt",
+    "th": "วีท",
+    "meaning": "ข้าวสาลี",
+    "issues": [
+      "Short Thai (วีท) for word length 5"
+    ]
+  },
+  {
+    "word": "wheel",
+    "ipa": "wiːl",
+    "th": "วีล",
+    "meaning": "ล้อรถ, พวงมาลัย",
+    "issues": [
+      "Short Thai (วีล) for word length 5"
+    ]
+  },
+  {
+    "word": "where",
+    "ipa": "ˈhwɛɹ",
+    "th": "เว",
+    "meaning": "ที่ไหน",
+    "issues": [
+      "Short Thai (เว) for word length 5"
+    ]
+  },
+  {
+    "word": "which",
+    "ipa": "ˈhwɪtʃ",
+    "th": "วิช",
+    "meaning": "ที่",
+    "issues": [
+      "Short Thai (วิช) for word length 5"
+    ]
+  },
+  {
+    "word": "while",
+    "ipa": "waɪl",
+    "th": "ไวล์",
+    "meaning": "ในขณะที่, ชั่วครู่",
+    "issues": [
+      "Short Thai (ไวล์) for word length 5"
+    ]
+  },
+  {
+    "word": "width",
+    "ipa": "ˈwɪdθ",
+    "th": "วิด",
+    "meaning": "ความกว้าง",
+    "issues": [
+      "Short Thai (วิด) for word length 5"
+    ]
+  },
+  {
+    "word": "withhold",
+    "ipa": "wɪθˈhoʊɫd",
+    "th": "วิธ",
+    "meaning": "ระงับ",
+    "issues": [
+      "Short Thai (วิธ) for word length 8"
+    ]
+  },
+  {
+    "word": "would",
+    "ipa": "wʊd",
+    "th": "วูด",
+    "meaning": "จะ",
+    "issues": [
+      "Short Thai (วูด) for word length 5"
+    ]
+  },
+  {
+    "word": "wreck",
+    "ipa": "ˈɹɛk",
+    "th": "เอ็ก",
+    "meaning": "ซากเรืออัปปาง",
+    "issues": [
+      "Short Thai (เอ็ก) for word length 5"
+    ]
+  },
+  {
+    "word": "young",
+    "ipa": "jəŋ",
+    "th": "ยัง",
+    "meaning": "หนุ่มสาว",
+    "issues": [
+      "Short Thai (ยัง) for word length 5"
+    ]
+  },
+  {
+    "word": "yours",
+    "ipa": "jʊrz",
+    "th": "ยู",
+    "meaning": "ของคุณ",
+    "issues": [
+      "Short Thai (ยู) for word length 5"
+    ]
+  },
+  {
+    "word": "youth",
+    "ipa": "juθ",
+    "th": "ยูธ",
+    "meaning": "ความเยาว์",
+    "issues": [
+      "Short Thai (ยูธ) for word length 5"
+    ]
+  }
+]
