@@ -22,7 +22,7 @@
     "type": "n.",
     "level": "A2",
     "id": 3,
-    "ipa": "əˈbɪləˌti",
+    "ipa": "əˈbɪləti",
     "meaning": "ความสามารถ",
     "thai_pronunciation": "อะ-บิล-ลิ-ที"
   },
@@ -31,7 +31,7 @@
     "type": "adj.",
     "level": "A2",
     "id": 4,
-    "ipa": "ˈeɪbəl",
+    "ipa": "ˈeɪbl",
     "meaning": "สามารถ",
     "thai_pronunciation": "เอ-เบิล"
   },
@@ -69,14 +69,14 @@
     "id": 8,
     "meaning": "ข้างบน",
     "thai_pronunciation": "อะ-บัฟว์",
-    "ipa": "əˈbəv"
+    "ipa": "əˈbʌv"
   },
   {
     "word": "abroad",
     "type": "adv.",
     "level": "A2",
     "id": 9,
-    "ipa": "əˈbrɔd",
+    "ipa": "əˈbrɔːd",
     "meaning": "ต่างประเทศ",
     "thai_pronunciation": "อะ-บรอด"
   },
@@ -86,7 +86,7 @@
     "level": "C1",
     "ipa": "ˈæbsəns",
     "meaning": "การขาด, การไม่อยู่, การไม่มีอยู่",
-    "thai_pronunciation": "แอ็บ-เซินส์",
+    "thai_pronunciation": "แอบ-เซินส์",
     "id": 10
   },
   {
@@ -103,18 +103,18 @@
     "type": "adj.",
     "level": "B2",
     "id": 12,
-    "ipa": "ˈæbsəˌlut",
+    "ipa": "ˈæbsəluːt",
     "meaning": "แน่นอน",
-    "thai_pronunciation": "แอ็บ-โซ-ลูท"
+    "thai_pronunciation": "แอบ-โซ-ลูท"
   },
   {
     "word": "absolutely",
     "type": "adv.",
     "level": "B1",
     "id": 13,
-    "ipa": "ˌæbsəˈlutli",
+    "ipa": "ˌæbsəˈluːtli",
     "meaning": "อย่างแน่นอน",
-    "thai_pronunciation": "แอ็บ-โซ-ลูท-ลี"
+    "thai_pronunciation": "แอบ-โซ-ลูท-ลี"
   },
   {
     "word": "absorb",
@@ -131,7 +131,7 @@
     "level": "C1",
     "ipa": "ˈæbstrækt",
     "meaning": "ที่เป็นนามธรรม, ข้อสรุป, บทคัดย่อ",
-    "thai_pronunciation": "แอ็บ-สแตรกต์",
+    "thai_pronunciation": "แอบ-สแตรกต์",
     "id": 15
   },
   {
@@ -158,7 +158,7 @@
     "level": "C1",
     "ipa": "əˈbjuːs",
     "meaning": "การข่มเหง, การทารุณกรรม, การใช้ในทางที่ผิด, ด่าทอ",
-    "thai_pronunciation": "เออะ-บิวซ",
+    "thai_pronunciation": "อะ-บิวส์",
     "id": 18
   },
   {
@@ -168,7 +168,7 @@
     "id": 19,
     "ipa": "ˌækəˈdemɪk",
     "meaning": "ทางวิชาการ, อาจารย์มหาวิทยาลัย",
-    "thai_pronunciation": "แอ็ก-เคอะ-เดม-มิก"
+    "thai_pronunciation": "แอค-คะ-เดม-มิก"
   },
   {
     "word": "academy",
@@ -194,7 +194,7 @@
     "level": "C1",
     "ipa": "ˈæksent",
     "meaning": "สำเนียง, การเน้นเสียง",
-    "thai_pronunciation": "แอ็ก-เซินท์",
+    "thai_pronunciation": "แอค-เซนต์",
     "id": 22
   },
   {
@@ -211,9 +211,9 @@
     "type": "v.",
     "level": "A2",
     "id": 24,
-    "ipa": "əkˈsɛpt",
+    "ipa": "əkˈsept",
     "meaning": "ยอมรับ",
-    "thai_pronunciation": "แอก-เค็พ"
+    "thai_pronunciation": "แอค-เซพท์"
   },
   {
     "word": "acceptable",
@@ -222,7 +222,7 @@
     "id": 25,
     "ipa": "əkˈseptəbl",
     "meaning": "ยอมรับได้, พอใช้ได้",
-    "thai_pronunciation": "แอ็ก-เซพ-เทอะ-เบิล"
+    "thai_pronunciation": "แอค-เซพ-เทอะ-เบิล"
   },
   {
     "word": "acceptance",
@@ -238,7 +238,7 @@
     "type": "n. v.",
     "level": "B1",
     "id": 27,
-    "ipa": "ˈækˌsɛs",
+    "ipa": "ˈækses",
     "meaning": "เข้าถึง",
     "thai_pronunciation": "แอค-เซส"
   },
@@ -256,9 +256,9 @@
     "type": "n.",
     "level": "A2",
     "id": 29,
-    "ipa": "ˈæksədənt",
+    "ipa": "ˈæksɪdənt",
     "meaning": "อุบัติเหตุ",
-    "thai_pronunciation": "แอค-ซิ-เดนท์"
+    "thai_pronunciation": "แอค-ซิ-เดินท์"
   },
   {
     "word": "accidentally",
@@ -273,7 +273,7 @@
     "word": "accommodate",
     "type": "v.",
     "level": "B2",
-    "ipa": "əˈkɑməˌdeɪt",
+    "ipa": "əˈkɑːmədeɪt",
     "meaning": "รองรับ",
     "thai_pronunciation": "อะ-คอม-โม-เดท",
     "id": 31
@@ -283,7 +283,7 @@
     "type": "n.",
     "level": "B1",
     "id": 32,
-    "ipa": "əˌkɑməˈdeɪʃən",
+    "ipa": "əˌkɑːməˈdeɪʃn",
     "meaning": "ที่พัก",
     "thai_pronunciation": "อะ-คอม-โม-เด-ชัน"
   },
@@ -292,9 +292,9 @@
     "type": "v.",
     "level": "B2",
     "id": 33,
-    "ipa": "əˈkəmpəni",
+    "ipa": "əˈkʌmpəni",
     "meaning": "มาพร้อมกับ",
-    "thai_pronunciation": "อะ-คัม-เพอะ-นี"
+    "thai_pronunciation": "อะ-คัม-พะ-นี"
   },
   {
     "word": "accomplish",
@@ -348,7 +348,7 @@
     "id": 39,
     "ipa": "əˈkaʊnt",
     "meaning": "บัญชี",
-    "thai_pronunciation": "อะ-เคาท์"
+    "thai_pronunciation": "อะ-เคานท์"
   },
   {
     "word": "accountability",
@@ -381,9 +381,9 @@
     "word": "accounting",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "əˈkaʊnɪŋ",
+    "ipa": "əˈkaʊntɪŋ",
     "meaning": "การบัญชี",
-    "thai_pronunciation": "แอก-เอาคนท์-งิ",
+    "thai_pronunciation": "อะ-เคาน์-ทิง / แอค-เคาท์-ติ้ง",
     "id": 43
   },
   {
@@ -420,7 +420,7 @@
     "id": 47,
     "ipa": "ˈækjərət",
     "meaning": "แม่นยำ",
-    "thai_pronunciation": "แอค-คิว-เรท"
+    "thai_pronunciation": "แอค-คิว-เรต"
   },
   {
     "word": "accurately",
@@ -428,7 +428,7 @@
     "level": "B2",
     "ipa": "ˈækjərətli",
     "meaning": "อย่างถูกต้องแม่นยำ, อย่างแม่นยำ",
-    "thai_pronunciation": "แอ็ก-คิว-ระท-ลี",
+    "thai_pronunciation": "แอค-คิว-เรต-ลี",
     "id": 48
   },
   {
@@ -447,15 +447,15 @@
     "id": 50,
     "ipa": "əˈkjuːz",
     "meaning": "กล่าวหา, ปรักปรำ, ฟ้องร้อง",
-    "thai_pronunciation": "เออะ-คิวส์"
+    "thai_pronunciation": "อะ-คิวส์"
   },
   {
     "word": "accused",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "��kˈjuzd",
+    "ipa": "əˈkjuːzd",
     "meaning": "ผู้ถูกกล่าวหา",
-    "thai_pronunciation": "แอก-อุ-เซ็ด",
+    "thai_pronunciation": "อะ-คิวสด์",
     "id": 51
   },
   {
@@ -472,7 +472,7 @@
     "type": "v.",
     "level": "A2",
     "id": 53,
-    "ipa": "əˈʧiv",
+    "ipa": "əˈtʃiːv",
     "meaning": "บรรลุ",
     "thai_pronunciation": "อะ-ชีฟว์"
   },
@@ -481,9 +481,9 @@
     "type": "n.",
     "level": "B1",
     "id": 54,
-    "ipa": "əˈʧivmənt",
+    "ipa": "əˈtʃiːvmənt",
     "meaning": "ความสำเร็จ",
-    "thai_pronunciation": "อะ-ชีฟว์-เมินท์"
+    "thai_pronunciation": "อะ-ชีฟ-เมินท์"
   },
   {
     "word": "acid",
@@ -501,7 +501,7 @@
     "id": 56,
     "ipa": "əkˈnɑːlɪdʒ",
     "meaning": "รับทราบ, ยอมรับความจริง, แสดงความขอบคุณ",
-    "thai_pronunciation": "แอ็ก-นอล-ลิจ"
+    "thai_pronunciation": "แอค-นอ-ลิดจ์"
   },
   {
     "word": "acoustic",
@@ -519,7 +519,7 @@
     "id": 58,
     "ipa": "əˈkwaɪər",
     "meaning": "ได้รับ, ได้มา, เข้าซื้อกิจการ",
-    "thai_pronunciation": "เออะ-ไควร์"
+    "thai_pronunciation": "อะ-ไควร์"
   },
   {
     "word": "acquisition",
@@ -546,7 +546,7 @@
     "id": 61,
     "meaning": "ข้าม",
     "thai_pronunciation": "อะ-ครอส",
-    "ipa": "əˈkɹɔs"
+    "ipa": "əˈkrɔːs"
   },
   {
     "word": "act",
@@ -564,7 +564,7 @@
     "id": 63,
     "meaning": "การกระทำ",
     "thai_pronunciation": "แอค-ชัน",
-    "ipa": "ˈækʃən"
+    "ipa": "ˈækʃn"
   },
   {
     "word": "activate",
@@ -591,7 +591,7 @@
     "id": 66,
     "ipa": "ˈæktɪv",
     "meaning": "คล่องแคล่ว",
-    "thai_pronunciation": "แอค-ทิฟ"
+    "thai_pronunciation": "แอค-ทิฟว์"
   },
   {
     "word": "activist",
@@ -627,25 +627,25 @@
     "id": 70,
     "meaning": "นักแสดงหญิง",
     "thai_pronunciation": "แอค-เทรส",
-    "ipa": "ˈæktɹəs"
+    "ipa": "ˈæktrəs"
   },
   {
     "word": "actual",
     "type": "adj.",
     "level": "B2",
     "id": 71,
-    "ipa": "ˈækʧəwəl",
+    "ipa": "ˈæktʃuəl",
     "meaning": "แท้จริง",
-    "thai_pronunciation": "แอค-ชวล"
+    "thai_pronunciation": "แอค-ชัวล"
   },
   {
     "word": "actually",
     "type": "adv.",
     "level": "A2",
     "id": 72,
-    "ipa": "ˈæˌkʧuəli",
+    "ipa": "ˈæktʃuəli",
     "meaning": "จริงๆ แล้ว",
-    "thai_pronunciation": "แอค-ชัว-ลี"
+    "thai_pronunciation": "แอค-ชัวล-ลี"
   },
   {
     "word": "acute",
@@ -672,7 +672,7 @@
     "id": 75,
     "ipa": "əˈdæpt",
     "meaning": "ปรับ",
-    "thai_pronunciation": "อะ-แดปท์"
+    "thai_pronunciation": "อะ-แดพท์"
   },
   {
     "word": "adaptation",
@@ -690,7 +690,7 @@
     "id": 77,
     "meaning": "เพิ่ม",
     "thai_pronunciation": "แอด",
-    "ipa": "ˈæd"
+    "ipa": "æd"
   },
   {
     "word": "addiction",
@@ -706,18 +706,18 @@
     "type": "n.",
     "level": "B1",
     "id": 79,
-    "ipa": "əˈdɪʃən",
+    "ipa": "əˈdɪʃn",
     "meaning": "ส่วนที่เพิ่มเข้าไป",
-    "thai_pronunciation": "แอด-ดิ-ชัน"
+    "thai_pronunciation": "อะ-ดิ-ชัน"
   },
   {
     "word": "additional",
     "type": "adj.",
     "level": "B2",
     "id": 80,
-    "ipa": "əˈdɪʃənəl",
+    "ipa": "əˈdɪʃənl",
     "meaning": "เพิ่มเติม",
-    "thai_pronunciation": "แอด-ดิ-ชัน-แนล"
+    "thai_pronunciation": "อะ-ดิ-ชัน-นัล"
   },
   {
     "word": "additionally",
@@ -735,15 +735,15 @@
     "id": 82,
     "meaning": "ที่อยู่",
     "thai_pronunciation": "อะ-เดรส",
-    "ipa": "ˈæˌdɹɛs"
+    "ipa": "əˈdres"
   },
   {
     "word": "adequate",
     "type": "v.",
     "level": "B2",
-    "ipa": "ˈædəˌkweɪt",
+    "ipa": "ˈædɪkwət",
     "meaning": "เพียงพอ",
-    "thai_pronunciation": "แอด-เดอะ-เควท",
+    "thai_pronunciation": "แอด-ดิ-เควต",
     "id": 83
   },
   {
@@ -786,7 +786,7 @@
     "word": "adjust",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "əˈdʒəst",
+    "ipa": "əˈdʒʌst",
     "meaning": "ปรับ",
     "thai_pronunciation": "อะ-จัสต์",
     "id": 88
@@ -814,9 +814,9 @@
     "type": "n.",
     "level": "B2",
     "id": 91,
-    "ipa": "ædˌmɪnɪˈstreɪʃən",
+    "ipa": "ədˌmɪnɪˈstreɪʃn",
     "meaning": "การบริหาร",
-    "thai_pronunciation": "แอด-มิน-นิส-เตร-ชัน"
+    "thai_pronunciation": "แอด-มิน-นิ-สเตร-ชัน"
   },
   {
     "word": "administrative",
@@ -841,7 +841,7 @@
     "type": "v.",
     "level": "B1",
     "id": 94,
-    "ipa": "ædˈmaɪr",
+    "ipa": "ədˈmaɪər",
     "meaning": "ชื่นชม",
     "thai_pronunciation": "แอด-ไมร์"
   },
@@ -879,7 +879,7 @@
     "id": 98,
     "ipa": "əˈdɑːpt",
     "meaning": "รับเลี้ยงเป็นบุตรบุญธรรม, นำมาปรับใช้",
-    "thai_pronunciation": "เออะ-ด็อพท์"
+    "thai_pronunciation": "อะ-ดอปต์"
   },
   {
     "word": "adoption",
@@ -896,8 +896,8 @@
     "level": "A2",
     "id": 100,
     "meaning": "ผู้ใหญ่",
-    "thai_pronunciation": "อะ-ดัลท์ / แอด-ดัลท์",
-    "ipa": "ˈædəɫt"
+    "thai_pronunciation": "แอด-ดัลท์",
+    "ipa": "ˈædʌlt"
   },
   {
     "word": "advance",
@@ -915,23 +915,23 @@
     "id": 102,
     "ipa": "ədˈvænst",
     "meaning": "ขั้นสูง",
-    "thai_pronunciation": "แอด-วานส์ต์"
+    "thai_pronunciation": "แอด-วานสด์"
   },
   {
     "word": "advantage",
     "type": "n.",
     "level": "A2",
     "id": 103,
-    "ipa": "ædˈvæntɪʤ",
+    "ipa": "ədˈvæntɪdʒ",
     "meaning": "ข้อได้เปรียบ",
-    "thai_pronunciation": "แอด-วาน-ทิจ"
+    "thai_pronunciation": "แอด-แวน-ทิจ"
   },
   {
     "word": "adventure",
     "type": "n.",
     "level": "A2",
     "id": 104,
-    "ipa": "ədˈvɛnʧər",
+    "ipa": "ədˈventʃər",
     "meaning": "การผจญภัย",
     "thai_pronunciation": "แอด-เวน-เจอร์"
   },
@@ -958,9 +958,9 @@
     "type": "v.",
     "level": "A2",
     "id": 107,
-    "ipa": "ˈædvərˌtaɪz",
+    "ipa": "ˈædvərtaɪz",
     "meaning": "โฆษณา",
-    "thai_pronunciation": "แอด-เวอะ-ไทซ์"
+    "thai_pronunciation": "แอด-เวอร์-ไทส์"
   },
   {
     "word": "advertisement",
@@ -969,16 +969,16 @@
     "id": 108,
     "ipa": "ˌædvərˈtaɪzmənt",
     "meaning": "โฆษณา",
-    "thai_pronunciation": "แอด-เวอะ-ไทซ์-เมินท์ / แอด-เวิร์ท-ทิส-เมินท์"
+    "thai_pronunciation": "แอด-เวอร์-ไทส์-เมินท์"
   },
   {
     "word": "advertising",
     "type": "n.",
     "level": "A2",
     "id": 109,
-    "ipa": "ˈædvərˌtaɪzɪŋ",
+    "ipa": "ˈædvərtaɪzɪŋ",
     "meaning": "การโฆษณา",
-    "thai_pronunciation": "แอด-เวอะ-ไท-ซิง"
+    "thai_pronunciation": "แอด-เวอร์-ไท-ซิง"
   },
   {
     "word": "advice",
@@ -987,7 +987,7 @@
     "id": 110,
     "meaning": "คำแนะนำ",
     "thai_pronunciation": "แอด-ไวส์",
-    "ipa": "ædˈvaɪs"
+    "ipa": "ədˈvaɪs"
   },
   {
     "word": "advise",
@@ -996,7 +996,7 @@
     "id": 111,
     "ipa": "ədˈvaɪz",
     "meaning": "ให้คำแนะนำ",
-    "thai_pronunciation": "แอด-ไวซ์"
+    "thai_pronunciation": "แอด-ไวส์"
   },
   {
     "word": "advocate",
@@ -1021,7 +1021,7 @@
     "type": "n.",
     "level": "B2",
     "id": 114,
-    "ipa": "əˈfɛr",
+    "ipa": "əˈfer",
     "meaning": "ธุระ",
     "thai_pronunciation": "อะ-แฟร์"
   },
@@ -1032,7 +1032,7 @@
     "id": 115,
     "ipa": "əˈfekt",
     "meaning": "ส่งผลกระทบต่อ, กระทบกระเทือน",
-    "thai_pronunciation": "เออะ-เฟ็กต์"
+    "thai_pronunciation": "อะ-เฟคต์"
   },
   {
     "word": "affection",
@@ -1084,7 +1084,7 @@
     "type": "v.",
     "level": "B1",
     "id": 121,
-    "ipa": "əˈfɔrd",
+    "ipa": "əˈfɔːrd",
     "meaning": "จ่ายได้",
     "thai_pronunciation": "อะ-ฟอร์ด"
   },
@@ -1104,7 +1104,7 @@
     "id": 123,
     "meaning": "เกรงกลัว",
     "thai_pronunciation": "อะ-เฟรด",
-    "ipa": "əˈfɹeɪd"
+    "ipa": "əˈfreɪd"
   },
   {
     "word": "after",
@@ -1140,7 +1140,7 @@
     "id": 127,
     "ipa": "ˈæftərwərdz",
     "meaning": "หลังจากนั้น",
-    "thai_pronunciation": "อาฟ-เตอร์-เวิร์ดส์"
+    "thai_pronunciation": "อาฟ-เตอร์-เวิร์ดส"
   },
   {
     "word": "again",
@@ -1149,16 +1149,16 @@
     "id": 128,
     "meaning": "อีกครั้ง",
     "thai_pronunciation": "อะ-เกน",
-    "ipa": "əˈɡeɪn"
+    "ipa": "əˈɡen"
   },
   {
     "word": "against",
     "type": "prep.",
     "level": "A2",
     "id": 129,
-    "ipa": "əˈgɛnst",
+    "ipa": "əˈɡenst",
     "meaning": "ขัดต่อ",
-    "thai_pronunciation": "อะ-เกนส์ต์"
+    "thai_pronunciation": "อะ-เกนสต์"
   },
   {
     "word": "age",
@@ -1166,24 +1166,24 @@
     "level": "B1",
     "id": 130,
     "meaning": "อายุ",
-    "thai_pronunciation": "เจย์",
-    "ipa": "ˈeɪdʒ"
+    "thai_pronunciation": "เอจ",
+    "ipa": "eɪdʒ"
   },
   {
     "word": "aged",
     "type": "adj.",
     "level": "B1",
     "id": 131,
-    "ipa": "ˈeɪʤɪd",
+    "ipa": "eɪdʒd",
     "meaning": "อายุ",
-    "thai_pronunciation": "อะ-เก็ด"
+    "thai_pronunciation": "เอจด์"
   },
   {
     "word": "agency",
     "type": "n.",
     "level": "B2",
     "id": 132,
-    "ipa": "ˈeɪʤənsi",
+    "ipa": "ˈeɪdʒənsi",
     "meaning": "เอเจนซี่",
     "thai_pronunciation": "เอ-เจน-ซี"
   },
@@ -1201,7 +1201,7 @@
     "type": "n.",
     "level": "B1",
     "id": 134,
-    "ipa": "ˈeɪʤənt",
+    "ipa": "ˈeɪdʒənt",
     "meaning": "ตัวแทน",
     "thai_pronunciation": "เอ-เจินท์"
   },
@@ -1228,9 +1228,9 @@
     "type": "adj.",
     "level": "B2",
     "id": 137,
-    "ipa": "əˈgrɛsɪv",
+    "ipa": "əˈɡresɪv",
     "meaning": "ก้าวร้าว",
-    "thai_pronunciation": "อะ-เกรส-ซิฟ"
+    "thai_pronunciation": "อะ-เกรส-ซิฟว์"
   },
   {
     "word": "agitate",
@@ -1248,7 +1248,7 @@
     "id": 139,
     "meaning": "ที่ผ่านมา",
     "thai_pronunciation": "อะ-โก",
-    "ipa": "əˈgoʊ"
+    "ipa": "əˈɡoʊ"
   },
   {
     "word": "agree",
@@ -1264,7 +1264,7 @@
     "type": "n.",
     "level": "B1",
     "id": 141,
-    "ipa": "əˈgrimənt",
+    "ipa": "əˈɡriːmənt",
     "meaning": "ข้อตกลง",
     "thai_pronunciation": "อะ-กรี-เมินท์"
   },
@@ -1300,7 +1300,7 @@
     "type": "adv.",
     "level": "B1",
     "id": 145,
-    "ipa": "əˈhɛd",
+    "ipa": "əˈhed",
     "meaning": "ข้างหน้า",
     "thai_pronunciation": "อะ-เฮด"
   },
@@ -1311,7 +1311,7 @@
     "id": 146,
     "ipa": "eɪd",
     "meaning": "ความช่วยเหลือ",
-    "thai_pronunciation": "เดย์"
+    "thai_pronunciation": "เอด"
   },
   {
     "word": "aide",
@@ -1319,7 +1319,7 @@
     "level": "B2",
     "ipa": "eɪd",
     "meaning": "ผู้ช่วย, นายทหารคนสนิท",
-    "thai_pronunciation": "เดย์",
+    "thai_pronunciation": "เอด",
     "id": 147
   },
   {
@@ -1338,7 +1338,7 @@
     "id": 149,
     "ipa": "eɪm",
     "meaning": "จุดมุ่งหมาย",
-    "thai_pronunciation": "เมย์"
+    "thai_pronunciation": "เอม"
   },
   {
     "word": "air",
@@ -1347,14 +1347,14 @@
     "id": 150,
     "meaning": "อากาศ",
     "thai_pronunciation": "แอร์",
-    "ipa": "ˈɛɹ"
+    "ipa": "er"
   },
   {
     "word": "aircraft",
     "type": "n.",
     "level": "B2",
     "id": 151,
-    "ipa": "ˈɛrˌkræft",
+    "ipa": "ˈerkræft",
     "meaning": "อากาศยาน",
     "thai_pronunciation": "แอร์-คราฟต์"
   },
@@ -1363,7 +1363,7 @@
     "type": "n.",
     "level": "A2",
     "id": 152,
-    "ipa": "ˈɛˌrlaɪn",
+    "ipa": "ˈerlaɪn",
     "meaning": "สายการบิน",
     "thai_pronunciation": "แอร์-ไลน์"
   },
@@ -1374,14 +1374,14 @@
     "id": 153,
     "meaning": "สนามบิน",
     "thai_pronunciation": "แอร์-พอร์ต",
-    "ipa": "ˈɛɹˌpɔɹt"
+    "ipa": "ˈerpɔːrt"
   },
   {
     "word": "alarm",
     "type": "n. B1 v.",
     "level": "B2",
     "id": 154,
-    "ipa": "əˈlɑrm",
+    "ipa": "əˈlɑːrm",
     "meaning": "เตือน",
     "thai_pronunciation": "อะ-ลาร์ม"
   },
@@ -1401,23 +1401,23 @@
     "id": 156,
     "ipa": "ˈælbəm",
     "meaning": "อัลบั้ม",
-    "thai_pronunciation": "ลั-บั้ม"
+    "thai_pronunciation": "แอล-บัม"
   },
   {
     "word": "alcohol",
     "type": "n.",
     "level": "B1",
     "id": 157,
-    "ipa": "ˈælkəˌhɑl",
+    "ipa": "ˈælkəhɔːl",
     "meaning": "แอลกอฮอล์",
-    "thai_pronunciation": "แอล-กอ-ฮอล"
+    "thai_pronunciation": "แอล-กอ-ฮอล์"
   },
   {
     "word": "alcoholic",
     "type": "adj.",
     "level": "B1",
     "id": 158,
-    "ipa": "ˌælkəˈhɑlɪk",
+    "ipa": "ˌælkəˈhɑːlɪk",
     "meaning": "ติดแอลกอฮอล์",
     "thai_pronunciation": "แอล-กอ-ฮอ-ลิก"
   },
@@ -1473,7 +1473,7 @@
     "id": 164,
     "ipa": "əˈlaɪv",
     "meaning": "มีชีวิตอยู่",
-    "thai_pronunciation": "อะ-ไลฟ์"
+    "thai_pronunciation": "อะ-ไลฟว์"
   },
   {
     "word": "all",
@@ -1482,7 +1482,7 @@
     "id": 165,
     "meaning": "ทั้งหมด",
     "thai_pronunciation": "ออล",
-    "ipa": "ˈɔɫ"
+    "ipa": "ɔːl"
   },
   {
     "word": "all right",
@@ -1490,8 +1490,8 @@
     "level": "A2",
     "id": 166,
     "meaning": "เรียบร้อย, ตกลง, ไม่เป็นไร",
-    "thai_pronunciation": "ออล ไรท์",
-    "ipa": "ɔːl ˈraɪt"
+    "thai_pronunciation": "ออล-ไรท์",
+    "ipa": "ˌɔːl ˈraɪt"
   },
   {
     "word": "allegation",
@@ -1579,7 +1579,7 @@
     "type": "adv.",
     "level": "A2",
     "id": 176,
-    "ipa": "ˈɔlˌmoʊst",
+    "ipa": "ˈɔːlmoʊst",
     "meaning": "เกือบ",
     "thai_pronunciation": "ออล-โมสต์"
   },
@@ -1597,7 +1597,7 @@
     "type": "prep. adv.",
     "level": "A2",
     "id": 178,
-    "ipa": "əˈlɔŋ",
+    "ipa": "əˈlɔːŋ",
     "meaning": "ตาม",
     "thai_pronunciation": "อะ-ลอง"
   },
@@ -1607,7 +1607,7 @@
     "level": "C1",
     "ipa": "əˌlɔːŋˈsaɪd",
     "meaning": "ข้างๆ, ควบคู่ไปกับ, เคียงข้าง",
-    "thai_pronunciation": "เออะ-ลอง-ไซด์",
+    "thai_pronunciation": "อะ-ลอง-ไซด์",
     "id": 179
   },
   {
@@ -1615,7 +1615,7 @@
     "type": "adv.",
     "level": "A2",
     "id": 180,
-    "ipa": "ɔˈrɛdi",
+    "ipa": "ɔːlˈredi",
     "meaning": "เรียบร้อยแล้ว",
     "thai_pronunciation": "ออล-เรด-ดี"
   },
@@ -1626,16 +1626,16 @@
     "id": 181,
     "meaning": "อีกด้วย",
     "thai_pronunciation": "ออล-โซ",
-    "ipa": "ˈɔlsoʊ"
+    "ipa": "ˈɔːlsoʊ"
   },
   {
     "word": "alter",
     "type": "v.",
     "level": "B2",
     "id": 182,
-    "ipa": "ˈɔltər",
+    "ipa": "ˈɔːltər",
     "meaning": "เปลี่ยนแปลง, ดัดแปลง, แก้ไข",
-    "thai_pronunciation": "ออล-เตอร์"
+    "thai_pronunciation": "ออล-เทอร์"
   },
   {
     "word": "alteration",
@@ -1660,26 +1660,26 @@
     "type": "n. A2 adj.",
     "level": "B1",
     "id": 185,
-    "ipa": "ɔlˈtərnətɪv",
+    "ipa": "ɔːlˈtɜːrnətɪv",
     "meaning": "ทางเลือก, ตัวเลือกสำรอง",
-    "thai_pronunciation": "ออล-เทอร์-เนอะ-ทิฟ"
+    "thai_pronunciation": "ออล-เทอร์-เนอ-ทิฟว์"
   },
   {
     "word": "although",
     "type": "conj.",
     "level": "A2",
     "id": 186,
-    "ipa": "ˌɔlˈðoʊ",
+    "ipa": "ɔːlˈðoʊ",
     "meaning": "แม้ว่า",
-    "thai_pronunciation": "ออล-โดธ"
+    "thai_pronunciation": "ออล-โธ"
   },
   {
     "word": "altitude",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ˈæɫtəˌtud",
+    "ipa": "ˈæltɪtjuːd",
     "meaning": "ระดับความสูง",
-    "thai_pronunciation": "ลั-ไอ-อุ-เดอะ",
+    "thai_pronunciation": "แอล-ทิ-ทูด",
     "id": 187
   },
   {
@@ -1707,7 +1707,7 @@
     "id": 190,
     "meaning": "เสมอ",
     "thai_pronunciation": "ออล-เวย์ส",
-    "ipa": "ˈɔɫˌweɪz"
+    "ipa": "ˈɔːlweɪz"
   },
   {
     "word": "amateur",
@@ -1768,9 +1768,9 @@
     "type": "n.",
     "level": "B1",
     "id": 197,
-    "ipa": "æmˈbɪʃən",
+    "ipa": "æmˈbɪʃn",
     "meaning": "ความทะเยอทะยาน",
-    "thai_pronunciation": "แอม-บิช-ชัน"
+    "thai_pronunciation": "แอม-บิ-ชัน"
   },
   {
     "word": "ambitious",
@@ -1785,9 +1785,9 @@
     "word": "ambulance",
     "type": "n.",
     "level": "C1",
-    "ipa": "ˈæmbjəɫəns",
+    "ipa": "ˈæmbjələns",
     "meaning": "รถพยาบาล",
-    "thai_pronunciation": "แอม-บิว-แลนส์",
+    "thai_pronunciation": "แอม-บิว-เลินส์",
     "id": 199
   },
   {
@@ -1831,7 +1831,7 @@
     "type": "prep.",
     "level": "A2",
     "id": 204,
-    "ipa": "əˈməŋ",
+    "ipa": "əˈmʌŋ",
     "meaning": "ท่ามกลาง",
     "thai_pronunciation": "อะ-มัง"
   },
@@ -1876,16 +1876,16 @@
     "type": "v.",
     "level": "B1",
     "id": 209,
-    "ipa": "ˈænɐlˌaɪz",
+    "ipa": "ˈænəlaɪz",
     "meaning": "วิเคราะห์",
-    "thai_pronunciation": "แอน-นะ-ไลซ์"
+    "thai_pronunciation": "แอน-นะ-ไลส์"
   },
   {
     "word": "analysis",
     "type": "n.",
     "level": "B1",
     "id": 210,
-    "ipa": "æˈnælɪsɪs",
+    "ipa": "əˈnæləsɪs",
     "meaning": "การวิเคราะห์",
     "thai_pronunciation": "อะ-แนล-ลิ-ซิส"
   },
@@ -1893,7 +1893,7 @@
     "word": "analyst",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈænəɫɪst",
+    "ipa": "ˈænəlɪst",
     "meaning": "นักวิเคราะห์",
     "thai_pronunciation": "แอน-นะ-ลิสต์",
     "id": 211
@@ -1921,9 +1921,9 @@
     "type": "adj.",
     "level": "A2",
     "id": 214,
-    "ipa": "ˈeɪnʧənt",
+    "ipa": "ˈeɪnʃənt",
     "meaning": "โบราณ",
-    "thai_pronunciation": "เนย์-เชินท์"
+    "thai_pronunciation": "เอน-เชินต์"
   },
   {
     "word": "and",
@@ -1938,9 +1938,9 @@
     "word": "angel",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈeɪndʒəɫ",
+    "ipa": "ˈeɪndʒl",
     "meaning": "นางฟ้า",
-    "thai_pronunciation": "เนย์-เจิล",
+    "thai_pronunciation": "เอน-เจิล",
     "id": 216
   },
   {
@@ -1948,7 +1948,7 @@
     "type": "n.",
     "level": "B2",
     "id": 217,
-    "ipa": "ˈæŋgər",
+    "ipa": "ˈæŋɡər",
     "meaning": "ความโกรธ",
     "thai_pronunciation": "แอง-เกอร์"
   },
@@ -1957,7 +1957,7 @@
     "type": "n.",
     "level": "B2",
     "id": 218,
-    "ipa": "ˈæŋgəl",
+    "ipa": "ˈæŋɡl",
     "meaning": "มุม",
     "thai_pronunciation": "แอง-เกิล"
   },
@@ -1968,7 +1968,7 @@
     "id": 219,
     "meaning": "โกรธ",
     "thai_pronunciation": "แอง-กรี",
-    "ipa": "ˈæŋɡɹi"
+    "ipa": "ˈæŋɡri"
   },
   {
     "word": "animal",
@@ -1976,8 +1976,8 @@
     "level": "A1",
     "id": 220,
     "meaning": "สัตว์",
-    "thai_pronunciation": "แอน-นิ-เมิล",
-    "ipa": "ˈænəməɫ"
+    "thai_pronunciation": "แอน-นิ-มัล",
+    "ipa": "ˈænɪml"
   },
   {
     "word": "animation",
@@ -1993,7 +1993,7 @@
     "type": "n.",
     "level": "A2",
     "id": 222,
-    "ipa": "ˈæŋkəl",
+    "ipa": "ˈæŋkl",
     "meaning": "ข้อเท้า",
     "thai_pronunciation": "แอง-เคิล"
   },
@@ -2002,7 +2002,7 @@
     "type": "n.",
     "level": "B2",
     "id": 223,
-    "ipa": "ˌænəˈvərsəri",
+    "ipa": "ˌænɪˈvɜːrsəri",
     "meaning": "วันครบรอบปี",
     "thai_pronunciation": "แอน-นิ-เวอร์-ซะ-รี"
   },
@@ -2020,7 +2020,7 @@
     "type": "n.",
     "level": "B1",
     "id": 225,
-    "ipa": "əˈnaʊnsmɛnt",
+    "ipa": "əˈnaʊnsmənt",
     "meaning": "ประกาศ",
     "thai_pronunciation": "อะ-เนาส์-เมินท์"
   },
@@ -2040,7 +2040,7 @@
     "id": 227,
     "ipa": "əˈnɔɪd",
     "meaning": "รำคาญ",
-    "thai_pronunciation": "แอน-นอย"
+    "thai_pronunciation": "อะ-นอยด์"
   },
   {
     "word": "annoying",
@@ -2049,7 +2049,7 @@
     "id": 228,
     "ipa": "əˈnɔɪɪŋ",
     "meaning": "น่ารำคาญ",
-    "thai_pronunciation": "แอน-นอย-งิ"
+    "thai_pronunciation": "อะ-นอย-อิ้ง"
   },
   {
     "word": "annual",
@@ -2085,7 +2085,7 @@
     "id": 232,
     "meaning": "อื่น",
     "thai_pronunciation": "อะ-นาธ-เธอร์",
-    "ipa": "əˈnəðər"
+    "ipa": "əˈnʌðər"
   },
   {
     "word": "answer",
@@ -2093,7 +2093,7 @@
     "level": "A1",
     "id": 233,
     "meaning": "คำตอบ",
-    "thai_pronunciation": "อาน-เซอร์",
+    "thai_pronunciation": "แอน-เซอร์",
     "ipa": "ˈænsər"
   },
   {
@@ -2128,9 +2128,9 @@
     "type": "adj.",
     "level": "B2",
     "id": 237,
-    "ipa": "ˈæŋʃəs",
+    "ipa": "ˈæŋkʃəs",
     "meaning": "กังวล",
-    "thai_pronunciation": "แอง-เชียส"
+    "thai_pronunciation": "แอง-เชิส"
   },
   {
     "word": "any",
@@ -2138,8 +2138,8 @@
     "level": "A2",
     "id": 238,
     "meaning": "ใดๆ",
-    "thai_pronunciation": "เนย์-นี",
-    "ipa": "ˈɛni"
+    "thai_pronunciation": "เอน-นี่",
+    "ipa": "ˈeni"
   },
   {
     "word": "any more",
@@ -2147,17 +2147,17 @@
     "level": "A2",
     "id": 239,
     "meaning": "ใดๆ",
-    "thai_pronunciation": "เนย์-นี โอ-เรอะ",
-    "ipa": "iː"
+    "thai_pronunciation": "เอน-นี่-มอร์",
+    "ipa": "ˌeni ˈmɔːr"
   },
   {
     "word": "anybody",
     "type": "pron.",
     "level": "A2",
     "id": 240,
-    "ipa": "ˈɛnibədi",
+    "ipa": "ˈenibədi",
     "meaning": "ใครก็ได้",
-    "thai_pronunciation": "เนย์-นี-บอด-ดี"
+    "thai_pronunciation": "เอน-นี่-บอ-ดี้"
   },
   {
     "word": "anyone",
@@ -2165,8 +2165,8 @@
     "level": "A1",
     "id": 241,
     "meaning": "ใครก็ได้",
-    "thai_pronunciation": "เนย์-นี-วัน",
-    "ipa": "ˈɛniˌwən"
+    "thai_pronunciation": "เอน-นี่-วัน",
+    "ipa": "ˈeniwʌn"
   },
   {
     "word": "anything",
@@ -2174,35 +2174,35 @@
     "level": "A1",
     "id": 242,
     "meaning": "อะไรก็ตาม",
-    "thai_pronunciation": "เนย์-นี-ธิง",
-    "ipa": "ˈɛniˌθɪŋ"
+    "thai_pronunciation": "เอน-นี่-ธิง",
+    "ipa": "ˈeniθɪŋ"
   },
   {
     "word": "anyway",
     "type": "adv.",
     "level": "A2",
     "id": 243,
-    "ipa": "ˈɛniˌweɪ",
+    "ipa": "ˈeniweɪ",
     "meaning": "ถึงอย่างไร",
-    "thai_pronunciation": "เนย์-นี-เวย์"
+    "thai_pronunciation": "เอน-นี่-เวย์"
   },
   {
     "word": "anywhere",
     "type": "adv. pron.",
     "level": "A2",
     "id": 244,
-    "ipa": "ˈɛniˌwɛr",
+    "ipa": "ˈeniwer",
     "meaning": "ทุกที่",
-    "thai_pronunciation": "เนย์-นี-แวร์"
+    "thai_pronunciation": "เอน-นี่-แวร์"
   },
   {
     "word": "apart",
     "type": "adv.",
     "level": "B1",
     "id": 245,
-    "ipa": "əˈpɑrt",
+    "ipa": "əˈpɑːrt",
     "meaning": "ห่างกัน",
-    "thai_pronunciation": "อะ-พาร์ต"
+    "thai_pronunciation": "อะ-พาร์ท"
   },
   {
     "word": "apartment",
@@ -2210,25 +2210,25 @@
     "level": "A1",
     "id": 246,
     "meaning": "อพาร์ทเม้น",
-    "thai_pronunciation": "อะ-พาร์ต-เมินท์",
-    "ipa": "əˈpɑɹtmənt"
+    "thai_pronunciation": "อะ-พาร์ท-เมินท์",
+    "ipa": "əˈpɑːrtmənt"
   },
   {
     "word": "apologize",
     "type": "v.",
     "level": "B1",
     "id": 247,
-    "ipa": "əˈpɑləˌʤaɪz",
+    "ipa": "əˈpɑːlədʒaɪz",
     "meaning": "ขอโทษ",
-    "thai_pronunciation": "อะ-พอล-เลอะ-ไจซ์"
+    "thai_pronunciation": "อะ-พอล-โล-ไจส์"
   },
   {
     "word": "apology",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "əˈpɑɫəˌdʒi",
+    "ipa": "əˈpɑːlədʒi",
     "meaning": "คำขอโทษ, การกล่าวแสดงความเสียใจ",
-    "thai_pronunciation": "อะ-พอล-เลอะ-จี",
+    "thai_pronunciation": "อะ-พอล-โล-จี",
     "id": 248
   },
   {
@@ -2236,9 +2236,9 @@
     "type": "n.",
     "level": "A2",
     "id": 249,
-    "ipa": "ˈæp",
+    "ipa": "æp",
     "meaning": "แอป",
-    "thai_pronunciation": "แอพ"
+    "thai_pronunciation": "แอป"
   },
   {
     "word": "apparatus",
@@ -2254,9 +2254,9 @@
     "type": "adj.",
     "level": "B2",
     "id": 251,
-    "ipa": "əˈpɛrənt",
+    "ipa": "əˈpærənt",
     "meaning": "ชัดเจน, ปรากฏเด่นชัด, ดูเหมือนว่า",
-    "thai_pronunciation": "อะ-แพ-เรินท์"
+    "thai_pronunciation": "อะ-แพร์-เรินท์"
   },
   {
     "word": "apparently",
@@ -2272,7 +2272,7 @@
     "type": "n. v.",
     "level": "B2",
     "id": 253,
-    "ipa": "əˈpil",
+    "ipa": "əˈpiːl",
     "meaning": "ดึงดูดใจ, การอุทธรณ์, ร้องขอ",
     "thai_pronunciation": "อะ-พีล"
   },
@@ -2280,9 +2280,9 @@
     "word": "appealing",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "əˈpiɫɪŋ",
+    "ipa": "əˈpiːlɪŋ",
     "meaning": "น่าสนใจ",
-    "thai_pronunciation": "แอพ-อีพล-งิ",
+    "thai_pronunciation": "อะ-พีล-ลิ่ง",
     "id": 254
   },
   {
@@ -2301,7 +2301,7 @@
     "id": 256,
     "ipa": "əˈpɪrəns",
     "meaning": "รูปร่าง",
-    "thai_pronunciation": "อะ-เพีย-แรนส์"
+    "thai_pronunciation": "อะ-เพียร์-เรินส์"
   },
   {
     "word": "appetite",
@@ -2337,7 +2337,7 @@
     "id": 260,
     "meaning": "แอปเปิล",
     "thai_pronunciation": "แอป-เปิล",
-    "ipa": "ˈæpəɫ"
+    "ipa": "ˈæpl"
   },
   {
     "word": "applicable",
@@ -2362,7 +2362,7 @@
     "type": "n.",
     "level": "B1",
     "id": 263,
-    "ipa": "ˌæpləˈkeɪʃən",
+    "ipa": "ˌæplɪˈkeɪʃn",
     "meaning": "แอปพลิเคชัน",
     "thai_pronunciation": "แอป-พลิ-เค-ชัน"
   },
@@ -2373,7 +2373,7 @@
     "id": 264,
     "ipa": "əˈplaɪ",
     "meaning": "นำมาใช้",
-    "thai_pronunciation": "อะ-พลัย"
+    "thai_pronunciation": "อะ-พลอย / อะ-พลาย"
   },
   {
     "word": "appoint",
@@ -2381,7 +2381,7 @@
     "level": "B2",
     "ipa": "əˈpɔɪnt",
     "meaning": "แต่งตั้ง, กำหนดเวลานัดหมาย",
-    "thai_pronunciation": "เออะ-พอยท์",
+    "thai_pronunciation": "อะ-พอยท์",
     "id": 265
   },
   {
@@ -2409,7 +2409,7 @@
     "id": 268,
     "ipa": "əˈpriːʃieɪt",
     "meaning": "ซาบซึ้ง, เห็นคุณค่า, ขอบคุณ",
-    "thai_pronunciation": "เออะ-พรี-ชี-เทย์"
+    "thai_pronunciation": "อะ-พรี-ชิ-เอท"
   },
   {
     "word": "appreciation",
@@ -2425,18 +2425,18 @@
     "type": "n. v.",
     "level": "B2",
     "id": 270,
-    "ipa": "əˈproʊʧ",
+    "ipa": "əˈproʊtʃ",
     "meaning": "เข้าใกล้",
-    "thai_pronunciation": "อะ-โพรช"
+    "thai_pronunciation": "อะ-โปรช"
   },
   {
     "word": "appropriate",
     "type": "adj.",
     "level": "B2",
     "id": 271,
-    "ipa": "əˈproʊpriˌeɪt",
+    "ipa": "əˈproʊpriət",
     "meaning": "เหมาะสม",
-    "thai_pronunciation": "อะ-โพร-พริ-เทย์"
+    "thai_pronunciation": "อะ-โปร-พริ-เอท"
   },
   {
     "word": "appropriately",
@@ -2452,16 +2452,16 @@
     "type": "n.",
     "level": "B2",
     "id": 273,
-    "ipa": "əˈpruvəl",
+    "ipa": "əˈpruːvl",
     "meaning": "การอนุมัติ",
-    "thai_pronunciation": "อะ-พรู-เวิล"
+    "thai_pronunciation": "อะ-พรูฟ-วาล"
   },
   {
     "word": "approve",
     "type": "v.",
     "level": "B2",
     "id": 274,
-    "ipa": "əˈpruv",
+    "ipa": "əˈpruːv",
     "meaning": "อนุมัติ",
     "thai_pronunciation": "อะ-พรูฟว์"
   },
@@ -2506,9 +2506,9 @@
     "type": "n.",
     "level": "A2",
     "id": 279,
-    "ipa": "ˈɑrkəˌtɛkt",
+    "ipa": "ˈɑːrkɪtekt",
     "meaning": "สถาปนิก",
-    "thai_pronunciation": "อาร์-คิ-เทกต์"
+    "thai_pronunciation": "อาร์-คิ-เทคท์"
   },
   {
     "word": "architectural",
@@ -2524,9 +2524,9 @@
     "type": "n.",
     "level": "A2",
     "id": 281,
-    "ipa": "ˈɑrkəˌtɛkʧər",
+    "ipa": "ˈɑːrkɪtektʃər",
     "meaning": "สถาปัตยกรรม",
-    "thai_pronunciation": "อาร์-คิ-เทก-เจอร์"
+    "thai_pronunciation": "อาร์-คิ-เทค-เจอร์"
   },
   {
     "word": "archive",
@@ -2544,7 +2544,7 @@
     "id": 283,
     "meaning": "พื้นที่",
     "thai_pronunciation": "แอ-เรีย",
-    "ipa": "ˈɛɹiə"
+    "ipa": "ˈeriə"
   },
   {
     "word": "arena",
@@ -2569,18 +2569,18 @@
     "type": "v.",
     "level": "A2",
     "id": 286,
-    "ipa": "ˈɑrgju",
+    "ipa": "ˈɑːrɡjuː",
     "meaning": "โต้แย้ง",
-    "thai_pronunciation": "อาร์-กิว"
+    "thai_pronunciation": "อาร์ก-กิว"
   },
   {
     "word": "argument",
     "type": "n.",
     "level": "A2",
     "id": 287,
-    "ipa": "ˈɑrgjəmənt",
+    "ipa": "ˈɑːrɡjumənt",
     "meaning": "การโต้แย้ง",
-    "thai_pronunciation": "อาร์-กิว-เมินท์"
+    "thai_pronunciation": "อาร์ก-กิว-เมินท์"
   },
   {
     "word": "arise",
@@ -2589,7 +2589,7 @@
     "id": 288,
     "ipa": "əˈraɪz",
     "meaning": "เกิดขึ้น, ปรากฏขึ้น, ลุกขึ้น",
-    "thai_pronunciation": "เออะ-ไรส์"
+    "thai_pronunciation": "อะ-ไรส์"
   },
   {
     "word": "arm",
@@ -2598,7 +2598,7 @@
     "id": 289,
     "meaning": "แขน",
     "thai_pronunciation": "อาร์ม",
-    "ipa": "ˈɑɹm"
+    "ipa": "ɑːrm"
   },
   {
     "word": "armed",
@@ -2632,7 +2632,7 @@
     "type": "n.",
     "level": "A2",
     "id": 293,
-    "ipa": "ˈɑrmi",
+    "ipa": "ˈɑːrmi",
     "meaning": "กองทัพบก",
     "thai_pronunciation": "อาร์-มี"
   },
@@ -2643,14 +2643,14 @@
     "id": 294,
     "meaning": "รอบๆ",
     "thai_pronunciation": "อะ-ราวนด์",
-    "ipa": "ɝˈaʊn"
+    "ipa": "əˈraʊnd"
   },
   {
     "word": "arrange",
     "type": "v.",
     "level": "A2",
     "id": 295,
-    "ipa": "əreɪnʤ",
+    "ipa": "əˈreɪndʒ",
     "meaning": "จัด",
     "thai_pronunciation": "อะ-เรนจ์"
   },
@@ -2659,7 +2659,7 @@
     "type": "n.",
     "level": "A2",
     "id": 296,
-    "ipa": "ərˈeɪnʤmənt",
+    "ipa": "əˈreɪndʒmənt",
     "meaning": "การจัดเตรียม",
     "thai_pronunciation": "อะ-เรนจ์-เมินท์"
   },
@@ -2677,7 +2677,7 @@
     "type": "v. n.",
     "level": "B1",
     "id": 298,
-    "ipa": "ərˈɛst",
+    "ipa": "əˈrest",
     "meaning": "จับกุม",
     "thai_pronunciation": "อะ-เรสต์"
   },
@@ -2686,9 +2686,9 @@
     "type": "n.",
     "level": "B1",
     "id": 299,
-    "ipa": "ərˈaɪvəl",
+    "ipa": "əˈraɪvl",
     "meaning": "การมาถึง",
-    "thai_pronunciation": "อะ-ไร-เวิล"
+    "thai_pronunciation": "อะ-ไรฟ-วาล"
   },
   {
     "word": "arrive",
@@ -2697,7 +2697,7 @@
     "id": 300,
     "meaning": "มาถึง",
     "thai_pronunciation": "อะ-ไรฟว์",
-    "ipa": "ɝˈaɪv"
+    "ipa": "əˈraɪv"
   },
   {
     "word": "arrow",
@@ -2714,8 +2714,8 @@
     "level": "A1",
     "id": 302,
     "meaning": "ศิลปะ",
-    "thai_pronunciation": "อาร์ต",
-    "ipa": "ˈɑɹt"
+    "thai_pronunciation": "อาร์ท",
+    "ipa": "ɑːrt"
   },
   {
     "word": "articulate",
@@ -2751,7 +2751,7 @@
     "id": 306,
     "meaning": "ศิลปิน",
     "thai_pronunciation": "อาร์-ทิสต์",
-    "ipa": "ˈɑɹtəst"
+    "ipa": "ˈɑːrtɪst"
   },
   {
     "word": "artistic",
@@ -2796,7 +2796,7 @@
     "id": 311,
     "ipa": "əˈʃeɪmd",
     "meaning": "ละอายใจ, รู้สึกผิด",
-    "thai_pronunciation": "เออะ-เชมด์"
+    "thai_pronunciation": "อะ-เชมด์"
   },
   {
     "word": "aside",
@@ -2813,24 +2813,24 @@
     "level": "A1",
     "id": 313,
     "meaning": "ถาม",
-    "thai_pronunciation": "อัสก์ / แอสก์",
-    "ipa": "ˈæsk"
+    "thai_pronunciation": "แอสค์",
+    "ipa": "æsk"
   },
   {
     "word": "asleep",
     "type": "adj.",
     "level": "A2",
     "id": 314,
-    "ipa": "əsˈlip",
+    "ipa": "əˈsliːp",
     "meaning": "นอนหลับ",
-    "thai_pronunciation": "อะ-สลีป"
+    "thai_pronunciation": "อะ-สลีพ"
   },
   {
     "word": "aspect",
     "type": "n.",
     "level": "B2",
     "id": 315,
-    "ipa": "ˈæˌspɛkt",
+    "ipa": "ˈæspekt",
     "meaning": "ด้าน",
     "thai_pronunciation": "แอส-เปกต์"
   },
@@ -2911,7 +2911,7 @@
     "type": "v.",
     "level": "B2",
     "id": 324,
-    "ipa": "əˈsɛs",
+    "ipa": "əˈses",
     "meaning": "ประเมินค่า, ประเมินสถานการณ์",
     "thai_pronunciation": "อะ-เซส"
   },
@@ -2920,7 +2920,7 @@
     "type": "n.",
     "level": "B2",
     "id": 325,
-    "ipa": "əˈsɛsmənt",
+    "ipa": "əˈsesmənt",
     "meaning": "การประเมินผล, แบบประเมิน",
     "thai_pronunciation": "อะ-เซส-เมินท์"
   },
@@ -2992,25 +2992,25 @@
     "type": "v.",
     "level": "B2",
     "id": 333,
-    "ipa": "əˈsoʊʃiˌeɪt",
+    "ipa": "əˈsoʊʃieɪt",
     "meaning": "เชื่อมโยง, มีความสัมพันธ์กับ, เพื่อนร่วมงาน",
-    "thai_pronunciation": "อะ-โซ-ชิ-เทย์"
+    "thai_pronunciation": "อะ-โซ-ชิ-เอท"
   },
   {
     "word": "associated",
     "type": "adj.",
     "level": "B2",
     "id": 334,
-    "ipa": "əˈsoʊʃiˌeɪtəd",
+    "ipa": "əˈsoʊʃieɪtɪd",
     "meaning": "ที่เกี่ยวข้อง",
-    "thai_pronunciation": "แอส์-โอ-ไอ-เท็ด"
+    "thai_pronunciation": "อะ-โซ-ชิ-เอ-ทิด"
   },
   {
     "word": "association",
     "type": "n.",
     "level": "B2",
     "id": 335,
-    "ipa": "əˌsoʊʃiˈeɪʃən",
+    "ipa": "əˌsoʊʃiˈeɪʃn",
     "meaning": "สมาคม, การรวมกลุ่ม, ความเกี่ยวข้องกัน",
     "thai_pronunciation": "อะ-โซ-ชิ-เอ-ชัน"
   },
@@ -3019,7 +3019,7 @@
     "type": "v.",
     "level": "B2",
     "id": 336,
-    "ipa": "əˈsum",
+    "ipa": "əˈsuːm",
     "meaning": "สันนิษฐาน, สันนิษฐานเอาเอง, รับตำแหน่ง",
     "thai_pronunciation": "อะ-ซูม"
   },
@@ -3091,7 +3091,7 @@
     "type": "n.",
     "level": "B1",
     "id": 344,
-    "ipa": "ˈætməsˌfɪr",
+    "ipa": "ˈætməsfɪr",
     "meaning": "บรรยากาศ",
     "thai_pronunciation": "แอต-โมส-เฟียร์"
   },
@@ -3109,7 +3109,7 @@
     "type": "v.",
     "level": "B1",
     "id": 346,
-    "ipa": "əˈtæʧ",
+    "ipa": "əˈtætʃ",
     "meaning": "แนบ",
     "thai_pronunciation": "อะ-แทช"
   },
@@ -3129,7 +3129,7 @@
     "id": 348,
     "ipa": "əˈtæk",
     "meaning": "จู่โจม",
-    "thai_pronunciation": "อะ-แทก"
+    "thai_pronunciation": "อะ-แทค"
   },
   {
     "word": "attain",
@@ -3145,16 +3145,16 @@
     "type": "n. v.",
     "level": "B2",
     "id": 350,
-    "ipa": "əˈtɛmpt",
+    "ipa": "əˈtempt",
     "meaning": "พยายาม",
-    "thai_pronunciation": "อะ-เทมพ์ต์"
+    "thai_pronunciation": "อะ-เทมพท์"
   },
   {
     "word": "attend",
     "type": "v.",
     "level": "A2",
     "id": 351,
-    "ipa": "əˈtɛnd",
+    "ipa": "əˈtend",
     "meaning": "เข้าร่วม",
     "thai_pronunciation": "อะ-เทนด์"
   },
@@ -3172,7 +3172,7 @@
     "type": "n. exclam.",
     "level": "A2",
     "id": 353,
-    "ipa": "əˈtɛnʃən",
+    "ipa": "əˈtenʃn",
     "meaning": "ความสนใจ",
     "thai_pronunciation": "อะ-เทน-ชัน"
   },
@@ -3181,7 +3181,7 @@
     "type": "n.",
     "level": "B1",
     "id": 354,
-    "ipa": "ˈætəˌtud",
+    "ipa": "ˈætɪtuːd",
     "meaning": "ทัศนคติ",
     "thai_pronunciation": "แอต-ทิ-ทูด"
   },
@@ -3208,7 +3208,7 @@
     "type": "n.",
     "level": "B1",
     "id": 357,
-    "ipa": "əˈtrækʃən",
+    "ipa": "əˈtrækʃn",
     "meaning": "สถานที่ท่องเที่ยว",
     "thai_pronunciation": "อะ-แทรก-ชัน"
   },
@@ -3219,7 +3219,7 @@
     "id": 358,
     "ipa": "əˈtræktɪv",
     "meaning": "มีเสน่ห์",
-    "thai_pronunciation": "อะ-แทรก-ทิฟ"
+    "thai_pronunciation": "อะ-แทรก-ทิฟว์"
   },
   {
     "word": "attribute",
@@ -3244,7 +3244,7 @@
     "type": "n.",
     "level": "A2",
     "id": 361,
-    "ipa": "ˈɔdiəns",
+    "ipa": "ˈɔːdiəns",
     "meaning": "ผู้ชม",
     "thai_pronunciation": "ออ-ดิ-เอนส์"
   },
@@ -3298,7 +3298,7 @@
     "type": "n.",
     "level": "A2",
     "id": 367,
-    "ipa": "ˈɔθər",
+    "ipa": "ˈɔːθər",
     "meaning": "ผู้เขียน",
     "thai_pronunciation": "ออ-เธอร์"
   },
@@ -3307,9 +3307,9 @@
     "type": "n.",
     "level": "B1",
     "id": 368,
-    "ipa": "əˈθɔrəti",
+    "ipa": "əˈθɔːrəti",
     "meaning": "อำนาจหน้าที่, ผู้มีอำนาจ, เจ้าหน้าที่",
-    "thai_pronunciation": "ออ-ธอ-ริ-ที"
+    "thai_pronunciation": "อะ-ธอ-ริ-ที"
   },
   {
     "word": "authorize",
@@ -3333,18 +3333,18 @@
     "word": "automatic",
     "type": "adj.",
     "level": "C1",
-    "ipa": "ˌɔtəˈmætɪk",
+    "ipa": "ˌɔːtəˈmætɪk",
     "meaning": "อัตโนมัติ",
-    "thai_pronunciation": "ออ-โต-แมต-ติก",
+    "thai_pronunciation": "ออ-โต-แม-ติก",
     "id": 371
   },
   {
     "word": "automatically",
     "type": "adv.",
     "level": "B2",
-    "ipa": "ˌɔtəˈmætɪkɫi",
+    "ipa": "ˌɔːtəˈmætɪkli",
     "meaning": "โดยอัตโนมัติ",
-    "thai_pronunciation": "ออ-โต-แมต-ติก-ลี",
+    "thai_pronunciation": "ออ-โต-แม-ติก-ลี",
     "id": 372
   },
   {
@@ -3379,7 +3379,7 @@
     "type": "adj.",
     "level": "A2",
     "id": 376,
-    "ipa": "əˈveɪləbəl",
+    "ipa": "əˈveɪləbl",
     "meaning": "พร้อมใช้งาน, ว่าง, มีจำหน่าย",
     "thai_pronunciation": "อะ-เว-เลอะ-เบิล"
   },
@@ -3397,9 +3397,9 @@
     "type": "adj. n. A2 v.",
     "level": "B1",
     "id": 378,
-    "ipa": "ˈævərɪʤ",
+    "ipa": "ˈævərɪdʒ",
     "meaning": "เฉลี่ย",
-    "thai_pronunciation": "แอฟ-เวอะ-ริจ"
+    "thai_pronunciation": "แอฟ-เวอ-ริจ"
   },
   {
     "word": "aversion",
@@ -3433,7 +3433,7 @@
     "type": "n. A2 v.",
     "level": "B1",
     "id": 382,
-    "ipa": "əˈwɔrd",
+    "ipa": "əˈwɔːrd",
     "meaning": "รางวัล",
     "thai_pronunciation": "อะ-วอร์ด"
   },
@@ -3442,7 +3442,7 @@
     "type": "adj.",
     "level": "B1",
     "id": 383,
-    "ipa": "əˈwɛr",
+    "ipa": "əˈwer",
     "meaning": "รับรู้",
     "thai_pronunciation": "อะ-แวร์"
   },
@@ -3450,9 +3450,9 @@
     "word": "awareness",
     "type": "n.",
     "level": "C1",
-    "ipa": "əˈwɛɹnəs",
+    "ipa": "əˈwernəs",
     "meaning": "ความตระหนักรู้",
-    "thai_pronunciation": "อะ-แวร์-เนิส",
+    "thai_pronunciation": "อะ-แวร์-เนส",
     "id": 384
   },
   {
@@ -3469,7 +3469,7 @@
     "type": "adj.",
     "level": "A2",
     "id": 386,
-    "ipa": "ˈɔfəl",
+    "ipa": "ˈɔːfl",
     "meaning": "แย่มาก",
     "thai_pronunciation": "ออ-ฟูล"
   },
@@ -3488,7 +3488,7 @@
     "level": "A1",
     "id": 388,
     "meaning": "ที่รัก",
-    "thai_pronunciation": "เบย์-บี",
+    "thai_pronunciation": "เบ-บี",
     "ipa": "ˈbeɪbi"
   },
   {
@@ -3497,8 +3497,8 @@
     "level": "B2",
     "id": 389,
     "meaning": "กลับ",
-    "thai_pronunciation": "แบก",
-    "ipa": "ˈbæk"
+    "thai_pronunciation": "แบ็ค",
+    "ipa": "bæk"
   },
   {
     "word": "backdrop",
@@ -3514,9 +3514,9 @@
     "type": "n.",
     "level": "A2",
     "id": 391,
-    "ipa": "ˈbæk.ɡraʊnd",
+    "ipa": "ˈbækɡraʊnd",
     "meaning": "พื้นหลัง",
-    "thai_pronunciation": "แบ็ก-เกรานด์"
+    "thai_pronunciation": "แบ็ค-กราวนด์"
   },
   {
     "word": "backing",
@@ -3587,8 +3587,8 @@
     "level": "A1",
     "id": 399,
     "meaning": "ถุง",
-    "thai_pronunciation": "แบก",
-    "ipa": "ˈbæɡ"
+    "thai_pronunciation": "แบ็ก",
+    "ipa": "bæɡ"
   },
   {
     "word": "bail",
@@ -3613,9 +3613,9 @@
     "type": "n. v.",
     "level": "B1",
     "id": 402,
-    "ipa": "ˈbæl.əns",
+    "ipa": "ˈbæləns",
     "meaning": "สมดุล",
-    "thai_pronunciation": "แบ-ลันส์"
+    "thai_pronunciation": "บาล-เลินส์"
   },
   {
     "word": "balanced",
@@ -3712,7 +3712,7 @@
     "type": "n. A2 v.",
     "level": "B2",
     "id": 413,
-    "ipa": "bɑr",
+    "ipa": "bɑːr",
     "meaning": "บาร์",
     "thai_pronunciation": "บาร์"
   },
@@ -3757,9 +3757,9 @@
     "type": "n.",
     "level": "B2",
     "id": 418,
-    "ipa": "ˈbɛriər",
+    "ipa": "ˈbæriər",
     "meaning": "สิ่งกีดขวาง",
-    "thai_pronunciation": "เบ-รี-ออร์"
+    "thai_pronunciation": "แบร์-ริ-เออร์"
   },
   {
     "word": "base",
@@ -3775,7 +3775,7 @@
     "type": "n.",
     "level": "A2",
     "id": 420,
-    "ipa": "ˈbeɪsˈbɔl",
+    "ipa": "ˈbeɪsbɔːl",
     "meaning": "เบสบอล",
     "thai_pronunciation": "เบส-บอล"
   },
@@ -3804,7 +3804,7 @@
     "id": 423,
     "ipa": "ˈbeɪsɪk",
     "meaning": "ขั้นพื้นฐาน",
-    "thai_pronunciation": "เบย์-ซิก"
+    "thai_pronunciation": "เบ-ซิก"
   },
   {
     "word": "basically",
@@ -3813,7 +3813,7 @@
     "id": 424,
     "ipa": "ˈbeɪsɪkli",
     "meaning": "โดยพื้นฐานแล้ว",
-    "thai_pronunciation": "เบย์-ซิก-ลี"
+    "thai_pronunciation": "เบ-ซิก-ลี"
   },
   {
     "word": "basis",
@@ -3822,15 +3822,15 @@
     "id": 425,
     "ipa": "ˈbeɪsɪs",
     "meaning": "พื้นฐาน",
-    "thai_pronunciation": "เบย์-ซิส"
+    "thai_pronunciation": "เบ-ซิส"
   },
   {
     "word": "basket",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈbæskət",
+    "ipa": "ˈbæskɪt",
     "meaning": "ตะกร้า",
-    "thai_pronunciation": "บาส-เกต / แบส-เกต",
+    "thai_pronunciation": "บาส-เก็ต",
     "id": 426
   },
   {
@@ -3838,9 +3838,9 @@
     "type": "n.",
     "level": "A2",
     "id": 427,
-    "ipa": "ˈbæskətˌbɔl",
+    "ipa": "ˈbæskɪtbɔːl",
     "meaning": "บาสเกตบอล",
-    "thai_pronunciation": "บาส-เกต-บอล"
+    "thai_pronunciation": "บาส-เก็ต-บอล"
   },
   {
     "word": "bass",
@@ -3866,8 +3866,8 @@
     "level": "A1",
     "id": 430,
     "meaning": "อาบน้ำ",
-    "thai_pronunciation": "บาธ / แบธ",
-    "ipa": "ˈbæθ"
+    "thai_pronunciation": "บาธ",
+    "ipa": "bæθ"
   },
   {
     "word": "bathroom",
@@ -3876,7 +3876,7 @@
     "id": 431,
     "meaning": "ห้องน้ำ",
     "thai_pronunciation": "บาธ-รูม",
-    "ipa": "ˈbæˌθɹum"
+    "ipa": "ˈbæθruːm"
   },
   {
     "word": "battery",
@@ -3885,16 +3885,16 @@
     "id": 432,
     "ipa": "ˈbætəri",
     "meaning": "แบตเตอรี่",
-    "thai_pronunciation": "แบ-ทะ-รี"
+    "thai_pronunciation": "แบต-เตอ-รี"
   },
   {
     "word": "battle",
     "type": "n. B1 v.",
     "level": "B2",
     "id": 433,
-    "ipa": "ˈbætəl",
+    "ipa": "ˈbætl",
     "meaning": "การต่อสู้",
-    "thai_pronunciation": "แบ-ทัล"
+    "thai_pronunciation": "แบท-เทิล"
   },
   {
     "word": "battlefield",
@@ -3921,7 +3921,7 @@
     "id": 436,
     "meaning": "เป็น",
     "thai_pronunciation": "บี",
-    "ipa": "ˈiː"
+    "ipa": "biː"
   },
   {
     "word": "beach",
@@ -3930,7 +3930,7 @@
     "id": 437,
     "meaning": "ชายหาด",
     "thai_pronunciation": "บีช",
-    "ipa": "ˈbitʃ"
+    "ipa": "biːtʃ"
   },
   {
     "word": "beam",
@@ -3955,9 +3955,9 @@
     "type": "n.",
     "level": "A2",
     "id": 440,
-    "ipa": "bɛr",
+    "ipa": "ber",
     "meaning": "หมี",
-    "thai_pronunciation": "เบ"
+    "thai_pronunciation": "แบร์"
   },
   {
     "word": "beast",
@@ -3991,7 +3991,7 @@
     "type": "n.",
     "level": "B1",
     "id": 444,
-    "ipa": "ˈbjuti",
+    "ipa": "ˈbjuːti",
     "meaning": "ความงาม",
     "thai_pronunciation": "บิว-ที"
   },
@@ -4002,7 +4002,7 @@
     "id": 445,
     "meaning": "เพราะว่า, เนื่องจาก",
     "thai_pronunciation": "บิ-คอส",
-    "ipa": "bɪˈkɒz, bɪˈkəz"
+    "ipa": "bɪˈkɔːz"
   },
   {
     "word": "become",
@@ -4011,7 +4011,7 @@
     "id": 446,
     "meaning": "กลายเป็น",
     "thai_pronunciation": "บิ-คัม",
-    "ipa": "bɪˈkəm"
+    "ipa": "bɪˈkʌm"
   },
   {
     "word": "bed",
@@ -4020,7 +4020,7 @@
     "id": 447,
     "meaning": "เตียง",
     "thai_pronunciation": "เบด",
-    "ipa": "ˈbɛd"
+    "ipa": "bed"
   },
   {
     "word": "bedroom",
@@ -4028,15 +4028,15 @@
     "level": "A1",
     "id": 448,
     "meaning": "ห้องนอน",
-    "thai_pronunciation": "เบด-ดรูม",
-    "ipa": "ˈbɛˌdɹum"
+    "thai_pronunciation": "เบด-รูม",
+    "ipa": "ˈbedruːm"
   },
   {
     "word": "bee",
     "type": "n.",
     "level": "B1",
     "id": 449,
-    "ipa": "ˈbi",
+    "ipa": "biː",
     "meaning": "ผึ้ง",
     "thai_pronunciation": "บี"
   },
@@ -4045,7 +4045,7 @@
     "type": "n.",
     "level": "A2",
     "id": 450,
-    "ipa": "bif",
+    "ipa": "biːf",
     "meaning": "เนื้อวัว",
     "thai_pronunciation": "บีฟ"
   },
@@ -4055,8 +4055,8 @@
     "level": "A1",
     "id": 451,
     "meaning": "เบียร์",
-    "thai_pronunciation": "บิ",
-    "ipa": "ˈbɪɹ"
+    "thai_pronunciation": "เบียร์",
+    "ipa": "bɪr"
   },
   {
     "word": "before",
@@ -4065,7 +4065,7 @@
     "id": 452,
     "meaning": "ก่อน",
     "thai_pronunciation": "บิ-ฟอร์",
-    "ipa": "ˌbiˈfɔɹ"
+    "ipa": "bɪˈfɔːr"
   },
   {
     "word": "beg",
@@ -4135,16 +4135,16 @@
     "type": "n.",
     "level": "B2",
     "id": 460,
-    "ipa": "biɪŋ",
+    "ipa": "ˈbiːɪŋ",
     "meaning": "สิ่งมีชีวิต",
-    "thai_pronunciation": "บี-งิ"
+    "thai_pronunciation": "บี-อิ้ง"
   },
   {
     "word": "belief",
     "type": "n.",
     "level": "B1",
     "id": 461,
-    "ipa": "bɪˈlif",
+    "ipa": "bɪˈliːf",
     "meaning": "ความเชื่อ",
     "thai_pronunciation": "บิ-ลีฟ"
   },
@@ -4155,14 +4155,14 @@
     "id": 462,
     "meaning": "เชื่อ",
     "thai_pronunciation": "บิ-ลีฟว์",
-    "ipa": "bɪˈɫiv"
+    "ipa": "bɪˈliːv"
   },
   {
     "word": "bell",
     "type": "n.",
     "level": "B1",
     "id": 463,
-    "ipa": "bɛl",
+    "ipa": "bel",
     "meaning": "กระดิ่ง",
     "thai_pronunciation": "เบล"
   },
@@ -4171,7 +4171,7 @@
     "type": "v.",
     "level": "A2",
     "id": 464,
-    "ipa": "bɪˈlɔŋ",
+    "ipa": "bɪˈlɔːŋ",
     "meaning": "เป็นของ",
     "thai_pronunciation": "บิ-ลอง"
   },
@@ -4190,7 +4190,7 @@
     "level": "A1",
     "id": 466,
     "meaning": "ด้านล่าง",
-    "thai_pronunciation": "บิ-โลว์",
+    "thai_pronunciation": "บิ-โล",
     "ipa": "bɪˈloʊ"
   },
   {
@@ -4198,9 +4198,9 @@
     "type": "n.",
     "level": "A2",
     "id": 467,
-    "ipa": "bɛlt",
+    "ipa": "belt",
     "meaning": "เข็มขัด",
-    "thai_pronunciation": "เบลต์"
+    "thai_pronunciation": "เบลท์"
   },
   {
     "word": "bench",
@@ -4225,7 +4225,7 @@
     "type": "v. n.",
     "level": "B1",
     "id": 470,
-    "ipa": "bɛnd",
+    "ipa": "bend",
     "meaning": "โค้งงอ",
     "thai_pronunciation": "เบนด์"
   },
@@ -4261,9 +4261,9 @@
     "type": "n. A2 v.",
     "level": "B1",
     "id": 474,
-    "ipa": "ˈbɛnəfɪt",
+    "ipa": "ˈbenɪfɪt",
     "meaning": "ผลประโยชน์",
-    "thai_pronunciation": "เบ-นะ-ฟิท"
+    "thai_pronunciation": "เบน-เน-ฟิท"
   },
   {
     "word": "bent",
@@ -4278,7 +4278,7 @@
     "word": "beside",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˌbiˈsaɪd",
+    "ipa": "bɪˈsaɪd",
     "meaning": "ข้าง ๆ",
     "thai_pronunciation": "บิ-ไซด์",
     "id": 476
@@ -4299,7 +4299,7 @@
     "id": 478,
     "meaning": "ดีที่สุด, ยอดเยี่ยมที่สุด",
     "thai_pronunciation": "เบสต์",
-    "ipa": "bɛst"
+    "ipa": "best"
   },
   {
     "word": "bet",
@@ -4325,8 +4325,8 @@
     "level": "B1",
     "id": 481,
     "meaning": "ดีกว่า",
-    "thai_pronunciation": "เบ-ทอร์",
-    "ipa": "ˈbɛtər"
+    "thai_pronunciation": "เบท-เทอร์",
+    "ipa": "ˈbetər"
   },
   {
     "word": "between",
@@ -4342,7 +4342,7 @@
     "type": "prep. adv.",
     "level": "B2",
     "id": 483,
-    "ipa": "bɪɔnd",
+    "ipa": "bɪˈjɑːnd",
     "meaning": "เกิน",
     "thai_pronunciation": "บิ-ยอนด์"
   },
@@ -4362,7 +4362,7 @@
     "id": 485,
     "meaning": "จักรยาน",
     "thai_pronunciation": "ไบ-ซิ-เคิล",
-    "ipa": "ˈbaɪsɪkəɫ"
+    "ipa": "ˈbaɪsɪkl"
   },
   {
     "word": "bid",
@@ -4388,8 +4388,8 @@
     "level": "A1",
     "id": 488,
     "meaning": "จักรยาน",
-    "thai_pronunciation": "ไบก์",
-    "ipa": "ˈbaɪk"
+    "thai_pronunciation": "ไบค์",
+    "ipa": "baɪk"
   },
   {
     "word": "bill",
@@ -4398,14 +4398,14 @@
     "id": 489,
     "meaning": "ใบแจ้งหนี้",
     "thai_pronunciation": "บิล",
-    "ipa": "ˈbɪɫ"
+    "ipa": "bɪl"
   },
   {
     "word": "billion",
     "type": "unknown",
     "level": "A2",
     "id": 490,
-    "ipa": "ˈbɪljən ˈnəmbər",
+    "ipa": "ˈbɪljən",
     "meaning": "จำนวนพันล้าน",
     "thai_pronunciation": "บิล-เลียน"
   },
@@ -4433,7 +4433,7 @@
     "level": "B2",
     "ipa": "ˈbaɪndɪŋ",
     "meaning": "มีผลผูกพัน",
-    "thai_pronunciation": "บินด์-งิ",
+    "thai_pronunciation": "ไบน์-ดิ่ง",
     "id": 493
   },
   {
@@ -4459,9 +4459,9 @@
     "type": "n.",
     "level": "A2",
     "id": 496,
-    "ipa": "baɪˈɑləʤi",
+    "ipa": "baɪˈɑːlədʒi",
     "meaning": "ชีววิทยา",
-    "thai_pronunciation": "ไบ-ออล-เลอะ-จี"
+    "thai_pronunciation": "ไบ-ออล-โล-จี"
   },
   {
     "word": "bird",
@@ -4477,9 +4477,9 @@
     "type": "n.",
     "level": "A2",
     "id": 498,
-    "ipa": "bərθ",
+    "ipa": "bɜːrθ",
     "meaning": "การเกิด",
-    "thai_pronunciation": "บะ"
+    "thai_pronunciation": "เบิร์ธ"
   },
   {
     "word": "birthday",
@@ -4487,15 +4487,15 @@
     "level": "A1",
     "id": 499,
     "meaning": "วันเกิด",
-    "thai_pronunciation": "บอร์-เธดย์",
-    "ipa": "ˈbərθˌdeɪ"
+    "thai_pronunciation": "เบิร์ธ-เดย์",
+    "ipa": "ˈbɜːrθdeɪ"
   },
   {
     "word": "biscuit",
     "type": "n.",
     "level": "A2",
     "id": 500,
-    "ipa": "ˈbɪskət",
+    "ipa": "ˈbɪskɪt",
     "meaning": "บิสกิต",
     "thai_pronunciation": "บิส-กิต"
   },
@@ -4524,7 +4524,7 @@
     "id": 503,
     "ipa": "baɪt",
     "meaning": "กัด",
-    "thai_pronunciation": "ไบท"
+    "thai_pronunciation": "ไบท์"
   },
   {
     "word": "bitter",
@@ -4550,8 +4550,8 @@
     "level": "A1",
     "id": 506,
     "meaning": "สีดำ",
-    "thai_pronunciation": "แบลก",
-    "ipa": "ˈbɫæk"
+    "thai_pronunciation": "แบล็ก",
+    "ipa": "blæk"
   },
   {
     "word": "blade",
@@ -4657,7 +4657,7 @@
     "type": "n. v.",
     "level": "B1",
     "id": 518,
-    "ipa": "blɑk",
+    "ipa": "blɑːk",
     "meaning": "ปิดกั้น",
     "thai_pronunciation": "บล็อก"
   },
@@ -4668,7 +4668,7 @@
     "id": 519,
     "meaning": "บล็อก",
     "thai_pronunciation": "บล็อก",
-    "ipa": "ˈbɫɔɡ"
+    "ipa": "blɔːɡ"
   },
   {
     "word": "blonde",
@@ -4676,15 +4676,15 @@
     "level": "A1",
     "id": 520,
     "meaning": "สีบลอนด์",
-    "thai_pronunciation": "บ็อลน-เดอะ",
-    "ipa": "ˈbɫɑnd"
+    "thai_pronunciation": "บลอนด์",
+    "ipa": "blɑːnd"
   },
   {
     "word": "blood",
     "type": "n.",
     "level": "A2",
     "id": 521,
-    "ipa": "bləd",
+    "ipa": "blʌd",
     "meaning": "เลือด",
     "thai_pronunciation": "บลัด"
   },
@@ -4704,14 +4704,14 @@
     "id": 523,
     "meaning": "สีฟ้า",
     "thai_pronunciation": "บลู",
-    "ipa": "ˈuː"
+    "ipa": "bluː"
   },
   {
     "word": "board",
     "type": "n. A2 v.",
     "level": "B1",
     "id": 524,
-    "ipa": "bɔrd",
+    "ipa": "bɔːrd",
     "meaning": "กระดาน",
     "thai_pronunciation": "บอร์ด"
   },
@@ -4731,7 +4731,7 @@
     "id": 526,
     "meaning": "เรือ",
     "thai_pronunciation": "โบท",
-    "ipa": "ˈboʊt"
+    "ipa": "boʊt"
   },
   {
     "word": "body",
@@ -4739,8 +4739,8 @@
     "level": "A1",
     "id": 527,
     "meaning": "ร่างกาย",
-    "thai_pronunciation": "บอด-ดี",
-    "ipa": "ˈbɑdi"
+    "thai_pronunciation": "บอ-ดี",
+    "ipa": "ˈbɑːdi"
   },
   {
     "word": "boil",
@@ -4774,9 +4774,9 @@
     "type": "n. v.",
     "level": "B1",
     "id": 531,
-    "ipa": "bɒm",
+    "ipa": "bɑːm",
     "meaning": "ระเบิด",
-    "thai_pronunciation": "บอมบ์"
+    "thai_pronunciation": "บอม"
   },
   {
     "word": "bombing",
@@ -4792,7 +4792,7 @@
     "type": "n.",
     "level": "B2",
     "id": 533,
-    "ipa": "bɑnd",
+    "ipa": "bɑːnd",
     "meaning": "พันธบัตร",
     "thai_pronunciation": "บอนด์"
   },
@@ -4821,7 +4821,7 @@
     "id": 536,
     "meaning": "หนังสือ",
     "thai_pronunciation": "บุ๊ก",
-    "ipa": "ˈbʊk"
+    "ipa": "bʊk"
   },
   {
     "word": "booking",
@@ -4856,15 +4856,15 @@
     "level": "A1",
     "id": 540,
     "meaning": "บูต",
-    "thai_pronunciation": "บูต",
-    "ipa": "ˈbut"
+    "thai_pronunciation": "บูท",
+    "ipa": "buːt"
   },
   {
     "word": "border",
     "type": "n. B1 v.",
     "level": "B2",
     "id": 541,
-    "ipa": "ˈbɔrdər",
+    "ipa": "ˈbɔːrdər",
     "meaning": "ชายแดน",
     "thai_pronunciation": "บอร์-เดอร์"
   },
@@ -4875,7 +4875,7 @@
     "id": 542,
     "meaning": "เบื่อ",
     "thai_pronunciation": "บอร์ด",
-    "ipa": "ˈbɔɹd"
+    "ipa": "bɔːrd"
   },
   {
     "word": "boring",
@@ -4883,8 +4883,8 @@
     "level": "A1",
     "id": 543,
     "meaning": "น่าเบื่อ",
-    "thai_pronunciation": "บอ-ริง",
-    "ipa": "ˈbɔɹɪŋ"
+    "thai_pronunciation": "บอ-ริ่ง",
+    "ipa": "ˈbɔːrɪŋ"
   },
   {
     "word": "born",
@@ -4893,23 +4893,23 @@
     "id": 544,
     "meaning": "เกิด",
     "thai_pronunciation": "บอร์น",
-    "ipa": "ˈbɔɹn"
+    "ipa": "bɔːrn"
   },
   {
     "word": "borrow",
     "type": "v.",
     "level": "A2",
     "id": 545,
-    "ipa": "ˈbɑˌroʊ",
+    "ipa": "ˈbɑːroʊ",
     "meaning": "ยืม",
-    "thai_pronunciation": "บอร์-โรว์"
+    "thai_pronunciation": "บอ-โร"
   },
   {
     "word": "boss",
     "type": "n.",
     "level": "A2",
     "id": 546,
-    "ipa": "bɔs",
+    "ipa": "bɔːs",
     "meaning": "เจ้านาย",
     "thai_pronunciation": "บอส"
   },
@@ -4920,16 +4920,16 @@
     "id": 547,
     "meaning": "ทั้งคู่",
     "thai_pronunciation": "โบธ",
-    "ipa": "ˈboʊθ"
+    "ipa": "boʊθ"
   },
   {
     "word": "bother",
     "type": "v.",
     "level": "B1",
     "id": 548,
-    "ipa": "ˈbɑðər",
+    "ipa": "ˈbɑːðər",
     "meaning": "รบกวน",
-    "thai_pronunciation": "บอธ-เธอร์"
+    "thai_pronunciation": "บาธ-เธอร์"
   },
   {
     "word": "bottle",
@@ -4937,17 +4937,17 @@
     "level": "A1",
     "id": 549,
     "meaning": "ขวด",
-    "thai_pronunciation": "บอต-เทิล",
-    "ipa": "ˈbɑtəɫ"
+    "thai_pronunciation": "บอท-เทิล",
+    "ipa": "ˈbɑːtl"
   },
   {
     "word": "bottom",
     "type": "n. adj.",
     "level": "A2",
     "id": 550,
-    "ipa": "ˈbɑtəm",
+    "ipa": "ˈbɑːtəm",
     "meaning": "ด้านล่าง",
-    "thai_pronunciation": "บอต-เทิม"
+    "thai_pronunciation": "บอท-ทัม"
   },
   {
     "word": "bounce",
@@ -5001,7 +5001,7 @@
     "id": 556,
     "meaning": "กล่อง",
     "thai_pronunciation": "บ็อกซ์",
-    "ipa": "ˈbɑks"
+    "ipa": "bɑːks"
   },
   {
     "word": "boy",
@@ -5019,7 +5019,7 @@
     "id": 558,
     "meaning": "แฟน",
     "thai_pronunciation": "บอย-เฟรนด์",
-    "ipa": "ˈbɔɪˌfɹɛnd"
+    "ipa": "ˈbɔɪfrend"
   },
   {
     "word": "brain",
@@ -5035,9 +5035,9 @@
     "type": "n.",
     "level": "B1",
     "id": 560,
-    "ipa": "brænʧ",
+    "ipa": "bræntʃ",
     "meaning": "สาขา",
-    "thai_pronunciation": "บรานช์ / แบรนช์"
+    "thai_pronunciation": "บรันช์"
   },
   {
     "word": "brand",
@@ -5055,7 +5055,7 @@
     "id": 562,
     "ipa": "breɪv",
     "meaning": "กล้าหาญ",
-    "thai_pronunciation": "เบรฟ"
+    "thai_pronunciation": "เบรฟว์"
   },
   {
     "word": "breach",
@@ -5081,7 +5081,7 @@
     "level": "A1",
     "id": 565,
     "meaning": "แตก, หัก, พักผ่อน, การหยุดพัก",
-    "thai_pronunciation": "เบรค",
+    "thai_pronunciation": "เบรก",
     "ipa": "breɪk"
   },
   {
@@ -5099,7 +5099,7 @@
     "level": "A1",
     "id": 567,
     "meaning": "อาหารเช้า",
-    "thai_pronunciation": "เบรค-ฟาสต์",
+    "thai_pronunciation": "เบรก-ฟาสต์",
     "ipa": "ˈbrekfəst"
   },
   {
@@ -5143,7 +5143,7 @@
     "type": "n.",
     "level": "B1",
     "id": 572,
-    "ipa": "ˈbriðɪŋ",
+    "ipa": "ˈbriːðɪŋ",
     "meaning": "การหายใจ",
     "thai_pronunciation": "บรีธ-ธิง"
   },
@@ -5197,7 +5197,7 @@
     "type": "n.",
     "level": "A2",
     "id": 578,
-    "ipa": "brɪʤ",
+    "ipa": "brɪdʒ",
     "meaning": "สะพาน",
     "thai_pronunciation": "บริดจ์"
   },
@@ -5206,7 +5206,7 @@
     "type": "adj.",
     "level": "B2",
     "id": 579,
-    "ipa": "brif",
+    "ipa": "briːf",
     "meaning": "รวบรัด",
     "thai_pronunciation": "บรีฟ"
   },
@@ -5244,14 +5244,14 @@
     "id": 583,
     "meaning": "นำมา",
     "thai_pronunciation": "บริง",
-    "ipa": "ˈbɹɪŋ"
+    "ipa": "brɪŋ"
   },
   {
     "word": "broad",
     "type": "adj.",
     "level": "B2",
     "id": 584,
-    "ipa": "brɔd",
+    "ipa": "brɔːd",
     "meaning": "กว้างๆ",
     "thai_pronunciation": "บรอด"
   },
@@ -5269,7 +5269,7 @@
     "type": "v. n.",
     "level": "B2",
     "id": 586,
-    "ipa": "ˈbrɔdˌkæst",
+    "ipa": "ˈbrɔːdkæst",
     "meaning": "ออกอากาศ",
     "thai_pronunciation": "บรอด-คาสต์"
   },
@@ -5298,7 +5298,7 @@
     "id": 589,
     "ipa": "ˈbroʊkən",
     "meaning": "แตกหัก",
-    "thai_pronunciation": "โบร-คัน"
+    "thai_pronunciation": "โบร-เคิน"
   },
   {
     "word": "brother",
@@ -5307,7 +5307,7 @@
     "id": 590,
     "meaning": "พี่ชาย",
     "thai_pronunciation": "บราธ-เธอร์",
-    "ipa": "ˈbrəðər"
+    "ipa": "ˈbrʌðər"
   },
   {
     "word": "brown",
@@ -5316,7 +5316,7 @@
     "id": 591,
     "meaning": "สีน้ำตาล",
     "thai_pronunciation": "บราวน์",
-    "ipa": "ˈbɹaʊn"
+    "ipa": "braʊn"
   },
   {
     "word": "browser",
@@ -5332,7 +5332,7 @@
     "type": "v. n.",
     "level": "A2",
     "id": 593,
-    "ipa": "brəʃ",
+    "ipa": "brʌʃ",
     "meaning": "แปรง",
     "thai_pronunciation": "บรัช"
   },
@@ -5350,9 +5350,9 @@
     "type": "n.",
     "level": "B1",
     "id": 595,
-    "ipa": "ˈbəbəl",
+    "ipa": "ˈbʌbl",
     "meaning": "ฟอง",
-    "thai_pronunciation": "บั๊บ-เบิล"
+    "thai_pronunciation": "บับ-เบิล"
   },
   {
     "word": "buck",
@@ -5377,9 +5377,9 @@
     "type": "n.",
     "level": "B2",
     "id": 598,
-    "ipa": "ˈbəʤɪt",
+    "ipa": "ˈbʌdʒɪt",
     "meaning": "งบประมาณ",
-    "thai_pronunciation": "บัด-เจต"
+    "thai_pronunciation": "บัด-เจ็ต"
   },
   {
     "word": "buffer",
@@ -5406,7 +5406,7 @@
     "id": 601,
     "meaning": "สร้าง",
     "thai_pronunciation": "บิลด์",
-    "ipa": "ˈbɪɫd"
+    "ipa": "bɪld"
   },
   {
     "word": "building",
@@ -5414,8 +5414,8 @@
     "level": "A1",
     "id": 602,
     "meaning": "อาคาร",
-    "thai_pronunciation": "บิล-ดิง",
-    "ipa": "ˈbɪɫdɪŋ"
+    "thai_pronunciation": "บิล-ดิ่ง",
+    "ipa": "ˈbɪldɪŋ"
   },
   {
     "word": "bulk",
@@ -5431,16 +5431,16 @@
     "type": "n.",
     "level": "B2",
     "id": 604,
-    "ipa": "ˈbʊlət",
+    "ipa": "ˈbʊlɪt",
     "meaning": "กระสุน",
-    "thai_pronunciation": "บุล-เลต"
+    "thai_pronunciation": "บุล-ลิต"
   },
   {
     "word": "bunch",
     "type": "n.",
     "level": "B2",
     "id": 605,
-    "ipa": "bənʧ",
+    "ipa": "bʌntʃ",
     "meaning": "กลุ่ม",
     "thai_pronunciation": "บันช์"
   },
@@ -5476,9 +5476,9 @@
     "type": "v. A2 n.",
     "level": "B2",
     "id": 609,
-    "ipa": "bərn",
+    "ipa": "bɜːrn",
     "meaning": "เผา",
-    "thai_pronunciation": "บะ"
+    "thai_pronunciation": "เบิร์น"
   },
   {
     "word": "burst",
@@ -5494,7 +5494,7 @@
     "type": "v.",
     "level": "B1",
     "id": 611,
-    "ipa": "ˈbɛri",
+    "ipa": "ˈberi",
     "meaning": "ฝังศพ",
     "thai_pronunciation": "เบ-รี"
   },
@@ -5505,7 +5505,7 @@
     "id": 612,
     "meaning": "รสบัส",
     "thai_pronunciation": "บัส",
-    "ipa": "ˈbəs"
+    "ipa": "bʌs"
   },
   {
     "word": "bush",
@@ -5522,7 +5522,7 @@
     "level": "A1",
     "id": 614,
     "meaning": "ธุรกิจ",
-    "thai_pronunciation": "บิซ-เนิส",
+    "thai_pronunciation": "บิซ-เนส",
     "ipa": "ˈbɪznəs"
   },
   {
@@ -5530,9 +5530,9 @@
     "type": "n.",
     "level": "A2",
     "id": 615,
-    "ipa": "ˈbɪznɪsˌmæn",
+    "ipa": "ˈbɪznəsmæn",
     "meaning": "นักธุรกิจ",
-    "thai_pronunciation": "บิซ-เนิส-แมน"
+    "thai_pronunciation": "บิซ-เนส-แมน"
   },
   {
     "word": "busy",
@@ -5550,7 +5550,7 @@
     "id": 617,
     "meaning": "แต่",
     "thai_pronunciation": "บัท",
-    "ipa": "bʌt, bət"
+    "ipa": "bʌt"
   },
   {
     "word": "butter",
@@ -5559,14 +5559,14 @@
     "id": 618,
     "meaning": "เนย",
     "thai_pronunciation": "บัท-เทอร์",
-    "ipa": "ˈbətər"
+    "ipa": "ˈbʌtər"
   },
   {
     "word": "button",
     "type": "n.",
     "level": "A2",
     "id": 619,
-    "ipa": "ˈbətən",
+    "ipa": "ˈbʌtn",
     "meaning": "ปุ่ม",
     "thai_pronunciation": "บัท-เทิน"
   },
@@ -6106,9 +6106,9 @@
     "type": "v. A2 n.",
     "level": "B2",
     "id": 679,
-    "ipa": "kæʧ",
+    "ipa": "kætʃ",
     "meaning": "จับ",
-    "thai_pronunciation": "แคช"
+    "thai_pronunciation": "แคตช์ / แคทช์"
   },
   {
     "word": "category",
@@ -6368,8 +6368,8 @@
     "level": "B2",
     "id": 708,
     "meaning": "เก้าอี้",
-    "thai_pronunciation": "เช",
-    "ipa": "ˈtʃɛɹ"
+    "thai_pronunciation": "แชร์",
+    "ipa": "tʃer"
   },
   {
     "word": "chairman",
@@ -6593,8 +6593,8 @@
     "level": "A2",
     "id": 733,
     "meaning": "ตรวจสอบ",
-    "thai_pronunciation": "เชก",
-    "ipa": "ˈtʃɛk"
+    "thai_pronunciation": "เช็ก",
+    "ipa": "tʃek"
   },
   {
     "word": "cheek",
@@ -6790,9 +6790,9 @@
     "type": "n.",
     "level": "A2",
     "id": 755,
-    "ipa": "ʧərʧ",
+    "ipa": "tʃɜːrtʃ",
     "meaning": "คริสตจักร",
-    "thai_pronunciation": "ชะ"
+    "thai_pronunciation": "เชิร์ช"
   },
   {
     "word": "cigarette",
@@ -7320,9 +7320,9 @@
     "word": "coarse",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ˈkɔɹs",
+    "ipa": "kɔːrs",
     "meaning": "หยาบ",
-    "thai_pronunciation": "คอ",
+    "thai_pronunciation": "คอร์ส",
     "id": 814
   },
   {
@@ -10148,7 +10148,7 @@
     "level": "C1",
     "ipa": "ˈkɹɪpəɫ",
     "meaning": "พิการ",
-    "thai_pronunciation": "คิรพ",
+    "thai_pronunciation": "คริพ-เพิล",
     "id": 1128
   },
   {
@@ -10587,9 +10587,9 @@
     "word": "cutting",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈkətɪŋ",
+    "ipa": "ˈkʌtɪŋ",
     "meaning": "การตัด",
-    "thai_pronunciation": "คัท-งิ",
+    "thai_pronunciation": "คัท-ติ้ง",
     "id": 1177
   },
   {
@@ -10769,8 +10769,8 @@
     "level": "A1",
     "id": 1197,
     "meaning": "ลูกสาว",
-    "thai_pronunciation": "ดอนท",
-    "ipa": "ˈdɔtər"
+    "thai_pronunciation": "ดอ-เทอร์",
+    "ipa": "ˈdɔːtər"
   },
   {
     "word": "dawn",
@@ -10965,9 +10965,9 @@
     "word": "decision-making",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "dɪˈsɪʒənˌmeɪkɪŋ",
+    "ipa": "dɪˈsɪʒn ˈmeɪkɪŋ",
     "meaning": "การตัดสินใจ",
-    "thai_pronunciation": "ดี-ไอ-ชัน แมก-งิ",
+    "thai_pronunciation": "ดิ-ซิ-ชัน เมค-กิ้ง",
     "id": 1219
   },
   {
@@ -11524,9 +11524,9 @@
     "type": "n.",
     "level": "A2",
     "id": 1281,
-    "ipa": "ˈdɛntɪst",
+    "ipa": "ˈdentɪst",
     "meaning": "ทันตแพทย์",
-    "thai_pronunciation": "ดี-น"
+    "thai_pronunciation": "เดน-ทิสต์"
   },
   {
     "word": "deny",
@@ -11650,18 +11650,18 @@
     "type": "adj.",
     "level": "B2",
     "id": 1295,
-    "ipa": "dɪˈprɛst",
+    "ipa": "dɪˈprest",
     "meaning": "หดหู่",
-    "thai_pronunciation": "ดี-เพ็รส์-เซ็ด"
+    "thai_pronunciation": "ดิ-เพรสต์"
   },
   {
     "word": "depressing",
     "type": "adj.",
     "level": "B2",
     "id": 1296,
-    "ipa": "dɪˈprɛsɪŋ",
+    "ipa": "dɪˈpresɪŋ",
     "meaning": "ตกต่ำ",
-    "thai_pronunciation": "ดี-เพ็รส์-งิ"
+    "thai_pronunciation": "ดิ-เพรส-ซิ่ง"
   },
   {
     "word": "depression",
@@ -12054,9 +12054,9 @@
     "word": "devastating",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈdɛvəˌsteɪtɪŋ",
+    "ipa": "ˈdevəsteɪtɪŋ",
     "meaning": "ทำลายล้าง",
-    "thai_pronunciation": "ดี-แวส์-แทท-งิ",
+    "thai_pronunciation": "เดฟ-วา-สเต-ติ้ง",
     "id": 1340
   },
   {
@@ -12378,9 +12378,9 @@
     "word": "dilute",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "daɪˈɫut",
+    "ipa": "daɪˈluːt",
     "meaning": "เจือจาง",
-    "thai_pronunciation": "ไอ-อุ",
+    "thai_pronunciation": "ได-ลูท",
     "id": 1376
   },
   {
@@ -12577,9 +12577,9 @@
     "type": "adj.",
     "level": "B1",
     "id": 1398,
-    "ipa": "ˌdɪsəˈpɔɪnɪŋ",
+    "ipa": "ˌdɪsəˈpɔɪntɪŋ",
     "meaning": "น่าผิดหวัง",
-    "thai_pronunciation": "ดิส-แอพ-ออยพนท์-งิ"
+    "thai_pronunciation": "ดิส-อะ-พอยท์-ติ้ง"
   },
   {
     "word": "disappointment",
@@ -12972,9 +12972,9 @@
     "word": "disposition",
     "type": "n.",
     "level": "C1",
-    "ipa": "ˌdɪspəˈzɪʃən",
+    "ipa": "ˌdɪspəˈzɪʃn",
     "meaning": "การจัดการ",
-    "thai_pronunciation": "ดิส-โอ-ไอ-ชัน",
+    "thai_pronunciation": "ดิส-โพ-ซิ-ชัน",
     "id": 1442
   },
   {
@@ -13153,18 +13153,18 @@
     "type": "v.",
     "level": "B2",
     "id": 1462,
-    "ipa": "dɪˈstrɪbjut",
+    "ipa": "dɪˈstrɪbjuːt",
     "meaning": "แจกจ่าย",
-    "thai_pronunciation": "ดิส-ไอ-อุ"
+    "thai_pronunciation": "ดิส-ทริ-บิวต์"
   },
   {
     "word": "distribution",
     "type": "n.",
     "level": "B2",
     "id": 1463,
-    "ipa": "ˌdɪstrəˈbjuʃən",
+    "ipa": "ˌdɪstrɪˈbjuːʃn",
     "meaning": "การกระจาย",
-    "thai_pronunciation": "ดิส-ไอ-อุ-ชัน"
+    "thai_pronunciation": "ดิส-ทริ-บิว-ชัน"
   },
   {
     "word": "district",
@@ -13188,9 +13188,9 @@
     "word": "disturbing",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "dɪˈstɝbɪŋ",
+    "ipa": "dɪˈstɜːrbɪŋ",
     "meaning": "รบกวน",
-    "thai_pronunciation": "ดิส-ทัร์บ-งิ",
+    "thai_pronunciation": "ดิส-เทอร์-บิ่ง",
     "id": 1466
   },
   {
@@ -13640,7 +13640,7 @@
     "level": "A1",
     "id": 1516,
     "meaning": "วาด",
-    "thai_pronunciation": "ดอนร",
+    "thai_pronunciation": "ดรอ",
     "ipa": "ˈɔː"
   },
   {
@@ -13649,7 +13649,7 @@
     "level": "B2",
     "ipa": "ˈdɹɔˌbæk",
     "meaning": "ข้อเสียเปรียบ",
-    "thai_pronunciation": "ดอนร-แบก",
+    "thai_pronunciation": "ดรอ-แบก",
     "id": 1517
   },
   {
@@ -13657,9 +13657,9 @@
     "type": "n.",
     "level": "A2",
     "id": 1518,
-    "ipa": "drɔɪŋ",
+    "ipa": "ˈdrɔːɪŋ",
     "meaning": "การวาดภาพ",
-    "thai_pronunciation": "ดอนร-งิ"
+    "thai_pronunciation": "ดรอว์-อิ้ง"
   },
   {
     "word": "dream",
@@ -13731,7 +13731,7 @@
     "id": 1526,
     "ipa": "ˈdraɪvɪŋ",
     "meaning": "ขับรถ",
-    "thai_pronunciation": "ดิรฟว์-งิ"
+    "thai_pronunciation": "ไดรฟ-วิ่ง"
   },
   {
     "word": "drop",
@@ -13883,8 +13883,8 @@
     "level": "A1",
     "id": 1543,
     "meaning": "ในระหว่าง",
-    "thai_pronunciation": "ดัร์-งิ",
-    "ipa": "ˈdɝɪŋ"
+    "thai_pronunciation": "ดู-ริ่ง / ดิว-ริ่ง",
+    "ipa": "ˈdjʊərɪŋ"
   },
   {
     "word": "dust",
@@ -14052,9 +14052,9 @@
     "word": "eccentric",
     "type": "adj.",
     "level": "C1",
-    "ipa": "ˌɛkˈsɛntɹɪk",
+    "ipa": "ɪkˈsentrɪk",
     "meaning": "ประหลาด",
-    "thai_pronunciation": "เก็-เซน-ทริก",
+    "thai_pronunciation": "อิก-เซน-ทริก",
     "id": 1562
   },
   {
@@ -14160,9 +14160,9 @@
     "word": "editorial",
     "type": "adj.",
     "level": "C1",
-    "ipa": "ˌɛdəˈtɔɹiəɫ",
+    "ipa": "ˌedɪˈtɔːriəl",
     "meaning": "บทบรรณาธิการ",
-    "thai_pronunciation": "เอะ-ไอ-โอ-ไอ",
+    "thai_pronunciation": "เอ็ด-ดิ-ทอ-เรียล",
     "id": 1574
   },
   {
@@ -14360,7 +14360,7 @@
     "level": "C1",
     "ipa": "ɪˌɫæbɝˈeɪʃən",
     "meaning": "การทำอย่างละเอียด",
-    "thai_pronunciation": "เแด-รี่-โอ-อา-ชัน",
+    "thai_pronunciation": "เอล-รี่-โอ-อา-ชัน",
     "id": 1596
   },
   {
@@ -14513,7 +14513,7 @@
     "level": "C1",
     "ipa": "ˌɛɫəˈveɪʃən",
     "meaning": "ระดับความสูง",
-    "thai_pronunciation": "เแด-รี่-ชัน",
+    "thai_pronunciation": "เอล-รี่-ชัน",
     "id": 1613
   },
   {
@@ -14538,9 +14538,9 @@
     "word": "eligible",
     "type": "adj.",
     "level": "B2",
-    "ipa": "ˈɛɫədʒəbəɫ",
+    "ipa": "ˈelɪdʒəbl",
     "meaning": "มีสิทธิ์",
-    "thai_pronunciation": "เลย์-ลิ-จิ-เบิล",
+    "thai_pronunciation": "เอล-ลิ-จิ-เบิล",
     "id": 1616
   },
   {
@@ -14565,9 +14565,9 @@
     "word": "eloquent",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ˈɛɫəkwənt",
+    "ipa": "ˈeləkwənt",
     "meaning": "มีคารมคมคาย",
-    "thai_pronunciation": "เลย์-เลอะ-เควนท์",
+    "thai_pronunciation": "เอล-เลอะ-เควนท์",
     "id": 1619
   },
   {
@@ -14638,18 +14638,18 @@
     "type": "adj.",
     "level": "B1",
     "id": 1627,
-    "ipa": "ɪmˈbɛrəst",
+    "ipa": "ɪmˈbærəst",
     "meaning": "เขินอาย",
-    "thai_pronunciation": "เมย์-แบร์-แรส์-เซ็ด"
+    "thai_pronunciation": "อิม-แบ-แรสต์"
   },
   {
     "word": "embarrassing",
     "type": "adj.",
     "level": "B1",
     "id": 1628,
-    "ipa": "ɪmˈbɛrəsɪŋ",
+    "ipa": "ɪmˈbærəsɪŋ",
     "meaning": "น่าอาย",
-    "thai_pronunciation": "เมย์-แบร์-แรส์-งิ"
+    "thai_pronunciation": "อิม-แบ-แรส-ซิ่ง"
   },
   {
     "word": "embarrassment",
@@ -14664,27 +14664,27 @@
     "word": "embassy",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈɛmbəsi",
+    "ipa": "ˈembəsi",
     "meaning": "สถานทูต",
-    "thai_pronunciation": "เมย์-แบส์-อี",
+    "thai_pronunciation": "เอ็ม-บะ-ซี",
     "id": 1630
   },
   {
     "word": "embed",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ɪmˈbɛd",
+    "ipa": "ɪmˈbed",
     "meaning": "ฝัง",
-    "thai_pronunciation": "เมย์-เบ็ด",
+    "thai_pronunciation": "เอ็ม-เบด",
     "id": 1631
   },
   {
     "word": "embodiment",
     "type": "n.",
     "level": "C1",
-    "ipa": "ɛmˈbɑdimənt",
+    "ipa": "ɪmˈbɑːdimənt",
     "meaning": "ศูนย์รวม",
-    "thai_pronunciation": "เมย์-โอ-ไอ-เมินท์",
+    "thai_pronunciation": "เอ็ม-บอ-ดิ-เมินท์",
     "id": 1632
   },
   {
@@ -14775,7 +14775,7 @@
     "id": 1642,
     "ipa": "ˈiˌmoʊʃənəl",
     "meaning": "ทางอารมณ์",
-    "thai_pronunciation": "เอะ-โอ-ไอ-แนล"
+    "thai_pronunciation": "เอะ-โอ-ซิ-แนล"
   },
   {
     "word": "emotionally",
@@ -14783,16 +14783,16 @@
     "level": "C1",
     "ipa": "ˈiˌmoʊʃnəɫi",
     "meaning": "อารมณ์",
-    "thai_pronunciation": "เอะ-โอ-ไอ-แนล-ลี",
+    "thai_pronunciation": "เอะ-โอ-ซิ-แนล-ลี",
     "id": 1643
   },
   {
     "word": "empathy",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈɛmpəθi",
+    "ipa": "ˈempəθi",
     "meaning": "ความเห็นอกเห็นใจ",
-    "thai_pronunciation": "เมย์-แพท-อี",
+    "thai_pronunciation": "เอ็ม-พะ-ธี",
     "id": 1644
   },
   {
@@ -14817,9 +14817,9 @@
     "word": "empire",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ˈɛmpaɪɝ",
+    "ipa": "ˈempaɪər",
     "meaning": "จักรวรรดิ",
-    "thai_pronunciation": "เมย์-ไอ-เรอะ",
+    "thai_pronunciation": "เอ็ม-ไพร์",
     "id": 1647
   },
   {
@@ -14871,9 +14871,9 @@
     "word": "empower",
     "type": "n.",
     "level": "C1",
-    "ipa": "ɪmˈpaʊɝ",
+    "ipa": "ɪmˈpaʊər",
     "meaning": "ให้อำนาจ",
-    "thai_pronunciation": "เมย์-โอ-เว็ร์",
+    "thai_pronunciation": "เอ็ม-พาว-เวอร์",
     "id": 1653
   },
   {
@@ -14882,7 +14882,7 @@
     "level": "C1",
     "ipa": "ɪmˈpaʊɝmənt",
     "meaning": "การเสริมอำนาจ",
-    "thai_pronunciation": "เมย์-โอ-เว็ร์-เมินท์",
+    "thai_pronunciation": "เอ็ม-โอ-เว็ร์-เมินท์",
     "id": 1654
   },
   {
@@ -14899,9 +14899,9 @@
     "type": "v.",
     "level": "B2",
     "id": 1656,
-    "ipa": "ɪˈneɪbəl",
+    "ipa": "ɪˈneɪbl",
     "meaning": "เปิดใช้งาน",
-    "thai_pronunciation": "เอะ-แนบ"
+    "thai_pronunciation": "เอ็น-เอ-เบิล"
   },
   {
     "word": "enact",
@@ -14909,7 +14909,7 @@
     "level": "B2",
     "ipa": "ɪˈnækt",
     "meaning": "ออกกฎหมาย",
-    "thai_pronunciation": "เอะ-แนกต์",
+    "thai_pronunciation": "เอ็น-แอคท์",
     "id": 1657
   },
   {
@@ -14927,7 +14927,7 @@
     "level": "B2",
     "ipa": "ɛnˈkəmpəs",
     "meaning": "ครอบคลุม",
-    "thai_pronunciation": "เนย์-ค็อม-แพส์",
+    "thai_pronunciation": "เอน-ค็อม-แพส์",
     "id": 1659
   },
   {
@@ -14935,18 +14935,18 @@
     "type": "v. n.",
     "level": "B2",
     "id": 1660,
-    "ipa": "ɪnˈkaʊnər",
+    "ipa": "ɪnˈkaʊntər",
     "meaning": "เผชิญ",
-    "thai_pronunciation": "เนย์-เอาคน-เท็ร์"
+    "thai_pronunciation": "เอ็น-เคาน์-เตอร์"
   },
   {
     "word": "encourage",
     "type": "v.",
     "level": "B1",
     "id": 1661,
-    "ipa": "ɪnˈkərəʤ",
+    "ipa": "ɪnˈkɜːrɪdʒ",
     "meaning": "ให้กำลังใจ",
-    "thai_pronunciation": "เนย์-เคา-อา"
+    "thai_pronunciation": "เอ็น-เคอ-ริจ"
   },
   {
     "word": "encouragement",
@@ -14954,16 +14954,16 @@
     "level": "C1",
     "ipa": "ɛnˈkɝɪdʒmənt",
     "meaning": "การให้กำลังใจ",
-    "thai_pronunciation": "เนย์-เคา-อา-เมินท์",
+    "thai_pronunciation": "เอน-เคา-อา-เมินท์",
     "id": 1662
   },
   {
     "word": "encouraging",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ɛnˈkɝɪdʒɪŋ",
+    "ipa": "ɪnˈkɜːrɪdʒɪŋ",
     "meaning": "ให้กำลังใจ",
-    "thai_pronunciation": "เนย์-เคา-แรก-งิ",
+    "thai_pronunciation": "เอ็น-เคอ-ริจ-จิ้ง",
     "id": 1663
   },
   {
@@ -14991,42 +14991,42 @@
     "id": 1666,
     "ipa": "ˈɛndɪŋ",
     "meaning": "สิ้นสุด",
-    "thai_pronunciation": "เอ็อนด์-งิ"
+    "thai_pronunciation": "เอ็อนด์-ดิ่ง"
   },
   {
     "word": "endless",
     "type": "adj.",
     "level": "C1",
-    "ipa": "ˈɛndɫəs",
+    "ipa": "ˈendləs",
     "meaning": "ไม่มีที่สิ้นสุด",
-    "thai_pronunciation": "เอ็อนด์-เลิส",
+    "thai_pronunciation": "เอนด์-เลส",
     "id": 1667
   },
   {
     "word": "endorse",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ɛnˈdɔɹs",
+    "ipa": "ɪnˈdɔːrs",
     "meaning": "รับรอง",
-    "thai_pronunciation": "เอิน-ดอร์ส",
+    "thai_pronunciation": "เอ็น-ดอร์ส",
     "id": 1668
   },
   {
     "word": "endorsement",
     "type": "n.",
     "level": "B2",
-    "ipa": "ɛnˈdɔɹsmənt",
+    "ipa": "ɪnˈdɔːrsmənt",
     "meaning": "การรับรอง",
-    "thai_pronunciation": "เนย์-ดอร์์-เมินท์",
+    "thai_pronunciation": "เอ็น-ดอร์ส-เมินท์",
     "id": 1669
   },
   {
     "word": "endure",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ɛnˈdjʊɹ",
+    "ipa": "ɪnˈdjʊr",
     "meaning": "อดทน",
-    "thai_pronunciation": "เนย์-อุ-เรอะ",
+    "thai_pronunciation": "เอ็น-ดูร์",
     "id": 1670
   },
   {
@@ -15034,26 +15034,26 @@
     "type": "n.",
     "level": "B1",
     "id": 1671,
-    "ipa": "ˈɛnəmi",
+    "ipa": "ˈenəmi",
     "meaning": "ศัตรู",
-    "thai_pronunciation": "เอะ-เว-รี"
+    "thai_pronunciation": "เอน-เน-มี"
   },
   {
     "word": "energy",
     "type": "n.",
     "level": "A2",
     "id": 1672,
-    "ipa": "ˈɛnərʤi",
+    "ipa": "ˈenərdʒi",
     "meaning": "พลังงาน",
-    "thai_pronunciation": "เอะ-เน็ร์-อี"
+    "thai_pronunciation": "เอน-เนอร์-จี"
   },
   {
     "word": "enforce",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ɛnˈfɔɹs",
+    "ipa": "ɪnˈfɔːrs",
     "meaning": "บังคับใช้",
-    "thai_pronunciation": "เอิน-ฟอร์ส",
+    "thai_pronunciation": "เอ็น-ฟอร์ส",
     "id": 1673
   },
   {
@@ -15062,7 +15062,7 @@
     "level": "B2",
     "ipa": "ɛnˈfɔɹsmənt",
     "meaning": "การบังคับใช้",
-    "thai_pronunciation": "เนย์-ฟอร์์-เมินท์",
+    "thai_pronunciation": "เอน-ฟอร์์-เมินท์",
     "id": 1674
   },
   {
@@ -15070,9 +15070,9 @@
     "type": "v.",
     "level": "B2",
     "id": 1675,
-    "ipa": "ɪnˈgeɪʤ",
+    "ipa": "ɪnˈɡeɪdʒ",
     "meaning": "หมั้น",
-    "thai_pronunciation": "เนย์-อา"
+    "thai_pronunciation": "เอ็น-เกจ"
   },
   {
     "word": "engaged",
@@ -15081,7 +15081,7 @@
     "id": 1676,
     "ipa": "ɪnˈgeɪʤd",
     "meaning": "มีส่วนร่วม",
-    "thai_pronunciation": "เนย์-อา-เก็ด"
+    "thai_pronunciation": "เอน-อา-เก็ด"
   },
   {
     "word": "engagement",
@@ -15089,7 +15089,7 @@
     "level": "C1",
     "ipa": "ɛnˈɡeɪdʒmənt",
     "meaning": "การมีส่วนร่วม",
-    "thai_pronunciation": "เนย์-อา-เมินท์",
+    "thai_pronunciation": "เอน-อา-เมินท์",
     "id": 1677
   },
   {
@@ -15098,7 +15098,7 @@
     "level": "C1",
     "ipa": "ɛnˈɡeɪdʒɪŋ",
     "meaning": "มีส่วนร่วม",
-    "thai_pronunciation": "เนย์-แกก-งิ",
+    "thai_pronunciation": "เอน-แกก-อิ้ง",
     "id": 1678
   },
   {
@@ -15106,36 +15106,36 @@
     "type": "n.",
     "level": "A2",
     "id": 1679,
-    "ipa": "ˈɪnʤən",
+    "ipa": "ˈendʒɪn",
     "meaning": "เครื่องยนต์",
-    "thai_pronunciation": "เนย์-ไอ"
+    "thai_pronunciation": "เอน-จิน"
   },
   {
     "word": "engineer",
     "type": "n.",
     "level": "A2",
     "id": 1680,
-    "ipa": "ˈɛnʤəˈnɪr",
+    "ipa": "ˌendʒɪˈnɪr",
     "meaning": "วิศวกร",
-    "thai_pronunciation": "เนย์-ไอ-เอียร์น"
+    "thai_pronunciation": "เอน-จิ-เนียร์"
   },
   {
     "word": "engineering",
     "type": "n.",
     "level": "B1",
     "id": 1681,
-    "ipa": "ˈɛnʤəˈnɪrɪŋ",
+    "ipa": "ˌendʒɪˈnɪrɪŋ",
     "meaning": "วิศวกรรม",
-    "thai_pronunciation": "เนย์-ไอ-เอียร์น-งิ"
+    "thai_pronunciation": "เอน-จิ-เนียร์-ริ่ง"
   },
   {
     "word": "enhance",
     "type": "v.",
     "level": "B2",
     "id": 1682,
-    "ipa": "ɛnˈhæns",
+    "ipa": "ɪnˈhæns",
     "meaning": "ยกระดับ",
-    "thai_pronunciation": "เอิน-ฮานส์"
+    "thai_pronunciation": "เอ็น-ฮานส์"
   },
   {
     "word": "enhancement",
@@ -15143,7 +15143,7 @@
     "level": "C1",
     "ipa": "ɛnˈhænsmənt",
     "meaning": "การเพิ่มประสิทธิภาพ",
-    "thai_pronunciation": "เนย์-แฮน-เมินท์",
+    "thai_pronunciation": "เอน-แฮน-เมินท์",
     "id": 1683
   },
   {
@@ -15152,16 +15152,16 @@
     "level": "A1",
     "id": 1684,
     "meaning": "สนุก",
-    "thai_pronunciation": "เนย์-จอย",
-    "ipa": "ˌɛnˈʤɔɪ"
+    "thai_pronunciation": "เอ็น-จอย",
+    "ipa": "ɪnˈdʒɔɪ"
   },
   {
     "word": "enjoyable",
     "type": "adj.",
     "level": "B2",
-    "ipa": "ˌɛnˈdʒɔɪəbəɫ",
+    "ipa": "ɪnˈdʒɔɪəbl",
     "meaning": "สนุกสนาน",
-    "thai_pronunciation": "เนย์-จอย-เบิล",
+    "thai_pronunciation": "เอ็น-จอย-เออะ-เบิล",
     "id": 1685
   },
   {
@@ -15178,9 +15178,9 @@
     "type": "adj.",
     "level": "A2",
     "id": 1687,
-    "ipa": "ɪˈnɔrmɪs",
+    "ipa": "ɪˈnɔːrməs",
     "meaning": "มหาศาล",
-    "thai_pronunciation": "อิ-นอร์-เมิส"
+    "thai_pronunciation": "อิ-นอร์-มัส"
   },
   {
     "word": "enough",
@@ -15188,8 +15188,8 @@
     "level": "A1",
     "id": 1688,
     "meaning": "เพียงพอ",
-    "thai_pronunciation": "เอะ-ออน",
-    "ipa": "iˈnəf"
+    "thai_pronunciation": "อิ-นัฟ",
+    "ipa": "ɪˈnʌf"
   },
   {
     "word": "enquire",
@@ -15197,7 +15197,7 @@
     "level": "C1",
     "ipa": "ɪnˈkwaɪɝ",
     "meaning": "สอบถาม",
-    "thai_pronunciation": "เนย์-ไอ-เรอะ",
+    "thai_pronunciation": "เอน-ไอ-เรอะ",
     "id": 1689
   },
   {
@@ -15207,7 +15207,7 @@
     "id": 1690,
     "ipa": "ɪnkˈwaɪˌri",
     "meaning": "สอบถามรายละเอียดเพิ่มเติม",
-    "thai_pronunciation": "เนย์-ไอ-อี"
+    "thai_pronunciation": "เอน-ไอ-อี"
   },
   {
     "word": "enrich",
@@ -15215,7 +15215,7 @@
     "level": "C1",
     "ipa": "ɛnˈɹɪtʃ",
     "meaning": "เสริมสร้าง",
-    "thai_pronunciation": "เนย์-ริช",
+    "thai_pronunciation": "เอน-ริช",
     "id": 1691
   },
   {
@@ -15224,7 +15224,7 @@
     "level": "B2",
     "ipa": "ɛnɹˈəʊl",
     "meaning": "ลงทะเบียนเรียน",
-    "thai_pronunciation": "เนย์-รอล",
+    "thai_pronunciation": "เอน-รอล",
     "id": 1692
   },
   {
@@ -15233,7 +15233,7 @@
     "level": "B2",
     "ipa": "ɛnˈɹoʊɫ",
     "meaning": "ลงทะเบียนเรียน",
-    "thai_pronunciation": "เนย์-รอล",
+    "thai_pronunciation": "เอน-รอล",
     "id": 1693
   },
   {
@@ -15242,7 +15242,7 @@
     "level": "B2",
     "ipa": "ɛnˈɹoʊɫmənt",
     "meaning": "การลงทะเบียน",
-    "thai_pronunciation": "เนย์-รอล-เมินท์",
+    "thai_pronunciation": "เอน-รอล-เมินท์",
     "id": 1694
   },
   {
@@ -15251,7 +15251,7 @@
     "level": "C1",
     "ipa": "ɪnˈsu",
     "meaning": "ตามมา",
-    "thai_pronunciation": "เนย์-อูซ",
+    "thai_pronunciation": "เอน-อูซ",
     "id": 1695
   },
   {
@@ -15261,24 +15261,24 @@
     "id": 1696,
     "ipa": "ɪnˈʃʊr",
     "meaning": "ทำให้มั่นใจ",
-    "thai_pronunciation": "เนย์-อุ-เรอะ"
+    "thai_pronunciation": "เอ็น-ชัวร์"
   },
   {
     "word": "enter",
     "type": "v.",
     "level": "A2",
     "id": 1697,
-    "ipa": "ˈɛnər",
+    "ipa": "ˈentər",
     "meaning": "เข้า",
-    "thai_pronunciation": "เนย์-เท็ร์"
+    "thai_pronunciation": "เอน-เตอร์"
   },
   {
     "word": "enterprise",
     "type": "v.",
     "level": "C1",
-    "ipa": "ˈɛnɝˌpɹaɪz",
+    "ipa": "ˈentərpraɪz",
     "meaning": "องค์กร",
-    "thai_pronunciation": "เนย์-เทอร์-ไพรส์",
+    "thai_pronunciation": "เอน-เตอร์-ไพรส์",
     "id": 1698
   },
   {
@@ -15286,9 +15286,9 @@
     "type": "v.",
     "level": "B1",
     "id": 1699,
-    "ipa": "ˌɛnərˈteɪn",
+    "ipa": "ˌentərˈteɪn",
     "meaning": "ให้ความบันเทิง / สร้างความเพลิดเพลิน",
-    "thai_pronunciation": "เนย์-เท็ร์-เนทย์"
+    "thai_pronunciation": "เอน-เตอร์-เทน"
   },
   {
     "word": "entertaining",
@@ -15296,7 +15296,7 @@
     "level": "B2",
     "ipa": "ˌɛnɝˈteɪnɪŋ",
     "meaning": "สนุกสนาน",
-    "thai_pronunciation": "เนย์-เท็ร์-เนทย์-งิ",
+    "thai_pronunciation": "เอน-เท็ร์-เนทย์-นิ่ง",
     "id": 1700
   },
   {
@@ -15304,18 +15304,18 @@
     "type": "n.",
     "level": "B1",
     "id": 1701,
-    "ipa": "ˌɛnərˈteɪnmənt",
+    "ipa": "ˌentərˈteɪnmənt",
     "meaning": "ความบันเทิง",
-    "thai_pronunciation": "เนย์-เท็ร์-เนทย์-เมินท์"
+    "thai_pronunciation": "เอน-เตอร์-เทน-เมินท์"
   },
   {
     "word": "enthusiasm",
     "type": "n.",
     "level": "B2",
     "id": 1702,
-    "ipa": "ɪnˈθuziˌæzəm",
+    "ipa": "ɪnˈθuːziæzəm",
     "meaning": "ความกระตือรือร้น",
-    "thai_pronunciation": "เอ็อนท์-ไอ"
+    "thai_pronunciation": "เอ็น-ทู-ซิ-แอส-ซัม"
   },
   {
     "word": "enthusiast",
@@ -15331,9 +15331,9 @@
     "type": "adj.",
     "level": "B2",
     "id": 1704,
-    "ipa": "ɪnˌθuziˈæstɪk",
+    "ipa": "ɪnˌθuːziˈæstɪk",
     "meaning": "กระตือรือร้น",
-    "thai_pronunciation": "เนย์-ธู-ซิ-แอส-ติก"
+    "thai_pronunciation": "เอ็น-ทู-ซิ-แอส-ติก"
   },
   {
     "word": "entire",
@@ -15342,7 +15342,7 @@
     "id": 1705,
     "ipa": "ɪnˈtaɪər",
     "meaning": "ทั้งหมด",
-    "thai_pronunciation": "เนย์-ไอ-เรอะ"
+    "thai_pronunciation": "เอ็น-ไทร์"
   },
   {
     "word": "entirely",
@@ -15351,24 +15351,24 @@
     "id": 1706,
     "ipa": "ɪnˈtaɪərli",
     "meaning": "โดยสิ้นเชิง",
-    "thai_pronunciation": "เนย์-ไอ-เรอะ-ลี"
+    "thai_pronunciation": "เอ็น-ไทร์-ลี"
   },
   {
     "word": "entitle",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ɛnˈtaɪtəɫ",
+    "ipa": "ɪnˈtaɪtl",
     "meaning": "สิทธิ",
-    "thai_pronunciation": "เนย์-ทิท",
+    "thai_pronunciation": "เอ็น-ไท-เทิล",
     "id": 1707
   },
   {
     "word": "entity",
     "type": "n.",
     "level": "B2",
-    "ipa": "ˈɛntəti",
+    "ipa": "ˈentəti",
     "meaning": "เอนทิตี",
-    "thai_pronunciation": "เนย์-ทิ-ที",
+    "thai_pronunciation": "เอน-ทิ-ที",
     "id": 1708
   },
   {
@@ -15376,9 +15376,9 @@
     "type": "n.",
     "level": "B1",
     "id": 1709,
-    "ipa": "ˈɛntrəns",
+    "ipa": "ˈentrəns",
     "meaning": "ทางเข้า",
-    "thai_pronunciation": "เอ็อนท์"
+    "thai_pronunciation": "เอน-เทรินส์"
   },
   {
     "word": "entrepreneur",
@@ -15394,17 +15394,17 @@
     "type": "n.",
     "level": "B1",
     "id": 1711,
-    "ipa": "ˈɛntri",
+    "ipa": "ˈentri",
     "meaning": "รายการ",
-    "thai_pronunciation": "เอ็อนท์"
+    "thai_pronunciation": "เอน-ทรี"
   },
   {
     "word": "envelope",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈɛnvəˌɫoʊp",
+    "ipa": "ˈenvəloʊp",
     "meaning": "ซองจดหมาย",
-    "thai_pronunciation": "เนย์-โอ",
+    "thai_pronunciation": "เอน-เว-โลป",
     "id": 1712
   },
   {
@@ -15414,16 +15414,16 @@
     "id": 1713,
     "ipa": "ɪnˈvaɪrənmənt",
     "meaning": "สิ่งแวดล้อม",
-    "thai_pronunciation": "เนย์-ไอ-รอน-เมินท์"
+    "thai_pronunciation": "เอ็น-ไว-รอน-เมินท์"
   },
   {
     "word": "environmental",
     "type": "adj.",
     "level": "B1",
     "id": 1714,
-    "ipa": "ɪnˌvaɪrənˈmɛnəl",
+    "ipa": "ɪnˌvaɪrənˈmentl",
     "meaning": "ด้านสิ่งแวดล้อม",
-    "thai_pronunciation": "เนย์-ไอ-รอน-เม็น-แทล"
+    "thai_pronunciation": "เอ็น-ไว-รอน-เมน-ทัล"
   },
   {
     "word": "envisage",
@@ -15431,16 +15431,16 @@
     "level": "C1",
     "ipa": "ɛnˈvɪzɪdʒ",
     "meaning": "ลองนึกภาพ",
-    "thai_pronunciation": "เนย์-ไอ-อา",
+    "thai_pronunciation": "เอน-ไอ-อา",
     "id": 1715
   },
   {
     "word": "epidemic",
     "type": "adj.",
     "level": "B2",
-    "ipa": "ˌɛpəˈdɛmɪk",
+    "ipa": "ˌepɪˈdemɪk",
     "meaning": "โรคระบาด",
-    "thai_pronunciation": "เพย์-พิ-เดม-มิก",
+    "thai_pronunciation": "เอพ-พิ-เดม-มิก",
     "id": 1716
   },
   {
@@ -15448,18 +15448,18 @@
     "type": "n.",
     "level": "B1",
     "id": 1717,
-    "ipa": "ˈɛpɪˌsoʊd",
+    "ipa": "ˈepɪsoʊd",
     "meaning": "ตอน",
-    "thai_pronunciation": "เอะ-ไอ-โอ-เดอะ"
+    "thai_pronunciation": "เอพ-พิ-โซด"
   },
   {
     "word": "equal",
     "type": "adj. v. B1 n.",
     "level": "B2",
     "id": 1718,
-    "ipa": "ˈikwəl",
+    "ipa": "ˈiːkwəl",
     "meaning": "เท่ากัน",
-    "thai_pronunciation": "เอะ-แควล"
+    "thai_pronunciation": "อี-ควล"
   },
   {
     "word": "equality",
@@ -15475,17 +15475,17 @@
     "type": "adv.",
     "level": "B1",
     "id": 1720,
-    "ipa": "ˈikwəli",
+    "ipa": "ˈiːkwəli",
     "meaning": "เท่าๆ กัน",
-    "thai_pronunciation": "เอะ-แควล-ลี"
+    "thai_pronunciation": "อี-ควล-ลี"
   },
   {
     "word": "equation",
     "type": "n.",
     "level": "C1",
-    "ipa": "ɪˈkweɪʒən",
+    "ipa": "ɪˈkweɪʒn",
     "meaning": "สมการ",
-    "thai_pronunciation": "เแด-รี่-ชัน",
+    "thai_pronunciation": "อิ-เคว-ชัน",
     "id": 1721
   },
   {
@@ -15494,7 +15494,7 @@
     "level": "C1",
     "ipa": "ɪˈkweɪtɝ",
     "meaning": "เส้นศูนย์สูตร",
-    "thai_pronunciation": "เแด-รี่-ทอร์์",
+    "thai_pronunciation": "เอล-รี่-ทอร์์",
     "id": 1722
   },
   {
@@ -15520,9 +15520,9 @@
     "type": "n.",
     "level": "A2",
     "id": 1725,
-    "ipa": "ɪkˈwɪpmənt",
+    "ipa": "ɪˈkwɪpmənt",
     "meaning": "อุปกรณ์",
-    "thai_pronunciation": "เอะ-คิวพ-เมินท์"
+    "thai_pronunciation": "อิ-ควิป-เมินท์"
   },
   {
     "word": "equitable",
@@ -15537,25 +15537,25 @@
     "word": "equity",
     "type": "n.",
     "level": "C1",
-    "ipa": "ˈɛkwəti",
+    "ipa": "ˈekwəti",
     "meaning": "ส่วนของผู้ถือหุ้น",
-    "thai_pronunciation": "เอะ-คว-อิ-ที",
+    "thai_pronunciation": "เอค-ควิ-ที",
     "id": 1727
   },
   {
     "word": "equivalent",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ɪˈkwɪvəɫənt",
+    "ipa": "ɪˈkwɪvələnt",
     "meaning": "เทียบเท่า",
-    "thai_pronunciation": "อิ-ควิฟ-เวอะ-เลินท์",
+    "thai_pronunciation": "อิ-ควิฟ-วะ-เลินท์",
     "id": 1728
   },
   {
     "word": "era",
     "type": "n.",
     "level": "C1",
-    "ipa": "ˈɪərə, ˈerə",
+    "ipa": "ˈɪrə",
     "meaning": "ยุค, สมัย, ศักราช",
     "thai_pronunciation": "เอีย-ระ / เอ-ระ",
     "id": 1729
@@ -15601,9 +15601,9 @@
     "type": "n.",
     "level": "A2",
     "id": 1734,
-    "ipa": "ˈɛrər",
+    "ipa": "ˈerər",
     "meaning": "ข้อผิดพลาด",
-    "thai_pronunciation": "เออร์-รอร์์"
+    "thai_pronunciation": "เออ-เรอร์"
   },
   {
     "word": "erupt",
@@ -15639,25 +15639,25 @@
     "id": 1738,
     "ipa": "ɪˈskeɪp",
     "meaning": "หนี",
-    "thai_pronunciation": "เอ็อส์-อา"
+    "thai_pronunciation": "อิส-เคป"
   },
   {
     "word": "especially",
     "type": "adv.",
     "level": "A2",
     "id": 1739,
-    "ipa": "əˈspɛʃəli",
+    "ipa": "ɪˈspeʃəli",
     "meaning": "โดยเฉพาะ",
-    "thai_pronunciation": "เอ็อส์-ไอ-ลี"
+    "thai_pronunciation": "อิส-เปช-เชิล-ลี"
   },
   {
     "word": "essay",
     "type": "n.",
     "level": "A2",
     "id": 1740,
-    "ipa": "ˈɛˌseɪ",
+    "ipa": "ˈeseɪ",
     "meaning": "เรียงความ",
-    "thai_pronunciation": "เอ็อส์-เซย์"
+    "thai_pronunciation": "เอส-เซย์"
   },
   {
     "word": "essence",
@@ -15673,17 +15673,17 @@
     "type": "adj.",
     "level": "B1",
     "id": 1742,
-    "ipa": "ɛˈsɛnʃəl",
+    "ipa": "ɪˈsenʃl",
     "meaning": "จำเป็น",
-    "thai_pronunciation": "เอ็อส์-เซ็น-ไอ"
+    "thai_pronunciation": "อิส-เซน-เชิล"
   },
   {
     "word": "essentially",
     "type": "adv.",
     "level": "C1",
-    "ipa": "ɛˈsɛnʃəɫi",
+    "ipa": "ɪˈsenʃəli",
     "meaning": "โดยพื้นฐานแล้ว",
-    "thai_pronunciation": "เอ็อส์-เซ็น-ไอ-ลี",
+    "thai_pronunciation": "อิส-เซน-เชิล-ลี",
     "id": 1743
   },
   {
@@ -15693,15 +15693,15 @@
     "id": 1744,
     "ipa": "ɪˈstæblɪʃ",
     "meaning": "สร้าง",
-    "thai_pronunciation": "เอ็อส์-แทบ-ลิช"
+    "thai_pronunciation": "อิส-แทบ-ลิช"
   },
   {
     "word": "establishment",
     "type": "n.",
     "level": "C1",
-    "ipa": "ɪˈstæbɫɪʃmənt",
+    "ipa": "ɪˈstæblɪʃmənt",
     "meaning": "สถานประกอบการ",
-    "thai_pronunciation": "เอ็อส์-แทบ-ลิช-เมินท์",
+    "thai_pronunciation": "อิส-แทบ-ลิช-เมินท์",
     "id": 1745
   },
   {
@@ -15709,18 +15709,18 @@
     "type": "n.",
     "level": "B2",
     "id": 1746,
-    "ipa": "ɛˈsteɪt",
+    "ipa": "ɪˈsteɪt",
     "meaning": "อสังหาริมทรัพย์",
-    "thai_pronunciation": "เอ็อส์-อา"
+    "thai_pronunciation": "อิส-เตท"
   },
   {
     "word": "estimate",
     "type": "v. n.",
     "level": "B2",
     "id": 1747,
-    "ipa": "ˈɛstəˌmeɪt",
+    "ipa": "ˈestɪmət",
     "meaning": "ประมาณการ",
-    "thai_pronunciation": "เอ็อส์-ไอ-อา"
+    "thai_pronunciation": "เอส-ติ-เมต"
   },
   {
     "word": "estimation",
@@ -15754,26 +15754,26 @@
     "type": "adj.",
     "level": "B2",
     "id": 1751,
-    "ipa": "ˈɛθɪkəl",
+    "ipa": "ˈeθɪkl",
     "meaning": "มีจริยธรรม",
-    "thai_pronunciation": "เธย์-ธิ-เคิล"
+    "thai_pronunciation": "เอธ-ธิ-เคิล"
   },
   {
     "word": "ethics",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈɛθɪks",
+    "ipa": "ˈeθɪks",
     "meaning": "จริยธรรม",
-    "thai_pronunciation": "เอ็อท-ฮิก",
+    "thai_pronunciation": "เอธ-ธิกส์",
     "id": 1752
   },
   {
     "word": "ethnic",
     "type": "adj.",
     "level": "C1",
-    "ipa": "ˈɛθnɪk",
+    "ipa": "ˈeθnɪk",
     "meaning": "ชาติพันธุ์",
-    "thai_pronunciation": "เอ็อธ",
+    "thai_pronunciation": "เอธ-นิก",
     "id": 1753
   },
   {
@@ -15800,7 +15800,7 @@
     "level": "B2",
     "ipa": "iˈvækjəˌeɪt",
     "meaning": "อพยพ",
-    "thai_pronunciation": "เแด-รี่-อุ",
+    "thai_pronunciation": "เอล-รี่-อุ",
     "id": 1756
   },
   {
@@ -15808,17 +15808,17 @@
     "type": "v.",
     "level": "B2",
     "id": 1757,
-    "ipa": "ɪˈvæljuˌeɪt",
+    "ipa": "ɪˈvæljueɪt",
     "meaning": "ประเมิน",
-    "thai_pronunciation": "อิ-แวล-ยู-เทย์"
+    "thai_pronunciation": "อิ-แวล-ลิว-เอท"
   },
   {
     "word": "evaluation",
     "type": "n.",
     "level": "B2",
-    "ipa": "iˌvæɫjuˈeɪʃən",
+    "ipa": "ɪˌvæljuˈeɪʃn",
     "meaning": "การประเมินผล",
-    "thai_pronunciation": "เแด-รี่-อุ-ชัน",
+    "thai_pronunciation": "อิ-แวล-ลิว-เอ-ชัน",
     "id": 1758
   },
   {
@@ -15827,7 +15827,7 @@
     "level": "C1",
     "ipa": "ɪˈvæpɝˌeɪt",
     "meaning": "ระเหย",
-    "thai_pronunciation": "เแด-รี่-โอ-อา",
+    "thai_pronunciation": "เอล-รี่-โอ-อา",
     "id": 1759
   },
   {
@@ -15836,7 +15836,7 @@
     "level": "C1",
     "ipa": "iˈveɪʒən",
     "meaning": "การหลีกเลี่ยง",
-    "thai_pronunciation": "เแด-รี่-ชัน",
+    "thai_pronunciation": "เอล-รี่-ชัน",
     "id": 1760
   },
   {
@@ -15844,9 +15844,9 @@
     "type": "adv. A1 adj.",
     "level": "B2",
     "id": 1761,
-    "ipa": "ˈivɪn",
+    "ipa": "ˈiːvn",
     "meaning": "สม่ำเสมอ",
-    "thai_pronunciation": "เอะ-เว็น"
+    "thai_pronunciation": "อี-เวิน"
   },
   {
     "word": "evening",
@@ -15855,52 +15855,52 @@
     "id": 1762,
     "ipa": "ˈiːvnɪŋ",
     "meaning": "ตอนเย็น, ช่วงค่ำ",
-    "thai_pronunciation": "อีฟ-นิง"
+    "thai_pronunciation": "อีฟ-นิ่ง"
   },
   {
     "word": "event",
     "type": "n.",
     "level": "A1",
     "id": 1763,
-    "ipa": "ɪˈvɛnt",
+    "ipa": "ɪˈvent",
     "meaning": "เหตุการณ์",
-    "thai_pronunciation": "เอะ-เว็นท์"
+    "thai_pronunciation": "อิ-เวนต์"
   },
   {
     "word": "eventually",
     "type": "adv.",
     "level": "B1",
     "id": 1764,
-    "ipa": "ɪˈvɛnʧəwəli",
+    "ipa": "ɪˈventʃuəli",
     "meaning": "ในท้ายที่สุด",
-    "thai_pronunciation": "เอะ-เว็น-อุ-ลี"
+    "thai_pronunciation": "อิ-เวน-ชัวล-ลี"
   },
   {
     "word": "ever",
     "type": "adv.",
     "level": "A1",
     "id": 1765,
-    "ipa": "ˈɛvər",
+    "ipa": "ˈevər",
     "meaning": "เคย",
-    "thai_pronunciation": "เอะ-เว็ร์"
+    "thai_pronunciation": "เอฟ-เวอร์"
   },
   {
     "word": "every",
     "type": "det.",
     "level": "A1",
     "id": 1766,
-    "ipa": "ˈɛvəri",
+    "ipa": "ˈevri",
     "meaning": "ทั้งหมด",
-    "thai_pronunciation": "เอะ-เว-รี"
+    "thai_pronunciation": "เอฟ-วรี"
   },
   {
     "word": "everybody",
     "type": "pron.",
     "level": "A1",
     "id": 1767,
-    "ipa": "ˈɛvriˌbɑdi",
+    "ipa": "ˈevribədi",
     "meaning": "ทุกคน",
-    "thai_pronunciation": "เอะ-เว-รี-โอ-อี"
+    "thai_pronunciation": "เอฟ-วรี-บอ-ดี้"
   },
   {
     "word": "everyday",
@@ -15916,36 +15916,36 @@
     "type": "pron.",
     "level": "A1",
     "id": 1769,
-    "ipa": "ˈɛvriˌwən",
+    "ipa": "ˈevriwʌn",
     "meaning": "ทุกคน",
-    "thai_pronunciation": "เฟย์-วรี-วัน"
+    "thai_pronunciation": "เอฟ-วรี-วัน"
   },
   {
     "word": "everything",
     "type": "pron.",
     "level": "A1",
     "id": 1770,
-    "ipa": "ˈɛvriˌθɪŋ",
+    "ipa": "ˈevriθɪŋ",
     "meaning": "ทุกอย่าง",
-    "thai_pronunciation": "เอะ-ริธ-งิ"
+    "thai_pronunciation": "เอฟ-วรี-ธิง"
   },
   {
     "word": "everywhere",
     "type": "adv.",
     "level": "A2",
     "id": 1771,
-    "ipa": "ˈɛvriˌwɛr",
+    "ipa": "ˈevriwer",
     "meaning": "ทุกที่",
-    "thai_pronunciation": "เอะ-ริว-เรอะ"
+    "thai_pronunciation": "เอฟ-วรี-แวร์"
   },
   {
     "word": "evidence",
     "type": "n.",
     "level": "A2",
     "id": 1772,
-    "ipa": "ˈɛvədəns",
+    "ipa": "ˈevɪdəns",
     "meaning": "หลักฐาน",
-    "thai_pronunciation": "เอะ-ไอ-เด็น"
+    "thai_pronunciation": "เอฟ-วิ-เดนส์"
   },
   {
     "word": "evident",
@@ -15961,9 +15961,9 @@
     "type": "adj. n.",
     "level": "B2",
     "id": 1774,
-    "ipa": "ˈivəl",
+    "ipa": "ˈiːvl",
     "meaning": "ความชั่วร้าย",
-    "thai_pronunciation": "เอะ-วิล"
+    "thai_pronunciation": "อี-วิล"
   },
   {
     "word": "evoke",
@@ -16007,7 +16007,7 @@
     "level": "B2",
     "ipa": "ɪɡˈzæsɝˌbeɪt",
     "meaning": "ทำให้รุนแรงขึ้น",
-    "thai_pronunciation": "เแด-รี่-เค็ร์-อา",
+    "thai_pronunciation": "เอล-รี่-เค็ร์-อา",
     "id": 1779
   },
   {
@@ -16015,18 +16015,18 @@
     "type": "adj.",
     "level": "A2",
     "id": 1780,
-    "ipa": "ɪgˈzækt",
+    "ipa": "ɪɡˈzækt",
     "meaning": "ที่แน่นอน",
-    "thai_pronunciation": "เอะ-แซกต์"
+    "thai_pronunciation": "อิก-แซคท์"
   },
   {
     "word": "exactly",
     "type": "adv.",
     "level": "A2",
     "id": 1781,
-    "ipa": "ɪgˈzæktli",
+    "ipa": "ɪɡˈzæktli",
     "meaning": "อย่างแน่นอน",
-    "thai_pronunciation": "เอะ-แซกต์"
+    "thai_pronunciation": "อิก-แซคท์-ลี"
   },
   {
     "word": "exaggerate",
@@ -16060,27 +16060,27 @@
     "type": "n.",
     "level": "B2",
     "id": 1785,
-    "ipa": "ɪgˌzæməˈneɪʃən",
+    "ipa": "ɪɡˌzæmɪˈneɪʃn",
     "meaning": "การตรวจสอบ",
-    "thai_pronunciation": "เแด-รี่-ไอ-อา-ชัน"
+    "thai_pronunciation": "อิก-แซม-มิ-เน-ชัน"
   },
   {
     "word": "examine",
     "type": "v.",
     "level": "B1",
     "id": 1786,
-    "ipa": "ɪgˈzæmɪn",
+    "ipa": "ɪɡˈzæmɪn",
     "meaning": "พิจารณา",
-    "thai_pronunciation": "เแด-รี่-ไอ"
+    "thai_pronunciation": "อิก-แซม-มิน"
   },
   {
     "word": "example",
     "type": "n.",
     "level": "A1",
     "id": 1787,
-    "ipa": "ɪgˈzæmpəl",
+    "ipa": "ɪɡˈzæmpl",
     "meaning": "ตัวอย่าง",
-    "thai_pronunciation": "เอะ-แซมพ์"
+    "thai_pronunciation": "อิก-แซม-เปิล"
   },
   {
     "word": "exceed",
@@ -16106,7 +16106,7 @@
     "level": "C1",
     "ipa": "ˈɛksəɫəns",
     "meaning": "ความเป็นเลิศ",
-    "thai_pronunciation": "เก็-เซิล-เลินส์",
+    "thai_pronunciation": "เอ็ก-เซิล-เลินส์",
     "id": 1790
   },
   {
@@ -16114,26 +16114,26 @@
     "type": "adj.",
     "level": "A2",
     "id": 1791,
-    "ipa": "ˈɛksələnt",
+    "ipa": "ˈeksələnt",
     "meaning": "ยอดเยี่ยม",
-    "thai_pronunciation": "เอ็อกส์-เค็ล-เล็นท์"
+    "thai_pronunciation": "เอค-เซิล-เลินท์"
   },
   {
     "word": "except",
     "type": "prep. A2 conj.",
     "level": "B1",
     "id": 1792,
-    "ipa": "ɪkˈsɛpt",
+    "ipa": "ɪkˈsept",
     "meaning": "ยกเว้น",
-    "thai_pronunciation": "เอ็อกส์-เค็พ"
+    "thai_pronunciation": "อิก-เซพท์"
   },
   {
     "word": "exception",
     "type": "n.",
     "level": "B2",
-    "ipa": "ɪkˈsɛpʃən",
+    "ipa": "ɪkˈsepʃn",
     "meaning": "ข้อยกเว้น",
-    "thai_pronunciation": "เอ็อกส์-เค็พ-ชัน",
+    "thai_pronunciation": "อิก-เซพ-ชัน",
     "id": 1793
   },
   {
@@ -16158,9 +16158,9 @@
     "word": "excessive",
     "type": "adj.",
     "level": "B2",
-    "ipa": "ɪkˈsɛsɪv",
+    "ipa": "ɪkˈsesɪv",
     "meaning": "มากเกินไป",
-    "thai_pronunciation": "กิ-เซส-ซิฟว์",
+    "thai_pronunciation": "อิก-เซส-ซิฟว์",
     "id": 1796
   },
   {
@@ -16170,7 +16170,7 @@
     "id": 1797,
     "ipa": "ɪksˈtʃeɪndʒ",
     "meaning": "แลกเปลี่ยน",
-    "thai_pronunciation": "เอ็กซ-เชนจ์"
+    "thai_pronunciation": "อิกซ-เชนจ์"
   },
   {
     "word": "excited",
@@ -16179,7 +16179,7 @@
     "id": 1798,
     "ipa": "ɪkˈsaɪtɪd",
     "meaning": "ตื่นเต้น",
-    "thai_pronunciation": "กิ-ไซ-ทิด"
+    "thai_pronunciation": "อิก-ไซ-ทิด"
   },
   {
     "word": "excitement",
@@ -16188,7 +16188,7 @@
     "id": 1799,
     "ipa": "ɪkˈsaɪtmənt",
     "meaning": "ความตื่นเต้น",
-    "thai_pronunciation": "เอ็อกส์-ไอ-เมินท์"
+    "thai_pronunciation": "อิก-ไซท์-เมินท์"
   },
   {
     "word": "exciting",
@@ -16197,15 +16197,15 @@
     "id": 1800,
     "ipa": "ɪkˈsaɪtɪŋ",
     "meaning": "น่าตื่นเต้น",
-    "thai_pronunciation": "เอ็อกส์-คิท-งิ"
+    "thai_pronunciation": "อิก-ไซ-ทิง"
   },
   {
     "word": "exclude",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ɪkˈskɫud",
+    "ipa": "ɪkˈskluːd",
     "meaning": "ยกเว้น",
-    "thai_pronunciation": "กิ-สคลูด",
+    "thai_pronunciation": "อิก-สคลูด",
     "id": 1801
   },
   {
@@ -16221,9 +16221,9 @@
     "word": "exclusive",
     "type": "adj.",
     "level": "B2",
-    "ipa": "ɪkˈskɫusɪv",
+    "ipa": "ɪkˈskluːsɪv",
     "meaning": "พิเศษ",
-    "thai_pronunciation": "กิ-สคลู-ซิฟว์",
+    "thai_pronunciation": "อิก-สคลู-ซิฟว์",
     "id": 1803
   },
   {
@@ -16240,9 +16240,9 @@
     "type": "n. v.",
     "level": "B2",
     "id": 1805,
-    "ipa": "ɪkˈskjuz",
+    "ipa": "ɪkˈskjuːs",
     "meaning": "ขอโทษ",
-    "thai_pronunciation": "เอ็อกส์-อุ"
+    "thai_pronunciation": "อิก-สคิวส์"
   },
   {
     "word": "execute",
@@ -16267,9 +16267,9 @@
     "type": "n. adj.",
     "level": "B2",
     "id": 1808,
-    "ipa": "ɪgˈzɛkjətɪv",
+    "ipa": "ɪɡˈzekjətɪv",
     "meaning": "ผู้บริหาร",
-    "thai_pronunciation": "เอะ-อุ-ไอ"
+    "thai_pronunciation": "อิก-เซก-คิว-ทิฟว์"
   },
   {
     "word": "exemplary",
@@ -16312,9 +16312,9 @@
     "type": "n. v.",
     "level": "A1",
     "id": 1813,
-    "ipa": "ˈɛksərˌsaɪz",
+    "ipa": "ˈeksərsaɪz",
     "meaning": "ออกกำลังกาย",
-    "thai_pronunciation": "เอะ-เซ็ร์-ไอซ์"
+    "thai_pronunciation": "เอค-เซอร์-ไซส์"
   },
   {
     "word": "exert",
@@ -16358,7 +16358,7 @@
     "level": "C1",
     "ipa": "ɪɡˈzɪbɪt",
     "meaning": "จัดแสดง",
-    "thai_pronunciation": "กิ-ซิ-บิท",
+    "thai_pronunciation": "อิก-ซิ-บิท",
     "id": 1818
   },
   {
@@ -16366,9 +16366,9 @@
     "type": "n.",
     "level": "B1",
     "id": 1819,
-    "ipa": "ˌɛksəˈbɪʃən",
+    "ipa": "ˌeksɪˈbɪʃn",
     "meaning": "นิทรรศการ",
-    "thai_pronunciation": "เอ็อกส์-ไอ-ไอ-ชัน"
+    "thai_pronunciation": "เอค-ซิ-บิ-ชัน"
   },
   {
     "word": "exile",
@@ -16376,7 +16376,7 @@
     "level": "B2",
     "ipa": "ˈɛɡˌzaɪɫ",
     "meaning": "เนรเทศ",
-    "thai_pronunciation": "เก็-ไซล์",
+    "thai_pronunciation": "เอ็ก-ไซล์",
     "id": 1820
   },
   {
@@ -16384,26 +16384,26 @@
     "type": "v.",
     "level": "A2",
     "id": 1821,
-    "ipa": "ɪgˈzɪst",
+    "ipa": "ɪɡˈzɪst",
     "meaning": "มีอยู่",
-    "thai_pronunciation": "เอะ-ซิสต์"
+    "thai_pronunciation": "อิก-ซิสต์"
   },
   {
     "word": "existence",
     "type": "n.",
     "level": "B2",
     "id": 1822,
-    "ipa": "ɪgˈzɪstəns",
+    "ipa": "ɪɡˈzɪstəns",
     "meaning": "การดำรงอยู่",
-    "thai_pronunciation": "เอะ-ซิส์-เท็น"
+    "thai_pronunciation": "อิก-ซิส-เทินส์"
   },
   {
     "word": "exit",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈɛɡzɪt",
+    "ipa": "ˈeksɪt",
     "meaning": "ออก",
-    "thai_pronunciation": "เอะ-ซิท",
+    "thai_pronunciation": "เอค-สิท",
     "id": 1823
   },
   {
@@ -16422,15 +16422,15 @@
     "id": 1825,
     "ipa": "ɪkˈspænd",
     "meaning": "ขยาย",
-    "thai_pronunciation": "เอ็อกส์-แพนด์"
+    "thai_pronunciation": "อิก-สแพนด์"
   },
   {
     "word": "expansion",
     "type": "n.",
     "level": "B2",
-    "ipa": "ɪkˈspænʃən",
+    "ipa": "ɪkˈspænʃn",
     "meaning": "การขยายตัว",
-    "thai_pronunciation": "กิ-สแพน-ชัน",
+    "thai_pronunciation": "อิก-สแพน-ชัน",
     "id": 1826
   },
   {
@@ -16447,27 +16447,27 @@
     "type": "v.",
     "level": "A2",
     "id": 1828,
-    "ipa": "ɪkˈspɛkt",
+    "ipa": "ɪkˈspekt",
     "meaning": "คาดหวัง",
-    "thai_pronunciation": "เอ็อกส์-เพ็กต์"
+    "thai_pronunciation": "อิก-สเปคต์"
   },
   {
     "word": "expectation",
     "type": "n.",
     "level": "B2",
     "id": 1829,
-    "ipa": "ˌɛkspɛkˈteɪʃən",
+    "ipa": "ˌekspekˈteɪʃn",
     "meaning": "ความคาดหวัง",
-    "thai_pronunciation": "เอ็อกส์-เพ็ก-อา-ชัน"
+    "thai_pronunciation": "เอค-สเปค-เต-ชัน"
   },
   {
     "word": "expected",
     "type": "adj.",
     "level": "B1",
     "id": 1830,
-    "ipa": "ɪkˈspɛktɪd",
+    "ipa": "ɪkˈspektɪd",
     "meaning": "ที่คาดหวัง",
-    "thai_pronunciation": "เอ็อกส์-เพ็ก-เท็ด"
+    "thai_pronunciation": "อิก-สเปค-ทิด"
   },
   {
     "word": "expedite",
@@ -16485,7 +16485,7 @@
     "id": 1832,
     "ipa": "ˌɛkspəˈdɪʃən",
     "meaning": "การเดินทาง",
-    "thai_pronunciation": "เก็-สพิ-ดิช-ชัน"
+    "thai_pronunciation": "เอ็ก-สพิ-ดิช-ชัน"
   },
   {
     "word": "expenditure",
@@ -16493,7 +16493,7 @@
     "level": "C1",
     "ipa": "ɪkˈspɛndətʃɝ",
     "meaning": "ค่าใช้จ่าย",
-    "thai_pronunciation": "เอ็อกส์-เพ็น-ไอ-อุ-เรอะ",
+    "thai_pronunciation": "เอ็อกส์-เพ็น-ลูท-เรอะ",
     "id": 1833
   },
   {
@@ -16501,18 +16501,18 @@
     "type": "n.",
     "level": "B2",
     "id": 1834,
-    "ipa": "ɪkˈspɛns",
+    "ipa": "ɪkˈspens",
     "meaning": "ค่าใช้จ่าย",
-    "thai_pronunciation": "เอ็อกส์-เพ็น"
+    "thai_pronunciation": "อิก-สเปนส์"
   },
   {
     "word": "expensive",
     "type": "adj.",
     "level": "A1",
     "id": 1835,
-    "ipa": "ɪkˈspɛnsɪv",
+    "ipa": "ɪkˈspensɪv",
     "meaning": "แพง",
-    "thai_pronunciation": "เอ็อกส์-เพ็น-ไอ"
+    "thai_pronunciation": "อิก-สเปน-ซิฟว์"
   },
   {
     "word": "experience",
@@ -16521,7 +16521,7 @@
     "id": 1836,
     "ipa": "ɪkˈspɪriəns",
     "meaning": "ประสบการณ์",
-    "thai_pronunciation": "คิ-สเปีย-เรียนส์"
+    "thai_pronunciation": "อิก-สพี-เรียนส์"
   },
   {
     "word": "experienced",
@@ -16530,16 +16530,16 @@
     "id": 1837,
     "ipa": "ɪkˈspɪriənst",
     "meaning": "มีประสบการณ์",
-    "thai_pronunciation": "เอ็อกส์-เว-รีรน-เค็ด"
+    "thai_pronunciation": "อิก-สพี-เรียนสด์"
   },
   {
     "word": "experiment",
     "type": "n. A2 v.",
     "level": "B1",
     "id": 1838,
-    "ipa": "ɪkˈspɛrəmənt",
+    "ipa": "ɪkˈsperɪmənt",
     "meaning": "การทดลอง",
-    "thai_pronunciation": "เอ็อกส์-ไอ-เมินท์"
+    "thai_pronunciation": "อิก-สเปอ-ริ-เมินท์"
   },
   {
     "word": "experimental",
@@ -16555,9 +16555,9 @@
     "type": "n. adj.",
     "level": "A2",
     "id": 1840,
-    "ipa": "ˈɛkspərt",
+    "ipa": "ˈekspɜːrt",
     "meaning": "ผู้เชี่ยวชาญ",
-    "thai_pronunciation": "เอ็อกส์-เพ็ร์ต"
+    "thai_pronunciation": "เอค-สเพิร์ท"
   },
   {
     "word": "expertise",
@@ -16565,7 +16565,7 @@
     "level": "B2",
     "ipa": "ˌɛkspɝˈtiz",
     "meaning": "ความเชี่ยวชาญ / ทักษะความชำนาญเฉพาะทาง",
-    "thai_pronunciation": "เก็-สเปอร์-ทีซ",
+    "thai_pronunciation": "เอ็ก-สเปอร์-ทีซ",
     "id": 1841
   },
   {
@@ -16584,16 +16584,16 @@
     "id": 1843,
     "ipa": "ɪkˈspleɪn",
     "meaning": "อธิบาย",
-    "thai_pronunciation": "เอ็กซ-เพลน"
+    "thai_pronunciation": "อิก-สเพลน"
   },
   {
     "word": "explanation",
     "type": "n.",
     "level": "A2",
     "id": 1844,
-    "ipa": "ˌɛkspləˈneɪʃən",
+    "ipa": "ˌekspləˈneɪʃn",
     "meaning": "คำอธิบาย",
-    "thai_pronunciation": "เอ็อกส์-อา-ชัน"
+    "thai_pronunciation": "เอค-สพลา-เน-ชัน"
   },
   {
     "word": "explicit",
@@ -16620,15 +16620,15 @@
     "id": 1847,
     "ipa": "ɪkˈsploʊd",
     "meaning": "ระเบิด",
-    "thai_pronunciation": "เอ็อกส์-เดอะ"
+    "thai_pronunciation": "อิก-สโพลด์"
   },
   {
     "word": "exploit",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈɛksˌpɫɔɪt",
+    "ipa": "ɪkˈsplɔɪt",
     "meaning": "หาประโยชน์",
-    "thai_pronunciation": "กิ-สพลอยท์",
+    "thai_pronunciation": "อิก-สพลอยท์",
     "id": 1848
   },
   {
@@ -16645,27 +16645,27 @@
     "type": "n.",
     "level": "B2",
     "id": 1850,
-    "ipa": "ˌɛksplərˈeɪʃən",
+    "ipa": "ˌekspləˈreɪʃn",
     "meaning": "การสำรวจ",
-    "thai_pronunciation": "เอ็อกส์-อา-ชัน"
+    "thai_pronunciation": "เอค-สพโล-เร-ชัน"
   },
   {
     "word": "explore",
     "type": "v.",
     "level": "B1",
     "id": 1851,
-    "ipa": "ɪkˈsplɔr",
+    "ipa": "ɪkˈsplɔːr",
     "meaning": "สำรวจ",
-    "thai_pronunciation": "เอ็อกส์-เรอะ"
+    "thai_pronunciation": "อิก-สพลอร์"
   },
   {
     "word": "explosion",
     "type": "n.",
     "level": "B1",
     "id": 1852,
-    "ipa": "ɪkˈsploʊʒən",
+    "ipa": "ɪkˈsploʊʒn",
     "meaning": "การระเบิด",
-    "thai_pronunciation": "เอ็อกส์-ชัน"
+    "thai_pronunciation": "อิก-สโพล-ชัน"
   },
   {
     "word": "explosive",
@@ -16690,9 +16690,9 @@
     "type": "n. v.",
     "level": "B1",
     "id": 1855,
-    "ipa": "ˈɛkspɔrt",
+    "ipa": "ˈekspɔːrt",
     "meaning": "ส่งออก",
-    "thai_pronunciation": "เอ็อกส์-พ็อร์ต"
+    "thai_pronunciation": "เอค-สพอร์ต"
   },
   {
     "word": "expose",
@@ -16701,7 +16701,7 @@
     "id": 1856,
     "ipa": "ɪkˈspoʊz",
     "meaning": "เปิดเผย",
-    "thai_pronunciation": "เอ็อกส์-โอ"
+    "thai_pronunciation": "อิก-สโพส"
   },
   {
     "word": "exposition",
@@ -16709,16 +16709,16 @@
     "level": "C1",
     "ipa": "ˌɛkspəˈzɪʃən",
     "meaning": "นิทรรศการ",
-    "thai_pronunciation": "เอ็อกส์-โอ-ไอ-ชัน",
+    "thai_pronunciation": "เอ็อกส์-โอ-ซิ-ชัน",
     "id": 1857
   },
   {
     "word": "exposure",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ɪkˈspoʊʒɝ",
+    "ipa": "ɪkˈspoʊʒər",
     "meaning": "การสัมผัส",
-    "thai_pronunciation": "เอ็อกส์-โอ-อุ-เรอะ",
+    "thai_pronunciation": "อิก-สโพ-เชอร์",
     "id": 1858
   },
   {
@@ -16728,16 +16728,16 @@
     "id": 1859,
     "ipa": "ɪkˈspres",
     "meaning": "ด่วน",
-    "thai_pronunciation": "เอ็กซ-เพรส"
+    "thai_pronunciation": "อิก-สเพรส"
   },
   {
     "word": "expression",
     "type": "n.",
     "level": "A2",
     "id": 1860,
-    "ipa": "ɪkˈsprɛʃən",
+    "ipa": "ɪkˈspreʃn",
     "meaning": "การแสดงออก",
-    "thai_pronunciation": "เอ็อกส์-ชัน"
+    "thai_pronunciation": "อิก-สเพรช-ชัน"
   },
   {
     "word": "exquisite",
@@ -16745,7 +16745,7 @@
     "level": "C1",
     "ipa": "ˈɛkskwəzət",
     "meaning": "ประณีต",
-    "thai_pronunciation": "เก็-สควิซ-ซิท",
+    "thai_pronunciation": "เอ็ก-สควิซ-ซิท",
     "id": 1861
   },
   {
@@ -16753,26 +16753,26 @@
     "type": "v.",
     "level": "B2",
     "id": 1862,
-    "ipa": "ɪkˈstɛnd",
+    "ipa": "ɪkˈstend",
     "meaning": "ขยาย",
-    "thai_pronunciation": "เอ็อกส์-เท็นด์"
+    "thai_pronunciation": "อิก-สเทนด์"
   },
   {
     "word": "extension",
     "type": "n.",
     "level": "C1",
-    "ipa": "ɪkˈstɛnʃən",
+    "ipa": "ɪkˈstenʃn",
     "meaning": "ส่วนขยาย",
-    "thai_pronunciation": "เอ็อกส์-เท็น-ชัน",
+    "thai_pronunciation": "อิก-สเทน-ชัน",
     "id": 1863
   },
   {
     "word": "extensive",
     "type": "adj.",
     "level": "B2",
-    "ipa": "ɪkˈstɛnsɪv",
+    "ipa": "ɪkˈstensɪv",
     "meaning": "กว้างขวาง",
-    "thai_pronunciation": "กิ-สเทน-ซิฟว์",
+    "thai_pronunciation": "อิก-สเทน-ซิฟว์",
     "id": 1864
   },
   {
@@ -16789,18 +16789,18 @@
     "type": "n.",
     "level": "B2",
     "id": 1866,
-    "ipa": "ɪkˈstɛnt",
+    "ipa": "ɪkˈstent",
     "meaning": "ขอบเขต",
-    "thai_pronunciation": "เอ็อกส์-เท็นท์"
+    "thai_pronunciation": "อิก-สเทนต์"
   },
   {
     "word": "external",
     "type": "adj.",
     "level": "B2",
     "id": 1867,
-    "ipa": "ɪkˈstərnəl",
+    "ipa": "ɪkˈstɜːrnl",
     "meaning": "ภายนอก",
-    "thai_pronunciation": "เอ็อกส์-เท็ร์-แนล"
+    "thai_pronunciation": "อิก-สเทอร์-นัล"
   },
   {
     "word": "extinct",
@@ -16825,9 +16825,9 @@
     "type": "adj. A1 n. adv.",
     "level": "B1",
     "id": 1870,
-    "ipa": "ˈek.strə",
+    "ipa": "ˈekstrə",
     "meaning": "พิเศษ",
-    "thai_pronunciation": "เอ็กซ-ตร้า"
+    "thai_pronunciation": "เอค-สตรา"
   },
   {
     "word": "extract",
@@ -16852,9 +16852,9 @@
     "type": "adj.",
     "level": "B2",
     "id": 1873,
-    "ipa": "ˌɛkstrəˈɔrdəˌnɛri",
+    "ipa": "ɪkˈstrɔːrdəneri",
     "meaning": "พิเศษ",
-    "thai_pronunciation": "กิ-สตรา-ออร์-ดิ-เนอ-รี"
+    "thai_pronunciation": "อิก-สตรา-ออร์-ดิ-เน-รี"
   },
   {
     "word": "extravagant",
@@ -16872,16 +16872,16 @@
     "id": 1875,
     "ipa": "ɪkˈstriːm",
     "meaning": "สุดขีด",
-    "thai_pronunciation": "เอ็กซ-ตรีม"
+    "thai_pronunciation": "อิก-สตรีม"
   },
   {
     "word": "extremely",
     "type": "adv.",
     "level": "A2",
     "id": 1876,
-    "ipa": "ɪkˈstrimli",
+    "ipa": "ɪkˈstriːmli",
     "meaning": "อย่างที่สุด",
-    "thai_pronunciation": "เอ็อกส์-ลี"
+    "thai_pronunciation": "อิก-สตรีม-ลี"
   },
   {
     "word": "extremist",
@@ -16897,9 +16897,9 @@
     "type": "n.",
     "level": "A1",
     "id": 1878,
-    "ipa": "ˈaɪ",
+    "ipa": "aɪ",
     "meaning": "ดวงตา",
-    "thai_pronunciation": "เออ"
+    "thai_pronunciation": "ไอ"
   },
   {
     "word": "fabric",
@@ -17682,7 +17682,7 @@
     "id": 1965,
     "ipa": "ˈfaɪtɪŋ",
     "meaning": "การต่อสู้",
-    "thai_pronunciation": "ไอฟท์-งิ"
+    "thai_pronunciation": "ไอฟท์-ติ้ง"
   },
   {
     "word": "figure",
@@ -17691,7 +17691,7 @@
     "id": 1966,
     "ipa": "ˈfɪgjər",
     "meaning": "รูป",
-    "thai_pronunciation": "ไอ-อุ-เรอะ"
+    "thai_pronunciation": "ลูท-เรอะ"
   },
   {
     "word": "file",
@@ -17790,7 +17790,7 @@
     "id": 1977,
     "ipa": "ˈfaɪndɪŋ",
     "meaning": "การค้นหา",
-    "thai_pronunciation": "ฟินด์-งิ"
+    "thai_pronunciation": "ฟินด์-ดิ่ง"
   },
   {
     "word": "fine",
@@ -17925,7 +17925,7 @@
     "id": 1992,
     "ipa": "ˈfɪʃɪŋ",
     "meaning": "ตกปลา",
-    "thai_pronunciation": "ฟิช-งิ"
+    "thai_pronunciation": "ฟิช-ชิ่ง"
   },
   {
     "word": "fit",
@@ -17970,7 +17970,7 @@
     "id": 1997,
     "ipa": "fɪkst",
     "meaning": "ที่ตายตัว",
-    "thai_pronunciation": "ไอ-เซ็ด"
+    "thai_pronunciation": "ไอ-สด์"
   },
   {
     "word": "fixture",
@@ -18276,7 +18276,7 @@
     "id": 2031,
     "ipa": "ˈfoʊldɪŋ",
     "meaning": "พับ",
-    "thai_pronunciation": "ฟ็อลด์-งิ"
+    "thai_pronunciation": "ฟ็อลด์-ดิ่ง"
   },
   {
     "word": "folk",
@@ -18303,7 +18303,7 @@
     "id": 2034,
     "ipa": "ˈfɑloʊɪŋ",
     "meaning": "กำลังติดตาม",
-    "thai_pronunciation": "ฟอล-เลา-งิ"
+    "thai_pronunciation": "ฟอล-เลา-อิ้ง"
   },
   {
     "word": "fond",
@@ -18913,9 +18913,9 @@
     "type": "n.",
     "level": "A2",
     "id": 2102,
-    "ipa": "frɪʤ",
+    "ipa": "frɪdʒ",
     "meaning": "ตู้เย็น",
-    "thai_pronunciation": "ฟิรด"
+    "thai_pronunciation": "ฟริดจ์"
   },
   {
     "word": "friend",
@@ -18969,7 +18969,7 @@
     "id": 2108,
     "ipa": "ˈfraɪtənɪŋ",
     "meaning": "น่ากลัว",
-    "thai_pronunciation": "ไอฟรท์-งิ"
+    "thai_pronunciation": "ไอฟรท์-นิ่ง"
   },
   {
     "word": "frog",
@@ -19058,7 +19058,7 @@
     "level": "C1",
     "ipa": "ˈfɹəsˌtɹeɪtɪŋ",
     "meaning": "น่าหงุดหงิด",
-    "thai_pronunciation": "ฟัรสต์-งิ",
+    "thai_pronunciation": "ฟัรสต์-ติ้ง",
     "id": 2118
   },
   {
@@ -19203,7 +19203,7 @@
     "id": 2134,
     "ipa": "ˈfəndɪŋ",
     "meaning": "เงินทุน",
-    "thai_pronunciation": "ฟันด์-งิ"
+    "thai_pronunciation": "ฟันด์-ดิ่ง"
   },
   {
     "word": "fundraising",
@@ -19211,7 +19211,7 @@
     "level": "C1",
     "ipa": "ˈfənˌdɹeɪsɪŋ",
     "meaning": "การระดมทุน",
-    "thai_pronunciation": "ฟันด์-งิ",
+    "thai_pronunciation": "ฟันด์-ซิ่ง",
     "id": 2135
   },
   {
@@ -19257,7 +19257,7 @@
     "id": 2140,
     "ipa": "ˈfərnɪʧər",
     "meaning": "เฟอร์นิเจอร์",
-    "thai_pronunciation": "ฟัร์-ไอ-อุ-เรอะ"
+    "thai_pronunciation": "ฟัร์-ลูท-เรอะ"
   },
   {
     "word": "further",
@@ -19275,7 +19275,7 @@
     "id": 2142,
     "ipa": "ˈfərðərˌmɔr",
     "meaning": "นอกจากนี้",
-    "thai_pronunciation": "ฟัร์ต-โอ-เรอะ"
+    "thai_pronunciation": "ฟัร์ต-มอร์"
   },
   {
     "word": "fusion",
@@ -20371,9 +20371,9 @@
     "type": "n.",
     "level": "B1",
     "id": 2264,
-    "ipa": "groʊθ",
+    "ipa": "ɡroʊθ",
     "meaning": "การเจริญเติบโต",
-    "thai_pronunciation": "โอธ"
+    "thai_pronunciation": "โกรว์ธ"
   },
   {
     "word": "guarantee",
@@ -20534,7 +20534,7 @@
     "level": "C1",
     "ipa": "ˈhæbəˌtæt",
     "meaning": "ที่อยู่อาศัย",
-    "thai_pronunciation": "แฮ-บะ-แทท",
+    "thai_pronunciation": "แฮ-บะ-เทท",
     "id": 2282
   },
   {
@@ -21425,7 +21425,7 @@
     "level": "C1",
     "ipa": "hɪˈstɔɹiən",
     "meaning": "นักประวัติศาสตร์",
-    "thai_pronunciation": "ฮิส-โอ-ไอ",
+    "thai_pronunciation": "ฮิส-โอ-ซิ",
     "id": 2381
   },
   {
@@ -21882,9 +21882,9 @@
     "word": "humble",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ˈhəmbəɫ",
+    "ipa": "ˈhʌmbl",
     "meaning": "ถ่อมตัว",
-    "thai_pronunciation": "ฮัม",
+    "thai_pronunciation": "ฮัม-เบิล",
     "id": 2432
   },
   {
@@ -21947,8 +21947,8 @@
     "level": "A1",
     "id": 2439,
     "meaning": "หิว",
-    "thai_pronunciation": "ฮัง",
-    "ipa": "ˈhəŋɡɹi"
+    "thai_pronunciation": "ฮัง-กรี",
+    "ipa": "ˈhʌŋɡri"
   },
   {
     "word": "hunt",
@@ -21966,7 +21966,7 @@
     "id": 2441,
     "ipa": "ˈhəntɪŋ",
     "meaning": "การล่าสัตว์",
-    "thai_pronunciation": "ฮันท์-งิ"
+    "thai_pronunciation": "ฮันท์-ติ้ง"
   },
   {
     "word": "hurricane",
@@ -22227,7 +22227,7 @@
     "id": 2470,
     "ipa": "ˌɪgˈnɔr",
     "meaning": "ไม่สนใจ",
-    "thai_pronunciation": "อิอก-โอ-เรอะ"
+    "thai_pronunciation": "อิอก-มอร์"
   },
   {
     "word": "ill",
@@ -22622,7 +22622,7 @@
     "level": "C1",
     "ipa": "ˌɪmpəˈzɪʃən",
     "meaning": "การจัดเก็บภาษี",
-    "thai_pronunciation": "อิม-โอ-ไอ-ชัน",
+    "thai_pronunciation": "อิม-โอ-ซิ-ชัน",
     "id": 2514
   },
   {
@@ -22659,7 +22659,7 @@
     "id": 2518,
     "ipa": "ˌɪmˈprɛst",
     "meaning": "ประทับใจ",
-    "thai_pronunciation": "อิอมพ์-เซ็ด"
+    "thai_pronunciation": "อิอมพ์-สด์"
   },
   {
     "word": "impression",
@@ -22929,7 +22929,7 @@
     "id": 2548,
     "ipa": "ˌɪnˈkludɪŋ",
     "meaning": "รวมทั้ง",
-    "thai_pronunciation": "อิอน-งิ"
+    "thai_pronunciation": "อิอน-ดิ่ง"
   },
   {
     "word": "inclusion",
@@ -23243,7 +23243,7 @@
     "level": "B2",
     "ipa": "ˌɪnˌdɪvɪdʒuˈæɫɪti",
     "meaning": "บุคลิกลักษณะ",
-    "thai_pronunciation": "อิน-ไอ-ไอ-อุ-อิ-ที",
+    "thai_pronunciation": "อิน-ไอ-ลูท-อิ-ที",
     "id": 2583
   },
   {
@@ -23918,7 +23918,7 @@
     "level": "B2",
     "ipa": "ˌɪnˈsɪnjueɪt",
     "meaning": "พูดเป็นนัย",
-    "thai_pronunciation": "อิน-ไอ-อุ",
+    "thai_pronunciation": "อิน-ลูท",
     "id": 2658
   },
   {
@@ -24188,7 +24188,7 @@
     "level": "C1",
     "ipa": "ˌɪnˈsəɫtɪŋ",
     "meaning": "ดูถูก",
-    "thai_pronunciation": "อิน-ซัลต์-งิ",
+    "thai_pronunciation": "อิน-ซัลต์-ติ้ง",
     "id": 2688
   },
   {
@@ -24476,7 +24476,7 @@
     "level": "A1",
     "id": 2720,
     "meaning": "น่าสนใจ",
-    "thai_pronunciation": "อิน-เตอร์-เอสต์-งิ",
+    "thai_pronunciation": "อิน-เตอร์-เอสต์-ติ้ง",
     "ipa": "ˈɪntɝəstɪŋ"
   },
   {
@@ -24710,7 +24710,7 @@
     "level": "C1",
     "ipa": "ˌɪnˈtɹiɡɪŋ",
     "meaning": "น่าสนใจ",
-    "thai_pronunciation": "อิอนท์-อุ-งิ",
+    "thai_pronunciation": "อิอนท์-อุ-อิ้ง",
     "id": 2746
   },
   {
@@ -25043,7 +25043,7 @@
     "level": "C1",
     "ipa": "aɪˈɹɑnɪkɫi",
     "meaning": "แดกดัน",
-    "thai_pronunciation": "ไอ-โอ-ไอ-แคล-ลี",
+    "thai_pronunciation": "ไอ-โอ-ซิ-แคล-ลี",
     "id": 2783
   },
   {
@@ -25628,7 +25628,7 @@
     "level": "C1",
     "ipa": "ˌdʒəkstəpəˈzɪʃən",
     "meaning": "การตีข่าว",
-    "thai_pronunciation": "จักส์-อา-โอ-ไอ-ชัน",
+    "thai_pronunciation": "จักส์-อา-โอ-ซิ-ชัน",
     "id": 2848
   },
   {
@@ -25719,7 +25719,7 @@
     "id": 2858,
     "ipa": "ˈkɪlɪŋ",
     "meaning": "ฆ่า",
-    "thai_pronunciation": "คิล-งิ"
+    "thai_pronunciation": "คิล-ลิ่ง"
   },
   {
     "word": "kilometre",
@@ -25763,7 +25763,7 @@
     "level": "B2",
     "ipa": "ˈkɪŋdəm",
     "meaning": "อาณาจักร",
-    "thai_pronunciation": "คิง",
+    "thai_pronunciation": "คิง-ดัม",
     "id": 2863
   },
   {
@@ -25790,8 +25790,8 @@
     "level": "A1",
     "id": 2866,
     "meaning": "ครัว",
-    "thai_pronunciation": "คิท",
-    "ipa": "ˈkɪtʃən"
+    "thai_pronunciation": "คิท-เชิน",
+    "ipa": "ˈkɪtʃɪn"
   },
   {
     "word": "knack",
@@ -26798,7 +26798,7 @@
     "level": "C1",
     "ipa": "ˈɫaɪsənsɪŋ",
     "meaning": "การออกใบอนุญาต",
-    "thai_pronunciation": "ไอ-เค็นส์-งิ",
+    "thai_pronunciation": "ไอ-เค็นส์-ซิ่ง",
     "id": 2978
   },
   {
@@ -26870,7 +26870,7 @@
     "level": "C1",
     "ipa": "ˈɫaɪtɪŋ",
     "meaning": "แสงสว่าง",
-    "thai_pronunciation": "ไอลท์-งิ",
+    "thai_pronunciation": "ไอลท์-ติ้ง",
     "id": 2986
   },
   {
@@ -27086,7 +27086,7 @@
     "level": "B2",
     "ipa": "ˈɫɪstɪŋ",
     "meaning": "รายการ",
-    "thai_pronunciation": "ลิสต์-งิ",
+    "thai_pronunciation": "ลิสต์-ติ้ง",
     "id": 3010
   },
   {
@@ -27222,7 +27222,7 @@
     "id": 3025,
     "ipa": "ˈlɪvɪŋ",
     "meaning": "การดำรงชีวิต",
-    "thai_pronunciation": "ลิฟว์-งิ"
+    "thai_pronunciation": "ลิฟว์-วิ่ง"
   },
   {
     "word": "load",
@@ -27455,7 +27455,7 @@
     "level": "B2",
     "ipa": "ˈɫɑndʒəˌtud",
     "meaning": "ลองจิจูด",
-    "thai_pronunciation": "ลอน-ไอ-อุ-เดอะ",
+    "thai_pronunciation": "ลอน-ลูท-เดอะ",
     "id": 3051
   },
   {
@@ -29435,7 +29435,7 @@
     "level": "C1",
     "ipa": "ˈmaɪnɪŋ",
     "meaning": "การทำเหมืองแร่",
-    "thai_pronunciation": "มิน-งิ",
+    "thai_pronunciation": "มิน-นิ่ง",
     "id": 3271
   },
   {
@@ -29480,8 +29480,8 @@
     "level": "A1",
     "id": 3276,
     "meaning": "นาที",
-    "thai_pronunciation": "ไอ-อุ",
-    "ipa": "ˈmɪnət"
+    "thai_pronunciation": "มิน-นิท",
+    "ipa": "ˈmɪnɪt"
   },
   {
     "word": "miracle",
@@ -29523,9 +29523,9 @@
     "word": "mischief",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈmɪstʃəf",
+    "ipa": "ˈmɪstʃɪf",
     "meaning": "ความชั่วร้าย",
-    "thai_pronunciation": "มิส์",
+    "thai_pronunciation": "มิส-ชิฟ",
     "id": 3281
   },
   {
@@ -29588,7 +29588,7 @@
     "level": "C1",
     "ipa": "mɪˈsɫidɪŋ",
     "meaning": "ทำให้เข้าใจผิด",
-    "thai_pronunciation": "มิส-อีลด-งิ",
+    "thai_pronunciation": "มิส-อีลดดิ่ง",
     "id": 3288
   },
   {
@@ -29634,7 +29634,7 @@
     "id": 3293,
     "ipa": "ˈmɪsɪŋ",
     "meaning": "หายไป",
-    "thai_pronunciation": "มิส์-งิ"
+    "thai_pronunciation": "มิส์-ซิ่ง"
   },
   {
     "word": "mission",
@@ -29697,7 +29697,7 @@
     "id": 3300,
     "ipa": "mɪkst",
     "meaning": "ผสม",
-    "thai_pronunciation": "ไอ-เซ็ด"
+    "thai_pronunciation": "ไอ-สด์"
   },
   {
     "word": "mixture",
@@ -30126,9 +30126,9 @@
     "word": "mosque",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ˈmɑsk",
+    "ipa": "mɑːsk",
     "meaning": "มัสยิด",
-    "thai_pronunciation": "มอส์",
+    "thai_pronunciation": "มอสก์",
     "id": 3348
   },
   {
@@ -30308,7 +30308,7 @@
     "level": "B2",
     "ipa": "ˈmuvɪŋ",
     "meaning": "การย้าย",
-    "thai_pronunciation": "ม็อฟว์-งิ",
+    "thai_pronunciation": "ม็อฟว์-วิ่ง",
     "id": 3368
   },
   {
@@ -30450,9 +30450,9 @@
     "word": "mushroom",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈməʃɹum",
+    "ipa": "ˈmʌʃruːm",
     "meaning": "เห็ด",
-    "thai_pronunciation": "มัช",
+    "thai_pronunciation": "มัช-รูม",
     "id": 3384
   },
   {
@@ -30623,7 +30623,7 @@
     "level": "C1",
     "ipa": "ˈneɪkəd",
     "meaning": "เปลือยเปล่า",
-    "thai_pronunciation": "เนย์-คัด",
+    "thai_pronunciation": "เอน-คัด",
     "id": 3403
   },
   {
@@ -30668,7 +30668,7 @@
     "level": "B2",
     "ipa": "ˈneɪsənt",
     "meaning": "ตั้งไข่",
-    "thai_pronunciation": "เนย์-ซันต์",
+    "thai_pronunciation": "เอน-ซันต์",
     "id": 3408
   },
   {
@@ -30687,7 +30687,7 @@
     "id": 3410,
     "ipa": "ˈneɪʃən",
     "meaning": "ชาติ",
-    "thai_pronunciation": "เนย์-ชัน"
+    "thai_pronunciation": "เอน-ชัน"
   },
   {
     "word": "national",
@@ -30704,7 +30704,7 @@
     "level": "C1",
     "ipa": "ˈneɪʃənˈwaɪd",
     "meaning": "ทั่วประเทศ",
-    "thai_pronunciation": "เนย์-ชัน-วา-อิด",
+    "thai_pronunciation": "เอน-ชัน-วา-อิด",
     "id": 3412
   },
   {
@@ -30714,7 +30714,7 @@
     "id": 3413,
     "ipa": "ˈneɪtɪv",
     "meaning": "พื้นเมือง",
-    "thai_pronunciation": "เนย์-ทิฟ"
+    "thai_pronunciation": "เอน-ทิฟ"
   },
   {
     "word": "natural",
@@ -30741,7 +30741,7 @@
     "id": 3416,
     "ipa": "ˈneɪʧər",
     "meaning": "ธรรมชาติ",
-    "thai_pronunciation": "เนย์-ชอร์"
+    "thai_pronunciation": "เอน-ชอร์"
   },
   {
     "word": "nausea",
@@ -30758,7 +30758,7 @@
     "level": "C1",
     "ipa": "ˈneɪvəɫ",
     "meaning": "กองทัพเรือ",
-    "thai_pronunciation": "เนย์-วัล",
+    "thai_pronunciation": "เอน-วัล",
     "id": 3418
   },
   {
@@ -30938,7 +30938,7 @@
     "level": "A1",
     "id": 3438,
     "meaning": "เพื่อนบ้าน",
-    "thai_pronunciation": "เนย์-บอร์",
+    "thai_pronunciation": "เอน-บอร์",
     "ipa": "ˈneɪbər"
   },
   {
@@ -30948,7 +30948,7 @@
     "id": 3439,
     "ipa": "ˈneɪbərˌhʊd",
     "meaning": "ละแวกบ้าน",
-    "thai_pronunciation": "เนย์-บอร์-ฮูด"
+    "thai_pronunciation": "เอน-บอร์-ฮูด"
   },
   {
     "word": "neighbouring",
@@ -30956,7 +30956,7 @@
     "level": "B2",
     "ipa": "ˈneɪbɝɪŋ",
     "meaning": "ใกล้เคียง",
-    "thai_pronunciation": "เนย์-เบอร์-อิง",
+    "thai_pronunciation": "เอน-เบอร์-อิง",
     "id": 3440
   },
   {
@@ -31496,7 +31496,7 @@
     "level": "A1",
     "id": 3500,
     "meaning": "ไม่มีอะไร",
-    "thai_pronunciation": "น็อธ-งิ",
+    "thai_pronunciation": "น็อธ-อิ้ง",
     "ipa": "ˈnəθɪŋ"
   },
   {
@@ -31676,7 +31676,7 @@
     "level": "C1",
     "ipa": "ˈnɝsɪŋ",
     "meaning": "การพยาบาล",
-    "thai_pronunciation": "นัร์ส-งิ",
+    "thai_pronunciation": "นัร์สซิ่ง",
     "id": 3520
   },
   {
@@ -31793,7 +31793,7 @@
     "level": "C1",
     "ipa": "oʊˈbɪtʃuˌɛɹi",
     "meaning": "ข่าวมรณกรรม",
-    "thai_pronunciation": "โอ-ไอ-อุ-อี",
+    "thai_pronunciation": "โอ-ซิ-อุ-อี",
     "id": 3533
   },
   {
@@ -32207,7 +32207,7 @@
     "level": "C1",
     "ipa": "ˈɔfɝɪŋ",
     "meaning": "การเสนอขาย",
-    "thai_pronunciation": "ฟ็อ-เฟ็ร์-งิ",
+    "thai_pronunciation": "ฟ็อ-เฟ็ร์-ริ่ง",
     "id": 3579
   },
   {
@@ -32270,7 +32270,7 @@
     "level": "B2",
     "ipa": "ˈɔfsˌpɹɪŋ",
     "meaning": "ลูกหลาน",
-    "thai_pronunciation": "ฟ็อ-งิ",
+    "thai_pronunciation": "ฟ็อ-ริ่ง",
     "id": 3586
   },
   {
@@ -32387,7 +32387,7 @@
     "level": "C1",
     "ipa": "ˈɑnˌɡoʊɪŋ",
     "meaning": "อย่างต่อเนื่อง",
-    "thai_pronunciation": "ออน-โก-งิ",
+    "thai_pronunciation": "ออน-โก-อิ้ง",
     "id": 3599
   },
   {
@@ -32396,7 +32396,7 @@
     "level": "A1",
     "id": 3600,
     "meaning": "หัวหอม",
-    "thai_pronunciation": "โอ-ไอ",
+    "thai_pronunciation": "โอ-ซิ",
     "ipa": "ˈənjən"
   },
   {
@@ -32469,7 +32469,7 @@
     "id": 3608,
     "ipa": "ˈoʊpənɪŋ",
     "meaning": "เปิด",
-    "thai_pronunciation": "โอ-เพ็น-งิ"
+    "thai_pronunciation": "โอ-เพ็น-นิ่ง"
   },
   {
     "word": "openly",
@@ -32531,7 +32531,7 @@
     "level": "A1",
     "id": 3615,
     "meaning": "ความคิดเห็น",
-    "thai_pronunciation": "โอ-ไอ-ไอ",
+    "thai_pronunciation": "โอ-ซิ-ไอ",
     "ipa": "əˈpɪnjən"
   },
   {
@@ -32577,7 +32577,7 @@
     "id": 3620,
     "ipa": "əˈpoʊzd",
     "meaning": "ต่อต้าน",
-    "thai_pronunciation": "อ็ออพ-โอ-เซ็ด"
+    "thai_pronunciation": "อ็ออพ-โอ-สด์"
   },
   {
     "word": "opposite",
@@ -32595,7 +32595,7 @@
     "id": 3622,
     "ipa": "ˌɑpəˈzɪʃən",
     "meaning": "ฝ่ายค้าน",
-    "thai_pronunciation": "อ็ออพ-โอ-ไอ-ชัน"
+    "thai_pronunciation": "อ็ออพ-โอ-ซิ-ชัน"
   },
   {
     "word": "oppress",
@@ -32901,7 +32901,7 @@
     "id": 3656,
     "ipa": "ˈɔrgəˌnaɪzd",
     "meaning": "เป็นระเบียบ",
-    "thai_pronunciation": "ออร์-อา-ไอ-เซ็ด"
+    "thai_pronunciation": "ออร์-อา-ไอ-สด์"
   },
   {
     "word": "organizer",
@@ -32954,7 +32954,7 @@
     "level": "C1",
     "ipa": "ɝˌɪdʒəˈnæɫɪti",
     "meaning": "ความคิดริเริ่ม",
-    "thai_pronunciation": "โอ-ไอ-ไอ-แนล-อิ-ที",
+    "thai_pronunciation": "โอ-ซิ-ไอ-แนล-อิ-ที",
     "id": 3662
   },
   {
@@ -32964,7 +32964,7 @@
     "id": 3663,
     "ipa": "ərˈɪʤənəli",
     "meaning": "เดิมที",
-    "thai_pronunciation": "โอ-ไอ-ไอ-แนล-ลี"
+    "thai_pronunciation": "โอ-ซิ-ไอ-แนล-ลี"
   },
   {
     "word": "originate",
@@ -33179,7 +33179,7 @@
     "level": "C1",
     "ipa": "ˈaʊtˌɡoʊɪŋ",
     "meaning": "ขาออก",
-    "thai_pronunciation": "เอาอท-โอ-งิ",
+    "thai_pronunciation": "เอาอท-โอ-อิ้ง",
     "id": 3687
   },
   {
@@ -33197,7 +33197,7 @@
     "level": "C1",
     "ipa": "ˈaʊtɪŋ",
     "meaning": "ออกนอกบ้าน",
-    "thai_pronunciation": "เอาอท-งิ",
+    "thai_pronunciation": "เอาอทติ้ง",
     "id": 3689
   },
   {
@@ -34161,7 +34161,7 @@
     "id": 3796,
     "ipa": "ˈpɑrkɪŋ",
     "meaning": "ที่จอดรถ",
-    "thai_pronunciation": "พาร์ก-งิ"
+    "thai_pronunciation": "พาร์ก-กิ้ง"
   },
   {
     "word": "parliament",
@@ -36014,16 +36014,16 @@
     "level": "C1",
     "ipa": "ˈpɫəmɪŋ",
     "meaning": "ประปา",
-    "thai_pronunciation": "พัลม-งิ",
+    "thai_pronunciation": "พัลม-อิ้ง",
     "id": 4002
   },
   {
     "word": "plunge",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈpɫəndʒ",
+    "ipa": "plʌndʒ",
     "meaning": "กระโดด",
-    "thai_pronunciation": "พัลน",
+    "thai_pronunciation": "พลันจ์",
     "id": 4003
   },
   {
@@ -36742,9 +36742,9 @@
     "type": "n.",
     "level": "B1",
     "id": 4083,
-    "ipa": "prɛr",
+    "ipa": "prer",
     "meaning": "คำอธิษฐาน",
-    "thai_pronunciation": "เอ"
+    "thai_pronunciation": "แพรร์ / เพรเยอร์"
   },
   {
     "word": "preach",
@@ -36959,7 +36959,7 @@
     "level": "C1",
     "ipa": "ˌpɹɪˈdɑmənəntˌɫi",
     "meaning": "เด่น",
-    "thai_pronunciation": "พรี-โอ-ไอ-แนนท์",
+    "thai_pronunciation": "พรี-โอ-ซิ-แนนท์",
     "id": 4107
   },
   {
@@ -36968,7 +36968,7 @@
     "level": "C1",
     "ipa": "pɹɪˈdɑməˌneɪt",
     "meaning": "มีอำนาจเหนือกว่า",
-    "thai_pronunciation": "พรี-โอ-ไอ-อา",
+    "thai_pronunciation": "พรี-โอ-ซิ-อา",
     "id": 4108
   },
   {
@@ -37391,7 +37391,7 @@
     "level": "C1",
     "ipa": "pɹiˈveɪɫɪŋ",
     "meaning": "เหนือกว่า",
-    "thai_pronunciation": "พรี-เลวย์-งิ",
+    "thai_pronunciation": "พรี-เลวย์-ลิ่ง",
     "id": 4155
   },
   {
@@ -37545,16 +37545,16 @@
     "id": 4172,
     "ipa": "prɪns",
     "meaning": "เจ้าชาย",
-    "thai_pronunciation": "พิรน"
+    "thai_pronunciation": "พรินส์"
   },
   {
     "word": "princess",
     "type": "n.",
     "level": "B1",
     "id": 4173,
-    "ipa": "ˈprɪnsɛs",
+    "ipa": "ˌprɪnˈses",
     "meaning": "เจ้าหญิง",
-    "thai_pronunciation": "พิรน-เค็ส์"
+    "thai_pronunciation": "พริน-เซส"
   },
   {
     "word": "principal",
@@ -37599,7 +37599,7 @@
     "id": 4178,
     "ipa": "ˈprɪnɪŋ",
     "meaning": "การพิมพ์",
-    "thai_pronunciation": "พิรนท์-งิ"
+    "thai_pronunciation": "พิรนท์-ติ้ง"
   },
   {
     "word": "prior",
@@ -38930,7 +38930,7 @@
     "level": "C1",
     "ipa": "ˈpəbɫɪʃɪŋ",
     "meaning": "การเผยแพร่",
-    "thai_pronunciation": "พับ-ลิช-งิ",
+    "thai_pronunciation": "พับ-ลิช-ชิ่ง",
     "id": 4326
   },
   {
@@ -38973,9 +38973,9 @@
     "word": "punctual",
     "type": "adj.",
     "level": "C1",
-    "ipa": "ˈpəŋktʃuəɫ",
+    "ipa": "ˈpʌŋktʃuəl",
     "meaning": "ตรงต่อเวลา",
-    "thai_pronunciation": "พัน",
+    "thai_pronunciation": "พังค์-ชวล",
     "id": 4331
   },
   {
@@ -40190,7 +40190,7 @@
     "level": "C1",
     "ipa": "ˈɹizənɪŋ",
     "meaning": "การใช้เหตุผล",
-    "thai_pronunciation": "รี-อา-ซอน-งิ",
+    "thai_pronunciation": "รี-อา-ซอน-นิ่ง",
     "id": 4466
   },
   {
@@ -40298,7 +40298,7 @@
     "level": "C1",
     "ipa": "ˌɹikəˈpɪtʃəˌɫeɪt",
     "meaning": "สรุป",
-    "thai_pronunciation": "รี-อา-ไอ-อุ-อา",
+    "thai_pronunciation": "รี-อา-ลูท-อา",
     "id": 4478
   },
   {
@@ -40431,9 +40431,9 @@
     "word": "reckless",
     "type": "adj.",
     "level": "C1",
-    "ipa": "ˈɹɛkɫəs",
+    "ipa": "ˈrekləs",
     "meaning": "ประมาท",
-    "thai_pronunciation": "รี-ค",
+    "thai_pronunciation": "เรค-เลส",
     "id": 4493
   },
   {
@@ -40596,7 +40596,7 @@
     "id": 4511,
     "ipa": "rɪˈkɔrdɪŋ",
     "meaning": "การบันทึก",
-    "thai_pronunciation": "รี-ค็อร์ด-งิ"
+    "thai_pronunciation": "รี-ค็อร์ดดิ่ง"
   },
   {
     "word": "recount",
@@ -40928,7 +40928,7 @@
     "level": "C1",
     "ipa": "ɹɪˈfɹɛʃɪŋ",
     "meaning": "สดชื่น",
-    "thai_pronunciation": "รี-เฟ็รช-งิ",
+    "thai_pronunciation": "รี-เฟ็รช-ชิ่ง",
     "id": 4548
   },
   {
@@ -41018,7 +41018,7 @@
     "level": "C1",
     "ipa": "ɹɪˈɡɑɹdɪŋ",
     "meaning": "เกี่ยวกับ",
-    "thai_pronunciation": "รี-แกร์ด-งิ",
+    "thai_pronunciation": "รี-แกร์ดดิ่ง",
     "id": 4558
   },
   {
@@ -41415,7 +41415,7 @@
     "id": 4602,
     "ipa": "rɪˈlækst",
     "meaning": "ผ่อนคลาย",
-    "thai_pronunciation": "รี-อา-เซ็ด"
+    "thai_pronunciation": "รี-อา-สด์"
   },
   {
     "word": "relaxing",
@@ -41424,7 +41424,7 @@
     "id": 4603,
     "ipa": "rɪˈlæksɪŋ",
     "meaning": "ผ่อนคลาย",
-    "thai_pronunciation": "รี-แลกส์-งิ"
+    "thai_pronunciation": "รี-แลกส์-อิ้ง"
   },
   {
     "word": "relay",
@@ -41925,9 +41925,9 @@
     "word": "rental",
     "type": "adj.",
     "level": "C1",
-    "ipa": "ˈɹɛntəɫ",
+    "ipa": "ˈrentl",
     "meaning": "เช่า",
-    "thai_pronunciation": "รี-น",
+    "thai_pronunciation": "เรน-ทัล",
     "id": 4659
   },
   {
@@ -42143,7 +42143,7 @@
     "level": "C1",
     "ipa": "ɹiˈpɔɹtɪŋ",
     "meaning": "การรายงาน",
-    "thai_pronunciation": "รี-พ็อร์ต-งิ",
+    "thai_pronunciation": "รี-พ็อร์ต-ติ้ง",
     "id": 4683
   },
   {
@@ -42152,7 +42152,7 @@
     "level": "C1",
     "ipa": "ɹiˈpɑzəˌtɔɹi",
     "meaning": "พื้นที่เก็บข้อมูล",
-    "thai_pronunciation": "รี-โอ-ไอ-โอ-อี",
+    "thai_pronunciation": "รี-โอ-ซิ-โอ-อี",
     "id": 4684
   },
   {
@@ -42267,9 +42267,9 @@
     "word": "reptile",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈɹɛptaɪɫ",
+    "ipa": "ˈreptaɪl",
     "meaning": "สัตว์เลื้อยคลาน",
-    "thai_pronunciation": "รี-พ",
+    "thai_pronunciation": "เรพ-ไทล์",
     "id": 4697
   },
   {
@@ -42637,7 +42637,7 @@
     "type": "n.",
     "level": "B1",
     "id": 4738,
-    "ipa": "ˈrisɔrs",
+    "ipa": "ˈriːsɔːrs",
     "meaning": "ทรัพยากร",
     "thai_pronunciation": "รี-ซอร์ส"
   },
@@ -43277,7 +43277,7 @@
     "level": "B2",
     "ipa": "ɹiˈwɔɹdɪŋ",
     "meaning": "ให้รางวัล",
-    "thai_pronunciation": "รี-แวร์ด-งิ",
+    "thai_pronunciation": "รี-แวร์ดดิ่ง",
     "id": 4809
   },
   {
@@ -43356,9 +43356,9 @@
     "word": "riddle",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈɹɪdəɫ",
+    "ipa": "ˈrɪdl",
     "meaning": "ปริศนา",
-    "thai_pronunciation": "ริด",
+    "thai_pronunciation": "ริด-เดิล",
     "id": 4818
   },
   {
@@ -43491,9 +43491,9 @@
     "word": "ripple",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ˈɹɪpəɫ",
+    "ipa": "ˈrɪpl",
     "meaning": "ระลอกคลื่น",
-    "thai_pronunciation": "ริพ",
+    "thai_pronunciation": "ริพ-เพิล",
     "id": 4833
   },
   {
@@ -43898,7 +43898,7 @@
     "level": "C1",
     "ipa": "ˈɹuɫɪŋ",
     "meaning": "การพิจารณาคดี",
-    "thai_pronunciation": "รัล-งิ",
+    "thai_pronunciation": "รัล-ลิ่ง",
     "id": 4878
   },
   {
@@ -43944,7 +43944,7 @@
     "id": 4883,
     "ipa": "ˈrənɪŋ",
     "meaning": "วิ่ง",
-    "thai_pronunciation": "รัน-งิ"
+    "thai_pronunciation": "รัน-นิ่ง"
   },
   {
     "word": "rupture",
@@ -44420,7 +44420,7 @@
     "level": "C1",
     "ipa": "ˈskæfəɫd",
     "meaning": "นั่งร้าน",
-    "thai_pronunciation": "แสค-ฟัลด์",
+    "thai_pronunciation": "สแสค-ฟัลด์",
     "id": 4936
   },
   {
@@ -44439,7 +44439,7 @@
     "id": 4938,
     "ipa": "skæn",
     "meaning": "สแกน",
-    "thai_pronunciation": "แสคน"
+    "thai_pronunciation": "สแสคน"
   },
   {
     "word": "scandal",
@@ -44456,7 +44456,7 @@
     "level": "B2",
     "ipa": "ˈskændəɫəs",
     "meaning": "อื้อฉาว",
-    "thai_pronunciation": "แสคน-ดะ-ลัส",
+    "thai_pronunciation": "สแสคน-ดะ-ลัส",
     "id": 4940
   },
   {
@@ -44483,7 +44483,7 @@
     "level": "C1",
     "ipa": "ˈskɛɹ",
     "meaning": "ทำให้ตกใจ",
-    "thai_pronunciation": "เสค",
+    "thai_pronunciation": "สเสค",
     "id": 4943
   },
   {
@@ -44491,9 +44491,9 @@
     "type": "adj.",
     "level": "A2",
     "id": 4944,
-    "ipa": "skɛrd",
+    "ipa": "skerd",
     "meaning": "กลัว",
-    "thai_pronunciation": "เสค"
+    "thai_pronunciation": "สแกร์ด"
   },
   {
     "word": "scary",
@@ -44502,7 +44502,7 @@
     "id": 4945,
     "ipa": "ˈskɛri",
     "meaning": "น่ากลัว",
-    "thai_pronunciation": "เสค-รี"
+    "thai_pronunciation": "สเสค-รี"
   },
   {
     "word": "scattered",
@@ -44510,7 +44510,7 @@
     "level": "B2",
     "ipa": "ˈskætɝd",
     "meaning": "กระจัดกระจาย",
-    "thai_pronunciation": "แสค-เทิร์ด",
+    "thai_pronunciation": "สแสค-เทิร์ด",
     "id": 4946
   },
   {
@@ -44537,7 +44537,7 @@
     "level": "B2",
     "ipa": "ˈsɛnt",
     "meaning": "กลิ่น",
-    "thai_pronunciation": "เซนต์",
+    "thai_pronunciation": "สเซนต์",
     "id": 4949
   },
   {
@@ -44546,7 +44546,7 @@
     "level": "C1",
     "ipa": "skˈɛptɪkəl",
     "meaning": "ไม่เชื่อ",
-    "thai_pronunciation": "เสคป-ทิ-คัล",
+    "thai_pronunciation": "สเสคป-ทิ-คัล",
     "id": 4950
   },
   {
@@ -44600,8 +44600,8 @@
     "level": "A1",
     "id": 4956,
     "meaning": "โรงเรียน",
-    "thai_pronunciation": "สก",
-    "ipa": "ˈskuɫ"
+    "thai_pronunciation": "สกูล",
+    "ipa": "skuːl"
   },
   {
     "word": "science",
@@ -44663,7 +44663,7 @@
     "level": "B2",
     "ipa": "ˈskɹæmbəɫ",
     "meaning": "ช่วงชิง",
-    "thai_pronunciation": "แสครม-บัล",
+    "thai_pronunciation": "สแสครม-บัล",
     "id": 4963
   },
   {
@@ -44672,16 +44672,16 @@
     "level": "C1",
     "ipa": "ˈskɹæp",
     "meaning": "เศษเหล็ก",
-    "thai_pronunciation": "แอป",
+    "thai_pronunciation": "สแอป",
     "id": 4964
   },
   {
     "word": "scratch",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ˈskɹætʃ",
+    "ipa": "skrætʃ",
     "meaning": "รอยขีดข่วน",
-    "thai_pronunciation": "แอช",
+    "thai_pronunciation": "สแครทช์",
     "id": 4965
   },
   {
@@ -44715,9 +44715,9 @@
     "word": "screw",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈskɹu",
+    "ipa": "skruː",
     "meaning": "สกรู",
-    "thai_pronunciation": "ยูแสคร",
+    "thai_pronunciation": "สกรู",
     "id": 4969
   },
   {
@@ -44806,9 +44806,9 @@
     "type": "n. v.",
     "level": "A2",
     "id": 4979,
-    "ipa": "sərʧ",
+    "ipa": "sɜːrtʃ",
     "meaning": "ค้นหา",
-    "thai_pronunciation": "ซะ"
+    "thai_pronunciation": "เสิร์ช"
   },
   {
     "word": "season",
@@ -45860,7 +45860,7 @@
     "level": "C1",
     "ipa": "ˈʃɪpɪŋ",
     "meaning": "การจัดส่งสินค้า",
-    "thai_pronunciation": "ชิพ-งิ",
+    "thai_pronunciation": "ชิพ-พิ่ง",
     "id": 5096
   },
   {
@@ -45896,7 +45896,7 @@
     "level": "B2",
     "ipa": "ˈʃɑkɪŋ",
     "meaning": "ตกตะลึง",
-    "thai_pronunciation": "ช็อก-งิ",
+    "thai_pronunciation": "ช็อก-กิ้ง",
     "id": 5100
   },
   {
@@ -45941,7 +45941,7 @@
     "level": "A1",
     "id": 5105,
     "meaning": "ช้อปปิ้ง",
-    "thai_pronunciation": "ช็อป-งิ",
+    "thai_pronunciation": "ช็อป-พิ่ง",
     "ipa": "ˈʃɑpɪŋ"
   },
   {
@@ -45986,7 +45986,7 @@
     "level": "C1",
     "ipa": "ˈʃɔɹtˌkəmɪŋ",
     "meaning": "ข้อบกพร่อง",
-    "thai_pronunciation": "ช็อร์ต-งิ",
+    "thai_pronunciation": "ช็อร์ต-มิ่ง",
     "id": 5110
   },
   {
@@ -46119,9 +46119,9 @@
     "word": "shuttle",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈʃətəɫ",
+    "ipa": "ˈʃʌtl",
     "meaning": "รถรับส่ง",
-    "thai_pronunciation": "ชัท",
+    "thai_pronunciation": "ชัท-เทิล",
     "id": 5125
   },
   {
@@ -46382,7 +46382,7 @@
     "level": "B2",
     "ipa": "ˌsɪmjəˈɫeɪʃən",
     "meaning": "การจำลอง",
-    "thai_pronunciation": "ไอ-อุ-อา-ชัน",
+    "thai_pronunciation": "ลูท-อา-ชัน",
     "id": 5154
   },
   {
@@ -46464,16 +46464,16 @@
     "id": 5163,
     "ipa": "ˈsɪŋɪŋ",
     "meaning": "ร้องเพลง",
-    "thai_pronunciation": "ซิง-งิ"
+    "thai_pronunciation": "ซิง-อิ้ง"
   },
   {
     "word": "single",
     "type": "adj. n.",
     "level": "A2",
     "id": 5164,
-    "ipa": "ˈsɪŋgəl",
+    "ipa": "ˈsɪŋɡl",
     "meaning": "เดี่ยว",
-    "thai_pronunciation": "ซิง"
+    "thai_pronunciation": "ซิง-เกิล"
   },
   {
     "word": "singular",
@@ -46544,7 +46544,7 @@
     "level": "B2",
     "ipa": "ˈsɪtʃuˌeɪtɪd",
     "meaning": "ตั้งอยู่",
-    "thai_pronunciation": "ไอ-อุ-เท็ด",
+    "thai_pronunciation": "ลูท-เท็ด",
     "id": 5172
   },
   {
@@ -46553,7 +46553,7 @@
     "level": "A1",
     "id": 5173,
     "meaning": "สถานการณ์",
-    "thai_pronunciation": "ไอ-อุ-ชัน",
+    "thai_pronunciation": "ลูท-ชัน",
     "ipa": "ˌsɪtʃuˈeɪʃən"
   },
   {
@@ -46607,16 +46607,16 @@
     "level": "B2",
     "ipa": "ˈskɛptɪˌsɪzəm",
     "meaning": "ความสงสัย",
-    "thai_pronunciation": "เสคป-ทิ-ซิ-ซัม",
+    "thai_pronunciation": "สเสคป-ทิ-ซิ-ซัม",
     "id": 5179
   },
   {
     "word": "sketch",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈskɛtʃ",
+    "ipa": "sketʃ",
     "meaning": "ร่าง",
-    "thai_pronunciation": "เสคช",
+    "thai_pronunciation": "สเก็ตช์",
     "id": 5180
   },
   {
@@ -46635,7 +46635,7 @@
     "id": 5182,
     "ipa": "skiɪŋ",
     "meaning": "เล่นสกี",
-    "thai_pronunciation": "ไอ-งิ"
+    "thai_pronunciation": "สไอ-อิ้ง"
   },
   {
     "word": "skill",
@@ -46940,7 +46940,7 @@
     "level": "C1",
     "ipa": "ˈsmæʃ",
     "meaning": "ชน",
-    "thai_pronunciation": "แสมช",
+    "thai_pronunciation": "สแสมช",
     "id": 5216
   },
   {
@@ -46968,7 +46968,7 @@
     "id": 5219,
     "ipa": "smoʊk",
     "meaning": "ควัน",
-    "thai_pronunciation": "โสมค"
+    "thai_pronunciation": "สโสมค"
   },
   {
     "word": "smoking",
@@ -46977,7 +46977,7 @@
     "id": 5220,
     "ipa": "sˈmoʊkɪŋ",
     "meaning": "สูบบุหรี่",
-    "thai_pronunciation": "ส็อมก-งิ"
+    "thai_pronunciation": "ส็อมก-กิ้ง"
   },
   {
     "word": "smooth",
@@ -46992,18 +46992,18 @@
     "word": "smuggle",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈsməɡəɫ",
+    "ipa": "ˈsmʌɡl",
     "meaning": "ลักลอบขนของ",
-    "thai_pronunciation": "สัมก",
+    "thai_pronunciation": "สมัก-เกิล",
     "id": 5222
   },
   {
     "word": "smuggler",
     "type": "n.",
     "level": "C1",
-    "ipa": "ˈsməɡəɫɝ",
+    "ipa": "ˈsmʌɡlər",
     "meaning": "คนลักลอบขนของ",
-    "thai_pronunciation": "สัมก",
+    "thai_pronunciation": "สมัก-เกลอร์",
     "id": 5223
   },
   {
@@ -47021,7 +47021,7 @@
     "level": "B2",
     "ipa": "ˈsnæp",
     "meaning": "สแน็ป",
-    "thai_pronunciation": "แสนป",
+    "thai_pronunciation": "สแสนป",
     "id": 5225
   },
   {
@@ -47030,7 +47030,7 @@
     "level": "B2",
     "ipa": "ˈsnɛɹ",
     "meaning": "บ่วง",
-    "thai_pronunciation": "เสน",
+    "thai_pronunciation": "สเสน",
     "id": 5226
   },
   {
@@ -47039,7 +47039,7 @@
     "level": "A1",
     "id": 5227,
     "meaning": "หิมะ",
-    "thai_pronunciation": "โสน",
+    "thai_pronunciation": "สโสน",
     "ipa": "snoʊ"
   },
   {
@@ -47569,9 +47569,9 @@
     "type": "n.",
     "level": "A2",
     "id": 5286,
-    "ipa": "sɔrs",
+    "ipa": "sɔːrs",
     "meaning": "แหล่งที่มา",
-    "thai_pronunciation": "ซอ"
+    "thai_pronunciation": "ซอร์ส"
   },
   {
     "word": "south",
@@ -47589,7 +47589,7 @@
     "id": 5288,
     "ipa": "ˈsəðərn",
     "meaning": "ภาคใต้",
-    "thai_pronunciation": "ซะ-ดัร์น"
+    "thai_pronunciation": "ซะ-ดิว-ริ่งน"
   },
   {
     "word": "sovereign",
@@ -47633,7 +47633,7 @@
     "level": "C1",
     "ipa": "ˈspæm",
     "meaning": "สแปม",
-    "thai_pronunciation": "แสปม",
+    "thai_pronunciation": "สแสปม",
     "id": 5293
   },
   {
@@ -47651,7 +47651,7 @@
     "level": "B2",
     "ipa": "ˈspɛɹ",
     "meaning": "อะไหล่",
-    "thai_pronunciation": "เสป",
+    "thai_pronunciation": "สเสป",
     "id": 5295
   },
   {
@@ -47714,7 +47714,7 @@
     "level": "A1",
     "id": 5302,
     "meaning": "พิเศษ",
-    "thai_pronunciation": "เสป-ชัล",
+    "thai_pronunciation": "สเสป-ชัล",
     "ipa": "ˈspɛʃəɫ"
   },
   {
@@ -47724,7 +47724,7 @@
     "id": 5303,
     "ipa": "ˈspɛʃəlɪst",
     "meaning": "ผู้เชี่ยวชาญ",
-    "thai_pronunciation": "เสป-ชะ-ลิสต์"
+    "thai_pronunciation": "สเสป-ชะ-ลิสต์"
   },
   {
     "word": "specialize",
@@ -47732,7 +47732,7 @@
     "level": "C1",
     "ipa": "ˈspɛʃəˌɫaɪz",
     "meaning": "เชี่ยวชาญ",
-    "thai_pronunciation": "เสป-ชะ-ลา-อิส",
+    "thai_pronunciation": "สเสป-ชะ-ลา-อิส",
     "id": 5304
   },
   {
@@ -47741,7 +47741,7 @@
     "level": "B2",
     "ipa": "ˈspɛʃəˌɫaɪzd",
     "meaning": "เฉพาะทาง",
-    "thai_pronunciation": "เสป-ชะ-ลา-อิสด์",
+    "thai_pronunciation": "สเสป-ชะ-ลา-อิสด์",
     "id": 5305
   },
   {
@@ -47750,7 +47750,7 @@
     "level": "C1",
     "ipa": "ˈspeɪʃəɫti",
     "meaning": "พิเศษ",
-    "thai_pronunciation": "เสปย์-ชัล-ที",
+    "thai_pronunciation": "สเสปย์-ชัล-ที",
     "id": 5306
   },
   {
@@ -47786,7 +47786,7 @@
     "level": "C1",
     "ipa": "ˌspɛsɪfɪˈkeɪʃən",
     "meaning": "ข้อกำหนด",
-    "thai_pronunciation": "เสป-ซิ-ฟิ-เคย์-ชัน",
+    "thai_pronunciation": "สเสป-ซิ-ฟิ-เคย์-ชัน",
     "id": 5310
   },
   {
@@ -47831,7 +47831,7 @@
     "level": "C1",
     "ipa": "spɛkˈtækjəɫɝ",
     "meaning": "งดงาม",
-    "thai_pronunciation": "เสปก-แทก-ยะ-เลอร์",
+    "thai_pronunciation": "สเสปก-แทก-ยะ-เลอร์",
     "id": 5315
   },
   {
@@ -47867,7 +47867,7 @@
     "level": "B2",
     "ipa": "ˌspɛkjəˈɫeɪʃən",
     "meaning": "การเก็งกำไร",
-    "thai_pronunciation": "เสปก-ยะ-เลย์-ชัน",
+    "thai_pronunciation": "สเสปก-ยะ-เลย์-ชัน",
     "id": 5319
   },
   {
@@ -47876,7 +47876,7 @@
     "level": "C1",
     "ipa": "ˈspɛkjəɫətɪv",
     "meaning": "เกี่ยวกับการเก็งกำไร / ซึ่งเป็นการคาดเดา",
-    "thai_pronunciation": "เสปก-ยะ-ละ-ทิฟ",
+    "thai_pronunciation": "สเสปก-ยะ-ละ-ทิฟ",
     "id": 5320
   },
   {
@@ -47903,7 +47903,7 @@
     "level": "A1",
     "id": 5323,
     "meaning": "สะกด",
-    "thai_pronunciation": "เสปล",
+    "thai_pronunciation": "สเสปล",
     "ipa": "ˈspɛɫ"
   },
   {
@@ -47912,7 +47912,7 @@
     "level": "A1",
     "id": 5324,
     "meaning": "การสะกดคำ",
-    "thai_pronunciation": "เสป-ลิง",
+    "thai_pronunciation": "สเสป-ลิง",
     "ipa": "ˈspɛɫɪŋ"
   },
   {
@@ -47921,7 +47921,7 @@
     "level": "A1",
     "id": 5325,
     "meaning": "ใช้จ่าย",
-    "thai_pronunciation": "เสปนด์",
+    "thai_pronunciation": "สเสปนด์",
     "ipa": "ˈspɛnd"
   },
   {
@@ -47931,7 +47931,7 @@
     "id": 5326,
     "ipa": "ˈspɛndɪŋ",
     "meaning": "การใช้จ่าย",
-    "thai_pronunciation": "เสปน-ดิง"
+    "thai_pronunciation": "สเสปน-ดิง"
   },
   {
     "word": "sphere",
@@ -47967,7 +47967,7 @@
     "id": 5330,
     "ipa": "ˈspaɪdər",
     "meaning": "แมงมุม",
-    "thai_pronunciation": "ไอ-เด็ร์"
+    "thai_pronunciation": "สไอ-เด็ร์"
   },
   {
     "word": "spill",
@@ -48003,7 +48003,7 @@
     "id": 5334,
     "ipa": "ˈspɪrɪt",
     "meaning": "วิญญาณ",
-    "thai_pronunciation": "ไอ-ริท"
+    "thai_pronunciation": "สไอ-ริท"
   },
   {
     "word": "spiritual",
@@ -48012,7 +48012,7 @@
     "id": 5335,
     "ipa": "ˈspɪrɪˌʧuəl",
     "meaning": "จิตวิญญาณ",
-    "thai_pronunciation": "ไอ-ไอ-อุ"
+    "thai_pronunciation": "สไอ-ลูท"
   },
   {
     "word": "spite",
@@ -48029,7 +48029,7 @@
     "level": "B2",
     "ipa": "ˈspɫɛndɪd",
     "meaning": "งดงาม",
-    "thai_pronunciation": "เซพลน-ดิด",
+    "thai_pronunciation": "สเซพลน-ดิด",
     "id": 5337
   },
   {
@@ -48038,7 +48038,7 @@
     "level": "C1",
     "ipa": "ˈspɫɛndɝ",
     "meaning": "ความงดงาม",
-    "thai_pronunciation": "เซพลน-เดอร์",
+    "thai_pronunciation": "สเซพลน-เดอร์",
     "id": 5338
   },
   {
@@ -48066,7 +48066,7 @@
     "id": 5341,
     "ipa": "ˈspoʊkən",
     "meaning": "พูดแล้ว",
-    "thai_pronunciation": "โสป-คัน"
+    "thai_pronunciation": "สโสป-คัน"
   },
   {
     "word": "spokesman",
@@ -48074,7 +48074,7 @@
     "level": "C1",
     "ipa": "ˈspoʊksmən",
     "meaning": "โฆษก",
-    "thai_pronunciation": "โสปค-สมัน",
+    "thai_pronunciation": "สโสปค-สมัน",
     "id": 5342
   },
   {
@@ -48083,7 +48083,7 @@
     "level": "C1",
     "ipa": "ˈspoʊkspɝsən",
     "meaning": "โฆษก",
-    "thai_pronunciation": "โสปค-เสปอร์-ซัน",
+    "thai_pronunciation": "สโสปค-เสปอร์-ซัน",
     "id": 5343
   },
   {
@@ -48092,7 +48092,7 @@
     "level": "B2",
     "ipa": "ˈspoʊkˌswʊmən",
     "meaning": "โฆษกหญิง",
-    "thai_pronunciation": "โสปค-สวู-มัน",
+    "thai_pronunciation": "สโสปค-สวู-มัน",
     "id": 5344
   },
   {
@@ -48164,7 +48164,7 @@
     "level": "C1",
     "ipa": "ˈspɔɹtɪŋ",
     "meaning": "กีฬา",
-    "thai_pronunciation": "ส็อปร์ต-งิ",
+    "thai_pronunciation": "ส็อปร์ต-ติ้ง",
     "id": 5352
   },
   {
@@ -48199,9 +48199,9 @@
     "type": "v. B1 n.",
     "level": "B2",
     "id": 5356,
-    "ipa": "sprɛd",
+    "ipa": "spred",
     "meaning": "การแพร่กระจาย",
-    "thai_pronunciation": "เอ็ด"
+    "thai_pronunciation": "สเปรด"
   },
   {
     "word": "spring",
@@ -48209,8 +48209,8 @@
     "level": "B1",
     "id": 5357,
     "meaning": "ฤดูใบไม้ผลิ",
-    "thai_pronunciation": "สแพร-งิ",
-    "ipa": "ˈspɹɪŋ"
+    "thai_pronunciation": "สปริง",
+    "ipa": "sprɪŋ"
   },
   {
     "word": "spur",
@@ -48271,9 +48271,9 @@
     "type": "adj. n.",
     "level": "A2",
     "id": 5364,
-    "ipa": "skwɛr",
+    "ipa": "skwer",
     "meaning": "สี่เหลี่ยม",
-    "thai_pronunciation": "ซ-เรอะ"
+    "thai_pronunciation": "สแควร์"
   },
   {
     "word": "squeeze",
@@ -48290,7 +48290,7 @@
     "level": "C1",
     "ipa": "ˈstæb",
     "meaning": "แทง",
-    "thai_pronunciation": "แสตบ",
+    "thai_pronunciation": "สแสตบ",
     "id": 5366
   },
   {
@@ -48316,9 +48316,9 @@
     "type": "adj.",
     "level": "B2",
     "id": 5369,
-    "ipa": "ˈsteɪbəl",
+    "ipa": "ˈsteɪbl",
     "meaning": "มั่นคง",
-    "thai_pronunciation": "เสตย์-บัล"
+    "thai_pronunciation": "สเต-เบิล"
   },
   {
     "word": "stadium",
@@ -48327,7 +48327,7 @@
     "id": 5370,
     "ipa": "ˈsteɪdiəm",
     "meaning": "สนามกีฬา",
-    "thai_pronunciation": "เสตย์-ดี-อัม"
+    "thai_pronunciation": "สเสตย์-ดี-อัม"
   },
   {
     "word": "staff",
@@ -48336,7 +48336,7 @@
     "id": 5371,
     "ipa": "stæf",
     "meaning": "พนักงาน",
-    "thai_pronunciation": "แสตฟ"
+    "thai_pronunciation": "สตาฟ / สแตฟ"
   },
   {
     "word": "stage",
@@ -48371,7 +48371,7 @@
     "level": "C1",
     "ipa": "ˈstæɡˌneɪt",
     "meaning": "ซบเซา",
-    "thai_pronunciation": "แสตก-เนท",
+    "thai_pronunciation": "สแสตก-เนท",
     "id": 5375
   },
   {
@@ -48380,7 +48380,7 @@
     "level": "C1",
     "ipa": "stæɡˈneɪʃən",
     "meaning": "ความเมื่อยล้า",
-    "thai_pronunciation": "แสตก-เนย์-ชัน",
+    "thai_pronunciation": "สแสตก-เนย์-ชัน",
     "id": 5376
   },
   {
@@ -48388,9 +48388,9 @@
     "type": "n.",
     "level": "A2",
     "id": 5377,
-    "ipa": "stɛr",
+    "ipa": "ster",
     "meaning": "บันได",
-    "thai_pronunciation": "เสต"
+    "thai_pronunciation": "สแตร์"
   },
   {
     "word": "stake",
@@ -48405,7 +48405,7 @@
     "word": "stall",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ˈstɔɫ",
+    "ipa": "stɔːl",
     "meaning": "แผงลอย",
     "thai_pronunciation": "สตอล",
     "id": 5379
@@ -48426,7 +48426,7 @@
     "id": 5381,
     "ipa": "stæmp",
     "meaning": "แสตมป์",
-    "thai_pronunciation": "แสตมป์"
+    "thai_pronunciation": "สแตมป์"
   },
   {
     "word": "stance",
@@ -48453,7 +48453,7 @@
     "id": 5384,
     "ipa": "ˈstændərd",
     "meaning": "มาตรฐาน",
-    "thai_pronunciation": "แสตน-ดัร์ด"
+    "thai_pronunciation": "สแตน-ดาร์ด"
   },
   {
     "word": "standing",
@@ -48461,7 +48461,7 @@
     "level": "C1",
     "ipa": "ˈstændɪŋ",
     "meaning": "ยืน",
-    "thai_pronunciation": "แสตน-ดิง",
+    "thai_pronunciation": "สแสตน-ดิง",
     "id": 5385
   },
   {
@@ -48470,7 +48470,7 @@
     "level": "C1",
     "ipa": "ˈstændˌpɔɪnt",
     "meaning": "จุดยืน",
-    "thai_pronunciation": "แสตน-ดพอ-อินต์",
+    "thai_pronunciation": "สแสตน-ดพอ-อินต์",
     "id": 5386
   },
   {
@@ -48488,17 +48488,17 @@
     "level": "A2",
     "id": 5388,
     "meaning": "ดาว",
-    "thai_pronunciation": "สตา",
-    "ipa": "ˈstɑɹ"
+    "thai_pronunciation": "สตาร์",
+    "ipa": "stɑːr"
   },
   {
     "word": "stare",
     "type": "v.",
     "level": "B2",
     "id": 5389,
-    "ipa": "stɛr",
+    "ipa": "ster",
     "meaning": "จ้องมอง",
-    "thai_pronunciation": "เสต"
+    "thai_pronunciation": "สแตร์"
   },
   {
     "word": "stark",
@@ -48515,8 +48515,8 @@
     "level": "A2",
     "id": 5391,
     "meaning": "เริ่ม",
-    "thai_pronunciation": "สตาร์ต",
-    "ipa": "stɑːt"
+    "thai_pronunciation": "สตาร์ท",
+    "ipa": "stɑːrt"
   },
   {
     "word": "starvation",
@@ -48531,9 +48531,9 @@
     "word": "starve",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "stɑːv",
+    "ipa": "stɑːrv",
     "meaning": "อดอาหาร",
-    "thai_pronunciation": "สตาร์ฟ",
+    "thai_pronunciation": "สตาร์ฟว์",
     "id": 5393
   },
   {
@@ -48551,7 +48551,7 @@
     "level": "A1",
     "id": 5395,
     "meaning": "คำแถลง",
-    "thai_pronunciation": "เสตท-มันต์",
+    "thai_pronunciation": "สเตท-เมินท์",
     "ipa": "ˈsteɪtmənt"
   },
   {
@@ -48560,7 +48560,7 @@
     "level": "C1",
     "ipa": "ˈstætɪk",
     "meaning": "คงที่",
-    "thai_pronunciation": "สแทท-ติก",
+    "thai_pronunciation": "สเทท-ติก",
     "id": 5396
   },
   {
@@ -48569,8 +48569,8 @@
     "level": "A1",
     "id": 5397,
     "meaning": "สถานี",
-    "thai_pronunciation": "เสตย์-ชัน",
-    "ipa": "ˈsteɪʃən"
+    "thai_pronunciation": "สเต-ชัน",
+    "ipa": "ˈsteɪʃn"
   },
   {
     "word": "stationary",
@@ -48606,16 +48606,16 @@
     "id": 5401,
     "ipa": "ˈstæˌʧu",
     "meaning": "รูปปั้น",
-    "thai_pronunciation": "สแทท-ชู"
+    "thai_pronunciation": "สเทท-ชู"
   },
   {
     "word": "status",
     "type": "n.",
     "level": "B2",
     "id": 5402,
-    "ipa": "ˈstætəs",
+    "ipa": "ˈsteɪtəs",
     "meaning": "สถานะ",
-    "thai_pronunciation": "สเต-ทัส"
+    "thai_pronunciation": "สเต-ตัส"
   },
   {
     "word": "statute",
@@ -48623,7 +48623,7 @@
     "level": "B2",
     "ipa": "ˈstætʃut",
     "meaning": "กฎเกณฑ์",
-    "thai_pronunciation": "สแทท-ชูท",
+    "thai_pronunciation": "สเทท-ชูท",
     "id": 5403
   },
   {
@@ -48632,7 +48632,7 @@
     "level": "C1",
     "ipa": "ˈstætʃəˌtɔɹi",
     "meaning": "ตามกฎหมาย",
-    "thai_pronunciation": "แสตท-ชะ-ทอ-รี",
+    "thai_pronunciation": "สแสตท-ชะ-ทอ-รี",
     "id": 5404
   },
   {
@@ -48641,7 +48641,7 @@
     "level": "A2",
     "id": 5405,
     "meaning": "อยู่",
-    "thai_pronunciation": "เสตย์",
+    "thai_pronunciation": "สเตย์",
     "ipa": "steɪ"
   },
   {
@@ -48659,7 +48659,7 @@
     "level": "C1",
     "ipa": "ˈstɛdəɫi",
     "meaning": "อย่างต่อเนื่อง",
-    "thai_pronunciation": "เสต-ดะ-ลี",
+    "thai_pronunciation": "สเสต-ดะ-ลี",
     "id": 5407
   },
   {
@@ -48676,9 +48676,9 @@
     "type": "v.",
     "level": "A2",
     "id": 5409,
-    "ipa": "stil",
+    "ipa": "stiːl",
     "meaning": "ขโมย",
-    "thai_pronunciation": "สตลี"
+    "thai_pronunciation": "สตีล"
   },
   {
     "word": "stealth",
@@ -48693,9 +48693,9 @@
     "word": "steam",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ˈstim",
+    "ipa": "stiːm",
     "meaning": "ไอน้ำ",
-    "thai_pronunciation": "สตมี",
+    "thai_pronunciation": "สตีม",
     "id": 5411
   },
   {
@@ -48703,24 +48703,24 @@
     "type": "n.",
     "level": "B2",
     "id": 5412,
-    "ipa": "stil",
+    "ipa": "stiːl",
     "meaning": "เหล็ก",
-    "thai_pronunciation": "สตลี"
+    "thai_pronunciation": "สตีล"
   },
   {
     "word": "steep",
     "type": "adj.",
     "level": "B2",
     "id": 5413,
-    "ipa": "stip",
+    "ipa": "stiːp",
     "meaning": "สูงชัน",
-    "thai_pronunciation": "สตพี"
+    "thai_pronunciation": "สตีพ"
   },
   {
     "word": "steer",
     "type": "n.",
     "level": "C1",
-    "ipa": "ˈstɪɹ",
+    "ipa": "stɪr",
     "meaning": "คัดท้าย",
     "thai_pronunciation": "สเตียร์",
     "id": 5414
@@ -48729,9 +48729,9 @@
     "word": "stem",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈstɛm",
+    "ipa": "stem",
     "meaning": "ลำต้น",
-    "thai_pronunciation": "เสตม",
+    "thai_pronunciation": "สเต็ม",
     "id": 5415
   },
   {
@@ -48739,7 +48739,7 @@
     "type": "n., v.",
     "level": "B2",
     "id": 5416,
-    "ipa": "stɛp",
+    "ipa": "step",
     "meaning": "ก้าว, ขั้นตอน, เหยียบย่าง",
     "thai_pronunciation": "สเต็ป"
   },
@@ -48767,7 +48767,7 @@
     "level": "C1",
     "ipa": "ˈstɝɫɪŋ",
     "meaning": "เงินสเตอร์ลิง",
-    "thai_pronunciation": "เสตอร์-ลิง",
+    "thai_pronunciation": "สเสตอร์-ลิง",
     "id": 5419
   },
   {
@@ -48776,7 +48776,7 @@
     "level": "B2",
     "ipa": "ˈstɝn",
     "meaning": "เข้มงวด",
-    "thai_pronunciation": "เสติร์น",
+    "thai_pronunciation": "สเสติร์น",
     "id": 5420
   },
   {
@@ -48786,7 +48786,7 @@
     "id": 5421,
     "ipa": "stɪk",
     "meaning": "ติด",
-    "thai_pronunciation": "สิตก"
+    "thai_pronunciation": "สติ๊ก"
   },
   {
     "word": "sticky",
@@ -48804,15 +48804,15 @@
     "id": 5423,
     "ipa": "stɪf",
     "meaning": "แข็ง",
-    "thai_pronunciation": "สิตฟ"
+    "thai_pronunciation": "สติฟ"
   },
   {
     "word": "stifle",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈstaɪfəɫ",
+    "ipa": "ˈstaɪfl",
     "meaning": "ยับยั้ง",
-    "thai_pronunciation": "สิตฟ",
+    "thai_pronunciation": "สไต-เฟิล",
     "id": 5424
   },
   {
@@ -48821,8 +48821,8 @@
     "level": "B1",
     "id": 5425,
     "meaning": "นิ่ง",
-    "thai_pronunciation": "สิตล",
-    "ipa": "ˈstɪɫ"
+    "thai_pronunciation": "สตอล / สติล",
+    "ipa": "stɪl"
   },
   {
     "word": "stimulate",
@@ -48839,7 +48839,7 @@
     "level": "C1",
     "ipa": "ˌstɪmjəˈɫeɪʃən",
     "meaning": "การกระตุ้น",
-    "thai_pronunciation": "ไอ-อุ-อา-ชัน",
+    "thai_pronunciation": "สลูท-อา-ชัน",
     "id": 5427
   },
   {
@@ -48866,16 +48866,16 @@
     "level": "C1",
     "ipa": "ˌstɪpjəˈɫeɪʃən",
     "meaning": "ข้อกำหนด",
-    "thai_pronunciation": "ไอ-อุ-อา-ชัน",
+    "thai_pronunciation": "สลูท-อา-ชัน",
     "id": 5430
   },
   {
     "word": "stir",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ˈstɝ",
+    "ipa": "stɜːr",
     "meaning": "ผัด",
-    "thai_pronunciation": "สิตร์",
+    "thai_pronunciation": "สเตอร์",
     "id": 5431
   },
   {
@@ -48883,7 +48883,7 @@
     "type": "n.",
     "level": "B2",
     "id": 5432,
-    "ipa": "stɑk",
+    "ipa": "stɑːk",
     "meaning": "คลังสินค้า",
     "thai_pronunciation": "สต็อก"
   },
@@ -48902,7 +48902,7 @@
     "level": "B2",
     "ipa": "ˈstoʊɪk",
     "meaning": "อดทน",
-    "thai_pronunciation": "โสต-อิก",
+    "thai_pronunciation": "สโสต-อิก",
     "id": 5434
   },
   {
@@ -48910,9 +48910,9 @@
     "type": "n.",
     "level": "A2",
     "id": 5435,
-    "ipa": "ˈstəmək",
+    "ipa": "ˈstʌmək",
     "meaning": "ท้อง",
-    "thai_pronunciation": "สตะ-มัก"
+    "thai_pronunciation": "สตัม-มัก"
   },
   {
     "word": "stone",
@@ -48921,7 +48921,7 @@
     "id": 5436,
     "ipa": "stoʊn",
     "meaning": "หิน",
-    "thai_pronunciation": "โสตน"
+    "thai_pronunciation": "สโตน"
   },
   {
     "word": "stop",
@@ -48929,16 +48929,16 @@
     "level": "A1",
     "id": 5437,
     "meaning": "หยุด",
-    "thai_pronunciation": "ส็อตพ",
-    "ipa": "ˈstɑp"
+    "thai_pronunciation": "สต็อป",
+    "ipa": "stɑːp"
   },
   {
     "word": "storage",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈstɔɹədʒ",
+    "ipa": "ˈstɔːrɪdʒ",
     "meaning": "การจัดเก็บ",
-    "thai_pronunciation": "สตอ-รัจ",
+    "thai_pronunciation": "สตอ-ริจ",
     "id": 5438
   },
   {
@@ -48946,18 +48946,18 @@
     "type": "n. A2 v.",
     "level": "B1",
     "id": 5439,
-    "ipa": "stɔr",
+    "ipa": "stɔːr",
     "meaning": "เก็บ",
-    "thai_pronunciation": "สตอ"
+    "thai_pronunciation": "สตอร์"
   },
   {
     "word": "storm",
     "type": "n.",
     "level": "A2",
     "id": 5440,
-    "ipa": "stɔrm",
+    "ipa": "stɔːrm",
     "meaning": "พายุ",
-    "thai_pronunciation": "ส็อตร์ม"
+    "thai_pronunciation": "สตอร์ม"
   },
   {
     "word": "story",
@@ -48966,7 +48966,7 @@
     "id": 5441,
     "meaning": "เรื่องราว",
     "thai_pronunciation": "สตอ-รี",
-    "ipa": "ˈstɔɹi"
+    "ipa": "ˈstɔːri"
   },
   {
     "word": "stout",
@@ -49010,7 +49010,7 @@
     "level": "C1",
     "ipa": "ˈstɹænd",
     "meaning": "สาระ",
-    "thai_pronunciation": "แเสตรนด์",
+    "thai_pronunciation": "สแเสตรนด์",
     "id": 5446
   },
   {
@@ -49027,9 +49027,9 @@
     "type": "n.",
     "level": "B1",
     "id": 5448,
-    "ipa": "ˈstreɪnʤər",
+    "ipa": "ˈstreɪndʒər",
     "meaning": "คนแปลกหน้า",
-    "thai_pronunciation": "แเสตรน-เก็ร์"
+    "thai_pronunciation": "สเตรน-เจอร์"
   },
   {
     "word": "strategic",
@@ -49046,7 +49046,7 @@
     "level": "C1",
     "ipa": "ˈstɹætɪdʒɪst",
     "meaning": "นักยุทธศาสตร์",
-    "thai_pronunciation": "แสตร-ทิด-จิสต์",
+    "thai_pronunciation": "สแสตร-ทิด-จิสต์",
     "id": 5450
   },
   {
@@ -49054,9 +49054,9 @@
     "type": "n.",
     "level": "A2",
     "id": 5451,
-    "ipa": "ˈstrætəʤi",
+    "ipa": "ˈstrætədʒi",
     "meaning": "กลยุทธ์",
-    "thai_pronunciation": "สแตรท-เทอะ-จี"
+    "thai_pronunciation": "สแตรท-เทอ-จี"
   },
   {
     "word": "stratum",
@@ -49064,7 +49064,7 @@
     "level": "B2",
     "ipa": "ˈstɹætəm",
     "meaning": "ชั้น",
-    "thai_pronunciation": "แสตร-ทัม",
+    "thai_pronunciation": "สแสตร-ทัม",
     "id": 5452
   },
   {
@@ -49090,17 +49090,17 @@
     "type": "n.",
     "level": "B1",
     "id": 5455,
-    "ipa": "strɛŋθ",
+    "ipa": "streŋθ",
     "meaning": "ความแข็งแกร่ง",
-    "thai_pronunciation": "เองธ์"
+    "thai_pronunciation": "สเตรงธ"
   },
   {
     "word": "strengthen",
     "type": "v.",
     "level": "B2",
-    "ipa": "ˈstɹɛŋθən",
+    "ipa": "ˈstreŋθn",
     "meaning": "เสริมสร้าง",
-    "thai_pronunciation": "เสตรง-ธัน",
+    "thai_pronunciation": "สเตรง-เธิน",
     "id": 5456
   },
   {
@@ -49128,7 +49128,7 @@
     "id": 5459,
     "ipa": "stretʃ",
     "meaning": "ยืด, ขยายตัว",
-    "thai_pronunciation": "สเตรช"
+    "thai_pronunciation": "สเตรตช์"
   },
   {
     "word": "strict",
@@ -49164,7 +49164,7 @@
     "id": 5463,
     "ipa": "straɪk",
     "meaning": "โจมตี",
-    "thai_pronunciation": "สไตรค์"
+    "thai_pronunciation": "สไตรก์"
   },
   {
     "word": "striking",
@@ -49182,7 +49182,7 @@
     "id": 5465,
     "ipa": "strɪŋ",
     "meaning": "เชือก",
-    "thai_pronunciation": "สเตร-งิ"
+    "thai_pronunciation": "สตริง"
   },
   {
     "word": "stringent",
@@ -49197,9 +49197,9 @@
     "word": "strip",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ˈstɹɪp",
+    "ipa": "strɪp",
     "meaning": "เปลื้องผ้า",
-    "thai_pronunciation": "สทริพ",
+    "thai_pronunciation": "สตริป",
     "id": 5467
   },
   {
@@ -49215,9 +49215,9 @@
     "word": "stroke",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈstɹoʊk",
+    "ipa": "stroʊk",
     "meaning": "โรคหลอดเลือดสมอง",
-    "thai_pronunciation": "โอค",
+    "thai_pronunciation": "สโตรก",
     "id": 5469
   },
   {
@@ -49227,14 +49227,14 @@
     "id": 5470,
     "meaning": "แข็งแรง, เข้มแข็ง, รุนแรง",
     "thai_pronunciation": "สตรอง",
-    "ipa": "strɒŋ"
+    "ipa": "strɔːŋ"
   },
   {
     "word": "strongly",
     "type": "adv.",
     "level": "B1",
     "id": 5471,
-    "ipa": "ˈstrɔŋli",
+    "ipa": "ˈstrɔːŋli",
     "meaning": "อย่างยิ่ง",
     "thai_pronunciation": "สตรอง-ลี"
   },
@@ -49252,18 +49252,18 @@
     "type": "n. A2 v.",
     "level": "B2",
     "id": 5473,
-    "ipa": "ˈstrəkʧər",
+    "ipa": "ˈstrʌktʃər",
     "meaning": "โครงสร้าง",
-    "thai_pronunciation": "สตรัก-เชอร์"
+    "thai_pronunciation": "สตัรก-เจอร์ / สตรัก-เจอร์"
   },
   {
     "word": "struggle",
     "type": "v. n.",
     "level": "B2",
     "id": 5474,
-    "ipa": "ˈstrəgəl",
+    "ipa": "ˈstrʌɡl",
     "meaning": "การต่อสู้",
-    "thai_pronunciation": "สตระ-กัล"
+    "thai_pronunciation": "สตรัก-เกิล"
   },
   {
     "word": "stubborn",
@@ -49280,17 +49280,17 @@
     "level": "A1",
     "id": 5476,
     "meaning": "นักเรียน",
-    "thai_pronunciation": "สตู-ดันต์",
-    "ipa": "ˈstudənt"
+    "thai_pronunciation": "สตู-เดนท์",
+    "ipa": "ˈstuːdnt"
   },
   {
     "word": "studio",
     "type": "n.",
     "level": "B1",
     "id": 5477,
-    "ipa": "ˈstudiˌoʊ",
+    "ipa": "ˈstuːdioʊ",
     "meaning": "สตูดิโอ",
-    "thai_pronunciation": "สตู-ดี-โอ"
+    "thai_pronunciation": "สตู-ดิ-โอ"
   },
   {
     "word": "study",
@@ -49298,17 +49298,17 @@
     "level": "A1",
     "id": 5478,
     "meaning": "ศึกษา",
-    "thai_pronunciation": "สตะ-ดี",
-    "ipa": "ˈstədi"
+    "thai_pronunciation": "สตัด-ดี",
+    "ipa": "ˈstʌdi"
   },
   {
     "word": "stuff",
     "type": "n. B1 v.",
     "level": "B2",
     "id": 5479,
-    "ipa": "stəf",
+    "ipa": "stʌf",
     "meaning": "สิ่งของ",
-    "thai_pronunciation": "สัตฟ"
+    "thai_pronunciation": "สตัฟ"
   },
   {
     "word": "stumble",
@@ -49334,7 +49334,7 @@
     "level": "B2",
     "ipa": "ˈstənɪŋ",
     "meaning": "น่าทึ่ง",
-    "thai_pronunciation": "สัตน-งิ",
+    "thai_pronunciation": "สัตน-นิ่ง",
     "id": 5482
   },
   {
@@ -49342,7 +49342,7 @@
     "type": "adj.",
     "level": "A2",
     "id": 5483,
-    "ipa": "ˈstupɪd",
+    "ipa": "ˈstuːpɪd",
     "meaning": "โง่",
     "thai_pronunciation": "สตู-พิด"
   },
@@ -49352,8 +49352,8 @@
     "level": "A1",
     "id": 5484,
     "meaning": "สไตล์",
-    "thai_pronunciation": "สตา-อิล",
-    "ipa": "ˈstaɪɫ"
+    "thai_pronunciation": "สไตล์",
+    "ipa": "staɪl"
   },
   {
     "word": "subconscious",
@@ -49604,7 +49604,7 @@
     "level": "C1",
     "ipa": "ˌsəbstɪˈtuʃən",
     "meaning": "การทดแทน",
-    "thai_pronunciation": "ซับ-ไอ-อุ-ชัน",
+    "thai_pronunciation": "ซับ-ลูท-ชัน",
     "id": 5512
   },
   {
@@ -49820,7 +49820,7 @@
     "level": "B2",
     "ipa": "ˈsəfɝɪŋ",
     "meaning": "ความทุกข์ทรมาน",
-    "thai_pronunciation": "ซัฟ-เฟ็ร์-งิ",
+    "thai_pronunciation": "ซัฟ-เฟ็ร์-ริ่ง",
     "id": 5536
   },
   {
@@ -50169,9 +50169,9 @@
     "word": "supplier",
     "type": "n.",
     "level": "C1",
-    "ipa": "səˈpɫaɪɝ",
+    "ipa": "səˈplaɪər",
     "meaning": "ซัพพลายเออร์",
-    "thai_pronunciation": "ซัพ",
+    "thai_pronunciation": "ซัพ-พลาย-เออร์",
     "id": 5575
   },
   {
@@ -50181,7 +50181,7 @@
     "id": 5576,
     "ipa": "səˈplaɪ",
     "meaning": "จัดหา",
-    "thai_pronunciation": "ซัพ"
+    "thai_pronunciation": "ซัพ-พลาย"
   },
   {
     "word": "support",
@@ -50217,7 +50217,7 @@
     "id": 5580,
     "ipa": "səˈpoʊz",
     "meaning": "สมมติ",
-    "thai_pronunciation": "ซัพ-โอ"
+    "thai_pronunciation": "ซัพ-โพส"
   },
   {
     "word": "supposed",
@@ -50225,7 +50225,7 @@
     "level": "C1",
     "ipa": "səˈpoʊzd",
     "meaning": "ควรจะ",
-    "thai_pronunciation": "ซัพ-โอ-เซ็ด",
+    "thai_pronunciation": "ซัพ-โพสด์",
     "id": 5581
   },
   {
@@ -50234,7 +50234,7 @@
     "level": "C1",
     "ipa": "səˈpoʊzədɫi",
     "meaning": "คาดคะเน",
-    "thai_pronunciation": "ซัพ-โอ-เซ็ด-ลี",
+    "thai_pronunciation": "ซัพ-โอ-สด์-ลี",
     "id": 5582
   },
   {
@@ -50243,7 +50243,7 @@
     "level": "B2",
     "ipa": "ˌsəpəˈzɪʃən",
     "meaning": "สมมุติ",
-    "thai_pronunciation": "ซัพ-โอ-ไอ-ชัน",
+    "thai_pronunciation": "ซัพ-โอ-ซิ-ชัน",
     "id": 5583
   },
   {
@@ -50268,7 +50268,7 @@
     "word": "supreme",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "səˈpɹim",
+    "ipa": "suːˈpriːm",
     "meaning": "สุดยอด",
     "thai_pronunciation": "ซู-พรีม",
     "id": 5586
@@ -50277,9 +50277,9 @@
     "word": "surcharge",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈsɝˌtʃɑɹdʒ",
+    "ipa": "ˈsɜːrtʃɑːrdʒ",
     "meaning": "ค่าธรรมเนียมเพิ่มเติม",
-    "thai_pronunciation": "ซัร์",
+    "thai_pronunciation": "เซอร์-ชาร์จ",
     "id": 5587
   },
   {
@@ -50322,9 +50322,9 @@
     "word": "surgeon",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ˈsɝdʒən",
+    "ipa": "ˈsɜːrdʒən",
     "meaning": "ศัลยแพทย์",
-    "thai_pronunciation": "ซัร์",
+    "thai_pronunciation": "เซอร์-เจิน",
     "id": 5592
   },
   {
@@ -50332,9 +50332,9 @@
     "type": "n.",
     "level": "B2",
     "id": 5593,
-    "ipa": "ˈsərʤəri",
+    "ipa": "ˈsɜːrdʒəri",
     "meaning": "การผ่าตัด",
-    "thai_pronunciation": "ซัร์-เว-รี"
+    "thai_pronunciation": "เซอร์-เจอ-รี"
   },
   {
     "word": "surgical",
@@ -50386,27 +50386,27 @@
     "type": "n. v.",
     "level": "A2",
     "id": 5599,
-    "ipa": "səˈpraɪz",
+    "ipa": "sərˈpraɪz",
     "meaning": "เซอร์ไพรส์",
-    "thai_pronunciation": "ซัร์ป-ไอซ์"
+    "thai_pronunciation": "เซอร์-ไพรส์"
   },
   {
     "word": "surprised",
     "type": "adj.",
     "level": "A2",
     "id": 5600,
-    "ipa": "səˈpraɪzd",
+    "ipa": "sərˈpraɪzd",
     "meaning": "น่าประหลาดใจ",
-    "thai_pronunciation": "ซัร์ป-เซ็ด"
+    "thai_pronunciation": "เซอร์-ไพรสด์"
   },
   {
     "word": "surprising",
     "type": "adj.",
     "level": "A2",
     "id": 5601,
-    "ipa": "səˈpraɪzɪŋ",
+    "ipa": "sərˈpraɪzɪŋ",
     "meaning": "น่าแปลกใจ",
-    "thai_pronunciation": "ซัร์ป-งิ"
+    "thai_pronunciation": "เซอร์-ไพร-ซิ่ง"
   },
   {
     "word": "surrender",
@@ -50422,18 +50422,18 @@
     "type": "v.",
     "level": "B2",
     "id": 5603,
-    "ipa": "səraʊnd",
+    "ipa": "səˈraʊnd",
     "meaning": "ล้อมรอบ",
-    "thai_pronunciation": "ซัร์-เอารนด์"
+    "thai_pronunciation": "เซอร์-ราวนด์"
   },
   {
     "word": "surrounding",
     "type": "adj.",
     "level": "B2",
     "id": 5604,
-    "ipa": "sərˈaʊndɪŋ",
+    "ipa": "səˈraʊndɪŋ",
     "meaning": "รอบๆ",
-    "thai_pronunciation": "ซัร์-เอารนด์-งิ"
+    "thai_pronunciation": "เซอร์-ราวน-ดิ่ง"
   },
   {
     "word": "surveillance",
@@ -50449,9 +50449,9 @@
     "type": "n. A2 v.",
     "level": "B2",
     "id": 5606,
-    "ipa": "ˈsərˌveɪ",
+    "ipa": "ˈsɜːrveɪ",
     "meaning": "สำรวจ",
-    "thai_pronunciation": "ซัร์-เวย์"
+    "thai_pronunciation": "เซอร์-เวย์"
   },
   {
     "word": "surveyor",
@@ -50478,15 +50478,15 @@
     "id": 5609,
     "ipa": "sərˈvaɪv",
     "meaning": "รอดชีวิต",
-    "thai_pronunciation": "ซัร์-ไอ"
+    "thai_pronunciation": "เซอร์-ไวฟว์"
   },
   {
     "word": "survivor",
     "type": "n.",
     "level": "B2",
-    "ipa": "sɝˈvaɪvɝ",
+    "ipa": "sərˈvaɪvər",
     "meaning": "ผู้รอดชีวิต",
-    "thai_pronunciation": "ซัร์-ไอ-วอร์์",
+    "thai_pronunciation": "เซอร์-ไว-เวอร์",
     "id": 5610
   },
   {
@@ -50503,9 +50503,9 @@
     "type": "v. n.",
     "level": "B2",
     "id": 5612,
-    "ipa": "ˈsəˌspɛkt",
+    "ipa": "səˈspekt",
     "meaning": "สงสัย",
-    "thai_pronunciation": "ซัส์-เพ็กต์"
+    "thai_pronunciation": "ซัส-เปกต์"
   },
   {
     "word": "suspend",
@@ -50538,9 +50538,9 @@
     "word": "suspicion",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "səˈspɪʃən",
+    "ipa": "səˈspɪʃn",
     "meaning": "ความสงสัย",
-    "thai_pronunciation": "ซัส-สปิ-ชัน",
+    "thai_pronunciation": "ซัส-พิ-ชัน",
     "id": 5616
   },
   {
@@ -50549,7 +50549,7 @@
     "level": "C1",
     "ipa": "səˈspɪʃəs",
     "meaning": "น่าสงสัย",
-    "thai_pronunciation": "ซัส-สปิ-ชัส",
+    "thai_pronunciation": "ซัส-พิ-เชิส",
     "id": 5617
   },
   {
@@ -50558,16 +50558,16 @@
     "level": "C1",
     "ipa": "səˈsteɪn",
     "meaning": "ยั่งยืน",
-    "thai_pronunciation": "ซัส-เสตน",
+    "thai_pronunciation": "ซัส-เทน",
     "id": 5618
   },
   {
     "word": "sustainable",
     "type": "adj.",
     "level": "B2",
-    "ipa": "səˈsteɪnəbəɫ",
+    "ipa": "səˈsteɪnəbl",
     "meaning": "ยั่งยืน",
-    "thai_pronunciation": "ซัส-เสตย์-นะ-บัล",
+    "thai_pronunciation": "ซัส-เทน-เนอะ-เบิล",
     "id": 5619
   },
   {
@@ -50603,7 +50603,7 @@
     "level": "C1",
     "ipa": "ˈsweɪ",
     "meaning": "แกว่งไปมา",
-    "thai_pronunciation": "เสวย์",
+    "thai_pronunciation": "สเสวย์",
     "id": 5623
   },
   {
@@ -50613,7 +50613,7 @@
     "id": 5624,
     "ipa": "swɛr",
     "meaning": "สาบาน",
-    "thai_pronunciation": "เสว"
+    "thai_pronunciation": "สเสว"
   },
   {
     "word": "sweater",
@@ -50621,17 +50621,17 @@
     "level": "A1",
     "id": 5625,
     "meaning": "เสื้อกันหนาว",
-    "thai_pronunciation": "เสว-ทอร์",
-    "ipa": "sˈwɛtər"
+    "thai_pronunciation": "สเวต-เตอร์",
+    "ipa": "ˈswetər"
   },
   {
     "word": "sweep",
     "type": "v.",
     "level": "B2",
     "id": 5626,
-    "ipa": "swip",
+    "ipa": "swiːp",
     "meaning": "กวาด",
-    "thai_pronunciation": "สวพี"
+    "thai_pronunciation": "สวีพ"
   },
   {
     "word": "sweet",
@@ -50646,9 +50646,9 @@
     "word": "swell",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈswɛɫ",
+    "ipa": "swel",
     "meaning": "บวม",
-    "thai_pronunciation": "เสวล",
+    "thai_pronunciation": "สเวล",
     "id": 5628
   },
   {
@@ -50666,8 +50666,8 @@
     "level": "B1",
     "id": 5630,
     "meaning": "ว่ายน้ำ",
-    "thai_pronunciation": "สิวม",
-    "ipa": "ˈswɪm"
+    "thai_pronunciation": "สวิม",
+    "ipa": "swɪm"
   },
   {
     "word": "swimming",
@@ -50675,16 +50675,16 @@
     "level": "A1",
     "id": 5631,
     "meaning": "การว่ายน้ำ",
-    "thai_pronunciation": "สิวม-งิ",
+    "thai_pronunciation": "สวิม-มิ่ง",
     "ipa": "ˈswɪmɪŋ"
   },
   {
     "word": "swing",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈswɪŋ",
+    "ipa": "swɪŋ",
     "meaning": "สวิง",
-    "thai_pronunciation": "สิวง",
+    "thai_pronunciation": "สวิง",
     "id": 5632
   },
   {
@@ -50692,15 +50692,15 @@
     "type": "v. B1 n.",
     "level": "B2",
     "id": 5633,
-    "ipa": "swɪʧ",
+    "ipa": "swɪtʃ",
     "meaning": "สวิตช์",
-    "thai_pronunciation": "สิวท"
+    "thai_pronunciation": "สวิตช์"
   },
   {
     "word": "sword",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ˈsɔɹd",
+    "ipa": "sɔːrd",
     "meaning": "ดาบ",
     "thai_pronunciation": "ซอร์ด",
     "id": 5634
@@ -50710,9 +50710,9 @@
     "type": "n.",
     "level": "A2",
     "id": 5635,
-    "ipa": "ˈsɪmbəl",
+    "ipa": "ˈsɪmbl",
     "meaning": "เครื่องหมาย",
-    "thai_pronunciation": "ซิม-บอล"
+    "thai_pronunciation": "ซิม-โบล"
   },
   {
     "word": "symbolic",
@@ -50766,7 +50766,7 @@
     "id": 5641,
     "ipa": "ˈsɪmpəθi",
     "meaning": "ความเห็นอกเห็นใจ",
-    "thai_pronunciation": "ซิม-เพอะ-ธี"
+    "thai_pronunciation": "ซิม-พะ-ธี"
   },
   {
     "word": "symptom",
@@ -50775,7 +50775,7 @@
     "id": 5642,
     "ipa": "ˈsɪmptəm",
     "meaning": "อาการ",
-    "thai_pronunciation": "ซิมพ-เทิม"
+    "thai_pronunciation": "ซิมพ-ทัม"
   },
   {
     "word": "syndrome",
@@ -51916,9 +51916,9 @@
     "type": "pron.",
     "level": "B1",
     "id": 5769,
-    "ipa": "ðɛrz",
+    "ipa": "ðerz",
     "meaning": "พวกเขา",
-    "thai_pronunciation": "เด"
+    "thai_pronunciation": "แดย์ส / แธร์ส"
   },
   {
     "word": "them",
@@ -52152,7 +52152,7 @@
     "id": 5795,
     "ipa": "ˈθɪŋkɪŋ",
     "meaning": "กำลังคิด",
-    "thai_pronunciation": "ธิงก์-งิ"
+    "thai_pronunciation": "ธิงก์-กิ้ง"
   },
   {
     "word": "third",
@@ -52224,14 +52224,14 @@
     "id": 5803,
     "ipa": "ðoʊ",
     "meaning": "แม้ว่า",
-    "thai_pronunciation": "โด"
+    "thai_pronunciation": "โธ / โด"
   },
   {
     "word": "thought",
     "type": "n.",
     "level": "A2",
     "id": 5804,
-    "ipa": "θɔt",
+    "ipa": "θɔːt",
     "meaning": "คิด",
     "thai_pronunciation": "ธอท"
   },
@@ -52239,9 +52239,9 @@
     "word": "thought-provoking",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈθɔt",
+    "ipa": "ˈθɔːt prəˈvoʊkɪŋ",
     "meaning": "กระตุ้นความคิด",
-    "thai_pronunciation": "ธ็อต",
+    "thai_pronunciation": "ธอท-โพร-โวค-กิ้ง",
     "id": 5805
   },
   {
@@ -52275,9 +52275,9 @@
     "word": "thread",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈθɹɛd",
+    "ipa": "θred",
     "meaning": "ด้าย",
-    "thai_pronunciation": "ธรดี",
+    "thai_pronunciation": "เธรด",
     "id": 5809
   },
   {
@@ -52285,18 +52285,18 @@
     "type": "n.",
     "level": "B2",
     "id": 5810,
-    "ipa": "θrɛt",
+    "ipa": "θret",
     "meaning": "ภัยคุกคาม",
-    "thai_pronunciation": "ธรที"
+    "thai_pronunciation": "เธรท"
   },
   {
     "word": "threaten",
     "type": "v.",
     "level": "B2",
     "id": 5811,
-    "ipa": "θˈrɛtən",
+    "ipa": "ˈθretn",
     "meaning": "ข่มขู่",
-    "thai_pronunciation": "เธร-ทัน"
+    "thai_pronunciation": "เธรท-เทิน"
   },
   {
     "word": "three",
@@ -52320,9 +52320,9 @@
     "word": "thrift",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ˈθɹɪft",
+    "ipa": "θrɪft",
     "meaning": "ความประหยัด",
-    "thai_pronunciation": "ธิรฟ",
+    "thai_pronunciation": "ธริฟต์",
     "id": 5814
   },
   {
@@ -52338,18 +52338,18 @@
     "word": "thrill",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈθɹɪɫ",
+    "ipa": "θrɪl",
     "meaning": "ตื่นเต้น",
-    "thai_pronunciation": "ธิรล",
+    "thai_pronunciation": "ธริล",
     "id": 5816
   },
   {
     "word": "thrilled",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ˈθɹɪɫd",
+    "ipa": "θrɪld",
     "meaning": "ตื่นเต้น",
-    "thai_pronunciation": "ธิรล-เล็ด",
+    "thai_pronunciation": "ธริลด์",
     "id": 5817
   },
   {
@@ -52368,15 +52368,15 @@
     "id": 5819,
     "ipa": "θroʊt",
     "meaning": "คอ",
-    "thai_pronunciation": "โอท"
+    "thai_pronunciation": "โธรท"
   },
   {
     "word": "throne",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ˈθɹoʊn",
+    "ipa": "θroʊn",
     "meaning": "บัลลังก์",
-    "thai_pronunciation": "โอน",
+    "thai_pronunciation": "โธรน",
     "id": 5820
   },
   {
@@ -52395,7 +52395,7 @@
     "id": 5822,
     "ipa": "θruːˈaʊt",
     "meaning": "ตลอดทั้ง",
-    "thai_pronunciation": "ธรู-เอาต์"
+    "thai_pronunciation": "ธรู-เอาท์"
   },
   {
     "word": "throw",
@@ -52404,7 +52404,7 @@
     "id": 5823,
     "ipa": "θroʊ",
     "meaning": "โยน",
-    "thai_pronunciation": "โอ"
+    "thai_pronunciation": "โธร"
   },
   {
     "word": "thrust",
@@ -52419,7 +52419,7 @@
     "word": "thumb",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "ˈθəm",
+    "ipa": "θʌm",
     "meaning": "นิ้วหัวแม่มือ",
     "thai_pronunciation": "ธัม",
     "id": 5825
@@ -52565,7 +52565,7 @@
     "level": "C1",
     "ipa": "ˈtaɪmɪŋ",
     "meaning": "เวลา",
-    "thai_pronunciation": "ทิม-งิ",
+    "thai_pronunciation": "ทิม-มิ่ง",
     "id": 5841
   },
   {
@@ -53321,7 +53321,7 @@
     "level": "B2",
     "ipa": "ˈtɹænsˌkɹɪpt",
     "meaning": "การถอดเสียง",
-    "thai_pronunciation": "ทรานส์-คิรพ",
+    "thai_pronunciation": "ทรานส์-คริพ-เพิล",
     "id": 5925
   },
   {
@@ -53330,7 +53330,7 @@
     "level": "B2",
     "ipa": "ˌtɹænsˈkɹɪpʃən",
     "meaning": "การถอดเสียง",
-    "thai_pronunciation": "ทรานส์-คิรพ-ชัน",
+    "thai_pronunciation": "ทรานส์-คริพ-เพิล-ชัน",
     "id": 5926
   },
   {
@@ -53555,7 +53555,7 @@
     "level": "B2",
     "ipa": "tɹænspəzˈɪʃən",
     "meaning": "การขนย้าย",
-    "thai_pronunciation": "ทรานส์-โอ-ไอ-ชัน",
+    "thai_pronunciation": "ทรานส์-โอ-ซิ-ชัน",
     "id": 5951
   },
   {
@@ -53789,7 +53789,7 @@
     "level": "B2",
     "ipa": "tɹəbˈjunəɫ",
     "meaning": "ศาล",
-    "thai_pronunciation": "ไอ-อุ-แนล",
+    "thai_pronunciation": "ลูท-แนล",
     "id": 5977
   },
   {
@@ -53798,7 +53798,7 @@
     "level": "B2",
     "ipa": "ˈtɹɪbjəˌtɛɹi",
     "meaning": "แคว",
-    "thai_pronunciation": "ไอ-อุ-อา-อี",
+    "thai_pronunciation": "ลูท-อา-อี",
     "id": 5978
   },
   {
@@ -54212,7 +54212,7 @@
     "level": "A1",
     "id": 6024,
     "meaning": "สิบสอง",
-    "thai_pronunciation": "ทเวลฟ์",
+    "thai_pronunciation": "ทเวลฟว์",
     "ipa": "twelv"
   },
   {
@@ -54221,8 +54221,8 @@
     "level": "A1",
     "id": 6025,
     "meaning": "ยี่สิบ",
-    "thai_pronunciation": "ท-อี",
-    "ipa": "ˈtwɛni"
+    "thai_pronunciation": "ทเวน-ตี้",
+    "ipa": "ˈtwenti"
   },
   {
     "word": "twice",
@@ -54230,7 +54230,7 @@
     "level": "A1",
     "id": 6026,
     "meaning": "สองครั้ง",
-    "thai_pronunciation": "ทไวซ์",
+    "thai_pronunciation": "ทไวส์",
     "ipa": "twaɪs"
   },
   {
@@ -54365,7 +54365,7 @@
     "level": "B2",
     "ipa": "ˈəɫtəmət",
     "meaning": "สุดยอด",
-    "thai_pronunciation": "ลั-ทิ-มิท",
+    "thai_pronunciation": "แอล-ทิ-มิท",
     "id": 6041
   },
   {
@@ -54779,7 +54779,7 @@
     "level": "B2",
     "ipa": "ˌənfɔɹˈsin",
     "meaning": "ไม่คาดฝัน",
-    "thai_pronunciation": "อัน-โอ-เรอะ-อีซน",
+    "thai_pronunciation": "อัน-มอร์-อีซน",
     "id": 6087
   },
   {
@@ -55148,7 +55148,7 @@
     "level": "C1",
     "ipa": "ˈəpˌkəmɪŋ",
     "meaning": "ที่กำลังจะมาถึง",
-    "thai_pronunciation": "อัอพ-ค็อม-งิ",
+    "thai_pronunciation": "อัอพ-ค็อม-มิ่ง",
     "id": 6128
   },
   {
@@ -55229,7 +55229,7 @@
     "level": "B2",
     "ipa": "ˈəˌpɹaɪzɪŋ",
     "meaning": "การลุกฮือ",
-    "thai_pronunciation": "อัอพ-ริส์-งิ",
+    "thai_pronunciation": "อัอพ-ริส์-ซิ่ง",
     "id": 6137
   },
   {
@@ -55383,7 +55383,7 @@
     "id": 6154,
     "ipa": "juzd",
     "meaning": "ใช้แล้ว",
-    "thai_pronunciation": "อุ-เซ็ด"
+    "thai_pronunciation": "อุ-สด์"
   },
   {
     "word": "used to",
@@ -55508,7 +55508,7 @@
     "level": "C1",
     "ipa": "juˈtoʊpiə",
     "meaning": "ยูโทเปีย",
-    "thai_pronunciation": "อุ-โอ-ไอ",
+    "thai_pronunciation": "อุ-โอ-ซิ",
     "id": 6168
   },
   {
@@ -55517,7 +55517,7 @@
     "level": "C1",
     "ipa": "juˈtoʊpiən",
     "meaning": "ยูโทเปีย",
-    "thai_pronunciation": "อุ-โอ-ไอ",
+    "thai_pronunciation": "อุ-โอ-ซิ",
     "id": 6169
   },
   {
@@ -56588,7 +56588,7 @@
     "level": "C1",
     "ipa": "ˈvɪɹəɫəns",
     "meaning": "ความรุนแรง",
-    "thai_pronunciation": "ไอ-อุ-เล็น",
+    "thai_pronunciation": "ลูท-เล็น",
     "id": 6288
   },
   {
@@ -56668,9 +56668,9 @@
     "type": "adj.",
     "level": "B2",
     "id": 6297,
-    "ipa": "ˈvɪʒəwəl",
+    "ipa": "ˈvɪʒuəl",
     "meaning": "ภาพ",
-    "thai_pronunciation": "ไอ-อุ"
+    "thai_pronunciation": "วิช-ชวล"
   },
   {
     "word": "visualize",
@@ -56876,7 +56876,7 @@
     "level": "C1",
     "ipa": "ˈvoʊtɪŋ",
     "meaning": "โหวต",
-    "thai_pronunciation": "ว็อต-งิ",
+    "thai_pronunciation": "ว็อต-ติ้ง",
     "id": 6320
   },
   {
@@ -56892,9 +56892,9 @@
     "word": "voyage",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ˈvɔɪədʒ",
+    "ipa": "ˈvɔɪɪdʒ",
     "meaning": "การเดินทาง",
-    "thai_pronunciation": "วอย",
+    "thai_pronunciation": "วอย-ยิดจ์",
     "id": 6322
   },
   {
@@ -57063,9 +57063,9 @@
     "word": "warmth",
     "type": "n., v.",
     "level": "B2",
-    "ipa": "ˈwɔɹmθ",
+    "ipa": "wɔːrmθ",
     "meaning": "ความอบอุ่น",
-    "thai_pronunciation": "วอ",
+    "thai_pronunciation": "วอร์มธ์",
     "id": 6341
   },
   {
@@ -57831,7 +57831,7 @@
     "id": 6426,
     "ipa": "ˈwɪlɪŋ",
     "meaning": "เต็มใจ",
-    "thai_pronunciation": "วิล-งิ"
+    "thai_pronunciation": "วิล-ลิ่ง"
   },
   {
     "word": "willingness",
@@ -57999,9 +57999,9 @@
     "word": "withhold",
     "type": "n., v.",
     "level": "C1",
-    "ipa": "wɪθˈhoʊɫd",
+    "ipa": "wɪðˈhoʊld",
     "meaning": "ระงับ",
-    "thai_pronunciation": "วิธ",
+    "thai_pronunciation": "วิธ-โฮลด์",
     "id": 6445
   },
   {
@@ -58009,9 +58009,9 @@
     "type": "prep.",
     "level": "B1",
     "id": 6446,
-    "ipa": "wɪˈθɪn",
+    "ipa": "wɪˈðɪn",
     "meaning": "ภายใน",
-    "thai_pronunciation": "วิท-ฮิน"
+    "thai_pronunciation": "วิธ-อิน"
   },
   {
     "word": "without",
@@ -58019,7 +58019,7 @@
     "level": "A1",
     "id": 6447,
     "meaning": "ปราศจาก",
-    "thai_pronunciation": "วิท-เอาฮท",
+    "thai_pronunciation": "วิธ-เอาท์",
     "ipa": "wɪˈðaʊt"
   },
   {
@@ -58038,7 +58038,7 @@
     "id": 6449,
     "ipa": "ˈwɪtnəs",
     "meaning": "พยาน",
-    "thai_pronunciation": "วิท-นิส"
+    "thai_pronunciation": "วิท-เนส"
   },
   {
     "word": "woe",
@@ -58146,7 +58146,7 @@
     "id": 6461,
     "ipa": "ˈwərkɪŋ",
     "meaning": "เกี่ยวกับการทำงาน / ซึ่งใช้งานได้ / ซึ่งประกอบอาชีพ",
-    "thai_pronunciation": "ว็อร์ก-งิ"
+    "thai_pronunciation": "ว็อร์ก-กิ้ง"
   },
   {
     "word": "workout",

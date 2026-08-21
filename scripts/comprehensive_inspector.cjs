@@ -1,97 +1,82 @@
 const fs = require('fs');
 const path = require('path');
 
-const vocab = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/data/vocabulary.json'), 'utf8'));
-const stories = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/data/stories.json'), 'utf8'));
-const sentences = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/data/sentences.json'), 'utf8'));
-const wordLookupCode = fs.readFileSync(path.join(__dirname, '../src/utils/wordLookup.js'), 'utf8');
+const vocabPath = path.join(__dirname, '../src/data/vocabulary.json');
+const vocab = JSON.parse(fs.readFileSync(vocabPath, 'utf8'));
 
-const findings = {
-  englishOrIpaInThaiPronunciation: [],
-  shortOrNonsenseThaiPronunciation: [],
-  ipaIssues: [],
-  meaningAnomalies: [],
-  wordLookupIssues: [],
-  storyTranslations: [],
-  sentencesAccuracy: []
-};
+console.log(`Loaded ${vocab.length} vocabulary entries.`);
 
-// 1. Check all vocabulary
-vocab.forEach((v) => {
-  const w = (v.word || '').trim();
-  const lower = w.toLowerCase();
-  const thai = (v.thai_pronunciation || '').trim();
+const allIssues = [];
+
+vocab.forEach((v, idx) => {
+  const w = (v.word || '').toLowerCase().trim();
+  const th = (v.thai_pronunciation || '').trim();
   const ipa = (v.ipa || '').trim();
-  const m = (v.meaning || '').trim();
+  const flags = [];
 
-  // (A) English or IPA special characters in thai_pronunciation
-  if (/[a-zA-Zŋɫɔəæɛɪʊθðʃʒʧʤʌːˈˌ]/.test(thai)) {
-    findings.englishOrIpaInThaiPronunciation.push({
-      id: v.id,
-      word: w,
-      type: v.type,
-      level: v.level,
-      ipa: ipa,
-      thai_pronunciation: thai,
-      meaning: m
-    });
+  // 1. Missing or empty
+  if (!th) {
+    flags.push('Missing pronunciation');
   }
 
-  // (B) Nonsense / truncated Thai pronunciation (like "แอก" for "crack", "drag", "track" or length < 2)
-  if (thai.length < 2 || thai === 'แอก' || thai === 'แอ' || (thai === 'อะ' && !['a', 'uh', 'ah'].includes(lower))) {
-    findings.shortOrNonsenseThaiPronunciation.push({
-      id: v.id,
-      word: w,
-      type: v.type,
-      level: v.level,
-      ipa: ipa,
-      thai_pronunciation: thai,
-      meaning: m,
-      reason: 'truncated_or_mismatched'
-    });
+  // 2. Garbled syllable artifacts
+  if (/งิ|โอ-ไอ|ไอ-อุ|โอ-เรอะ|เซ็ด|แรส์|พอยพนท์|แวส์|แทท|แมก-งิ|บินด์-งิ|คัท-งิ|แอก-เอาคนท์/.test(th)) {
+    flags.push('Garbled syllable artifact');
   }
 
-  // (C) IPA issues
-  if (ipa === 'null' || ipa === 'undefined' || !ipa || (ipa === w && !['a', 'i'].includes(lower)) || ipa.length <= 1) {
-    findings.ipaIssues.push({
-      id: v.id,
-      word: w,
-      type: v.type,
-      level: v.level,
-      ipa: ipa,
-      thai_pronunciation: thai,
-      meaning: m
-    });
+  // 3. Inverted initial vowels on vowels
+  if (w.startsWith('a') && /^(เนย์|เดย์|เมย์|เจย์|เลย์|ลั-|เก็-|เแด-)/.test(th)) {
+    flags.push('Inverted A- prefix');
+  }
+  if (w.startsWith('e') && /^(เนย์|เดย์|เมย์|เจย์|เลย์|เก็-|เแด-|เบ็ด|เพ็รส์)/.test(th)) {
+    flags.push('Inverted E- prefix');
+  }
+  if (w.startsWith('i') && /^(เนย์|เดย์|เมย์|เจย์|เลย์|เก็-|เแด-)/.test(th)) {
+    flags.push('Inverted I- prefix');
+  }
+  if (w.startsWith('o') && /^(เนย์|เดย์|เมย์|เจย์|เลย์|เก็-)/.test(th)) {
+    flags.push('Inverted O- prefix');
+  }
+  if (w.startsWith('u') && /^(เนย์|เดย์|เมย์|เจย์|เลย์|เก็-)/.test(th)) {
+    flags.push('Inverted U- prefix');
   }
 
-  // (D) Meaning anomalies
-  if (m.includes('undefined') || m.includes('null') || /[\uFFFD\u0000-\u001F]/.test(m) || m.length <= 1) {
-    findings.meaningAnomalies.push({
+  // 4. Suspiciously short Thai transcription for long word
+  if (w.length >= 6 && th.length <= 4) {
+    flags.push('Suspiciously short Thai');
+  }
+
+  // 5. English -ing ending words having corrupted Thai
+  if (w.endsWith('ing') && (th.endsWith('งิ') || th.endsWith('งิส์') || !th.includes('ง'))) {
+    flags.push('Corrupted -ing pronunciation');
+  }
+
+  if (flags.length > 0) {
+    allIssues.push({
+      idx,
       id: v.id,
-      word: w,
-      meaning: m,
-      reason: 'corrupted_or_empty'
+      word: v.word,
+      ipa: v.ipa,
+      th: v.thai_pronunciation,
+      meaning: v.meaning,
+      flags
     });
   }
 });
 
-// 2. Check wordLookup static maps
-const entryRegex = /['"]([^'"]+)['"]\s*:\s*\{\s*word:\s*['"]([^'"]+)['"],\s*type:\s*['"]([^'"]*)['"],\s*(?:level:\s*['"]([^'"]*)['"],\s*)?meaning:\s*['"]([^'"]+)['"],\s*thai_pronunciation:\s*['"]([^'"]+)['"],\s*ipa:\s*['"]([^'"]+)['"]/g;
-let match;
-while ((match = entryRegex.exec(wordLookupCode)) !== null) {
-  const [_, key, word, type, level, meaning, thai, ipa] = match;
-  if (/[a-zA-Zŋɫɔəæɛɪʊθðʃʒʧʤʌːˈˌ]/.test(thai)) {
-    findings.wordLookupIssues.push({ key, word, thai, ipa, issue: 'english_or_ipa_in_thai' });
-  }
-}
+console.log(`Total flagged entries: ${allIssues.length}`);
+const categoriesCount = {};
+allIssues.forEach(x => {
+  x.flags.forEach(f => {
+    categoriesCount[f] = (categoriesCount[f] || 0) + 1;
+  });
+});
+console.log('Breakdown:', categoriesCount);
 
-// 3. Output summary report
-console.log('=== SUMMARY OF FINDINGS ===');
-console.log(`1. English/IPA characters leaked into Thai pronunciation: ${findings.englishOrIpaInThaiPronunciation.length}`);
-console.log(`2. Short/nonsense/truncated Thai pronunciations: ${findings.shortOrNonsenseThaiPronunciation.length}`);
-console.log(`3. Suspicious / Null / Missing IPAs: ${findings.ipaIssues.length}`);
-console.log(`4. Corrupted / Missing Meanings: ${findings.meaningAnomalies.length}`);
-console.log(`5. Issues in wordLookup: ${findings.wordLookupIssues.length}`);
+console.log('\nTop 50 Sample Issues:');
+allIssues.slice(0, 50).forEach((x, i) => {
+  console.log(`${i + 1}. "${x.word}" [${x.ipa}] -> "${x.th}" (${x.meaning}) => [${x.flags.join(', ')}]`);
+});
 
-fs.writeFileSync(path.join(__dirname, 'audit_report.json'), JSON.stringify(findings, null, 2), 'utf8');
-console.log('\nWrote full findings to scripts/audit_report.json');
+fs.writeFileSync(path.join(__dirname, 'anomalies.json'), JSON.stringify(allIssues, null, 2), 'utf8');
+console.log(`Wrote detailed anomalies to scripts/anomalies.json`);

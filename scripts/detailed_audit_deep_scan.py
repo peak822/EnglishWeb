@@ -1,126 +1,82 @@
 # -*- coding: utf-8 -*-
-import json
-import re
+"""
+Deep inspection to find any words where Thai pronunciation might still have anomalies.
+"""
 
-with open('src/data/vocabulary.json', 'r', encoding='utf-8') as f:
+import json
+import os
+import re
+import sys
+
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+
+VOCAB_PATH = os.path.join(os.path.dirname(__file__), '../src/data/vocabulary.json')
+with open(VOCAB_PATH, 'r', encoding='utf-8') as f:
     vocab = json.load(f)
 
-with open('src/data/stories.json', 'r', encoding='utf-8') as f:
-    stories = json.load(f)
+anomalies = []
 
-with open('src/data/sentences.json', 'r', encoding='utf-8') as f:
-    sentences = json.load(f)
-
-print(f"Loaded {len(vocab)} vocabulary items, {len(stories)} stories, {len(sentences)} sentences.")
-
-# Comprehensive analysis
-latin_in_thai = []
-truncated_thai = []
-suspicious_ipa = []
-pos_mismatches = []
-thai_spelling_mistakes = []
-verb_as_noun = []
-adj_as_noun = []
-
-# Common Thai spelling error patterns in translated words
-THAI_TYPOS = [
-    (r'พิจาณา', 'พิจารณา'),
-    (r'ปราถนา', 'ปรารถนา'),
-    (r'ประสพการณ์', 'ประสบการณ์'),
-    (r'อนุญาติ', 'อนุญาต'),
-    (r'สังเกตุ', 'สังเกต'),
-    (r'โอกาศ', 'โอกาส'),
-    (r'รสชาด', 'รสชาติ'),
-    (r'กระเพรา', 'กะเพรา'),
-    (r'ปะผุ', 'ปะผุ'),
-]
-
-for item in vocab:
-    w = item.get('word', '').strip()
-    thai = item.get('thai_pronunciation', '').strip()
-    ipa = item.get('ipa', '').strip()
-    m = item.get('meaning', '').strip()
-    t = item.get('type', '').strip()
-    lvl = item.get('level', '').strip()
-    i = item.get('id')
-
-    # 1. Latin / IPA character leaks
-    if re.search(r'[a-zA-Zŋɫɔəæɛɪʊθðʃʒʧʤʌːˈˌ]', thai):
-        latin_in_thai.append({
-            'id': i, 'word': w, 'thai': thai, 'ipa': ipa, 'type': t, 'level': lvl, 'meaning': m
-        })
-
-    # 2. Truncated / Single-letter Thai pronunciations
-    if len(thai) < 2 or thai in ['แอก', 'แอ'] or (thai == 'อะ' and w.lower() not in ['a', 'uh', 'ah']):
-        truncated_thai.append({
-            'id': i, 'word': w, 'thai': thai, 'ipa': ipa, 'type': t, 'level': lvl, 'meaning': m
-        })
-
-    # 3. Suspicious IPAs
-    if ipa in ['null', 'undefined', ''] or (ipa == w and w.lower() not in ['a', 'i']) or len(ipa) <= 1:
-        suspicious_ipa.append({
-            'id': i, 'word': w, 'ipa': ipa, 'thai': thai, 'type': t, 'level': lvl, 'meaning': m
-        })
-
-    # 4. Thai spelling typos in meaning
-    for typo, correction in THAI_TYPOS:
-        if re.search(typo, m):
-            thai_spelling_mistakes.append({
-                'id': i, 'word': w, 'meaning': m, 'typo': typo, 'correction': correction
-            })
-
-    # 5. POS Mismatches
-    if t == 'adj.' and re.search(r'(al|ion|ment|ance|ence|ity)$', w.lower()):
-        if w.lower() in ['denial', 'appraisal', 'dismissal', 'disposal', 'proposal', 'refusal', 'survival', 'trial', 'withdrawal', 'arrival', 'approval', 'portrayal', 'rebuttal', 'rehearsal', 'removal', 'retrieval', 'reversal', 'revival']:
-            pos_mismatches.append({
-                'id': i, 'word': w, 'current_type': t, 'correct_type': 'n.', 'meaning': m
-            })
-    elif t == 'v.' and w.lower() in ['expertise']:
-        pos_mismatches.append({
-            'id': i, 'word': w, 'current_type': t, 'correct_type': 'n.', 'meaning': m
-        })
-
-    # 6. Adjective translated as pure noun
-    if t == 'adj.' and m.startswith('การ') and not any(k in m for k in ['ที่', 'ซึ่ง', 'เกี่ยวกับ']):
-        adj_as_noun.append({
-            'id': i, 'word': w, 'meaning': m
-        })
-
-    # 7. Verb translated as pure noun
-    if t == 'v.' and (m.startswith('ความ') or (m.startswith('การ') and ',' not in m and '/' not in m)):
-        verb_as_noun.append({
-            'id': i, 'word': w, 'meaning': m
-        })
-
-print(f"\n1. Latin/IPA characters in Thai pronunciation: {len(latin_in_thai)}")
-print(f"2. Truncated / Single-letter Thai pronunciations: {len(truncated_thai)}")
-print(f"3. Suspicious / Null IPAs: {len(suspicious_ipa)}")
-print(f"4. Thai spelling mistakes in meaning: {len(thai_spelling_mistakes)}")
-print(f"5. Critical POS Tag mismatches (e.g. noun tagged as adj): {len(pos_mismatches)}")
-print(f"6. Adjectives with pure noun definitions: {len(adj_as_noun)}")
-print(f"7. Verbs with pure noun definitions: {len(verb_as_noun)}")
-
-report_full = {
-    'summary': {
-        'total_vocab': len(vocab),
-        'latin_in_thai_count': len(latin_in_thai),
-        'truncated_thai_count': len(truncated_thai),
-        'suspicious_ipa_count': len(suspicious_ipa),
-        'thai_spelling_mistakes_count': len(thai_spelling_mistakes),
-        'pos_mismatches_count': len(pos_mismatches),
-        'adj_as_noun_count': len(adj_as_noun),
-        'verb_as_noun_count': len(verb_as_noun)
-    },
-    'latin_in_thai': latin_in_thai,
-    'truncated_thai': truncated_thai,
-    'suspicious_ipa': suspicious_ipa,
-    'thai_spelling_mistakes': thai_spelling_mistakes,
-    'pos_mismatches': pos_mismatches,
-    'adj_as_noun': adj_as_noun,
-    'verb_as_noun': verb_as_noun
+# List of valid 1-syllable words in English
+VALID_SINGLE_SYLLABLE_WORDS = {
+    'breach', 'breath', 'breathe', 'cheese', 'choose', 'clause', 'cruise',
+    'freeze', 'league', 'phrase', 'plague', 'pledge', 'praise', 'scheme',
+    'should', 'shrewd', 'smooth', 'soothe', 'speech', 'thought', 'through',
+    'weight', 'straight', 'bright', 'brought', 'caught', 'flight', 'friend',
+    'height', 'knight', 'laugh', 'light', 'night', 'sight', 'slight', 'straight',
+    'taught', 'threat', 'throat', 'throne', 'tight', 'twelve', 'white', 'whole',
+    'whose', 'write', 'wrong', 'strength', 'source', 'struck', 'spring', 'stream',
+    'street', 'strike', 'string', 'strong', 'struck', 'struggle', 'screen', 'scream',
+    'spread', 'square', 'squash', 'squeeze', 'staff', 'stage', 'stain', 'stair',
+    'stake', 'stall', 'stamp', 'stare', 'start', 'starve', 'state', 'stay',
+    'steak', 'steal', 'steam', 'steel', 'steep', 'steer', 'stem', 'stick',
+    'stiff', 'still', 'sting', 'stir', 'stock', 'stone', 'stop', 'store',
+    'storm', 'story', 'strap', 'straw', 'stray', 'strip', 'stroke', 'stuff'
 }
 
-with open('scripts/deep_scan_report.json', 'w', encoding='utf-8') as out:
-    json.dump(report_full, out, ensure_ascii=False, indent=2)
+for item in vocab:
+    w = item.get('word', '').strip().lower()
+    th = item.get('thai_pronunciation', '').strip()
+    ipa = item.get('ipa', '').strip()
+    
+    issues = []
+    
+    # 1. Suspiciously short Thai pronunciation (<= 4 chars) for words with >= 5 chars
+    if len(w) >= 5 and len(th) <= 4 and w not in VALID_SINGLE_SYLLABLE_WORDS:
+        issues.append(f"Short Thai ({th}) for word length {len(w)}")
+        
+    # 2. Contains broken vowels/consonant artifacts
+    if re.search(r'งิ|โอ-ไอ|ไอ-อุ|โอ-เรอะ|เซ็ด|แรส์|พอยพนท์|แวส์|แทท|สิวท|ดอนร|ดัร์|คิรพ|ดอนท|ธรดี|ธรที|ธิรฟ|ธิรล|ท-อี|สัมก', th):
+        issues.append("Corrupted string artifact")
+        
+    # 3. Contains English letters or weird symbols
+    if re.search(r'[a-zA-Z?_+=<>]', th):
+        issues.append("Non-Thai characters")
 
-print("\nSaved full deep scan report to scripts/deep_scan_report.json")
+    # 4. Words ending in -tion / -sion but Thai doesn't end in -ชัน / -ชั่น
+    if (w.endswith('tion') or w.endswith('sion')) and not (th.endswith('ชัน') or th.endswith('ชั่น') or th.endswith('ชึน') or th.endswith('เชิน')):
+        issues.append("Missing -ชัน ending")
+        
+    # 5. Words ending in -able / -ible but Thai doesn't end in -เบิล / -เบิ้ล
+    if (w.endswith('able') or w.endswith('ible')) and not (th.endswith('เบิล') or th.endswith('เบิ้ล') or th.endswith('บัล') or th.endswith('บล')):
+        issues.append("Missing -เบิล ending")
+        
+    # 6. Words ending in -ment but Thai doesn't end in -เมินท์ / -เมนท์
+    if w.endswith('ment') and not (th.endswith('เมินท์') or th.endswith('เมนท์') or th.endswith('มึนท์') or th.endswith('ต์') or th.endswith('นด์')):
+        issues.append("Missing -เมินท์ ending")
+
+    if issues:
+        anomalies.append({
+            'word': w,
+            'ipa': ipa,
+            'th': th,
+            'meaning': item.get('meaning', ''),
+            'issues': issues
+        })
+
+print(f"Total flagged anomalies: {len(anomalies)}")
+
+with open(os.path.join(os.path.dirname(__file__), 'deep_scan_anomalies.json'), 'w', encoding='utf-8') as f:
+    json.dump(anomalies, f, ensure_ascii=False, indent=2)
+
+print("Wrote results to scripts/deep_scan_anomalies.json")
