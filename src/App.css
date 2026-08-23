@@ -1865,5 +1865,121 @@
   transform: translateX(4px);
 }
 
+/* ==========================================================================
+   Comprehensive Mobile & Tablet/iPad Responsiveness
+   ========================================================================== */
+
+/* Mobile Phones (Under 540px) */
+@media (max-width: 540px) {
+  .cyber-hub-wrap {
+    padding: 0.75rem 0.5rem 4rem 0.5rem;
+  }
+
+  .cyber-status-strip {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.68rem;
+    gap: 0.4rem;
+  }
+
+  .cyber-status-info {
+    gap: 0.5rem;
+    font-size: 0.68rem;
+  }
+
+  .cyber-cockpit-panel {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .cyber-avatar-box {
+    width: 46px;
+    height: 46px;
+    font-size: 1.35rem;
+    border-radius: 12px;
+  }
+
+  .cyber-profile-name {
+    font-size: 1.1rem;
+    gap: 0.4rem;
+  }
+
+  .cyber-rank-chip {
+    font-size: 0.68rem;
+    padding: 0.15rem 0.5rem;
+  }
+
+  .cyber-chips-row {
+    gap: 0.4rem;
+  }
+
+  .cyber-streak-chip,
+  .cyber-badge-chip,
+  .cyber-voice-btn {
+    font-size: 0.72rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .cefr-chips-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .cefr-chip-btn {
+    padding: 0.6rem 0.75rem;
+  }
+
+  .cyber-sector-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .holo-card-inner {
+    min-height: auto;
+    padding: 1.15rem !important;
+  }
+
+  .hud-stats-grid {
+    padding: 0.6rem 0.75rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.7rem;
+  }
+
+  .hud-panel-box {
+    padding: 1.25rem 0.85rem;
+  }
+
+  .pos-game-wrapper {
+    padding: 0.5rem 0.25rem;
+  }
+}
+
+/* Tablet & iPad Viewports (541px to 1024px) */
+@media (min-width: 541px) and (max-width: 1024px) {
+  .cyber-hub-wrap {
+    padding: 1rem 1rem 4rem 1rem;
+    max-width: 95%;
+  }
+
+  .cyber-sector-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .cefr-chips-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.65rem;
+  }
+
+  .story-level-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .story-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
 
 

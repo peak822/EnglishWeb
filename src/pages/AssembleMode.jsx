@@ -198,26 +198,27 @@ const AssembleMode = () => {
               </span>
               
               {/* Assembled Word Slot Row */}
-              <div className={`letters-container ${status === 'incorrect' ? 'shake' : ''}`} style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
+              <div className={`letters-container ${status === 'incorrect' ? 'shake' : ''}`} style={{ display: 'flex', justifyContent: 'center', gap: '0.4rem', flexWrap: 'wrap', marginBottom: '1.75rem', width: '100%' }}>
                 {assembledWord.map((slot, i) => (
                   <div 
                     key={i} 
                     style={{
-                      width: '52px',
-                      height: '62px',
+                      width: 'clamp(34px, 8.5vw, 52px)',
+                      height: 'clamp(42px, 11vw, 62px)',
                       borderRadius: '10px',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
                       fontFamily: 'var(--font-family-mono)',
                       fontWeight: '800',
-                      fontSize: '1.4rem',
-                      border: slot ? '2px solid var(--color-primary)' : '1.5px dashed rgba(255,255,255,0.2)',
+                      fontSize: 'clamp(1.1rem, 4vw, 1.4rem)',
+                      border: slot ? '2px solid var(--color-primary)' : '1.5px dashed rgba(255,255,255,0.25)',
                       background: slot ? 'rgba(0, 255, 255, 0.15)' : 'rgba(0,0,0,0.4)',
                       color: '#ffffff',
                       boxShadow: slot ? '0 0 15px rgba(0, 255, 255, 0.3)' : 'none',
                       cursor: 'pointer',
-                      transition: 'all 0.2s ease'
+                      transition: 'all 0.15s ease',
+                      touchAction: 'manipulation'
                     }}
                     onClick={() => handleSlotClick(slot, i)}
                   >
@@ -227,29 +228,30 @@ const AssembleMode = () => {
               </div>
 
               {/* Scrambled Available Letter Blocks */}
-              <div style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', flexWrap: 'wrap', paddingTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+              <div style={{ display: 'flex', justifyContent: 'center', gap: '0.4rem', flexWrap: 'wrap', paddingTop: '1.25rem', borderTop: '1px solid rgba(255,255,255,0.1)', width: '100%' }}>
                 {scrambledLetters.map(letter => (
                   <button 
                     key={letter.id} 
                     disabled={letter.used || status === 'correct'}
                     style={{
-                      width: '48px',
-                      height: '56px',
+                      width: 'clamp(32px, 8vw, 48px)',
+                      height: 'clamp(40px, 10vw, 56px)',
                       borderRadius: '10px',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
                       fontFamily: 'var(--font-family-mono)',
                       fontWeight: '800',
-                      fontSize: '1.25rem',
+                      fontSize: 'clamp(1rem, 3.8vw, 1.25rem)',
                       border: '1.5px solid rgba(188, 19, 254, 0.4)',
-                      background: letter.used ? 'transparent' : 'rgba(188, 19, 254, 0.15)',
+                      background: letter.used ? 'transparent' : 'rgba(188, 19, 254, 0.18)',
                       color: letter.used ? 'transparent' : '#ffffff',
-                      boxShadow: letter.used ? 'none' : '0 0 12px rgba(188, 19, 254, 0.2)',
+                      boxShadow: letter.used ? 'none' : '0 0 12px rgba(188, 19, 254, 0.25)',
                       cursor: letter.used ? 'default' : 'pointer',
                       opacity: letter.used ? 0.2 : 1,
                       pointerEvents: letter.used ? 'none' : 'auto',
-                      transition: 'all 0.2s ease'
+                      transition: 'all 0.15s ease',
+                      touchAction: 'manipulation'
                     }}
                     onClick={() => handleLetterClick(letter)}
                   >

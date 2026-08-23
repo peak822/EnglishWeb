@@ -187,34 +187,48 @@ const MatchMode = () => {
         </div>
 
         {/* HUD Tactical Stats */}
-        <div className="grid grid-cols-3 gap-2 p-3 mb-6 rounded-lg bg-[rgba(10,15,30,0.85)] border border-[rgba(0,242,254,0.3)] font-mono text-xs shadow-[0_0_15px_rgba(0,0,0,0.5)]">
-          <div className="flex flex-col items-center">
-            <span className="text-[rgba(255,255,255,0.5)] text-[0.65rem] uppercase">MOVES TAKEN</span>
-            <span className="font-bold text-sm text-[var(--color-primary)]">{moves}</span>
+        <div className="hud-stats-grid" style={{ '--hud-border': 'rgba(0, 242, 254, 0.35)' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.65rem', textTransform: 'uppercase' }}>MOVES TAKEN</span>
+            <span style={{ fontWeight: '800', fontSize: '0.95rem', color: 'var(--color-primary)' }}>{moves}</span>
           </div>
 
-          <div className="flex flex-col items-center border-x border-[rgba(255,255,255,0.1)]">
-            <span className="text-[rgba(255,255,255,0.5)] text-[0.65rem] uppercase">PAIRS MATCHED</span>
-            <span className="font-bold text-sm text-[#00f2fe]">
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', borderLeft: '1px solid rgba(255,255,255,0.1)', borderRight: '1px solid rgba(255,255,255,0.1)' }}>
+            <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.65rem', textTransform: 'uppercase' }}>PAIRS MATCHED</span>
+            <span style={{ fontWeight: '800', fontSize: '0.95rem', color: '#00f2fe' }}>
               {matchedIds.length} / {totalPairs}
             </span>
           </div>
 
-          <div className="flex flex-col items-center">
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <button
               onClick={() => {
                 playSound('click');
                 startNewGame();
               }}
-              className="flex items-center gap-1 text-[0.7rem] font-bold text-[rgba(255,255,255,0.8)] hover:text-white px-2 py-1 rounded bg-[rgba(255,255,255,0.08)] border border-[rgba(255,255,255,0.15)] transition-all mt-1"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.3rem',
+                fontSize: '0.72rem',
+                fontFamily: 'var(--font-family-mono)',
+                fontWeight: '700',
+                color: 'rgba(255,255,255,0.85)',
+                padding: '0.3rem 0.65rem',
+                borderRadius: '6px',
+                background: 'rgba(255,255,255,0.08)',
+                border: '1px solid rgba(255,255,255,0.2)',
+                cursor: 'pointer',
+                marginTop: '0.2rem'
+              }}
             >
               <RotateCcw size={12} />
-              RESTART
+              <span>RESTART</span>
             </button>
           </div>
         </div>
 
-        <div className="relative p-4 sm:p-8 rounded-xl bg-[rgba(10,15,30,0.9)] border border-[rgba(0,242,254,0.3)] shadow-[0_0_30px_rgba(0,0,0,0.8),_inset_0_0_20px_rgba(0,242,254,0.05)] overflow-hidden">
+        <div className="hud-panel-box" style={{ '--hud-border': 'rgba(0, 242, 254, 0.35)', padding: '1.25rem 0.75rem' }}>
           <TechBracket color="#00f2fe" size={18} />
 
           <div className="match-grid perspective-1000">
