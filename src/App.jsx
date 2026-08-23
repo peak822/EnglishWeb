@@ -1,13 +1,16 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { BookOpen, Star, Award, Loader2 } from 'lucide-react';
+import { BookOpen, Star, Award, Loader2, Volume2, VolumeX, Terminal, Sparkles } from 'lucide-react';
 import './App.css';
 
 // Hooks
 import { useGamification } from './hooks/useGamification';
+import { useCyberSound } from './hooks/useCyberSound';
 
 // Components
 import InteractiveBackground from './components/InteractiveBackground';
+import CommandPalette from './components/CommandPalette';
+import TechBracket from './components/TechBracket';
 
 // Lazy Loaded Pages for Optimal Mobile Performance & Initial Bundle Split
 const Home = lazy(() => import('./pages/Home'));
@@ -33,18 +36,32 @@ const PageLoadingFallback = () => (
       <Loader2 className="absolute text-[var(--color-primary)] animate-pulse" size={20} />
     </div>
     <span className="text-xs font-mono tracking-widest text-[var(--color-primary)] uppercase">
-      Loading System...
+      INITIALIZING NEURAL LINK...
     </span>
   </div>
 );
 
 function App() {
   const { exp, level, badges, nextLevelExp, currentLevelBaseExp, newBadge, recentLevelUp } = useGamification();
+  const { isMuted, toggleMute, playSound } = useCyberSound();
   const [theme, setTheme] = useState('cyberpunk');
+  const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
+
+  // Global Ctrl+K / Cmd+K listener
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        setIsCommandPaletteOpen((prev) => !prev);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
 
   const expProgress = Math.max(0, Math.min(100, ((exp - currentLevelBaseExp) / (nextLevelExp - currentLevelBaseExp)) * 100));
 
@@ -52,71 +69,132 @@ function App() {
     <Router>
       <InteractiveBackground theme={theme} />
       <div className="app-layout">
-        <nav className="nav-bar">
+        {/* Cyber Visor Top Navigation */}
+        <nav className="nav-bar cyber-visor-header">
           <div className="container nav-content">
-            {/* Top Row: Logo & Theme on Mobile / Left & Right on Desktop */}
+            {/* Top Row: Logo & Quick HUD Controls */}
             <div className="nav-main-row">
-              <Link to="/" className="nav-logo glitch-hover" data-text="English Study">
-                <BookOpen size={22} className="nav-logo-icon" />
-                <span className="nav-logo-text">English Study</span>
+              <Link 
+                to="/" 
+                className="nav-logo glitch-hover flex items-center gap-2 group" 
+                data-text="English Study"
+                onClick={() => playSound('click')}
+              >
+                <div className="relative p-1.5 rounded-lg bg-[rgba(0,255,255,0.1)] border border-[rgba(0,255,255,0.3)] shadow-[0_0_10px_rgba(0,255,255,0.2)] group-hover:scale-105 transition-transform">
+                  <BookOpen size={20} className="nav-logo-icon text-[var(--color-primary)]" />
+                </div>
+                <div className="flex flex-col">
+                  <span className="nav-logo-text font-sans font-bold tracking-wider text-sm sm:text-base">
+                    ENGLISH <span className="text-[var(--color-primary)]">STUDY</span>
+                  </span>
+                  <span className="text-[0.6rem] font-mono text-[var(--color-primary)] tracking-widest uppercase opacity-75">
+                    NEURAL TERMINAL
+                  </span>
+                </div>
               </Link>
               
-              {/* Theme Selector */}
-              <div className="nav-theme-wrap">
-                <select 
-                  value={theme}
-                  onChange={(e) => setTheme(e.target.value)}
-                  className="theme-selector-dropdown"
-                  aria-label="Select Theme"
+              {/* HUD Control Actions */}
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                {/* Command Palette Trigger Button */}
+                <button
+                  onClick={() => {
+                    playSound('click');
+                    setIsCommandPaletteOpen(true);
+                  }}
+                  className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[rgba(0,255,255,0.08)] hover:bg-[rgba(0,255,255,0.18)] border border-[rgba(0,255,255,0.3)] text-[var(--color-primary)] text-xs font-mono transition-all shadow-[0_0_10px_rgba(0,255,255,0.15)]"
+                  title="Open HUD Command Palette (Ctrl+K)"
+                  aria-label="Open Command Palette"
                 >
-                  <option value="cyberpunk">👾 Cyberpunk</option>
-                  <option value="meadow-day">🌿 Meadow Day</option>
-                  <option value="milky-way">🌌 Milky Way</option>
-                  <option value="sunset-vaporwave">🌅 Sunset</option>
-                </select>
+                  <Terminal size={14} />
+                  <span className="hidden md:inline">HUD</span>
+                  <span className="text-[0.65rem] opacity-75 font-semibold hidden sm:inline">Ctrl+K</span>
+                </button>
+
+                {/* Audio Engine Mute Toggle */}
+                <button
+                  onClick={toggleMute}
+                  className={`p-1.5 rounded-lg border transition-all ${
+                    isMuted 
+                      ? 'bg-[rgba(255,0,85,0.1)] border-[rgba(255,0,85,0.3)] text-[rgba(255,255,255,0.5)] hover:text-white' 
+                      : 'bg-[rgba(0,255,255,0.1)] border-[rgba(0,255,255,0.3)] text-[var(--color-primary)] shadow-[0_0_8px_rgba(0,255,255,0.2)]'
+                  }`}
+                  title={isMuted ? 'Unmute Cyber Sound Engine' : 'Mute Cyber Sound Engine'}
+                  aria-label="Toggle Cyber Sound"
+                >
+                  {isMuted ? <VolumeX size={16} /> : <Volume2 size={16} />}
+                </button>
+
+                {/* Theme Selector */}
+                <div className="nav-theme-wrap">
+                  <select 
+                    value={theme}
+                    onChange={(e) => {
+                      playSound('click');
+                      setTheme(e.target.value);
+                    }}
+                    className="theme-selector-dropdown text-xs"
+                    aria-label="Select Theme"
+                  >
+                    <option value="cyberpunk">👾 Cyberpunk</option>
+                    <option value="meadow-day">🌿 Meadow</option>
+                    <option value="milky-way">🌌 Milky Way</option>
+                    <option value="sunset-vaporwave">🌅 Sunset</option>
+                  </select>
+                </div>
               </div>
             </div>
 
-            {/* Gamification Bar (Responsive & Compact) */}
-            <div className="nav-gamification-bar">
+            {/* Gamification Energy Reactor Bar */}
+            <div className="nav-gamification-bar cyber-reactor-bar">
               <div className="flex items-center gap-1.5 text-[var(--color-primary)] font-bold text-xs sm:text-sm whitespace-nowrap">
-                <Star size={16} fill="currentColor" />
-                <span>Lv.{level}</span>
+                <Star size={15} fill="currentColor" className="animate-pulse" />
+                <span className="font-mono tracking-wider">LV.{level}</span>
               </div>
 
-              <div className="nav-exp-progress-wrap">
+              {/* Reactor Core Energy Tube */}
+              <div className="nav-exp-progress-wrap relative overflow-hidden bg-[rgba(0,0,0,0.5)] border border-[rgba(0,255,255,0.2)] rounded-full">
                 <div 
-                  className="h-full bg-[var(--color-primary)] rounded-full transition-all duration-500 ease-out shadow-[0_0_8px_var(--color-primary)]"
+                  className="h-full bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-neutral)] rounded-full transition-all duration-500 ease-out shadow-[0_0_12px_var(--color-primary)] relative"
                   style={{ width: `${expProgress}%` }}
-                />
+                >
+                  <div className="absolute inset-0 bg-white/20 animate-pulse" />
+                </div>
               </div>
 
-              <div className="text-[0.7rem] sm:text-xs text-[var(--color-neutral)] font-mono whitespace-nowrap font-semibold">
-                {exp}/{nextLevelExp} <span className="hidden xs:inline">EXP</span>
+              <div className="text-[0.7rem] sm:text-xs text-[var(--color-secondary)] font-mono whitespace-nowrap font-semibold">
+                {exp}/{nextLevelExp} <span className="text-[var(--color-primary)] hidden xs:inline">EXP</span>
               </div>
 
               {badges.length > 0 && (
-                <div className="flex items-center gap-1 text-[var(--color-accent)] pl-1 border-l border-[rgba(255,255,255,0.15)] cursor-help" title={`You have ${badges.length} badges!`}>
+                <div className="flex items-center gap-1 text-[var(--color-neutral)] pl-1.5 border-l border-[rgba(255,255,255,0.15)] cursor-help" title={`Badges Unlocked: ${badges.length}`}>
                   <Award size={15} />
-                  <span className="text-xs font-bold">{badges.length}</span>
+                  <span className="text-xs font-mono font-bold">{badges.length}</span>
                 </div>
               )}
 
-              {/* Level Up Notification Pop-up */}
+              {/* Notifications */}
               {recentLevelUp && (
-                <div className="absolute top-12 left-1/2 -translate-x-1/2 bg-[var(--color-primary)] text-white px-4 py-1.5 rounded-lg font-bold shadow-[var(--glow-primary)] animate-fade-up whitespace-nowrap z-50 text-xs sm:text-sm">
-                  Level Up! 🎉
+                <div className="absolute top-12 left-1/2 -translate-x-1/2 bg-[var(--color-primary)] text-black px-4 py-1.5 rounded-lg font-bold shadow-[0_0_20px_var(--color-primary)] animate-fade-up whitespace-nowrap z-50 text-xs sm:text-sm font-mono tracking-wider border border-white">
+                  ⚡ LEVEL UP! LEVEL {level} REACHED
                 </div>
               )}
               {newBadge && (
-                <div className="absolute top-12 left-1/2 -translate-x-1/2 bg-[var(--color-accent)] text-white px-4 py-1.5 rounded-lg font-bold shadow-[var(--glow-accent)] animate-fade-up whitespace-nowrap z-50 text-xs sm:text-sm">
-                  New Badge: {newBadge.name} {newBadge.icon}
+                <div className="absolute top-12 left-1/2 -translate-x-1/2 bg-[var(--color-neutral)] text-white px-4 py-1.5 rounded-lg font-bold shadow-[0_0_20px_var(--color-neutral)] animate-fade-up whitespace-nowrap z-50 text-xs sm:text-sm font-mono tracking-wider border border-white">
+                  🏆 BADGE UNLOCKED: {newBadge.name}
                 </div>
               )}
             </div>
 
           </div>
         </nav>
+
+        {/* Global Floating HUD Command Palette */}
+        <CommandPalette 
+          isOpen={isCommandPaletteOpen}
+          onClose={() => setIsCommandPaletteOpen(false)}
+          currentTheme={theme}
+          onThemeChange={(newTheme) => setTheme(newTheme)}
+        />
 
         <main className="main-content">
           <Suspense fallback={<PageLoadingFallback />}>
@@ -141,7 +219,10 @@ function App() {
         </main>
 
         <footer className="footer">
-          <p>Discover the Joy of English • Interactive Learning Platform</p>
+          <div className="flex items-center justify-center gap-2 text-xs font-mono text-[rgba(255,255,255,0.6)]">
+            <Sparkles size={14} className="text-[var(--color-primary)]" />
+            <span>ENGLISH STUDY NEURAL TERMINAL • MISSION READINESS ACTIVE</span>
+          </div>
         </footer>
       </div>
     </Router>
@@ -149,4 +230,3 @@ function App() {
 }
 
 export default App;
-
