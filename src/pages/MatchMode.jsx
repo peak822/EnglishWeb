@@ -3,12 +3,17 @@ import Card from '../components/Card';
 import Button from '../components/Button';
 import vocabularyData from '../data/vocabulary.json';
 import { useGamification } from '../hooks/useGamification';
+import { useCyberSound } from '../hooks/useCyberSound';
 import { filterWords } from '../hooks/useCategories';
 import LevelSelector from '../components/LevelSelector';
+import TechBracket from '../components/TechBracket';
+import MissionDebriefModal from '../components/MissionDebriefModal';
 import { speakText, stopSpeech } from '../utils/audioService';
+import { Grid, Flame, Activity, RotateCcw } from 'lucide-react';
 
 const MatchMode = () => {
   const { addExp } = useGamification();
+  const { playSound } = useCyberSound();
   const [level, setLevel] = useState('all');
   const [cards, setCards] = useState([]);
   const [flippedIndices, setFlippedIndices] = useState([]);
@@ -16,6 +21,8 @@ const MatchMode = () => {
   const [moves, setMoves] = useState(0);
   const [isWon, setIsWon] = useState(false);
   const [isLocked, setIsLocked] = useState(false);
+  const [isDebriefOpen, setIsDebriefOpen] = useState(false);
+  const [matchStreak, setMatchStreak] = useState(0);
   const timeoutRef = useRef(null);
 
   useEffect(() => {
@@ -33,10 +40,9 @@ const MatchMode = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     let pool = filterWords(vocabularyData, level);
     if (pool.length < 6) {
-      pool = vocabularyData; // Fallback if theme has too few words
+      pool = vocabularyData;
     }
     
-    // Pick 6 random words with distinct meanings to prevent ambiguity
     const shuffledPool = [...pool].sort(() => 0.5 - Math.random());
     const selectedWords = [];
     const usedMeanings = new Set();
@@ -49,12 +55,10 @@ const MatchMode = () => {
       if (selectedWords.length === 6) break;
     }
     
-    // Fallback if not enough distinct meanings
     if (selectedWords.length < 6) {
       selectedWords.push(...shuffledPool.slice(0, 6 - selectedWords.length));
     }
     
-    // Create 12 cards (6 words, 6 meanings)
     const newCards = [];
     selectedWords.forEach(wordObj => {
       newCards.push({ 
@@ -74,7 +78,6 @@ const MatchMode = () => {
       });
     });
     
-    // Shuffle the 12 cards
     const shuffledCards = newCards.sort(() => 0.5 - Math.random());
     
     setCards(shuffledCards);
@@ -83,24 +86,21 @@ const MatchMode = () => {
     setMoves(0);
     setIsWon(false);
     setIsLocked(false);
+    setMatchStreak(0);
+    setIsDebriefOpen(false);
   };
 
   useEffect(() => {
     startNewGame();
   }, [level]);
 
-  // Cleanup timeouts on unmount
-  useEffect(() => {
-    return () => {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    };
-  }, []);
-
   const handleCardClick = (index) => {
     if (isLocked) return;
     if (flippedIndices.includes(index)) return;
     if (matchedIds.includes(cards[index].matchId)) return;
     if (flippedIndices.length >= 2) return;
+
+    playSound('click');
 
     const clickedCard = cards[index];
     if (clickedCard.type === 'word') {
@@ -118,18 +118,25 @@ const MatchMode = () => {
       const secondCard = cards[newFlipped[1]];
       
       if (firstCard.matchId === secondCard.matchId) {
-        // If the second card is the word, pronounce it
         if (secondCard.type === 'word') {
           playAudio(secondCard.content);
         }
-        // Match! Add a delay so the user can see the cards before they settle
+        
+        const nextStreak = matchStreak + 1;
+        setMatchStreak(nextStreak);
+        if (nextStreak >= 2) {
+          playSound('combo', { streak: nextStreak });
+        } else {
+          playSound('success');
+        }
+
         timeoutRef.current = setTimeout(() => {
           setMatchedIds(prev => [...prev, firstCard.matchId]);
           setFlippedIndices([]);
           setIsLocked(false);
         }, 650);
       } else {
-        // No match
+        setMatchStreak(0);
         timeoutRef.current = setTimeout(() => {
           setFlippedIndices([]);
           setIsLocked(false);
@@ -142,19 +149,36 @@ const MatchMode = () => {
     const totalPairs = cards.length > 0 ? cards.length / 2 : 6;
     if (matchedIds.length > 0 && matchedIds.length === totalPairs && !isWon) {
       setIsWon(true);
-      const baseExp = 30;
+      const baseExp = 35;
       const penalty = Math.max(0, (moves - totalPairs) * 2);
-      const finalExp = Math.max(10, baseExp - penalty);
+      const finalExp = Math.max(15, baseExp - penalty);
       addExp(finalExp);
+      
+      timeoutRef.current = setTimeout(() => {
+        setIsDebriefOpen(true);
+      }, 700);
     }
   }, [matchedIds.length, isWon, moves, cards.length, addExp]);
 
+  const totalPairs = cards.length > 0 ? cards.length / 2 : 6;
+
   return (
-    <div className="container animate-fade-up">
+    <div className="container animate-fade-up px-4 max-w-4xl mx-auto py-6">
       <div className="game-container">
-        <div className="game-header">
-          <h2 className="text-gradient">Memory Match</h2>
-          <div className="w-48 sm:w-64 z-50">
+        
+        {/* HUD Game Header */}
+        <div className="flex flex-wrap items-center justify-between gap-4 mb-4 pb-3 border-b border-[rgba(0,242,254,0.3)]">
+          <div>
+            <div className="flex items-center gap-2 text-xs font-mono text-[#00f2fe] font-bold tracking-wider uppercase">
+              <Activity size={15} />
+              <span>SECTOR BETA // PROTOCOL: MATCH</span>
+            </div>
+            <h2 className="text-xl sm:text-2xl font-bold font-sans text-white tracking-wide">
+              Match Mode <span className="text-[#00f2fe] font-mono text-sm">(3D Memory Matrix)</span>
+            </h2>
+          </div>
+
+          <div className="w-48 sm:w-64 z-20">
             <LevelSelector 
               value={level} 
               onChange={setLevel} 
@@ -162,30 +186,36 @@ const MatchMode = () => {
           </div>
         </div>
 
-        <div className="game-stats justify-between">
-          <div className="stat-item">
-            <span>Moves:</span>
-            <span className="stat-value">{moves}</span>
+        {/* HUD Tactical Stats */}
+        <div className="grid grid-cols-3 gap-2 p-3 mb-6 rounded-lg bg-[rgba(10,15,30,0.85)] border border-[rgba(0,242,254,0.3)] font-mono text-xs shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+          <div className="flex flex-col items-center">
+            <span className="text-[rgba(255,255,255,0.5)] text-[0.65rem] uppercase">MOVES TAKEN</span>
+            <span className="font-bold text-sm text-[var(--color-primary)]">{moves}</span>
           </div>
-          <div className="stat-item">
-            <span>Pairs:</span>
-            <span className="stat-value">{matchedIds.length} / {cards.length > 0 ? cards.length / 2 : 6}</span>
+
+          <div className="flex flex-col items-center border-x border-[rgba(255,255,255,0.1)]">
+            <span className="text-[rgba(255,255,255,0.5)] text-[0.65rem] uppercase">PAIRS MATCHED</span>
+            <span className="font-bold text-sm text-[#00f2fe]">
+              {matchedIds.length} / {totalPairs}
+            </span>
           </div>
-          <Button variant="secondary" onClick={startNewGame}>
-            Restart
-          </Button>
+
+          <div className="flex flex-col items-center">
+            <button
+              onClick={() => {
+                playSound('click');
+                startNewGame();
+              }}
+              className="flex items-center gap-1 text-[0.7rem] font-bold text-[rgba(255,255,255,0.8)] hover:text-white px-2 py-1 rounded bg-[rgba(255,255,255,0.08)] border border-[rgba(255,255,255,0.15)] transition-all mt-1"
+            >
+              <RotateCcw size={12} />
+              RESTART
+            </button>
+          </div>
         </div>
 
-        <Card className="p-4 sm:p-8 relative">
-          {isWon && (
-            <div className="absolute inset-0 bg-[rgba(15,23,42,0.85)] backdrop-blur-sm z-20 flex flex-col items-center justify-center rounded-[var(--radius-lg)] animate-fade-up p-6 text-center">
-              <h2 className="text-4xl font-bold text-gradient mb-3">You Won! 🎉</h2>
-              <p className="text-[var(--color-neutral)] mb-6 text-lg">Completed in {moves} moves</p>
-              <Button variant="primary" onClick={startNewGame} className="w-48">
-                Play Again
-              </Button>
-            </div>
-          )}
+        <div className="relative p-4 sm:p-8 rounded-xl bg-[rgba(10,15,30,0.9)] border border-[rgba(0,242,254,0.3)] shadow-[0_0_30px_rgba(0,0,0,0.8),_inset_0_0_20px_rgba(0,242,254,0.05)] overflow-hidden">
+          <TechBracket color="#00f2fe" size={18} />
 
           <div className="match-grid perspective-1000">
             {cards.map((card, index) => {
@@ -196,23 +226,26 @@ const MatchMode = () => {
                 <div 
                   key={card.id || index}
                   onClick={() => handleCardClick(index)}
+                  onMouseEnter={() => playSound('hover')}
                   className={`match-card transform-style-3d ${isFlipped ? 'rotate-y-180' : ''} ${isMatched ? 'matched' : ''}`}
                 >
                   {/* Front of card (Hidden state) */}
-                  <div className="match-card-front backface-hidden">
-                    <span style={{ fontSize: '2.2rem', filter: 'drop-shadow(0 0 8px rgba(0,255,255,0.3))' }}>❓</span>
+                  <div className="match-card-front backface-hidden bg-[rgba(10,15,30,0.9)] border border-[rgba(0,242,254,0.3)]">
+                    <span className="font-mono text-2xl font-bold text-[#00f2fe] drop-shadow-[0_0_8px_rgba(0,242,254,0.6)]">
+                      [ ? ]
+                    </span>
                   </div>
                   
                   {/* Back of card (Revealed state) */}
                   <div className={`match-card-back backface-hidden ${card.type === 'word' ? 'type-word' : 'type-meaning'}`}>
                     <span className="card-badge">
-                      {card.type === 'word' ? '🇬🇧' : '🇹🇭'}
+                      {card.type === 'word' ? 'EN' : 'TH'}
                     </span>
-                    <span className="card-text">
+                    <span className="card-text font-mono font-bold">
                       {card.content}
                     </span>
                     {card.type === 'word' && card.ipa && (
-                      <span style={{ fontSize: '0.75rem', color: 'var(--color-neutral)', marginTop: '0.2rem', fontStyle: 'italic' }}>
+                      <span className="text-[0.65rem] font-mono text-[var(--color-primary)] opacity-80 mt-1">
                         /{card.ipa}/
                       </span>
                     )}
@@ -221,8 +254,22 @@ const MatchMode = () => {
               );
             })}
           </div>
-        </Card>
+        </div>
       </div>
+
+      {/* Mission Debrief Modal */}
+      <MissionDebriefModal
+        isOpen={isDebriefOpen}
+        title="MATRIX SYNCHRONIZATION COMPLETE"
+        subtitle="SECTOR BETA RECOGNITION"
+        score={totalPairs}
+        total={Math.max(moves, totalPairs)}
+        expGained={Math.max(15, 35 - Math.max(0, (moves - totalPairs) * 2))}
+        streakCount={matchStreak}
+        onRetry={startNewGame}
+        onNext={startNewGame}
+        nextLabel="NEXT MATRIX"
+      />
     </div>
   );
 };

@@ -2,10 +2,17 @@ import React, { useState, useEffect, useRef } from 'react';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import vocabularyData from '../data/vocabulary.json';
-import { filterWords, THEMES } from '../hooks/useCategories';
+import { filterWords } from '../hooks/useCategories';
+import { useGamification } from '../hooks/useGamification';
+import { useCyberSound } from '../hooks/useCyberSound';
 import LevelSelector from '../components/LevelSelector';
+import TechBracket from '../components/TechBracket';
+import MissionDebriefModal from '../components/MissionDebriefModal';
+import { Puzzle, Flame, Activity } from 'lucide-react';
 
 const AssembleMode = () => {
+  const { addExp } = useGamification();
+  const { playSound } = useCyberSound();
   const [words, setWords] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [scrambledLetters, setScrambledLetters] = useState([]);
@@ -14,6 +21,9 @@ const AssembleMode = () => {
   const [level, setLevel] = useState('all');
   const [isLoaded, setIsLoaded] = useState(false);
   const [showHint, setShowHint] = useState(false);
+  const [streak, setStreak] = useState(0);
+  const [correctCount, setCorrectCount] = useState(0);
+  const [isDebriefOpen, setIsDebriefOpen] = useState(false);
   const timeoutRef = useRef(null);
 
   useEffect(() => {
@@ -22,15 +32,22 @@ const AssembleMode = () => {
     };
   }, []);
 
-  useEffect(() => {
+  const initWords = (lvl) => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    let result = filterWords(vocabularyData, level);
+    let result = filterWords(vocabularyData, lvl);
     result = [...result].sort(() => 0.5 - Math.random());
     setWords(result);
     setCurrentIndex(0);
     setStatus('idle');
     setIsLoaded(true);
     setShowHint(false);
+    setStreak(0);
+    setCorrectCount(0);
+    setIsDebriefOpen(false);
+  };
+
+  useEffect(() => {
+    initWords(level);
   }, [level]);
 
   useEffect(() => {
@@ -49,6 +66,8 @@ const AssembleMode = () => {
   const handleLetterClick = (letterObj) => {
     if (letterObj.used || status === 'correct') return;
 
+    playSound('click');
+
     const firstEmptyIndex = assembledWord.findIndex(slot => slot === null);
     if (firstEmptyIndex === -1) return;
 
@@ -65,11 +84,27 @@ const AssembleMode = () => {
       const finalWord = newAssembled.map(l => l.char).join('');
       if (finalWord === currentWord.word.toLowerCase()) {
         setStatus('correct');
+        const nextStreak = streak + 1;
+        setStreak(nextStreak);
+        setCorrectCount(prev => prev + 1);
+        addExp(nextStreak >= 3 ? 25 : 20);
+
+        if (nextStreak >= 3) {
+          playSound('combo', { streak: nextStreak });
+        } else {
+          playSound('success');
+        }
+
         timeoutRef.current = setTimeout(() => {
-          setCurrentIndex(prev => prev + 1);
-        }, 1500);
+          if (currentIndex + 1 >= Math.min(words.length, 15)) {
+            setIsDebriefOpen(true);
+          } else {
+            setCurrentIndex(prev => prev + 1);
+          }
+        }, 1600);
       } else {
         setStatus('incorrect');
+        setStreak(0);
         timeoutRef.current = setTimeout(() => {
           setAssembledWord(new Array(currentWord.word.length).fill(null));
           setScrambledLetters(scrambledLetters.map(l => ({ ...l, used: false })));
@@ -82,6 +117,7 @@ const AssembleMode = () => {
   const handleSlotClick = (slotObj, index) => {
     if (!slotObj || status === 'correct') return;
 
+    playSound('hover');
     const newAssembled = [...assembledWord];
     newAssembled[index] = null;
     setAssembledWord(newAssembled);
@@ -96,22 +132,23 @@ const AssembleMode = () => {
     return <div className="container animate-fade-up text-center"><h2 className="text-gradient">Loading...</h2></div>;
   }
 
-  if (!currentWord && words.length > 0 && currentIndex >= words.length) {
-    return (
-      <div className="container animate-fade-up text-center py-20">
-        <h2 className="text-gradient text-4xl mb-4">Amazing Job! 🎉</h2>
-        <p className="text-[var(--color-neutral)] text-lg mb-8">You have completed all available words in this level!</p>
-        <button onClick={() => window.location.href = '/'} className="ui-btn ui-btn-primary">Back to Home</button>
-      </div>
-    );
-  }
-
   return (
-    <div className="container animate-fade-up">
+    <div className="container animate-fade-up px-4 max-w-4xl mx-auto py-6">
       <div className="game-container">
-        <div className="game-header">
-          <h2 className="text-gradient-accent">Assemble Mode</h2>
-          <div className="w-48 sm:w-64 z-50">
+        
+        {/* HUD Game Header */}
+        <div className="flex flex-wrap items-center justify-between gap-4 mb-4 pb-3 border-b border-[rgba(188,19,254,0.3)]">
+          <div>
+            <div className="flex items-center gap-2 text-xs font-mono text-[#e879f9] font-bold tracking-wider uppercase">
+              <Activity size={15} />
+              <span>SECTOR ALPHA // PROTOCOL: ASSEMBLE</span>
+            </div>
+            <h2 className="text-xl sm:text-2xl font-bold font-sans text-white tracking-wide">
+              Assemble Mode <span className="text-[#e879f9] font-mono text-sm">(Data Anagrams)</span>
+            </h2>
+          </div>
+
+          <div className="w-48 sm:w-64 z-20">
             <LevelSelector 
               value={level} 
               onChange={setLevel} 
@@ -119,35 +156,57 @@ const AssembleMode = () => {
           </div>
         </div>
 
-        <div className="game-stats">
-          <div className="stat-item">
-            <span>Word</span>
-            <span className="stat-value" style={{ color: 'var(--color-accent)' }}>{words.length > 0 ? currentIndex + 1 : 0} / {words.length}</span>
+        {/* HUD Tactical Stats */}
+        <div className="grid grid-cols-3 gap-2 p-3 mb-6 rounded-lg bg-[rgba(10,15,30,0.85)] border border-[rgba(188,19,254,0.3)] font-mono text-xs shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+          <div className="flex flex-col items-center">
+            <span className="text-[rgba(255,255,255,0.5)] text-[0.65rem] uppercase">PROGRESS</span>
+            <span className="font-bold text-sm text-[var(--color-primary)]">
+              {words.length > 0 ? currentIndex + 1 : 0} / {Math.min(words.length, 15)}
+            </span>
           </div>
-          <div className="stat-item">
-            <span>Type</span>
-            <span className="stat-value" style={{ color: 'var(--color-accent)' }}>{currentWord ? currentWord.type : '-'}</span>
+
+          <div className="flex flex-col items-center border-x border-[rgba(255,255,255,0.1)]">
+            <span className="text-[rgba(255,255,255,0.5)] text-[0.65rem] uppercase">STREAK COMBO</span>
+            <span className="font-bold text-sm text-[#e879f9] flex items-center gap-1">
+              <Flame size={14} />
+              {streak}x
+            </span>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <span className="text-[rgba(255,255,255,0.5)] text-[0.65rem] uppercase">TYPE</span>
+            <span className="font-bold text-sm text-[var(--color-accent)] uppercase">
+              {currentWord ? currentWord.type : '-'}
+            </span>
           </div>
         </div>
 
         {words.length === 0 ? (
           <Card className="text-center py-8 md:py-16">
-            <h3 className="text-xl text-[var(--color-neutral)]">No words available for this level.</h3>
+            <h3 className="text-xl text-[var(--color-neutral)] font-mono">No data fragments for this clearance level.</h3>
           </Card>
         ) : (
-          <Card className="text-center py-8 md:py-16 relative overflow-hidden">
+          <div className="relative p-6 sm:p-10 rounded-xl bg-[rgba(10,15,30,0.9)] border border-[rgba(188,19,254,0.3)] shadow-[0_0_30px_rgba(0,0,0,0.8),_inset_0_0_20px_rgba(188,19,254,0.05)] overflow-hidden">
+            <TechBracket color="#e879f9" size={18} />
+
             {status === 'correct' && (
-              <div className="absolute inset-0 bg-[rgba(34,197,94,0.1)] success-pulse z-0 rounded-[var(--radius-lg)]" />
+              <div className="absolute inset-0 bg-[rgba(188,19,254,0.1)] animate-pulse z-0" />
             )}
 
-            <div className="relative z-10">
-              <h3 className="mb-10 text-[var(--color-secondary)] font-medium">Click letters to build the word</h3>
+            <div className="relative z-10 text-center">
+              <span className="inline-block px-3 py-1 rounded-full bg-[rgba(188,19,254,0.1)] border border-[rgba(188,19,254,0.3)] text-[0.7rem] font-mono tracking-widest text-[#e879f9] uppercase mb-4">
+                TRANSLATION TARGET: {currentWord.meaning}
+              </span>
               
-              <div className={`letters-container mb-12 ${status === 'incorrect' ? 'shake' : ''}`}>
+              <div className={`letters-container mb-8 flex justify-center gap-2 flex-wrap ${status === 'incorrect' ? 'shake' : ''}`}>
                 {assembledWord.map((slot, i) => (
                   <div 
                     key={i} 
-                    className={`letter-slot ${slot ? 'filled' : ''} ${status === 'incorrect' ? 'error' : ''}`}
+                    className={`w-12 h-14 sm:w-14 sm:h-16 rounded-lg flex items-center justify-center font-mono font-bold text-xl sm:text-2xl border-2 cursor-pointer transition-all ${
+                      slot 
+                        ? 'bg-[rgba(0,255,255,0.15)] border-[var(--color-primary)] text-white shadow-[0_0_15px_rgba(0,255,255,0.3)]' 
+                        : 'bg-[rgba(0,0,0,0.4)] border-[rgba(255,255,255,0.15)] text-transparent'
+                    } ${status === 'incorrect' ? 'border-red-500 bg-red-950/40' : ''}`}
                     onClick={() => handleSlotClick(slot, i)}
                   >
                     {slot ? slot.char.toUpperCase() : ''}
@@ -155,52 +214,77 @@ const AssembleMode = () => {
                 ))}
               </div>
 
-              <div className="letters-container border-t border-[rgba(255,255,255,0.05)] pt-12">
+              {/* Scrambled Available Letter Blocks */}
+              <div className="letters-container border-t border-[rgba(255,255,255,0.1)] pt-6 flex justify-center gap-2 flex-wrap">
                 {scrambledLetters.map(letter => (
-                  <div 
+                  <button 
                     key={letter.id} 
-                    className={`letter-block ${letter.used ? 'used' : ''}`}
+                    disabled={letter.used || status === 'correct'}
+                    className={`w-11 h-13 sm:w-13 sm:h-15 rounded-lg flex items-center justify-center font-mono font-bold text-lg sm:text-xl border transition-all ${
+                      letter.used 
+                        ? 'opacity-20 pointer-events-none border-transparent bg-transparent' 
+                        : 'bg-[rgba(188,19,254,0.15)] border-[rgba(188,19,254,0.4)] text-white hover:bg-[rgba(188,19,254,0.3)] hover:scale-105 shadow-[0_0_10px_rgba(188,19,254,0.2)]'
+                    }`}
                     onClick={() => handleLetterClick(letter)}
                   >
                     {letter.char.toUpperCase()}
-                  </div>
+                  </button>
                 ))}
               </div>
               
               <div className="mt-8 flex flex-col items-center">
                 {showHint && status !== 'correct' && (
-                  <div className="mb-6 text-[var(--color-neutral)] text-base animate-fade-up bg-[rgba(255,255,255,0.05)] py-3 px-6 rounded-lg border border-[rgba(0,255,255,0.2)]">
-                    💡 คำศัพท์ภาษาอังกฤษที่แปลว่า <span className="font-bold text-[var(--color-secondary)] text-lg">"{currentWord.meaning}"</span> คือคำว่าอะไรนะ?
+                  <div className="mb-4 text-[#e879f9] text-xs font-mono animate-fade-up bg-[rgba(0,0,0,0.6)] py-2 px-4 rounded-lg border border-[rgba(188,19,254,0.3)]">
+                    💡 คำอ่าน: <span className="text-white font-bold">{currentWord.thai_pronunciation || currentWord.ipa || 'N/A'}</span>
                   </div>
                 )}
                 
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full max-w-sm">
                   <Button 
                     variant="secondary" 
+                    className="w-full font-mono text-xs tracking-wider"
                     onClick={() => {
+                      playSound('click');
                       setAssembledWord(new Array(currentWord.word.length).fill(null));
                       setScrambledLetters(scrambledLetters.map(l => ({ ...l, used: false })));
                       setStatus('idle');
                     }}
                   >
-                    Reset Word
+                    RESET TILES
                   </Button>
                 </div>
 
                 {!showHint && status !== 'correct' && (
                   <button 
                     type="button"
-                    onClick={() => setShowHint(true)}
-                    className="mt-6 text-btn"
+                    onClick={() => {
+                      playSound('hover');
+                      setShowHint(true);
+                    }}
+                    className="mt-4 text-xs font-mono text-[rgba(255,255,255,0.6)] hover:text-[var(--color-primary)] transition-colors underline underline-offset-4"
                   >
-                    ขอคำใบ้หน่อย
+                    [ Request Hint ]
                   </button>
                 )}
               </div>
             </div>
-          </Card>
+          </div>
         )}
       </div>
+
+      {/* Mission Debrief Modal */}
+      <MissionDebriefModal
+        isOpen={isDebriefOpen}
+        title="ASSEMBLE PROTOCOL COMPLETE"
+        subtitle="SECTOR ALPHA TRAINING"
+        score={correctCount}
+        total={Math.min(words.length, 15)}
+        expGained={correctCount * 20}
+        streakCount={streak}
+        onRetry={() => initWords(level)}
+        onNext={() => initWords(level)}
+        nextLabel="NEXT BATCH"
+      />
     </div>
   );
 };

@@ -1,12 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Card from '../components/Card';
 import { useGamification } from '../hooks/useGamification';
-import { filterWords, THEMES } from '../hooks/useCategories';
+import { useCyberSound } from '../hooks/useCyberSound';
+import { filterWords } from '../hooks/useCategories';
 import LevelSelector from '../components/LevelSelector';
+import TechBracket from '../components/TechBracket';
+import MissionDebriefModal from '../components/MissionDebriefModal';
 import vocabularyData from '../data/vocabulary.json';
+import { HelpCircle, Flame, Activity } from 'lucide-react';
 
 const GuessMode = () => {
   const { addExp } = useGamification();
+  const { playSound } = useCyberSound();
   const [words, setWords] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [options, setOptions] = useState([]);
@@ -15,6 +20,9 @@ const GuessMode = () => {
   const [hintLevel, setHintLevel] = useState(0);
   const [level, setLevel] = useState('all');
   const [isLoaded, setIsLoaded] = useState(false);
+  const [streak, setStreak] = useState(0);
+  const [correctCount, setCorrectCount] = useState(0);
+  const [isDebriefOpen, setIsDebriefOpen] = useState(false);
   const timeoutRef = useRef(null);
 
   useEffect(() => {
@@ -23,13 +31,20 @@ const GuessMode = () => {
     };
   }, []);
 
-  useEffect(() => {
+  const initWords = (lvl) => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    let result = filterWords(vocabularyData, level);
+    let result = filterWords(vocabularyData, lvl);
     result = [...result].sort(() => 0.5 - Math.random());
     setWords(result);
     setCurrentIndex(0);
+    setStreak(0);
+    setCorrectCount(0);
+    setIsDebriefOpen(false);
     setIsLoaded(true);
+  };
+
+  useEffect(() => {
+    initWords(level);
   }, [level]);
 
   useEffect(() => {
@@ -46,22 +61,16 @@ const GuessMode = () => {
   const generateOptions = () => {
     const correctWord = words[currentIndex];
     
-    // Try to get words of the SAME type to make it harder to guess just by grammar
-    // Ensure we don't pick distractors that have the exact same meaning as the correct word
     let pool = words.filter(w => w.word !== correctWord.word && w.type === correctWord.type && w.level === correctWord.level && w.meaning !== correctWord.meaning);
     
-    // If not enough words of the same type in the same level, expand to all levels but same type
     if (pool.length < 3) {
       pool = vocabularyData.filter(w => w.word !== correctWord.word && w.type === correctWord.type && w.meaning !== correctWord.meaning);
     }
 
-    // If STILL not enough words, just get any word
     if (pool.length < 3) {
       pool = vocabularyData.filter(w => w.word !== correctWord.word && w.meaning !== correctWord.meaning);
     }
     
-    // To make choices more diverse, we ensure they are unique words
-    // Remove duplicates from pool just in case
     const uniquePoolMap = new Map();
     pool.forEach(w => uniquePoolMap.set(w.word, w));
     const uniquePool = Array.from(uniquePoolMap.values());
@@ -76,7 +85,6 @@ const GuessMode = () => {
     };
 
     pool = shuffleArray(uniquePool).slice(0, 3);
-    
     const newOptions = shuffleArray([...pool.map(w => w.word), correctWord.word]);
     setOptions(newOptions);
   };
@@ -88,14 +96,30 @@ const GuessMode = () => {
 
     if (guess === currentWord.word) {
       setStatus('correct');
-      // Calculate EXP based on hints used (10 -> 5 -> 2)
-      const expGained = hintLevel === 0 ? 10 : hintLevel === 1 ? 5 : 2;
+      const nextStreak = streak + 1;
+      setStreak(nextStreak);
+      setCorrectCount(prev => prev + 1);
+
+      if (nextStreak >= 3) {
+        playSound('combo', { streak: nextStreak });
+      } else {
+        playSound('success');
+      }
+
+      const expGained = hintLevel === 0 ? (nextStreak >= 3 ? 15 : 10) : hintLevel === 1 ? 5 : 2;
       addExp(expGained);
+
       timeoutRef.current = setTimeout(() => {
-        setCurrentIndex(prev => prev + 1);
-      }, 2500); // Increased delay for post-answer review
+        if (currentIndex + 1 >= Math.min(words.length, 15)) {
+          setIsDebriefOpen(true);
+        } else {
+          setCurrentIndex(prev => prev + 1);
+        }
+      }, 2200);
     } else {
+      playSound('click');
       setStatus('incorrect');
+      setStreak(0);
       timeoutRef.current = setTimeout(() => {
         setStatus('idle');
         setSelectedOption(null);
@@ -107,22 +131,23 @@ const GuessMode = () => {
     return <div className="container animate-fade-up text-center"><h2 className="text-gradient">Loading...</h2></div>;
   }
 
-  if (!currentWord && words.length > 0 && currentIndex >= words.length) {
-    return (
-      <div className="container animate-fade-up text-center py-20">
-        <h2 className="text-gradient text-4xl mb-4">Amazing Job! 🎉</h2>
-        <p className="text-[var(--color-neutral)] text-lg mb-8">You have completed all available words in this level!</p>
-        <button onClick={() => window.location.href = '/'} className="ui-btn ui-btn-primary">Back to Home</button>
-      </div>
-    );
-  }
-
   return (
-    <div className="container animate-fade-up">
+    <div className="container animate-fade-up px-4 max-w-4xl mx-auto py-6">
       <div className="game-container">
-        <div className="game-header">
-          <h2 className="text-gradient">Guess Mode</h2>
-          <div className="w-48 sm:w-64 z-50">
+        
+        {/* HUD Game Header */}
+        <div className="flex flex-wrap items-center justify-between gap-4 mb-4 pb-3 border-b border-[rgba(251,191,36,0.3)]">
+          <div>
+            <div className="flex items-center gap-2 text-xs font-mono text-[#fbbf24] font-bold tracking-wider uppercase">
+              <Activity size={15} />
+              <span>SECTOR ALPHA // PROTOCOL: GUESS</span>
+            </div>
+            <h2 className="text-xl sm:text-2xl font-bold font-sans text-white tracking-wide">
+              Guess Mode <span className="text-[#fbbf24] font-mono text-sm">(Clue Deduction)</span>
+            </h2>
+          </div>
+
+          <div className="w-48 sm:w-64 z-20">
             <LevelSelector 
               value={level} 
               onChange={setLevel} 
@@ -130,60 +155,85 @@ const GuessMode = () => {
           </div>
         </div>
 
-        <div className="game-stats justify-center">
-          <div className="stat-item">
-            <span>Word</span>
-            <span className="stat-value">{words.length > 0 ? currentIndex + 1 : 0} / {words.length}</span>
+        {/* HUD Tactical Stats */}
+        <div className="grid grid-cols-3 gap-2 p-3 mb-6 rounded-lg bg-[rgba(10,15,30,0.85)] border border-[rgba(251,191,36,0.3)] font-mono text-xs shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+          <div className="flex flex-col items-center">
+            <span className="text-[rgba(255,255,255,0.5)] text-[0.65rem] uppercase">PROGRESS</span>
+            <span className="font-bold text-sm text-[var(--color-primary)]">
+              {words.length > 0 ? currentIndex + 1 : 0} / {Math.min(words.length, 15)}
+            </span>
+          </div>
+
+          <div className="flex flex-col items-center border-x border-[rgba(255,255,255,0.1)]">
+            <span className="text-[rgba(255,255,255,0.5)] text-[0.65rem] uppercase">STREAK COMBO</span>
+            <span className="font-bold text-sm text-[#fbbf24] flex items-center gap-1">
+              <Flame size={14} />
+              {streak}x
+            </span>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <span className="text-[rgba(255,255,255,0.5)] text-[0.65rem] uppercase">TYPE</span>
+            <span className="font-bold text-sm text-[var(--color-accent)] uppercase">
+              {currentWord ? currentWord.type : '-'}
+            </span>
           </div>
         </div>
 
         {words.length === 0 ? (
           <Card className="text-center py-8 md:py-16">
-            <h3 className="text-xl text-[var(--color-neutral)]">No words available for this level.</h3>
+            <h3 className="text-xl text-[var(--color-neutral)] font-mono">No tactical words found for this clearance level.</h3>
           </Card>
         ) : (
-          <Card className="text-center py-8 md:py-16 relative overflow-hidden">
+          <div className="relative p-6 sm:p-10 rounded-xl bg-[rgba(10,15,30,0.9)] border border-[rgba(251,191,36,0.3)] shadow-[0_0_30px_rgba(0,0,0,0.8),_inset_0_0_20px_rgba(251,191,36,0.05)] overflow-hidden">
+            <TechBracket color="#fbbf24" size={18} />
+
             {status === 'correct' && (
-              <div className="absolute inset-0 bg-[rgba(34,197,94,0.1)] success-pulse z-0 rounded-[var(--radius-lg)]" />
+              <div className="absolute inset-0 bg-[rgba(251,191,36,0.1)] animate-pulse z-0" />
             )}
 
-            <div className="relative z-10" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
+            <div className="relative z-10 text-center flex flex-col items-center">
               {status === 'correct' ? (
-                <div style={{ padding: '2rem 0', display: 'flex', flexDirection: 'column', alignItems: 'center', animation: 'fadeUp 0.5s ease-out forwards', width: '100%' }}>
-                  <h3 className="srs-title" style={{ color: '#fff' }}>{currentWord.word}</h3>
-                  <p className="srs-ipa">/{currentWord.ipa || 'no ipa'}/</p>
-                  <div className="srs-meaning-box" style={{ border: '1px solid var(--color-accent)' }}>
-                    <p className="srs-meaning">{currentWord.meaning || 'No translation available'}</p>
+                <div className="py-6 flex flex-col items-center animate-fade-up w-full font-mono">
+                  <span className="text-xs font-bold text-[#fbbf24] uppercase tracking-widest mb-2">TARGET VERIFIED</span>
+                  <h3 className="text-3xl sm:text-4xl font-black text-white mb-1">{currentWord.word}</h3>
+                  <p className="text-xs text-[rgba(255,255,255,0.7)] mb-4">/{currentWord.ipa || 'no ipa'}/</p>
+                  <div className="p-4 rounded-lg bg-[rgba(0,0,0,0.6)] border border-[rgba(251,191,36,0.4)] max-w-sm w-full">
+                    <p className="text-base text-[var(--color-primary)] font-bold">{currentWord.meaning}</p>
                   </div>
-                  <p style={{ marginTop: '2rem', color: '#4ade80', fontWeight: 'bold', animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite' }}>Correct! +{hintLevel === 0 ? 10 : hintLevel === 1 ? 5 : 2} EXP</p>
+                  <p className="mt-4 text-green-400 font-bold text-xs">
+                    + {hintLevel === 0 ? 10 : hintLevel === 1 ? 5 : 2} EXP GRANTED
+                  </p>
                 </div>
               ) : (
                 <>
-                  <h3 className="text-xl mb-8 text-[var(--color-neutral)] font-medium">Guess the word for this meaning:</h3>
-                  <div className="flex justify-center w-full px-4 mb-8 md:mb-14">
-                    <div className="font-bold px-8 py-4 md:px-16 md:py-6 rounded-full w-full max-w-2xl flex items-center justify-center" 
-                         style={{ 
-                           fontSize: 'clamp(1.5rem, 5vw, 2.5rem)', 
-                           color: 'var(--color-primary)', 
-                           background: 'rgba(255, 255, 255, 0.03)',
-                           border: '1px solid rgba(255, 255, 255, 0.1)',
-                           boxShadow: 'inset 0 0 20px rgba(0,0,0,0.2), 0 8px 32px rgba(0, 0, 0, 0.1)'
-                         }}>
+                  <span className="inline-block px-3 py-1 rounded-full bg-[rgba(251,191,36,0.1)] border border-[rgba(251,191,36,0.3)] text-[0.7rem] font-mono tracking-widest text-[#fbbf24] uppercase mb-4">
+                    DECRYPT THE TARGET BY MEANING
+                  </span>
+
+                  <div className="w-full max-w-xl p-5 mb-8 rounded-xl bg-[rgba(0,0,0,0.5)] border border-[rgba(255,255,255,0.15)] shadow-[inset_0_0_15px_rgba(0,0,0,0.6)]">
+                    <span className="text-xl sm:text-2xl font-bold text-[var(--color-primary)] font-sans">
                       {currentWord.meaning}
-                    </div>
+                    </span>
                   </div>
 
-                  <div className={`options-grid w-full ${status === 'incorrect' ? 'shake' : ''}`}>
+                  <div className={`grid grid-cols-1 sm:grid-cols-2 gap-3 w-full max-w-lg ${status === 'incorrect' ? 'shake' : ''}`}>
                     {options.map((opt, i) => {
-                      let statusClass = '';
-                      if (status === 'correct' && opt === currentWord.word) statusClass = 'correct-ans';
-                      if (status === 'incorrect' && opt === selectedOption) statusClass = 'incorrect-ans';
+                      const isSelected = selectedOption === opt;
+                      let btnStyle = 'bg-[rgba(10,15,30,0.8)] border-[rgba(255,255,255,0.15)] text-white hover:border-[var(--color-primary)] hover:bg-[rgba(0,255,255,0.1)]';
+                      
+                      if (status === 'correct' && opt === currentWord.word) {
+                        btnStyle = 'bg-green-600/30 border-green-400 text-green-300 shadow-[0_0_15px_rgba(34,197,94,0.5)]';
+                      } else if (status === 'incorrect' && isSelected) {
+                        btnStyle = 'bg-red-600/30 border-red-500 text-red-300 shadow-[0_0_15px_rgba(239,68,68,0.5)]';
+                      }
                       
                       return (
                         <button 
                           key={i} 
-                          className={`option-btn ${statusClass}`}
+                          className={`p-3.5 rounded-lg border font-mono font-bold text-base transition-all tracking-wider ${btnStyle}`}
                           onClick={() => handleGuess(opt)}
+                          onMouseEnter={() => playSound('hover')}
                         >
                           {opt}
                         </button>
@@ -191,36 +241,39 @@ const GuessMode = () => {
                     })}
                   </div>
                   
-                  <div className="h-8 mt-6 w-full flex items-center justify-center">
+                  <div className="h-6 mt-4 w-full flex items-center justify-center">
                     {status === 'incorrect' && (
-                      <p className="text-red-400 font-semibold animate-fade-up">
-                        Incorrect! Try again...
+                      <p className="text-red-400 font-mono text-xs font-bold animate-fade-up">
+                        MISMATCH DETECTED // RETRYING...
                       </p>
                     )}
                   </div>
 
-                  <div style={{ marginTop: '2rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                  {/* Hint Section */}
+                  <div className="mt-6 pt-4 border-t border-[rgba(255,255,255,0.1)] w-full flex flex-col items-center">
                     {hintLevel < 2 && status !== 'correct' && (
                       <button 
                         type="button"
-                        onClick={() => setHintLevel(prev => prev + 1)}
-                        className="text-btn"
-                        style={{ marginBottom: '1rem', color: 'var(--color-neutral)', textDecoration: 'underline' }}
+                        onClick={() => {
+                          playSound('hover');
+                          setHintLevel(prev => prev + 1);
+                        }}
+                        className="text-xs font-mono text-[rgba(255,255,255,0.6)] hover:text-[#fbbf24] transition-colors underline underline-offset-4"
                       >
-                        Need a hint? (Gain less EXP)
+                        [ Request Clue Hint (EXP Reduced) ]
                       </button>
                     )}
                     
                     {hintLevel > 0 && (
-                      <div style={{ marginTop: '1rem', padding: '1rem 1.5rem', background: 'rgba(255,255,255,0.05)', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(255,255,255,0.1)', display: 'inline-block', animation: 'fadeUp 0.3s ease-out forwards', color: 'var(--color-neutral)', fontSize: '0.875rem', textAlign: 'center' }}>
+                      <div className="mt-3 p-3 rounded-lg bg-[rgba(0,0,0,0.5)] border border-[rgba(251,191,36,0.3)] font-mono text-xs text-[#fbbf24] text-center max-w-sm">
                         {hintLevel >= 1 && (
-                          <p style={{ marginBottom: '0.25rem' }}>
-                            Part of speech: <span style={{ color: 'var(--color-accent)', fontWeight: '600', marginLeft: '0.25rem' }}>{currentWord.type || "Unknown"}</span>
+                          <p>
+                            PART OF SPEECH: <span className="text-white font-bold">{currentWord.type || "N/A"}</span>
                           </p>
                         )}
                         {hintLevel >= 2 && (
-                          <p style={{ marginTop: '0.5rem', paddingTop: '0.5rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-                            Pronunciation: <span style={{ fontFamily: 'var(--font-family-mono)', color: 'var(--color-secondary)', marginLeft: '0.25rem' }}>/{currentWord.ipa || currentWord.thai_pronunciation || "Unknown"}/</span>
+                          <p className="mt-1 pt-1 border-t border-[rgba(255,255,255,0.1)]">
+                            PRONUNCIATION: <span className="text-white font-bold">/{currentWord.ipa || currentWord.thai_pronunciation || "N/A"}/</span>
                           </p>
                         )}
                       </div>
@@ -229,9 +282,23 @@ const GuessMode = () => {
                 </>
               )}
             </div>
-          </Card>
+          </div>
         )}
       </div>
+
+      {/* Mission Debrief Modal */}
+      <MissionDebriefModal
+        isOpen={isDebriefOpen}
+        title="GUESS PROTOCOL COMPLETE"
+        subtitle="SECTOR ALPHA TRAINING"
+        score={correctCount}
+        total={Math.min(words.length, 15)}
+        expGained={correctCount * 15}
+        streakCount={streak}
+        onRetry={() => initWords(level)}
+        onNext={() => initWords(level)}
+        nextLabel="NEXT BATCH"
+      />
     </div>
   );
 };
