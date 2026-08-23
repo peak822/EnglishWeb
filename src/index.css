@@ -1770,6 +1770,13 @@ a:hover {
   --level-border: rgba(192, 132, 252, 0.4);
 }
 
+.story-level-c1 {
+  --level-color: #f43f5e;
+  --level-glow: rgba(244, 63, 94, 0.25);
+  --level-bg: rgba(244, 63, 94, 0.12);
+  --level-border: rgba(244, 63, 94, 0.4);
+}
+
 /* ==========================================================================
    Story Catalog Controls & Quick Level Switcher
    ========================================================================== */
@@ -1871,6 +1878,13 @@ a:hover {
   border-color: #c084fc;
   color: #c084fc;
   box-shadow: 0 0 12px rgba(192, 132, 252, 0.35);
+}
+
+.story-level-pill.active-C1 {
+  background: rgba(244, 63, 94, 0.18);
+  border-color: #f43f5e;
+  color: #f43f5e;
+  box-shadow: 0 0 12px rgba(244, 63, 94, 0.35);
 }
 
 /* Integrated Search Input */

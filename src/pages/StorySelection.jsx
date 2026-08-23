@@ -8,6 +8,7 @@ import {
   Sparkles, 
   Award, 
   Zap, 
+  ShieldCheck,
   ChevronRight,
   Search,
   X
@@ -65,6 +66,16 @@ const StorySelection = () => {
       color: '#c084fc',
       levelClass: 'story-level-b2',
       activePillClass: 'active-B2'
+    },
+    { 
+      id: 'C1', 
+      title: 'C1 Advanced', 
+      titleThai: 'ระดับสูง (Advanced)',
+      description: 'บทความวิเคราะห์เชิงลึก ปรัชญา การเจรจาขั้นสูง และโครงสร้างภาษาที่สละสลวย',
+      icon: ShieldCheck, 
+      color: '#f43f5e',
+      levelClass: 'story-level-c1',
+      activePillClass: 'active-C1'
     }
   ];
 
