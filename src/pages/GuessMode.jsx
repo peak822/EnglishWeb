@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Card from '../components/Card';
 import { useGamification } from '../hooks/useGamification';
 import { useCyberSound } from '../hooks/useCyberSound';
 import { filterWords } from '../hooks/useCategories';
@@ -7,7 +6,7 @@ import LevelSelector from '../components/LevelSelector';
 import TechBracket from '../components/TechBracket';
 import MissionDebriefModal from '../components/MissionDebriefModal';
 import vocabularyData from '../data/vocabulary.json';
-import { HelpCircle, Flame, Activity } from 'lucide-react';
+import { Flame, Activity } from 'lucide-react';
 
 const GuessMode = () => {
   const { addExp } = useGamification();
@@ -132,22 +131,22 @@ const GuessMode = () => {
   }
 
   return (
-    <div className="container animate-fade-up px-4 max-w-4xl mx-auto py-6">
+    <div className="container animate-fade-up" style={{ maxWidth: '850px', padding: '1.5rem 1rem 4rem 1rem' }}>
       <div className="game-container">
         
         {/* HUD Game Header */}
-        <div className="flex flex-wrap items-center justify-between gap-4 mb-4 pb-3 border-b border-[rgba(251,191,36,0.3)]">
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem', marginBottom: '1.25rem', paddingBottom: '0.75rem', borderBottom: '1px solid rgba(251,191,36,0.3)' }}>
           <div>
-            <div className="flex items-center gap-2 text-xs font-mono text-[#fbbf24] font-bold tracking-wider uppercase">
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.72rem', fontFamily: 'var(--font-family-mono)', color: '#fbbf24', fontWeight: '700', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
               <Activity size={15} />
               <span>SECTOR ALPHA // PROTOCOL: GUESS</span>
             </div>
-            <h2 className="text-xl sm:text-2xl font-bold font-sans text-white tracking-wide">
-              Guess Mode <span className="text-[#fbbf24] font-mono text-sm">(Clue Deduction)</span>
+            <h2 style={{ fontSize: '1.4rem', fontWeight: '800', fontFamily: 'var(--font-family-sans)', color: '#ffffff', letterSpacing: '0.02em', marginTop: '0.2rem' }}>
+              Guess Mode <span style={{ color: '#fbbf24', fontSize: '0.9rem', fontFamily: 'var(--font-family-mono)' }}>(Clue Deduction)</span>
             </h2>
           </div>
 
-          <div className="w-48 sm:w-64 z-20">
+          <div style={{ width: '220px', zIndex: 20 }}>
             <LevelSelector 
               value={level} 
               onChange={setLevel} 
@@ -156,82 +155,104 @@ const GuessMode = () => {
         </div>
 
         {/* HUD Tactical Stats */}
-        <div className="grid grid-cols-3 gap-2 p-3 mb-6 rounded-lg bg-[rgba(10,15,30,0.85)] border border-[rgba(251,191,36,0.3)] font-mono text-xs shadow-[0_0_15px_rgba(0,0,0,0.5)]">
-          <div className="flex flex-col items-center">
-            <span className="text-[rgba(255,255,255,0.5)] text-[0.65rem] uppercase">PROGRESS</span>
-            <span className="font-bold text-sm text-[var(--color-primary)]">
+        <div className="hud-stats-grid" style={{ '--hud-border': 'rgba(251, 191, 36, 0.35)' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.65rem', textTransform: 'uppercase' }}>PROGRESS</span>
+            <span style={{ fontWeight: '800', fontSize: '0.95rem', color: 'var(--color-primary)' }}>
               {words.length > 0 ? currentIndex + 1 : 0} / {Math.min(words.length, 15)}
             </span>
           </div>
 
-          <div className="flex flex-col items-center border-x border-[rgba(255,255,255,0.1)]">
-            <span className="text-[rgba(255,255,255,0.5)] text-[0.65rem] uppercase">STREAK COMBO</span>
-            <span className="font-bold text-sm text-[#fbbf24] flex items-center gap-1">
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', borderLeft: '1px solid rgba(255,255,255,0.1)', borderRight: '1px solid rgba(255,255,255,0.1)' }}>
+            <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.65rem', textTransform: 'uppercase' }}>STREAK COMBO</span>
+            <span style={{ fontWeight: '800', fontSize: '0.95rem', color: '#fbbf24', display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
               <Flame size={14} />
               {streak}x
             </span>
           </div>
 
-          <div className="flex flex-col items-center">
-            <span className="text-[rgba(255,255,255,0.5)] text-[0.65rem] uppercase">TYPE</span>
-            <span className="font-bold text-sm text-[var(--color-accent)] uppercase">
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.65rem', textTransform: 'uppercase' }}>TYPE</span>
+            <span style={{ fontWeight: '800', fontSize: '0.95rem', color: 'var(--color-accent)', textTransform: 'uppercase' }}>
               {currentWord ? currentWord.type : '-'}
             </span>
           </div>
         </div>
 
         {words.length === 0 ? (
-          <Card className="text-center py-8 md:py-16">
-            <h3 className="text-xl text-[var(--color-neutral)] font-mono">No tactical words found for this clearance level.</h3>
-          </Card>
+          <div className="hud-panel-box">
+            <h3 style={{ fontSize: '1.1rem', color: 'var(--color-neutral)', fontFamily: 'var(--font-family-mono)' }}>No tactical words found for this clearance level.</h3>
+          </div>
         ) : (
-          <div className="relative p-6 sm:p-10 rounded-xl bg-[rgba(10,15,30,0.9)] border border-[rgba(251,191,36,0.3)] shadow-[0_0_30px_rgba(0,0,0,0.8),_inset_0_0_20px_rgba(251,191,36,0.05)] overflow-hidden">
+          <div className="hud-panel-box" style={{ '--hud-border': 'rgba(251, 191, 36, 0.4)' }}>
             <TechBracket color="#fbbf24" size={18} />
 
             {status === 'correct' && (
-              <div className="absolute inset-0 bg-[rgba(251,191,36,0.1)] animate-pulse z-0" />
+              <div style={{ position: 'absolute', inset: 0, background: 'rgba(251,191,36,0.1)', animation: 'pulse 1.5s infinite', zIndex: 0 }} />
             )}
 
-            <div className="relative z-10 text-center flex flex-col items-center">
+            <div style={{ position: 'relative', zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
               {status === 'correct' ? (
-                <div className="py-6 flex flex-col items-center animate-fade-up w-full font-mono">
-                  <span className="text-xs font-bold text-[#fbbf24] uppercase tracking-widest mb-2">TARGET VERIFIED</span>
-                  <h3 className="text-3xl sm:text-4xl font-black text-white mb-1">{currentWord.word}</h3>
-                  <p className="text-xs text-[rgba(255,255,255,0.7)] mb-4">/{currentWord.ipa || 'no ipa'}/</p>
-                  <div className="p-4 rounded-lg bg-[rgba(0,0,0,0.6)] border border-[rgba(251,191,36,0.4)] max-w-sm w-full">
-                    <p className="text-base text-[var(--color-primary)] font-bold">{currentWord.meaning}</p>
+                <div style={{ padding: '1.5rem 0', display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', fontFamily: 'var(--font-family-mono)' }}>
+                  <span style={{ fontSize: '0.75rem', fontWeight: '800', color: '#fbbf24', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.5rem' }}>TARGET VERIFIED</span>
+                  <h3 style={{ fontSize: '2.4rem', fontWeight: '900', color: '#ffffff', marginBottom: '0.25rem' }}>{currentWord.word}</h3>
+                  <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.7)', marginBottom: '1rem' }}>/{currentWord.ipa || 'no ipa'}/</p>
+                  <div style={{ padding: '1rem 1.5rem', borderRadius: '12px', background: 'rgba(0,0,0,0.6)', border: '1px solid rgba(251,191,36,0.4)', maxWidth: '360px', width: '100%' }}>
+                    <p style={{ fontSize: '1.1rem', color: 'var(--color-primary)', fontWeight: '800' }}>{currentWord.meaning}</p>
                   </div>
-                  <p className="mt-4 text-green-400 font-bold text-xs">
+                  <p style={{ marginTop: '1rem', color: '#4ade80', fontWeight: '800', fontSize: '0.85rem' }}>
                     + {hintLevel === 0 ? 10 : hintLevel === 1 ? 5 : 2} EXP GRANTED
                   </p>
                 </div>
               ) : (
                 <>
-                  <span className="inline-block px-3 py-1 rounded-full bg-[rgba(251,191,36,0.1)] border border-[rgba(251,191,36,0.3)] text-[0.7rem] font-mono tracking-widest text-[#fbbf24] uppercase mb-4">
-                    DECRYPT THE TARGET BY MEANING
+                  <span style={{ display: 'inline-block', padding: '0.25rem 0.85rem', borderRadius: '9999px', background: 'rgba(251,191,36,0.1)', border: '1px solid rgba(251,191,36,0.3)', fontSize: '0.72rem', fontFamily: 'var(--font-family-mono)', letterSpacing: '0.08em', color: '#fbbf24', textTransform: 'uppercase', marginBottom: '1.25rem' }}>
+                    DECRYPT TARGET BY MEANING
                   </span>
 
-                  <div className="w-full max-w-xl p-5 mb-8 rounded-xl bg-[rgba(0,0,0,0.5)] border border-[rgba(255,255,255,0.15)] shadow-[inset_0_0_15px_rgba(0,0,0,0.6)]">
-                    <span className="text-xl sm:text-2xl font-bold text-[var(--color-primary)] font-sans">
+                  <div style={{ width: '100%', maxWidth: '520px', padding: '1.25rem', marginBottom: '1.75rem', borderRadius: '14px', background: 'rgba(0,0,0,0.55)', border: '1px solid rgba(255,255,255,0.15)', boxShadow: 'inset 0 0 15px rgba(0,0,0,0.6)' }}>
+                    <span style={{ fontSize: '1.5rem', fontWeight: '800', color: 'var(--color-primary)', fontFamily: 'var(--font-family-sans)' }}>
                       {currentWord.meaning}
                     </span>
                   </div>
 
-                  <div className={`grid grid-cols-1 sm:grid-cols-2 gap-3 w-full max-w-lg ${status === 'incorrect' ? 'shake' : ''}`}>
+                  <div className={status === 'incorrect' ? 'shake' : ''} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.75rem', width: '100%', maxWidth: '480px' }}>
                     {options.map((opt, i) => {
                       const isSelected = selectedOption === opt;
-                      let btnStyle = 'bg-[rgba(10,15,30,0.8)] border-[rgba(255,255,255,0.15)] text-white hover:border-[var(--color-primary)] hover:bg-[rgba(0,255,255,0.1)]';
+                      let bg = 'rgba(10, 16, 35, 0.85)';
+                      let border = '1.5px solid rgba(255, 255, 255, 0.15)';
+                      let color = '#ffffff';
+                      let shadow = 'none';
                       
                       if (status === 'correct' && opt === currentWord.word) {
-                        btnStyle = 'bg-green-600/30 border-green-400 text-green-300 shadow-[0_0_15px_rgba(34,197,94,0.5)]';
+                        bg = 'rgba(34, 197, 94, 0.25)';
+                        border = '1.5px solid #4ade80';
+                        color = '#86efac';
+                        shadow = '0 0 15px rgba(34, 197, 94, 0.5)';
                       } else if (status === 'incorrect' && isSelected) {
-                        btnStyle = 'bg-red-600/30 border-red-500 text-red-300 shadow-[0_0_15px_rgba(239,68,68,0.5)]';
+                        bg = 'rgba(239, 68, 68, 0.25)';
+                        border = '1.5px solid #ef4444';
+                        color = '#fca5a5';
+                        shadow = '0 0 15px rgba(239, 68, 68, 0.5)';
                       }
                       
                       return (
                         <button 
                           key={i} 
-                          className={`p-3.5 rounded-lg border font-mono font-bold text-base transition-all tracking-wider ${btnStyle}`}
+                          style={{
+                            padding: '0.85rem 1rem',
+                            borderRadius: '10px',
+                            border,
+                            background: bg,
+                            color,
+                            boxShadow: shadow,
+                            fontFamily: 'var(--font-family-mono)',
+                            fontWeight: '800',
+                            fontSize: '1rem',
+                            cursor: 'pointer',
+                            transition: 'all 0.15s ease',
+                            letterSpacing: '0.04em'
+                          }}
                           onClick={() => handleGuess(opt)}
                           onMouseEnter={() => playSound('hover')}
                         >
@@ -241,16 +262,16 @@ const GuessMode = () => {
                     })}
                   </div>
                   
-                  <div className="h-6 mt-4 w-full flex items-center justify-center">
+                  <div style={{ height: '24px', marginTop: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     {status === 'incorrect' && (
-                      <p className="text-red-400 font-mono text-xs font-bold animate-fade-up">
+                      <p style={{ color: '#f87171', fontFamily: 'var(--font-family-mono)', fontSize: '0.78rem', fontWeight: '800' }} className="animate-fade-up">
                         MISMATCH DETECTED // RETRYING...
                       </p>
                     )}
                   </div>
 
                   {/* Hint Section */}
-                  <div className="mt-6 pt-4 border-t border-[rgba(255,255,255,0.1)] w-full flex flex-col items-center">
+                  <div style={{ marginTop: '1.25rem', paddingTop: '1rem', borderTop: '1px solid rgba(255,255,255,0.1)', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     {hintLevel < 2 && status !== 'correct' && (
                       <button 
                         type="button"
@@ -258,22 +279,22 @@ const GuessMode = () => {
                           playSound('hover');
                           setHintLevel(prev => prev + 1);
                         }}
-                        className="text-xs font-mono text-[rgba(255,255,255,0.6)] hover:text-[#fbbf24] transition-colors underline underline-offset-4"
+                        style={{ background: 'transparent', border: 'none', fontSize: '0.78rem', fontFamily: 'var(--font-family-mono)', color: 'rgba(255,255,255,0.6)', cursor: 'pointer', textDecoration: 'underline' }}
                       >
                         [ Request Clue Hint (EXP Reduced) ]
                       </button>
                     )}
                     
                     {hintLevel > 0 && (
-                      <div className="mt-3 p-3 rounded-lg bg-[rgba(0,0,0,0.5)] border border-[rgba(251,191,36,0.3)] font-mono text-xs text-[#fbbf24] text-center max-w-sm">
+                      <div style={{ marginTop: '0.75rem', padding: '0.75rem 1.25rem', borderRadius: '10px', background: 'rgba(0,0,0,0.5)', border: '1px solid rgba(251,191,36,0.3)', fontFamily: 'var(--font-family-mono)', fontSize: '0.78rem', color: '#fbbf24', textAlign: 'center', maxWidth: '340px' }}>
                         {hintLevel >= 1 && (
                           <p>
-                            PART OF SPEECH: <span className="text-white font-bold">{currentWord.type || "N/A"}</span>
+                            PART OF SPEECH: <strong style={{ color: '#ffffff' }}>{currentWord.type || "N/A"}</strong>
                           </p>
                         )}
                         {hintLevel >= 2 && (
-                          <p className="mt-1 pt-1 border-t border-[rgba(255,255,255,0.1)]">
-                            PRONUNCIATION: <span className="text-white font-bold">/{currentWord.ipa || currentWord.thai_pronunciation || "N/A"}/</span>
+                          <p style={{ marginTop: '0.35rem', paddingTop: '0.35rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+                            PRONUNCIATION: <strong style={{ color: '#ffffff' }}>/{currentWord.ipa || currentWord.thai_pronunciation || "N/A"}/</strong>
                           </p>
                         )}
                       </div>

@@ -6,16 +6,16 @@ import React from 'react';
  */
 export const TechBracket = ({ 
   color = 'var(--color-primary, #00ffff)', 
-  size = 12, 
+  size = 14, 
   strokeWidth = 2,
   showDots = true,
   className = ''
 }) => {
   return (
-    <div className={`tech-bracket-overlay pointer-events-none absolute inset-0 z-10 overflow-hidden ${className}`}>
+    <div className={`tech-bracket-overlay ${className}`}>
       {/* Top Left */}
       <svg 
-        className="absolute top-1 left-1" 
+        className="tech-bracket-tl" 
         width={size} 
         height={size} 
         viewBox="0 0 24 24" 
@@ -30,14 +30,14 @@ export const TechBracket = ({
       </svg>
       {showDots && (
         <span 
-          className="absolute top-1.5 left-1.5 w-1 h-1 rounded-full animate-pulse" 
+          className="tech-dot-tl" 
           style={{ backgroundColor: color, boxShadow: `0 0 6px ${color}` }} 
         />
       )}
 
       {/* Top Right */}
       <svg 
-        className="absolute top-1 right-1" 
+        className="tech-bracket-tr" 
         width={size} 
         height={size} 
         viewBox="0 0 24 24" 
@@ -52,14 +52,14 @@ export const TechBracket = ({
       </svg>
       {showDots && (
         <span 
-          className="absolute top-1.5 right-1.5 w-1 h-1 rounded-full animate-pulse" 
+          className="tech-dot-tr" 
           style={{ backgroundColor: color, boxShadow: `0 0 6px ${color}` }} 
         />
       )}
 
       {/* Bottom Left */}
       <svg 
-        className="absolute bottom-1 left-1" 
+        className="tech-bracket-bl" 
         width={size} 
         height={size} 
         viewBox="0 0 24 24" 
@@ -75,7 +75,7 @@ export const TechBracket = ({
 
       {/* Bottom Right */}
       <svg 
-        className="absolute bottom-1 right-1" 
+        className="tech-bracket-br" 
         width={size} 
         height={size} 
         viewBox="0 0 24 24" 

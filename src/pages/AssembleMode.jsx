@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Card from '../components/Card';
 import Button from '../components/Button';
 import vocabularyData from '../data/vocabulary.json';
 import { filterWords } from '../hooks/useCategories';
@@ -8,7 +7,7 @@ import { useCyberSound } from '../hooks/useCyberSound';
 import LevelSelector from '../components/LevelSelector';
 import TechBracket from '../components/TechBracket';
 import MissionDebriefModal from '../components/MissionDebriefModal';
-import { Puzzle, Flame, Activity } from 'lucide-react';
+import { Flame, Activity } from 'lucide-react';
 
 const AssembleMode = () => {
   const { addExp } = useGamification();
@@ -133,22 +132,22 @@ const AssembleMode = () => {
   }
 
   return (
-    <div className="container animate-fade-up px-4 max-w-4xl mx-auto py-6">
+    <div className="container animate-fade-up" style={{ maxWidth: '850px', padding: '1.5rem 1rem 4rem 1rem' }}>
       <div className="game-container">
         
         {/* HUD Game Header */}
-        <div className="flex flex-wrap items-center justify-between gap-4 mb-4 pb-3 border-b border-[rgba(188,19,254,0.3)]">
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem', marginBottom: '1.25rem', paddingBottom: '0.75rem', borderBottom: '1px solid rgba(188,19,254,0.3)' }}>
           <div>
-            <div className="flex items-center gap-2 text-xs font-mono text-[#e879f9] font-bold tracking-wider uppercase">
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.72rem', fontFamily: 'var(--font-family-mono)', color: '#e879f9', fontWeight: '700', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
               <Activity size={15} />
               <span>SECTOR ALPHA // PROTOCOL: ASSEMBLE</span>
             </div>
-            <h2 className="text-xl sm:text-2xl font-bold font-sans text-white tracking-wide">
-              Assemble Mode <span className="text-[#e879f9] font-mono text-sm">(Data Anagrams)</span>
+            <h2 style={{ fontSize: '1.4rem', fontWeight: '800', fontFamily: 'var(--font-family-sans)', color: '#ffffff', letterSpacing: '0.02em', marginTop: '0.2rem' }}>
+              Assemble Mode <span style={{ color: '#e879f9', fontSize: '0.9rem', fontFamily: 'var(--font-family-mono)' }}>(Data Anagrams)</span>
             </h2>
           </div>
 
-          <div className="w-48 sm:w-64 z-20">
+          <div style={{ width: '220px', zIndex: 20 }}>
             <LevelSelector 
               value={level} 
               onChange={setLevel} 
@@ -157,56 +156,69 @@ const AssembleMode = () => {
         </div>
 
         {/* HUD Tactical Stats */}
-        <div className="grid grid-cols-3 gap-2 p-3 mb-6 rounded-lg bg-[rgba(10,15,30,0.85)] border border-[rgba(188,19,254,0.3)] font-mono text-xs shadow-[0_0_15px_rgba(0,0,0,0.5)]">
-          <div className="flex flex-col items-center">
-            <span className="text-[rgba(255,255,255,0.5)] text-[0.65rem] uppercase">PROGRESS</span>
-            <span className="font-bold text-sm text-[var(--color-primary)]">
+        <div className="hud-stats-grid" style={{ '--hud-border': 'rgba(188, 19, 254, 0.35)' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.65rem', textTransform: 'uppercase' }}>PROGRESS</span>
+            <span style={{ fontWeight: '800', fontSize: '0.95rem', color: 'var(--color-primary)' }}>
               {words.length > 0 ? currentIndex + 1 : 0} / {Math.min(words.length, 15)}
             </span>
           </div>
 
-          <div className="flex flex-col items-center border-x border-[rgba(255,255,255,0.1)]">
-            <span className="text-[rgba(255,255,255,0.5)] text-[0.65rem] uppercase">STREAK COMBO</span>
-            <span className="font-bold text-sm text-[#e879f9] flex items-center gap-1">
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', borderLeft: '1px solid rgba(255,255,255,0.1)', borderRight: '1px solid rgba(255,255,255,0.1)' }}>
+            <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.65rem', textTransform: 'uppercase' }}>STREAK COMBO</span>
+            <span style={{ fontWeight: '800', fontSize: '0.95rem', color: '#e879f9', display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
               <Flame size={14} />
               {streak}x
             </span>
           </div>
 
-          <div className="flex flex-col items-center">
-            <span className="text-[rgba(255,255,255,0.5)] text-[0.65rem] uppercase">TYPE</span>
-            <span className="font-bold text-sm text-[var(--color-accent)] uppercase">
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.65rem', textTransform: 'uppercase' }}>TYPE</span>
+            <span style={{ fontWeight: '800', fontSize: '0.95rem', color: 'var(--color-accent)', textTransform: 'uppercase' }}>
               {currentWord ? currentWord.type : '-'}
             </span>
           </div>
         </div>
 
         {words.length === 0 ? (
-          <Card className="text-center py-8 md:py-16">
-            <h3 className="text-xl text-[var(--color-neutral)] font-mono">No data fragments for this clearance level.</h3>
-          </Card>
+          <div className="hud-panel-box">
+            <h3 style={{ fontSize: '1.1rem', color: 'var(--color-neutral)', fontFamily: 'var(--font-family-mono)' }}>No data fragments for this clearance level.</h3>
+          </div>
         ) : (
-          <div className="relative p-6 sm:p-10 rounded-xl bg-[rgba(10,15,30,0.9)] border border-[rgba(188,19,254,0.3)] shadow-[0_0_30px_rgba(0,0,0,0.8),_inset_0_0_20px_rgba(188,19,254,0.05)] overflow-hidden">
+          <div className="hud-panel-box" style={{ '--hud-border': 'rgba(188, 19, 254, 0.4)' }}>
             <TechBracket color="#e879f9" size={18} />
 
             {status === 'correct' && (
-              <div className="absolute inset-0 bg-[rgba(188,19,254,0.1)] animate-pulse z-0" />
+              <div style={{ position: 'absolute', inset: 0, background: 'rgba(188,19,254,0.1)', animation: 'pulse 1.5s infinite', zIndex: 0 }} />
             )}
 
-            <div className="relative z-10 text-center">
-              <span className="inline-block px-3 py-1 rounded-full bg-[rgba(188,19,254,0.1)] border border-[rgba(188,19,254,0.3)] text-[0.7rem] font-mono tracking-widest text-[#e879f9] uppercase mb-4">
+            <div style={{ position: 'relative', zIndex: 10 }}>
+              <span style={{ display: 'inline-block', padding: '0.25rem 0.85rem', borderRadius: '9999px', background: 'rgba(188,19,254,0.1)', border: '1px solid rgba(188,19,254,0.3)', fontSize: '0.72rem', fontFamily: 'var(--font-family-mono)', letterSpacing: '0.08em', color: '#e879f9', textTransform: 'uppercase', marginBottom: '1.5rem' }}>
                 TRANSLATION TARGET: {currentWord.meaning}
               </span>
               
-              <div className={`letters-container mb-8 flex justify-center gap-2 flex-wrap ${status === 'incorrect' ? 'shake' : ''}`}>
+              {/* Assembled Word Slot Row */}
+              <div className={`letters-container ${status === 'incorrect' ? 'shake' : ''}`} style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
                 {assembledWord.map((slot, i) => (
                   <div 
                     key={i} 
-                    className={`w-12 h-14 sm:w-14 sm:h-16 rounded-lg flex items-center justify-center font-mono font-bold text-xl sm:text-2xl border-2 cursor-pointer transition-all ${
-                      slot 
-                        ? 'bg-[rgba(0,255,255,0.15)] border-[var(--color-primary)] text-white shadow-[0_0_15px_rgba(0,255,255,0.3)]' 
-                        : 'bg-[rgba(0,0,0,0.4)] border-[rgba(255,255,255,0.15)] text-transparent'
-                    } ${status === 'incorrect' ? 'border-red-500 bg-red-950/40' : ''}`}
+                    style={{
+                      width: '52px',
+                      height: '62px',
+                      borderRadius: '10px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontFamily: 'var(--font-family-mono)',
+                      fontWeight: '800',
+                      fontSize: '1.4rem',
+                      border: slot ? '2px solid var(--color-primary)' : '1.5px dashed rgba(255,255,255,0.2)',
+                      background: slot ? 'rgba(0, 255, 255, 0.15)' : 'rgba(0,0,0,0.4)',
+                      color: '#ffffff',
+                      boxShadow: slot ? '0 0 15px rgba(0, 255, 255, 0.3)' : 'none',
+                      cursor: 'pointer',
+                      transition: 'all 0.2s ease'
+                    }}
                     onClick={() => handleSlotClick(slot, i)}
                   >
                     {slot ? slot.char.toUpperCase() : ''}
@@ -215,16 +227,30 @@ const AssembleMode = () => {
               </div>
 
               {/* Scrambled Available Letter Blocks */}
-              <div className="letters-container border-t border-[rgba(255,255,255,0.1)] pt-6 flex justify-center gap-2 flex-wrap">
+              <div style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', flexWrap: 'wrap', paddingTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
                 {scrambledLetters.map(letter => (
                   <button 
                     key={letter.id} 
                     disabled={letter.used || status === 'correct'}
-                    className={`w-11 h-13 sm:w-13 sm:h-15 rounded-lg flex items-center justify-center font-mono font-bold text-lg sm:text-xl border transition-all ${
-                      letter.used 
-                        ? 'opacity-20 pointer-events-none border-transparent bg-transparent' 
-                        : 'bg-[rgba(188,19,254,0.15)] border-[rgba(188,19,254,0.4)] text-white hover:bg-[rgba(188,19,254,0.3)] hover:scale-105 shadow-[0_0_10px_rgba(188,19,254,0.2)]'
-                    }`}
+                    style={{
+                      width: '48px',
+                      height: '56px',
+                      borderRadius: '10px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontFamily: 'var(--font-family-mono)',
+                      fontWeight: '800',
+                      fontSize: '1.25rem',
+                      border: '1.5px solid rgba(188, 19, 254, 0.4)',
+                      background: letter.used ? 'transparent' : 'rgba(188, 19, 254, 0.15)',
+                      color: letter.used ? 'transparent' : '#ffffff',
+                      boxShadow: letter.used ? 'none' : '0 0 12px rgba(188, 19, 254, 0.2)',
+                      cursor: letter.used ? 'default' : 'pointer',
+                      opacity: letter.used ? 0.2 : 1,
+                      pointerEvents: letter.used ? 'none' : 'auto',
+                      transition: 'all 0.2s ease'
+                    }}
                     onClick={() => handleLetterClick(letter)}
                   >
                     {letter.char.toUpperCase()}
@@ -232,17 +258,17 @@ const AssembleMode = () => {
                 ))}
               </div>
               
-              <div className="mt-8 flex flex-col items-center">
+              <div style={{ marginTop: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 {showHint && status !== 'correct' && (
-                  <div className="mb-4 text-[#e879f9] text-xs font-mono animate-fade-up bg-[rgba(0,0,0,0.6)] py-2 px-4 rounded-lg border border-[rgba(188,19,254,0.3)]">
-                    💡 คำอ่าน: <span className="text-white font-bold">{currentWord.thai_pronunciation || currentWord.ipa || 'N/A'}</span>
+                  <div style={{ marginBottom: '1rem', color: '#e879f9', fontSize: '0.8rem', fontFamily: 'var(--font-family-mono)', background: 'rgba(0,0,0,0.6)', padding: '0.5rem 1rem', borderRadius: '8px', border: '1px solid rgba(188,19,254,0.3)' }}>
+                    💡 คำอ่าน: <span style={{ color: '#ffffff', fontWeight: '700', marginLeft: '0.3rem' }}>{currentWord.thai_pronunciation || currentWord.ipa || 'N/A'}</span>
                   </div>
                 )}
                 
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full max-w-sm">
+                <div style={{ display: 'flex', justifyContent: 'center', width: '100%', maxWidth: '300px' }}>
                   <Button 
                     variant="secondary" 
-                    className="w-full font-mono text-xs tracking-wider"
+                    style={{ width: '100%', fontFamily: 'var(--font-family-mono)', fontSize: '0.8rem', fontWeight: '700' }}
                     onClick={() => {
                       playSound('click');
                       setAssembledWord(new Array(currentWord.word.length).fill(null));
@@ -261,7 +287,7 @@ const AssembleMode = () => {
                       playSound('hover');
                       setShowHint(true);
                     }}
-                    className="mt-4 text-xs font-mono text-[rgba(255,255,255,0.6)] hover:text-[var(--color-primary)] transition-colors underline underline-offset-4"
+                    style={{ marginTop: '1rem', background: 'transparent', border: 'none', fontSize: '0.78rem', fontFamily: 'var(--font-family-mono)', color: 'rgba(255,255,255,0.6)', cursor: 'pointer', textDecoration: 'underline' }}
                   >
                     [ Request Hint ]
                   </button>

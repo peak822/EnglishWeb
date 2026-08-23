@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
-  Search, 
   Terminal, 
   X, 
   Volume2, 
@@ -146,42 +145,42 @@ export const CommandPalette = ({ isOpen, onClose, currentTheme, onThemeChange })
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-[rgba(5,5,18,0.75)] backdrop-blur-md animate-fade-in" onClick={onClose}>
+    <div className="cyber-modal-backdrop align-top" onClick={onClose}>
       <div 
-        className="cyber-command-palette relative w-full max-w-2xl bg-[var(--color-surface,rgba(10,15,30,0.95))] border border-[var(--color-primary)] rounded-xl shadow-[0_0_30px_rgba(0,255,255,0.25)] overflow-hidden flex flex-col max-h-[75vh]"
+        className="cyber-command-palette"
         onClick={(e) => e.stopPropagation()}
         onKeyDown={handleKeyDown}
       >
         <TechBracket color="var(--color-primary)" size={16} />
 
         {/* Header / Input Field */}
-        <div className="flex items-center gap-3 px-4 py-3 border-b border-[rgba(0,255,255,0.2)] bg-[rgba(0,255,255,0.03)]">
-          <Terminal size={20} className="text-[var(--color-primary)] animate-pulse" />
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.85rem 1.25rem', borderBottom: '1px solid rgba(0,255,255,0.25)', background: 'rgba(0,255,255,0.04)' }}>
+          <Terminal size={20} style={{ color: 'var(--color-primary)' }} />
           <input
             ref={inputRef}
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Type command, protocol name, or shortcut..."
-            className="flex-1 bg-transparent border-none outline-none text-[var(--color-secondary,#fff)] font-mono text-sm sm:text-base placeholder-[rgba(255,255,255,0.4)]"
+            style={{ flex: 1, background: 'transparent', border: 'none', outline: 'none', color: '#ffffff', fontFamily: 'var(--font-family-mono)', fontSize: '0.95rem' }}
           />
           {query && (
             <button 
               onClick={() => setQuery('')} 
-              className="text-[var(--color-neutral)] hover:text-white p-1"
+              style={{ background: 'transparent', border: 'none', color: 'rgba(255,255,255,0.6)', cursor: 'pointer', padding: '4px' }}
             >
               <X size={16} />
             </button>
           )}
-          <span className="hidden sm:inline-block text-[0.65rem] font-mono tracking-wider px-2 py-0.5 rounded bg-[rgba(0,255,255,0.1)] text-[var(--color-primary)] border border-[rgba(0,255,255,0.3)]">
-            ESC TO CLOSE
+          <span style={{ fontSize: '0.65rem', fontFamily: 'var(--font-family-mono)', letterSpacing: '0.08em', padding: '0.2rem 0.5rem', borderRadius: '4px', background: 'rgba(0,255,255,0.1)', color: 'var(--color-primary)', border: '1px solid rgba(0,255,255,0.3)' }}>
+            ESC
           </span>
         </div>
 
         {/* Results List */}
-        <div ref={listRef} className="overflow-y-auto p-2 divide-y divide-[rgba(255,255,255,0.05)] custom-scrollbar">
+        <div ref={listRef} className="custom-scrollbar" style={{ overflowY: 'auto', padding: '0.5rem', maxHeight: '55vh' }}>
           {allItems.length === 0 ? (
-            <div className="py-8 text-center text-xs font-mono text-[var(--color-neutral)] uppercase tracking-wider">
+            <div style={{ padding: '2rem 1rem', textAlign: 'center', fontSize: '0.8rem', fontFamily: 'var(--font-family-mono)', color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
               No tactical protocols found matching "{query}"
             </div>
           ) : (
@@ -192,28 +191,38 @@ export const CommandPalette = ({ isOpen, onClose, currentTheme, onThemeChange })
                   key={item.id}
                   onClick={() => executeItem(item)}
                   onMouseEnter={() => setSelectedIndex(idx)}
-                  className={`flex items-center justify-between px-3 py-2.5 rounded-lg cursor-pointer transition-all duration-150 font-mono text-xs sm:text-sm ${
-                    isSelected 
-                      ? 'bg-[rgba(0,255,255,0.15)] text-[var(--color-primary)] shadow-[0_0_10px_rgba(0,255,255,0.2)] translate-x-1' 
-                      : 'text-[var(--color-secondary,#fff)] hover:bg-[rgba(255,255,255,0.05)]'
-                  }`}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    padding: '0.65rem 0.85rem',
+                    borderRadius: '8px',
+                    cursor: 'pointer',
+                    transition: 'all 0.15s ease',
+                    fontFamily: 'var(--font-family-mono)',
+                    fontSize: '0.85rem',
+                    background: isSelected ? 'rgba(0, 255, 255, 0.15)' : 'transparent',
+                    color: isSelected ? 'var(--color-primary)' : '#ffffff',
+                    border: isSelected ? '1px solid rgba(0, 255, 255, 0.3)' : '1px solid transparent',
+                    marginBottom: '2px'
+                  }}
                 >
-                  <div className="flex items-center gap-3">
-                    <span className={`${isSelected ? 'text-[var(--color-primary)] animate-pulse' : 'text-[rgba(255,255,255,0.6)]'}`}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                    <span style={{ color: isSelected ? 'var(--color-primary)' : 'rgba(255,255,255,0.6)' }}>
                       {item.icon}
                     </span>
-                    <span className="font-semibold">{item.title}</span>
+                    <span style={{ fontWeight: isSelected ? '700' : '500' }}>{item.title}</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-[0.65rem] text-[rgba(255,255,255,0.4)] uppercase">
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <span style={{ fontSize: '0.65rem', color: 'rgba(255,255,255,0.45)', textTransform: 'uppercase' }}>
                       {item.category}
                     </span>
                     {item.shortcut && (
-                      <span className="text-[0.65rem] px-1.5 py-0.5 rounded bg-[rgba(255,255,255,0.1)] text-white border border-[rgba(255,255,255,0.2)]">
+                      <span style={{ fontSize: '0.65rem', padding: '0.15rem 0.4rem', borderRadius: '4px', background: 'rgba(255,255,255,0.1)', color: '#ffffff', border: '1px solid rgba(255,255,255,0.2)' }}>
                         {item.shortcut}
                       </span>
                     )}
-                    <ArrowRight size={14} className={`transition-transform duration-200 ${isSelected ? 'translate-x-1 opacity-100' : 'opacity-0'}`} />
+                    <ArrowRight size={14} style={{ opacity: isSelected ? 1 : 0, transform: isSelected ? 'translateX(2px)' : 'none', transition: 'all 0.2s ease' }} />
                   </div>
                 </div>
               );
@@ -222,12 +231,12 @@ export const CommandPalette = ({ isOpen, onClose, currentTheme, onThemeChange })
         </div>
 
         {/* Footer HUD info */}
-        <div className="px-4 py-2 border-t border-[rgba(0,255,255,0.15)] bg-[rgba(0,0,0,0.4)] flex items-center justify-between text-[0.7rem] font-mono text-[rgba(255,255,255,0.5)]">
-          <div className="flex items-center gap-3">
+        <div style={{ padding: '0.6rem 1rem', borderTop: '1px solid rgba(0,255,255,0.15)', background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.7rem', fontFamily: 'var(--font-family-mono)', color: 'rgba(255,255,255,0.5)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <span>↑↓ Navigate</span>
             <span>↵ Select</span>
           </div>
-          <span className="text-[var(--color-primary)]">CYBER-HUD TERMINAL v2.4</span>
+          <span style={{ color: 'var(--color-primary)' }}>CYBER-HUD TERMINAL v2.4</span>
         </div>
       </div>
     </div>
