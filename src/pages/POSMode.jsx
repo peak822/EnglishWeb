@@ -56,7 +56,11 @@ const POSMode = () => {
 
     setTotalAnswered(t => t + 1);
 
-    if (selectedPOS === currentQuestion.correctPOS) {
+    const isCorrect = currentQuestion.validPOSList 
+      ? currentQuestion.validPOSList.includes(selectedPOS) 
+      : selectedPOS === currentQuestion.correctPOS;
+
+    if (isCorrect) {
       // Correct answer
       const streakBonus = Math.floor(streak / 5) * 5;
       const pointsGained = 10 + streakBonus;

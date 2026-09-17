@@ -81,34 +81,49 @@ export const POS_DETAILS = {
   }
 };
 
+export function extractAllPOS(rawType) {
+  if (!rawType) return [];
+  const matches = rawType.match(/(?:^|\s|\b|,)(n\.|v\.|adj\.|adv\.|prep\.|pron\.|conj\.)/g);
+  if (!matches) return [];
+  const posSet = new Set();
+  matches.forEach(m => {
+    const clean = m.replace(/^[,\s]+/, '');
+    if (POS_MAP[clean]) {
+      posSet.add(POS_MAP[clean]);
+    }
+  });
+  return Array.from(posSet);
+}
+
 export function extractPrimaryPOS(rawType) {
-  if (!rawType) return null;
-  // Match one of the supported POS tags, ensuring it's not part of another word
-  const match = rawType.match(/(?:^|\s|\b)(n\.|v\.|adj\.|adv\.|prep\.|pron\.|conj\.)/);
-  return match ? POS_MAP[match[1]] : null;
+  const all = extractAllPOS(rawType);
+  return all.length > 0 ? all[0] : null;
 }
 
 export function generateQuestion(vocabList) {
-  const validVocab = vocabList.filter(v => extractPrimaryPOS(v.type));
+  const validVocab = vocabList.filter(v => extractAllPOS(v.type).length > 0);
   if (validVocab.length === 0) return null;
 
   // Pick a random word
   const wordObj = validVocab[Math.floor(Math.random() * validVocab.length)];
-  const correctPOS = extractPrimaryPOS(wordObj.type);
+  const validPOSList = extractAllPOS(wordObj.type);
+  const primaryPOS = validPOSList[Math.floor(Math.random() * validPOSList.length)];
   
   const allPos = Object.values(POS_MAP);
-  let options = new Set([correctPOS]);
+  // Incorrect POS pool: all POS not belonging to this word
+  const incorrectPool = allPos.filter(pos => !validPOSList.includes(pos));
   
-  // Fill options with random incorrect POS until we have 4 choices
-  while(options.size < 4) {
-    const randomPos = allPos[Math.floor(Math.random() * allPos.length)];
-    options.add(randomPos);
-  }
+  // Shuffle incorrect pool and pick 3
+  const shuffledIncorrect = [...incorrectPool].sort(() => 0.5 - Math.random());
+  const selectedIncorrect = shuffledIncorrect.slice(0, 3);
+  
+  // Combine primary valid POS + 3 incorrect choices
+  const options = [primaryPOS, ...selectedIncorrect].sort(() => 0.5 - Math.random());
   
   return {
     currentWord: wordObj,
-    correctPOS: correctPOS,
-    // Shuffle the 4 options
-    options: Array.from(options).sort(() => Math.random() - 0.5)
+    correctPOS: primaryPOS,
+    validPOSList: validPOSList,
+    options: options
   };
 }
