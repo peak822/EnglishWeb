@@ -400,8 +400,25 @@ const supplementalDict = {
   "carrier's": { word: "carrier's", type: 'n.', level: 'B1', ipa: 'ˈkæriərz', thai_pronunciation: 'แค-ริ-เออร์ส', meaning: 'ของสายการบิน / ของผู้ให้บริการขนส่ง' },
   'invoices': { word: 'invoices', type: 'n.', level: 'B1', ipa: 'ˈɪnvɔɪsɪz', thai_pronunciation: 'อิน-วอย-สิส', meaning: 'ใบแจ้งหนี้, ใบส่งของ (หลายใบ)' },
   'reimbursed': { word: 'reimbursed', type: 'v.', level: 'B2', ipa: 'ˌriːɪmˈbɜːrst', thai_pronunciation: 'รี-อิม-เบิร์สต์', meaning: 'ได้รับเงินชดเชยคืนแล้ว, จ่ายเงินคืนแล้ว' },
-  'awry': { word: 'awry', type: 'adj., adv.', level: 'C1', ipa: 'əˈraɪ', thai_pronunciation: 'เออะ-ไร', meaning: 'ผิดแผน, ผิดทิศผิดทาง, บิดเบี้ยวไปจากเดิม' }
+  'awry': { word: 'awry', type: 'adj., adv.', level: 'C1', ipa: 'əˈraɪ', thai_pronunciation: 'เออะ-ไร', meaning: 'ผิดแผน, ผิดทิศผิดทาง, บิดเบี้ยวไปจากเดิม' },
+  'jelly': { word: 'jelly', type: 'n.', level: 'A1', ipa: 'ˈdʒeli', thai_pronunciation: 'เจล-ลี', meaning: 'เยลลี่, วุ้น, แยมผลไม้' },
+  'belly': { word: 'belly', type: 'n.', level: 'A2', ipa: 'ˈbeli', thai_pronunciation: 'เบล-ลี', meaning: 'ท้อง, พุง' },
+  'alley': { word: 'alley', type: 'n.', level: 'B1', ipa: 'ˈæli', thai_pronunciation: 'แอล-ลี', meaning: 'ตรอก, ซอย' },
+  'bully': { word: 'bully', type: 'n., v.', level: 'B1', ipa: 'ˈbʊli', thai_pronunciation: 'บูล-ลี', meaning: 'อันธพาล, รังแก, กลั่นแกล้ง' },
+  'chilly': { word: 'chilly', type: 'adj.', level: 'B1', ipa: 'ˈtʃɪli', thai_pronunciation: 'ชิล-ลี', meaning: 'หนาวเย็น, เยือกเย็น' },
+  'hilly': { word: 'hilly', type: 'adj.', level: 'B1', ipa: 'ˈhɪli', thai_pronunciation: 'ฮิล-ลี', meaning: 'เต็มไปด้วยเนินเขา' },
+  'wobbly': { word: 'wobbly', type: 'adj.', level: 'B2', ipa: 'ˈwɑːbli', thai_pronunciation: 'ว็อบ-บลี', meaning: 'โอนเอน, โซเซ, สั่นคลอน' }
 };
+
+// Non-derived words ending in -ly that should NOT be stripped
+const NON_DERIVED_LY = new Set([
+  'early', 'only', 'apply', 'reply', 'supply', 'rely', 'daily', 
+  'ugly', 'silly', 'lonely', 'lovely', 'friendly', 'elderly', 
+  'costly', 'orderly', 'lively', 'holy', 'jelly', 'belly', 
+  'alley', 'rally', 'bully', 'folly', 'gully', 'dolly', 'fully', 
+  'chilly', 'hilly', 'wobbly', 'assembly', 'family', 'multiply',
+  'italy', 'july', 'imply', 'comply', 'anomaly'
+]);
 
 /**
  * Robust word lookup supporting:
@@ -567,7 +584,7 @@ export function lookupWord(rawWord) {
   }
 
   // -ly (slowly -> slow, luckily -> lucky)
-  if (lower.endsWith('ly') && lower.length > 3) {
+  if (lower.endsWith('ly') && lower.length > 3 && !NON_DERIVED_LY.has(lower)) {
     let res = tryBase(lower.slice(0, -2), 'กริยาวิเศษณ์ (-ly)', 'อย่าง');
     if (res) return res;
     if (lower.endsWith('ily')) {
