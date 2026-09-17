@@ -107,7 +107,7 @@ const ListeningMode = () => {
     return (
       <div className="container animate-fade-up text-center py-20">
         <h2 className="text-gradient text-4xl mb-4">Amazing Job! 🎉</h2>
-        <button onClick={() => window.location.href = '/'} className="ui-btn ui-btn-primary">Back to Home</button>
+        <button onClick={() => navigate('/')} className="ui-btn ui-btn-primary">Back to Home</button>
       </div>
     );
   }

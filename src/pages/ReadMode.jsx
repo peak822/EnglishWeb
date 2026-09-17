@@ -40,8 +40,8 @@ const ReadMode = () => {
     <div className="container animate-fade-up">
       <div className="read-mode-wrapper">
         <div className="text-center mb-10">
-          <h2 className="text-gradient mb-4">Reading Mode</h2>
-          <p className="read-mode-subtitle">Browse all 5,000 Oxford vocabulary words.</p>
+          <h2 className="text-gradient mb-4">Oxford 5000 Vocab Vault</h2>
+          <p className="read-mode-subtitle">Explore, search, and master essential Oxford 5000 vocabulary words with IPA and audio pronunciation.</p>
         </div>
 
         {/* Controls Section */}

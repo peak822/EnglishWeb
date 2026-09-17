@@ -203,12 +203,12 @@ const Home = () => {
         },
         {
           id: 'syntax',
-          title: 'Syntax Tree Mode',
-          subtitle: 'Sentence Blueprint Builder',
-          description: 'ทำความเข้าใจ Subject, Verb, Object, Prepositional Phrase ด้วยแถบสีและไฮไลต์',
+          title: 'Syntax Structure Mode',
+          subtitle: 'Sentence Assembly Drill',
+          description: 'ฝึกจัดเรียงคำศัพท์ในประโยคให้ถูกต้องตามโครงสร้างไวยากรณ์และความหมายภาษาไทย',
           icon: <Bookmark size={24} />,
           path: '/syntax',
-          expTag: '+25 EXP / TREE',
+          expTag: '+25 EXP / SENTENCE',
           badge: 'SYNTAX',
           color: '#a855f7'
         },
