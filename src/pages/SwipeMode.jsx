@@ -48,18 +48,32 @@ const SwipeMode = () => {
     const isCorrect = Math.random() > 0.5;
     
     let displayedMeaning = targetWord.meaning;
+    let finalIsCorrect = isCorrect;
+
     if (!isCorrect) {
-      let randomWord;
+      let randomWord = null;
+      let attempts = 0;
       do {
         randomWord = wordList[Math.floor(Math.random() * wordList.length)];
-      } while (randomWord.id === targetWord.id);
-      displayedMeaning = randomWord.meaning;
+        attempts++;
+      } while (
+        attempts < 30 && 
+        (randomWord.id === targetWord.id || 
+         randomWord.meaning.trim() === targetWord.meaning.trim() ||
+         randomWord.word.toLowerCase() === targetWord.word.toLowerCase())
+      );
+      displayedMeaning = randomWord ? randomWord.meaning : targetWord.meaning;
+      
+      // If fallback picked the same meaning, treat card as correct to prevent false negative penalty
+      if (displayedMeaning.trim() === targetWord.meaning.trim()) {
+        finalIsCorrect = true;
+      }
     }
     
     setCurrentCard({
       word: targetWord.word,
       meaning: displayedMeaning,
-      isCorrect
+      isCorrect: finalIsCorrect
     });
     setTimeLeft(100);
   }, []);
