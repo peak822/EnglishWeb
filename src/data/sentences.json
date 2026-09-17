@@ -1,202 +1,3341 @@
 [
   {
+    "id": 1,
     "wordId": 7,
     "word": "about",
-    "sentence": "We talked _____ the movie for hours."
+    "targetPOS": "preposition",
+    "level": "A1",
+    "sentence": "We talked _____ the movie for hours.",
+    "translationThai": "เราคุยเกี่ยวกับภาพยนตร์เรื่องนั้นเป็นเวลาหลายชั่วโมง"
   },
   {
+    "id": 2,
     "wordId": 8,
     "word": "above",
-    "sentence": "The bird flew _____ the clouds."
+    "targetPOS": "preposition",
+    "level": "A1",
+    "sentence": "The white bird flew high _____ the clouds.",
+    "translationThai": "นกสีขาวบินสูงอยู่เหนือเมฆ"
   },
   {
+    "id": 3,
+    "wordId": 24,
+    "word": "accept",
+    "targetPOS": "verb",
+    "level": "A2",
+    "sentence": "He decided to _____ the new job offer in London.",
+    "translationThai": "เขาตัดสินใจยอมรับข้อเสนอการทำงานใหม่ในลอนดอน"
+  },
+  {
+    "id": 4,
+    "wordId": 29,
+    "word": "accident",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "Drive carefully so you do not cause a car _____.",
+    "translationThai": "ขับรถอย่างระมัดระวังเพื่อไม่ให้เกิดอุบัติเหตุทางรถยนต์"
+  },
+  {
+    "id": 5,
     "wordId": 61,
     "word": "across",
-    "sentence": "She walked _____ the street safely."
+    "targetPOS": "preposition",
+    "level": "A1",
+    "sentence": "She walked _____ the street safely at the crosswalk.",
+    "translationThai": "เธอเดินข้ามถนนอย่างปลอดภัยตรงทางม้าลาย"
   },
   {
+    "id": 6,
     "wordId": 63,
     "word": "action",
-    "sentence": "The hero took _____ to save the city."
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "The government took immediate _____ to solve the crisis.",
+    "translationThai": "รัฐบาลได้ดำเนินการอย่างทันท่วงทีเพื่อแก้ไขวิกฤต"
   },
   {
+    "id": 7,
     "wordId": 68,
     "word": "activity",
-    "sentence": "Swimming is my favorite summer _____."
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Swimming is my favorite outdoor _____ in summer.",
+    "translationThai": "การว่ายน้ำเป็นกิจกรรมกลางแจ้งที่ฉันชอบที่สุดในฤดูร้อน"
   },
   {
+    "id": 8,
     "wordId": 69,
     "word": "actor",
-    "sentence": "He is a famous Hollywood _____."
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "He is a famous Hollywood _____ starring in many films.",
+    "translationThai": "เขาเป็นนักแสดงฮอลลีวูดชื่อดังที่แสดงในภาพยนตร์หลายเรื่อง"
   },
   {
+    "id": 9,
     "wordId": 70,
     "word": "actress",
-    "sentence": "She won an award for best _____."
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "She won an international award for best _____.",
+    "translationThai": "เธอได้รับรางวัลระดับนานาชาติในฐานะนักแสดงนำหญิงยอดเยี่ยม"
   },
   {
+    "id": 10,
     "wordId": 77,
     "word": "add",
-    "sentence": "Please _____ some sugar to my coffee."
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Please _____ some fresh milk and sugar to my tea.",
+    "translationThai": "โปรดเติมนมสดและน้ำตาลลงในชาของฉัน"
   },
   {
+    "id": 11,
     "wordId": 82,
     "word": "address",
-    "sentence": "What is your home _____?"
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Please write down your current home _____ on this form.",
+    "translationThai": "กรุณาเขียนที่อยู่บ้านปัจจุบันของคุณลงในแบบฟอร์มนี้"
   },
   {
+    "id": 12,
     "wordId": 100,
     "word": "adult",
-    "sentence": "This movie is only for an _____."
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "You must be a responsible _____ to sign this contract.",
+    "translationThai": "คุณต้องเป็นผู้ใหญ่ที่มีความรับผิดชอบเพื่อลงนามในสัญญานี้"
   },
   {
+    "id": 13,
     "wordId": 110,
     "word": "advice",
-    "sentence": "Can you give me some good _____?"
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "My mentor always gives me practical and helpful _____.",
+    "translationThai": "ที่ปรึกษาของฉันมักจะให้คำแนะนำที่เป็นประโยชน์และใช้ได้จริงเสมอ"
   },
   {
+    "id": 14,
     "wordId": 123,
     "word": "afraid",
-    "sentence": "I am _____ of the dark."
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "The little boy was _____ of the dark room.",
+    "translationThai": "เด็กชายตัวน้อยกลัวห้องมืด"
   },
   {
+    "id": 15,
     "wordId": 124,
     "word": "after",
-    "sentence": "We will eat dinner _____ we finish work."
+    "targetPOS": "preposition",
+    "level": "A1",
+    "sentence": "We will go for a walk _____ dinner is finished.",
+    "translationThai": "พวกเราจะไปเดินเล่นหลังจากทานอาหารเย็นเสร็จ"
   },
   {
+    "id": 16,
     "wordId": 126,
     "word": "afternoon",
-    "sentence": "Good _____, how can I help you?"
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "I usually drink green tea in the late _____.",
+    "translationThai": "ฉันมักจะดื่มชาเขียวในช่วงบ่ายแก่ๆ"
   },
   {
+    "id": 17,
     "wordId": 128,
     "word": "again",
-    "sentence": "Could you please say that _____?"
+    "targetPOS": "adverb",
+    "level": "A1",
+    "sentence": "Could you please repeat that important point _____?",
+    "translationThai": "คุณช่วยกรุณาพูดประเด็นสำคัญนั้นซ้ำอีกครั้งได้ไหม"
   },
   {
+    "id": 18,
     "wordId": 130,
     "word": "age",
-    "sentence": "At what _____ did you start school?"
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "At what _____ did you begin learning the piano?",
+    "translationThai": "คุณเริ่มเรียนเปียโนตอนอายุเท่าไหร่"
   },
   {
+    "id": 19,
     "wordId": 139,
     "word": "ago",
-    "sentence": "I moved to this city five years _____."
+    "targetPOS": "adverb",
+    "level": "A1",
+    "sentence": "I moved to this coastal town three years _____.",
+    "translationThai": "ฉันย้ายมาอยู่เมืองชายทะเลแห่งนี้เมื่อสามปีที่แล้ว"
   },
   {
+    "id": 20,
     "wordId": 140,
     "word": "agree",
-    "sentence": "I completely _____ with your idea."
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "I completely _____ with your proposal to improve safety.",
+    "translationThai": "ฉันเห็นด้วยอย่างยิ่งกับข้อเสนอของคุณในการปรับปรุงความปลอดภัย"
   },
   {
+    "id": 21,
     "wordId": 150,
     "word": "air",
-    "sentence": "The _____ outside is very fresh today."
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The morning _____ in the mountains feels crisp and clean.",
+    "translationThai": "อากาศยามเช้าบนภูเขารู้สึกสดชื่นและสะอาดบริสุทธิ์"
   },
   {
+    "id": 22,
     "wordId": 153,
     "word": "airport",
-    "sentence": "We need to arrive at the _____ two hours early."
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "We need to arrive at the international _____ early.",
+    "translationThai": "พวกเราต้องไปถึงสนามบินนานาชาติแต่เนิ่นๆ"
   },
   {
-    "wordId": 165,
-    "word": "all",
-    "sentence": "I ate _____ of the pizza by myself."
+    "id": 23,
+    "wordId": 173,
+    "word": "allow",
+    "targetPOS": "verb",
+    "level": "A2",
+    "sentence": "The library rules do not _____ loud talking inside.",
+    "translationThai": "กฎของห้องสมุดไม่อนุญาตให้พูดคุยเสียงดังข้างใน"
   },
   {
+    "id": 24,
+    "wordId": 176,
+    "word": "almost",
+    "targetPOS": "adverb",
+    "level": "A2",
+    "sentence": "It is _____ midnight, so we should head home.",
+    "translationThai": "เกือบจะเที่ยงคืนแล้ว ดังนั้นเราควรกลับบ้านกันได้แล้ว"
+  },
+  {
+    "id": 25,
+    "wordId": 177,
+    "word": "alone",
+    "targetPOS": "adjective",
+    "level": "A2",
+    "sentence": "She prefers traveling _____ to discover new cultures.",
+    "translationThai": "เธอชอบเดินทางคนเดียวเพื่อค้นพบวัฒนธรรมใหม่ๆ"
+  },
+  {
+    "id": 26,
+    "wordId": 180,
+    "word": "already",
+    "targetPOS": "adverb",
+    "level": "A2",
+    "sentence": "I have _____ submitted the quarterly financial report.",
+    "translationThai": "ฉันได้ส่งรายงานการเงินประจำไตรมาสไปเรียบร้อยแล้ว"
+  },
+  {
+    "id": 27,
     "wordId": 181,
     "word": "also",
-    "sentence": "He speaks English and _____ Spanish."
+    "targetPOS": "adverb",
+    "level": "A1",
+    "sentence": "He speaks fluent English and _____ knows French.",
+    "translationThai": "เขาพูดภาษาอังกฤษได้อย่างคล่องแคล่วและยังรู้ภาษาฝรั่งเศสด้วย"
   },
   {
+    "id": 28,
     "wordId": 190,
     "word": "always",
-    "sentence": "I _____ brush my teeth before bed."
+    "targetPOS": "adverb",
+    "level": "A1",
+    "sentence": "You should _____ wear your seatbelt while driving.",
+    "translationThai": "คุณควรคาดเข็มขัดนิรภัยเสมอขณะขับรถ"
   },
   {
+    "id": 29,
     "wordId": 193,
     "word": "amazing",
-    "sentence": "The view from the mountain was _____."
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "The sunset over the ocean was truly _____.",
+    "translationThai": "พระอาทิตย์ตกดินเหนือมหาสมุทรช่างน่าทึ่งจริงๆ"
   },
   {
-    "wordId": 215,
-    "word": "and",
-    "sentence": "My favorite colors are blue _____ green."
-  },
-  {
+    "id": 30,
     "wordId": 219,
     "word": "angry",
-    "sentence": "My boss was _____ because I was late."
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "The customer was very _____ about the delayed delivery.",
+    "translationThai": "ลูกค้ารู้สึกโกรธมากเรื่องการจัดส่งที่ล่าช้า"
   },
   {
+    "id": 31,
     "wordId": 220,
     "word": "animal",
-    "sentence": "The lion is a dangerous _____."
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The dolphin is an intelligent marine _____.",
+    "translationThai": "โลมาเป็นสัตว์ทะเลที่ฉลาดหลักแหลม"
   },
   {
+    "id": 32,
     "wordId": 232,
     "word": "another",
-    "sentence": "Can I have _____ piece of cake?"
+    "targetPOS": "pronoun",
+    "level": "A1",
+    "sentence": "May I please have _____ cup of hot coffee?",
+    "translationThai": "ฉันขอรับกาแฟร้อนอีกสักแก้วได้ไหม"
   },
   {
+    "id": 33,
     "wordId": 233,
     "word": "answer",
-    "sentence": "Does anyone know the _____ to this question?"
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Do you know the correct _____ to question number five?",
+    "translationThai": "คุณรู้คำตอบที่ถูกต้องของคำถามข้อที่ห้าหรือไม่"
   },
   {
-    "wordId": 238,
-    "word": "any",
-    "sentence": "Do you have _____ questions?"
+    "id": 34,
+    "wordId": 255,
+    "word": "appear",
+    "targetPOS": "verb",
+    "level": "A2",
+    "sentence": "Bright stars begin to _____ as the night falls.",
+    "translationThai": "ดวงดาวสว่างไสวเริ่มปรากฏขึ้นเมื่อยามค่ำคืนมาเยือน"
   },
   {
+    "id": 35,
     "wordId": 260,
     "word": "apple",
-    "sentence": "I eat an _____ every morning."
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "She sliced a crisp green _____ for a healthy snack.",
+    "translationThai": "เธอหั่นแอปเปิ้ลเขียวกรอบเป็นของว่างเพื่อสุขภาพ"
   },
   {
+    "id": 36,
+    "wordId": 283,
+    "word": "area",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "There are many cozy cafes in this urban _____.",
+    "translationThai": "มีคาเฟ่บรรยากาศอบอุ่นมากมายในพื้นที่ใจกลางเมืองนี้"
+  },
+  {
+    "id": 37,
+    "wordId": 300,
+    "word": "arrive",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "The evening train will _____ on platform two.",
+    "translationThai": "รถไฟเที่ยวเย็นจะมาถึงที่ชานชาลาหมายเลขสอง"
+  },
+  {
+    "id": 38,
+    "wordId": 38,
+    "word": "article",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "I read an insightful _____ about artificial intelligence.",
+    "translationThai": "ฉันได้อ่านบทความเชิงลึกเกี่ยวกับปัญญาประดิษฐ์"
+  },
+  {
+    "id": 39,
+    "wordId": 306,
+    "word": "artist",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The talented _____ painted a stunning canvas portrait.",
+    "translationThai": "ศิลปินผู้มีความสามารถได้วาดภาพบุคคลบนผืนผ้าใบที่น่าทึ่ง"
+  },
+  {
+    "id": 40,
+    "wordId": 348,
+    "word": "attack",
+    "targetPOS": "verb",
+    "level": "A2",
+    "sentence": "The brave guard protected the museum from the _____.",
+    "translationThai": "เจ้าหน้าที่รักษาความปลอดภัยผู้กล้าหาญได้ปกป้องพิพิธภัณฑ์จากการโจมตี"
+  },
+  {
+    "id": 41,
+    "wordId": 388,
+    "word": "baby",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The sleeping _____ woke up when the phone rang.",
+    "translationThai": "ทารกที่กำลังหลับอยู่ตื่นขึ้นมาเมื่อเสียงโทรศัพท์ดัง"
+  },
+  {
+    "id": 42,
+    "wordId": 389,
+    "word": "back",
+    "targetPOS": "adverb",
+    "level": "A1",
+    "sentence": "Please put the dictionary _____ on the bookshelf.",
+    "translationThai": "กรุณาวางพจนานุกรมกลับคืนบนชั้นหนังสือ"
+  },
+  {
+    "id": 43,
     "wordId": 396,
     "word": "bad",
-    "sentence": "Smoking is a very _____ habit."
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Poor posture is a very _____ habit for your spine.",
+    "translationThai": "การนั่งหรือยืนหลังค่อมเป็นนิสัยที่ไม่ดีต่อกระดูกสันหลังของคุณ"
   },
   {
+    "id": 44,
     "wordId": 399,
     "word": "bag",
-    "sentence": "I put my books in my _____."
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "I packed my heavy laptop inside my leather _____.",
+    "translationThai": "ฉันเก็บแล็ปท็อปที่หนักไว้ในกระเป๋าหนังของฉัน"
   },
   {
+    "id": 45,
     "wordId": 404,
     "word": "ball",
-    "sentence": "The dog caught the _____ in the park."
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The playful puppy chased the tennis _____ across the lawn.",
+    "translationThai": "ลูกสุนัขแสนซนวิ่งไล่ตามลูกเทนนิสไปทั่วสนามหญ้า"
   },
   {
+    "id": 46,
     "wordId": 409,
     "word": "banana",
-    "sentence": "Monkeys love to eat a _____."
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "He sliced a yellow _____ onto his morning cereal.",
+    "translationThai": "เขาหั่นกล้วยสีเหลืองใส่ลงบนซีเรียลยามเช้าของเขา"
   },
   {
+    "id": 47,
     "wordId": 411,
     "word": "bank",
-    "sentence": "I went to the _____ to withdraw money."
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "She went to the local _____ to open a savings account.",
+    "translationThai": "เธอไปที่ธนาคารท้องถิ่นเพื่อเปิดบัญชีเงินฝากออมทรัพย์"
   },
   {
+    "id": 48,
+    "wordId": 437,
+    "word": "beach",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "We walked along the sandy _____ during sunset.",
+    "translationThai": "พวกเราเดินไปตามชายหาดทรายระหว่างช่วงพระอาทิตย์ตกดิน"
+  },
+  {
+    "id": 49,
+    "wordId": 443,
+    "word": "beautiful",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "The garden is filled with _____ colorful flowers.",
+    "translationThai": "สวนแห่งนี้เต็มไปด้วยดอกไม้สีสันสวยงาม"
+  },
+  {
+    "id": 50,
+    "wordId": 445,
+    "word": "because",
+    "targetPOS": "conjunction",
+    "level": "A1",
+    "sentence": "I stayed home _____ it was raining heavily outside.",
+    "translationThai": "ฉันอยู่บ้านเพราะข้างนอกฝนตกหนักมาก"
+  },
+  {
+    "id": 51,
+    "wordId": 446,
+    "word": "become",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "She studied hard to _____ a certified medical doctor.",
+    "translationThai": "เธอตั้งใจเรียนอย่างหนักเพื่อกลายเป็นแพทย์ที่ได้รับใบประกอบวิชาชีพ"
+  },
+  {
+    "id": 52,
+    "wordId": 452,
+    "word": "before",
+    "targetPOS": "preposition",
+    "level": "A1",
+    "sentence": "Always wash your hands thoroughly _____ eating meals.",
+    "translationThai": "ล้างมือให้สะอาดทั่วถึงเสมอก่อนรับประทานอาหาร"
+  },
+  {
+    "id": 53,
+    "wordId": 454,
+    "word": "begin",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "The concert is scheduled to _____ at eight sharp.",
+    "translationThai": "คอนเสิร์ตมีกำหนดการจะเริ่มต้นเวลาแปดโมงตรง"
+  },
+  {
+    "id": 54,
+    "wordId": 462,
+    "word": "believe",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "I truly _____ you have the potential to succeed.",
+    "translationThai": "ฉันเชื่ออย่างแท้จริงว่าคุณมีศักยภาพที่จะประสบความสำเร็จ"
+  },
+  {
+    "id": 55,
+    "wordId": 482,
+    "word": "between",
+    "targetPOS": "preposition",
+    "level": "A1",
+    "sentence": "The pharmacy is located _____ the bakery and the bank.",
+    "translationThai": "ร้านขายยาตั้งอยู่ระหว่างร้านเบเกอรี่และธนาคาร"
+  },
+  {
+    "id": 56,
+    "wordId": 487,
+    "word": "big",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "They moved into a _____ house with a large backyard.",
+    "translationThai": "พวกเขาย้ายเข้าไปอยู่ในบ้านหลังใหญ่ที่มีสนามหลังบ้านกว้างขวาง"
+  },
+  {
+    "id": 57,
+    "wordId": 497,
+    "word": "bird",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "A colorful tropical _____ was singing in the oak tree.",
+    "translationThai": "นกเขตร้อนสีสันสดใสกำลังร้องเพลงอยู่บนต้นโอ๊ก"
+  },
+  {
+    "id": 58,
+    "wordId": 506,
+    "word": "black",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "He wore a stylish _____ jacket to the formal event.",
+    "translationThai": "เขาสวมเสื้อแจ็คเก็ตสีดำมีสไตล์ไปร่วมงานทางการ"
+  },
+  {
+    "id": 59,
+    "wordId": 523,
+    "word": "blue",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "The clear sky was a brilliant shade of _____.",
+    "translationThai": "ท้องฟ้าแจ่มใสมีเฉดสีฟ้าสดใสสวยงาม"
+  },
+  {
+    "id": 60,
+    "wordId": 536,
+    "word": "book",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "I am reading an interesting history _____ about Rome.",
+    "translationThai": "ฉันกำลังอ่านหนังสือประวัติศาสตร์ที่น่าสนใจเกี่ยวกับกรุงโรม"
+  },
+  {
+    "id": 61,
+    "wordId": 549,
+    "word": "bottle",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Remember to bring a reusable water _____ to the gym.",
+    "translationThai": "อย่าลืมนำขวดน้ำแบบใช้ซ้ำได้ไปที่ยิมด้วย"
+  },
+  {
+    "id": 62,
+    "wordId": 556,
+    "word": "box",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "She placed all the old photographs in a wooden _____.",
+    "translationThai": "เธอเก็บรูปถ่ายเก่าๆ ทั้งหมดไว้ในกล่องไม้"
+  },
+  {
+    "id": 63,
     "wordId": 557,
     "word": "boy",
-    "sentence": "The little _____ was playing with his toys."
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The energetic young _____ rode his bicycle down the lane.",
+    "translationThai": "เด็กชายตัวน้อยผู้กระฉับกระเฉงขี่จักรยานไปตามตรอกซอย"
   },
   {
+    "id": 64,
+    "wordId": 564,
+    "word": "bread",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The baker sells freshly baked sourdough _____ every day.",
+    "translationThai": "คนทำขนมปังขายขนมปังซาวโดว์อบสดใหม่ทุกวัน"
+  },
+  {
+    "id": 65,
+    "wordId": 565,
+    "word": "break",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Be careful with that glass vase so you do not _____ it.",
+    "translationThai": "ระมัดระวังแจกันแก้วใบนั้นเพื่อไม่ให้ทำมันแตก"
+  },
+  {
+    "id": 66,
+    "wordId": 567,
+    "word": "breakfast",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Eating a balanced _____ gives you energy for the day.",
+    "translationThai": "การรับประทานอาหารเช้าที่ถูกหลักโภชนาการช่วยให้คุณมีพลังงานตลอดทั้งวัน"
+  },
+  {
+    "id": 67,
+    "wordId": 578,
+    "word": "bridge",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "We drove across the suspension _____ over the river.",
+    "translationThai": "พวกเราขับรถข้ามสะพานแขวนเหนือแม่น้ำ"
+  },
+  {
+    "id": 68,
+    "wordId": 581,
+    "word": "bright",
+    "targetPOS": "adjective",
+    "level": "A2",
+    "sentence": "The morning sun shone _____ through the bedroom window.",
+    "translationThai": "แสงแดดยามเช้าส่องสว่างสดใสผ่านหน้าต่างห้องนอน"
+  },
+  {
+    "id": 69,
+    "wordId": 583,
+    "word": "bring",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Don't forget to _____ your warm coat on the trip.",
+    "translationThai": "อย่าลืมนำเสื้อโค้ทหนาๆ ไปด้วยในการเดินทาง"
+  },
+  {
+    "id": 70,
+    "wordId": 590,
+    "word": "brother",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "My older _____ works as a civil engineer in Tokyo.",
+    "translationThai": "พี่ชายของฉันทำงานเป็นวิศวกรโยธาในโตเกียว"
+  },
+  {
+    "id": 71,
+    "wordId": 601,
+    "word": "build",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "The construction team plans to _____ a modern clinic.",
+    "translationThai": "ทีมก่อสร้างมีแผนที่จะสร้างคลินิกที่ทันสมัย"
+  },
+  {
+    "id": 72,
+    "wordId": 614,
+    "word": "business",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "She founded a successful online retail _____.",
+    "translationThai": "เธอได้ก่อตั้งธุรกิจค้าปลีกออนไลน์ที่ประสบความสำเร็จ"
+  },
+  {
+    "id": 73,
+    "wordId": 616,
+    "word": "busy",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "The downtown train station is always _____ on Mondays.",
+    "translationThai": "สถานีรถไฟใจกลางเมืองมักจะพลุกพล่านและวุ่นวายเสมอในวันจันทร์"
+  },
+  {
+    "id": 74,
+    "wordId": 620,
+    "word": "buy",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "I went to the supermarket to _____ fresh vegetables.",
+    "translationThai": "ฉันไปที่ซูเปอร์มาร์เก็ตเพื่อซื้อผักสด"
+  },
+  {
+    "id": 75,
     "wordId": 630,
     "word": "call",
-    "sentence": "I will _____ you later tonight."
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "I will _____ you as soon as my flight lands.",
+    "translationThai": "ฉันจะโทรหาคุณทันทีที่เที่ยวบินของฉันลงจอด"
   },
   {
+    "id": 76,
+    "wordId": 632,
+    "word": "camera",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The tourist took scenic photos with his digital _____.",
+    "translationThai": "นักท่องเที่ยวถ่ายภาพวิวทิวทัศน์ด้วยกล้องดิจิทัลของเขา"
+  },
+  {
+    "id": 77,
     "wordId": 654,
     "word": "car",
-    "sentence": "I drive my _____ to work every day."
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Electric _____ technology is evolving very quickly.",
+    "translationThai": "เทคโนโลยีรถยนต์ไฟฟ้ากำลังพัฒนาไปอย่างรวดเร็วมาก"
   },
   {
-    "wordId": 840,
+    "id": 78,
+    "wordId": 659,
+    "word": "careful",
+    "targetPOS": "adjective",
+    "level": "A2",
+    "sentence": "Please be very _____ when walking on icy sidewalks.",
+    "translationThai": "โปรดใช้ความระมัดระวังเป็นอย่างยิ่งเมื่อเดินบนทางเท้าที่มีน้ำแข็งเกาะ"
+  },
+  {
+    "id": 79,
+    "wordId": 666,
+    "word": "carry",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "The porter helped her _____ the heavy luggage upstairs.",
+    "translationThai": "พนักงานยกกระเป๋าช่วยเธอแบกสัมภาระที่หนักขึ้นไปชั้นบน"
+  },
+  {
+    "id": 80,
+    "wordId": 679,
+    "word": "catch",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Hurry up if you want to _____ the early morning bus.",
+    "translationThai": "รีบหน่อยหากคุณต้องการขึ้นรถประจำทางรอบเช้าให้ทัน"
+  },
+  {
+    "id": 81,
+    "wordId": 81,
+    "word": "center",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The shopping mall is located right in the city _____.",
+    "translationThai": "ศูนย์การค้าตั้งอยู่ใจกลางเมืองพอดี"
+  },
+  {
+    "id": 82,
+    "wordId": 708,
+    "word": "chair",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "He sat down comfortably in the wooden armchair _____.",
+    "translationThai": "เขานั่งลงอย่างสบายบนเก้าอี้เท้าแขนที่ทำจากไม้"
+  },
+  {
+    "id": 83,
+    "wordId": 716,
+    "word": "change",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Technology can positively _____ the way people communicate.",
+    "translationThai": "เทคโนโลยีสามารถเปลี่ยนแปลงวิถีชีวิตการสื่อสารของผู้คนในทางที่ดีขึ้นได้"
+  },
+  {
+    "id": 84,
+    "wordId": 731,
+    "word": "cheap",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Hostels offer _____ accommodation for budget travelers.",
+    "translationThai": "โฮสเทลให้บริการที่พักราคาประหยัดสำหรับนักเดินทางที่มีงบจำกัด"
+  },
+  {
+    "id": 85,
+    "wordId": 733,
+    "word": "check",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Always _____ your answers before submitting the exam.",
+    "translationThai": "ตรวจทานคำตอบของคุณเสมอก่อนส่งข้อสอบ"
+  },
+  {
+    "id": 86,
+    "wordId": 744,
+    "word": "child",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Every _____ deserves access to quality education.",
+    "translationThai": "เด็กทุกคนสมควรได้รับโอกาสในการเข้าถึงการศึกษาที่มีคุณภาพ"
+  },
+  {
+    "id": 87,
+    "wordId": 750,
+    "word": "choose",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "It was hard to _____ between the two job offers.",
+    "translationThai": "มันยากมากที่จะเลือกระหว่างข้อเสนองานทั้งสองแห่ง"
+  },
+  {
+    "id": 88,
+    "wordId": 766,
+    "word": "city",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "New York is a bustling and vibrant global _____.",
+    "translationThai": "นิวยอร์กเป็นเมืองระดับโลกที่คึกคักและเปี่ยมไปด้วยชีวิตชีวา"
+  },
+  {
+    "id": 89,
+    "wordId": 782,
+    "word": "clean",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Keep your workspace tidy and _____ for better focus.",
+    "translationThai": "รักษาพื้นที่ทำงานของคุณให้เป็นระเบียบและสะอาดเพื่อสมาธิที่ดีขึ้น"
+  },
+  {
+    "id": 90,
+    "wordId": 784,
+    "word": "clear",
+    "targetPOS": "adjective",
+    "level": "A2",
+    "sentence": "Her presentation gave a _____ and detailed explanation.",
+    "translationThai": "การนำเสนอของเธอให้คำอธิบายที่ชัดเจนและมีรายละเอียดครบถ้วน"
+  },
+  {
+    "id": 91,
+    "wordId": 794,
+    "word": "climb",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "The mountaineers managed to _____ to the summit.",
+    "translationThai": "นักปีนเขาสามารถปีนขึ้นไปถึงยอดเขาได้สำเร็จ"
+  },
+  {
+    "id": 92,
+    "wordId": 799,
+    "word": "clock",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The antique wall _____ chimed twelve times at noon.",
+    "translationThai": "นาฬิกาแขวนโบราณส่งเสียงตีสิบสองครั้งในเวลาเที่ยงวัน"
+  },
+  {
+    "id": 93,
+    "wordId": 800,
+    "word": "close",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Please _____ the window to keep the cold wind out.",
+    "translationThai": "กรุณาปิดหน้าต่างเพื่อกันลมหนาวเข้ามาข้างใน"
+  },
+  {
+    "id": 94,
+    "wordId": 805,
+    "word": "clothes",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "She packed warm winter _____ for her trip to Canada.",
+    "translationThai": "เธอจัดเสื้อผ้ากันหนาวที่อบอุ่นสำหรับการเดินทางไปแคนาดา"
+  },
+  {
+    "id": 95,
+    "wordId": 821,
+    "word": "coffee",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "I enjoy a cup of freshly brewed black _____ in the morning.",
+    "translationThai": "ฉันเพลิดเพลินกับกาแฟดำชงสดใหม่หนึ่งแก้วในตอนเช้า"
+  },
+  {
+    "id": 96,
+    "wordId": 827,
+    "word": "cold",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Drink plenty of hot tea when the weather gets _____.",
+    "translationThai": "ดื่มชาร้อนเยอะๆ เมื่อสภาพอากาศเริ่มหนาวเย็น"
+  },
+  {
+    "id": 97,
+    "wordId": 97,
     "word": "color",
-    "sentence": "Red is my favorite _____."
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Deep emerald green is my favorite _____.",
+    "translationThai": "สีเขียวมรกตเข้มคือสีโปรดของฉัน"
+  },
+  {
+    "id": 98,
+    "wordId": 874,
+    "word": "company",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "She works for an innovative software development _____.",
+    "translationThai": "เธอทำงานให้กับบริษัทพัฒนาซอฟต์แวร์แห่งหนึ่งที่มีนวัตกรรมก้าวหน้า"
+  },
+  {
+    "id": 99,
+    "wordId": 895,
+    "word": "complete",
+    "targetPOS": "verb",
+    "level": "A2",
+    "sentence": "You must _____ the online application by Friday.",
+    "translationThai": "คุณต้องกรอกใบสมัครออนไลน์ให้เสร็จสมบูรณ์ภายในวันศุกร์"
+  },
+  {
+    "id": 100,
+    "wordId": 1046,
+    "word": "cook",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "He loves to _____ delicious homemade pasta on weekends.",
+    "translationThai": "เขาชอบทำอาหารพาสต้าโฮมเมดแสนอร่อยในวันหยุดสุดสัปดาห์"
+  },
+  {
+    "id": 101,
+    "wordId": 1049,
+    "word": "cool",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "The evening breeze felt pleasantly _____ after a hot day.",
+    "translationThai": "สายลมยามเย็นรู้สึกเย็นสบายหลังจากวันที่อากาศร้อนจัด"
+  },
+  {
+    "id": 102,
+    "wordId": 1092,
+    "word": "country",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Japan is a fascinating island _____ in East Asia.",
+    "translationThai": "ญี่ปุ่นเป็นประเทศเกาะที่น่าหลงใหลในภูมิภาคเอเชียตะวันออก"
+  },
+  {
+    "id": 103,
+    "wordId": 1189,
+    "word": "danger",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "Warning signs alerted hikers of the steep rock _____.",
+    "translationThai": "ป้ายเตือนแจ้งเตือนนักเดินป่าถึงอันตรายจากหน้าผาหินที่สูงชัน"
+  },
+  {
+    "id": 104,
+    "wordId": 1192,
+    "word": "dark",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Turn on the flashlight when entering the _____ hallway.",
+    "translationThai": "เปิดไฟฉายเมื่อเดินเข้าไปในโถงทางเดินที่มืดมิด"
+  },
+  {
+    "id": 105,
+    "wordId": 1197,
+    "word": "daughter",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Their eldest _____ recently graduated from university.",
+    "translationThai": "ลูกสาวคนโตของพวกเขาเพิ่งสำเร็จการศึกษาจากมหาวิทยาลัย"
+  },
+  {
+    "id": 106,
+    "wordId": 1217,
+    "word": "decide",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Take your time to _____ which career path suits you best.",
+    "translationThai": "ค่อยๆ ใช้เวลาตัดสินใจว่าเส้นทางอาชีพใดเหมาะสมกับคุณที่สุด"
+  },
+  {
+    "id": 107,
+    "wordId": 1262,
+    "word": "delicious",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "The chef prepared a _____ meal of roasted salmon.",
+    "translationThai": "เชฟได้ปรุงอาหารมื้ออร่อยเป็นแซลมอนย่าง"
+  },
+  {
+    "id": 108,
+    "wordId": 1306,
+    "word": "describe",
+    "targetPOS": "verb",
+    "level": "A2",
+    "sentence": "Can you accurately _____ the appearance of the suspect?",
+    "translationThai": "คุณช่วยอธิบายลักษณะภายนอกของผู้ต้องสงสัยได้อย่างถูกต้องไหม"
+  },
+  {
+    "id": 109,
+    "wordId": 1310,
+    "word": "design",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "The minimalist architectural _____ won several awards.",
+    "translationThai": "การออกแบบสถาปัตยกรรมสไตล์มินิมอลได้รับรางวัลมากมาย"
+  },
+  {
+    "id": 110,
+    "wordId": 1357,
+    "word": "dictionary",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Look up unfamiliar vocabulary terms in your _____.",
+    "translationThai": "ค้นหาคำศัพท์ที่ไม่คุ้นเคยในพจนานุกรมของคุณ"
+  },
+  {
+    "id": 111,
+    "wordId": 1363,
+    "word": "different",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Every student has a _____ style of learning.",
+    "translationThai": "นักเรียนทุกคนมีรูปแบบและวิธีการเรียนรู้ที่แตกต่างกัน"
+  },
+  {
+    "id": 112,
+    "wordId": 1367,
+    "word": "difficult",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Solving advanced calculus problems can be quite _____.",
+    "translationThai": "การแก้โจทย์แคลคูลัสขั้นสูงอาจค่อนข้างยากและท้าทาย"
+  },
+  {
+    "id": 113,
+    "wordId": 1379,
+    "word": "dinner",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Our family gathers around the table for _____ at seven.",
+    "translationThai": "ครอบครัวของเรามารวมตัวกันรอบโต๊ะเพื่อทานอาหารเย็นเวลาทุ่มตรง"
+  },
+  {
+    "id": 114,
+    "wordId": 1413,
+    "word": "discover",
+    "targetPOS": "verb",
+    "level": "A2",
+    "sentence": "Scientists hope to _____ new renewable energy sources.",
+    "translationThai": "นักวิทยาศาสตร์หวังว่าจะค้นพบแหล่งพลังงานหมุนเวียนแห่งใหม่"
+  },
+  {
+    "id": 115,
+    "wordId": 1481,
+    "word": "doctor",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "You should consult a qualified _____ if symptoms persist.",
+    "translationThai": "คุณควรปรึกษาแพทย์ผู้เชี่ยวชาญหากยังมีอาการต่อเนื่อง"
+  },
+  {
+    "id": 116,
+    "wordId": 1496,
+    "word": "door",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Please knock gently on the wooden _____ before entering.",
+    "translationThai": "กรุณาเคาะประตูไม้เบาๆ ก่อนที่จะเดินเข้าไป"
+  },
+  {
+    "id": 117,
+    "wordId": 1519,
+    "word": "dream",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "Her lifelong _____ was to establish a wildlife sanctuary.",
+    "translationThai": "ความฝันตลอดชีวิตของเธอคือการก่อตั้งเขตรักษาพันธุ์สัตว์ป่า"
+  },
+  {
+    "id": 118,
+    "wordId": 1523,
+    "word": "drink",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Remember to _____ enough clean water throughout the day.",
+    "translationThai": "อย่าลืมดื่มน้ำสะอาดให้เพียงพอตลอดทั้งวัน"
+  },
+  {
+    "id": 119,
+    "wordId": 1524,
+    "word": "drive",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "It takes forty minutes to _____ to the airport.",
+    "translationThai": "ใช้เวลาสี่สิบนาทีในการขับรถไปยังสนามบิน"
+  },
+  {
+    "id": 120,
+    "wordId": 1551,
+    "word": "early",
+    "targetPOS": "adverb",
+    "level": "A1",
+    "sentence": "She woke up _____ to catch the first morning train.",
+    "translationThai": "เธอตื่นแต่เช้าตรู่เพื่อขึ้นรถไฟเที่ยวแรกของวัน"
+  },
+  {
+    "id": 121,
+    "wordId": 1554,
+    "word": "earth",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "The planet _____ revolves around the blazing sun.",
+    "translationThai": "โลกของเราโคจรรอบดวงอาทิตย์ที่สว่างไสว"
+  },
+  {
+    "id": 122,
+    "wordId": 1560,
+    "word": "easy",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Follow the step-by-step tutorial for an _____ setup.",
+    "translationThai": "ทำตามคู่มือทีละขั้นตอนเพื่อการติดตั้งที่ง่ายดาย"
+  },
+  {
+    "id": 123,
+    "wordId": 1561,
+    "word": "eat",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "We like to _____ fresh tropical fruits for dessert.",
+    "translationThai": "พวกเราชอบทานผลไม้เมืองร้อนสดๆ เป็นของหวาน"
+  },
+  {
+    "id": 124,
+    "wordId": 1577,
+    "word": "education",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "Quality _____ opens up endless career opportunities.",
+    "translationThai": "การศึกษาที่มีคุณภาพเปิดโอกาสทางอาชีพที่ไร้ขีดจำกัด"
+  },
+  {
+    "id": 125,
+    "wordId": 1581,
+    "word": "effective",
+    "targetPOS": "adjective",
+    "level": "B1",
+    "sentence": "Regular exercise is an _____ method to reduce stress.",
+    "translationThai": "การออกกำลังกายสม่ำเสมอเป็นวิธีที่มีประสิทธิภาพในการลดความเครียด"
+  },
+  {
+    "id": 126,
+    "wordId": 1655,
+    "word": "empty",
+    "targetPOS": "adjective",
+    "level": "A2",
+    "sentence": "The concert hall was completely _____ after the show.",
+    "translationThai": "หอแสดงคอนเสิร์ตว่างเปล่าอย่างสมบูรณ์หลังจากการแสดงจบลง"
+  },
+  {
+    "id": 127,
+    "wordId": 1684,
+    "word": "enjoy",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "I thoroughly _____ reading historical novels on weekends.",
+    "translationThai": "ฉันเพลิดเพลินกับการอ่านนวนิยายอิงประวัติศาสตร์ในวันหยุดสุดสัปดาห์อย่างยิ่ง"
+  },
+  {
+    "id": 128,
+    "wordId": 1688,
+    "word": "enough",
+    "targetPOS": "adverb",
+    "level": "A1",
+    "sentence": "Make sure you get _____ restful sleep every night.",
+    "translationThai": "ตรวจสอบให้แน่ใจว่าคุณได้รับการนอนหลับพักผ่อนที่เพียงพอในทุกๆ คืน"
+  },
+  {
+    "id": 129,
+    "wordId": 1713,
+    "word": "environment",
+    "targetPOS": "noun",
+    "level": "B1",
+    "sentence": "Protecting the natural _____ is our shared responsibility.",
+    "translationThai": "การปกป้องสิ่งแวดล้อมทางธรรมชาติเป็นความรับผิดชอบร่วมกันของพวกเราทุกคน"
+  },
+  {
+    "id": 130,
+    "wordId": 1762,
+    "word": "evening",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "We relaxed on the patio during the cool summer _____.",
+    "translationThai": "พวกเราผ่อนคลายที่ชานเรือนในช่วงค่ำของฤดูร้อนที่อากาศเย็นสบาย"
+  },
+  {
+    "id": 131,
+    "wordId": 1766,
+    "word": "every",
+    "targetPOS": "determiner",
+    "level": "A1",
+    "sentence": "She practices playing the violin _____ single afternoon.",
+    "translationThai": "เธอฝึกซ้อมไวโอลินในทุกๆ ช่วงบ่าย"
+  },
+  {
+    "id": 132,
+    "wordId": 1787,
+    "word": "example",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The professor gave a clear real-world _____ to explain the concept.",
+    "translationThai": "ศาสตราจารย์ได้ยกตัวอย่างจากชีวิตจริงที่ชัดเจนเพื่ออธิบายแนวคิดนี้"
+  },
+  {
+    "id": 133,
+    "wordId": 1813,
+    "word": "exercise",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Daily physical _____ strengthens your heart and muscles.",
+    "translationThai": "การออกกำลังกายเป็นประจำทุกวันช่วยเสริมสร้างความแข็งแรงของหัวใจและกล้ามเนื้อ"
+  },
+  {
+    "id": 134,
+    "wordId": 1835,
+    "word": "expensive",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Luxury sports cars are far too _____ for average buyers.",
+    "translationThai": "รถสปอร์ตหรูหรามีราคาแพงเกินไปสำหรับผู้ซื้อทั่วไป"
+  },
+  {
+    "id": 135,
+    "wordId": 1836,
+    "word": "experience",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "Volunteering abroad was a transformative life _____.",
+    "translationThai": "การเป็นอาสาสมัครในต่างแดนเป็นประสบการณ์ชีวิตที่เปลี่ยนแปลงตัวฉันอย่างมาก"
+  },
+  {
+    "id": 136,
+    "wordId": 1843,
+    "word": "explain",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Could you please _____ how this new software works?",
+    "translationThai": "คุณช่วยอธิบายวิธีการทำงานของซอฟต์แวร์ใหม่นี้ได้ไหม"
+  },
+  {
+    "id": 137,
+    "wordId": 1905,
+    "word": "family",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Spending quality time with my _____ brings me joy.",
+    "translationThai": "การได้ใช้เวลาคุณภาพร่วมกับครอบครัวนำความสุขมาให้ฉัน"
+  },
+  {
+    "id": 138,
+    "wordId": 1907,
+    "word": "famous",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Paris is _____ for its magnificent art and architecture.",
+    "translationThai": "ปารีสมีชื่อเสียงโด่งดังในเรื่องงานศิลปะและสถาปัตยกรรมอันงดงาม"
+  },
+  {
+    "id": 139,
+    "wordId": 1921,
+    "word": "fast",
+    "targetPOS": "adverb",
+    "level": "A1",
+    "sentence": "High-speed electric trains travel remarkably _____.",
+    "translationThai": "รถไฟไฟฟ้าความเร็วสูงเดินทางได้อย่างรวดเร็วเป็นพิเศษ"
+  },
+  {
+    "id": 140,
+    "wordId": 1925,
+    "word": "father",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "My loving _____ taught me how to fix household appliances.",
+    "translationThai": "คุณพ่อที่แสนดีของฉันสอนวิธีซ่อมแซมเครื่องใช้ในบ้านให้ฉัน"
+  },
+  {
+    "id": 141,
+    "wordId": 1942,
+    "word": "feel",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "A warm cup of herbal tea makes me _____ calm.",
+    "translationThai": "ชาสมุนไพรอุ่นๆ หนึ่งแก้วทำให้ฉันรู้สึกสงบผ่อนคลาย"
+  },
+  {
+    "id": 142,
+    "wordId": 1976,
+    "word": "find",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Did you manage to _____ your misplaced keys?",
+    "translationThai": "คุณหาลูกกุญแจที่วางผิดที่เจอแล้วหรือยัง"
+  },
+  {
+    "id": 143,
+    "wordId": 1980,
+    "word": "finish",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "I need another hour to _____ writing this essay.",
+    "translationThai": "ฉันต้องการเวลาอีกหนึ่งชั่วโมงเพื่อเขียนเรียงความนี้ให้เสร็จ"
+  },
+  {
+    "id": 144,
+    "wordId": 2014,
+    "word": "flight",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "Our non-stop international _____ departs at midnight.",
+    "translationThai": "เที่ยวบินระหว่างประเทศแบบบินตรงของเราจะออกเดินทางในเวลาเที่ยงคืน"
+  },
+  {
+    "id": 145,
+    "wordId": 2017,
+    "word": "floor",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The modern apartment is located on the ninth _____.",
+    "translationThai": "อพาร์ตเมนต์ที่ทันสมัยแห่งนี้ตั้งอยู่บนชั้นที่เก้า"
+  },
+  {
+    "id": 146,
+    "wordId": 2021,
+    "word": "flower",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "A fragrant red _____ blossomed in the warm sunlight.",
+    "translationThai": "ดอกไม้สีแดงที่มีกลิ่นหอมเบ่งบานอยู่ท่ามกลางแสงแดดอันอบอุ่น"
+  },
+  {
+    "id": 147,
+    "wordId": 2033,
+    "word": "follow",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Please _____ the safety guidelines posted on the wall.",
+    "translationThai": "กรุณาปฏิบัติตามแนวทางความปลอดภัยที่ติดประกาศไว้บนผนัง"
+  },
+  {
+    "id": 148,
+    "wordId": 2036,
+    "word": "food",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Thai street _____ is celebrated globally for its rich flavor.",
+    "translationThai": "อาหารริมทางของไทยได้รับการยกย่องไปทั่วโลกในเรื่องรสชาติที่เข้มข้นอร่อย"
+  },
+  {
+    "id": 149,
+    "wordId": 2045,
+    "word": "foreign",
+    "targetPOS": "adjective",
+    "level": "A2",
+    "sentence": "Learning a _____ language broadens your worldview.",
+    "translationThai": "การเรียนรู้ภาษาต่างประเทศช่วยเปิดกว้างมุมมองต่อโลกของคุณ"
+  },
+  {
+    "id": 150,
+    "wordId": 2092,
+    "word": "free",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Admission to the city museum is completely _____ on Sundays.",
+    "translationThai": "การเข้าชมพิพิธภัณฑ์ประจำเมืองเปิดให้เข้าฟรีทุกวันอาทิตย์"
+  },
+  {
+    "id": 151,
+    "wordId": 2103,
+    "word": "friend",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "A loyal _____ supports you through challenging moments.",
+    "translationThai": "เพื่อนที่จริงใจและซื่อสัตย์จะคอยช่วยเหลือคุณในยามที่ยากลำบาก"
+  },
+  {
+    "id": 152,
+    "wordId": 2104,
+    "word": "friendly",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "The hotel staff were exceptionally warm and _____.",
+    "translationThai": "พนักงานของโรงแรมให้การต้อนรับอย่างอบอุ่นและเป็นกันเองอย่างยิ่ง"
+  },
+  {
+    "id": 153,
+    "wordId": 2115,
+    "word": "fruit",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Eating fresh seasonal _____ provides essential vitamins.",
+    "translationThai": "การรับประทานผลไม้สดตามฤดูกาลให้วิตามินที่จำเป็นต่อร่างกาย"
+  },
+  {
+    "id": 154,
+    "wordId": 2145,
+    "word": "future",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Investing in green technology safeguards our common _____.",
+    "translationThai": "การลงทุนในเทคโนโลยีสีเขียวช่วยปกป้องอนาคตร่วมกันของพวกเรา"
+  },
+  {
+    "id": 155,
+    "wordId": 2150,
+    "word": "game",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Chess is an intellectual board _____ requiring deep strategy.",
+    "translationThai": "หมากรุกเป็นเกมกระดานเชิงปัญญาที่ต้องใช้กลยุทธ์ขั้นลึกซึ้ง"
+  },
+  {
+    "id": 156,
+    "wordId": 2156,
+    "word": "garden",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "She grows organic herbs in her backyard _____.",
+    "translationThai": "เธอปลูกสมุนไพรออร์แกนิกไว้ในสวนหลังบ้านของเธอ"
+  },
+  {
+    "id": 157,
+    "wordId": 2193,
+    "word": "give",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Generous volunteers _____ their time to help the needy.",
+    "translationThai": "อาสาสมัครผู้ใจกว้างสละเวลาของตนเพื่อช่วยเหลือผู้ด้อยโอกาส"
+  },
+  {
+    "id": 158,
+    "wordId": 2197,
+    "word": "glass",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "He poured cool water into a tall crystal _____.",
+    "translationThai": "เขารินน้ำเย็นลงในแก้วคริสตัลทรงสูง"
+  },
+  {
+    "id": 159,
+    "wordId": 2212,
+    "word": "good",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Regular reading habits promote _____ mental health.",
+    "translationThai": "นิสัยการอ่านหนังสือเป็นประจำช่วยส่งเสริมสุขภาพจิตที่ดี"
+  },
+  {
+    "id": 160,
+    "wordId": 2244,
+    "word": "great",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Working as a unified team achieved a _____ victory.",
+    "translationThai": "การทำงานเป็นทีมที่เป็นหนึ่งเดียวกันนำมาซึ่งชัยชนะอันยิ่งใหญ่"
+  },
+  {
+    "id": 161,
+    "wordId": 2246,
+    "word": "green",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "The endless rolling hills were lush and _____.",
+    "translationThai": "เนินเขาที่ทอดยาวไม่มีที่สิ้นสุดดูเขียวขจีและอุดมสมบูรณ์"
+  },
+  {
+    "id": 162,
+    "wordId": 2262,
+    "word": "group",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "A small _____ of engineers designed the new drone.",
+    "translationThai": "กลุ่มวิศวกรกลุ่มเล็กๆ ได้ร่วมกันออกแบบโดรนรุ่นใหม่"
+  },
+  {
+    "id": 163,
+    "wordId": 2263,
+    "word": "grow",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Tomato plants _____ quickly in rich, moist soil.",
+    "translationThai": "ต้นมะเขือเทศเติบโตได้อย่างรวดเร็วในดินที่อุดมสมบูรณ์และมีความชื้น"
+  },
+  {
+    "id": 164,
+    "wordId": 2271,
+    "word": "guide",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "The knowledgeable tour _____ explained the ancient ruins.",
+    "translationThai": "มัคคุเทศก์ผู้รอบรู้ได้อธิบายประวัติความเป็นมาของซากโบราณสถาน"
+  },
+  {
+    "id": 165,
+    "wordId": 2281,
+    "word": "habit",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "Daily meditation is a beneficial _____ for reducing anxiety.",
+    "translationThai": "การทำสมาธิทุกวันเป็นนิสัยที่มีประโยชน์มากในการลดความวิตกกังวล"
+  },
+  {
+    "id": 166,
+    "wordId": 2285,
+    "word": "half",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "He cut the juicy watermelon into _____ to share.",
+    "translationThai": "เขาผ่าแตงโมฉ่ำน้ำออกเป็นครึ่งหนึ่งเพื่อแบ่งกันทาน"
+  },
+  {
+    "id": 167,
+    "wordId": 2290,
+    "word": "hand",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Raise your _____ if you wish to ask a question.",
+    "translationThai": "ยกมือของคุณขึ้นหากคุณต้องการจะถามคำถาม"
+  },
+  {
+    "id": 168,
+    "wordId": 2299,
+    "word": "happy",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "The children were ecstatic and _____ on their holiday.",
+    "translationThai": "เด็กๆ รู้สึกมีความสุขและตื่นเต้นดีใจมากในวันหยุดของพวกเขา"
+  },
+  {
+    "id": 169,
+    "wordId": 2304,
+    "word": "hard",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Becoming a professional pianist requires _____ work and dedication.",
+    "translationThai": "การเป็นนักเปียโนมืออาชีพต้องอาศัยการทำงานหนักและความทุ่มเท"
+  },
+  {
+    "id": 170,
+    "wordId": 2329,
+    "word": "health",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Nutritious meals and sleep are vital for physical _____.",
+    "translationThai": "อาหารที่มีคุณค่าทางโภชนาการและการนอนหลับมีความสำคัญอย่างยิ่งต่อสุขภาพกาย"
+  },
+  {
+    "id": 171,
+    "wordId": 2332,
+    "word": "hear",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Can you _____ the soothing sound of the ocean waves?",
+    "translationThai": "คุณได้ยินเสียงอันผ่อนคลายของคลื่นทะเลหรือไม่"
+  },
+  {
+    "id": 172,
+    "wordId": 2334,
+    "word": "heart",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "Aerobic cardio exercises strengthen the human _____.",
+    "translationThai": "การออกกำลังกายแบบคาร์ดิโอแอโรบิกช่วยเสริมสร้างความแข็งแรงให้แก่หัวใจของมนุษย์"
+  },
+  {
+    "id": 173,
+    "wordId": 2348,
+    "word": "help",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Kind neighbors always _____ each other during emergencies.",
+    "translationThai": "เพื่อนบ้านที่มีน้ำใจมักจะช่วยเหลือซึ่งกันและกันเสมอในยามฉุกเฉิน"
+  },
+  {
+    "id": 174,
+    "wordId": 2384,
+    "word": "history",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Studying ancient _____ helps us understand modern society.",
+    "translationThai": "การศึกษาประวัติศาสตร์โบราณช่วยให้เราเข้าใจสังคมยุคปัจจุบันได้ดีขึ้น"
+  },
+  {
+    "id": 175,
+    "wordId": 2390,
+    "word": "holiday",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "They booked a seaside villa for their summer _____.",
+    "translationThai": "พวกเขาจองวิลลาริมทะเลสำหรับวันหยุดพักผ่อนช่วงฤดูร้อน"
+  },
+  {
+    "id": 176,
+    "wordId": 2395,
+    "word": "home",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "There is no place more comforting than your own _____.",
+    "translationThai": "ไม่มีสถานที่ใดจะให้ความอบอุ่นสบายใจได้เท่ากับบ้านของตัวเองอีกแล้ว"
+  },
+  {
+    "id": 177,
+    "wordId": 2404,
+    "word": "hope",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "We earnestly _____ the weather clears up for the festival.",
+    "translationThai": "พวกเราหวังเป็นอย่างยิ่งว่าสภาพอากาศจะแจ่มใสขึ้นสำหรับงานเทศกาล"
+  },
+  {
+    "id": 178,
+    "wordId": 2414,
+    "word": "hospital",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The ambulance rushed the injured patient to the nearest _____.",
+    "translationThai": "รถพยาบาลรีบนำส่งผู้ป่วยที่ได้รับบาดเจ็บไปยังโรงพยาบาลที่ใกล้ที่สุด"
+  },
+  {
+    "id": 179,
+    "wordId": 2421,
+    "word": "hotel",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "We stayed at a boutique _____ overlooking the bay.",
+    "translationThai": "พวกเราพักที่โรงแรมบูติกที่มองเห็นทิวทัศน์ของอ่าว"
+  },
+  {
+    "id": 180,
+    "wordId": 2422,
+    "word": "hour",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The express train journey takes precisely one _____.",
+    "translationThai": "การเดินทางด้วยรถไฟด่วนใช้เวลาตรงตามกำหนดหนึ่งชั่วโมงพอดี"
+  },
+  {
+    "id": 181,
+    "wordId": 2423,
+    "word": "house",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "They painted the exterior of their cottage _____ blue.",
+    "translationThai": "พวกเขาได้ทาสีภายนอกของบ้านหลังกระท่อมเป็นสีฟ้าสดใส"
+  },
+  {
+    "id": 182,
+    "wordId": 2454,
+    "word": "idea",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Brainstorming led to a brilliant creative _____ for the campaign.",
+    "translationThai": "การระดมสมองนำไปสู่ไอเดียสร้างสรรค์ที่ยอดเยี่ยมสำหรับแคมเปญ"
+  },
+  {
+    "id": 183,
+    "wordId": 2512,
+    "word": "important",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Getting regular checkups is _____ for preventing illness.",
+    "translationThai": "การตรวจสุขภาพเป็นประจำมีความสำคัญอย่างยิ่งในการป้องกันการเจ็บป่วย"
+  },
+  {
+    "id": 184,
+    "wordId": 2614,
+    "word": "information",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The tourist booth provides helpful _____ on local attractions.",
+    "translationThai": "ซุ้มบริการนักท่องเที่ยวให้ข้อมูลที่เป็นประโยชน์เกี่ยวกับสถานที่ท่องเที่ยวในท้องถิ่น"
+  },
+  {
+    "id": 185,
+    "wordId": 2654,
+    "word": "inside",
+    "targetPOS": "preposition",
+    "level": "A1",
+    "sentence": "Please step _____ the lobby while it rains outside.",
+    "translationThai": "กรุณาก้าวเข้ามาข้างในล็อบบี้ขณะที่ข้างนอกกำลังมีฝนตก"
+  },
+  {
+    "id": 186,
+    "wordId": 2718,
+    "word": "interest",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "She developed a keen _____ in astronomy and astrophysics.",
+    "translationThai": "เธอเริ่มมีความสนใจอย่างยิ่งในด้านดาราศาสตร์และฟิสิกส์ดาราศาสตร์"
+  },
+  {
+    "id": 187,
+    "wordId": 2730,
+    "word": "internet",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The modern _____ connects billions of individuals across the globe.",
+    "translationThai": "อินเทอร์เน็ตยุคใหม่เชื่อมโยงผู้คนหลายพันล้านคนทั่วทุกมุมโลก"
+  },
+  {
+    "id": 188,
+    "wordId": 2739,
+    "word": "interview",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "He wore a sharp suit for his morning job _____.",
+    "translationThai": "เขาสวมชุดสูทเรียบหรูสำหรับการสัมภาษณ์งานรอบเช้าของเขา"
+  },
+  {
+    "id": 189,
+    "wordId": 2795,
+    "word": "island",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "We took a ferry to visit the serene tropical _____.",
+    "translationThai": "พวกเรานั่งเรือข้ามฟากไปเยี่ยมชมเกาะเขตร้อนอันเงียบสงบ"
+  },
+  {
+    "id": 190,
+    "wordId": 2816,
+    "word": "job",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Finding a fulfilling _____ requires exploring your passions.",
+    "translationThai": "การหางานที่ตอบโจทย์ความสุขในชีวิตจำเป็นต้องค้นหาความชอบของตัวเอง"
+  },
+  {
+    "id": 191,
+    "wordId": 2823,
+    "word": "journey",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "Their hiking _____ through the Alps took two weeks.",
+    "translationThai": "การเดินทางไกลของพวกเขาผ่านเทือกเขาแอลป์ใช้เวลาสองสัปดาห์"
+  },
+  {
+    "id": 192,
+    "wordId": 2850,
+    "word": "keep",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Store fresh dairy in the fridge to _____ it fresh.",
+    "translationThai": "เก็บผลิตภัณฑ์นมสดไว้ในตู้เย็นเพื่อรักษาความสดใหม่"
+  },
+  {
+    "id": 193,
+    "wordId": 2851,
+    "word": "key",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Consistency is the essential _____ to mastering any skill.",
+    "translationThai": "ความสม่ำเสมอคือกุญแจสำคัญในการฝึกฝนทักษะใดๆ ให้เชี่ยวชาญ"
+  },
+  {
+    "id": 194,
+    "wordId": 2866,
+    "word": "kitchen",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The chef cooked fragrant garlic broth in the _____.",
+    "translationThai": "พ่อครัวปรุงน้ำซุปกระเทียมกลิ่นหอมกรุ่นอยู่ในห้องครัว"
+  },
+  {
+    "id": 195,
+    "wordId": 2872,
+    "word": "know",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Do you _____ how to program in JavaScript?",
+    "translationThai": "คุณรู้วิธีการเขียนโปรแกรมด้วยภาษาจาวาสคริปต์หรือไม่"
+  },
+  {
+    "id": 196,
+    "wordId": 2892,
+    "word": "language",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "English is a widely spoken global lingua franca _____.",
+    "translationThai": "ภาษาอังกฤษเป็นภาษาสากลที่มีผู้พูดอย่างแพร่หลายทั่วโลก"
+  },
+  {
+    "id": 197,
+    "wordId": 2896,
+    "word": "large",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "An elephant is a _____ terrestrial mammal.",
+    "translationThai": "ช้างเป็นสัตว์เลี้ยงลูกด้วยนมบนบกที่มีขนาดใหญ่"
+  },
+  {
+    "id": 198,
+    "wordId": 2933,
+    "word": "learn",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Dedicated students _____ new grammar rules every week.",
+    "translationThai": "นักเรียนที่ตั้งใจเรียนรู้กฎไวยากรณ์ใหม่ๆ ในทุกสัปดาห์"
+  },
+  {
+    "id": 199,
+    "wordId": 2938,
+    "word": "leave",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Passengers should prepare to _____ the train at terminal station.",
+    "translationThai": "ผู้โดยสารควรเตรียมตัวออกจากรถไฟที่สถานีปลายทาง"
+  },
+  {
+    "id": 200,
+    "wordId": 2964,
+    "word": "letter",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "She wrote a handwritten thank-you _____ to her teacher.",
+    "translationThai": "เธอเขียนจดหมายขอบคุณด้วยลายมือถึงคุณครูของเธอ"
+  },
+  {
+    "id": 201,
+    "wordId": 2975,
+    "word": "library",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The public _____ offers quiet study rooms for researchers.",
+    "translationThai": "ห้องสมุดประชาชนมีห้องอ่านหนังสือที่เงียบสงบสำหรับนักวิจัย"
+  },
+  {
+    "id": 202,
+    "wordId": 2985,
+    "word": "light",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The morning sunlight provided natural _____ to the studio.",
+    "translationThai": "แสงแดดยามเช้าให้แสงสว่างจากธรรมชาติแก่สตูดิโอ"
+  },
+  {
+    "id": 203,
+    "wordId": 3008,
+    "word": "listen",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "It is important to _____ attentively during lectures.",
+    "translationThai": "การตั้งใจรับฟังอย่างมีสมาธิระหว่างการบรรยายเป็นสิ่งสำคัญมาก"
+  },
+  {
+    "id": 204,
+    "wordId": 3021,
+    "word": "live",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "They chose to _____ in a tranquil countryside village.",
+    "translationThai": "พวกเขาเลือกที่จะอาศัยอยู่ในหมู่บ้านชนบทที่เงียบสงบ"
+  },
+  {
+    "id": 205,
+    "wordId": 3052,
+    "word": "look",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Please _____ closely at the diagram on the projector screen.",
+    "translationThai": "กรุณามองดูแผนภาพบนหน้าจอโปรเจกเตอร์อย่างละเอียด"
+  },
+  {
+    "id": 206,
+    "wordId": 3066,
+    "word": "love",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Parents _____ and support their growing children.",
+    "translationThai": "พ่อแม่รักและคอยสนับสนุนลูกๆ ที่กำลังเติบโต"
+  },
+  {
+    "id": 207,
+    "wordId": 3105,
+    "word": "make",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Hard work and smart planning _____ dreams come true.",
+    "translationThai": "การทำงานหนักและการวางแผนที่ชาญฉลาดทำให้ความฝันกลายเป็นจริง"
+  },
+  {
+    "id": 208,
+    "wordId": 3113,
+    "word": "man",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The wise old _____ shared traditional folk stories.",
+    "translationThai": "ชายชราผู้เปี่ยมปัญญาได้แบ่งปันเรื่องเล่าพื้นบ้านดั้งเดิม"
+  },
+  {
+    "id": 209,
+    "wordId": 3142,
+    "word": "market",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "We bought fresh organic produce at the weekend farmers' _____.",
+    "translationThai": "พวกเราซื้อผลผลิตเกษตรอินทรีย์สดใหม่ที่ตลาดนัดเกษตรกรช่วงสุดสัปดาห์"
+  },
+  {
+    "id": 210,
+    "wordId": 3177,
+    "word": "meal",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Dinner was a nutritious _____ with fish, rice, and greens.",
+    "translationThai": "อาหารเย็นเป็นมื้ออาหารที่มีคุณค่าทางโภชนาการประกอบด้วยปลา ข้าว และผักใบเขียว"
+  },
+  {
+    "id": 211,
+    "wordId": 3203,
+    "word": "meet",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Let's _____ at the cafe near the subway entrance at three.",
+    "translationThai": "มาพบกันที่คาเฟ่ใกล้ทางเข้ารถไฟใต้ดินเวลาบ่ายสามโมงกันเถอะ"
+  },
+  {
+    "id": 212,
+    "wordId": 3276,
+    "word": "minute",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Please wait one _____ while the computer restarts.",
+    "translationThai": "กรุณารอสักหนึ่งนาทีในขณะที่คอมพิวเตอร์กำลังรีสตาร์ต"
+  },
+  {
+    "id": 213,
+    "wordId": 3325,
+    "word": "money",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Wise budgeting helps you save _____ for long-term investments.",
+    "translationThai": "การจัดทำงบประมาณอย่างชาญฉลาดช่วยให้คุณออมเงินสำหรับการลงทุนระยะยาว"
+  },
+  {
+    "id": 214,
+    "wordId": 3332,
+    "word": "month",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "February is typically the shortest _____ of the calendar year.",
+    "translationThai": "เดือนกุมภาพันธ์มักจะเป็นเดือนที่สั้นที่สุดในรอบปีปฏิทิน"
+  },
+  {
+    "id": 215,
+    "wordId": 3344,
+    "word": "morning",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "A brisk _____ walk refreshes both the mind and body.",
+    "translationThai": "การเดินเร็วในยามเช้าช่วยให้ทั้งจิตใจและร่างกายสดชื่น"
+  },
+  {
+    "id": 216,
+    "wordId": 3351,
+    "word": "mother",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "My dedicated _____ baked delicious apple tarts today.",
+    "translationThai": "คุณแม่ผู้ทุ่มเทของฉันอบทาร์ตแอปเปิ้ลแสนอร่อยในวันนี้"
+  },
+  {
+    "id": 217,
+    "wordId": 3361,
+    "word": "mountain",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Hikers climbed to the peak of the snowy _____.",
+    "translationThai": "นักเดินป่าปีนขึ้นไปสู่จุดสูงสุดของภูเขาที่มีหิมะปกคลุม"
+  },
+  {
+    "id": 218,
+    "wordId": 3365,
+    "word": "move",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "They decided to _____ to a quieter suburban neighborhood.",
+    "translationThai": "พวกเขาตัดสินใจย้ายไปอยู่ในย่านชานเมืองที่เงียบสงบกว่าเดิม"
+  },
+  {
+    "id": 219,
+    "wordId": 3385,
+    "word": "music",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Listening to soothing classical _____ improves focus while studying.",
+    "translationThai": "การฟังดนตรีคลาสสิกที่ผ่อนคลายช่วยเพิ่มสมาธิในขณะที่กำลังอ่านหนังสือ"
+  },
+  {
+    "id": 220,
+    "wordId": 3404,
+    "word": "name",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Please print your full legal _____ on the dotted line.",
+    "translationThai": "กรุณาเขียนชื่อ-นามสกุลตามกฎหมายอย่างชัดเจนบนเส้นประ"
+  },
+  {
+    "id": 221,
+    "wordId": 3416,
+    "word": "nature",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "Walking in undisturbed _____ relieves urban stress and fatigue.",
+    "translationThai": "การเดินในธรรมชาติที่ปราศจากการรบกวนช่วยคลายความเครียดและความเหนื่อยล้าของชีวิตคนเมือง"
+  },
+  {
+    "id": 222,
+    "wordId": 3429,
+    "word": "need",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Living organisms _____ oxygen and hydration to survive.",
+    "translationThai": "สิ่งมีชีวิตต้องการออกซิเจนและการได้รับน้ำเพื่อความอยู่รอด"
+  },
+  {
+    "id": 223,
+    "wordId": 3451,
+    "word": "new",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "She purchased a sleek _____ laptop for university coursework.",
+    "translationThai": "เธอซื้อแล็ปท็อปรุ่นใหม่ดีไซน์เรียบหรูสำหรับการเรียนในมหาวิทยาลัย"
+  },
+  {
+    "id": 224,
+    "wordId": 3456,
+    "word": "newspaper",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "He reads the morning daily _____ over breakfast.",
+    "translationThai": "เขาอ่านหนังสือพิมพ์รายวันยามเช้าระหว่างทานอาหารเช้า"
+  },
+  {
+    "id": 225,
+    "wordId": 3461,
+    "word": "night",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The stars twinkled brilliantly in the clear night _____ sky.",
+    "translationThai": "ดวงดาวส่องประกายระยิบระยับบนท้องฟ้ายามค่ำคืนที่ปลอดโปร่ง"
+  },
+  {
+    "id": 226,
+    "wordId": 3516,
+    "word": "number",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Please write your mobile telephone _____ on the registry.",
+    "translationThai": "กรุณาเขียนหมายเลขโทรศัพท์มือถือของคุณลงในสมุดลงทะเบียน"
+  },
+  {
+    "id": 227,
+    "wordId": 3587,
+    "word": "often",
+    "targetPOS": "adverb",
+    "level": "A1",
+    "sentence": "We _____ visit the public library on Saturday mornings.",
+    "translationThai": "พวกเรามักจะไปเยี่ยมชมห้องสมุดประชาชนในเช้าวันเสาร์บ่อยๆ"
+  },
+  {
+    "id": 228,
+    "wordId": 3591,
+    "word": "old",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "The historic city center boasts many _____ stone buildings.",
+    "translationThai": "ใจกลางเมืองประวัติศาสตร์มีอาคารหินโบราณเก่าแก่มากมาย"
+  },
+  {
+    "id": 229,
+    "wordId": 3607,
+    "word": "open",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Please _____ the entrance door to welcome the visitors.",
+    "translationThai": "กรุณาเปิดประตูทางเข้าเพื่อต้อนรับผู้มาเยือน"
+  },
+  {
+    "id": 230,
+    "wordId": 3646,
+    "word": "order",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Let's _____ delicious vegetarian pizza for dinner tonight.",
+    "translationThai": "สั่งพิซซ่ามังสวิรัติแสนอร่อยสำหรับมื้อเย็นคืนนี้กันเถอะ"
+  },
+  {
+    "id": 231,
+    "wordId": 3752,
+    "word": "page",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Please turn to _____ forty-two of the biology textbook.",
+    "translationThai": "กรุณาเปิดไปที่หน้าที่สี่สิบสองของหนังสือเรียนชีววิทยา"
+  },
+  {
+    "id": 232,
+    "wordId": 3757,
+    "word": "paint",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Artists use oils and watercolors to _____ vibrant landscapes.",
+    "translationThai": "ศิลปินใช้สีน้ำมันและสีน้ำเพื่อวาดภาพทิวทัศน์ที่มีชีวิตชีวา"
+  },
+  {
+    "id": 233,
+    "wordId": 3775,
+    "word": "paper",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Recycling clean waste _____ helps protect natural forests.",
+    "translationThai": "การรีไซเคิลกระดาษเหลือใช้ที่สะอาดช่วยปกป้องผืนป่าธรรมชาติ"
+  },
+  {
+    "id": 234,
+    "wordId": 3791,
+    "word": "parent",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Every loving _____ desires a secure future for their children.",
+    "translationThai": "พ่อแม่ที่รักลูกทุกคนปรารถนาอนาคตที่มั่นคงและปลอดภัยสำหรับลูกๆ ของตน"
+  },
+  {
+    "id": 235,
+    "wordId": 3795,
+    "word": "park",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Families had a delightful picnic in the green city _____.",
+    "translationThai": "ครอบครัวต่างๆ มาปิกนิกอย่างมีความสุขในสวนสาธารณะใจกลางเมือง"
+  },
+  {
+    "id": 236,
+    "wordId": 3800,
+    "word": "part",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Team collaboration is an indispensable _____ of project success.",
+    "translationThai": "การร่วมมือกันทำงานเป็นทีมเป็นส่วนสำคัญที่ขาดไม่ได้ของความสำเร็จในโครงการ"
+  },
+  {
+    "id": 237,
+    "wordId": 3815,
+    "word": "party",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "We celebrated her birthday with a joyful surprise _____.",
+    "translationThai": "พวกเราฉลองวันเกิดของเธอด้วยงานปาร์ตี้เซอร์ไพรส์ที่เต็มไปด้วยความสุข"
+  },
+  {
+    "id": 238,
+    "wordId": 3816,
+    "word": "pass",
+    "targetPOS": "verb",
+    "level": "A2",
+    "sentence": "Study diligently to _____ your licensing exam on the first attempt.",
+    "translationThai": "ตั้งใจเรียนอย่างขยันขันแข็งเพื่อสอบผ่านใบอนุญาตตั้งแต่ครั้งแรกที่สอบ"
+  },
+  {
+    "id": 239,
+    "wordId": 3837,
+    "word": "patient",
+    "targetPOS": "adjective",
+    "level": "A2",
+    "sentence": "A good teacher is always calm, understanding, and _____ with pupils.",
+    "translationThai": "ครูที่ดีจะมีความสงบ เข้าอกเข้าใจ และอดทนต่อนักเรียนเสมอ"
+  },
+  {
+    "id": 240,
+    "wordId": 3849,
+    "word": "pay",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "You can securely _____ for groceries using your smartphone.",
+    "translationThai": "คุณสามารถชำระค่าสินค้าอุปโภคบริโภคได้อย่างปลอดภัยด้วยสมาร์ตโฟนของคุณ"
+  },
+  {
+    "id": 241,
+    "wordId": 3870,
+    "word": "people",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Kind and compassionate _____ make our world a better community.",
+    "translationThai": "ผู้คนที่มีจิตใจดีและมีความเมตตากรุณาทำให้โลกของเราเป็นสังคมที่น่าอยู่ยิ่งขึ้น"
+  },
+  {
+    "id": 242,
+    "wordId": 3889,
+    "word": "period",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "The Renaissance was an extraordinary _____ of artistic rebirth.",
+    "translationThai": "ยุคเรเนซองส์เป็นช่วงเวลาอันแสนพิเศษแห่งการฟื้นฟูศิลปวิทยาการ"
+  },
+  {
+    "id": 243,
+    "wordId": 3911,
+    "word": "person",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "She is a trustworthy and dependable _____ in our department.",
+    "translationThai": "เธอเป็นบุคคลที่น่าไว้วางใจและพึ่งพาได้ในแผนกของเรา"
+  },
+  {
+    "id": 244,
+    "wordId": 3950,
+    "word": "picture",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "He hung a colorful framed _____ above the fireplace.",
+    "translationThai": "เขาแขวนรูปภาพใส่กรอบสีสันสดใสไว้เหนือเตาผิง"
+  },
+  {
+    "id": 245,
+    "wordId": 3971,
+    "word": "place",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The quiet botanical garden is a peaceful _____ to reflect.",
+    "translationThai": "สวนพฤกษศาสตร์ที่เงียบสงบเป็นสถานที่อันเงียบสงบเหมาะแก่การทบทวนจิตใจ"
+  },
+  {
+    "id": 246,
+    "wordId": 3982,
+    "word": "plant",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Remember to water the potted fern _____ on the balcony.",
+    "translationThai": "อย่าลืมรดน้ำต้นเฟิร์นในกระถางที่อยู่ตรงระเบียงด้วยนะ"
+  },
+  {
+    "id": 247,
+    "wordId": 3987,
+    "word": "play",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Children love to run and _____ in the neighborhood playground.",
+    "translationThai": "เด็กๆ ชอบวิ่งและเล่นสนุกกันในสนามเด็กเล่นประจำหมู่บ้าน"
+  },
+  {
+    "id": 248,
+    "wordId": 4011,
+    "word": "point",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The speaker made an insightful and persuasive _____ during the debate.",
+    "translationThai": "ผู้บรรยายได้ยกประเด็นที่เฉียบคมและน่าเชื่อถือในระหว่างการโต้วาที"
+  },
+  {
+    "id": 249,
+    "wordId": 4019,
+    "word": "police",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The dedicated _____ officers patrol the city to keep residents safe.",
+    "translationThai": "เจ้าหน้าที่ตำรวจผู้ทุ่มเทออกตรวจตราทั่วเมืองเพื่อรักษาความปลอดภัยให้แก่ประชาชน"
+  },
+  {
+    "id": 250,
+    "wordId": 4036,
+    "word": "popular",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "The seaside cafe is extremely _____ among young tourists.",
+    "translationThai": "คาเฟ่ริมทะเลแห่งนี้เป็นที่นิยมอย่างยิ่งในหมู่นักท่องเที่ยววัยรุ่น"
+  },
+  {
+    "id": 251,
+    "wordId": 4050,
+    "word": "position",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "She applied for a senior managerial _____ at the tech firm.",
+    "translationThai": "เธอได้ยื่นใบสมัครสำหรับตำแหน่งผู้บริหารระดับสูงที่บริษัทเทคโนโลยี"
+  },
+  {
+    "id": 252,
+    "wordId": 4055,
+    "word": "possible",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "With dedication and perseverance, reaching your goals is completely _____.",
+    "translationThai": "ด้วยความมุ่งมั่นและความอุตสาหะ การบรรลุเป้าหมายของคุณจึงเป็นสิ่งที่เป็นไปได้อย่างแน่นอน"
+  },
+  {
+    "id": 253,
+    "wordId": 4072,
+    "word": "power",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "Solar panels generate clean electrical _____ from sunshine.",
+    "translationThai": "แผงโซลาร์เซลล์ผลิตพลังงานไฟฟ้าที่สะอาดจากแสงแดด"
+  },
+  {
+    "id": 254,
+    "wordId": 4077,
+    "word": "practice",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "You should _____ speaking English daily to gain fluency.",
+    "translationThai": "คุณควรฝึกพูดภาษาอังกฤษทุกวันเพื่อเพิ่มความคล่องแคล่ว"
+  },
+  {
+    "id": 255,
+    "wordId": 4126,
+    "word": "prepare",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Chefs take hours to _____ the intricate multi-course feast.",
+    "translationThai": "เหล่าเชฟใช้เวลาหลายชั่วโมงในการตระเตรียมอาหารมื้อพิเศษหลายคอร์สอันประณีต"
+  },
+  {
+    "id": 256,
+    "wordId": 4164,
+    "word": "price",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The affordable retail _____ made the new gadget a best-seller.",
+    "translationThai": "ราคาขายปลีกที่จับต้องได้ทำให้อุปกรณ์ชิ้นใหม่นี้กลายเป็นสินค้าขายดี"
+  },
+  {
+    "id": 257,
+    "wordId": 4195,
+    "word": "problem",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Engineers worked collaboratively to resolve the software _____.",
+    "translationThai": "ทีมวิศวกรได้ร่วมมือกันเพื่อแก้ไขปัญหาข้อผิดพลาดของซอฟต์แวร์"
+  },
+  {
+    "id": 258,
+    "wordId": 4228,
+    "word": "program",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The university launched an innovative exchange _____ for undergraduates.",
+    "translationThai": "มหาวิทยาลัยได้เปิดตัวโครงการแลกเปลี่ยนนวัตกรรมใหม่สำหรับนักศึกษาระดับปริญญาตรี"
+  },
+  {
+    "id": 259,
+    "wordId": 4286,
+    "word": "protect",
+    "targetPOS": "verb",
+    "level": "A2",
+    "sentence": "Wearing a sturdy helmet will _____ your head while cycling.",
+    "translationThai": "การสวมหมวกกันน็อกที่แข็งแรงจะช่วยปกป้องศีรษะของคุณขณะปั่นจักรยาน"
+  },
+  {
+    "id": 260,
+    "wordId": 4301,
+    "word": "provide",
+    "targetPOS": "verb",
+    "level": "A2",
+    "sentence": "The charity organization strives to _____ warm meals to homeless families.",
+    "translationThai": "องค์กรการกุศลมุ่งมั่นที่จะจัดหาอาหารอุ่นๆ ให้แก่ครอบครัวผู้ไร้ที่อยู่อาศัย"
+  },
+  {
+    "id": 261,
+    "wordId": 4321,
+    "word": "public",
+    "targetPOS": "adjective",
+    "level": "A2",
+    "sentence": "Clean _____ transportation reduces highway traffic congestion.",
+    "translationThai": "ระบบขนส่งสาธารณะที่สะอาดช่วยลดปัญหาการจราจรติดขัดบนทางหลวง"
+  },
+  {
+    "id": 262,
+    "wordId": 4348,
+    "word": "put",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Please _____ your luggage in the overhead storage bin.",
+    "translationThai": "กรุณาวางสัมภาระของคุณไว้ในช่องเก็บของเหนือศีรษะ"
+  },
+  {
+    "id": 263,
+    "wordId": 4375,
+    "word": "question",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Feel free to raise your hand and ask any _____.",
+    "translationThai": "อย่าลังเลที่จะยกมือขึ้นและถามคำถามใดๆ ก็ได้"
+  },
+  {
+    "id": 264,
+    "wordId": 4379,
+    "word": "quick",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "We grabbed a _____ breakfast before rushing to the morning train.",
+    "translationThai": "พวกเราทานอาหารเช้าอย่างรวดเร็วก่อนที่จะรีบไปขึ้นรถไฟรอบเช้า"
+  },
+  {
+    "id": 265,
+    "wordId": 4382,
+    "word": "quiet",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "The forest library is a peaceful and _____ sanctuary.",
+    "translationThai": "ห้องสมุดกลางป่าเป็นสถานที่พักผ่อนที่สงบและเงียบสงัด"
+  },
+  {
+    "id": 266,
+    "wordId": 4446,
+    "word": "read",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "I love to _____ inspiring biographies of pioneering inventors.",
+    "translationThai": "ฉันชอบอ่านชีวประวัติที่สร้างแรงบันดาลใจของเหล่านักประดิษฐ์ผู้บุกเบิก"
+  },
+  {
+    "id": 267,
+    "wordId": 4451,
+    "word": "ready",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Pack your backpack tonight so you are _____ early tomorrow.",
+    "translationThai": "จัดกระเป๋าเป้ของคุณคืนนี้เพื่อให้คุณพร้อมแต่เช้าในวันพรุ่งนี้"
+  },
+  {
+    "id": 268,
+    "wordId": 4452,
+    "word": "real",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Authentic kindness and empathy are signs of _____ strength.",
+    "translationThai": "ความเมตตาและความเห็นอกเห็นใจที่แท้จริงคือเครื่องหมายของความเข้มแข็งที่แท้จริง"
+  },
+  {
+    "id": 269,
+    "wordId": 4481,
+    "word": "receive",
+    "targetPOS": "verb",
+    "level": "A2",
+    "sentence": "You will _____ a formal confirmation email once registered.",
+    "translationThai": "คุณจะได้รับอีเมลยืนยันอย่างเป็นทางการเมื่อลงทะเบียนเสร็จเรียบร้อย"
+  },
+  {
+    "id": 270,
+    "wordId": 4509,
+    "word": "record",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "The champion athlete set a remarkable world _____ in the sprint.",
+    "translationThai": "นักกีฬาระดับแชมป์ได้สร้างสถิติโลกอันน่าทึ่งในการแข่งขันวิ่งระยะสั้น"
+  },
+  {
+    "id": 271,
+    "wordId": 4525,
+    "word": "red",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "The sports coupe was painted a gleaming cherry _____.",
+    "translationThai": "รถสปอร์ตคูเป้ถูกพ่นสีแดงเชอร์รี่แวววาวสดใส"
+  },
+  {
+    "id": 272,
+    "wordId": 4633,
+    "word": "remember",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Always _____ to lock the front gate before going to bed.",
+    "translationThai": "จำไว้เสมอว่าต้องล็อคประตูด้านหน้าก่อนเข้านอน"
+  },
+  {
+    "id": 273,
+    "wordId": 4680,
+    "word": "report",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "The analyst presented a comprehensive market research _____.",
+    "translationThai": "นักวิเคราะห์ได้นำเสนอรายงานการวิจัยตลาดฉบับสมบูรณ์"
+  },
+  {
+    "id": 274,
+    "wordId": 4705,
+    "word": "require",
+    "targetPOS": "verb",
+    "level": "B1",
+    "sentence": "Complex engineering projects _____ meticulous coordination and rigor.",
+    "translationThai": "โครงการวิศวกรรมที่ซับซ้อนจำเป็นต้องอาศัยการประสานงานอย่างพิถีพิถันและความแม่นยำ"
+  },
+  {
+    "id": 275,
+    "wordId": 4752,
+    "word": "rest",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Tired marathon runners stopped under the shade to _____.",
+    "translationThai": "นักวิ่งมาราธอนที่เหนื่อยล้าหยุดพักใต้ร่มเงาไม้เพื่อพักผ่อน"
+  },
+  {
+    "id": 276,
+    "wordId": 4761,
+    "word": "result",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Hard work and dedication brought about a tremendous positive _____.",
+    "translationThai": "การทำงานหนักและความทุ่มเทนำมาซึ่งผลลัพธ์เชิงบวกอันยอดเยี่ยม"
+  },
+  {
+    "id": 277,
+    "wordId": 4785,
+    "word": "return",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Please _____ borrowed reference books to the circulation desk.",
+    "translationThai": "กรุณานำหนังสืออ้างอิงที่ยืมไปส่งคืนที่เคาน์เตอร์บริการยืม-คืน"
+  },
+  {
+    "id": 278,
+    "wordId": 4816,
+    "word": "rich",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "The coastal area has a _____ cultural heritage and history.",
+    "translationThai": "พื้นที่ชายฝั่งมีมรดกทางวัฒนธรรมและประวัติศาสตร์ที่อุดมสมบูรณ์"
+  },
+  {
+    "id": 279,
+    "wordId": 4819,
+    "word": "ride",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "We rented bicycles to _____ along the scenic riverbanks.",
+    "translationThai": "พวกเราเช่าจักรยานเพื่อปั่นไปตามริมฝั่งแม่น้ำที่สวยงาม"
+  },
+  {
+    "id": 280,
+    "wordId": 4823,
+    "word": "right",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Take your time to make sure you chose the _____ answer.",
+    "translationThai": "ค่อยๆ ตรวจสอบเพื่อให้แน่ใจว่าคุณได้เลือกคำตอบที่ถูกต้องแล้ว"
+  },
+  {
+    "id": 281,
+    "wordId": 4840,
+    "word": "river",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "A tranquil winding _____ flows through the lush valley.",
+    "translationThai": "แม่น้ำสายสงบที่คดเคี้ยวไหลผ่านหุบเขาที่เขียวชอุ่ม"
+  },
+  {
+    "id": 282,
+    "wordId": 4841,
+    "word": "road",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The paved mountain _____ led up to the scenic observatory.",
+    "translationThai": "ถนนลาดยางบนภูเขานำทางขึ้นไปสู่หอดูดาวชมวิวอันงดงาม"
+  },
+  {
+    "id": 283,
+    "wordId": 4855,
+    "word": "room",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The spacious living _____ was filled with warm afternoon sunlight.",
+    "translationThai": "ห้องนั่งเล่นที่กว้างขวางเต็มไปด้วยแสงแดดยามบ่ายที่อบอุ่น"
+  },
+  {
+    "id": 284,
+    "wordId": 4881,
+    "word": "run",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Athletes _____ around the stadium track every morning.",
+    "translationThai": "เหล่านักกีฬาวิ่งรอบลู่วิ่งในสนามกีฬาในทุกๆ เช้า"
+  },
+  {
+    "id": 285,
+    "wordId": 4895,
+    "word": "safe",
+    "targetPOS": "adjective",
+    "level": "A2",
+    "sentence": "Fasten your seatbelt to stay secure and _____ during the flight.",
+    "translationThai": "คาดเข็มขัดนิรภัยเพื่อความปลอดภัยและมั่นคงตลอดการเดินทางด้วยเครื่องบิน"
+  },
+  {
+    "id": 286,
+    "wordId": 4912,
+    "word": "same",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Twin sisters wore the _____ matching blue dresses.",
+    "translationThai": "พี่น้องฝาแฝดสวมชุดกระโปรงสีฟ้าที่เหมือนกันทุกประการ"
+  },
+  {
+    "id": 287,
+    "wordId": 4933,
+    "word": "save",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Disciplined habits help you _____ money for your retirement.",
+    "translationThai": "วินัยที่ดีช่วยให้คุณออมเงินไว้สำหรับช่วงวัยเกษียณ"
+  },
+  {
+    "id": 288,
+    "wordId": 4956,
+    "word": "school",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Students walked cheerfully through the gates of the elementary _____.",
+    "translationThai": "นักเรียนเดินอย่างร่าเริงผ่านประตูโรงเรียนประถมศึกษา"
+  },
+  {
+    "id": 289,
+    "wordId": 4957,
+    "word": "science",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Modern _____ has revolutionized medical treatments globally.",
+    "translationThai": "วิทยาศาสตร์ยุคใหม่ได้ปฏิวัติวงการการรักษาทางการแพทย์ไปทั่วโลก"
+  },
+  {
+    "id": 290,
+    "wordId": 4976,
+    "word": "sea",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Gentle blue waves rolled peacefully onto the tropical _____ shore.",
+    "translationThai": "คลื่นทะเลสีครามซัดเข้าสู่ชายฝั่งทะเลเขตร้อนอย่างสงบ"
+  },
+  {
+    "id": 291,
+    "wordId": 4980,
+    "word": "season",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Autumn is a picturesque _____ when golden leaves blanket the ground.",
+    "translationThai": "ฤดูใบไม้ร่วงเป็นฤดูกาลที่สวยงามดั่งภาพวาดเมื่อใบไม้สีทองปกคลุมพื้นดิน"
+  },
+  {
+    "id": 292,
+    "wordId": 4985,
+    "word": "second",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Wait just a _____ while I retrieve your files.",
+    "translationThai": "รอสักหนึ่งวินาทีในขณะที่ฉันกำลังเปิดค้นหาไฟล์ของคุณ"
+  },
+  {
+    "id": 293,
+    "wordId": 5003,
+    "word": "see",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "From the summit, you can _____ the panoramic city skyline.",
+    "translationThai": "จากยอดเขา คุณสามารถมองเห็นเส้นขอบฟ้าของเมืองได้แบบพาโนรามา"
+  },
+  {
+    "id": 294,
+    "wordId": 5023,
+    "word": "send",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "I will _____ the project agenda via email before noon.",
+    "translationThai": "ฉันจะส่งกำหนดการโครงการผ่านทางอีเมลก่อนเที่ยงวัน"
+  },
+  {
+    "id": 295,
+    "wordId": 5050,
+    "word": "service",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "The luxury hotel is renowned for its exceptional customer _____.",
+    "translationThai": "โรงแรมหรูแห่งนี้มีชื่อเสียงในเรื่องการบริการลูกค้าที่ยอดเยี่ยมเป็นเลิศ"
+  },
+  {
+    "id": 296,
+    "wordId": 5079,
+    "word": "share",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "It is rewarding to _____ knowledge with enthusiastic students.",
+    "translationThai": "การได้แบ่งปันความรู้กับนักเรียนที่มีความกระตือรือร้นเป็นเรื่องที่น่าภาคภูมิใจ"
+  },
+  {
+    "id": 297,
+    "wordId": 5104,
+    "word": "shop",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "She bought freshly roasted beans from the local coffee _____.",
+    "translationThai": "เธอซื้อเมล็ดกาแฟคั่วสดใหม่จากร้านกาแฟท้องถิ่น"
+  },
+  {
+    "id": 298,
+    "wordId": 5107,
+    "word": "short",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "We took a _____ ten-minute break after the presentation.",
+    "translationThai": "พวกเราหยุดพักช่วงสั้นๆ เป็นเวลาสิบนาทีหลังจากการนำเสนอ"
+  },
+  {
+    "id": 299,
+    "wordId": 5118,
+    "word": "show",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "The tour guide will _____ you the historical museum exhibits.",
+    "translationThai": "มัคคุเทศก์จะพาคุณไปชมและแสดงนิทรรศการประวัติศาสตร์ของพิพิธภัณฑ์"
+  },
+  {
+    "id": 300,
+    "wordId": 5149,
+    "word": "simple",
+    "targetPOS": "adjective",
+    "level": "A2",
+    "sentence": "A _____ and intuitive user interface improves productivity.",
+    "translationThai": "อินเทอร์เฟซผู้ใช้ที่เรียบง่ายและใช้งานง่ายช่วยเพิ่มผลผลิตในการทำงาน"
+  },
+  {
+    "id": 301,
+    "wordId": 5161,
+    "word": "sing",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "The children's choir began to _____ melodic festive carols.",
+    "translationThai": "คณะนักร้องประสานเสียงเด็กเริ่มขับร้องเพลงประสานเสียงเทศกาลอันไพเราะ"
+  },
+  {
+    "id": 302,
+    "wordId": 5169,
+    "word": "sister",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "My younger _____ is studying graphic design in Melbourne.",
+    "translationThai": "น้องสาวของฉันกำลังศึกษาสาขาการออกแบบกราฟิกในเมลเบิร์น"
+  },
+  {
+    "id": 303,
+    "wordId": 5170,
+    "word": "sit",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Please _____ down in the reception lounge and relax.",
+    "translationThai": "กรุณานั่งลงในห้องรับรองและพักผ่อนตามอัธยาศัย"
+  },
+  {
+    "id": 304,
+    "wordId": 5199,
+    "word": "sleep",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Humans require eight hours of uninterrupted _____ each night.",
+    "translationThai": "มนุษย์ต้องการการนอนหลับพักผ่อนต่อเนื่องแปดชั่วโมงในแต่ละคืน"
+  },
+  {
+    "id": 305,
+    "wordId": 5213,
+    "word": "small",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "A _____ startup company developed this revolutionary app.",
+    "translationThai": "บริษัทสตาร์ตอัปขนาดเล็กได้พัฒนาแอปพลิเคชันที่ปฏิวัติวงการนี้ขึ้นมา"
+  },
+  {
+    "id": 306,
+    "wordId": 5218,
+    "word": "smile",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "A warm and genuine _____ instantly creates a friendly connection.",
+    "translationThai": "รอยยิ้มที่อบอุ่นและจริงใจสร้างมิตรภาพและความผูกพันได้ในทันที"
+  },
+  {
+    "id": 307,
+    "wordId": 5236,
+    "word": "social",
+    "targetPOS": "adjective",
+    "level": "A2",
+    "sentence": "Maintaining active _____ connections contributes to long-term happiness.",
+    "translationThai": "การรักษาความสัมพันธ์ทางสังคมที่เหนียวแน่นช่วยส่งเสริมความสุขในระยะยาว"
+  },
+  {
+    "id": 308,
+    "wordId": 5275,
+    "word": "song",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The radio station played my favorite nostalgic acoustic _____.",
+    "translationThai": "สถานีวิทยุเปิดเพลงอะคูสติกสุดโปรดที่ชวนให้คิดถึงความหลัง"
+  },
+  {
+    "id": 309,
+    "wordId": 5300,
+    "word": "speak",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Diplomats _____ multiple languages to facilitate negotiations.",
+    "translationThai": "เหล่านักการทูตพูดได้หลายภาษาเพื่ออำนวยความสะดวกในการเจรจา"
+  },
+  {
+    "id": 310,
+    "wordId": 5302,
+    "word": "special",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "We prepared a _____ gourmet feast for our anniversary celebration.",
+    "translationThai": "พวกเราได้เตรียมอาหารมื้อพิเศษเลิศรสสำหรับงานฉลองครบรอบวันแต่งงาน"
+  },
+  {
+    "id": 311,
+    "wordId": 5325,
+    "word": "spend",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "I prefer to _____ my vacations exploring scenic national parks.",
+    "translationThai": "ฉันชอบที่จะใช้เวลาในวันหยุดไปกับการสำรวจอุทยานแห่งชาติที่สวยงาม"
+  },
+  {
+    "id": 312,
+    "wordId": 5391,
+    "word": "start",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "The morning keynote presentation will _____ promptly at nine.",
+    "translationThai": "การนำเสนอหัวข้อสำคัญรอบเช้าจะเริ่มต้นขึ้นตรงเวลาเก้าโมงตรง"
+  },
+  {
+    "id": 313,
+    "wordId": 5405,
+    "word": "stay",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "We decided to _____ indoors while the thunderstorm passed.",
+    "translationThai": "พวกเราตัดสินใจอยู่ข้างในอาคารในขณะที่พายุฝนฟ้าคะนองกำลังพัดผ่าน"
+  },
+  {
+    "id": 314,
+    "wordId": 5437,
+    "word": "stop",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Drivers must _____ fully when traffic lights turn red.",
+    "translationThai": "ผู้ขับขี่ต้องหยุดรถสนิทเมื่อสัญญาณไฟจราจรเปลี่ยนเป็นสีแดง"
+  },
+  {
+    "id": 315,
+    "wordId": 5441,
+    "word": "story",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Grandfather recounted an adventurous folk _____ by the campfire.",
+    "translationThai": "คุณปู่ได้เล่าเรื่องราวนิทานพื้นบ้านเกี่ยวกับการผจญภัยข้างกองไฟ"
+  },
+  {
+    "id": 316,
+    "wordId": 5454,
+    "word": "street",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Charming cafes and bookstores line the cobbled pedestrian _____.",
+    "translationThai": "คาเฟ่และร้านหนังสือน่ารักเรียงรายไปตามถนนคนเดินที่ปูด้วยหิน"
+  },
+  {
+    "id": 317,
+    "wordId": 5470,
+    "word": "strong",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Weight training builds _____ and resilient physical muscles.",
+    "translationThai": "การฝึกเวตเทรนนิ่งช่วยสร้างกล้ามเนื้อร่างกายที่แข็งแรงและยืดหยุ่น"
+  },
+  {
+    "id": 318,
+    "wordId": 5476,
+    "word": "student",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Every dedicated _____ worked hard to excel in exams.",
+    "translationThai": "นักเรียนที่ทุ่มเททุกคนตั้งใจเรียนอย่างหนักเพื่อทำคะแนนสอบให้ยอดเยี่ยม"
+  },
+  {
+    "id": 319,
+    "wordId": 5478,
+    "word": "study",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "You must _____ the grammatical patterns diligently to improve.",
+    "translationThai": "คุณต้องศึกษาทำความเข้าใจรูปแบบไวยากรณ์อย่างขยันขันแข็งเพื่อพัฒนาตนเอง"
+  },
+  {
+    "id": 320,
+    "wordId": 5523,
+    "word": "successful",
+    "targetPOS": "adjective",
+    "level": "A2",
+    "sentence": "Hard dedication and teamwork resulted in a highly _____ launch.",
+    "translationThai": "ความทุ่มเทและการทำงานร่วมกันเป็นทีมส่งผลให้การเปิดตัวประสบความสำเร็จอย่างสูง"
+  },
+  {
+    "id": 321,
+    "wordId": 5554,
+    "word": "summer",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Families enjoy sunbathing and swimming during warm _____ months.",
+    "translationThai": "ครอบครัวต่างๆ เพลิดเพลินกับการอาบแดดและว่ายน้ำในช่วงเดือนฤดูร้อนที่อบอุ่น"
+  },
+  {
+    "id": 322,
+    "wordId": 5650,
+    "word": "system",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "Engineers upgraded the solar power generation _____.",
+    "translationThai": "ทีมวิศวกรได้อัปเกรดระบบผลิตไฟฟ้าจากพลังงานแสงอาทิตย์"
+  },
+  {
+    "id": 323,
+    "wordId": 5654,
+    "word": "table",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "She set the dining _____ with porcelain plates and cutlery.",
+    "translationThai": "เธอจัดโต๊ะอาหารด้วยจานกระเบื้องและช้อนส้อมอย่างประณีต"
+  },
+  {
+    "id": 324,
+    "wordId": 5664,
+    "word": "take",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Remember to _____ your umbrella when clouds gather.",
+    "translationThai": "อย่าลืมนำร่มของคุณไปด้วยเมื่อมีเมฆครึ้มตั้งเค้า"
+  },
+  {
+    "id": 325,
+    "wordId": 5669,
+    "word": "talk",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "We sat by the fireplace to _____ about our adventures.",
+    "translationThai": "พวกเรานั่งข้างเตาผิงเพื่อพูดคุยเกี่ยวกับเรื่องราวการผจญภัยของพวกเรา"
+  },
+  {
+    "id": 326,
+    "wordId": 5689,
+    "word": "teach",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Dedicated educators _____ valuable knowledge and life skills.",
+    "translationThai": "ครูผู้ทุ่มเทสอนทั้งความรู้ที่มีค่าและทักษะการใช้ชีวิต"
+  },
+  {
+    "id": 327,
+    "wordId": 5690,
+    "word": "teacher",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The inspiring science _____ conducted exciting chemistry experiments.",
+    "translationThai": "คุณครูวิทยาศาสตร์ผู้สร้างแรงบันดาลใจได้ทำการทดลองเคมีที่น่าตื่นเต้น"
+  },
+  {
+    "id": 328,
+    "wordId": 5704,
+    "word": "tell",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Could you please _____ me the directions to the station?",
+    "translationThai": "คุณช่วยบอกเส้นทางไปยังสถานีรถไฟให้ฉันทราบได้ไหม"
+  },
+  {
+    "id": 329,
+    "wordId": 5749,
+    "word": "test",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Students reviewed their notes thoroughly before the final _____.",
+    "translationThai": "นักเรียนทบทวนสมุดโน้ตอย่างละเอียดรอบคอบก่อนการสอบปลายภาค"
+  },
+  {
+    "id": 330,
+    "wordId": 5759,
+    "word": "thank",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Always remember to _____ those who offer you assistance.",
+    "translationThai": "อย่าลืมกล่าวขอบคุณผู้ที่ให้ความช่วยเหลือแก่คุณเสมอ"
+  },
+  {
+    "id": 331,
+    "wordId": 5794,
+    "word": "think",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Take a moment to _____ carefully before answering the question.",
+    "translationThai": "ใช้เวลาคิดใคร่ครวญอย่างรอบคอบสักครู่ก่อนที่จะตอบคำถาม"
+  },
+  {
+    "id": 332,
+    "wordId": 5838,
+    "word": "time",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Managing your personal _____ effectively reduces daily stress.",
+    "translationThai": "การบริหารจัดการเวลาส่วนตัวอย่างมีประสิทธิภาพช่วยลดความเครียดในชีวิตประจำวัน"
+  },
+  {
+    "id": 333,
+    "wordId": 5850,
+    "word": "today",
+    "targetPOS": "adverb",
+    "level": "A1",
+    "sentence": "The sunny weather outside is exceptionally pleasant _____.",
+    "translationThai": "สภาพอากาศแดดจ้าข้างนอกในวันนี้รู้สึกรื่นรมย์และน่าอยู่เป็นพิเศษ"
+  },
+  {
+    "id": 334,
+    "wordId": 5852,
+    "word": "together",
+    "targetPOS": "adverb",
+    "level": "A1",
+    "sentence": "Musicians practiced harmoniously _____ for the weekend concert.",
+    "translationThai": "เหล่านักดนตรีได้ฝึกซ้อมร่วมกันอย่างกลมกลืนสำหรับคอนเสิร์ตวันหยุดสุดสัปดาห์"
+  },
+  {
+    "id": 335,
+    "wordId": 5861,
+    "word": "tomorrow",
+    "targetPOS": "adverb",
+    "level": "A1",
+    "sentence": "We will embark on our mountain trek early _____.",
+    "translationThai": "พวกเราจะออกเดินทางไกลขึ้นภูเขาแต่เช้าตรู่ในวันพรุ่งนี้"
+  },
+  {
+    "id": 336,
+    "wordId": 5892,
+    "word": "town",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The historic seaside _____ attracts thousands of summer visitors.",
+    "translationThai": "เมืองริมทะเลที่เปี่ยมไปด้วยประวัติศาสตร์ดึงดูดผู้มาเยือนหลายพันคนในฤดูร้อน"
+  },
+  {
+    "id": 337,
+    "wordId": 5911,
+    "word": "train",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "We boarded the express bullet _____ heading towards Kyoto.",
+    "translationThai": "พวกเราขึ้นรถไฟหัวกระสุนด่วนพิเศษที่มุ่งหน้าไปยังเมืองเกียวโต"
+  },
+  {
+    "id": 338,
+    "wordId": 5955,
+    "word": "travel",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Visiting diverse countries allows you to _____ and learn cultures.",
+    "translationThai": "การเดินทางไปยังประเทศต่างๆ ช่วยให้คุณได้ท่องเที่ยวและเรียนรู้วัฒนธรรมใหม่ๆ"
+  },
+  {
+    "id": 339,
+    "wordId": 5966,
+    "word": "tree",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Birds built their cozy nest high in the ancient oak _____.",
+    "translationThai": "เหล่านกสร้างรังอันอบอุ่นไว้สูงบนต้นโอ๊กโบราณ"
+  },
+  {
+    "id": 340,
+    "wordId": 5984,
+    "word": "trip",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Our family enjoyed a wonderful camping _____ by the lake.",
+    "translationThai": "ครอบครัวของเรามีความสุขกับทริปตั้งแคมป์อันแสนวิเศษริมทะเลสาบ"
+  },
+  {
+    "id": 341,
+    "wordId": 5998,
+    "word": "true",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "Honesty and integrity are hallmarks of a _____ friend.",
+    "translationThai": "ความซื่อสัตย์และความจริงใจคือเครื่องหมายบ่งบอกความเป็นเพื่อนแท้"
+  },
+  {
+    "id": 342,
+    "wordId": 6006,
+    "word": "try",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Do not be afraid to _____ new creative hobbies.",
+    "translationThai": "อย่ากลัวที่จะลองทำงานอดิเรกสร้างสรรค์ใหม่ๆ"
+  },
+  {
+    "id": 343,
+    "wordId": 6017,
+    "word": "turn",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "At the intersection, remember to _____ left onto Main Street.",
+    "translationThai": "ตรงทางแยกอย่าลืมเลี้ยวซ้ายเข้าสู่ถนนเมนสตรีท"
+  },
+  {
+    "id": 344,
+    "wordId": 6068,
+    "word": "understand",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "The teacher explained clearly so everyone could _____ the lesson.",
+    "translationThai": "คุณครูอธิบายอย่างชัดเจนเพื่อให้ทุกคนสามารถเข้าใจบทเรียนได้"
+  },
+  {
+    "id": 345,
+    "wordId": 6106,
+    "word": "university",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "She earned her master's degree from a prestigious global _____.",
+    "translationThai": "เธอสำเร็จการศึกษาระดับปริญญาโทจากมหาวิทยาลัยชั้นนำระดับโลก"
+  },
+  {
+    "id": 346,
+    "wordId": 6153,
+    "word": "use",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Students frequently _____ digital tablets to take classroom notes.",
+    "translationThai": "นักเรียนมักใช้แท็บเล็ตดิจิทัลในการจดบันทึกในชั้นเรียนอยู่เสมอ"
+  },
+  {
+    "id": 347,
+    "wordId": 6176,
+    "word": "vacation",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "They spent a relaxing two-week _____ on the Mediterranean coast.",
+    "translationThai": "พวกเขาใช้เวลาพักผ่อนในวันหยุดยาวสองสัปดาห์ริมชายฝั่งทะเลเมดิเตอร์เรเนียน"
+  },
+  {
+    "id": 348,
+    "wordId": 6192,
+    "word": "valuable",
+    "targetPOS": "adjective",
+    "level": "A2",
+    "sentence": "Mentors share _____ wisdom that guides young professionals.",
+    "translationThai": "ที่ปรึกษาแบ่งปันข้อคิดและภูมิปัญญาอันล้ำค่าที่ช่วยชี้แนะคนทำงานรุ่นใหม่"
+  },
+  {
+    "id": 349,
+    "wordId": 6273,
+    "word": "village",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "A quiet mountain _____ nestled peacefully beside the pine forest.",
+    "translationThai": "หมู่บ้านบนภูเขาที่เงียบสงบตั้งอยู่อย่างเงียบสงบข้างป่าสน"
+  },
+  {
+    "id": 350,
+    "wordId": 6295,
+    "word": "visit",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Tourists from all continents come to _____ the historic temple.",
+    "translationThai": "นักท่องเที่ยวจากทุกทวีปเดินทางมาเยี่ยมชมวัดเก่าแก่ทางประวัติศาสตร์"
+  },
+  {
+    "id": 351,
+    "wordId": 6307,
+    "word": "voice",
+    "targetPOS": "noun",
+    "level": "A2",
+    "sentence": "The talented soprano had a melodic and powerful singing _____.",
+    "translationThai": "นักร้องเสียงโซปราโนผู้มีพรสวรรค์มีน้ำเสียงการขับร้องที่ไพเราะและทรงพลัง"
+  },
+  {
+    "id": 352,
+    "wordId": 6326,
+    "word": "wait",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Commuters gathered on the platform to _____ for the train.",
+    "translationThai": "ผู้โดยสารมารวมตัวกันที่ชานชาลาเพื่อรอคอยขบวนรถไฟ"
+  },
+  {
+    "id": 353,
+    "wordId": 6330,
+    "word": "walk",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "It is healthy to _____ thirty minutes every evening.",
+    "translationThai": "การเดินออกกำลังกายวันละสามสิบนาทีในทุกเย็นส่งผลดีต่อสุขภาพ"
+  },
+  {
+    "id": 354,
+    "wordId": 6331,
+    "word": "wall",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "They hung framed landscape photographs on the living room _____.",
+    "translationThai": "พวกเขาแขวนรูปถ่ายวิวทิวทัศน์ใส่กรอบไว้บนผนังห้องนั่งเล่น"
+  },
+  {
+    "id": 355,
+    "wordId": 6339,
+    "word": "warm",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "She sipped a cup of _____ herbal tea on a chilly night.",
+    "translationThai": "เธอจิบชาสมุนไพรอุ่นๆ หนึ่งแก้วในค่ำคืนที่อากาศหนาวเย็น"
+  },
+  {
+    "id": 356,
+    "wordId": 6348,
+    "word": "wash",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Remember to _____ fresh vegetables thoroughly before cooking.",
+    "translationThai": "อย่าลืมล้างผักสดให้สะอาดหมดจดก่อนนำไปประกอบอาหาร"
+  },
+  {
+    "id": 357,
+    "wordId": 6352,
+    "word": "watch",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Families like to _____ classic movies together on Friday nights.",
+    "translationThai": "ครอบครัวชอบดูภาพยนตร์คลาสสิกด้วยกันในคืนวันศุกร์"
+  },
+  {
+    "id": 358,
+    "wordId": 6354,
+    "word": "water",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Drinking sufficient pure _____ keeps your skin and body hydrated.",
+    "translationThai": "การดื่มน้ำบริสุทธิ์อย่างเพียงพอช่วยให้ผิวพรรณและร่างกายมีความชุ่มชื้น"
+  },
+  {
+    "id": 359,
+    "wordId": 6358,
+    "word": "way",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Creative thinking is a great _____ to solve complex dilemmas.",
+    "translationThai": "การคิดเชิงสร้างสรรค์เป็นวิธีที่ยอดเยี่ยมในการแก้ไขปัญหาที่ซับซ้อน"
+  },
+  {
+    "id": 360,
+    "wordId": 6368,
+    "word": "weather",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Check the forecast before planning outdoor activities in case of bad _____.",
+    "translationThai": "ตรวจสอบพยากรณ์ก่อนวางแผนกิจกรรมกลางแจ้งเผื่อในกรณีที่สภาพอากาศไม่ดี"
+  },
+  {
+    "id": 361,
+    "wordId": 6375,
+    "word": "week",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "She attends fitness classes three times every _____.",
+    "translationThai": "เธอเข้าร่วมคลาสออกกำลังกายสามครั้งในทุกๆ สัปดาห์"
+  },
+  {
+    "id": 362,
+    "wordId": 6383,
+    "word": "well",
+    "targetPOS": "adverb",
+    "level": "A1",
+    "sentence": "With dedicated practice, you can speak and write English exceptionally _____.",
+    "translationThai": "ด้วยการฝึกฝนอย่างทุ่มเท คุณจะสามารถพูดและเขียนภาษาอังกฤษได้อย่างดีเยี่ยมเป็นพิเศษ"
+  },
+  {
+    "id": 363,
+    "wordId": 6430,
+    "word": "window",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Sunlight streamed brightly through the large glass _____.",
+    "translationThai": "แสงแดดส่องสว่างสดใสผ่านบานหน้าต่างกระจกบานใหญ่"
+  },
+  {
+    "id": 364,
+    "wordId": 6434,
+    "word": "winter",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Children built snowmen in the yard during the cold _____.",
+    "translationThai": "เด็กๆ ปั้นตุ๊กตาหิมะในสนามระหว่างฤดูหนาวที่เหน็บหนาว"
+  },
+  {
+    "id": 365,
+    "wordId": 6451,
+    "word": "woman",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "The courageous _____ founded an organization to protect oceans.",
+    "translationThai": "หญิงผู้กล้าหาญได้ก่อตั้งองค์กรเพื่อปกป้องมหาสมุทร"
+  },
+  {
+    "id": 366,
+    "wordId": 6457,
+    "word": "word",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Look up any unfamiliar _____ in the digital dictionary.",
+    "translationThai": "ค้นหาคำศัพท์ที่ไม่คุ้นเคยในพจนานุกรมดิจิทัล"
+  },
+  {
+    "id": 367,
+    "wordId": 6458,
+    "word": "work",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Engineers _____ together collaboratively to design smart systems.",
+    "translationThai": "ทีมวิศวกรทำงานร่วมกันเป็นทีมเพื่อออกแบบระบบอัจฉริยะ"
+  },
+  {
+    "id": 368,
+    "wordId": 6465,
+    "word": "world",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "Traveling opens your eyes to the beauty of our diverse _____.",
+    "translationThai": "การเดินทางท่องเที่ยวช่วยเปิดตาของคุณให้เห็นถึงความงดงามของโลกอันหลากหลายของเรา"
+  },
+  {
+    "id": 369,
+    "wordId": 6485,
+    "word": "write",
+    "targetPOS": "verb",
+    "level": "A1",
+    "sentence": "Journaling daily helps you _____ down your thoughts and aspirations.",
+    "translationThai": "การเขียนบันทึกประจำวันช่วยให้คุณได้เขียนถ่ายทอดความคิดและความใฝ่ฝันของตนเอง"
+  },
+  {
+    "id": 370,
+    "wordId": 6492,
+    "word": "year",
+    "targetPOS": "noun",
+    "level": "A1",
+    "sentence": "She set ambitious personal and professional goals for the new _____.",
+    "translationThai": "เธอตั้งเป้าหมายส่วนตัวและการทำงานอันท้าทายสำหรับปีใหม่นี้"
+  },
+  {
+    "id": 371,
+    "wordId": 6500,
+    "word": "young",
+    "targetPOS": "adjective",
+    "level": "A1",
+    "sentence": "The _____ prodigy composed stunning classical symphonies.",
+    "translationThai": "เด็กอัจฉริยะรุ่นเยาว์ได้ประพันธ์บทเพลงซิมโฟนีคลาสสิกอันน่าทึ่ง"
   }
 ]
