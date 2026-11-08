@@ -1619,83 +1619,6 @@
   box-shadow: 0 0 28px rgba(0, 255, 255, 0.6);
 }
 
-/* CEFR Matrix */
-.cefr-matrix-section {
-  margin-bottom: 2.75rem;
-}
-
-.cefr-matrix-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.85rem;
-  font-family: var(--font-family-mono);
-}
-
-.cefr-matrix-title {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--color-primary);
-  letter-spacing: 0.06em;
-}
-
-.cefr-matrix-count {
-  font-size: 0.72rem;
-  color: rgba(255, 255, 255, 0.5);
-  letter-spacing: 0.05em;
-}
-
-.cefr-chips-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 0.75rem;
-}
-
-.cefr-chip-btn {
-  background: rgba(10, 16, 32, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1.5px solid rgba(255, 255, 255, 0.12);
-  border-radius: 12px;
-  padding: 0.75rem 1rem;
-  cursor: pointer;
-  text-align: left;
-  transition: all 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  font-family: var(--font-family-mono);
-}
-
-.cefr-chip-btn:hover {
-  border-color: rgba(0, 255, 255, 0.4);
-  background: rgba(15, 24, 48, 0.9);
-  transform: translateY(-2px);
-}
-
-.cefr-chip-btn.active {
-  background: rgba(0, 255, 255, 0.15);
-  border-color: var(--color-primary);
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.25);
-  transform: translateY(-2px);
-}
-
-.cefr-chip-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.85rem;
-  font-weight: 800;
-}
-
-.cefr-chip-desc {
-  font-size: 0.7rem;
-  color: rgba(255, 255, 255, 0.55);
-}
-
 /* Sector Groups */
 .cyber-sector-group {
   margin-bottom: 3rem;
@@ -1919,15 +1842,6 @@
     padding: 0.3rem 0.6rem;
   }
 
-  .cefr-chips-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
-  }
-
-  .cefr-chip-btn {
-    padding: 0.6rem 0.75rem;
-  }
-
   .cyber-sector-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -1963,11 +1877,6 @@
   .cyber-sector-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
-  }
-
-  .cefr-chips-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.65rem;
   }
 
   .story-level-grid {

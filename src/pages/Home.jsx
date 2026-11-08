@@ -17,8 +17,7 @@ import {
   FileText, 
   Bookmark, 
   Settings,
-  Activity,
-  ShieldCheck
+  Activity
 } from 'lucide-react';
 import { useGamification } from '../hooks/useGamification';
 import { playCyberSound } from '../utils/cyberSound';
@@ -26,12 +25,6 @@ import HoloCard from '../components/HoloCard';
 import TechBracket from '../components/TechBracket';
 import VoiceSettings from '../components/VoiceSettings';
 import vocabularyData from '../data/vocabulary.json';
-import { withCefr } from '../utils/levelSelection';
-
-const levelCounts = vocabularyData.reduce((counts, word) => {
-  counts[word.level] = (counts[word.level] || 0) + 1;
-  return counts;
-}, {});
 
 const Home = () => {
   const navigate = useNavigate();
@@ -48,7 +41,6 @@ const Home = () => {
   } = useGamification();
 
   const [isVoiceSettingsOpen, setIsVoiceSettingsOpen] = useState(false);
-  const [selectedCefr, setSelectedCefr] = useState('ALL');
   const [lastProtocol, setLastProtocol] = useState({ name: 'Typing Mode', path: '/typing' });
 
   useEffect(() => {
@@ -69,19 +61,10 @@ const Home = () => {
       // ignore
     }
     playCyberSound('click');
-    navigate(path === '/pos-guide' ? path : withCefr(path, selectedCefr));
+    navigate(path);
   };
 
   const expProgress = Math.max(0, Math.min(100, ((exp - currentLevelBaseExp) / (nextLevelExp - currentLevelBaseExp)) * 100));
-
-  const cefrLevels = [
-    { id: 'ALL', label: 'All Levels', desc: `${vocabularyData.length.toLocaleString()} Words`, color: '#00ffff' },
-    { id: 'A1', label: 'A1 Cadet', desc: `${levelCounts.A1 || 0} Words`, color: '#10b981' },
-    { id: 'A2', label: 'A2 Scout', desc: `${levelCounts.A2 || 0} Words`, color: '#38bdf8' },
-    { id: 'B1', label: 'B1 Specialist', desc: `${levelCounts.B1 || 0} Words`, color: '#a855f7' },
-    { id: 'B2', label: 'B2 Commander', desc: `${levelCounts.B2 || 0} Words`, color: '#f59e0b' },
-    { id: 'C1', label: 'C1 Master', desc: `${levelCounts.C1 || 0} Words`, color: '#ff0055' },
-  ];
 
   const sectors = [
     {
@@ -354,45 +337,6 @@ const Home = () => {
             </button>
           </div>
 
-        </div>
-      </section>
-
-      {/* 🎯 CEFR SECURITY CLEARANCE SELECTOR */}
-      <section className="cefr-matrix-section">
-        <div className="cefr-matrix-head">
-          <div className="cefr-matrix-title">
-            <ShieldCheck size={16} />
-            <span>CEFR CLEARANCE LEVEL FILTER</span>
-          </div>
-          <span className="cefr-matrix-count">
-            เลือกระดับสำหรับกิจกรรมฝึก; คู่มือ POS ใช้ได้ทุกระดับ
-          </span>
-        </div>
-
-        <div className="cefr-chips-grid">
-          {cefrLevels.map((lvl) => {
-            const isSelected = selectedCefr === lvl.id;
-            return (
-              <button
-                key={lvl.id}
-                onClick={() => {
-                  playCyberSound('hover');
-                  setSelectedCefr(lvl.id);
-                }}
-                className={`cefr-chip-btn ${isSelected ? 'active' : ''}`}
-              >
-                <div className="cefr-chip-top">
-                  <span style={{ color: isSelected ? lvl.color : '#ffffff' }}>
-                    {lvl.id}
-                  </span>
-                  {isSelected && <span className="status-beacon-dot" style={{ width: '6px', height: '6px' }} />}
-                </div>
-                <span className="cefr-chip-desc">
-                  {lvl.desc}
-                </span>
-              </button>
-            );
-          })}
         </div>
       </section>
 
