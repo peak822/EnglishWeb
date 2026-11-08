@@ -25,6 +25,13 @@ import { playCyberSound } from '../utils/cyberSound';
 import HoloCard from '../components/HoloCard';
 import TechBracket from '../components/TechBracket';
 import VoiceSettings from '../components/VoiceSettings';
+import vocabularyData from '../data/vocabulary.json';
+import { withCefr } from '../utils/levelSelection';
+
+const levelCounts = vocabularyData.reduce((counts, word) => {
+  counts[word.level] = (counts[word.level] || 0) + 1;
+  return counts;
+}, {});
 
 const Home = () => {
   const navigate = useNavigate();
@@ -62,18 +69,18 @@ const Home = () => {
       // ignore
     }
     playCyberSound('click');
-    navigate(path);
+    navigate(path === '/pos-guide' ? path : withCefr(path, selectedCefr));
   };
 
   const expProgress = Math.max(0, Math.min(100, ((exp - currentLevelBaseExp) / (nextLevelExp - currentLevelBaseExp)) * 100));
 
   const cefrLevels = [
-    { id: 'ALL', label: 'All Levels', desc: '5,000 Words', color: '#00ffff' },
-    { id: 'A1', label: 'A1 Cadet', desc: 'Beginner (800+)', color: '#10b981' },
-    { id: 'A2', label: 'A2 Scout', desc: 'Elementary (1,000+)', color: '#38bdf8' },
-    { id: 'B1', label: 'B1 Specialist', desc: 'Intermediate (1,200+)', color: '#a855f7' },
-    { id: 'B2', label: 'B2 Commander', desc: 'Upper-Inter (1,100+)', color: '#f59e0b' },
-    { id: 'C1', label: 'C1 Master', desc: 'Advanced (900+)', color: '#ff0055' },
+    { id: 'ALL', label: 'All Levels', desc: `${vocabularyData.length.toLocaleString()} Words`, color: '#00ffff' },
+    { id: 'A1', label: 'A1 Cadet', desc: `${levelCounts.A1 || 0} Words`, color: '#10b981' },
+    { id: 'A2', label: 'A2 Scout', desc: `${levelCounts.A2 || 0} Words`, color: '#38bdf8' },
+    { id: 'B1', label: 'B1 Specialist', desc: `${levelCounts.B1 || 0} Words`, color: '#a855f7' },
+    { id: 'B2', label: 'B2 Commander', desc: `${levelCounts.B2 || 0} Words`, color: '#f59e0b' },
+    { id: 'C1', label: 'C1 Master', desc: `${levelCounts.C1 || 0} Words`, color: '#ff0055' },
   ];
 
   const sectors = [
@@ -119,9 +126,9 @@ const Home = () => {
         },
         {
           id: 'read',
-          title: 'Oxford 5000 Vocab Bank',
+          title: 'Vocabulary Bank',
           subtitle: 'Neural Vocabulary Vault',
-          description: 'ค้นหาและเปิดดูคลังคำศัพท์ 5,000 คำหลักที่จำเป็นที่สุด พร้อมคำแปลและระดับ A1-C1',
+          description: `ค้นหาและเปิดดูคลังคำศัพท์ ${vocabularyData.length.toLocaleString()} คำ พร้อมคำแปลและระดับ A1-C1`,
           icon: <Compass size={24} />,
           path: '/read',
           expTag: '+5 EXP / WORD',
@@ -358,7 +365,7 @@ const Home = () => {
             <span>CEFR CLEARANCE LEVEL FILTER</span>
           </div>
           <span className="cefr-matrix-count">
-            FILTER TRAINING MATRIX
+            เลือกระดับสำหรับกิจกรรมฝึก; คู่มือ POS ใช้ได้ทุกระดับ
           </span>
         </div>
 

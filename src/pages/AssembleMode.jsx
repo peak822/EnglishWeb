@@ -5,6 +5,7 @@ import { filterWords } from '../hooks/useCategories';
 import { useGamification } from '../hooks/useGamification';
 import { useCyberSound } from '../hooks/useCyberSound';
 import LevelSelector from '../components/LevelSelector';
+import { useLevelFilter } from '../hooks/useLevelFilter';
 import TechBracket from '../components/TechBracket';
 import MissionDebriefModal from '../components/MissionDebriefModal';
 import { Flame, Activity } from 'lucide-react';
@@ -17,7 +18,7 @@ const AssembleMode = () => {
   const [scrambledLetters, setScrambledLetters] = useState([]);
   const [assembledWord, setAssembledWord] = useState([]);
   const [status, setStatus] = useState('idle');
-  const [level, setLevel] = useState('all');
+  const [level, setLevel] = useLevelFilter();
   const [isLoaded, setIsLoaded] = useState(false);
   const [showHint, setShowHint] = useState(false);
   const [streak, setStreak] = useState(0);
@@ -200,8 +201,11 @@ const AssembleMode = () => {
               {/* Assembled Word Slot Row */}
               <div className={`letters-container ${status === 'incorrect' ? 'shake' : ''}`} style={{ display: 'flex', justifyContent: 'center', gap: '0.4rem', flexWrap: 'wrap', marginBottom: '1.75rem', width: '100%' }}>
                 {assembledWord.map((slot, i) => (
-                  <div 
+                  <button
+                    type="button"
                     key={i} 
+                    disabled={!slot || status === 'correct'}
+                    aria-label={slot ? `นำตัวอักษร ${slot.char} ออกจากตำแหน่ง ${i + 1}` : `ตำแหน่ง ${i + 1} ว่าง`}
                     style={{
                       width: 'clamp(34px, 8.5vw, 52px)',
                       height: 'clamp(42px, 11vw, 62px)',
@@ -223,7 +227,7 @@ const AssembleMode = () => {
                     onClick={() => handleSlotClick(slot, i)}
                   >
                     {slot ? slot.char.toUpperCase() : ''}
-                  </div>
+                  </button>
                 ))}
               </div>
 

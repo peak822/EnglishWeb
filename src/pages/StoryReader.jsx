@@ -100,10 +100,16 @@ const StoryReader = () => {
       }
       
       return (
-        <span 
+        <button
+          type="button"
           key={index}
           onClick={() => handleWordClick(wordStr)}
           style={{ 
+            border: 0,
+            padding: 0,
+            background: 'transparent',
+            color: 'inherit',
+            font: 'inherit',
             cursor: 'pointer',
             transition: 'color 0.2s, textShadow 0.2s',
             touchAction: 'manipulation',
@@ -121,7 +127,7 @@ const StoryReader = () => {
           }}
         >
           {wordStr}
-        </span>
+        </button>
       );
     });
   };

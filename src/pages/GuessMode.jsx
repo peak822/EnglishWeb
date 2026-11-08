@@ -5,6 +5,8 @@ import { filterWords } from '../hooks/useCategories';
 import LevelSelector from '../components/LevelSelector';
 import TechBracket from '../components/TechBracket';
 import MissionDebriefModal from '../components/MissionDebriefModal';
+import { calculateReward } from '../utils/sessionRewards';
+import { useLevelFilter } from '../hooks/useLevelFilter';
 import vocabularyData from '../data/vocabulary.json';
 import { Flame, Activity } from 'lucide-react';
 
@@ -17,10 +19,11 @@ const GuessMode = () => {
   const [status, setStatus] = useState('idle'); 
   const [selectedOption, setSelectedOption] = useState(null);
   const [hintLevel, setHintLevel] = useState(0);
-  const [level, setLevel] = useState('all');
+  const [level, setLevel] = useLevelFilter();
   const [isLoaded, setIsLoaded] = useState(false);
   const [streak, setStreak] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
+  const [sessionExp, setSessionExp] = useState(0);
   const [isDebriefOpen, setIsDebriefOpen] = useState(false);
   const timeoutRef = useRef(null);
 
@@ -38,6 +41,7 @@ const GuessMode = () => {
     setCurrentIndex(0);
     setStreak(0);
     setCorrectCount(0);
+    setSessionExp(0);
     setIsDebriefOpen(false);
     setIsLoaded(true);
   };
@@ -105,8 +109,9 @@ const GuessMode = () => {
         playSound('success');
       }
 
-      const expGained = hintLevel === 0 ? (nextStreak >= 3 ? 15 : 10) : hintLevel === 1 ? 5 : 2;
-      addExp(expGained);
+      const reward = calculateReward({ mode: 'guess', nextStreak, hintLevel });
+      addExp(reward);
+      setSessionExp(previous => previous + reward);
 
       timeoutRef.current = setTimeout(() => {
         if (currentIndex + 1 >= Math.min(words.length, 15)) {
@@ -201,7 +206,7 @@ const GuessMode = () => {
                     <p style={{ fontSize: '1.1rem', color: 'var(--color-primary)', fontWeight: '800' }}>{currentWord.meaning}</p>
                   </div>
                   <p style={{ marginTop: '1rem', color: '#4ade80', fontWeight: '800', fontSize: '0.85rem' }}>
-                    + {hintLevel === 0 ? 10 : hintLevel === 1 ? 5 : 2} EXP GRANTED
+                    + {calculateReward({ mode: 'guess', nextStreak: streak, hintLevel })} EXP GRANTED
                   </p>
                 </div>
               ) : (
@@ -314,7 +319,7 @@ const GuessMode = () => {
         subtitle="SECTOR ALPHA TRAINING"
         score={correctCount}
         total={Math.min(words.length, 15)}
-        expGained={correctCount * 15}
+        expGained={sessionExp}
         streakCount={streak}
         onRetry={() => initWords(level)}
         onNext={() => initWords(level)}

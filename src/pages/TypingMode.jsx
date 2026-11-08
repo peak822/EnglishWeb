@@ -7,6 +7,8 @@ import { filterWords } from '../hooks/useCategories';
 import LevelSelector from '../components/LevelSelector';
 import TechBracket from '../components/TechBracket';
 import MissionDebriefModal from '../components/MissionDebriefModal';
+import { calculateReward } from '../utils/sessionRewards';
+import { useLevelFilter } from '../hooks/useLevelFilter';
 import { Flame, Activity } from 'lucide-react';
 
 const TypingMode = () => {
@@ -18,10 +20,11 @@ const TypingMode = () => {
   const [status, setStatus] = useState('idle');
   const [wrongCount, setWrongCount] = useState(0);
   const [showHint, setShowHint] = useState(false);
-  const [level, setLevel] = useState('all');
+  const [level, setLevel] = useLevelFilter();
   const [isLoaded, setIsLoaded] = useState(false);
   const [streak, setStreak] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
+  const [sessionExp, setSessionExp] = useState(0);
   const [isDebriefOpen, setIsDebriefOpen] = useState(false);
   
   const inputRef = useRef(null);
@@ -45,6 +48,7 @@ const TypingMode = () => {
     setShowHint(false);
     setStreak(0);
     setCorrectCount(0);
+    setSessionExp(0);
     setIsDebriefOpen(false);
     setIsLoaded(true);
   };
@@ -73,9 +77,10 @@ const TypingMode = () => {
       playSound('success');
     }
 
-    if (status !== 'revealed') {
-      const bonus = nextStreak >= 3 ? 15 : 10;
-      addExp(bonus);
+    const reward = calculateReward({ mode: 'typing', nextStreak, revealed: status === 'revealed' });
+    if (reward > 0) {
+      addExp(reward);
+      setSessionExp(previous => previous + reward);
     }
 
     timeoutRef.current = setTimeout(() => {
@@ -320,7 +325,7 @@ const TypingMode = () => {
         subtitle="SECTOR ALPHA TRAINING"
         score={correctCount}
         total={Math.min(words.length, 20)}
-        expGained={correctCount * 15}
+        expGained={sessionExp}
         streakCount={streak}
         onRetry={() => initWords(level)}
         onNext={() => initWords(level)}

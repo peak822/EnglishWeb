@@ -5,10 +5,15 @@ import { useGamification } from '../hooks/useGamification';
 import { generateQuestion, POS_DETAILS } from '../utils/posUtils';
 import vocabularyData from '../data/vocabulary.json';
 import { speakText, stopSpeech } from '../utils/audioService';
+import { useSearchParams } from 'react-router-dom';
+import { readCefr } from '../utils/levelSelection';
 
 const POSMode = () => {
   const navigate = useNavigate();
   const { addExp } = useGamification();
+  const [searchParams] = useSearchParams();
+  const level = readCefr(searchParams.toString());
+  const wordPool = level === 'all' ? vocabularyData : vocabularyData.filter(word => word.level === level);
 
   const [gameState, setGameState] = useState('idle'); // idle, playing, gameover
   const [timeLeft, setTimeLeft] = useState(60);
@@ -44,7 +49,7 @@ const POSMode = () => {
     setScorePopup(null);
     setGameState('playing');
     
-    const firstQ = generateQuestion(vocabularyData);
+    const firstQ = generateQuestion(wordPool);
     setCurrentQuestion(firstQ);
     if (firstQ?.currentWord?.word) {
       playWordAudio(firstQ.currentWord.word);
@@ -80,7 +85,7 @@ const POSMode = () => {
       setTimeout(() => {
         setFeedback(null);
         setScorePopup(null);
-        const nextQ = generateQuestion(vocabularyData);
+        const nextQ = generateQuestion(wordPool);
         setCurrentQuestion(nextQ);
         if (nextQ?.currentWord?.word) {
           playWordAudio(nextQ.currentWord.word);

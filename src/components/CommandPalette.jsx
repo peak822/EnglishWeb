@@ -22,25 +22,30 @@ import {
 import { playCyberSound } from '../utils/cyberSound';
 import { useCyberSound } from '../hooks/useCyberSound';
 import TechBracket from './TechBracket';
+import { useDialogFocus } from '../hooks/useDialogFocus';
+import { trapDialogTab } from '../utils/dialogFocus';
 
 export const CommandPalette = ({ isOpen, onClose, currentTheme, onThemeChange }) => {
   const [query, setQuery] = useState('');
   const [selectedIndex, setSelectedIndex] = useState(0);
   const inputRef = useRef(null);
+  const dialogRef = useRef(null);
   const listRef = useRef(null);
   const navigate = useNavigate();
   const { isMuted, toggleMute } = useCyberSound();
+  useDialogFocus(isOpen, dialogRef, inputRef);
 
   const navigationCommands = useMemo(() => [
     { id: 'home', title: 'Mission Control (Home)', category: 'Navigation', icon: <Terminal size={18} />, path: '/', shortcut: 'H' },
     { id: 'typing', title: 'Typing Mode (Speed Hack)', category: 'Core Combat', icon: <Type size={18} />, path: '/typing', shortcut: 'T' },
     { id: 'assemble', title: 'Assemble Mode (Anagrams)', category: 'Core Combat', icon: <Puzzle size={18} />, path: '/assemble', shortcut: 'A' },
     { id: 'guess', title: 'Guess Mode (Clue Quiz)', category: 'Core Combat', icon: <HelpCircle size={18} />, path: '/guess', shortcut: 'G' },
-    { id: 'read', title: 'Oxford 5000 Vocab Bank', category: 'Core Combat', icon: <Compass size={18} />, path: '/read', shortcut: 'R' },
+    { id: 'read', title: 'Vocabulary Bank', category: 'Core Combat', icon: <Compass size={18} />, path: '/read', shortcut: 'R' },
     { id: 'listen', title: 'Listening Mode (Audio Decrypt)', category: 'Reflex & Sensory', icon: <Volume2 size={18} />, path: '/listen', shortcut: 'L' },
     { id: 'match', title: 'Match Mode (3D Memory Pairs)', category: 'Reflex & Sensory', icon: <Grid size={18} />, path: '/match', shortcut: 'M' },
     { id: 'swipe', title: 'Swipe Mode (Speed Reflex)', category: 'Reflex & Sensory', icon: <Zap size={18} />, path: '/swipe', shortcut: 'S' },
     { id: 'syntax', title: 'Syntax Tree Mode (Grammar Graph)', category: 'Linguistics', icon: <Sparkles size={18} />, path: '/syntax', shortcut: 'X' },
+    { id: 'context', title: 'Context Mode (Cloze Reading)', category: 'Linguistics', icon: <BookOpen size={18} />, path: '/context', shortcut: 'C' },
     { id: 'pos', title: 'Part of Speech Trainer', category: 'Linguistics', icon: <Layers size={18} />, path: '/pos', shortcut: 'P' },
     { id: 'pos-guide', title: 'POS Tactical Field Guide', category: 'Linguistics', icon: <BookOpen size={18} />, path: '/pos-guide', shortcut: 'F' },
     { id: 'story-mode', title: 'Story Mode (Holo-Novels)', category: 'Simulations', icon: <Bookmark size={18} />, path: '/story-mode', shortcut: 'N' },
@@ -100,9 +105,6 @@ export const CommandPalette = ({ isOpen, onClose, currentTheme, onThemeChange })
       setQuery('');
       setSelectedIndex(0);
       playCyberSound('hover');
-      setTimeout(() => {
-        if (inputRef.current) inputRef.current.focus();
-      }, 50);
     }
   }, [isOpen]);
 
@@ -123,6 +125,7 @@ export const CommandPalette = ({ isOpen, onClose, currentTheme, onThemeChange })
   };
 
   const handleKeyDown = (e) => {
+    if (trapDialogTab(e, dialogRef.current, document.activeElement)) return;
     if (e.key === 'Escape') {
       e.preventDefault();
       onClose();
@@ -147,6 +150,11 @@ export const CommandPalette = ({ isOpen, onClose, currentTheme, onThemeChange })
   return (
     <div className="cyber-modal-backdrop align-top" onClick={onClose}>
       <div 
+        ref={dialogRef}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Command palette"
+        tabIndex={-1}
         className="cyber-command-palette"
         onClick={(e) => e.stopPropagation()}
         onKeyDown={handleKeyDown}
@@ -158,6 +166,7 @@ export const CommandPalette = ({ isOpen, onClose, currentTheme, onThemeChange })
           <Terminal size={20} style={{ color: 'var(--color-primary)' }} />
           <input
             ref={inputRef}
+            aria-label="ค้นหาคำสั่งและหน้าการเรียน"
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}

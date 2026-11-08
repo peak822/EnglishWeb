@@ -5,11 +5,12 @@ import vocabularyData from '../data/vocabulary.json';
 import { filterWords, THEMES } from '../hooks/useCategories';
 import { Search, ChevronLeft, ChevronRight, FileText, Volume2 } from 'lucide-react';
 import LevelSelector from '../components/LevelSelector';
+import { useLevelFilter } from '../hooks/useLevelFilter';
 import { speakText } from '../utils/audioService';
 
 const ReadMode = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [level, setLevel] = useState('all');
+  const [level, setLevel] = useLevelFilter();
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 50;
 

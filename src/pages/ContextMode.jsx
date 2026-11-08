@@ -6,6 +6,8 @@ import sentencesData from '../data/sentences.json';
 import { useGamification } from '../hooks/useGamification';
 import { useCyberSound } from '../hooks/useCyberSound';
 import { Sparkles, ArrowRight, RotateCcw } from 'lucide-react';
+import { useSearchParams } from 'react-router-dom';
+import { readCefr } from '../utils/levelSelection';
 
 const BATCH_SIZE = 15;
 
@@ -13,6 +15,8 @@ const ContextMode = () => {
   const navigate = useNavigate();
   const { addExp } = useGamification();
   const { playSound } = useCyberSound();
+  const [searchParams] = useSearchParams();
+  const level = readCefr(searchParams.toString());
   const [sentences, setSentences] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [options, setOptions] = useState([]);
@@ -21,7 +25,8 @@ const ContextMode = () => {
   const [correctCount, setCorrectCount] = useState(0);
 
   const initRound = () => {
-    const shuffled = [...sentencesData].sort(() => 0.5 - Math.random());
+    const pool = level === 'all' ? sentencesData : sentencesData.filter(item => item.level === level);
+    const shuffled = [...pool].sort(() => 0.5 - Math.random());
     setSentences(shuffled.slice(0, BATCH_SIZE));
     setCurrentIndex(0);
     setStatus('idle');
@@ -31,7 +36,7 @@ const ContextMode = () => {
 
   useEffect(() => {
     initRound();
-  }, []);
+  }, [level]);
 
   useEffect(() => {
     if (sentences.length > 0 && sentences[currentIndex]) {
@@ -101,6 +106,9 @@ const ContextMode = () => {
   };
 
   if (!currentItem) {
+    if (sentences.length === 0 && level !== 'all' && !sentencesData.some(item => item.level === level)) {
+      return <div className="container text-center py-20"><h2>ยังไม่มีประโยคระดับ {level} สำหรับ Context Mode</h2><Button onClick={() => navigate('/')}>กลับหน้าแรก</Button></div>;
+    }
     if (sentences.length > 0 && currentIndex >= sentences.length) {
       return (
         <div className="container animate-fade-up text-center py-20" style={{ maxWidth: '650px' }}>

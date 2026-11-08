@@ -27,6 +27,7 @@ const POSMode = lazy(() => import('./pages/POSMode'));
 const POSGuide = lazy(() => import('./pages/POSGuide'));
 const StorySelection = lazy(() => import('./pages/StorySelection'));
 const StoryReader = lazy(() => import('./pages/StoryReader'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 // Cyberpunk Neon Loading Indicator
 const PageLoadingFallback = () => (
@@ -42,7 +43,7 @@ const PageLoadingFallback = () => (
 );
 
 function App() {
-  const { exp, level, badges, nextLevelExp, currentLevelBaseExp, newBadge, recentLevelUp } = useGamification();
+  const { exp, level, badges, nextLevelExp, currentLevelBaseExp, newBadge, recentLevelUp, persistenceWarning } = useGamification();
   const { isMuted, toggleMute, playSound } = useCyberSound();
   const [theme, setTheme] = useState('cyberpunk');
   const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
@@ -188,6 +189,12 @@ function App() {
           </div>
         </nav>
 
+        {persistenceWarning && (
+          <div role="status" className="container text-sm text-amber-300 py-2">
+            บันทึกความคืบหน้าบนอุปกรณ์นี้ไม่ได้ในขณะนี้
+          </div>
+        )}
+
         {/* Global Floating HUD Command Palette */}
         <CommandPalette 
           isOpen={isCommandPaletteOpen}
@@ -214,6 +221,7 @@ function App() {
               <Route path="/pos-guide" element={<POSGuide />} />
               <Route path="/story-mode" element={<StorySelection />} />
               <Route path="/story-mode/:id" element={<StoryReader />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
         </main>

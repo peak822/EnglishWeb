@@ -1,20 +1,20 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Card from '../components/Card';
-import Button from '../components/Button';
 import vocabularyData from '../data/vocabulary.json';
 import { useGamification } from '../hooks/useGamification';
 import { useCyberSound } from '../hooks/useCyberSound';
 import { filterWords } from '../hooks/useCategories';
 import LevelSelector from '../components/LevelSelector';
+import { useLevelFilter } from '../hooks/useLevelFilter';
 import TechBracket from '../components/TechBracket';
 import MissionDebriefModal from '../components/MissionDebriefModal';
 import { speakText, stopSpeech } from '../utils/audioService';
-import { Grid, Flame, Activity, RotateCcw } from 'lucide-react';
+import { Activity, RotateCcw } from 'lucide-react';
+import { activateOnKey } from '../utils/keyboard';
 
 const MatchMode = () => {
   const { addExp } = useGamification();
   const { playSound } = useCyberSound();
-  const [level, setLevel] = useState('all');
+  const [level, setLevel] = useLevelFilter();
   const [cards, setCards] = useState([]);
   const [flippedIndices, setFlippedIndices] = useState([]);
   const [matchedIds, setMatchedIds] = useState([]);
@@ -39,9 +39,6 @@ const MatchMode = () => {
   const startNewGame = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     let pool = filterWords(vocabularyData, level);
-    if (pool.length < 6) {
-      pool = vocabularyData;
-    }
     
     const shuffledPool = [...pool].sort(() => 0.5 - Math.random());
     const selectedWords = [];
@@ -53,10 +50,6 @@ const MatchMode = () => {
         usedMeanings.add(w.meaning);
       }
       if (selectedWords.length === 6) break;
-    }
-    
-    if (selectedWords.length < 6) {
-      selectedWords.push(...shuffledPool.slice(0, 6 - selectedWords.length));
     }
     
     const newCards = [];
@@ -146,7 +139,7 @@ const MatchMode = () => {
   };
 
   useEffect(() => {
-    const totalPairs = cards.length > 0 ? cards.length / 2 : 6;
+    const totalPairs = cards.length / 2;
     if (matchedIds.length > 0 && matchedIds.length === totalPairs && !isWon) {
       setIsWon(true);
       const baseExp = 35;
@@ -160,7 +153,7 @@ const MatchMode = () => {
     }
   }, [matchedIds.length, isWon, moves, cards.length, addExp]);
 
-  const totalPairs = cards.length > 0 ? cards.length / 2 : 6;
+  const totalPairs = cards.length / 2;
 
   return (
     <div className="container animate-fade-up px-4 max-w-4xl mx-auto py-6">
@@ -231,6 +224,7 @@ const MatchMode = () => {
         <div className="hud-panel-box" style={{ '--hud-border': 'rgba(0, 242, 254, 0.35)', padding: '1.25rem 0.75rem' }}>
           <TechBracket color="#00f2fe" size={18} />
 
+          {cards.length === 0 && <p role="status" className="text-center py-8">ไม่มีคำศัพท์ที่จับคู่ได้ในหมวดนี้ กรุณาเลือกระดับหรือหมวดอื่น</p>}
           <div className="match-grid perspective-1000">
             {cards.map((card, index) => {
               const isFlipped = flippedIndices.includes(index) || matchedIds.includes(card.matchId);
@@ -240,6 +234,11 @@ const MatchMode = () => {
                 <div 
                   key={card.id || index}
                   onClick={() => handleCardClick(index)}
+                  onKeyDown={event => activateOnKey(event, () => handleCardClick(index))}
+                  role="button"
+                  tabIndex={isMatched ? -1 : 0}
+                  aria-disabled={isMatched || isLocked}
+                  aria-label={isFlipped ? `${card.type === 'word' ? 'English' : 'Thai'}: ${card.content}` : `เปิดการ์ดใบที่ ${index + 1}`}
                   onMouseEnter={() => playSound('hover')}
                   className={`match-card transform-style-3d ${isFlipped ? 'rotate-y-180' : ''} ${isMatched ? 'matched' : ''}`}
                 >

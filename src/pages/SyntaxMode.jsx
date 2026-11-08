@@ -6,6 +6,8 @@ import sentencesData from '../data/sentences.json';
 import { useGamification } from '../hooks/useGamification';
 import { useCyberSound } from '../hooks/useCyberSound';
 import { Sparkles, ArrowRight, RotateCcw } from 'lucide-react';
+import { useSearchParams } from 'react-router-dom';
+import { readCefr } from '../utils/levelSelection';
 
 const BATCH_SIZE = 15;
 
@@ -13,6 +15,8 @@ const SyntaxMode = () => {
   const navigate = useNavigate();
   const { addExp } = useGamification();
   const { playSound } = useCyberSound();
+  const [searchParams] = useSearchParams();
+  const level = readCefr(searchParams.toString());
   const [sentences, setSentences] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [scrambledWords, setScrambledWords] = useState([]);
@@ -21,7 +25,8 @@ const SyntaxMode = () => {
   const [correctCount, setCorrectCount] = useState(0);
 
   const initRound = () => {
-    const shuffled = [...sentencesData].sort(() => 0.5 - Math.random());
+    const pool = level === 'all' ? sentencesData : sentencesData.filter(item => item.level === level);
+    const shuffled = [...pool].sort(() => 0.5 - Math.random());
     setSentences(shuffled.slice(0, BATCH_SIZE));
     setCurrentIndex(0);
     setStatus('idle');
@@ -30,7 +35,7 @@ const SyntaxMode = () => {
 
   useEffect(() => {
     initRound();
-  }, []);
+  }, [level]);
 
   useEffect(() => {
     if (sentences.length > 0 && sentences[currentIndex]) {
@@ -110,6 +115,9 @@ const SyntaxMode = () => {
   };
 
   if (!currentItem) {
+    if (sentences.length === 0 && level !== 'all' && !sentencesData.some(item => item.level === level)) {
+      return <div className="container text-center py-20"><h2>ยังไม่มีประโยคระดับ {level} สำหรับ Syntax Mode</h2><Button onClick={() => navigate('/')}>กลับหน้าแรก</Button></div>;
+    }
     if (sentences.length > 0 && currentIndex >= sentences.length) {
       return (
         <div className="container animate-fade-up text-center py-20" style={{ maxWidth: '650px' }}>
@@ -162,8 +170,11 @@ const SyntaxMode = () => {
             {/* Assembly Area */}
             <div className={`letters-container flex-wrap justify-center mb-8 ${status === 'incorrect' ? 'shake' : ''}`} style={{ gap: '0.5rem', minHeight: '56px' }}>
               {assembledWords.map((slot, i) => (
-                <div 
+                <button
+                  type="button"
                   key={i} 
+                  disabled={!slot || status === 'correct'}
+                  aria-label={slot ? `นำคำ ${slot.word} ออกจากตำแหน่ง ${i + 1}` : `ตำแหน่ง ${i + 1} ว่าง`}
                   className={`letter-slot ${slot ? 'filled' : ''} ${status === 'incorrect' ? 'error' : ''} px-3 md:px-4 text-base md:text-lg rounded-[var(--radius-sm)]`}
                   onClick={() => handleSlotClick(slot, i)}
                   style={{ 
@@ -180,15 +191,17 @@ const SyntaxMode = () => {
                   }}
                 >
                   {slot ? slot.word : ''}
-                </div>
+                </button>
               ))}
             </div>
 
             {/* Word Bank */}
             <div className="letters-container flex-wrap justify-center border-t border-[rgba(255,255,255,0.1)] pt-6 md:pt-8" style={{ gap: '0.5rem' }}>
               {scrambledWords.map(wordObj => (
-                <div 
+                <button
+                  type="button"
                   key={wordObj.id} 
+                  disabled={wordObj.used || status === 'correct'}
                   className={`letter-block ${wordObj.used ? 'used' : ''} px-3 md:px-4 text-base md:text-lg rounded-[var(--radius-sm)]`}
                   onClick={() => handleWordClick(wordObj)}
                   style={{ 
@@ -208,7 +221,7 @@ const SyntaxMode = () => {
                   }}
                 >
                   {wordObj.word}
-                </div>
+                </button>
               ))}
             </div>
             

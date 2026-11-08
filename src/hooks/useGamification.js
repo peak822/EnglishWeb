@@ -1,5 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import confetti from 'canvas-confetti';
+import { loadProfile, persistProfile } from '../utils/profileStorage';
+import { awardExp, currentStreak } from '../utils/profileState';
 
 const LEVEL_THRESHOLDS = [
   0,      // Level 1
@@ -35,50 +37,22 @@ const getTodayString = () => {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 };
 
-const calculateStreak = (saved) => {
-  const today = getTodayString();
-  if (!saved || !saved.lastActiveDate) {
-    return { streakDays: 1, lastActiveDate: today };
-  }
-  
-  if (saved.lastActiveDate === today) {
-    return { streakDays: saved.streakDays || 1, lastActiveDate: today };
-  }
-
-  const lastDate = new Date(saved.lastActiveDate);
-  const currentDate = new Date(today);
-  const diffTime = Math.abs(currentDate - lastDate);
-  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-
-  if (diffDays === 1) {
-    return { streakDays: (saved.streakDays || 1) + 1, lastActiveDate: today };
-  } else {
-    return { streakDays: 1, lastActiveDate: today };
-  }
-};
-
 export const useGamification = () => {
-  const [profile, setProfile] = useState(() => {
-    const saved = localStorage.getItem('english_study_profile');
-    const parsed = saved ? JSON.parse(saved) : null;
-    const streakInfo = calculateStreak(parsed);
-
-    return {
-      exp: parsed?.exp || 0,
-      level: parsed?.level || 1,
-      badges: parsed?.badges || [],
-      streakDays: streakInfo.streakDays,
-      lastActiveDate: streakInfo.lastActiveDate
-    };
-  });
+  const [initialLoad] = useState(() => loadProfile(() => window.localStorage, getTodayString()));
+  const [profile, setProfile] = useState(() => ({
+    ...initialLoad.profile,
+    streakDays: currentStreak(initialLoad.profile, getTodayString())
+  }));
+  const [persistenceWarning, setPersistenceWarning] = useState(initialLoad.readFailed);
 
   const [recentLevelUp, setRecentLevelUp] = useState(false);
   const [newBadge, setNewBadge] = useState(null);
 
   useEffect(() => {
-    localStorage.setItem('english_study_profile', JSON.stringify(profile));
+    const saved = persistProfile(() => window.localStorage, profile, initialLoad);
+    setPersistenceWarning(!saved);
     window.dispatchEvent(new CustomEvent('profile_updated', { detail: profile }));
-  }, [profile]);
+  }, [profile, initialLoad]);
 
   useEffect(() => {
     const handleProfileUpdate = (e) => {
@@ -93,22 +67,10 @@ export const useGamification = () => {
 
   const addExp = useCallback((amount) => {
     setProfile(prev => {
-      const newExp = prev.exp + amount;
-      const today = getTodayString();
-      
-      // Calculate level
-      let newLevel = 1;
-      for (let i = LEVEL_THRESHOLDS.length - 1; i >= 0; i--) {
-        if (newExp >= LEVEL_THRESHOLDS[i]) {
-          newLevel = i + 1;
-          break;
-        }
-      }
-      if (newExp > LEVEL_THRESHOLDS[LEVEL_THRESHOLDS.length - 1]) {
-        newLevel = LEVEL_THRESHOLDS.length + Math.floor((newExp - LEVEL_THRESHOLDS[LEVEL_THRESHOLDS.length - 1]) / 1000);
-      }
+      const result = awardExp(prev, amount, getTodayString(), BADGES);
+      if (result.profile === prev) return prev;
 
-      const leveledUp = newLevel > prev.level;
+      const { leveledUp, newBadge: earnedBadge } = result;
       if (leveledUp) {
         setRecentLevelUp(true);
         setTimeout(() => setRecentLevelUp(false), 3000);
@@ -121,23 +83,8 @@ export const useGamification = () => {
         });
       }
 
-      // Check for new badges
-      let earnedBadges = [...prev.badges];
-      let newlyEarned = null;
-      BADGES.forEach(badge => {
-        if (!earnedBadges.includes(badge.id)) {
-          if (
-            (badge.requiredExp && newExp >= badge.requiredExp) ||
-            (badge.requiredLevel && newLevel >= badge.requiredLevel)
-          ) {
-            earnedBadges.push(badge.id);
-            newlyEarned = badge;
-          }
-        }
-      });
-
-      if (newlyEarned) {
-        setNewBadge(newlyEarned);
+      if (earnedBadge) {
+        setNewBadge(earnedBadge);
         setTimeout(() => setNewBadge(null), 4000);
         confetti({
           particleCount: 80,
@@ -148,13 +95,7 @@ export const useGamification = () => {
         });
       }
 
-      return {
-        ...prev,
-        exp: newExp,
-        level: newLevel,
-        badges: earnedBadges,
-        lastActiveDate: today
-      };
+      return result.profile;
     });
   }, []);
 
@@ -193,6 +134,7 @@ export const useGamification = () => {
     newBadge,
     nextLevelExp: getNextLevelExp(),
     currentLevelBaseExp: getCurrentLevelBaseExp(),
-    allBadges: BADGES
+    allBadges: BADGES,
+    persistenceWarning
   };
 };

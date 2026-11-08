@@ -5,6 +5,7 @@ import { THEMES } from '../hooks/useCategories';
 const LevelSelector = ({ value, onChange }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const triggerRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -33,8 +34,7 @@ const LevelSelector = ({ value, onChange }) => {
       'A2': 'A2 (Elementary)',
       'B1': 'B1 (Intermediate)',
       'B2': 'B2 (Upper Intermediate)',
-      'C1': 'C1 (Advanced)',
-      'C2': 'C2 (Proficient)'
+      'C1': 'C1 (Advanced)'
     };
     
     if (difficultyMap[value]) return difficultyMap[value];
@@ -46,21 +46,30 @@ const LevelSelector = ({ value, onChange }) => {
   };
 
   const Option = ({ val, label }) => (
-    <div 
+    <button
+      type="button"
       className={`custom-select-option ${value === val ? 'selected' : ''}`}
       onClick={() => handleSelect(val)}
+      aria-pressed={value === val}
     >
       <span>{label}</span>
       {value === val && <Check size={16} className="text-[var(--color-primary)]" />}
-    </div>
+    </button>
   );
 
   return (
-    <div className="custom-select-container" ref={dropdownRef}>
+    <div className="custom-select-container" ref={dropdownRef} onKeyDown={event => {
+      if (event.key === 'Escape' && isOpen) {
+        setIsOpen(false);
+        triggerRef.current?.focus();
+      }
+    }}>
       <button 
         type="button"
+        ref={triggerRef}
         className={`custom-select-button ${isOpen ? 'open' : ''}`}
         onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
       >
         <span>{getDisplayValue()}</span>
         <ChevronDown size={18} className="transition-transform duration-200" style={{ transform: isOpen ? 'rotate(180deg)' : 'none' }} />
@@ -76,7 +85,6 @@ const LevelSelector = ({ value, onChange }) => {
           <Option val="B1" label="B1 (Intermediate)" />
           <Option val="B2" label="B2 (Upper Intermediate)" />
           <Option val="C1" label="C1 (Advanced)" />
-          <Option val="C2" label="C2 (Proficient)" />
           
           <div className="custom-select-group">Learning Themes</div>
           {THEMES.map(theme => (

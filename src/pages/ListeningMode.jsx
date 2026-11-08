@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Volume2, ArrowLeft } from 'lucide-react';
 import Card from '../components/Card';
 import LevelSelector from '../components/LevelSelector';
+import { useLevelFilter } from '../hooks/useLevelFilter';
 import { useGamification } from '../hooks/useGamification';
 import { filterWords } from '../hooks/useCategories';
 import vocabularyData from '../data/vocabulary.json';
@@ -11,7 +12,7 @@ import { speakText, stopSpeech } from '../utils/audioService';
 const ListeningMode = () => {
   const navigate = useNavigate();
   const { addExp } = useGamification();
-  const [level, setLevel] = useState('all');
+  const [level, setLevel] = useLevelFilter();
   const [words, setWords] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [options, setOptions] = useState([]);

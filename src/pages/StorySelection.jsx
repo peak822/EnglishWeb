@@ -15,10 +15,16 @@ import {
 } from 'lucide-react';
 import Tilt from 'react-parallax-tilt';
 import storiesData from '../data/stories.json';
+import { useSearchParams } from 'react-router-dom';
+import { readCefr, CEFR_LEVELS } from '../utils/levelSelection';
+import { activateOnKey } from '../utils/keyboard';
 
 const StorySelection = () => {
   const navigate = useNavigate();
-  const [selectedLevel, setSelectedLevel] = useState(null);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const requestedLevel = readCefr(searchParams.toString());
+  const selectedLevel = requestedLevel === 'all' ? null : requestedLevel;
+  const setSelectedLevel = value => setSearchParams(value && CEFR_LEVELS.includes(value) ? { level: value } : {});
   const [searchTerm, setSearchTerm] = useState('');
   const [isTouchDevice, setIsTouchDevice] = useState(false);
 
@@ -116,6 +122,9 @@ const StorySelection = () => {
       <div 
         className={`story-level-card ${category.levelClass}`}
         onClick={() => handleSelectLevel(category.id)}
+        onKeyDown={event => activateOnKey(event, () => handleSelectLevel(category.id))}
+        role="button"
+        tabIndex={0}
       >
         <div>
           {/* Top Row: Icon & Count Badge */}
@@ -319,6 +328,9 @@ const StorySelection = () => {
                     key={story.id} 
                     className={`story-card ${matchingCat.levelClass}`}
                     onClick={() => navigate(`/story-mode/${story.id}`)}
+                    onKeyDown={event => activateOnKey(event, () => navigate(`/story-mode/${story.id}`))}
+                    role="button"
+                    tabIndex={0}
                   >
                     <div>
                       {/* Top Badges */}

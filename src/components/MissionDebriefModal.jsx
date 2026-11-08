@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Zap, RotateCcw, ArrowRight, Home as HomeIcon } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { playCyberSound } from '../utils/cyberSound';
 import TechBracket from './TechBracket';
+import { useDialogFocus } from '../hooks/useDialogFocus';
+import { trapDialogTab } from '../utils/dialogFocus';
 
 export const MissionDebriefModal = ({
   isOpen,
@@ -19,6 +21,9 @@ export const MissionDebriefModal = ({
 }) => {
   const navigate = useNavigate();
   const [animatedExp, setAnimatedExp] = useState(0);
+  const dialogRef = useRef(null);
+  const firstActionRef = useRef(null);
+  useDialogFocus(isOpen, dialogRef, firstActionRef);
 
   const percentage = total > 0 ? Math.round((score / total) * 100) : 100;
   
@@ -78,6 +83,12 @@ export const MissionDebriefModal = ({
   return (
     <div className="cyber-modal-backdrop">
       <div 
+        ref={dialogRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="mission-debrief-title"
+        tabIndex={-1}
+        onKeyDown={event => trapDialogTab(event, dialogRef.current, document.activeElement)}
         className="cyber-debrief-modal"
         style={{
           position: 'relative',
@@ -101,7 +112,7 @@ export const MissionDebriefModal = ({
         </div>
 
         {/* Title */}
-        <h2 style={{ fontSize: '1.5rem', fontWeight: '800', fontFamily: 'var(--font-family-sans)', color: '#ffffff', letterSpacing: '0.03em', marginBottom: '1rem' }}>
+        <h2 id="mission-debrief-title" style={{ fontSize: '1.5rem', fontWeight: '800', fontFamily: 'var(--font-family-sans)', color: '#ffffff', letterSpacing: '0.03em', marginBottom: '1rem' }}>
           {title}
         </h2>
 
@@ -153,6 +164,7 @@ export const MissionDebriefModal = ({
         <div style={{ display: 'flex', gap: '0.6rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
           {onRetry && (
             <button
+              ref={firstActionRef}
               onClick={() => {
                 playCyberSound('click');
                 onRetry();

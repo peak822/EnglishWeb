@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import LevelSelector from '../components/LevelSelector';
+import { useLevelFilter } from '../hooks/useLevelFilter';
 import vocabularyData from '../data/vocabulary.json';
 import { filterWords } from '../hooks/useCategories';
 import { useGamification } from '../hooks/useGamification';
@@ -10,7 +11,7 @@ import { speakText } from '../utils/audioService';
 
 const SwipeMode = () => {
   const { addExp } = useGamification();
-  const [level, setLevel] = useState('all');
+  const [level, setLevel] = useLevelFilter();
   const [words, setWords] = useState([]);
   
   // Game State
@@ -237,14 +238,19 @@ const SwipeMode = () => {
   }, [isGameOver, hasWon]);
 
   const resetGame = (wordList = words) => {
+    if (timerRef.current) clearInterval(timerRef.current);
     setLives(3);
     setCombo(0);
     setMaxCombo(0);
     setScore(0);
     setIsGameOver(false);
     setHasWon(false);
+    setIsTransitioningGameOver(false);
     setSwipeState(null);
-    if (wordList.length > 0) {
+    setSwipeFeedback(null);
+    setShowCross(false);
+    setCurrentCard(null);
+    if (Array.isArray(wordList) && wordList.length >= 2) {
       generateNextCard(wordList);
     }
   };
@@ -260,7 +266,7 @@ const SwipeMode = () => {
             <p>Score: <span className="text-white font-bold">{score} / {MAX_CARDS}</span></p>
             <p>Max Combo: <span className="text-[var(--color-primary)] font-bold">{maxCombo}</span></p>
           </div>
-          <Button onClick={resetGame} variant="primary" className="w-full">Play Again</Button>
+          <Button onClick={() => resetGame()} variant="primary" className="w-full">Play Again</Button>
         </Card>
       </div>
     );
@@ -309,6 +315,7 @@ const SwipeMode = () => {
           </div>
         </div>
 
+        {words.length < 2 && <p role="status" className="text-center py-8">หมวดนี้มีคำศัพท์ไม่พอสำหรับ Swipe Mode กรุณาเลือกระดับหรือหมวดอื่น</p>}
         {currentCard && (
           <div className="flex flex-col items-center justify-center min-h-[300px] sm:min-h-[400px]">
             <div className="text-sm md:text-base text-[var(--color-neutral)] mb-4 text-center max-w-md leading-relaxed">
